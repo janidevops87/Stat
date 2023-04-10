@@ -1,0 +1,24 @@
+﻿@model EditRolesViewModel
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.Roles[0].Name)</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var role in Model.Roles)
+        {
+            <tr>
+                <td>@role.Name</td>
+                <td>
+                    <form asp-action="RemoveFromRole" asp-route-id="@Model.Id">
+                        <input type="hidden" asp-for="@role.Name" name="@nameof(role.Name)" />
+                        <button type="submit" class="btn btn-sm btn-danger">remove</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

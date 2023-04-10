@@ -1,0 +1,47 @@
+﻿@model UserInfoViewModel
+
+<table class="table">
+    <tr>
+        <td>
+            <b>@Html.DisplayNameFor(m => m.Name)</b>
+        </td>
+        <td>
+            @Model.Name
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>@Html.DisplayNameFor(m => m.Id)</b>
+        </td>
+        <td>
+            @Model.Id
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>@Html.DisplayNameFor(m => m.TenantId)</b>
+        </td>
+        <td>
+            @Model.TenantId
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>@Html.DisplayNameFor(m => m.Email)</b>
+        </td>
+        <td>
+            @Model.Email
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>@Html.DisplayNameFor(m => m.Roles)</b>
+        </td>
+        <td>
+            @foreach (var role in Model.Roles)
+            {
+                @role<br />
+            }
+        </td>
+    </tr>
+</table>

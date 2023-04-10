@@ -1,0 +1,37 @@
+<div style="width:100%; margin-top:85px;margin-bottom:20px;">
+  <div [hidden]="message == null || message == '' " class="timeOutMessage">{{message}}</div>
+  <div class="card loginCard" style="margin-bottom:20px;">
+    <h2 style="text-align:center">Login</h2>
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">User Name</label>
+        <input type="text" class="form-control" [(ngModel)]="username"
+               [ngModelOptions]="{standalone: true}" id="username" name="username"
+               aria-describedby="username"
+               placeholder="User name" [maxlength]="15" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" [(ngModel)]="password"
+               [ngModelOptions]="{standalone: true}" id="password" name="password"
+               placeholder="Password" [maxlength]="25" required>
+      </div>
+      <div class="form-group" style="text-align: right; margin-top:-10px; font-size: 0.9em;">
+        <a class="btn-link" [routerLink]="" (click)="gotoResetPassword();">Forgot password?</a>
+      </div>
+      <div style="width:100%;text-align:center">
+        <button [disabled]="username =='' || password =='' || showSpinner" type="submit" class="btn btn-primary loginButton" (click)="submit();">
+          Login
+          <span *ngIf="showSpinner"><i class="fa fa-spinner fa-spin"></i></span>
+        </button>
+      </div>
+      <div class="form-error" style= "margin-top: 10px;" [hidden]="error==''">{{error}}</div>
+      <div style="margin-top:25px;text-align:justify;color:dimgray;font-size:0.9em">Have questions? Please call Statline Help Desk, 866-344-7039, or email helpdesk@statline.org.</div>
+    </form>
+  </div>
+</div>
+<div style="text-align:center;margin-bottom:70px;" [hidden]="oldsiteexpiration == undefined ||oldsiteexpiration<0 ">
+  <div class="divOldSiteRetire">The old Statline Reporting site will be retired in <label class="lblOldSiteRetire">{{oldsiteexpiration}}</label> days.</div>
+  You can navigate to the old Statline Reporting site by clicking <a href="https://os.statline.org" target="_blank">here.</a><br />
+  Please remember that the old Statline Reporting site works only in Internet Explorer in compatibility mode.
+</div>

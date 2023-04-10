@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR"
+content="Microsoft FrontPage (Visual InterDev Edition) 2.0">
+<meta http-equiv="EXPIRES" content="0">
+<title>Notice</title>
+</head>
+
+<body bgcolor="#F5EBDD">
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="575"
+ height="300">
+    <tr>
+        <td valign="top"><strong><FONT color=red face=Arial size=4>CAUTION!</FONT></strong><p><font size="2" face="Arial"><br
+        clear="left">
+        Now that the end of the 
+            year has arrived, some of you may look to generate reports for the 
+            end of the year. In order to ensure Statline's reporting server can 
+            meet everyone's demands, we recommend caution when trying to 
+            generate reports which cover a long period of time (e.g. 1/1/98 to 
+            12/31/98).&nbsp; Reports such as the Referral Activity, Referral 
+            Summary, and Referral Detail can return literally thousands of 
+            records which stress the reporting server and will use all the 
+            memory on <EM>your</EM> computer. </font></p><p><font size="2" face="Arial">Wether you are running a detail report or a statistical 
+            report, we recommend breaking up report data by time (e.g. monthly) 
+            or by organization or even report group. If you believe your report 
+            may return a large number of records, you can check by running the 
+            Call Count Summary or Reason Summary for either the selected report 
+            group or organization. </font></p><p><font size="2" face="Arial"> </font><FONT face=Arial size=2>We are 
+            upgrading our reporting server by the end of February. After the 
+            upgrade, you should begin to notice significant performance increase 
+            particularly for statistical reports.</FONT><font size="2" face="Arial">
+        <br> </font><font size="2" face="Arial">
+        <br>
+        If 
+            you have questions please contact Client Services at, (888) 881-7828 or 
+            email </font><font size="2"
+        face="Arial"><!--#include virtual="/loginstatline/includes/ClientServicesMailTo.sls"--></FONT></p><p><font size="2"
+        face="Arial"></font><font size="2" face="Arial">Thank you 
+            for your assistance. </font></p><p><font size="2"
+        face="Arial"></font>&nbsp;</p>
+        </td>
+    </tr>
+    <tr>
+        <td valign="bottom" width="100%" height="25"><p
+        align="center"><font size="1" face="Arial">Statline, LLC 6000 East Evans Avenue, Ste. 
+            3-204, Denver, CO 80222. </font><font
+        size="1"><align="CENTER"></font><font size="1" face="Arial">Toll-Free Phone: 1-888-881-7828 
+            </font><font size="1"><align="CENTER"></font><font
+        size="1" face="Arial">&nbsp; Fax: (303) 
+758-5148</font></p>
+        </td>
+    </tr>
+</table>
+</center></div>
+
+<p><a href="mailto:info@statline.com"></a></p>
+</body>
+</html>

@@ -1,0 +1,9 @@
+﻿@model Boolean
+
+<div class="checkbox">
+    <label asp-for="@Model">
+        <input asp-for="@Model">
+        @Html.DisplayNameForModel()
+    </label>
+</div>
+<span asp-validation-for="@Model"></span>

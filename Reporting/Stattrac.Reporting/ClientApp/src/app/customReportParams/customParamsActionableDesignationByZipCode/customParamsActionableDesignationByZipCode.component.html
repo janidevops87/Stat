@@ -1,0 +1,92 @@
+<div>
+  <div class="row" style="margin-bottom:5px;">
+    <div class="col-sm">
+      State:
+    </div>
+  </div>
+  <div class="row" style="border:1px solid lightgray; border-radius:4px; padding:8px 0 0 0; margin:0 0 15px 0;background-color: white;">
+    <div *ngFor="let st of states">
+      <div class="col-sm" style="">
+        <input type="checkbox" id="{{st.fullName}}" name="{{st.fullName}}" value="{{st.state}}" [(ngModel)]="st.value"
+               (change)="stateChange()" style="height: 20px; width: 20px; vertical-align: text-bottom;">
+        <label for="{{st.fullName}}" style="padding-left:3px;">{{st.fullName}}</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" style="margin-bottom:5px;">
+    <div class="col-sm">
+      Zip Code Options:
+    </div>
+  </div>
+
+  <div class="row" style="border:1px solid lightgray; border-radius:4px; padding:8px 0; margin:0 0 15px 0;background-color: white;">
+    <div class="col-8">
+      <input type="radio" id="Top10" name="ZipCodeOptions" value="1"
+             [(ngModel)]="model.ZipCodeOptions" (change)="ZipCodeOptionChanged()"
+              style="height: 20px; width: 20px; vertical-align: text-bottom;">
+      <label for="Top10" style="padding-left:3px;display:inline;">Top 10 Highest and Lowest Producing Zip Codes</label><br>
+    </div>
+    <div class="col-4">
+      <input type="radio" id="AllZip" name="ZipCodeOptions" value="3"
+             [(ngModel)]="model.ZipCodeOptions" (change)="ZipCodeOptionChanged()"
+              style="height: 20px; width: 20px; vertical-align: text-bottom;">
+      <label for="AllZip" style="padding-left:3px;display:inline;">All Zip Codes</label><br>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm">
+      <label>Registry:</label>
+    </div>
+  </div>
+  <div class="row" style="border:1px solid lightgray; border-radius:4px; padding:8px 0; margin:0 0 15px 0;background-color: white;">
+    <div class="col-sm">
+      <input type="checkbox" id="RegistryState" name="RegistryState" value="true"
+             [(ngModel)]="model.RegistryState" (change)="addtoParameterList()"
+             style="height: 20px; width: 20px; vertical-align: text-bottom;">
+      <label for="RegistryState" style="padding-left:3px;display:inline;">State</label>
+    </div>
+    <div class="col-sm">
+      <input type="checkbox" id="RegistryWeb" name="RegistryWeb" value="true"
+             [(ngModel)]="model.RegistryWeb" (change)="addtoParameterList()"
+             style="height: 20px; width: 20px; vertical-align: text-bottom;">
+      <label for="RegistryWeb" style="padding-left:3px;display:inline;">Web</label>
+    </div>
+  </div>
+
+  <div class="row" style="border:1px solid lightgray; border-radius:4px; padding:8px 0; margin:20px 0 0 0;background-color: white;">
+    <div class="col-sm">
+      <input type="checkbox" id="NewYes" name="NewYes" value="true" [(ngModel)]="model.NewYes"
+             (change)="addtoParameterList()"
+             style="height: 20px; width: 20px; vertical-align: text-bottom;">
+      <label for="NewYes" style="padding-left:3px;display:inline;">New Yes</label>
+    </div>
+    <div class="col-sm">
+      <input type="checkbox" id="YesToYes" name="YesToYes" value="true" [(ngModel)]="model.YesToYes"
+             (change)="addtoParameterList()"
+             style="height: 20px; width: 20px; vertical-align: text-bottom;">
+      <label for="YesToYes" style="padding-left:3px;display:inline;">Yes to Yes</label>
+    </div>
+    <div class="col-sm">
+      <input type="checkbox" id="NoToYes" name="NoToYes" value="true" [(ngModel)]="model.NoToYes"
+             (change)="addtoParameterList()"
+             style="height: 20px; width: 20px; vertical-align: text-bottom;">
+      <label for="NoToYes" style="padding-left:3px;display:inline;">No to Yes</label>
+    </div>
+    <div class="col-sm">
+      <input type="checkbox" id="TotalYes" name="TotalYes" value="true" [(ngModel)]="model.TotalYes"
+             (change)="addtoParameterList()"
+             style="height: 20px; width: 20px; vertical-align: text-bottom;">
+      <label for="TotalYes" style="padding-left:3px;display:inline;">Total Yes</label>
+    </div>
+    <div class="col-sm">
+      <input type="checkbox" id="YesToNo" name="YesToNo" value="true" [(ngModel)]="model.YesToNo"
+             (change)="addtoParameterList()"
+             style="height: 20px; width: 20px; vertical-align: text-bottom;">
+      <label for="YesToNo" style="padding-left:3px;display:inline;">Yes to No</label>
+    </div>
+  </div>
+  <!-- hidden field is need to feed back to parent -->
+  <input type="hidden" id="customParameterList" />
+</div>

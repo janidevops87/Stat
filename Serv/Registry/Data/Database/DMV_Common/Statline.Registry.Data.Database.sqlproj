@@ -1,0 +1,2902 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+    <PostConversionRemoveFromScc>
+    </PostConversionRemoveFromScc>
+    <PostConversionAddToScc>
+    </PostConversionAddToScc>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <PostUpgradeAddToSCC>;D:\Projects\Statline\Registry\Data\Database\DMV_Common\Statline.Registry.Data.Database.dbproj;D:\Projects\Statline\Registry\Data\Database\DMV_Common\Connections.txt;D:\Projects\Statline\Registry\Data\Database\DMV_Common\Scripts\Post-Deployment\Script.PostDeployment.sql;D:\Projects\Statline\Registry\Data\Database\DMV_Common\Scripts\Pre-Deployment\Script.PreDeployment.sql</PostUpgradeAddToSCC>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProjectName>SAK</SccProjectName>
+    <PreviousProjectVersion>4.1</PreviousProjectVersion>
+    <UpgradedFromDBP>True</UpgradedFromDBP>
+    <Name>Statline.Registry.Data.Database</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql100DatabaseSchemaProvider</DSP>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <ShowWizard>False</ShowWizard>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <IncludeSchemaNameInFileName>False</IncludeSchemaNameInFileName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <LoadSqlClrTypes>True</LoadSqlClrTypes>
+    <ValidateCasingOnIdentifiers>False</ValidateCasingOnIdentifiers>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0eb961e0-a14a-44a0-b310-f2741d3f3ec3}</ProjectGuid>
+    <GenerateDatabaseFile>False</GenerateDatabaseFile>
+    <GenerateCreateScript>False</GenerateCreateScript>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <DefaultSchema>dbo</DefaultSchema>
+    <TargetLanguage>CS</TargetLanguage>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <AnsiNullDefault>True</AnsiNullDefault>
+    <AnsiNulls>True</AnsiNulls>
+    <AnsiPadding>True</AnsiPadding>
+    <AnsiWarnings>True</AnsiWarnings>
+    <ArithAbort>True</ArithAbort>
+    <ConcatNullYieldsNull>True</ConcatNullYieldsNull>
+    <QuotedIdentifier>True</QuotedIdentifier>
+    <NumericRoundAbort>False</NumericRoundAbort>
+    <RecursiveTriggersEnabled>False</RecursiveTriggersEnabled>
+    <DatabaseState>ONLINE</DatabaseState>
+    <UpdateOptions>READ_WRITE</UpdateOptions>
+    <CloseCursorOnCommitEnabled>False</CloseCursorOnCommitEnabled>
+    <DefaultCursor>LOCAL</DefaultCursor>
+    <AutoClose>False</AutoClose>
+    <AutoCreateStatistics>True</AutoCreateStatistics>
+    <AutoShrink>False</AutoShrink>
+    <AutoUpdateStatistics>True</AutoUpdateStatistics>
+    <TornPageDetection>False</TornPageDetection>
+    <DatabaseAccess>MULTI_USER</DatabaseAccess>
+    <Recovery>FULL</Recovery>
+    <EnableFullTextSearch>True</EnableFullTextSearch>
+    <DatabaseChaining>False</DatabaseChaining>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <Trustworthy>False</Trustworthy>
+    <AutoUpdateStatisticsAsynchronously>False</AutoUpdateStatisticsAsynchronously>
+    <PageVerify>NONE</PageVerify>
+    <ServiceBrokerOption>DisableBroker</ServiceBrokerOption>
+    <DateCorrelationOptimizationOn>False</DateCorrelationOptimizationOn>
+    <Parameterization>SIMPLE</Parameterization>
+    <AllowSnapshotIsolation>False</AllowSnapshotIsolation>
+    <ReadCommittedSnapshot>False</ReadCommittedSnapshot>
+    <VardecimalStorageFormatOn>True</VardecimalStorageFormatOn>
+    <SupplementalLoggingOn>False</SupplementalLoggingOn>
+    <DefaultFileStreamFilegroup />
+    <IsChangeTrackingOn>False</IsChangeTrackingOn>
+    <IsChangeTrackingAutoCleanupOn>True</IsChangeTrackingAutoCleanupOn>
+    <ChangeTrackingRetentionPeriod>2</ChangeTrackingRetentionPeriod>
+    <ChangeTrackingRetentionUnit>Days</ChangeTrackingRetentionUnit>
+    <IsEncryptionOn>False</IsEncryptionOn>
+    <IsBrokerPriorityHonored>False</IsBrokerPriorityHonored>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>.\sql\release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetDatabase>
+    </TargetDatabase>
+    <TreatTSqlWarningsAsErrors>False</TreatTSqlWarningsAsErrors>
+    <SuppressTSqlWarnings />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>.\sql\debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetDatabase>
+    </TargetDatabase>
+    <TreatTSqlWarningsAsErrors>False</TreatTSqlWarningsAsErrors>
+    <SuppressTSqlWarnings />
+  </PropertyGroup>
+  <!--Import the settings-->
+  <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" Condition="'$(SQLDBExtensionsRefPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" Condition="'$(SQLDBExtensionsRefPath)' == ''" />
+  <ItemGroup>
+    <Folder Include="Scripts" />
+    <Folder Include="Scripts\Pre-Deployment" />
+    <Folder Include="Scripts\Post-Deployment" />
+    <Folder Include="Data Generation Plans" />
+    <Folder Include="Schema Comparisons" />
+    <Folder Include="Change Scripts\DMV_CO\Migrate_Data" />
+    <Folder Include="Change Scripts\DMV_CO\CCRST152" />
+    <Folder Include="Change Scripts\DMV_WY" />
+    <Folder Include="Create Scripts\DMV_TX" />
+    <Folder Include="Create Scripts\DMV_TX\database" />
+    <Folder Include="Create Scripts\DMV_TX\scripts" />
+    <Folder Include="Create Scripts\DMV_TX\sprocs" />
+    <Folder Include="Create Scripts\DMV_TX\tables" />
+    <Folder Include="Create Scripts\DMV_TX\tables\DataLoad" />
+    <Folder Include="Create Scripts\DMV_TX\tables\CreateTables" />
+    <Folder Include="Create Scripts\DMV_HI" />
+    <Folder Include="Create Scripts\DMV_HI\database" />
+    <Folder Include="Create Scripts\DMV_HI\functions" />
+    <Folder Include="Create Scripts\DMV_HI\scripts" />
+    <Folder Include="Create Scripts\DMV_HI\sprocs" />
+    <Folder Include="Create Scripts\DMV_HI\tables" />
+    <Folder Include="Create Scripts\DMV_HI\tables\CreateTables" />
+    <Folder Include="Create Scripts\DMV_HI\tables\DataLoad" />
+    <Folder Include="Change Scripts\DMV_HI" />
+    <Folder Include="Change Scripts\Database_Migration_SQL2012" />
+    <Folder Include="Change Scripts\DMV_WY\CCRST152" />
+    <Folder Include="Create Scripts\SHARED_DB_ELEMENTS" />
+    <Folder Include="Create Scripts\SHARED_DB_ELEMENTS\sprocs" />
+    <Folder Include="Change Scripts\DMV_Common" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST183" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST184" />
+    <Folder Include="Create Scripts\DMV_NE\BUILD_SCRIPT_INIT" />
+    <Folder Include="Create Scripts\DMV_NV\BUILD_SCRIPT_INIT" />
+    <Folder Include="Create Scripts\CommonRegistry\BUILD_SCRIPT_INIT" />
+    <Folder Include="Create Scripts\SHARED_DB_ELEMENTS\functions" />
+    <Folder Include="Create Scripts\DMV_TX\BUILD_SCRIPT_INIT" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST186" />
+    <Folder Include="Create Scripts\CommonRegistry\functions" />
+    <Folder Include="Create Scripts\DMV_HI\BUILD_SCRIPT_INIT" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST191" />
+    <Folder Include="Change Scripts\DMV_CO\CCRST152\tables" />
+    <Folder Include="Change Scripts\DMV_CO\CCRST152\tables\CreateTables" />
+    <Folder Include="Change Scripts\DMV_CO\CCRST152\scripts" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST152" />
+    <Folder Include="Change Scripts\DMV_WY\CCRST152\scripts" />
+    <Folder Include="Change Scripts\DMV_WY\CCRST152\tables" />
+    <Folder Include="Change Scripts\DMV_WY\CCRST152\tables\CreateTables" />
+    <Folder Include="Create Scripts\DMV_CO\BUILD_SCRIPT_INIT" />
+    <Folder Include="Create Scripts\DMV_WY\BUILD_SCRIPT_INIT" />
+    <Folder Include="Change Scripts\DMV_NV\CCRST191" />
+    <Folder Include="Change Scripts\DMV_HI\CCRST191" />
+    <Folder Include="Change Scripts\DMV_HI\CCRST191\tables" />
+    <Folder Include="Change Scripts\DMV_HI\CCRST191\tables\CreateTables" />
+    <Folder Include="Change Scripts\DMV_HI\CCRST191\tables\DataLoad" />
+    <Folder Include="Change Scripts\DMV_HI\CCRST191\sprocs" />
+    <Folder Include="Change Scripts\DMV_NV\CCRST191\sprocs" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST191\sprocs" />
+    <Folder Include="Change Scripts\DMV_CO\CCRST152\sprocs" />
+    <Folder Include="Change Scripts\DMV_NH" />
+    <Folder Include="Change Scripts\DMV_NH\CCRST191" />
+    <Folder Include="Change Scripts\DMV_NH\CCRST191\sprocs" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST191\tables" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST191\tables\DataLoad" />
+    <Folder Include="Change Scripts\SHARED_DB_ELEMENTS" />
+    <Folder Include="Change Scripts\SHARED_DB_ELEMENTS\CCRST194" />
+    <Folder Include="Change Scripts\SHARED_DB_ELEMENTS\CCRST194\sprocs" />
+    <Folder Include="Change Scripts\DMV_HI\CCRST194" />
+    <Folder Include="Change Scripts\DMV_HI\CCRST194\sprocs" />
+    <Folder Include="Change Scripts\DMV_MI_SOS" />
+    <Folder Include="Change Scripts\DMV_MI_SOS\CCRST194" />
+    <Folder Include="Change Scripts\DMV_MI_SOS\CCRST194\sprocs" />
+    <Folder Include="Change Scripts\DMV_MI_SOS\CCRST194\BUILD_SCRIPT_INIT" />
+    <Folder Include="Change Scripts\SHARED_DB_ELEMENTS\CCRST191" />
+    <Folder Include="Change Scripts\SHARED_DB_ELEMENTS\CCRST191\sprocs" />
+    <Folder Include="Create Scripts\DMV_MI_SOS\BUILD_SCRIPT_INIT" />
+    <Folder Include="Change Scripts\DMV_WY\CCRST152\sprocs" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST187" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST187\tables" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST187\tables\DataLoad" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST205" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST205\Tables" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST205\Tables\DataLoad" />
+    <Folder Include="Change Scripts\DMV_CO\CCRST196" />
+    <Folder Include="Change Scripts\DMV_CO\CCRST196\scripts" />
+    <Folder Include="Change Scripts\DMV_CO\CCRST196\sprocs" />
+    <Folder Include="Change Scripts\DMV_CO\CCRST196\Tables" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST182" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST182\stored proedures" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST182\Tables" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST182\Tables\CreateTable" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST182\Tables\DataLoad" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST196" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST196\functions" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST196\stored procedures" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST196\tables" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST196\tables\CreateTable" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST196\tables\DataLoad" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST199" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST199\scripts" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST199\tables" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST199\tables\DataLoad" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST201" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST201\tables" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST201\tables\DataLoad" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST202" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST202\scripts" />
+    <Folder Include="Change Scripts\DMV_HI\CCRST196" />
+    <Folder Include="Change Scripts\DMV_HI\CCRST196\scripts" />
+    <Folder Include="Change Scripts\DMV_HI\CCRST196\sprocs" />
+    <Folder Include="Change Scripts\DMV_HI\CCRST196\tables" />
+    <Folder Include="Change Scripts\DMV_HI\CCRST196\tables\CreateTables" />
+    <Folder Include="Change Scripts\DMV_MA\CCRST196" />
+    <Folder Include="Change Scripts\DMV_MA\CCRST196\scripts" />
+    <Folder Include="Change Scripts\DMV_MA\CCRST196\sprocs" />
+    <Folder Include="Change Scripts\DMV_MA\CCRST196\Tables" />
+    <Folder Include="Change Scripts\DMV_MA\CCRST196\Tables\CreateTables" />
+    <Folder Include="Change Scripts\DMV_ME\CCRST196" />
+    <Folder Include="Change Scripts\DMV_ME\CCRST196\scripts" />
+    <Folder Include="Change Scripts\DMV_ME\CCRST196\sprocs" />
+    <Folder Include="Change Scripts\DMV_ME\CCRST196\tables" />
+    <Folder Include="Change Scripts\DMV_ME\CCRST196\tables\CreateTables" />
+    <Folder Include="Change Scripts\DMV_MI\CCRST182" />
+    <Folder Include="Change Scripts\DMV_MI\CCRST182\stored procedures" />
+    <Folder Include="Change Scripts\DMV_MI\CCRST182\tables" />
+    <Folder Include="Change Scripts\DMV_MI" />
+    <Folder Include="Change Scripts\DMV_TX" />
+    <Folder Include="Change Scripts\DMV_TX\CCRST196" />
+    <Folder Include="Change Scripts\DMV_TX\CCRST196\scripts" />
+    <Folder Include="Change Scripts\DMV_TX\CCRST196\sprocs" />
+    <Folder Include="Change Scripts\DMV_TX\CCRST196\tables" />
+    <Folder Include="Change Scripts\DMV_TX\CCRST196\tables\createTables" />
+    <Folder Include="Change Scripts\DMV_TX\CCRST199" />
+    <Folder Include="Change Scripts\DMV_TX\CCRST199\scripts" />
+    <Folder Include="Change Scripts\DMV_TX\CCRST199\sprocs" />
+    <Folder Include="Change Scripts\DMV_TX\CCRST202" />
+    <Folder Include="Change Scripts\DMV_TX\CCRST202\sprocs" />
+    <Folder Include="Change Scripts\DMV_VT" />
+    <Folder Include="Change Scripts\DMV_VT\scripts" />
+    <Folder Include="Change Scripts\DMV_VT\sprocs" />
+    <Folder Include="Change Scripts\DMV_VT\tables" />
+    <Folder Include="Change Scripts\DMV_VT\tables\CreateTables" />
+    <Folder Include="Change Scripts\SHARED_DB_ELEMENTS\CCRST196" />
+    <Folder Include="Change Scripts\SHARED_DB_ELEMENTS\CCRST196\sprocs" />
+    <Folder Include="Change Scripts\SHARED_DB_ELEMENTS\CCRST187" />
+    <Folder Include="Change Scripts\DMV_NH\CCRST196" />
+    <Folder Include="Change Scripts\DMV_NH\CCRST196\scripts" />
+    <Folder Include="Change Scripts\DMV_NH\CCRST196\sprocs" />
+    <Folder Include="Change Scripts\DMV_NH\CCRST196\tables" />
+    <Folder Include="Change Scripts\DMV_NH\CCRST196\tables\CreateTables" />
+    <Folder Include="Change Scripts\DMV_NV\CCRST196" />
+    <Folder Include="Change Scripts\DMV_NV\CCRST196\scripts" />
+    <Folder Include="Change Scripts\DMV_NV\CCRST196\sprocs" />
+    <Folder Include="Change Scripts\DMV_NV\CCRST196\tables" />
+    <Folder Include="Change Scripts\DMV_NV\CCRST196\tables\CreateTables" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST207" />
+    <Folder Include="Change Scripts\DMV_HI\CCRST207" />
+    <Folder Include="Change Scripts\DMV_HI\CCRST207\sprocs" />
+    <Folder Include="Change Scripts\DMV_NV\CCRST207" />
+    <Folder Include="Change Scripts\DMV_NV\CCRST207\sprocs" />
+    <Folder Include="Change Scripts\SHARED_DB_ELEMENTS\CCRST207" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST207\Tables" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST207\Tables\DataLoad" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST207\stored procedures" />
+    <Folder Include="Change Scripts\DMV_MI_SOS\CCRST182" />
+    <Folder Include="Change Scripts\DMV_MI_SOS\CCRST182\stored procedures" />
+    <Folder Include="Change Scripts\DMV_MI_SOS\CCRST182\Tables" />
+    <Folder Include="Change Scripts\DMV_NE\CCRST196" />
+    <Folder Include="Change Scripts\DMV_NE\CCRST196\sprocs" />
+    <Folder Include="Change Scripts\DMV_NE\CCRST196\tables" />
+    <Folder Include="Change Scripts\DMV_NE\CCRST196\tables\Create Tables" />
+    <Folder Include="Change Scripts\DMV_MI_SOS\CCRST207" />
+    <Folder Include="Change Scripts\DMV_MI_SOS\CCRST207\stored procedures" />
+    <Folder Include="Change Scripts\DMV_MI\CCRST207" />
+    <Folder Include="Change Scripts\DMV_MI\CCRST207\stored procedures" />
+    <Folder Include="Change Scripts\SHARED_DB_ELEMENTS\CCRST207\sprocs" />
+    <Folder Include="Change Scripts\DMV_MI\CCRST207\BUILD_SCRIPT_INIT" />
+    <Folder Include="Change Scripts\DMV_CO\CCRST207" />
+    <Folder Include="Change Scripts\DMV_CO\CCRST207\sprocs" />
+    <Folder Include="Change Scripts\DMV_NE\CCRST207" />
+    <Folder Include="Change Scripts\DMV_NE\CCRST207\sprocs" />
+    <Folder Include="Change Scripts\DMV_WY\CCRST207" />
+    <Folder Include="Change Scripts\DMV_MA\CCRST212" />
+    <Folder Include="Change Scripts\DMV_MA\CCRST212\sprocs" />
+    <Folder Include="Change Scripts\DMV_CA" />
+    <Folder Include="Change Scripts\DMV_CA\CCRST212" />
+    <Folder Include="Change Scripts\DMV_CA\CCRST212\sprocs" />
+    <Folder Include="Change Scripts\DMV_CT" />
+    <Folder Include="Change Scripts\DMV_CT\CCRST212" />
+    <Folder Include="Change Scripts\DMV_CT\CCRST212\sprocs" />
+    <Folder Include="Change Scripts\DMV_RI" />
+    <Folder Include="Change Scripts\DMV_RI\CCRST212" />
+    <Folder Include="Change Scripts\DMV_RI\CCRST212\sprocs" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST213" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST213\Tables" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST213\Tables\DataLoad" />
+    <Folder Include="Change Scripts\DMV_MI_SOS\CCRST213" />
+    <Folder Include="Change Scripts\DMV_MI_SOS\CCRST213\stored procedures" />
+    <Folder Include="Change Scripts\DMV_MI\CCRST213" />
+    <Folder Include="Change Scripts\DMV_MI\CCRST213\stored procedures" />
+    <Folder Include="Change Scripts\DMV_NV\CCRST213" />
+    <Folder Include="Change Scripts\DMV_NV\CCRST213\sprocs" />
+    <Folder Include="Change Scripts\DMV_CO\CCRST211" />
+    <Folder Include="Change Scripts\DMV_CO\CCRST211\Scripts" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST215" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST215\Tables" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST215\Tables\DataLoad" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST218" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST226" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST220" />
+    <Folder Include="Change Scripts\DMV_NE\CCRST239\sprocs" />
+    <Folder Include="Change Scripts\DMV_NE\CCRST239\" />
+    <Folder Include="Change Scripts\DMV_Common" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST234DLAIntegration" />
+    <Folder Include="Change Scripts\DMV_Common\CCRST234DLAIntegration\PreDeploy" />
+    <Folder Include="Create Scripts\DMV_HI" />
+    <Folder Include="Create Scripts\DMV_HI\sprocs" />
+    <Folder Include="Create Scripts\DMV_TX" />
+    <Folder Include="Create Scripts\DMV_TX\sprocs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Schema Objects" />
+    <Folder Include="Schema Objects\Schemas" />
+    <Folder Include="Schema Objects\Schemas\dbo" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Defaults" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Functions" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Rules" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Types CLR" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Table Types" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\XML Schema Collections" />
+    <Folder Include="Schema Objects\Schemas\dbo\Service Broker" />
+    <Folder Include="Schema Objects\Schemas\dbo\Service Broker\Queues" />
+    <Folder Include="Schema Objects\Schemas\dbo\Synonyms" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Constraints" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Indexes" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Keys" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Triggers" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Statistics" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Indexes" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Triggers" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Statistics" />
+    <Folder Include="Schema Objects\Database Level Objects" />
+    <Folder Include="Schema Objects\Database Level Objects\Assemblies" />
+    <Folder Include="Schema Objects\Database Level Objects\Database Triggers" />
+    <Folder Include="Schema Objects\Database Level Objects\Security" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Schemas" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Users" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Certificates" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Asymmetric Keys" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Master Keys" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Signatures" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Symmetric Keys" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Database Encryption Keys" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Database Audit Specification" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\Application Roles" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\Database Roles" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Broker Priorities" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Contracts" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Event Notifications" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Message Types" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Remote Service Binding" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Routes" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Services" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Full Text Stoplists" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Filegroups" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Files" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Full Text Catalogs" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Partition Functions" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Partition Schemes" />
+    <Folder Include="Change Scripts" />
+    <Folder Include="Change Scripts\DMV_CO" />
+    <Folder Include="Change Scripts\DMV_CO\CategoryTracking" />
+    <Folder Include="Change Scripts\DMV_CO\DataCleaning" />
+    <Folder Include="Change Scripts\DMV_CO\DataFix" />
+    <Folder Include="Change Scripts\DMV_CO\PreviousDonorStatus" />
+    <Folder Include="Change Scripts\DMV_CO\RemoveDuplicatesUpdateStatus" />
+    <Folder Include="Change Scripts\DMV_CO\wyRegistrantInCO" />
+    <Folder Include="Change Scripts\DMV_MA" />
+    <Folder Include="Change Scripts\DMV_MA\scripts" />
+    <Folder Include="Change Scripts\DMV_ME" />
+    <Folder Include="Change Scripts\DMV_ME\scripts" />
+    <Folder Include="Change Scripts\DMV_NE" />
+    <Folder Include="Change Scripts\DMV_NE\scripts" />
+    <Folder Include="Change Scripts\DMV_NV" />
+    <Folder Include="Change Scripts\DMV_NV\scripts" />
+    <Folder Include="Change Scripts\DMV_WA" />
+    <Folder Include="Change Scripts\DMV_WA\scripts" />
+    <Folder Include="Create Scripts" />
+    <Folder Include="Create Scripts\CommonRegistry" />
+    <Folder Include="Create Scripts\CommonRegistry\reports" />
+    <Folder Include="Create Scripts\CommonRegistry\scripts" />
+    <Folder Include="Create Scripts\CommonRegistry\stored procedures" />
+    <Folder Include="Create Scripts\CommonRegistry\tables" />
+    <Folder Include="Create Scripts\CommonRegistry\tables\CreateTable" />
+    <Folder Include="Create Scripts\CommonRegistry\tables\DataLoad" />
+    <Folder Include="Create Scripts\CommonRegistry\tables\RelationalConstraint" />
+    <Folder Include="Create Scripts\CommonRegistry\tables\TableCostraint" />
+    <Folder Include="Create Scripts\CommonRegistry\tables\TableTrigger" />
+    <Folder Include="Create Scripts\DMV_CA" />
+    <Folder Include="Create Scripts\DMV_CA\scripts" />
+    <Folder Include="Create Scripts\DMV_CA\sprocs" />
+    <Folder Include="Create Scripts\DMV_CA\tables" />
+    <Folder Include="Create Scripts\DMV_CO" />
+    <Folder Include="Create Scripts\DMV_CO\ForeignKey" />
+    <Folder Include="Create Scripts\DMV_CO\Indexes" />
+    <Folder Include="Create Scripts\DMV_CO\sprocs" />
+    <Folder Include="Create Scripts\DMV_CO\Tables" />
+    <Folder Include="Create Scripts\DMV_CO\udf" />
+    <Folder Include="Create Scripts\DMV_CT" />
+    <Folder Include="Create Scripts\DMV_CT\scripts" />
+    <Folder Include="Create Scripts\DMV_CT\sprocs" />
+    <Folder Include="Create Scripts\DMV_CT\tables" />
+    <Folder Include="Create Scripts\DMV_CT\tables\CreateTables" />
+    <Folder Include="Create Scripts\DMV_KS" />
+    <Folder Include="Create Scripts\DMV_KS\scripts" />
+    <Folder Include="Create Scripts\DMV_MA" />
+    <Folder Include="Create Scripts\DMV_MA\scripts" />
+    <Folder Include="Create Scripts\DMV_MA\sprocs" />
+    <Folder Include="Create Scripts\DMV_MA\tables" />
+    <Folder Include="Create Scripts\DMV_MA\tables\CreateTables" />
+    <Folder Include="Create Scripts\DMV_ME" />
+    <Folder Include="Create Scripts\DMV_ME\scripts" />
+    <Folder Include="Create Scripts\DMV_ME\sprocs" />
+    <Folder Include="Create Scripts\DMV_ME\tables" />
+    <Folder Include="Create Scripts\DMV_ME\tables\CreateTables" />
+    <Folder Include="Create Scripts\DMV_MI" />
+    <Folder Include="Create Scripts\DMV_MI\Create Scripts" />
+    <Folder Include="Create Scripts\DMV_MI\Create Scripts\Stored Procedures" />
+    <Folder Include="Create Scripts\DMV_MI\Create Scripts\tables" />
+    <Folder Include="Create Scripts\DMV_MI\Queries" />
+    <Folder Include="Create Scripts\DMV_MI_SOS" />
+    <Folder Include="Create Scripts\DMV_MI_SOS\scripts" />
+    <Folder Include="Create Scripts\DMV_MI_SOS\sprocs" />
+    <Folder Include="Create Scripts\DMV_MI_SOS\tables" />
+    <Folder Include="Create Scripts\DMV_MN" />
+    <Folder Include="Create Scripts\DMV_MN\sprocs" />
+    <Folder Include="Create Scripts\DMV_MO" />
+    <Folder Include="Create Scripts\DMV_MO\Create Scripts" />
+    <Folder Include="Create Scripts\DMV_MT" />
+    <Folder Include="Create Scripts\DMV_MT\sprocs" />
+    <Folder Include="Create Scripts\DMV_NE" />
+    <Folder Include="Create Scripts\DMV_NE\scripts" />
+    <Folder Include="Create Scripts\DMV_NE\sprocs" />
+    <Folder Include="Create Scripts\DMV_NE\tables" />
+    <Folder Include="Create Scripts\DMV_NE\tables\Create Tables" />
+    <Folder Include="Create Scripts\DMV_NE\tables\Dataload" />
+    <Folder Include="Create Scripts\DMV_NH" />
+    <Folder Include="Create Scripts\DMV_NH\db" />
+    <Folder Include="Create Scripts\DMV_NH\scripts" />
+    <Folder Include="Create Scripts\DMV_NH\sprocs" />
+    <Folder Include="Create Scripts\DMV_NH\tables" />
+    <Folder Include="Create Scripts\DMV_NH\tables\CreateTables" />
+    <Folder Include="Create Scripts\DMV_NV" />
+    <Folder Include="Create Scripts\DMV_NV\sprocs" />
+    <Folder Include="Create Scripts\DMV_NV\tables" />
+    <Folder Include="Create Scripts\DMV_NV\tables\CreateTable" />
+    <Folder Include="Create Scripts\DMV_NV\tables\DataLoad" />
+    <Folder Include="Create Scripts\DMV_RI" />
+    <Folder Include="Create Scripts\DMV_RI\scripts" />
+    <Folder Include="Create Scripts\DMV_RI\sprocs" />
+    <Folder Include="Create Scripts\DMV_RI\tables" />
+    <Folder Include="Create Scripts\DMV_RI\tables\CreateTables" />
+    <Folder Include="Create Scripts\DMV_VT" />
+    <Folder Include="Create Scripts\DMV_VT\db" />
+    <Folder Include="Create Scripts\DMV_VT\scripts" />
+    <Folder Include="Create Scripts\DMV_VT\sprocs" />
+    <Folder Include="Create Scripts\DMV_WA" />
+    <Folder Include="Create Scripts\DMV_WA\sprocs" />
+    <Folder Include="Create Scripts\DMV_WY" />
+    <Folder Include="Create Scripts\DMV_WY\scripts" />
+    <Folder Include="Create Scripts\DMV_WY\sprocs" />
+    <Folder Include="Create Scripts\DMV_WY\table" />
+    <Folder Include="Create Scripts\sprocs" />
+    <Folder Include="Queries" />
+    <Folder Include="Properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connections.txt" />
+    <None Include="Change Scripts\CreateTable_StateDSNLookup.sql" />
+    <None Include="Change Scripts\DMV_CO\CategoryTracking\AlterTable_Registry.sql" />
+    <None Include="Change Scripts\DMV_CO\CategoryTracking\CreateTable_EventCategory.sql" />
+    <None Include="Change Scripts\DMV_CO\CategoryTracking\CreateTable_EventRegistry.sql" />
+    <None Include="Change Scripts\DMV_CO\CategoryTracking\CreateTable_EventSubCategory.sql" />
+    <None Include="Change Scripts\DMV_CO\CategoryTracking\CreateTable_ReportingStateDSN.sql" />
+    <None Include="Change Scripts\DMV_CO\CategoryTracking\CreateTable_ZipCodeCityRegion.sql" />
+    <None Include="Change Scripts\DMV_CO\CategoryTracking\Script_AddOldSourceCodes.sql" />
+    <None Include="Change Scripts\DMV_CO\CategoryTracking\Script_AddValues_EventCategories.sql" />
+    <None Include="Change Scripts\DMV_CO\CategoryTracking\Script_AddValues_ReportingStateDSN_CODA.sql" />
+    <None Include="Change Scripts\DMV_CO\CategoryTracking\Script_AddValues_ZipCodesCO.sql" />
+    <None Include="Change Scripts\DMV_CO\CategoryTracking\Script_AddValues_ZipCodesWY.sql" />
+    <None Include="Change Scripts\DMV_CO\CategoryTracking\Script_ConvertIncorrectSourceCodes.sql" />
+    <None Include="Change Scripts\DMV_CO\CategoryTracking\Script_ConvertOldSourceCodes.sql" />
+    <None Include="Change Scripts\DMV_CO\CategoryTracking\Script_SetBlankEventCategoryNamesToInactive.sql" />
+    <None Include="Change Scripts\DMV_CO\DataCleaning\Script_CleanValuesRegistryDOB.sql" />
+    <None Include="Change Scripts\DMV_CO\DataFix\CODA_RegistryLastModifiedFix.sql" />
+    <None Include="Change Scripts\DMV_CO\DataFix\dmv_coUpdate.sql" />
+    <None Include="Change Scripts\DMV_CO\PreviousDonorStatus\Add_Column_PreviousDonor.sql" />
+    <None Include="Change Scripts\DMV_CO\RemoveDuplicatesUpdateStatus\Script_RemoveRegistryDuplicates.sql" />
+    <None Include="Change Scripts\DMV_CO\RemoveDuplicatesUpdateStatus\Test.sql" />
+    <None Include="Change Scripts\DMV_CO\wyRegistrantInCO\FixRegistrants.sql" />
+    <None Include="Change Scripts\DMV_MA\scripts\UpdateDMVLastModified.sql" />
+    <None Include="Change Scripts\DMV_NE\scripts\NORS_VerificationForm_Update.sql" />
+    <None Include="Change Scripts\DMV_NV\scripts\Counts gender and county.sql" />
+    <None Include="Change Scripts\DMV_NV\scripts\Counts Race Gender Geographical Area.sql" />
+    <None Include="Change Scripts\DMV_NV\scripts\UpdateDMVLastModified.sql" />
+    <None Include="Change Scripts\DMV_WA\scripts\Script_CleanRegistryNames.sql" />
+    <None Include="Change Scripts\Script_AddValues_StateDSNLookup.sql" />
+    <None Include="Change Scripts\Script_Create_DMV_Common.sql" />
+    <None Include="Create Scripts\CommonRegistry\scripts\Script_Add_ReportStatesToDSNLookup.sql" />
+    <None Include="Create Scripts\CommonRegistry\scripts\Script_AddrType_AddValues.sql" />
+    <None Include="Create Scripts\CommonRegistry\scripts\Script_RegistryOwnerStateConfig_AddValues.sql" />
+    <None Include="Create Scripts\CommonRegistry\scripts\Script_SetVermont_Active.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\DeleteEventCategory.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\DeleteEventRegistry.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\DeleteEventSubCategory.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\DeleteIDologyLog.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\DeleteRegistryAddr.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\DeleteRegistryDigitalCertificate.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\DeleteRegistryOwner.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\DeleteRegistryOwnerGrantedAccess.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\DeleteRegistryOwnerStateConfig.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetDataListRegistrySearchResults.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetDMVRegistrySearchResults_Select.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetDMVVerification_Select.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetEventCategory.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetEventRegistry.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetEventSubCategory.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetExistingDonor.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetFormElectronicSignature.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetFormVerification.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetIDologyLog.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetRegistry.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetRegistryAddr.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetRegistryDigitalCertificate.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetRegistryLabelsReport.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetRegistryLabelsWeb_select.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetRegistryOwner.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetRegistryOwnerElectronicSignatureText.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetRegistryOwnerEnrollmentConfirmationText.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetRegistryOwnerEnrollmentFormText.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetRegistryOwnerGrantedAccess.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetRegistryOwnerStateConfig.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetRegistryOwnerStateDMVSearchOptions.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetRegistryOwnerStateVerificationText.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetRegistryOwnerUserOrg.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetStateParameterLookup.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetWebRegistrySearchResults_Select.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetWebVerification_Select.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\InsertEventCategory.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\InsertEventRegistry.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\InsertEventSubCategory.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\InsertIDologyLog.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\InsertRegistry.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\InsertRegistryAddr.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\InsertRegistryDigitalCertificate.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\InsertRegistryOwnerGrantedAccess.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\sps_CheckRegistry_DMVLoad.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\sps_CheckRegistry_RegLoad.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\sps_CheckRegistryV2.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\sps_Common_RegistryStatisticsReport.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\sps_EventCategoryLookup.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\sps_EventSubCategoryLookup.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\sps_ParameterEventLookup.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\UpdateEventCategory.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\UpdateEventRegistry.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\UpdateEventSubCategory.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\UpdateIDologyLog.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\UpdateRegistry.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\UpdateRegistryAddr.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\UpdateRegistryDigitalCertificate.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\UpdateRegistryOwner.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\UpdateRegistryOwnerGrantedAccess.sql" />
+    <None Include="Create Scripts\CommonRegistry\stored procedures\UpdateRegistryOwnerStateConfig.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\CreateTable\CreateTable_AddrType.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\CreateTable\CreateTable_EventCategory.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\CreateTable\CreateTable_EventRegistry.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\CreateTable\CreateTable_EventSubCategory.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\CreateTable\CreateTable_IDologyLog.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\CreateTable\CreateTable_Registry.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\CreateTable\CreateTable_RegistryAddr.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\CreateTable\CreateTable_RegistryDigitalCertificate.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\CreateTable\CreateTable_RegistryOwner.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\CreateTable\CreateTable_RegistryOwnerElectronicSignatureText.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\CreateTable\CreateTable_RegistryOwnerEnrollmentText.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\CreateTable\CreateTable_RegistryOwnerGrantedAccess.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\CreateTable\CreateTable_RegistryOwnerStateConfig.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\CreateTable\CreateTable_RegistryOwnerUserOrg.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\CreateTable\CreateTable_RegistryDla.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\DataLoad\AddNebraskaEventCategoryForDataConversion.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\DataLoad\AddNebraskaStateDSNLookup.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\DataLoad\AddNevadaEventCategoryForDataConversion.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\DataLoad\AddNevadaStateDSNLookup.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\DataLoad\AddRegistryOwnerCSSFileLocation.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\DataLoad\RegistryOwnerElectronicSignatureText.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\DataLoad\RegistryOwnerEnrollmentText.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\DataLoad\RegistryOwnerStateConfig.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\DataLoad\RegistryOwnerUserOrg.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\DataLoad\Update_NDN_RouteName.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\DataLoad\UpdateNebraskaRegistryOwnerElectronicSignatureText.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\DataLoad\UpdateNebraskaRegistryOwnerEnrollmentForm.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\RelationalConstraint\CreateConstraintForeign_EventCategory.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\RelationalConstraint\CreateConstraintForeign_EventRegistry.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\RelationalConstraint\CreateConstraintForeign_EventSubCategory.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\RelationalConstraint\CreateConstraintForeign_RegistryAddr.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\RelationalConstraint\CreateConstraintForeign_RegistryDigitalCertificate.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\RelationalConstraint\CreateConstraintForeign_RegistryOwnerElectronicSignatureText.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\RelationalConstraint\CreateConstraintForeign_RegistryOwnerEnrollmentText.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\RelationalConstraint\CreateConstraintForeign_RegistryOwnerGrantedAccess.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\RelationalConstraint\CreateConstraintForeign_RegistryOwnerStateConfig.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\TableCostraint\CreateConstraintTable_AddrType.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\TableCostraint\CreateConstraintTable_EventCategory.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\TableCostraint\CreateConstraintTable_EventRegistry.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\TableCostraint\CreateConstraintTable_EventSubCategory.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\TableCostraint\CreateConstraintTable_IDologyLog.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\TableCostraint\CreateConstraintTable_Registry.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\TableCostraint\CreateConstraintTable_RegistryAddr.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\TableCostraint\CreateConstraintTable_RegistryDigitalCertificate.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\TableCostraint\CreateConstraintTable_RegistryOwner.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\TableCostraint\CreateConstraintTable_RegistryOwnerElectronicSignatureText.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\TableCostraint\CreateConstraintTable_RegistryOwnerEnrollmentText.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\TableCostraint\CreateConstraintTable_RegistryOwnerGrantedAccess.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\TableCostraint\CreateConstraintTable_RegistryOwnerStateConfig.sql" />
+    <None Include="Create Scripts\CommonRegistry\tables\TableTrigger\RegistryDigitalCertificateDenyUpdate.sql" />
+    <None Include="Create Scripts\DMV_CA\scripts\Script_AddValuesToTable.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\spf_CreateDMVADDRTempTable.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\spf_CreateDMVOrganTempTable.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\spf_CreateDMVTempTable.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\spf_DropDMVADDRTable.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\spf_DropDMVOrganTable.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\spf_DropDMVTable.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\spf_Reseed_DMVTempTable.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\spi_DMVIMPORT_ImportApply_A.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\sps_CheckRegistry_DMVLoad.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\sps_CheckRegistry_DMVv2.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\sps_Checkregistry_REGLoad.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\sps_DMVIMPORT_A_DataCleanupInvalidAddress.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\sps_DMVIMPORT_A_DataCleanupReplaceNonAlphaName.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\sps_DMVIMPORT_A_DataCleanupUpperDonor .sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\sps_DMVIMPORT_A_DataCleanupUpperGender.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\sps_DMVIMPORT_All_ImportArchive.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\sps_DMVIMPORT_All_ImportDonor.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\sps_DMVIMPORT_All_ImportDonorFull.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\sps_DMVIMPORT_ImportInitialize.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\sps_GetRegistryData.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\sps_IMPORT_All_ImportDonorRegistry.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\spu_DMVFullNameParse.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\spu_DMVIMPORT_A_DataCleanupDuplicateLicense.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\spu_DMVIMPORT_A_DataCleanupInvalidDOB.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\spu_DMVIMPORT_A_DataCleanupInvalidFirstLast.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\spu_DMVIMPORT_A_DataCleanupInvalidLicense.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\spu_DMVIMPORT_All_ImportLog2.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\spu_DMVIMPORT_All_ImportLogStats.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\spu_DMVIMPORT_DataCleanupReplaceEmptyString.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\spu_DMVIMPORT_DataCleanupTrimBlanks.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\spu_DMVIMPORT_GetDMVCreateDate.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\spu_DMVIMPORT_ImportLog1.sql" />
+    <None Include="Create Scripts\DMV_CA\sprocs\spu_IMPORT_ApplyLimitsCursor.sql" />
+    <None Include="Create Scripts\DMV_CA\tables\CreatTable_DMV.sql" />
+    <None Include="Create Scripts\DMV_CA\tables\CreatTable_DMVArchive.sql" />
+    <None Include="Create Scripts\DMV_CA\tables\CreatTable_DMVImport.sql" />
+    <None Include="Create Scripts\DMV_CA\tables\CreatTable_DMVIMPORT_A.sql" />
+    <None Include="Create Scripts\DMV_CA\tables\CreatTable_DMVIMPORTFILES.sql" />
+    <None Include="Create Scripts\DMV_CA\tables\CreatTable_DMVImportLog.sql" />
+    <None Include="Create Scripts\DMV_CA\tables\CreatTable_DMVImportLogStats.sql" />
+    <None Include="Create Scripts\DMV_CA\tables\CreatTable_DMVSuspense.sql" />
+    <None Include="Create Scripts\DMV_CA\tables\CreatTable_DMVSuspense_A.sql" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.ACCESSTYPE.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.ADDRTYPE.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.CO_Donor_Registry.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.CO_OnLine_Registry.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.DMV.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.DMVADDR.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.DMVARCHIVE.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.DMVARCHIVEADDR.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.DMVARCHIVEORGAN.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.DMVARCHIVETYPE.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.DMVORGAN.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.EventSourceCodes.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.IMPORT.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.IMPORT_A.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.IMPORT_B.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.IMPORT_C.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.IMPORTARCHIVE.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.IMPORTARCHIVE_A.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.IMPORTARCHIVE_B.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.IMPORTARCHIVE_C.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.IMPORTFILES.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.IMPORTLOG.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.IMPORTLOGSTATS.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.legacy.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.ORGANTYPE.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.QueryLog.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.REGISTRY.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.REGISTRYADDR.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.REGISTRYARCHIVE.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.REGISTRYARCHIVEADDR.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.REGISTRYARCHIVETYPE.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.RegistryEventSourceCodes.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.REGISTRYORGAN.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.ServiceConsultants.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.SUSPENSE.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.SUSPENSE_A.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.SUSPENSE_B.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.SUSPENSE_C.fky" />
+    <None Include="Create Scripts\DMV_CO\ForeignKey\dbo.WEBUSER.fky" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.ACCESSTYPE.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.ADDRTYPE.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.CO_Donor_Registry.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.CO_OnLine_Registry.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.DMV.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.DMVADDR.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.DMVARCHIVE.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.DMVARCHIVEADDR.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.DMVARCHIVEORGAN.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.DMVARCHIVETYPE.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.DMVORGAN.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.EventSourceCodes.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.IMPORT.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.IMPORT_A.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.IMPORT_B.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.IMPORT_C.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.IMPORT_D.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.IMPORTARCHIVE.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.IMPORTARCHIVE_A.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.IMPORTARCHIVE_B.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.IMPORTARCHIVE_C.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.IMPORTFILES.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.IMPORTLOG.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.IMPORTLOGSTATS.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.legacy.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.ORGANTYPE.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.QueryLog.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.REGISTRY.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.REGISTRYADDR.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.REGISTRYARCHIVE.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.REGISTRYARCHIVEADDR.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.REGISTRYARCHIVETYPE.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.RegistryEventSourceCodes.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.REGISTRYORGAN.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.ServiceConsultants.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.SUSPENSE.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.SUSPENSE_A.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.SUSPENSE_B.kci" />
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.SUSPENSE_C.kci" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sp_RebuildIndex.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spf_IMPORT_ALL_CheckRecordCounts.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spi_Archive_Deceased.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spi_Archive_OutOfState.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spi_Import_ImportApply_A.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spi_IMPORT_ImportApply_B.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spi_IMPORT_ImportApply_C.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spi_IMPORT_ImportInitialize.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spi_IMPORT_ImportInitializeTest.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spi_QueryLog.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spi_Registry_Archive_Deceased.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spi_Registry_Archive_Removed.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spi_SourceEvent.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spi_WebUser.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_Access_BW.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_AccessType.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_CheckRegistry.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.SPS_CheckRegistry_DMV.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\sps_checkregistry_DMVLoad.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\SPS_CheckRegistry_DMVv2.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.SPS_CheckRegistry_REG.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.SPS_CheckRegistry_REGLoad.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.SPS_CheckRegistry_REGv2.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_CheckRegistryv2.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_CheckRegistryv2Test.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_DMVwildcard.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_DonorRegistryByGenderAgeAndDonorStatus.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_DonorRegistryByGenderAgeAndDonorStatus2.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_DonorRegistryByGenderAgeAndSource.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_DonorRegistryByGenderAgeAndSource2.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_DonorRegistryByGenderAndAge.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_DonorRegistryByGenderAndAge2.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_DonorRegistrySource.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_GetRegistryData.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_GetServerDB.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_IMPORT_A_DataCleanupInvalidAddress.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_IMPORT_A_DataCleanupInvalidGender.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_IMPORT_A_DataCleanupReplaceNonAlphaName.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_IMPORT_A_DataCleanupUpperDonor.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_IMPORT_A_DataCleanupUpperGender.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_IMPORT_A_ImportSuspense.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_IMPORT_All_ImportArchive.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_IMPORT_All_ImportArchiveBULK.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_IMPORT_All_ImportDonor.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_IMPORT_ALL_ImportSuspense.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_IMPORT_B_DataCleanupReplaceNonAlphaName.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_IMPORT_B_ImportSuspense.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_IMPORT_C_DataCleanupInvalidAddress.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_IMPORT_C_ImportSuspense.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_IMPORT_ImportInitialize.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_ReportUnsigned.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_SourceEvent.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_WebUser.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_WebUserbyID.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_WebUserEmail.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_WebUserLogin.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.sps_WebUserUpSert.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_ConfirmOnlineRegistrant.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_IMPORT_A_DataCleanupDeceasedDate.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_IMPORT_A_DataCleanupInvalidDOB.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_IMPORT_A_DataCleanupInvalidFirstLast.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_IMPORT_A_DataCleanupInvalidLicense.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_IMPORT_All_ImportLog2.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_IMPORT_All_ImportLogStats.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_IMPORT_All_ImportOverwriteGuard.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_IMPORT_B_DataCleanupDuplicateLicense.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_IMPORT_B_DataCleanupInvalidDOB.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_IMPORT_B_DataCleanupInvalidFirstLast.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_IMPORT_B_DataCleanupInvalidLicense.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_IMPORT_C_DataCleanupDuplicateLicense.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_IMPORT_C_DataCleanupInvalidLicense.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_IMPORT_DataCleanupReplaceEmptyString.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_IMPORT_DataCleanupTrimBlanks.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_IMPORT_ImportLog1.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_SetOnlineMailerDate.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_SourceEvent.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_Suspense_B_CleanUpLicenseDups.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spui_Registry.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.SPUI_REGISTRYADDR.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spui_RegistryTest.prc" />
+    <None Include="Create Scripts\DMV_CO\sprocs\GetRegistryLabelsDMV_select.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\sps_EventCategory.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\sps_EventSubCategory.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\sps_WebUser.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\sps_WebUSerbyID.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\spui_EventCategory.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\spui_EventRegistry.sql" />
+    <None Include="Create Scripts\DMV_CO\sprocs\spui_EventSubCategory.sql" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.ACCESSTYPE.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.ADDRTYPE.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.CO_Donor_Registry.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.CO_OnLine_Registry.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.DMV.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.DMVADDR.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.DMVARCHIVE.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.DMVARCHIVEADDR.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.DMVARCHIVEORGAN.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.DMVARCHIVETYPE.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.DMVORGAN.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.EventSourceCodes.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.IMPORT.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.IMPORT_A.sql" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.IMPORT_B.sql" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.IMPORT_C.sql" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.IMPORT_D.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.IMPORTARCHIVE.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.IMPORTARCHIVE_A.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.IMPORTARCHIVE_B.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.IMPORTARCHIVE_C.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.IMPORTFILES.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.IMPORTLOG.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.IMPORTLOGSTATS.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.legacy.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.ORGANTYPE.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.QueryLog.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.REGISTRY.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.REGISTRYADDR.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.REGISTRYARCHIVE.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.REGISTRYARCHIVEADDR.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.REGISTRYARCHIVETYPE.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.RegistryEventSourceCodes.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.REGISTRYORGAN.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.ServiceConsultants.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.SUSPENSE.tab" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.SUSPENSE_A.sql" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.SUSPENSE_B.sql" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.SUSPENSE_C.sql" />
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.WEBUSER.tab" />
+    <None Include="Create Scripts\DMV_CO\udf\dbo.REMOVE_BAD20.udf" />
+    <None Include="Create Scripts\DMV_CO\udf\dbo.REMOVE_BAD25.udf" />
+    <None Include="Create Scripts\DMV_CO\udf\dbo.REMOVE_BAD255.udf" />
+    <None Include="Create Scripts\DMV_CT\scripts\Script_Add_Column_PreviousDonorState.sql" />
+    <None Include="Create Scripts\DMV_CT\scripts\Script_AddValues_ZipCodesCT.sql" />
+    <None Include="Create Scripts\DMV_CT\sprocs\GetRegistryLabelsDMV_select.sql" />
+    <None Include="Create Scripts\DMV_CT\sprocs\GetZipCodeCityRegion..sql" />
+    <None Include="Create Scripts\DMV_CT\sprocs\spi_Import_Adds.sql" />
+    <None Include="Create Scripts\DMV_CT\sprocs\sps_ActionableDesignationVolumeByStatus.sql" />
+    <None Include="Create Scripts\DMV_CT\sprocs\sps_ActionableDesignationVolumeByZipCode.sql" />
+    <None Include="Create Scripts\DMV_CT\sprocs\sps_ActionableDesignationVolumeCountsEvent.sql" />
+    <None Include="Create Scripts\DMV_CT\sprocs\sps_CheckRegistry_DMVLoad.sql" />
+    <None Include="Create Scripts\DMV_CT\sprocs\sps_CheckRegistry_RegLoad.sql" />
+    <None Include="Create Scripts\DMV_CT\sprocs\sps_CheckRegistry_REGv2.sql" />
+    <None Include="Create Scripts\DMV_CT\sprocs\sps_CheckRegistryv2.sql" />
+    <None Include="Create Scripts\DMV_CT\sprocs\sps_GetRegistryData.sql" />
+    <None Include="Create Scripts\DMV_CT\sprocs\sps_Import_All_ImportArchive.sql" />
+    <None Include="Create Scripts\DMV_CT\sprocs\sps_RegistryStatisticsReport.sql" />
+    <None Include="Create Scripts\DMV_CT\sprocs\spu_Import_Deletes.sql" />
+    <None Include="Create Scripts\DMV_CT\sprocs\UpdateImportLog.sql" />
+    <None Include="Create Scripts\DMV_CT\tables\CreateTables\DMV.sql" />
+    <None Include="Create Scripts\DMV_CT\tables\CreateTables\ZipCodeCityRegion.sql" />
+    <None Include="Create Scripts\DMV_KS\scripts\sps_CheckRegistry_DMVLoad.sql" />
+    <None Include="Create Scripts\DMV_MA\scripts\Script_Add_Column_PreviousDonorState.sql" />
+    <None Include="Create Scripts\DMV_MA\scripts\Script_AddValues_ZipCodesMA.sql" />
+    <None Include="Create Scripts\DMV_MA\sprocs\GetRegistryLabelsDMV_select.sql" />
+    <None Include="Create Scripts\DMV_MA\sprocs\GetZipCodeCityRegion..sql" />
+    <None Include="Create Scripts\DMV_MA\sprocs\spf_CreateDMVTempTable.sql" />
+    <None Include="Create Scripts\DMV_MA\sprocs\spf_Reseed_DMVTempTable.sql" />
+    <None Include="Create Scripts\DMV_MA\sprocs\spi_IMPORT_ImportApply_A.sql" />
+    <None Include="Create Scripts\DMV_MA\sprocs\sps_ActionableDesignationVolumeByStatus.sql" />
+    <None Include="Create Scripts\DMV_MA\sprocs\sps_ActionableDesignationVolumeByZipCode.sql" />
+    <None Include="Create Scripts\DMV_MA\sprocs\sps_ActionableDesignationVolumeCountsEvent.sql" />
+    <None Include="Create Scripts\DMV_MA\sprocs\sps_CheckRegistry_DMVLoad.sql" />
+    <None Include="Create Scripts\DMV_MA\sprocs\sps_CheckRegistry_RegLoad.sql" />
+    <None Include="Create Scripts\DMV_MA\sprocs\sps_CheckRegistry_REGv2.sql" />
+    <None Include="Create Scripts\DMV_MA\sprocs\sps_CheckRegistryv2.sql" />
+    <None Include="Create Scripts\DMV_MA\sprocs\sps_GetRegistryData.sql" />
+    <None Include="Create Scripts\DMV_MA\sprocs\sps_IMPORT_All_ImportDonor.sql" />
+    <None Include="Create Scripts\DMV_MA\sprocs\sps_IMPORT_All_ImportDonorFull.sql" />
+    <None Include="Create Scripts\DMV_MA\sprocs\sps_RegistryStatisticsReport.sql" />
+    <None Include="Create Scripts\DMV_MA\tables\CreateTables\DMV.sql" />
+    <None Include="Create Scripts\DMV_MA\tables\CreateTables\ZipCodeCityRegion.sql" />
+    <None Include="Create Scripts\DMV_ME\scripts\Script_Add_Column_PreviousDonorState.sql" />
+    <None Include="Create Scripts\DMV_ME\scripts\Script_AddValues_ZipCodesME.sql" />
+    <None Include="Create Scripts\DMV_ME\sprocs\GetRegistryLabelsDMV_select.sql" />
+    <None Include="Create Scripts\DMV_ME\sprocs\GetZipCodeCityRegion..sql" />
+    <None Include="Create Scripts\DMV_ME\sprocs\spf_CreateDMVTempTable.sql" />
+    <None Include="Create Scripts\DMV_ME\sprocs\spf_Reseed_DMVTempTable.sql" />
+    <None Include="Create Scripts\DMV_ME\sprocs\spi_IMPORT_ImportApply_A.sql" />
+    <None Include="Create Scripts\DMV_ME\sprocs\sps_ActionableDesignationVolumeByStatus.sql" />
+    <None Include="Create Scripts\DMV_ME\sprocs\sps_ActionableDesignationVolumeByZipCode.sql" />
+    <None Include="Create Scripts\DMV_ME\sprocs\sps_ActionableDesignationVolumeCountsEvent.sql" />
+    <None Include="Create Scripts\DMV_ME\sprocs\sps_CheckRegistry_DMVLoad.sql" />
+    <None Include="Create Scripts\DMV_ME\sprocs\sps_CheckRegistry_RegLoad.sql" />
+    <None Include="Create Scripts\DMV_ME\sprocs\sps_CheckRegistry_REGv2.sql" />
+    <None Include="Create Scripts\DMV_ME\sprocs\sps_CheckRegistryv2.sql" />
+    <None Include="Create Scripts\DMV_ME\sprocs\sps_GetRegistryData.sql" />
+    <None Include="Create Scripts\DMV_ME\sprocs\sps_IMPORT_All_ImportArchive.sql" />
+    <None Include="Create Scripts\DMV_ME\sprocs\sps_IMPORT_All_ImportDonor.sql" />
+    <None Include="Create Scripts\DMV_ME\sprocs\sps_IMPORT_All_ImportDonorFull.sql" />
+    <None Include="Create Scripts\DMV_ME\sprocs\sps_RegistryStatisticsReport.sql" />
+    <None Include="Create Scripts\DMV_ME\tables\CreateTables\DMV.sql" />
+    <None Include="Create Scripts\DMV_ME\tables\CreateTables\ZipCodeCityRegion.sql" />
+    <None Include="Create Scripts\DMV_MI\Create Scripts\Stored Procedures\spi_IMPORT_ImportApply_XLS.sql" />
+    <None Include="Create Scripts\DMV_MI\Create Scripts\Stored Procedures\SPI_IMPORT_SUSPENSE_A.sql" />
+    <None Include="Create Scripts\DMV_MI\Create Scripts\Stored Procedures\spi_Registry_Inactivate.sql" />
+    <None Include="Create Scripts\DMV_MI\Create Scripts\Stored Procedures\spi_Registry_Reactivate.sql" />
+    <None Include="Create Scripts\DMV_MI\Create Scripts\Stored Procedures\spi_Suspense_Archive.sql" />
+    <None Include="Create Scripts\DMV_MI\Create Scripts\Stored Procedures\sps_CheckRegistry.sql" />
+    <None Include="Create Scripts\DMV_MI\Create Scripts\Stored Procedures\sps_CheckRegistry_DMVLoad.sql" />
+    <None Include="Create Scripts\DMV_MI\Create Scripts\Stored Procedures\SPS_CheckRegistry_REGLoad.sql" />
+    <None Include="Create Scripts\DMV_MI\Create Scripts\Stored Procedures\sps_checkRegistryv2MI.sql" />
+    <None Include="Create Scripts\DMV_MI\Create Scripts\Stored Procedures\sps_GetRegistryData.sql" />
+    <None Include="Create Scripts\DMV_MI\Create Scripts\Stored Procedures\sps_GetRegistryDataSOS.sql" />
+    <None Include="Create Scripts\DMV_MI\Create Scripts\Stored Procedures\sps_GetSuspense_OneAtATime.sql" />
+    <None Include="Create Scripts\DMV_MI\Create Scripts\Stored Procedures\sps_IMPORT_All_ImportDonor.sql" />
+    <None Include="Create Scripts\DMV_MI\Create Scripts\Stored Procedures\sps_WebUser.sql" />
+    <None Include="Create Scripts\DMV_MI\Create Scripts\Stored Procedures\sps_WebUserByID.sql" />
+    <None Include="Create Scripts\DMV_MI\Create Scripts\Stored Procedures\sps_WebUserEmail.sql" />
+    <None Include="Create Scripts\DMV_MI\Create Scripts\Stored Procedures\spu_UpdateSuspense_OneAtATime.sql" />
+    <None Include="Create Scripts\DMV_MI\Create Scripts\Stored Procedures\spui_Registry_MI.sql" />
+    <None Include="Create Scripts\DMV_MI\Create Scripts\tables\CreateTable_Import_XLS.sql" />
+    <None Include="Create Scripts\DMV_MI\Create Scripts\tables\CreateTable_Registry_stage.sql" />
+    <None Include="Create Scripts\DMV_MI\Create Scripts\tables\CreateTable_RegistryGUID.sql" />
+    <None Include="Create Scripts\DMV_MI\Create Scripts\tables\CreateTable_RegistryImportLog.sql" />
+    <None Include="Create Scripts\DMV_MI\Queries\Counts by Zip Code.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\scripts\Script_DataTables_SOS.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\spf_CreateDMVADDRTempTable.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\spf_CreateDMVOrganTempTable.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\spf_CreateDMVTempTable.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\spf_DropDMVADDRTable.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\spf_DropDMVOrganTable.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\spf_DropDMVTable.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\spf_Reseed_DMVTempTable.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\spi_IMPORT_ImportApply_A.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\spi_IMPORT_ImportApply_XML.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\sps_GetRegistryData.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\sps_IMPORT_A_DataCleanupInvalidAddress.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\sps_IMPORT_A_DataCleanupReplaceNonAlphaName.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\sps_IMPORT_A_DataCleanupUpperDonor.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\sps_IMPORT_All_ImportDonorFull.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\sps_IMPORT_ImportInitialize.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\spu_FullNameParse.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\spu_IMPORT_A_DataCleanupInvalidDOB.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\spu_IMPORT_A_DataCleanupInvalidFirstLast.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\spu_IMPORT_A_DataCleanupInvalidFullName.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\spu_IMPORT_DataCleanupReplaceEmptyString.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\spu_IMPORT_DataCleanupTrimBlanks.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\tables\CreateTabe_Import_MXL.sql" />
+    <None Include="Create Scripts\DMV_MI_SOS\tables\CreateTable_SUSPENSE_A.sql" />
+    <None Include="Create Scripts\DMV_MN\sprocs\spf_Reseed_DMVTempTable.sql" />
+    <None Include="Create Scripts\DMV_MO\Create Scripts\sps_CheckRegistry_DMVLoad.sql" />
+    <None Include="Create Scripts\DMV_MO\Create Scripts\sps_CheckRegistry_REGLoad.sql" />
+    <None Include="Create Scripts\DMV_MT\sprocs\sps_CheckRegistry_DMVLoad.sql" />
+    <None Include="Create Scripts\DMV_MT\sprocs\sps_CheckRegistry_REGLoad.sql" />
+    <None Include="Create Scripts\DMV_NE\scripts\Script_Add_Column_PreviousDonorState.sql" />
+    <None Include="Create Scripts\DMV_NE\scripts\Script_Add_Column_Race.sql" />
+    <None Include="Create Scripts\DMV_NE\scripts\Script_Add_Column_SendInfoFlag.sql" />
+    <None Include="Create Scripts\DMV_NE\scripts\Script_AddValues_Race.sql" />
+    <None Include="Create Scripts\DMV_NE\sprocs\GetDMVVerification_select.sql" />
+    <None Include="Create Scripts\DMV_NE\sprocs\GetRegitryLabelsDMV_select.sql" />
+    <None Include="Create Scripts\DMV_NE\sprocs\spf_CreateDMVAddrTempTable.sql" />
+    <None Include="Create Scripts\DMV_NE\sprocs\spf_CreateDMVTempTable.sql" />
+    <None Include="Create Scripts\DMV_NE\sprocs\spf_DropDMVAddrTable.sql" />
+    <None Include="Create Scripts\DMV_NE\sprocs\spf_DropDMVTable.sql" />
+    <None Include="Create Scripts\DMV_NE\sprocs\spi_IMPORT_ImportApply_A.sql" />
+    <None Include="Create Scripts\DMV_NE\sprocs\sps_ActionableDesignationVolumeByStatus.sql" />
+    <None Include="Create Scripts\DMV_NE\sprocs\sps_ActionableDesignationVolumeByZipCode.sql" />
+    <None Include="Create Scripts\DMV_NE\sprocs\sps_ActionableDesignationVolumeCountsEvent.sql" />
+    <None Include="Create Scripts\DMV_NE\sprocs\sps_CheckRegistryv2.sql" />
+    <None Include="Create Scripts\DMV_NE\sprocs\sps_IMPORT_All_ImportDonor.sql" />
+    <None Include="Create Scripts\DMV_NE\sprocs\sps_IMPORT_All_ImportDonorFull.sql" />
+    <None Include="Create Scripts\DMV_NE\sprocs\sps_PrintLabelsDMVSendInfo.sql" />
+    <None Include="Create Scripts\DMV_NE\sprocs\sps_RegistryStatisicsReport.sql" />
+    <None Include="Create Scripts\DMV_NE\tables\Create Tables\CreateTable_Race.sql" />
+    <None Include="Create Scripts\DMV_NE\tables\Dataload\NEOB_RegistryDataMigration.sql" />
+    <None Include="Create Scripts\DMV_NH\db\DMV_NH_db-Creation.sql" />
+    <None Include="Create Scripts\DMV_NH\scripts\NEOB_ReplecateWebUsers.sql" />
+    <None Include="Create Scripts\DMV_NH\scripts\Script_Add_Column_PreviousDonorState.sql" />
+    <None Include="Create Scripts\DMV_NH\scripts\Script_AddValues_ZipCodesNH.sql" />
+    <None Include="Create Scripts\DMV_NH\scripts\Script_ImportFiles_AddValues.sql" />
+    <None Include="Create Scripts\DMV_NH\sprocs\GetRegistryLabelsDMV_select.sql" />
+    <None Include="Create Scripts\DMV_NH\sprocs\GetZipCodeCityRegion..sql" />
+    <None Include="Create Scripts\DMV_NH\sprocs\spf_CreateDMVTempTable.sql" />
+    <None Include="Create Scripts\DMV_NH\sprocs\spi_IMPORT_ImportApply_A.sql" />
+    <None Include="Create Scripts\DMV_NH\sprocs\sps_ActionableDesignationVolumeByStatus.sql" />
+    <None Include="Create Scripts\DMV_NH\sprocs\sps_ActionableDesignationVolumeByZipCode.sql" />
+    <None Include="Create Scripts\DMV_NH\sprocs\sps_ActionableDesignationVolumeCountsEvent.sql" />
+    <None Include="Create Scripts\DMV_NH\sprocs\sps_CheckRegistry_DMVLoad.sql" />
+    <None Include="Create Scripts\DMV_NH\sprocs\SPS_CheckRegistry_DMVNEOB.sql" />
+    <None Include="Create Scripts\DMV_NH\sprocs\sps_CheckRegistry_NEOB.sql" />
+    <None Include="Create Scripts\DMV_NH\sprocs\sps_CheckRegistry_RegLoad.sql" />
+    <None Include="Create Scripts\DMV_NH\sprocs\sps_CheckRegistry_REGv2.sql" />
+    <None Include="Create Scripts\DMV_NH\sprocs\sps_CheckRegistryv2.sql" />
+    <None Include="Create Scripts\DMV_NH\sprocs\sps_GetRegistryData.sql" />
+    <None Include="Create Scripts\DMV_NH\sprocs\sps_IMPORT_All_ImportDonor.sql" />
+    <None Include="Create Scripts\DMV_NH\sprocs\sps_IMPORT_All_ImportDonorFull.sql" />
+    <None Include="Create Scripts\DMV_NH\sprocs\sps_RegistryStatisticsReport.sql" />
+    <None Include="Create Scripts\DMV_NH\sprocs\spu_IMPORT_All_ImportLogStats.sql" />
+    <None Include="Create Scripts\DMV_NH\tables\CreateTables\DMV.sql" />
+    <None Include="Create Scripts\DMV_NH\tables\CreateTables\ZipCodeCityRegion.sql" />
+    <None Include="Create Scripts\DMV_NV\sprocs\GetDMVVerification_select.sql" />
+    <None Include="Create Scripts\DMV_NV\sprocs\GetRegistryLabelsDMV_select.sql" />
+    <None Include="Create Scripts\DMV_NV\sprocs\GetZipCodeCityRegion.sql" />
+    <None Include="Create Scripts\DMV_NV\sprocs\spf_CreateDMVTempTable.sql" />
+    <None Include="Create Scripts\DMV_NV\sprocs\spf_Reseed_DMVTempTable.sql" />
+    <None Include="Create Scripts\DMV_NV\sprocs\sps_ActionableDesignationVolumeByStatus.sql" />
+    <None Include="Create Scripts\DMV_NV\sprocs\sps_ActionableDesignationVolumeByZipCode.sql" />
+    <None Include="Create Scripts\DMV_NV\sprocs\sps_ActionableDesignationVolumeCountsEvent.sql" />
+    <None Include="Create Scripts\DMV_NV\sprocs\sps_CheckRegistry_RegLoad.sql" />
+    <None Include="Create Scripts\DMV_NV\sprocs\sps_IMPORT_All_ImportDonor.sql" />
+    <None Include="Create Scripts\DMV_NV\sprocs\sps_RegistryStatisticsReport.sql" />
+    <None Include="Create Scripts\DMV_NV\sprocs\spu_IMPORT_All_ImportLog2.sql" />
+    <None Include="Create Scripts\DMV_NV\tables\CreateTable\Script_Add_Column_PreviousDonorState.sql" />
+    <None Include="Create Scripts\DMV_NV\tables\CreateTable\ZipCodeCityRegion.sql" />
+    <None Include="Create Scripts\DMV_NV\tables\DataLoad\AddZipCodeCityRegion.sql" />
+    <None Include="Create Scripts\DMV_NV\tables\DataLoad\NDN_RegistryDataMigration.sql" />
+    <None Include="Create Scripts\DMV_RI\scripts\Script_Add_Column_PreviousDonorState.sql" />
+    <None Include="Create Scripts\DMV_RI\scripts\Script_AddValues_ZipCodesRI.sql" />
+    <None Include="Create Scripts\DMV_RI\sprocs\GetRegistryLabelsDMV_select.sql" />
+    <None Include="Create Scripts\DMV_RI\sprocs\GetZipCodeCityRegion..sql" />
+    <None Include="Create Scripts\DMV_RI\sprocs\spf_CreateDMVTempTable.sql" />
+    <None Include="Create Scripts\DMV_RI\sprocs\sps_ActionableDesignationVolumeByStatus.sql" />
+    <None Include="Create Scripts\DMV_RI\sprocs\sps_ActionableDesignationVolumeByZipCode.sql" />
+    <None Include="Create Scripts\DMV_RI\sprocs\sps_ActionableDesignationVolumeCountsEvent.sql" />
+    <None Include="Create Scripts\DMV_RI\sprocs\sps_CheckRegistry_DMVLoad.sql" />
+    <None Include="Create Scripts\DMV_RI\sprocs\sps_CheckRegistry_RegLoad.sql" />
+    <None Include="Create Scripts\DMV_RI\sprocs\sps_CheckRegistry_REGv2.sql" />
+    <None Include="Create Scripts\DMV_RI\sprocs\sps_CheckRegistryv2.sql" />
+    <None Include="Create Scripts\DMV_RI\sprocs\sps_GetRegistryData.sql" />
+    <None Include="Create Scripts\DMV_RI\sprocs\sps_RegistryStatisticsReport.sql" />
+    <None Include="Create Scripts\DMV_RI\tables\CreateTables\DMV.sql" />
+    <None Include="Create Scripts\DMV_RI\tables\CreateTables\ZipCodeCityRegion.sql" />
+    <None Include="Create Scripts\DMV_VT\db\DMV_VT_database_Creation_Production.sql" />
+    <None Include="Create Scripts\DMV_VT\scripts\NEOB_ReplecateWebUsers.sql" />
+    <None Include="Create Scripts\DMV_VT\scripts\Script_Add_Column_PreviousDonorState.sql" />
+    <None Include="Create Scripts\DMV_VT\scripts\Script_AddrType_AddValues.sql" />
+    <None Include="Create Scripts\DMV_VT\scripts\Script_AddValues_ZipCodesVT.sql" />
+    <None Include="Create Scripts\DMV_VT\scripts\Script_ImportFiles_AddValues.sql" />
+    <None Include="Create Scripts\DMV_VT\sprocs\GetRegistryLabelsDMV_select.sql" />
+    <None Include="Create Scripts\DMV_VT\sprocs\GetZipCodeCityRegion.sql" />
+    <None Include="Create Scripts\DMV_VT\sprocs\spf_CreateDMVTempTable.sql" />
+    <None Include="Create Scripts\DMV_VT\sprocs\spf_Reseed_DMVTempTable.sql" />
+    <None Include="Create Scripts\DMV_VT\sprocs\sps_ActionableDesignationVolumeByStatus.sql" />
+    <None Include="Create Scripts\DMV_VT\sprocs\sps_ActionableDesignationVolumeByZipCode.sql" />
+    <None Include="Create Scripts\DMV_VT\sprocs\sps_ActionableDesignationVolumeCountsEvent.sql" />
+    <None Include="Create Scripts\DMV_VT\sprocs\sps_CheckRegistry_DMVLoad.sql" />
+    <None Include="Create Scripts\DMV_VT\sprocs\SPS_CheckRegistry_DMVNEOB.sql" />
+    <None Include="Create Scripts\DMV_VT\sprocs\sps_CheckRegistry_NEOB.sql" />
+    <None Include="Create Scripts\DMV_VT\sprocs\sps_CheckRegistry_RegLoad.sql" />
+    <None Include="Create Scripts\DMV_VT\sprocs\sps_CheckRegistry_REGv2.sql" />
+    <None Include="Create Scripts\DMV_VT\sprocs\sps_CheckRegistryv2.sql" />
+    <None Include="Create Scripts\DMV_VT\sprocs\sps_GetRegistryData.sql" />
+    <None Include="Create Scripts\DMV_VT\sprocs\sps_IMPORT_All_ImportDonor.sql" />
+    <None Include="Create Scripts\DMV_VT\sprocs\sps_IMPORT_All_ImportDonorFull.sql" />
+    <None Include="Create Scripts\DMV_VT\sprocs\sps_RegistryStatisticsReport.sql" />
+    <None Include="Create Scripts\DMV_WA\sprocs\spf_CreateDMVADDRTempTable.sql" />
+    <None Include="Create Scripts\DMV_WA\sprocs\spf_CreateDMVOrganTempTable.sql" />
+    <None Include="Create Scripts\DMV_WA\sprocs\spf_CreateDMVTempTable.sql" />
+    <None Include="Create Scripts\DMV_WA\sprocs\spf_DropDMVADDRTable.sql" />
+    <None Include="Create Scripts\DMV_WA\sprocs\spf_DropDMVOrganTable.sql" />
+    <None Include="Create Scripts\DMV_WA\sprocs\spf_DropDMVTable.sql" />
+    <None Include="Create Scripts\DMV_WA\sprocs\spf_Reseed_DMVTempTable.sql" />
+    <None Include="Create Scripts\DMV_WA\sprocs\sps_IMPORT_All_ImportDonorFULL.sql" />
+    <None Include="Create Scripts\DMV_WA\sprocs\spu_ImportLogCountUpdate.sql" />
+    <None Include="Create Scripts\DMV_WY\scripts\Add_Column_PreviousDonorStatus.sql" />
+    <None Include="Create Scripts\DMV_WY\scripts\Script_AddValues_Test.sql" />
+    <None Include="Create Scripts\DMV_WY\sprocs\spi_Archive_Deceased.sql" />
+    <None Include="Create Scripts\DMV_WY\sprocs\spi_Archive_OutOfState.sql" />
+    <None Include="Create Scripts\DMV_WY\sprocs\spi_Import_ImportApply_A.sql" />
+    <None Include="Create Scripts\DMV_WY\sprocs\spi_Registry_Archive_Removed.sql" />
+    <None Include="Create Scripts\DMV_WY\sprocs\sps_EventCategory.sql" />
+    <None Include="Create Scripts\DMV_WY\sprocs\sps_EventCategoryLookup.sql" />
+    <None Include="Create Scripts\DMV_WY\sprocs\sps_EventSubCategory.sql" />
+    <None Include="Create Scripts\DMV_WY\sprocs\sps_EventSubCategoryLookup.sql" />
+    <None Include="Create Scripts\DMV_WY\sprocs\sps_IMPORT_All_ImportArchive.sql" />
+    <None Include="Create Scripts\DMV_WY\sprocs\sps_Import_All_ImportDonor.sql" />
+    <None Include="Create Scripts\DMV_WY\sprocs\spui_EventCategory.sql" />
+    <None Include="Create Scripts\DMV_WY\sprocs\spui_EventRegistry.sql" />
+    <None Include="Create Scripts\DMV_WY\sprocs\spui_EventSubCategory.sql" />
+    <None Include="Create Scripts\DMV_WY\sprocs\spui_Registry.sql" />
+    <None Include="Create Scripts\DMV_WY\table\CreateTable_EventCategory.sql" />
+    <None Include="Create Scripts\DMV_WY\table\CreateTable_EventRegistry.sql" />
+    <None Include="Create Scripts\DMV_WY\table\CreateTable_EventSubCategory.sql" />
+    <None Include="Create Scripts\sprocs\GetZipCodeCityRegion.sql" />
+    <None Include="Create Scripts\sprocs\ParseVarcharValueString.sql" />
+    <None Include="Create Scripts\sprocs\spf_Reseed_DMVTempTable.sql" />
+    <None Include="Create Scripts\sprocs\sps_ActionableDesignationVolumeCountsEvent.sql" />
+    <None Include="Create Scripts\sprocs\sps_ActionableDesignationVolumnByStatus.sql" />
+    <None Include="Create Scripts\sprocs\sps_ActionableDesignationVolumnByZipCode.sql" />
+    <None Include="Create Scripts\sprocs\sps_checkregistry_DMVLoad.sql" />
+    <None Include="Create Scripts\sprocs\sps_checkregistry_REGLoad.sql" />
+    <None Include="Create Scripts\sprocs\sps_Common_ActionableDesignationVolumeCountsEvent.sql" />
+    <None Include="Create Scripts\sprocs\sps_Common_ActionableDesignationVolumnByStatus.sql" />
+    <None Include="Create Scripts\sprocs\sps_Common_ActionableDesignationVolumnByZipCode.sql" />
+    <None Include="Create Scripts\sprocs\sps_Common_GetZipCodeCityRegion.sql" />
+    <None Include="Create Scripts\sprocs\sps_ReportStateLookup.sql" />
+    <None Include="Create Scripts\sprocs\sps_TEST_ActionableDesignationVolumeByZipCode.sql" />
+    <None Include="Create Scripts\sprocs\spu_Update_DMV_PreviousDonorStatus.sql" />
+    <None Include="Create Scripts\sprocs\spu_Update_Registry_PreviousDonorStatus.sql" />
+    <None Include="Queries\Statline.Registry.DMV_CommonRegistry.sql" />
+    <None Include="Queries\Statline.Registry.DMV_CORegistry.sql" />
+    <None Include="Queries\Statline.Registry.DMV_CTRegistry.sql" />
+    <None Include="Queries\Statline.Registry.DMV_MARegistry.sql" />
+    <None Include="Queries\Statline.Registry.DMV_MERegistry.sql" />
+    <None Include="Queries\Statline.Registry.DMV_MI_SOS.sql" />
+    <None Include="Queries\Statline.Registry.DMV_MIRegistry.sql" />
+    <None Include="Queries\Statline.Registry.DMV_NERegistry.sql" />
+    <None Include="Queries\Statline.Registry.DMV_NHRegistry.sql" />
+    <None Include="Queries\Statline.Registry.DMV_NVRegistry.sql" />
+    <None Include="Queries\Statline.Registry.DMV_RIRegistry.sql" />
+    <None Include="Queries\Statline.Registry.DMV_VTRegistry.sql" />
+    <None Include="Queries\Statline.Registry.DMV_WYRegistry.sql" />
+    <None Include="Create Scripts\DMV_VT\sprocs\spi_IMPORT_ImportApply_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NV\scripts\Update_NV_RegistryOwnerEnrollmentText.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\CommonRegistry\tables\DataLoad\AddRegistryOwnerMobileEnrollmentText.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\CommonRegistry\tables\DataLoad\AddRegistryOwnerMobileElectronicSignatureText.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\CommonRegistry\tables\CreateTable\CreateTable_RegisteredBy.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\CommonRegistry\tables\TableCostraint\CreateConstraintTable_RegisteredBy.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\CommonRegistry\tables\DataLoad\RegisteredBy.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\CommonRegistry\tables\DataLoad\Migrate_CODA_EventCategory_to_DMV_Common.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\Migrate_Data\Migrate_CODA_Common_Registry_to_DMV_CO.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\CommonRegistry\tables\DataLoad\UpdateNEOB_RegistryOwner_IDologySettings.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\Migrate_Data\Migrate_CODA_DMVCommonRegistry_to_DMVCO_WY.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\CommonRegistry\stored procedures\spui_MigrateCommonRegistrantsBackToCO_WY.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\CommonRegistry\stored procedures\spui_MigrateCOEventCategoryToDMVCommon.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\CommonRegistry\tables\DataLoad\RegistryOwner.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CO\sprocs\sps_RegistryStatisticsReport.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_WY\sprocs\sps_RegistryStatisticsReport.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CO\sprocs\sps_ActionableDesignationVolumeByStatus.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CO\sprocs\sps_ActionableDesignationVolumeByZipCode.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CO\sprocs\sps_ActionableDesignationVolumeCountsEvent.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_WY\sprocs\sps_ActionableDesignationVolumeByStatus.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_WY\sprocs\sps_ActionableDesignationVolumeByZipCode.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_WY\sprocs\sps_ActionableDesignationVolumeCountsEvent.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CO\sprocs\sps_CheckRegistry_REGv2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CO\sprocs\sps_CheckRegistry_REGLoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\CommonRegistry\tables\DataLoad\AddRegistryOwner.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\database\CreateDMV_TX_Database.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spf_CreateDMVADDRTempTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spf_CreateDMVOrganTempTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spf_CreateDMVTempTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spf_DropDMVADDRTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spf_DropDMVOrganTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spf_DropDMVTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spf_Reseed_DMVTempTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spi_DMVIMPORT_ImportApply_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_CheckRegistry_DMVLoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_CheckRegistry_DMVv2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_Checkregistry_REGLoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_DMVIMPORT_A_DataCleanupInvalidAddress.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_DMVIMPORT_A_DataCleanupReplaceNonAlphaName.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_DMVIMPORT_A_DataCleanupUpperDonor .sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_DMVIMPORT_A_DataCleanupUpperGender.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_DMVIMPORT_All_ImportArchive.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_DMVIMPORT_All_ImportDonor.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_DMVIMPORT_All_ImportDonorFull.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_DMVIMPORT_ImportInitialize.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_GetRegistryData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_IMPORT_All_ImportDonorRegistry.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spu_DMVFullNameParse.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spu_DMVIMPORT_A_DataCleanupDuplicateLicense.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spu_DMVIMPORT_A_DataCleanupInvalidDOB.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spu_DMVIMPORT_A_DataCleanupInvalidFirstLast.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spu_DMVIMPORT_A_DataCleanupInvalidLicense.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spu_DMVIMPORT_All_ImportLog2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spu_DMVIMPORT_All_ImportLogStats.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spu_DMVIMPORT_DataCleanupReplaceEmptyString.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spu_DMVIMPORT_DataCleanupTrimBlanks.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spu_DMVIMPORT_GetDMVCreateDate.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spu_DMVIMPORT_ImportLog1.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spu_IMPORT_ApplyLimitsCursor.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Queries\Statline.Registry.DMV_TXRegistry.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\DMVSuspense_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\DMV.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\DMVADDR.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\DMVArchive.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\DMVARCHIVEADDR.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\DMVARCHIVEORGAN.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\DMVARCHIVETYPE.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\DMVImport.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\DMVIMPORT_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\DMVIMPORTFILES.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\DMVImportLog.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\DMVImportLogStats.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\DMVOrgan.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\DMVSuspense.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\DataLoad\AddADDRTYPE.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\DataLoad\AddORGANTYPE.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\DataLoad\AddDMVARCHIVETYPE.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\database\CreateDMV_HI_Database.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\spf_CreateDMVADDRTempTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\spf_CreateDMVOrganTempTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\spf_CreateDMVTempTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\spf_DropDMVADDRTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\spf_DropDMVOrganTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\spf_DropDMVTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\spf_Reseed_DMVTempTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\spi_DMVIMPORT_ImportApply_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_CheckRegistry_DMVLoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_CheckRegistry_DMVv2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_Checkregistry_REGLoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_DMVIMPORT_A_DataCleanupInvalidAddress.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_DMVIMPORT_A_DataCleanupReplaceNonAlphaName.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_DMVIMPORT_A_DataCleanupUpperDonor .sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_DMVIMPORT_A_DataCleanupUpperGender.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_DMVIMPORT_All_ImportArchive.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_DMVIMPORT_All_ImportDonor.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_DMVIMPORT_All_ImportDonorFull.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_DMVIMPORT_ImportInitialize.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_GetRegistryData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_IMPORT_All_ImportDonorRegistry.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\spu_DMVFullNameParse.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\spu_DMVIMPORT_A_DataCleanupDuplicateLicense.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\spu_DMVIMPORT_A_DataCleanupInvalidDOB.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\spu_DMVIMPORT_A_DataCleanupInvalidFirstLast.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\spu_DMVIMPORT_A_DataCleanupInvalidLicense.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\spu_DMVIMPORT_All_ImportLog2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\spu_DMVIMPORT_All_ImportLogStats.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\spu_DMVIMPORT_DataCleanupReplaceEmptyString.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\spu_DMVIMPORT_DataCleanupTrimBlanks.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\spu_DMVIMPORT_GetDMVCreateDate.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\spu_DMVIMPORT_ImportLog1.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreatTable_A_ORGANTYPE.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreatTable_ADDRTYPE.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\DMV.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreatTable_DMVADDR.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\DMVArchive.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreatTable_DMVARCHIVEADDR.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreatTable_DMVARCHIVEORGAN.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreatTable_DMVARCHIVETYPE.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreatTable_DMVImport.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreatTable_DMVIMPORT_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreatTable_DMVIMPORTFILES.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreatTable_DMVImportLog.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreatTable_DMVImportLogStats.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreatTable_DMVOrgan.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreatTable_DMVSuspense.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreatTable_DMVSuspense_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\DataLoad\AddADDRTYPE.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\DataLoad\AddDMVARCHIVETYPE.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\DataLoad\AddORGANTYPE.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\Database_Migration_SQL2012\A_AddEnvironmentFolder.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\Database_Migration_SQL2012\C_AddEnvironment_Variables.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\Database_Migration_SQL2012\B_AddEnvironments.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_NE\sprocs\sps_CheckRegistry_REGv2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_NE\sprocs\sps_CheckRegistry_REGLoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_NV\sprocs\sps_CheckRegistry_REGv2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_WY\sprocs\dbo.spi_Import_ImportApply_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_WY\sprocs\sps_CheckRegistry_REGLoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_WY\sprocs\sps_CheckRegistry_REGv2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\SHARED_DB_ELEMENTS\sprocs\GetDMVRegistrySearchResults_Select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\SHARED_DB_ELEMENTS\sprocs\GetDMVVerification_Select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Queries\Statline.Registry.DMV_CARegistry.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Queries\Statline.Registry.DMV_MI_SOSRegistry.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Queries\Statline.Registry.Initial_DMV_HIRegistry.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST183\EnableAllowDisplayNoDonors.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST183\UpdateRegistryOwner.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST183\UpdateRegistryOwnerElectronicSignatureText.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST183\UpdateRegistryOwnerEnrollmentText.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST184\UpdateRegistryOwner.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST184\UpdateRegistryOwnerElectronicSignatureText.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST184\UpdateRegistryOwnerEnrollmentText.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_NE\BUILD_SCRIPT_INIT\ChangeToDMV_NE_DB.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\CommonRegistry\BUILD_SCRIPT_INIT\ChangeToCommonRegistryDB.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\SPS_CheckRegistry_REGv2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_CheckRegistryv2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\SHARED_DB_ELEMENTS\functions\Function_RemoveBad20.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\SHARED_DB_ELEMENTS\functions\Function_RemoveBad25.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\SHARED_DB_ELEMENTS\functions\Function_RemoveBad255.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST186\AddEventCategory.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST186\1_AddRegistryOwner.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST186\AddRegistryOwnerEnrollmentText.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST186\AddStateDSNLookup.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\CommonRegistry\functions\Add_FiveDigitZipCode_CLR_Function.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\BUILD_SCRIPT_INIT\ChangeToDMV_HI_DB.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreateTable_REGISTRYORGAN.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreateTable_REGISTRY.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreateTable_REGISTRYADDR.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreateTable_REGISTRYARCHIVE.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreateTable_REGISTRYARCHIVEADDR.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreateTable_REGISTRYARCHIVETYPE.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\SPS_CheckRegistry_REGv2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_CheckRegistryv2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_NV\BUILD_SCRIPT_INIT\ChangeToDMV_NV_DB.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_NE\sprocs\sps_CheckRegistry_DMVLoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_NV\sprocs\sps_CheckRegistry_DMVLoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\BUILD_SCRIPT_INIT\ChangeToDMV_TX_DB.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\DMVIMPORTLIMITATIONS.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_DMVIMPORT_Limitations_Update.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spi_IMPORT_UserLimitations.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST186\AddRegistryOwnerStateConfig.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST186\AddRegistryOwnerElectronicSignatureText.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\database\HawaiiDMV_UserConfiguration.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_GetRegistrantLimitations.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreateTable_IMPORT_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_IMPORT_A_DataCleanupInvalidAddress.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_IMPORT_A_DataCleanupUpperGender.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreateTable_LIMITATIONS.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreateTable_USERLIMITATIONS.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\DataLoad\AddLIMITATIONS.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_IMPORT_A_ReformatDOB.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\GetRegistryUserLimitations.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CA\sprocs\spu_IMPORT_All_ImportLog2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CA\sprocs\spu_IMPORT_ImportLog1.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\DataLoad\AddDMVIMPORTFILES.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\spu_IMPORT_ImportLog1.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\spu_IMPORT_All_ImportLog2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST186\AddRegistryOwnerUserOrg.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_ActionableDesignationVolumeByStatus.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_ActionableDesignationVolumeByZipCode.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\SHARED_DB_ELEMENTS\sprocs\sps_EventCategoryLookup.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\SHARED_DB_ELEMENTS\sprocs\sps_EventSubCategoryLookup.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_ActionableDesignationVolumeCountsEvent.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\DataLoad\AddEventCategory.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreateTable_EventSubCategory.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreateTable_CommonRegistryMap.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreateTable_EventCategory.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\CreateTable_EventRegistry.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CO\Tables\IMPORT_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\scripts\Migrate_Local_DMV_To_Common_A_EventSubCategories.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\scripts\Migrate_Local_DMV_To_Common_C_Registrants.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\scripts\Migrate_Local_DMV_To_Common_B_CreateCategoryMapping.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_RegistryStatisticsReport.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_IMPORT_ApplyEventCategories.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CO\sprocs\sps_GetRegistryData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_NE\sprocs\sps_GetRegistryData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\CommonRegistry\tables\DataLoad\StateDSNLookup.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\CommonRegistry\tables\DataLoad\EventCategory.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST152\tables\CreateTables\CommonRegistryMap.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST152\RegistryOwner.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST152\tables\CreateTables\IMPORT_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_WY\CCRST152\tables\CreateTables\CommonRegistryMap.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_WY\CCRST152\tables\CreateTables\IMPORT_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST152\scripts\Migrate_Local_DMV_To_Common_A_EventSubCategories.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST152\scripts\Migrate_Local_DMV_To_Common_C_Registrants.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST152\scripts\Migrate_Local_DMV_To_Common_B_CreateCategoryMapping.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_WY\CCRST152\scripts\Migrate_Local_DMV_To_Common_A_EventSubCategories.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_WY\CCRST152\scripts\Migrate_Local_DMV_To_Common_C_Registrants.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_WY\CCRST152\scripts\Migrate_Local_DMV_To_Common_B_CreateCategoryMapping.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST152\tables\CreateTables\SUSPENSE_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_WY\CCRST152\tables\CreateTables\SUSPENSE_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CO\BUILD_SCRIPT_INIT\ChangeToDMV_CO_DB.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_WY\BUILD_SCRIPT_INIT\ChangeToDMV_WY_DB.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST191\tables\DataLoad\ZipCodeCityRegion.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST191\sprocs\GetZipCodeCityRegion..sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NV\CCRST191\sprocs\sps_IMPORT_All_ImportDonor.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST191\tables\CreateTables\ZipCodeCityRegion.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\Database_Migration_SQL2012\ChangeDSNToNewServer_PRODUCTION_Release.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST152\sprocs\sps_ActionableDesignationVolumeByZipCode.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST191\sprocs\sps_ParameterEventLookup.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST191\sprocs\sps_ActionableDesignationVolumeByZipCode.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\SHARED_DB_ELEMENTS\functions\Function_RemoveInvalidNameCharacters.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NH\CCRST191\sprocs\IMPORT_DataCleanupReplaceNonAlphaName.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST191\Tables\DataLoad\RegistryOwnerEnrollmentText.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST191\Tables\DataLoad\RegistryOwnerElectronicSignatureText.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST191\sprocs\spf_CreateDMVAddrTempTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST191\sprocs\spf_CreateDMVTempTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST191\sprocs\spf_DropDMVAddrTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST191\sprocs\spf_DropDMVTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST191\sprocs\spf_Reseed_DMVTempTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST191\sprocs\spf_RenameDMVTempToDMV.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST191\sprocs\spf_RenameDMVAddrTempToDMVAddr.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST191\sprocs\sps_DMVIMPORT_All_ImportDonorFull.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\SHARED_DB_ELEMENTS\CCRST194\sprocs\GetDMVRegistrySearchResults_Select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST194\sprocs\spu_DMVFullNameParse.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST194\sprocs\spu_DMVIMPORT_A_DataCleanupInvalidFirstLast.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST194\sprocs\sps_IMPORT_All_ImportDonorFull.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST194\BUILD_SCRIPT_INIT\ChangeToDMV_MI_SOS_DB.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\SHARED_DB_ELEMENTS\CCRST191\sprocs\sps_EventCategoryLookup.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\SHARED_DB_ELEMENTS\CCRST191\sprocs\sps_EventSubCategoryLookup.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST187\tables\DataLoad\StateDSNLookup.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\database\TexasDMV_UserConfiguration.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\REGISTRY.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\TX_UserLimitations.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\REGISTRYADDR.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\REGISTRYARCHIVE.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\REGISTRYARCHIVEADDR.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\REGISTRYARCHIVETYPE.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\REGISTRYORGAN.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\TX_Limitations.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\TX_LimitationsMap.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\ADDRTYPE.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\A_ORGANTYPE.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\Import_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spf_ClearWebRegistryImportTables.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\IMPORTLOG.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\IMPORTFILES.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\IMPORTLOGSTATS.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_IMPORT_ImportInitialize.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spu_IMPORT_ImportLog1.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\DataLoad\IMPORTFILES.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spu_IMPORT_DataCleanupTrimBlanks.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spu_IMPORT_DataCleanupReplaceEmptyString.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spu_IMPORT_A_DataCleanupInvalidLicense.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\SUSPENSE_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spu_IMPORT_A_DataCleanupInvalidDOB.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_IMPORT_A_DataCleanupReplaceNonAlphaName.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spu_IMPORT_A_DataCleanupInvalidFirstLast.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_IMPORT_A_DataCleanupInvalidAddress.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_IMPORT_A_DataCleanupUpperGender.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_IMPORT_A_DataCleanupInvalidGender.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_IMPORT_A_DataCleanupUpperDonor.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spu_IMPORT_A_DataCleanupDeceasedDate.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spi_IMPORT_ImportApply_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spu_IMPORT_All_ImportLog2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spu_IMPORT_All_ImportLogStats.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Queries\Statline.Registry.DMV_HIRegistry.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\GetLimitationsAsString.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\tables\CreateTables\IMPORT.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spu_IMPORT_A_DataCleanupDuplicateLicense.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\spu_IMPORTFullNameParse.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST191\sprocs\GetDataListRegistrySearchResults.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_WY\CCRST152\sprocs\sps_ActionableDesignationVolumeByZipCode.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CO\Tables\CommonRegistryMap.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CO\Tables\SUSPENSE_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_WY\table\CommonRegistryMap.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_WY\table\IMPORT_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_WY\table\SUSPENSE_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\GetZipCodeCityRegion.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\spf_RenameDMVAddrTempToDMVAddr.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\spf_RenameDMVTempToDMV.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\ZipCodeCityRegion.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\DataLoad\ZipCodeCityRegion.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_NE\sprocs\SPS_CheckRegistry_DMVv2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST205\Tables\DataLoad\RegistryOwnerStateConfig.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST205\Tables\DataLoad\RegistryOwner.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST196\scripts\MigrateSuspense_AData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST196\sprocs\GetDMVRegistrySearchResults_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST196\sprocs\GetRegistryLabelsDMV_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST196\sprocs\spi_Archive_Deceased.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST196\sprocs\spi_Archive_OutOfState.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST196\sprocs\spi_Import_ImportApply_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST196\sprocs\sps_GetRegistryData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST196\sprocs\sps_IMPORT_A_DataCleanupReplaceNonAlphaName.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST196\sprocs\sps_IMPORT_All_ImportArchive.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST196\sprocs\sps_Import_All_ImportDonor.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST196\sprocs\spu_IMPORT_A_DataCleanupDuplicateLicense.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST196\Tables\DMV.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST196\Tables\DMVARCHIVE.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST196\Tables\IMPORT.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST196\Tables\IMPORT_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST196\Tables\SUSPENSE_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST182\stored proedures\GetDataListRegistrySearchResults.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST182\stored proedures\GetFormVerification.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST182\stored proedures\GetRegistryOwner.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST182\stored proedures\GetRegistryOwnerStateVerificationText.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST182\stored proedures\sps_Common_ActionableDesignationVolumeCountsEvent.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST182\stored proedures\sps_Common_GetZipCodeCityRegion.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST182\Tables\CreateTable\CreateTable_RegistryOwner.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST182\Tables\DataLoad\1_RegistryOwner.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST182\Tables\DataLoad\EventCategory.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST182\Tables\DataLoad\RegistryOwnerElectronicSignatureText.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST182\Tables\DataLoad\RegistryOwnerEnrollmentText.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST182\Tables\DataLoad\RegistryOwnerStateConfig.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST182\Tables\DataLoad\RegistryOwnerUserOrg.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST182\Tables\DataLoad\StateDSNLookup.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST196\functions\FormatNameForStatTracSearch.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST196\stored procedures\GetDataListRegistrySearchResults.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST196\stored procedures\GetWebRegistrySearchResults_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST196\stored procedures\GetWebVerification_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST196\stored procedures\InsertRegistry.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST196\stored procedures\UpdateRegistry.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST196\tables\CreateTable\CreateTable_Registry.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST196\tables\DataLoad\RegistryOwnerEnrollmentText.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST199\scripts\BadCharacterCheck.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST199\tables\DataLoad\RegistryOwnerEnrollmentText.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST199\tables\DataLoad\RegistryOwnerStateConfig.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST201\tables\DataLoad\RegistryOwner.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST201\tables\DataLoad\RegistryOwnerEnrollmentText.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST202\scripts\RemoveHawaiiFromMichiganStateConfig.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST196\scripts\MigrateDMVDMVSUSPENSE_AData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST196\sprocs\GetDMVRegistrySearchResults_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST196\sprocs\GetRegistryLabelsDMV_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST196\sprocs\spf_CreateDMVTempTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST196\sprocs\spi_DMVIMPORT_ImportApply_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST196\sprocs\sps_CheckRegistry_DMVLoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST196\sprocs\SPS_CheckRegistry_DMVv2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST196\sprocs\sps_DMVIMPORT_All_ImportDonorFull.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST196\sprocs\sps_GetRegistryData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST196\sprocs\spu_DMVFullNameParse.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST196\tables\CreateTables\DMV.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST196\tables\CreateTables\DMVIMPORT.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST196\tables\CreateTables\DMVIMPORT_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST196\tables\CreateTables\DMVSUSPENSE_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MA\CCRST196\scripts\MigrateSuspense_AData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MA\CCRST196\sprocs\GetDMVRegistrySearchResults_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MA\CCRST196\sprocs\GetRegistryLabelsDMV_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MA\CCRST196\sprocs\IMPORT_DataCleanupReplaceNonAlphaName.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MA\CCRST196\sprocs\spi_Archive_Deceased.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MA\CCRST196\sprocs\spi_Archive_OutOfState.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MA\CCRST196\sprocs\spi_IMPORT_ImportApply_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MA\CCRST196\sprocs\sps_GetRegistryData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MA\CCRST196\sprocs\sps_IMPORT_All_ImportArchive.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MA\CCRST196\sprocs\sps_IMPORT_All_ImportDonor.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MA\CCRST196\Tables\CreateTables\DMV.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MA\CCRST196\Tables\CreateTables\DMVARCHIVE.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MA\CCRST196\Tables\CreateTables\IMPORT.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MA\CCRST196\Tables\CreateTables\IMPORT_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MA\CCRST196\Tables\CreateTables\SUSPENSE_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_ME\CCRST196\scripts\MigrateSuspense_AData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_ME\CCRST196\sprocs\GetDMVRegistrySearchResults_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_ME\CCRST196\sprocs\GetRegistryLabelsDMV_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_ME\CCRST196\sprocs\spi_Archive_Deceased.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_ME\CCRST196\sprocs\spi_Archive_OutOfState.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_ME\CCRST196\sprocs\spi_IMPORT_ImportApply_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_ME\CCRST196\sprocs\sps_GetRegistryData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_ME\CCRST196\sprocs\sps_IMPORT_A_DataCleanupReplaceNonAlphaName.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_ME\CCRST196\sprocs\sps_IMPORT_All_ImportArchive.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_ME\CCRST196\sprocs\sps_IMPORT_All_ImportDonor.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_ME\CCRST196\tables\CreateTables\DMV.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_ME\CCRST196\tables\CreateTables\DMVARCHIVE.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_ME\CCRST196\tables\CreateTables\IMPORT.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_ME\CCRST196\tables\CreateTables\IMPORT_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_ME\CCRST196\tables\CreateTables\SUSPENSE_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI\CCRST182\stored procedures\GetDMVRegistrySearchResults_Select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI\CCRST182\stored procedures\GetWebRegistrySearchResults_Select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI\CCRST182\stored procedures\GetWebVerification_Select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI\CCRST182\stored procedures\sps_RegistryStatisticsReport.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI\CCRST182\tables\DMV.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_TX\CCRST196\scripts\MigrateDMVDMVSUSPENSE_AData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_TX\CCRST196\sprocs\GetDMVRegistrySearchResults_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_TX\CCRST196\sprocs\spi_DMVIMPORT_ImportApply_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_TX\CCRST196\sprocs\sps_DMVIMPORT_All_ImportArchive.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_TX\CCRST196\sprocs\sps_DMVIMPORT_All_ImportDonor.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_TX\CCRST196\sprocs\sps_GetRegistryData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_TX\CCRST196\sprocs\spu_DMVFullNameParse.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_TX\CCRST196\tables\createTables\DMV.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_TX\CCRST196\tables\createTables\DMVARCHIVE.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_TX\CCRST196\tables\createTables\DMVIMPORT.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_TX\CCRST196\tables\createTables\DMVIMPORT_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_TX\CCRST196\tables\createTables\DMVSUSPENSE_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_TX\CCRST199\scripts\MigrateBlankLicenseFromSuspenseToDmv.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_TX\CCRST199\scripts\MigrateCurrentDuplicateLicenseFromSuspenseToDmv.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_TX\CCRST199\sprocs\spu_DMVIMPORT_A_DataCleanupDuplicateLicense.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_TX\CCRST202\sprocs\sps_GetRegistryData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_VT\scripts\MigrateSuspense_AData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_VT\sprocs\GetDMVRegistrySearchResults_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_VT\sprocs\GetRegistryLabelsDMV_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_VT\sprocs\spi_Archive_Deceased.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_VT\sprocs\spi_Archive_OutOfState.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_VT\sprocs\spi_IMPORT_ImportApply_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_VT\sprocs\sps_GetRegistryData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_VT\sprocs\sps_IMPORT_A_DataCleanupReplaceNonAlphaName.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_VT\sprocs\sps_IMPORT_All_ImportArchive.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_VT\sprocs\sps_IMPORT_All_ImportDonor.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_VT\tables\CreateTables\DMV.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_VT\tables\CreateTables\DMVARCHIVE.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_VT\tables\CreateTables\IMPORT.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_VT\tables\CreateTables\IMPORT_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_VT\tables\CreateTables\SUSPENSE_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_VT\tables\CreateTables\ZipCodeCityRegion.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\SHARED_DB_ELEMENTS\CCRST196\sprocs\GetDMVVerification_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\SHARED_DB_ELEMENTS\CCRST187\GetDMVVerification_Select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NH\CCRST196\scripts\MigrateSuspense_AData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NH\CCRST196\sprocs\GetDMVRegistrySearchResults_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NH\CCRST196\sprocs\GetRegistryLabelsDMV_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NH\CCRST196\sprocs\spf_CreateDMVTempTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NH\CCRST196\sprocs\spi_IMPORT_ImportApply_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NH\CCRST196\sprocs\sps_GetRegistryData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NH\CCRST196\sprocs\sps_IMPORT_A_DataCleanupReplaceNonAlphaName.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NH\CCRST196\sprocs\sps_IMPORT_All_ImportDonorFull.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NH\CCRST196\tables\CreateTables\DMV.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NH\CCRST196\tables\CreateTables\IMPORT.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NH\CCRST196\tables\CreateTables\IMPORT_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NH\CCRST196\tables\CreateTables\SUSPENSE_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NV\CCRST196\scripts\MigrateSuspense_AData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NV\CCRST196\sprocs\GetDMVRegistrySearchResults_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NV\CCRST196\sprocs\GetRegistryLabelsDMV_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NV\CCRST196\sprocs\spf_CreateDMVTempTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NV\CCRST196\sprocs\spi_IMPORT_ImportApply_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NV\CCRST196\sprocs\sps_GetRegistryData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NV\CCRST196\sprocs\sps_IMPORT_A_DataCleanupReplaceNonAlphaName.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NV\CCRST196\sprocs\sps_IMPORT_All_ImportDonor.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NV\CCRST196\tables\CreateTables\DMV.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NV\CCRST196\tables\CreateTables\IMPORT.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NV\CCRST196\tables\CreateTables\IMPORT_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NV\CCRST196\tables\CreateTables\SUSPENSE_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_HI\CCRST207\sprocs\sps_GetRegistryData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NV\CCRST207\sprocs\sps_GetRegistryData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST207\Tables\DataLoad\RegistryOwnerEnrollmentText.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST207\stored procedures\GetWebVerification_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST207\stored procedures\GetFormVerification.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST182\stored procedures\GetDMVRegistrySearchResults_Select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST182\stored procedures\GetDMVVerification_Select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST182\stored procedures\GetWebRegistrySearchResults_Select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST182\stored procedures\spf_CreateDMVTempTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST182\stored procedures\spi_IMPORT_ImportApply_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST182\stored procedures\spi_IMPORT_ImportApply_XML.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST182\stored procedures\sps_IMPORT_A_DataCleanupInvalidAddress,sql.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST182\stored procedures\sps_IMPORT_All_ImportDonorFull.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST182\stored procedures\sps_RegistryStatisticsReport.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST182\stored procedures\spu_IMPORT_A_DataCleanupInvalidDOB.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST182\stored procedures\spu_IMPORT_A_DataCleanupInvalidFirstLast.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST182\stored procedures\spu_IMPORT_A_DataCleanupInvalidFullName.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST182\Tables\DMV.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST182\Tables\IMPORT.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST182\Tables\IMPORT_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST182\Tables\Import_XML.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST182\Tables\SUSPENSE_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NE\CCRST196\sprocs\GetDMVRegistrySearchResults_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NE\CCRST196\sprocs\GetRegistryLabelsDMV_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NE\CCRST196\sprocs\spf_CreateDMVTempTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NE\CCRST196\sprocs\spi_IMPORT_ImportApply_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NE\CCRST196\sprocs\sps_GetRegistryData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NE\CCRST196\sprocs\sps_IMPORT_A_DataCleanupReplaceNonAlphaName.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NE\CCRST196\sprocs\sps_IMPORT_All_ImportDonorFull.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NE\CCRST196\tables\Create Tables\DMV.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NE\CCRST196\tables\Create Tables\IMPORT.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NE\CCRST196\tables\Create Tables\IMPORT_A.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST207\stored procedures\GetDMVVerification_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI\CCRST207\stored procedures\GetWebVerification_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\SHARED_DB_ELEMENTS\CCRST207\sprocs\GetDMVVerification_Select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI\CCRST207\BUILD_SCRIPT_INIT\ChangeToDMV_MI_DB.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI\CCRST207\stored procedures\GetDMVVerification_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST207\sprocs\sps_GetRegistryData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NE\CCRST207\sprocs\sps_GetRegistryData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST205\Tables\DataLoad\RegistryOwnerElectronicSignatureText.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST207\stored procedures\SPS_CheckRegistry_REGLoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST207\stored procedures\sps_CheckRegistryv2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST207\stored procedures\SPS_CheckRegistry_REGLoad2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST207\stored procedures\SPS_CheckRegistry_REGv2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST207\stored procedures\sps_GetRegistryData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_WY\CCRST207\GetDMVVerification_Select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CA\CCRST212\sprocs\GetDMVVerification_Select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CT\CCRST212\sprocs\GetDMVVerification_Select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_RI\CCRST212\sprocs\GetDMVVerification_Select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST213\Tables\DataLoad\RegistryOwnerStateConfig.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST213\stored procedures\GetDMVVerification_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI\CCRST213\stored procedures\GetDMVVerification_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI\CCRST213\stored procedures\GetWebVerification_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST213\stored procedures\GetDMVRegistrySearchResults_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST213\stored procedures\GetWebRegistrySearchResults_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI\CCRST213\stored procedures\GetWebRegistrySearchResults_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI\CCRST213\stored procedures\GetDMVRegistrySearchResults_select.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_MI_SOS\CCRST213\stored procedures\sps_GetRegistryData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NV\CCRST213\sprocs\sps_GetRegistryData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.Import_A_RenewalDate.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spi_Import_A_CheckRenewDate.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_IMPORT_A_DataCleanupDuplicateLicense.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_IMPORT_A_DataCleanupInvalidDonor.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_IMPORT_B_DataCleanupNoDonorA.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spu_IMPORT_C_DataCleanupNoDonorA.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_CO\CCRST211\Scripts\MigrateSuspense_BData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.rptSuspense.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CO\sprocs\dbo.spi_Archive_NonUpdated.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CO\Indexes\dbo.IDX_DMV_ImportLogID..sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CO\Tables\dbo.DMVIdTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST215\Tables\DataLoad\RegistryOwnderEnrollmentText.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST218\UpdateInformationContactOrganization.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST182\Tables\DataLoad\UpdateMiopVerificationForm.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST182\Tables\DataLoad\AddEmailMailboxAccounts.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST182\Tables\DataLoad\AddMissingEventRegistryDefaults.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Queries\UpdateMiopVerificationForm.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\tables\CreateTables\DMVTempTable.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST220\Update null valued DisableDMVSearchOption.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_NV\tables\CreateTable\DMV.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\dbo.rptSuspense.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_NE\CCRST239\sprocs\sps_GetRegistryData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\CommonRegistry\stored procedures\InsertRegistryDla.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetRegistryDla.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\DMV_Common\CCRST234DLAIntegration\PreDeploy\Insert-RegistryOwner-Dla.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\CommonRegistry\tables\CreateTable\CreateTable_RegistryDlaSearch.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\CommonRegistry\stored procedures\InsertRegistryDlaSearch.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\CommonRegistry\stored procedures\GetRegistryDlaSearch.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CA\sprocs\sps_CheckRegistryv2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CO\sprocs\sps_CheckRegistryv2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_CheckRegistryv2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_MI\Create Scripts\Stored Procedures\sps_CheckRegistryv2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\sps_CheckRegistryv2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_NV\sprocs\sps_CheckRegistryv2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_CheckRegistryv2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_WY\sprocs\sps_CheckRegistryv2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_NV\sprocs\sps_CheckRegistry_DMVLoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_CheckRegistry_DMVLoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\sps_CheckRegistry_DMVLoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_NE\sprocs\sps_CheckRegistry_DMVLoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_CheckRegistry_DMVLoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_WY\sprocs\sps_CheckRegistry_DMVLoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\CommonRegistry\stored procedures\sps_CheckRegistry_DLA.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_CO\sprocs\sps_CheckRegistry_REGLoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_HI\sprocs\sps_CheckRegistry_REGLoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_MI_SOS\sprocs\sps_CheckRegistry_REGLoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_NE\sprocs\sps_CheckRegistry_REGLoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_TX\sprocs\sps_CheckRegistry_REGLoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\DMV_WY\sprocs\sps_CheckRegistry_REGLoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\CommonRegistry\stored procedures\sps_CheckRegistry_DLALoad.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\CommonRegistry\stored procedures\sps_GetRegistryData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BuildContributorArgument Include="OutDir=$(OutDir)" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Debug_2.publish.xml" />
+    <None Include="Release_2.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PreDeploy Include="Scripts\Pre-Deployment\Script.PreDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\Post-Deployment\Script.PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Permissions_2.sql" />
+  </ItemGroup>
+</Project>

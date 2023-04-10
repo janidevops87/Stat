@@ -1,0 +1,182 @@
+
+<div id="paramList">
+
+  <div class="form-group">
+    <div class="card bg-light" id="ReportSpecificParams" style="    margin: 15px 0 0 0;display: none;">
+      <div class="card-body">
+        <h5 class="card-title">Report Specific Options</h5>
+        <reports-customReportsParameter [customControl]="this.customControl">
+        </reports-customReportsParameter>
+      </div>
+    </div>
+
+    <div class="card bg-light" id="DateAndTime" style="margin:15px 0 0 0;display:none;">
+      <div class="card-body">
+        <h5 class="card-title">Based on Date Type</h5>
+        <div class="row">
+          <div class="col-sm" id="ddlReportDateType" style="display:none;">
+            <label for="ReportDateTypeId">Based on DateTime:</label>
+            <ng-select [(ngModel)]="model.ReportDateTypeId" id="ReportDateTypeId" name="ReportDateTypeId"
+                       [ngModelOptions]="{standalone: true}"
+                       [items]="reportDateTypeList" bindLabel="label"
+                       bindValue="value" [selectOnTab]="true"></ng-select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm" id="webDateTimeEditStart" style="display:none;margin-top:15px;">
+            <label for="StartDate">Start Date Time:</label>
+            <div class="input-group">
+              <input type="text" class="form-control "
+                     id="StartDateTime" name="StartDateTime"
+                     [(ngModel)]="model.StartDateTime"
+                     [ngModelOptions]="{standalone: true}"
+                     bsDatepicker #dp1="bsDatepicker" [bsConfig]="{ showWeekNumbers:false, returnFocusToInput: true }"
+                     placeholder="mm/dd/yyyy" dropSpecialCharacters="false" maxlength="10" (change)="startDateTimeChange()">
+              <div class="input-group-btn">
+                <button style="padding:.375rem 0.3rem 0.2rem 0.3rem"
+                        class="btn btn-light" (click)="dp1.show();">
+                  <img src="assets/calendar-4x.png" style="height: 25px" />
+                </button>
+              </div>
+              <input type="text" class="form-control"  [(ngModel)]="model.StartTime"
+                     id="StartTime" name="StartTime" mask='00:00' (keydown)="startTimeKeyDown($event)"
+                     placeholder="  :  (24H format)"
+                     maxlength="5" (change)="startDateTimeChange()">
+            </div>
+          </div>
+          <div class="col-sm" id="webDateTimeEditEnd" style="display:none;margin-top:15px;">
+            <label for="EndDate">End Date Time:</label>
+            <div class="input-group">
+              <input type="text" class="form-control "
+                     id="EndDateTime" name="EndDateTime" #endDate="ngModel"
+                     [(ngModel)]="model.EndDateTime"
+                     [ngModelOptions]="{standalone: true}"
+                     bsDatepicker #dp2="bsDatepicker" [bsConfig]="{ showWeekNumbers:false, returnFocusToInput: true }"
+                     placeholder="mm/dd/yyyy" dropSpecialCharacters="false" maxlength="10" (change)="endDateTimeChange()">
+              <div class="input-group-btn">
+                <button style="padding:.375rem 0.3rem 0.2rem 0.3rem"
+                        class="btn btn-light" (click)="dp2.show();">
+                  <img src="assets/calendar-4x.png" style="height: 25px" />
+                </button>
+              </div>
+              <input type="text" class="form-control"
+                     id="EndTime" name="EndTime" mask='00:00'
+                     [(ngModel)]="model.EndTime" (keydown)="endTimeKeyDown($event)"
+                     placeholder="  :  (24H format)"
+                     maxlength="5" (change)="endDateTimeChange()">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm" id="rbtTimeZone" style="display:none;margin: 20px 0 0 0;">
+            <label for="TimeZoneMountain" style="padding-right:10px;">Time Zone:</label>
+            <input type="radio" id="TimeZoneMountain" name="TimeZoneId" value="true"
+                   [(ngModel)]="model.DisplayMT" style="height: 20px; width: 20px; vertical-align: text-bottom;">
+            <label for="TimeZoneMountain" style="padding:0 30px 0 3px;">Mountain</label>
+            <input type="radio" id="TimeZoneReferralFacility" name="TimeZoneId" value="false"
+                   [(ngModel)]="model.DisplayMT" style="height: 20px; width: 20px; vertical-align: text-bottom;">
+            <label for="TimeZoneReferralFacility" style="padding:0 0 0 3px;">Referral Facility</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-light" id="CoordinatorOrganization" style="margin: 15px 0 0 0;display: none;">
+      <div class="card-body">
+        <h5 class="card-title">Organization Selection</h5>
+        <div class="row">
+          <div class="col-sm">
+            <div id="ddlReportGroup" style="display:none;margin-bottom:15px;">
+              <label for="ReportGroupID">Report Group:</label>
+              <ng-select [(ngModel)]="model.ReportGroupID" id="ReportGroupID" name="ReportGroupID"
+                         [ngModelOptions]="{standalone: true}" (search)="searchReportGroup($event)" minTermLength="3"
+                         [items]="reportGroupList" bindLabel="label" [clearable]="false" placeholder="Please type at least 3 characters" 
+                         bindValue="value" [selectOnTab]="true" (change)="reportGroupChange($event)" (focus)="reportGroupOnFocus($event)"></ng-select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div id="ddlOrganization" style="display:none;margin-bottom:15px;">
+              <label for="OrganizationID">Organization:</label>
+              <ng-select [(ngModel)]="model.OrganizationID" id="OrganizationID" name="OrganizationID"
+                         [ngModelOptions]="{standalone: true}" (search)="searchOrg($event)" [searchable] ="true" (clear)="organizationClear()"
+                         [items]="organizationList" bindLabel="label" [virtualScroll]=" true" (scrollToEnd)="organizationScrollToEnd()"
+                         bindValue="value" [selectOnTab]="true" minTermLength="3" placeholder="Please type at least 3 characters" (close)="validateOrganizationDropdown()"  ></ng-select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div id="ddlSourceCode" style="display:none;margin-bottom:15px;">
+              <label for="SourceCodeID">Source Code:</label>
+              <ng-select [(ngModel)]="model.SourceCodeName" id="SourceCodeName" name="SourceCodeName"
+                         [ngModelOptions]="{standalone: true}"
+                         [items]="sourceCodeList" bindLabel="label"
+                         bindValue="value" [selectOnTab]="true" (change)="sourceCodeChange($event)"></ng-select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div id="ddlOrganizationCoordinator" style="display:none;">
+              <label for="CoordinatorID">Organization Coordinator:</label>
+              <ng-select [(ngModel)]="model.CoordinatorID" id="CoordinatorID" name="CoordinatorID"
+                         [ngModelOptions]="{standalone: true}"
+                         [items]="coordinatorList" bindLabel="label"
+                         bindValue="value" [selectOnTab]="true"></ng-select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-light" id="AgeGender" style="    margin: 15px 0 0 0;display: none;">
+      <div class="card-body">
+        <h5 class="card-title">Age and Gender</h5>
+        <div class="row">
+          <div class="col-sm" id="txtBoxUpperAge" style="display:none;">
+            <label for="LowerAgeLimit">Lower Age Limit:</label>
+            <input class="form-control " type="text" id="LowerAgeLimit" [(ngModel)]="model.LowerAgeLimit" />
+          </div>
+
+          <div class="col-sm" id="txtBoxLowerAge" style="display:none">
+            <label for="UpperAgeLimit">Upper Age Limit:</label>
+            <input class="form-control " type="text" id="UpperAgeLimit" [(ngModel)]="model.UpperAgeLimit" />
+          </div>
+
+          <div class="col-sm" id="ddlGender" style="display:none;">
+            <label for="GenderId">Gender:</label>
+            <ng-select [(ngModel)]="model.Gender" id="Gender" name="Gender"
+                       [ngModelOptions]="{standalone: true}"
+                       [items]="genderList" bindLabel="label"
+                       bindValue="value" [selectOnTab]="true"></ng-select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-light" id="SortOptions" style="margin: 15px 0 0 0;display: none;">
+      <div class="card-body">
+        <h5 class="card-title">Sort/Display Options</h5>
+        <div id="ddlSortOption1" style="display:none;">
+          <label for="SortBy1">Sorting Options:</label>
+          <ng-select [(ngModel)]="model.SortBy1" id="SortBy1" name="SortBy1"
+                     [ngModelOptions]="{standalone: true}"
+                     [items]="sortingOptionsList" bindLabel="label"
+                     bindValue="value" [selectOnTab]="true"></ng-select>
+        </div>
+        <div id="cbxHideIdentifyingInfo" style="display:none;margin-top:15px;">
+          <input type="checkbox" id="HideIdentifyingInfo" name="HideIdentifyingInfo"
+                 value="true" [(ngModel)]="model.HideIdentifyingInfo"
+                 style="height:20px;width:20px;vertical-align: text-bottom;">
+          <label for="HideIdentifyingInfo" style="padding-left:3px;">Hide All Identifying Information</label>
+          <label>Note: Selecting this checkbox will hide Referral Name, Donor SSN, or Recipient Name from Reports. Medical Record # will not be hidden</label>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+

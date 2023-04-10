@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="StatTracUploader_Test">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=sql-stattracuploader-test.database.windows.net;Initial Catalog=sqldb-stattracuploader-test</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>395c1b03-923d-407f-b59d-b2f077c8e8ed</DataSourceID>
+</RptDataSource>

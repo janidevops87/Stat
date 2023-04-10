@@ -1,0 +1,22 @@
+<div>
+  <div class="row">
+    <div class="col-sm">
+      <label>Approacher Organization:</label>
+      <ng-select [(ngModel)]="model.ApproacherOrganizationId" id="ApproacherOrganizationId" name="ApproacherOrganizationId"
+                 [ngModelOptions]="{standalone: true}" (search)="searchApproacherOrg($event)" [searchable]="true" (change)="approacherOrganizationChanged()"
+                 [items]="approacherOrganizationList" bindLabel="label" [virtualScroll]=" true" (scrollToEnd)="ApproacherOrgScrollToEnd()" (clear)="clearApproacherOrg()"
+                 bindValue="value" [selectOnTab]="true"  minTermLength="3" placeholder="Please type at least 3 characters" (close)="validateApproacherOrgDropdown()"></ng-select>
+    </div>
+  </div>
+  <div class="row" style="margin-top:10px;">
+    <div class="col-sm">
+      <label>Approacher:</label>
+      <ng-select [(ngModel)]="model.ApproacherId" id="ApproacherId" name="ApproacherId"
+                 [ngModelOptions]="{standalone: true}"
+                 [items]="approacherList" bindLabel="label"
+                 bindValue="value" [selectOnTab]="true" (change)="addtoParameterList()"></ng-select>
+    </div>
+  </div>
+  <!-- hidden field is need to feed back to parent -->
+  <input type="hidden" id="customParameterList" />
+</div>

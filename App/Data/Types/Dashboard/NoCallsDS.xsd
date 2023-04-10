@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NoCallsDS" targetNamespace="http://tempuri.org/NoCallsDS.xsd" xmlns:mstns="http://tempuri.org/NoCallsDS.xsd" xmlns="http://tempuri.org/NoCallsDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ReferralTest2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ReferralTest2ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.Stattrac.Data.Types.Properties.Settings.GlobalReference.Default.ReferralTest2ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="NoCallsDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="NoCallsDS" msprop:Generator_DataSetName="NoCallsDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="NoCalls" msprop:Generator_UserTableName="NoCalls" msprop:Generator_RowDeletedName="NoCallsRowDeleted" msprop:Generator_RowChangedName="NoCallsRowChanged" msprop:Generator_RowClassName="NoCallsRow" msprop:Generator_RowChangingName="NoCallsRowChanging" msprop:Generator_RowEvArgName="NoCallsRowChangeEvent" msprop:Generator_RowEvHandlerName="NoCallsRowChangeEventHandler" msprop:Generator_TableClassName="NoCallsDataTable" msprop:Generator_TableVarName="tableNoCalls" msprop:Generator_RowDeletingName="NoCallsRowDeleting" msprop:Generator_TablePropName="NoCalls">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CallID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="CallID" msprop:Generator_ColumnVarNameInTable="columnCallID" msprop:Generator_ColumnPropNameInRow="CallID" msprop:Generator_ColumnPropNameInTable="CallIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CallNumber" msprop:Generator_UserColumnName="CallNumber" msprop:Generator_ColumnVarNameInTable="columnCallNumber" msprop:Generator_ColumnPropNameInRow="CallNumber" msprop:Generator_ColumnPropNameInTable="CallNumberColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CallDateTime" msprop:Generator_UserColumnName="CallDateTime" msprop:Generator_ColumnVarNameInTable="columnCallDateTime" msprop:Generator_ColumnPropNameInRow="CallDateTime" msprop:Generator_ColumnPropNameInTable="CallDateTimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NoCallTypeName" msprop:Generator_UserColumnName="NoCallTypeName" msprop:Generator_ColumnVarNameInTable="columnNoCallTypeName" msprop:Generator_ColumnPropNameInRow="NoCallTypeName" msprop:Generator_ColumnPropNameInTable="NoCallTypeNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NoCallDescription" msprop:Generator_UserColumnName="NoCallDescription" msprop:Generator_ColumnVarNameInTable="columnNoCallDescription" msprop:Generator_ColumnPropNameInRow="NoCallDescription" msprop:Generator_ColumnPropNameInTable="NoCallDescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourceCodeName" msprop:Generator_UserColumnName="SourceCodeName" msprop:Generator_ColumnVarNameInTable="columnSourceCodeName" msprop:Generator_ColumnPropNameInRow="SourceCodeName" msprop:Generator_ColumnPropNameInTable="SourceCodeNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StatEmployeeFirstName" msprop:Generator_UserColumnName="StatEmployeeFirstName" msprop:Generator_ColumnVarNameInTable="columnStatEmployeeFirstName" msprop:Generator_ColumnPropNameInRow="StatEmployeeFirstName" msprop:Generator_ColumnPropNameInTable="StatEmployeeFirstNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StatEmployeeLastName" msprop:Generator_UserColumnName="StatEmployeeLastName" msprop:Generator_ColumnVarNameInTable="columnStatEmployeeLastName" msprop:Generator_ColumnPropNameInRow="StatEmployeeLastName" msprop:Generator_ColumnPropNameInTable="StatEmployeeLastNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrganizationID" msprop:Generator_UserColumnName="OrganizationID" msprop:Generator_ColumnPropNameInRow="OrganizationID" msprop:Generator_ColumnVarNameInTable="columnOrganizationID" msprop:Generator_ColumnPropNameInTable="OrganizationIDColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:NoCalls" />
+      <xs:field xpath="mstns:CallID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

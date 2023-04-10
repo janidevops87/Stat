@@ -1,0 +1,39 @@
+﻿@model ClientViewModel
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = $"Edit client '{Model.ClientId}'";
+}
+
+<h2>Edit client <b>@Model.ClientId</b></h2>
+
+<ul class="nav nav-tabs">
+    <li class="@(Model is EditPropertiesViewModel ? "active" : "")">
+        <a asp-action="EditProperties" asp-route-id="@Model.Id">Properties</a>
+    </li>
+    <li class="@(Model is EditClaimsViewModel ? "active" : "")">
+        <a asp-action="EditClaims" asp-route-id="@Model.Id">Claims</a>
+    </li>
+    <li class="@(Model is EditSecretsViewModel ? "active" : "")">
+        <a asp-action="EditSecrets" asp-route-id="@Model.Id">Secrets</a>
+    </li>
+    <li class="@(Model is EditRedirectUrisViewModel ? "active" : "")">
+        <a asp-action="EditRedirectUris" asp-route-id="@Model.Id">Redirect Uris</a>
+    </li>
+    <li class="@(Model is EditScopesViewModel ? "active" : "")">
+        <a asp-action="EditScopes" asp-route-id="@Model.Id">Scopes</a>
+    </li>
+</ul>
+<br />
+<div>
+    @RenderBody()
+</div>
+<br />
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

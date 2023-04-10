@@ -1,0 +1,79 @@
+name: eReferral-$(Build.SourceBranchName)-Build.$(Build.BuildId)-$(date:yyyy.MM.dd.HH.mm.ss)
+
+pool:
+  vmImage: 'windows-2019'
+
+variables:
+  solution: 'Statline.Ereferral/Statline.Ereferral.sln'
+  buildPlatform: 'Any CPU'
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '12.x'
+
+- task: NuGetToolInstaller@1
+  inputs:
+    versionSpec: 
+
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '6.0.x'
+
+
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet restore'
+  inputs:
+    command: 'restore'
+    projects: 'Statline.Ereferral/Statline.Ereferral.Web/**/*.csproj'
+    feedsToUse: 'select'
+    vstsFeed: 'bd87882d-d5e1-413b-8406-980648182e7a/9c9ec374-3a32-4446-b5c7-17b4b2551f35'
+
+
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet publish'
+  inputs:
+    command: 'publish'
+    publishWebProjects: false
+    projects: 'Statline.Ereferral/Statline.Ereferral.Web/**/**.csproj'
+    arguments: '-c $(buildConfiguration) -o $(Build.SourcesDirectory)/DeepDir --no-restore'
+    zipAfterPublish: true
+    modifyOutputPath: true
+
+- task: ExtractFiles@1
+  inputs:
+    archiveFilePatterns: '$(Build.SourcesDirectory)/DeepDir/Statline.Ereferral.Web.zip'
+    destinationFolder: '$(Build.SourcesDirectory)/DeepDir/eReferral'
+    cleanDestinationFolder: true
+    overwriteExistingFiles: true
+
+
+#- task: PowerShell@2
+#  inputs:
+#    targetType: 'inline'
+#    script: |
+#      $folderToMove = "eReferral"
+      
+#      $fullFolder = Get-ChildItem -Directory -Path "$(Build.SourcesDirectory)\DeepDir\$folderToMove\" -Include 'Out' -Recurse
+          
+#      Write-Host $fullFolder
+      
+#      Move-Item -Path $fullFolder.FullName -Destination "$(Build.SourcesDirectory)\ToPublish\"
+#      displayName: 'Move packages'
+
+
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(Build.SourcesDirectory)\DeepDir\eReferral'
+    includeRootFolder: false
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/eReferral-$(Build.BuildId).zip'
+    replaceExistingArchive: true
+
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'

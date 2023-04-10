@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Report">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=vm-StOltp-Test.inside.mtf.org;Initial Catalog=_ReferralProdReport</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>3037984a-1c2c-4865-8c1a-71e76f9fa4e8</DataSourceID>
+</RptDataSource>

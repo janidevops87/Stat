@@ -1,0 +1,14 @@
+ SELECT     COUNT(*) AS [count], 'DMV' AS DataTable, LEFT(DMVADDR.Zip, 5) AS ZIP
+ FROM         DMV INNER JOIN
+                       DMVADDR ON DMV.ID = DMVADDR.DMVID
+ WHERE     (DMVADDR.AddrTypeID = 1)
+ GROUP BY LEFT(DMVADDR.Zip, 5)
+ ORDER BY LEFT(DMVADDR.Zip, 5)
+ 
+ 
+ SELECT     COUNT(*) AS [COUNT], ' Registry' AS DataTable, LEFT(REGISTRYADDR.Zip, 5) AS ZIP
+ FROM         Registry INNER JOIN
+                       REGISTRYADDR ON Registry.ID = REGISTRYADDR.RegistryID
+ WHERE     (REGISTRYADDR.AddrTypeID = 1)
+ GROUP BY LEFT(REGISTRYADDR.Zip, 5)
+ ORDER BY LEFT(REGISTRYADDR.Zip, 5)

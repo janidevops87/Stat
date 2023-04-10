@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="UpdateDS" targetNamespace="http://tempuri.org/UpdateDS.xsd" xmlns:mstns="http://tempuri.org/UpdateDS.xsd" xmlns="http://tempuri.org/UpdateDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ReferralTestConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ReferralTestConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.Stattrac.Data.Types.Properties.Settings.GlobalReference.Default.ReferralTestConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="UpdateDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="UpdateDS" msprop:Generator_DataSetName="UpdateDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="UpdatedReferralEvents" msprop:Generator_UserTableName="UpdatedReferralEvents" msprop:Generator_RowDeletedName="UpdatedReferralEventsRowDeleted" msprop:Generator_RowChangedName="UpdatedReferralEventsRowChanged" msprop:Generator_RowClassName="UpdatedReferralEventsRow" msprop:Generator_RowChangingName="UpdatedReferralEventsRowChanging" msprop:Generator_RowEvArgName="UpdatedReferralEventsRowChangeEvent" msprop:Generator_RowEvHandlerName="UpdatedReferralEventsRowChangeEventHandler" msprop:Generator_TableClassName="UpdatedReferralEventsDataTable" msprop:Generator_TableVarName="tableUpdatedReferralEvents" msprop:Generator_RowDeletingName="UpdatedReferralEventsRowDeleting" msprop:Generator_TablePropName="UpdatedReferralEvents">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CallID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="CallID" msprop:Generator_ColumnVarNameInTable="columnCallID" msprop:Generator_ColumnPropNameInRow="CallID" msprop:Generator_ColumnPropNameInTable="CallIDColumn" type="xs:int" />
+              <xs:element name="CallNumber" msprop:Generator_UserColumnName="CallNumber" msprop:Generator_ColumnVarNameInTable="columnCallNumber" msprop:Generator_ColumnPropNameInRow="CallNumber" msprop:Generator_ColumnPropNameInTable="CallNumberColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CallDateTime" msprop:Generator_UserColumnName="CallDateTime" msprop:Generator_ColumnVarNameInTable="columnCallDateTime" msprop:Generator_ColumnPropNameInRow="CallDateTime" msprop:Generator_ColumnPropNameInTable="CallDateTimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ReferralDonorFirstName" msprop:Generator_UserColumnName="ReferralDonorFirstName" msprop:Generator_ColumnVarNameInTable="columnReferralDonorFirstName" msprop:Generator_ColumnPropNameInRow="ReferralDonorFirstName" msprop:Generator_ColumnPropNameInTable="ReferralDonorFirstNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReferralDonorLastName" msprop:Generator_UserColumnName="ReferralDonorLastName" msprop:Generator_ColumnVarNameInTable="columnReferralDonorLastName" msprop:Generator_ColumnPropNameInRow="ReferralDonorLastName" msprop:Generator_ColumnPropNameInTable="ReferralDonorLastNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrganizationName" msprop:Generator_UserColumnName="OrganizationName" msprop:Generator_ColumnVarNameInTable="columnOrganizationName" msprop:Generator_ColumnPropNameInRow="OrganizationName" msprop:Generator_ColumnPropNameInTable="OrganizationNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PrevReferralTypeName" msprop:Generator_UserColumnName="PrevReferralTypeName" msprop:Generator_ColumnVarNameInTable="columnPrevReferralTypeName" msprop:Generator_ColumnPropNameInRow="PrevReferralTypeName" msprop:Generator_ColumnPropNameInTable="PrevReferralTypeNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReferralTypeName" msprop:Generator_UserColumnName="ReferralTypeName" msprop:Generator_ColumnVarNameInTable="columnReferralTypeName" msprop:Generator_ColumnPropNameInRow="ReferralTypeName" msprop:Generator_ColumnPropNameInTable="ReferralTypeNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourceCodeName" msprop:Generator_UserColumnName="SourceCodeName" msprop:Generator_ColumnVarNameInTable="columnSourceCodeName" msprop:Generator_ColumnPropNameInRow="SourceCodeName" msprop:Generator_ColumnPropNameInTable="SourceCodeNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StatEmployeeFirstName" msprop:Generator_UserColumnName="StatEmployeeFirstName" msprop:Generator_ColumnVarNameInTable="columnStatEmployeeFirstName" msprop:Generator_ColumnPropNameInRow="StatEmployeeFirstName" msprop:Generator_ColumnPropNameInTable="StatEmployeeFirstNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StatEmployeeLastName" msprop:Generator_UserColumnName="StatEmployeeLastName" msprop:Generator_ColumnVarNameInTable="columnStatEmployeeLastName" msprop:Generator_ColumnPropNameInRow="StatEmployeeLastName" msprop:Generator_ColumnPropNameInTable="StatEmployeeLastNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrganizationID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="OrganizationID" msprop:Generator_ColumnVarNameInTable="columnOrganizationID" msprop:Generator_ColumnPropNameInRow="OrganizationID" msprop:Generator_ColumnPropNameInTable="OrganizationIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="StateAbbrv" msprop:Generator_UserColumnName="StateAbbrv" msprop:Generator_ColumnPropNameInRow="StateAbbrv" msprop:Generator_ColumnVarNameInTable="columnStateAbbrv" msprop:Generator_ColumnPropNameInTable="StateAbbrvColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

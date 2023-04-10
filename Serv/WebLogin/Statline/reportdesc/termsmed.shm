@@ -1,0 +1,362 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="EXPIRES" content="0">
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR"
+content="Microsoft FrontPage (Visual InterDev Edition) 2.0">
+<title>Report Description</title>
+</head>
+
+<body bgcolor="#F5EBDD">
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="575">
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td><table border="1" cellpadding="7" cellspacing="1"
+        width="637">
+            <tr>
+                <td colspan="4" width="100%"><font size="3"
+                face="Arial"><strong><i>Medical &amp; Surgical
+                Problems / Procedures</i></strong></font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>AAA</b></font></td>
+                <td width="36%"><font size="2">Abdominal Aortic
+                Aneurysm</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>PUD</b></font></td>
+                <td width="36%"><font size="2">Peptic ulcer
+                disease</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>A
+                Fib</b></font></td>
+                <td width="36%"><font size="2">Atrial
+                fibrillation</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>PVC</b></font></td>
+                <td width="36%"><font size="2">Premature
+                ventricular contraction</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>AIDS</b></font></td>
+                <td width="36%"><font size="2">Acquired
+                Immunodeficiency Syndrome</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>DIC</b></font></td>
+                <td width="36%"><font size="2">Disseminated
+                intravascular coagulation</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>AKA</b></font></td>
+                <td width="36%"><font size="2">Above knee
+                amputation</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>DKA</b></font></td>
+                <td width="36%"><font size="2">Diabetic
+                ketoacidosis</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>ALL</b></font></td>
+                <td width="36%"><font size="2">Acute lymphocytic
+                leukemia</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>DM</b></font></td>
+                <td width="36%"><font size="2">Diabetes mellitus</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>ALL</b></font></td>
+                <td width="36%"><font size="2">Acute lymphocytic
+                leukemia</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>DT</b></font></td>
+                <td width="36%"><font size="2">Delirium tremens</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>ALS</b></font></td>
+                <td width="36%"><font size="2">Amyotrophic
+                lateral sclerosis</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>DVT</b></font></td>
+                <td width="36%"><font size="2">Deep vein
+                thrombosis</font></td>
+            </tr>
+            <tr>
+                <td><font size="2"><b>AML</b></font></td>
+                <td><font size="2">Acute myelogenous leukemia</font></td>
+                <td><font size="2"><b>ECG, EKG</b></font></td>
+                <td><font size="2">Electrocardiogram</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>AODM</b></font></td>
+                <td width="36%"><font size="2">Adult onset
+                diabetes mellitus</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>EEG</b></font></td>
+                <td width="36%"><font size="2">Electroencephalogram</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>ARC</b></font></td>
+                <td width="36%"><font size="2">AIDS Related
+                Complex</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>ESLD</b></font></td>
+                <td width="36%"><font size="2">End stage liver
+                disease</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>ARDS</b></font></td>
+                <td width="36%"><font size="2">Adult respiratory
+                distress syndrome</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>ESRD</b></font></td>
+                <td width="36%"><font size="2">End stage renal
+                disease</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>ARF</b></font></td>
+                <td width="36%"><font size="2">Acute renal
+                failure</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>FUO</b></font></td>
+                <td width="36%"><font size="2">Fever of unknown
+                origin</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>ASD</b></font></td>
+                <td width="36%"><font size="2">Atrial septal
+                defect</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>Fx</b></font></td>
+                <td width="36%"><font size="2">Fracture</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>ASHD</b></font></td>
+                <td width="36%"><font size="2">Arteriosclerotic
+                heart disease</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>GSW</b></font></td>
+                <td width="36%"><font size="2">Gunshot wound </font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>AVR</b></font></td>
+                <td width="36%"><font size="2">Aortic valve
+                replacement</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>HA
+                </b></font></td>
+                <td width="36%"><font size="2">Headache</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>BBB</b></font></td>
+                <td width="36%"><font size="2">Bundle branch
+                block</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>Hep
+                B</b></font></td>
+                <td width="36%"><font size="2">Hepatitis B</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>BKA</b></font></td>
+                <td width="36%"><font size="2">Below knee
+                amputation</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>Hep
+                C</b></font></td>
+                <td width="36%"><font size="2">Hepatitis C</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>Bx</b></font></td>
+                <td width="36%"><font size="2">Biopsy</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>HIV</b></font></td>
+                <td width="36%"><font size="2">Human
+                immunodeficiency virus</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>CA</b></font></td>
+                <td width="36%"><font size="2">Carcinoma/cancer</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>HTN</b></font></td>
+                <td width="36%"><font size="2">Hypertension</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>CABG</b></font></td>
+                <td width="36%"><font size="2">Coronary artery
+                bypass graft</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>IABP</b></font></td>
+                <td width="36%"><font size="2">Intra-aortic
+                balloon pump</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>CAD</b></font></td>
+                <td width="36%"><font size="2">Coronary artery
+                disease</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>ICP</b></font></td>
+                <td width="36%"><font size="2">Intracranial
+                pressure</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>CAT</b></font></td>
+                <td width="36%"><font size="2">Computerized axial
+                tomography</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>IDDM</b></font></td>
+                <td width="36%"><font size="2">Insulin dependent
+                diabetes mellitus</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>CF</b></font></td>
+                <td width="36%"><font size="2">Cystic Fibrosis</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>IMV</b></font></td>
+                <td width="36%"><font size="2">Intermittent
+                mechanical vent</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>CHD</b></font></td>
+                <td width="36%"><font size="2">Congenital heart
+                disease</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>IVDA</b></font></td>
+                <td width="36%"><font size="2">Intravenous drug
+                abuse</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>CHF</b></font></td>
+                <td width="36%"><font size="2">Congestive heart
+                failure</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>LAP</b></font></td>
+                <td width="36%"><font size="2">Laparotomy</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>CHI</b></font></td>
+                <td width="36%"><font size="2">Closed head injury</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>LP</b></font></td>
+                <td width="36%"><font size="2">Lumbar puncture</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>CLL</b></font></td>
+                <td width="36%"><font size="2">Chronic
+                lymphocytic leukemia</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>LVH</b></font></td>
+                <td width="36%"><font size="2">Left ventricular
+                hypertrophy</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>CML</b></font></td>
+                <td width="36%"><font size="2">Chronic
+                myelogenous leukemia</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>MI</b></font></td>
+                <td width="36%"><font size="2">Myocardial
+                infarction</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>COPD</b></font></td>
+                <td width="36%"><font size="2">Chronic
+                obstructive pulmonary disease</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>MOF</b></font></td>
+                <td width="36%"><font size="2">Multiple organ
+                failure</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>CP</b></font></td>
+                <td width="36%"><font size="2">Cerebral palsy</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>MRSA</b></font></td>
+                <td width="36%"><font size="2">Methycillin
+                resistant staph aureus</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>CVA</b></font></td>
+                <td width="36%"><font size="2">Cerebrovascular
+                accident</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>RA</b></font></td>
+                <td width="36%"><font size="2">Rheumatoid
+                arthritis</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>D&amp;C</b></font></td>
+                <td width="36%"><font size="2">Dilation and
+                curettage</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>SAH</b></font></td>
+                <td width="36%"><font size="2">Subarachnoid
+                hemorrhage</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>DIC</b></font></td>
+                <td width="36%"><font size="2">Disseminated
+                intravascular coagulation</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>SDH</b></font></td>
+                <td width="36%"><font size="2">Subdural hematoma</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>ETOH</b></font></td>
+                <td width="36%"><font size="2">Alcohol Abuse</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>SIDS</b></font></td>
+                <td width="36%"><font size="2">Sudden infant
+                death syndrome</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>ICB</b></font></td>
+                <td width="36%"><font size="2">Intercranial bleed</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>SIGSW</b></font></td>
+                <td width="36%"><font size="2">Self-inflicted gun
+                shot wound</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>MS</b></font></td>
+                <td width="36%"><font size="2">Multiple Sclerosis</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>SOB</b></font></td>
+                <td width="36%"><font size="2">Shortness of
+                breath</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>MVR</b></font></td>
+                <td width="36%"><font size="2">Mitral valve
+                replacement</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>ST</b></font></td>
+                <td width="36%"><font size="2">Sinus tachycardia</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>NIDDM</b></font></td>
+                <td width="36%"><font size="2">Non-insulin
+                dependent diabetes mellitus</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>SVT</b></font></td>
+                <td width="36%"><font size="2">Supraventricular
+                tachycardia</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>N&amp;V</b></font></td>
+                <td width="36%"><font size="2">Nausea and
+                vomiting</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>TB</b></font></td>
+                <td width="36%"><font size="2">Tuberculosis</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>OD</b></font></td>
+                <td width="36%"><font size="2">Over dose</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>TIA</b></font></td>
+                <td width="36%"><font size="2">Transient ischemic
+                attack</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>PE</b></font></td>
+                <td width="36%"><font size="2">Pulmonary embolism</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>UTI</b></font></td>
+                <td width="36%"><font size="2">Urinary tract
+                infection</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>POST</b></font></td>
+                <td width="36%"><font size="2">Postmortem
+                examination</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>VFib</b></font></td>
+                <td width="36%"><font size="2">Ventricular
+                fibrillation</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>POST-OP</b></font></td>
+                <td width="36%"><font size="2">After surgery</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>VTach</b></font></td>
+                <td width="36%"><font size="2">Ventricular
+                tachycardia</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>PRE-OP</b></font></td>
+                <td width="36%"><font size="2">Before surgery</font></td>
+                <td width="13%" bgcolor="#FFFFFF">&nbsp;</td>
+                <td width="36%">&nbsp;</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+</table>
+</center></div>
+</body>
+</html>
+

@@ -1,0 +1,95 @@
+name: StServices-$(Build.SourceBranchName)-Build.$(Build.BuildId)-$(date:yyyy.MM.dd.HH.mm.ss)
+
+pool:
+  vmImage: 'windows-2019'
+
+variables:
+  solution: 'Serv/StatLine.StatTrac.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Debug'
+
+steps:
+# - task: NodeTool@0
+#   inputs:
+#     versionSource: 'spec'
+#     versionSpec: '16.x'
+
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '6.0.x'
+    includePreviewVersions: true
+
+- task: NuGetToolInstaller@1
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    restoreSolution: '$(solution)'
+    feedsToUse: 'select'
+    vstsFeed: 'bd87882d-d5e1-413b-8406-980648182e7a/9c9ec374-3a32-4446-b5c7-17b4b2551f35'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    projects: 'Serv/**/*.csproj'
+    feedsToUse: 'select'
+    vstsFeed: 'bd87882d-d5e1-413b-8406-980648182e7a/9c9ec374-3a32-4446-b5c7-17b4b2551f35'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: 'Serv/**/*.csproj'
+    arguments: '-c $(BuildConfiguration) --no-restore'
+
+# - task: VSBuild@1
+#   inputs:
+#     solution: '$(solution)'
+#     msbuildArgs: '/t:Statline_StatTrac_AutoImport_Host_WebJob;Statline_StatTrac_StatFax_Host_WebJob;Statline_StatTrac_StatFile_Host_WebJob;Statline_StatTrac_StatRespond_Host_WebJob'
+#     platform: '$(buildPlatform)'
+#     configuration: '$(buildConfiguration)'
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)\Serv\StatTrac'
+    Contents: '**/Host.WebJob/app.*.config'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/Configs'
+
+- task: PowerShell@2
+  displayName: Create and populate BranchInfo.txt
+  inputs:
+    targetType: 'inline'
+    script: |
+      $foldersToMove = @("StatFile", "StatFax", "StatRespond", "AutoImport")
+
+      # Copy files
+      foreach ($folder in $foldersToMove) {
+          $buildFolder = "$(Build.SourcesDirectory)\Serv\StatTrac\$($folder)\Host.WebJob\bin\Debug\net472"
+          $destinationFolder = "$(Build.ArtifactStagingDirectory)\$($folder)\app_data\Jobs\Triggered\$($folder)-$(Build.SourceBranchName)\"
+
+          # Create destination directory
+          New-Item -ItemType Directory -Path $destinationFolder
+
+          # Move build products
+          Get-ChildItem -Path "$($buildFolder)\*" -Recurse | Move-Item -Destination $destinationFolder -Force
+          
+          # Move previously-copied config transforms
+          Get-ChildItem -Path "$(Build.ArtifactStagingDirectory)\Configs\$($folder)\Host.WebJob\*" -Recurse | Move-Item -Destination $destinationFolder -Force
+      }
+
+      # Remove Host.WebJob folders from previously-copied config transforms
+      Remove-Item -Path "$(Build.ArtifactStagingDirectory)\Configs" -Recurse -Force
+
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(Build.ArtifactStagingDirectory)'
+    includeRootFolder: false
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/StServices-Build$(Build.BuildId).zip'
+    replaceExistingArchive: true
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/StServices-Build$(Build.BuildId).zip'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'

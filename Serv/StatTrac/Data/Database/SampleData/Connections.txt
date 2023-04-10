@@ -1,0 +1,4 @@
+DBRefFolders found in your dbp file
+Connect String: Data Source=Clifford;Initial Catalog=_ReferralDev3;Integrated Security=True;Connect Timeout=0;Encrypt=False;Packet Size=4096;Workstation ID=BRET
+Provider: Microsoft SQL Server
+

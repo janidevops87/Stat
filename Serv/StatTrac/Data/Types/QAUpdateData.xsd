@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QAUpdateData" targetNamespace="http://tempuri.org/QAUpdateData.xsd" xmlns:mstns="http://tempuri.org/QAUpdateData.xsd" xmlns="http://tempuri.org/QAUpdateData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="_ReferralDev2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="_ReferralDev2ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.StatTrac.Data.Types.Properties.Settings.GlobalReference.Default._ReferralDev2ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QAUpdateData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="QAUpdateData" msprop:Generator_UserDSName="QAUpdateData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="QAErrorLocation" msprop:Generator_UserTableName="QAErrorLocation" msprop:Generator_RowEvArgName="QAErrorLocationRowChangeEvent" msprop:Generator_TableVarName="tableQAErrorLocation" msprop:Generator_TablePropName="QAErrorLocation" msprop:Generator_RowDeletingName="QAErrorLocationRowDeleting" msprop:Generator_RowChangingName="QAErrorLocationRowChanging" msprop:Generator_RowDeletedName="QAErrorLocationRowDeleted" msprop:Generator_TableClassName="QAErrorLocationDataTable" msprop:Generator_RowChangedName="QAErrorLocationRowChanged" msprop:Generator_RowEvHandlerName="QAErrorLocationRowChangeEventHandler" msprop:Generator_RowClassName="QAErrorLocationRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QAErrorLocationID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnQAErrorLocationID" msprop:Generator_ColumnPropNameInRow="QAErrorLocationID" msprop:Generator_ColumnPropNameInTable="QAErrorLocationIDColumn" msprop:Generator_UserColumnName="QAErrorLocationID" type="xs:int" />
+              <xs:element name="OrganizationID" msprop:Generator_ColumnVarNameInTable="columnOrganizationID" msprop:Generator_ColumnPropNameInRow="OrganizationID" msprop:Generator_ColumnPropNameInTable="OrganizationIDColumn" msprop:Generator_UserColumnName="OrganizationID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAErrorLocationDescription" msprop:Generator_ColumnVarNameInTable="columnQAErrorLocationDescription" msprop:Generator_ColumnPropNameInRow="QAErrorLocationDescription" msprop:Generator_ColumnPropNameInTable="QAErrorLocationDescriptionColumn" msprop:Generator_UserColumnName="QAErrorLocationDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QAErrorLocationActive" msprop:Generator_ColumnVarNameInTable="columnQAErrorLocationActive" msprop:Generator_ColumnPropNameInRow="QAErrorLocationActive" msprop:Generator_ColumnPropNameInTable="QAErrorLocationActiveColumn" msprop:Generator_UserColumnName="QAErrorLocationActive" type="xs:short" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" msprop:Generator_UserColumnName="LastModified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" msprop:Generator_UserColumnName="LastStatEmployeeID" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" msprop:Generator_UserColumnName="AuditLogTypeID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QATracking" msprop:Generator_UserTableName="QATracking" msprop:Generator_RowEvArgName="QATrackingRowChangeEvent" msprop:Generator_TableVarName="tableQATracking" msprop:Generator_TablePropName="QATracking" msprop:Generator_RowDeletingName="QATrackingRowDeleting" msprop:Generator_RowChangingName="QATrackingRowChanging" msprop:Generator_RowDeletedName="QATrackingRowDeleted" msprop:Generator_TableClassName="QATrackingDataTable" msprop:Generator_RowChangedName="QATrackingRowChanged" msprop:Generator_RowEvHandlerName="QATrackingRowChangeEventHandler" msprop:Generator_RowClassName="QATrackingRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QATrackingID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnQATrackingID" msprop:Generator_ColumnPropNameInRow="QATrackingID" msprop:Generator_ColumnPropNameInTable="QATrackingIDColumn" msprop:Generator_UserColumnName="QATrackingID" type="xs:int" />
+              <xs:element name="OrganizationID" msprop:Generator_ColumnVarNameInTable="columnOrganizationID" msprop:Generator_ColumnPropNameInRow="OrganizationID" msprop:Generator_ColumnPropNameInTable="OrganizationIDColumn" msprop:Generator_UserColumnName="OrganizationID" type="xs:int" minOccurs="0" />
+              <xs:element name="QATrackingTypeID" msprop:Generator_ColumnVarNameInTable="columnQATrackingTypeID" msprop:Generator_ColumnPropNameInRow="QATrackingTypeID" msprop:Generator_ColumnPropNameInTable="QATrackingTypeIDColumn" msprop:Generator_UserColumnName="QATrackingTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="QATrackingNumber" msprop:Generator_ColumnVarNameInTable="columnQATrackingNumber" msprop:Generator_ColumnPropNameInRow="QATrackingNumber" msprop:Generator_ColumnPropNameInTable="QATrackingNumberColumn" msprop:Generator_UserColumnName="QATrackingNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QATrackingNotes" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QATrackingNotes" msprop:Generator_ColumnVarNameInTable="columnQATrackingNotes" msprop:Generator_ColumnPropNameInTable="QATrackingNotesColumn" msprop:Generator_UserColumnName="QATrackingNotes" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QATrackingSourceCode" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QATrackingSourceCode" msprop:Generator_ColumnVarNameInTable="columnQATrackingSourceCode" msprop:Generator_ColumnPropNameInTable="QATrackingSourceCodeColumn" msprop:Generator_UserColumnName="QATrackingSourceCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QATrackingReferralDateTime" msprop:Generator_ColumnVarNameInTable="columnQATrackingReferralDateTime" msprop:Generator_ColumnPropNameInRow="QATrackingReferralDateTime" msprop:Generator_ColumnPropNameInTable="QATrackingReferralDateTimeColumn" msprop:Generator_UserColumnName="QATrackingReferralDateTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="QATrackingReferralTypeID" msprop:Generator_ColumnVarNameInTable="columnQATrackingReferralTypeID" msprop:Generator_ColumnPropNameInRow="QATrackingReferralTypeID" msprop:Generator_ColumnPropNameInTable="QATrackingReferralTypeIDColumn" msprop:Generator_UserColumnName="QATrackingReferralTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="QATrackingStatusID" msprop:Generator_ColumnVarNameInTable="columnQATrackingStatusID" msprop:Generator_ColumnPropNameInRow="QATrackingStatusID" msprop:Generator_ColumnPropNameInTable="QATrackingStatusIDColumn" msprop:Generator_UserColumnName="QATrackingStatusID" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" msprop:Generator_UserColumnName="LastModified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" msprop:Generator_UserColumnName="LastStatEmployeeID" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" msprop:Generator_UserColumnName="AuditLogTypeID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QAProcessStep" msprop:Generator_UserTableName="QAProcessStep" msprop:Generator_RowEvArgName="QAProcessStepRowChangeEvent" msprop:Generator_TableVarName="tableQAProcessStep" msprop:Generator_TablePropName="QAProcessStep" msprop:Generator_RowDeletingName="QAProcessStepRowDeleting" msprop:Generator_RowChangingName="QAProcessStepRowChanging" msprop:Generator_RowDeletedName="QAProcessStepRowDeleted" msprop:Generator_TableClassName="QAProcessStepDataTable" msprop:Generator_RowChangedName="QAProcessStepRowChanged" msprop:Generator_RowEvHandlerName="QAProcessStepRowChangeEventHandler" msprop:Generator_RowClassName="QAProcessStepRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QAProcessStepID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnQAProcessStepID" msprop:Generator_ColumnPropNameInRow="QAProcessStepID" msprop:Generator_ColumnPropNameInTable="QAProcessStepIDColumn" msprop:Generator_UserColumnName="QAProcessStepID" type="xs:int" />
+              <xs:element name="OrganizationID" msprop:Generator_ColumnVarNameInTable="columnOrganizationID" msprop:Generator_ColumnPropNameInRow="OrganizationID" msprop:Generator_ColumnPropNameInTable="OrganizationIDColumn" msprop:Generator_UserColumnName="OrganizationID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAProcessStepDescription" msprop:Generator_ColumnVarNameInTable="columnQAProcessStepDescription" msprop:Generator_ColumnPropNameInRow="QAProcessStepDescription" msprop:Generator_ColumnPropNameInTable="QAProcessStepDescriptionColumn" msprop:Generator_UserColumnName="QAProcessStepDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QAProcessStepActive" msprop:Generator_ColumnVarNameInTable="columnQAProcessStepActive" msprop:Generator_ColumnPropNameInRow="QAProcessStepActive" msprop:Generator_ColumnPropNameInTable="QAProcessStepActiveColumn" msprop:Generator_UserColumnName="QAProcessStepActive" type="xs:short" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" msprop:Generator_UserColumnName="LastModified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" msprop:Generator_UserColumnName="LastStatEmployeeID" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" msprop:Generator_UserColumnName="AuditLogTypeID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QAMonitoringForm" msprop:Generator_UserTableName="QAMonitoringForm" msprop:Generator_RowEvArgName="QAMonitoringFormRowChangeEvent" msprop:Generator_TableVarName="tableQAMonitoringForm" msprop:Generator_TablePropName="QAMonitoringForm" msprop:Generator_RowDeletingName="QAMonitoringFormRowDeleting" msprop:Generator_RowChangingName="QAMonitoringFormRowChanging" msprop:Generator_RowDeletedName="QAMonitoringFormRowDeleted" msprop:Generator_TableClassName="QAMonitoringFormDataTable" msprop:Generator_RowChangedName="QAMonitoringFormRowChanged" msprop:Generator_RowEvHandlerName="QAMonitoringFormRowChangeEventHandler" msprop:Generator_RowClassName="QAMonitoringFormRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QAMonitoringFormID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormID" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormID" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormIDColumn" msprop:Generator_UserColumnName="QAMonitoringFormID" type="xs:int" />
+              <xs:element name="QAMonitoringFormCalculateScore" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormCalculateScore" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormCalculateScore" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormCalculateScoreColumn" msprop:Generator_UserColumnName="QAMonitoringFormCalculateScore" type="xs:short" minOccurs="0" />
+              <xs:element name="QAMonitoringFormRequireReview" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormRequireReview" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormRequireReview" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormRequireReviewColumn" msprop:Generator_UserColumnName="QAMonitoringFormRequireReview" type="xs:short" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" msprop:Generator_UserColumnName="LastModified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" msprop:Generator_UserColumnName="LastStatEmployeeID" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" msprop:Generator_UserColumnName="AuditLogTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAProcessStepDescription" msprop:Generator_ColumnVarNameInTable="columnQAProcessStepDescription" msprop:Generator_ColumnPropNameInRow="QAProcessStepDescription" msprop:Generator_ColumnPropNameInTable="QAProcessStepDescriptionColumn" msprop:Generator_UserColumnName="QAProcessStepDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="QAMonitoringFormName" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormName" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormName" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormNameColumn" msprop:Generator_UserColumnName="QAMonitoringFormName" type="xs:string" minOccurs="0" />
+              <xs:element name="QAMonitoringFormActive" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormActive" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormActive" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormActiveColumn" msprop:Generator_UserColumnName="QAMonitoringFormActive" type="xs:short" minOccurs="0" />
+              <xs:element name="QATrackingTypeID" msprop:Generator_ColumnVarNameInTable="columnQATrackingTypeID" msprop:Generator_ColumnPropNameInRow="QATrackingTypeID" msprop:Generator_ColumnPropNameInTable="QATrackingTypeIDColumn" msprop:Generator_UserColumnName="QATrackingTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModifiedString" msprop:Generator_ColumnVarNameInTable="columnLastModifiedString" msprop:Generator_ColumnPropNameInRow="LastModifiedString" msprop:Generator_ColumnPropNameInTable="LastModifiedStringColumn" msprop:Generator_UserColumnName="LastModifiedString" type="xs:string" minOccurs="0" />
+              <xs:element name="QAMonitoringFormInactiveComments" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormInactiveComments" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormInactiveComments" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormInactiveCommentsColumn" msprop:Generator_UserColumnName="QAMonitoringFormInactiveComments" type="xs:string" minOccurs="0" />
+              <xs:element name="OrganizationID" msprop:Generator_ColumnVarNameInTable="columnOrganizationID" msprop:Generator_ColumnPropNameInRow="OrganizationID" msprop:Generator_ColumnPropNameInTable="OrganizationIDColumn" msprop:Generator_UserColumnName="OrganizationID" type="xs:string" minOccurs="0" />
+              <xs:element name="QATrackingFormID" msprop:Generator_ColumnVarNameInTable="columnQATrackingFormID" msprop:Generator_ColumnPropNameInRow="QATrackingFormID" msprop:Generator_ColumnPropNameInTable="QATrackingFormIDColumn" msprop:Generator_UserColumnName="QATrackingFormID" type="xs:string" minOccurs="0" />
+              <xs:element name="QATrackingID" msprop:Generator_ColumnVarNameInTable="columnQATrackingID" msprop:Generator_ColumnPropNameInRow="QATrackingID" msprop:Generator_ColumnPropNameInTable="QATrackingIDColumn" msprop:Generator_UserColumnName="QATrackingID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QAMonitoringFormTemplate" msprop:Generator_UserTableName="QAMonitoringFormTemplate" msprop:Generator_RowEvArgName="QAMonitoringFormTemplateRowChangeEvent" msprop:Generator_TableVarName="tableQAMonitoringFormTemplate" msprop:Generator_TablePropName="QAMonitoringFormTemplate" msprop:Generator_RowDeletingName="QAMonitoringFormTemplateRowDeleting" msprop:Generator_RowChangingName="QAMonitoringFormTemplateRowChanging" msprop:Generator_RowDeletedName="QAMonitoringFormTemplateRowDeleted" msprop:Generator_TableClassName="QAMonitoringFormTemplateDataTable" msprop:Generator_RowChangedName="QAMonitoringFormTemplateRowChanged" msprop:Generator_RowEvHandlerName="QAMonitoringFormTemplateRowChangeEventHandler" msprop:Generator_RowClassName="QAMonitoringFormTemplateRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QAMonitoringFormTemplateID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormTemplateID" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormTemplateID" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormTemplateIDColumn" msprop:Generator_UserColumnName="QAMonitoringFormTemplateID" type="xs:int" />
+              <xs:element name="QAMonitoringFormID" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormID" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormID" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormIDColumn" msprop:Generator_UserColumnName="QAMonitoringFormID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAErrorTypeID" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeID" msprop:Generator_ColumnPropNameInRow="QAErrorTypeID" msprop:Generator_ColumnPropNameInTable="QAErrorTypeIDColumn" msprop:Generator_UserColumnName="QAErrorTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAMonitoringFormTemplateOrder" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormTemplateOrder" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormTemplateOrder" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormTemplateOrderColumn" msprop:Generator_UserColumnName="QAMonitoringFormTemplateOrder" type="xs:int" minOccurs="0" />
+              <xs:element name="QAMonitoringFormTemplateActive" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormTemplateActive" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormTemplateActive" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormTemplateActiveColumn" msprop:Generator_UserColumnName="QAMonitoringFormTemplateActive" type="xs:short" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" msprop:Generator_UserColumnName="LastModified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" msprop:Generator_UserColumnName="LastStatEmployeeID" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" msprop:Generator_UserColumnName="AuditLogTypeID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QAErrorType" msprop:Generator_UserTableName="QAErrorType" msprop:Generator_RowEvArgName="QAErrorTypeRowChangeEvent" msprop:Generator_TableVarName="tableQAErrorType" msprop:Generator_TablePropName="QAErrorType" msprop:Generator_RowDeletingName="QAErrorTypeRowDeleting" msprop:Generator_RowChangingName="QAErrorTypeRowChanging" msprop:Generator_RowDeletedName="QAErrorTypeRowDeleted" msprop:Generator_TableClassName="QAErrorTypeDataTable" msprop:Generator_RowChangedName="QAErrorTypeRowChanged" msprop:Generator_RowEvHandlerName="QAErrorTypeRowChangeEventHandler" msprop:Generator_RowClassName="QAErrorTypeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QAErrorTypeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeID" msprop:Generator_ColumnPropNameInRow="QAErrorTypeID" msprop:Generator_ColumnPropNameInTable="QAErrorTypeIDColumn" msprop:Generator_UserColumnName="QAErrorTypeID" type="xs:int" />
+              <xs:element name="OrganizationID" msprop:Generator_ColumnVarNameInTable="columnOrganizationID" msprop:Generator_ColumnPropNameInRow="OrganizationID" msprop:Generator_ColumnPropNameInTable="OrganizationIDColumn" msprop:Generator_UserColumnName="OrganizationID" type="xs:int" minOccurs="0" />
+              <xs:element name="QATrackingTypeID" msprop:Generator_ColumnVarNameInTable="columnQATrackingTypeID" msprop:Generator_ColumnPropNameInRow="QATrackingTypeID" msprop:Generator_ColumnPropNameInTable="QATrackingTypeIDColumn" msprop:Generator_UserColumnName="QATrackingTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAErrorLocationID" msprop:Generator_ColumnVarNameInTable="columnQAErrorLocationID" msprop:Generator_ColumnPropNameInRow="QAErrorLocationID" msprop:Generator_ColumnPropNameInTable="QAErrorLocationIDColumn" msprop:Generator_UserColumnName="QAErrorLocationID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAErrorTypeDescription" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeDescription" msprop:Generator_ColumnPropNameInRow="QAErrorTypeDescription" msprop:Generator_ColumnPropNameInTable="QAErrorTypeDescriptionColumn" msprop:Generator_UserColumnName="QAErrorTypeDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QAErrorRequireReview" msprop:Generator_ColumnVarNameInTable="columnQAErrorRequireReview" msprop:Generator_ColumnPropNameInRow="QAErrorRequireReview" msprop:Generator_ColumnPropNameInTable="QAErrorRequireReviewColumn" msprop:Generator_UserColumnName="QAErrorRequireReview" type="xs:short" minOccurs="0" />
+              <xs:element name="QAErrorTypeActive" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeActive" msprop:Generator_ColumnPropNameInRow="QAErrorTypeActive" msprop:Generator_ColumnPropNameInTable="QAErrorTypeActiveColumn" msprop:Generator_UserColumnName="QAErrorTypeActive" type="xs:short" minOccurs="0" />
+              <xs:element name="QAErrorTypeInactiveComments" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeInactiveComments" msprop:Generator_ColumnPropNameInRow="QAErrorTypeInactiveComments" msprop:Generator_ColumnPropNameInTable="QAErrorTypeInactiveCommentsColumn" msprop:Generator_UserColumnName="QAErrorTypeInactiveComments" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QAErrorTypeAssignedPoints" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeAssignedPoints" msprop:Generator_ColumnPropNameInRow="QAErrorTypeAssignedPoints" msprop:Generator_ColumnPropNameInTable="QAErrorTypeAssignedPointsColumn" msprop:Generator_UserColumnName="QAErrorTypeAssignedPoints" type="xs:int" minOccurs="0" />
+              <xs:element name="QAErrorTypeAutomaticZeroScore" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeAutomaticZeroScore" msprop:Generator_ColumnPropNameInRow="QAErrorTypeAutomaticZeroScore" msprop:Generator_ColumnPropNameInTable="QAErrorTypeAutomaticZeroScoreColumn" msprop:Generator_UserColumnName="QAErrorTypeAutomaticZeroScore" type="xs:short" minOccurs="0" />
+              <xs:element name="QAErrorTypeDisplayNA" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeDisplayNA" msprop:Generator_ColumnPropNameInRow="QAErrorTypeDisplayNA" msprop:Generator_ColumnPropNameInTable="QAErrorTypeDisplayNAColumn" msprop:Generator_UserColumnName="QAErrorTypeDisplayNA" type="xs:short" minOccurs="0" />
+              <xs:element name="QAErrorTypeDisplayComments" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeDisplayComments" msprop:Generator_ColumnPropNameInRow="QAErrorTypeDisplayComments" msprop:Generator_ColumnPropNameInTable="QAErrorTypeDisplayCommentsColumn" msprop:Generator_UserColumnName="QAErrorTypeDisplayComments" type="xs:short" minOccurs="0" />
+              <xs:element name="QAErrorTypeGenerateLogIfNo" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeGenerateLogIfNo" msprop:Generator_ColumnPropNameInRow="QAErrorTypeGenerateLogIfNo" msprop:Generator_ColumnPropNameInTable="QAErrorTypeGenerateLogIfNoColumn" msprop:Generator_UserColumnName="QAErrorTypeGenerateLogIfNo" type="xs:short" minOccurs="0" />
+              <xs:element name="QAErrorTypeGenerateLogIfYes" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeGenerateLogIfYes" msprop:Generator_ColumnPropNameInRow="QAErrorTypeGenerateLogIfYes" msprop:Generator_ColumnPropNameInTable="QAErrorTypeGenerateLogIfYesColumn" msprop:Generator_UserColumnName="QAErrorTypeGenerateLogIfYes" type="xs:short" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" msprop:Generator_UserColumnName="LastModified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" msprop:Generator_UserColumnName="LastStatEmployeeID" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" msprop:Generator_UserColumnName="AuditLogTypeID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QAErrorStatus" msprop:Generator_UserTableName="QAErrorStatus" msprop:Generator_RowEvArgName="QAErrorStatusRowChangeEvent" msprop:Generator_TableVarName="tableQAErrorStatus" msprop:Generator_TablePropName="QAErrorStatus" msprop:Generator_RowDeletingName="QAErrorStatusRowDeleting" msprop:Generator_RowChangingName="QAErrorStatusRowChanging" msprop:Generator_RowDeletedName="QAErrorStatusRowDeleted" msprop:Generator_TableClassName="QAErrorStatusDataTable" msprop:Generator_RowChangedName="QAErrorStatusRowChanged" msprop:Generator_RowEvHandlerName="QAErrorStatusRowChangeEventHandler" msprop:Generator_RowClassName="QAErrorStatusRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QAErrorStatusID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnQAErrorStatusID" msprop:Generator_ColumnPropNameInRow="QAErrorStatusID" msprop:Generator_ColumnPropNameInTable="QAErrorStatusIDColumn" msprop:Generator_UserColumnName="QAErrorStatusID" type="xs:int" />
+              <xs:element name="QAErrorStatusDescription" msprop:Generator_ColumnVarNameInTable="columnQAErrorStatusDescription" msprop:Generator_ColumnPropNameInRow="QAErrorStatusDescription" msprop:Generator_ColumnPropNameInTable="QAErrorStatusDescriptionColumn" msprop:Generator_UserColumnName="QAErrorStatusDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QAErrorLogHowIdentified" msprop:Generator_UserTableName="QAErrorLogHowIdentified" msprop:Generator_RowEvArgName="QAErrorLogHowIdentifiedRowChangeEvent" msprop:Generator_TableVarName="tableQAErrorLogHowIdentified" msprop:Generator_TablePropName="QAErrorLogHowIdentified" msprop:Generator_RowDeletingName="QAErrorLogHowIdentifiedRowDeleting" msprop:Generator_RowChangingName="QAErrorLogHowIdentifiedRowChanging" msprop:Generator_RowDeletedName="QAErrorLogHowIdentifiedRowDeleted" msprop:Generator_TableClassName="QAErrorLogHowIdentifiedDataTable" msprop:Generator_RowChangedName="QAErrorLogHowIdentifiedRowChanged" msprop:Generator_RowEvHandlerName="QAErrorLogHowIdentifiedRowChangeEventHandler" msprop:Generator_RowClassName="QAErrorLogHowIdentifiedRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QAErrorLogHowIdentifiedID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogHowIdentifiedID" msprop:Generator_ColumnPropNameInRow="QAErrorLogHowIdentifiedID" msprop:Generator_ColumnPropNameInTable="QAErrorLogHowIdentifiedIDColumn" msprop:Generator_UserColumnName="QAErrorLogHowIdentifiedID" type="xs:int" />
+              <xs:element name="QAErrorLogHowIdentifiedDescription" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogHowIdentifiedDescription" msprop:Generator_ColumnPropNameInRow="QAErrorLogHowIdentifiedDescription" msprop:Generator_ColumnPropNameInTable="QAErrorLogHowIdentifiedDescriptionColumn" msprop:Generator_UserColumnName="QAErrorLogHowIdentifiedDescription" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QAErrorLog" msprop:Generator_UserTableName="QAErrorLog" msprop:Generator_RowEvArgName="QAErrorLogRowChangeEvent" msprop:Generator_TableVarName="tableQAErrorLog" msprop:Generator_TablePropName="QAErrorLog" msprop:Generator_RowDeletingName="QAErrorLogRowDeleting" msprop:Generator_RowChangingName="QAErrorLogRowChanging" msprop:Generator_RowDeletedName="QAErrorLogRowDeleted" msprop:Generator_TableClassName="QAErrorLogDataTable" msprop:Generator_RowChangedName="QAErrorLogRowChanged" msprop:Generator_RowEvHandlerName="QAErrorLogRowChangeEventHandler" msprop:Generator_RowClassName="QAErrorLogRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QAErrorLogID" msdata:AutoIncrement="true" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogID" msprop:Generator_ColumnPropNameInRow="QAErrorLogID" msprop:Generator_ColumnPropNameInTable="QAErrorLogIDColumn" msprop:Generator_UserColumnName="QAErrorLogID" type="xs:int" />
+              <xs:element name="QATrackingID" msprop:Generator_ColumnVarNameInTable="columnQATrackingID" msprop:Generator_ColumnPropNameInRow="QATrackingID" msprop:Generator_ColumnPropNameInTable="QATrackingIDColumn" msprop:Generator_UserColumnName="QATrackingID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAProcessStepID" msprop:Generator_ColumnVarNameInTable="columnQAProcessStepID" msprop:Generator_ColumnPropNameInRow="QAProcessStepID" msprop:Generator_ColumnPropNameInTable="QAProcessStepIDColumn" msprop:Generator_UserColumnName="QAProcessStepID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAErrorLocationID" msprop:Generator_ColumnVarNameInTable="columnQAErrorLocationID" msprop:Generator_ColumnPropNameInRow="QAErrorLocationID" msprop:Generator_ColumnPropNameInTable="QAErrorLocationIDColumn" msprop:Generator_UserColumnName="QAErrorLocationID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAErrorTypeID" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeID" msprop:Generator_ColumnPropNameInRow="QAErrorTypeID" msprop:Generator_ColumnPropNameInTable="QAErrorTypeIDColumn" msprop:Generator_UserColumnName="QAErrorTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAMonitoringFormTemplateID" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormTemplateID" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormTemplateID" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormTemplateIDColumn" msprop:Generator_UserColumnName="QAMonitoringFormTemplateID" type="xs:int" minOccurs="0" />
+              <xs:element name="StatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnStatEmployeeID" msprop:Generator_ColumnPropNameInRow="StatEmployeeID" msprop:Generator_ColumnPropNameInTable="StatEmployeeIDColumn" msprop:Generator_UserColumnName="StatEmployeeID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAErrorLogNumberOfErrors" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogNumberOfErrors" msprop:Generator_ColumnPropNameInRow="QAErrorLogNumberOfErrors" msprop:Generator_ColumnPropNameInTable="QAErrorLogNumberOfErrorsColumn" msprop:Generator_UserColumnName="QAErrorLogNumberOfErrors" type="xs:int" minOccurs="0" />
+              <xs:element name="QAErrorLogDateTime" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogDateTime" msprop:Generator_ColumnPropNameInRow="QAErrorLogDateTime" msprop:Generator_ColumnPropNameInTable="QAErrorLogDateTimeColumn" msprop:Generator_UserColumnName="QAErrorLogDateTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="QAErrorLogHowIdentifiedID" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogHowIdentifiedID" msprop:Generator_ColumnPropNameInRow="QAErrorLogHowIdentifiedID" msprop:Generator_ColumnPropNameInTable="QAErrorLogHowIdentifiedIDColumn" msprop:Generator_UserColumnName="QAErrorLogHowIdentifiedID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAErrorLogTicketNumber" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QAErrorLogTicketNumber" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogTicketNumber" msprop:Generator_ColumnPropNameInTable="QAErrorLogTicketNumberColumn" msprop:Generator_UserColumnName="QAErrorLogTicketNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorLogComments" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QAErrorLogComments" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogComments" msprop:Generator_ColumnPropNameInTable="QAErrorLogCommentsColumn" msprop:Generator_UserColumnName="QAErrorLogComments" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorLogCorrection" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QAErrorLogCorrection" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogCorrection" msprop:Generator_ColumnPropNameInTable="QAErrorLogCorrectionColumn" msprop:Generator_UserColumnName="QAErrorLogCorrection" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorLogCorrectionPersonID" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogCorrectionPersonID" msprop:Generator_ColumnPropNameInRow="QAErrorLogCorrectionPersonID" msprop:Generator_ColumnPropNameInTable="QAErrorLogCorrectionPersonIDColumn" msprop:Generator_UserColumnName="QAErrorLogCorrectionPersonID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAErrorLogCorrectionLastModified" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogCorrectionLastModified" msprop:Generator_ColumnPropNameInRow="QAErrorLogCorrectionLastModified" msprop:Generator_ColumnPropNameInTable="QAErrorLogCorrectionLastModifiedColumn" msprop:Generator_UserColumnName="QAErrorLogCorrectionLastModified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="QAErrorLogPointsYes" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogPointsYes" msprop:Generator_ColumnPropNameInRow="QAErrorLogPointsYes" msprop:Generator_ColumnPropNameInTable="QAErrorLogPointsYesColumn" msprop:Generator_UserColumnName="QAErrorLogPointsYes" type="xs:short" minOccurs="0" />
+              <xs:element name="QAErrorLogPointsNo" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogPointsNo" msprop:Generator_ColumnPropNameInRow="QAErrorLogPointsNo" msprop:Generator_ColumnPropNameInTable="QAErrorLogPointsNoColumn" msprop:Generator_UserColumnName="QAErrorLogPointsNo" type="xs:short" minOccurs="0" />
+              <xs:element name="QAErrorLogPointsNA" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogPointsNA" msprop:Generator_ColumnPropNameInRow="QAErrorLogPointsNA" msprop:Generator_ColumnPropNameInTable="QAErrorLogPointsNAColumn" msprop:Generator_UserColumnName="QAErrorLogPointsNA" type="xs:short" minOccurs="0" />
+              <xs:element name="QAErrorStatusID" msprop:Generator_ColumnVarNameInTable="columnQAErrorStatusID" msprop:Generator_ColumnPropNameInRow="QAErrorStatusID" msprop:Generator_ColumnPropNameInTable="QAErrorStatusIDColumn" msprop:Generator_UserColumnName="QAErrorStatusID" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" msprop:Generator_UserColumnName="LastModified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" msprop:Generator_UserColumnName="LastStatEmployeeID" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" msprop:Generator_UserColumnName="AuditLogTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="lastmod" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="lastmod" msprop:Generator_ColumnVarNameInTable="columnlastmod" msprop:Generator_ColumnPropNameInTable="lastmodColumn" msprop:Generator_UserColumnName="lastmod" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorLogPersonID" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogPersonID" msprop:Generator_ColumnPropNameInRow="QAErrorLogPersonID" msprop:Generator_ColumnPropNameInTable="QAErrorLogPersonIDColumn" msprop:Generator_UserColumnName="QAErrorLogPersonID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QATrackingType" msprop:Generator_UserTableName="QATrackingType" msprop:Generator_RowEvArgName="QATrackingTypeRowChangeEvent" msprop:Generator_TableVarName="tableQATrackingType" msprop:Generator_TablePropName="QATrackingType" msprop:Generator_RowDeletingName="QATrackingTypeRowDeleting" msprop:Generator_RowChangingName="QATrackingTypeRowChanging" msprop:Generator_RowDeletedName="QATrackingTypeRowDeleted" msprop:Generator_TableClassName="QATrackingTypeDataTable" msprop:Generator_RowChangedName="QATrackingTypeRowChanged" msprop:Generator_RowEvHandlerName="QATrackingTypeRowChangeEventHandler" msprop:Generator_RowClassName="QATrackingTypeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QATrackingTypeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnQATrackingTypeID" msprop:Generator_ColumnPropNameInRow="QATrackingTypeID" msprop:Generator_ColumnPropNameInTable="QATrackingTypeIDColumn" msprop:Generator_UserColumnName="QATrackingTypeID" type="xs:int" />
+              <xs:element name="QATrackingTypeDescription" msprop:Generator_ColumnVarNameInTable="columnQATrackingTypeDescription" msprop:Generator_ColumnPropNameInRow="QATrackingTypeDescription" msprop:Generator_ColumnPropNameInTable="QATrackingTypeDescriptionColumn" msprop:Generator_UserColumnName="QATrackingTypeDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GridManageErrorLists" msprop:Generator_UserTableName="GridManageErrorLists" msprop:Generator_RowEvArgName="GridManageErrorListsRowChangeEvent" msprop:Generator_TableVarName="tableGridManageErrorLists" msprop:Generator_TablePropName="GridManageErrorLists" msprop:Generator_RowDeletingName="GridManageErrorListsRowDeleting" msprop:Generator_RowChangingName="GridManageErrorListsRowChanging" msprop:Generator_RowDeletedName="GridManageErrorListsRowDeleted" msprop:Generator_TableClassName="GridManageErrorListsDataTable" msprop:Generator_RowChangedName="GridManageErrorListsRowChanged" msprop:Generator_RowEvHandlerName="GridManageErrorListsRowChangeEventHandler" msprop:Generator_RowClassName="GridManageErrorListsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QAMonitoringFormTemplateID" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormTemplateID" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormTemplateID" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormTemplateIDColumn" msprop:Generator_UserColumnName="QAMonitoringFormTemplateID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAErrorTypeActive" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="QAErrorTypeActive" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeActive" msprop:Generator_ColumnPropNameInTable="QAErrorTypeActiveColumn" msprop:Generator_UserColumnName="QAErrorTypeActive" type="xs:short" minOccurs="0" />
+              <xs:element name="QAMonitoringFormTemplateOrder" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormTemplateOrder" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormTemplateOrder" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormTemplateOrderColumn" msprop:Generator_UserColumnName="QAMonitoringFormTemplateOrder" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorTypeID" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeID" msprop:Generator_ColumnPropNameInRow="QAErrorTypeID" msprop:Generator_ColumnPropNameInTable="QAErrorTypeIDColumn" msprop:Generator_UserColumnName="QAErrorTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAErrorTypeDescription" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QAErrorTypeDescription" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeDescription" msprop:Generator_ColumnPropNameInTable="QAErrorTypeDescriptionColumn" msprop:Generator_UserColumnName="QAErrorTypeDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QAErrorLocationDescription" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QAErrorLocationDescription" msprop:Generator_ColumnVarNameInTable="columnQAErrorLocationDescription" msprop:Generator_ColumnPropNameInTable="QAErrorLocationDescriptionColumn" msprop:Generator_UserColumnName="QAErrorLocationDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="QAMonitoringFormID" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormID" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormID" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormIDColumn" msprop:Generator_UserColumnName="QAMonitoringFormID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAErrorLocationID" msprop:Generator_ColumnVarNameInTable="columnQAErrorLocationID" msprop:Generator_ColumnPropNameInRow="QAErrorLocationID" msprop:Generator_ColumnPropNameInTable="QAErrorLocationIDColumn" msprop:Generator_UserColumnName="QAErrorLocationID" type="xs:int" minOccurs="0" />
+              <xs:element name="QATrackingTypeID" msprop:Generator_ColumnVarNameInTable="columnQATrackingTypeID" msprop:Generator_ColumnPropNameInRow="QATrackingTypeID" msprop:Generator_ColumnPropNameInTable="QATrackingTypeIDColumn" msprop:Generator_UserColumnName="QATrackingTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAMonitoringFormName" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormName" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormName" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormNameColumn" msprop:Generator_UserColumnName="QAMonitoringFormName" type="xs:string" minOccurs="0" />
+              <xs:element name="TrackingDesc" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="TrackingDesc" msprop:Generator_ColumnVarNameInTable="columnTrackingDesc" msprop:Generator_ColumnPropNameInTable="TrackingDescColumn" msprop:Generator_UserColumnName="TrackingDesc" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GridErrorTypeLog" msprop:Generator_UserTableName="GridErrorTypeLog" msprop:Generator_RowEvArgName="GridErrorTypeLogRowChangeEvent" msprop:Generator_TableVarName="tableGridErrorTypeLog" msprop:Generator_TablePropName="GridErrorTypeLog" msprop:Generator_RowDeletingName="GridErrorTypeLogRowDeleting" msprop:Generator_RowChangingName="GridErrorTypeLogRowChanging" msprop:Generator_RowDeletedName="GridErrorTypeLogRowDeleted" msprop:Generator_TableClassName="GridErrorTypeLogDataTable" msprop:Generator_RowChangedName="GridErrorTypeLogRowChanged" msprop:Generator_RowEvHandlerName="GridErrorTypeLogRowChangeEventHandler" msprop:Generator_RowClassName="GridErrorTypeLogRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QAErrorLogID" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogID" msprop:Generator_ColumnPropNameInRow="QAErrorLogID" msprop:Generator_ColumnPropNameInTable="QAErrorLogIDColumn" msprop:Generator_UserColumnName="QAErrorLogID" type="xs:int" />
+              <xs:element name="QAErrorTypeID" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeID" msprop:Generator_ColumnPropNameInRow="QAErrorTypeID" msprop:Generator_ColumnPropNameInTable="QAErrorTypeIDColumn" msprop:Generator_UserColumnName="QAErrorTypeID" type="xs:int" />
+              <xs:element name="QAErrorTypeDescription" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QAErrorTypeDescription" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeDescription" msprop:Generator_ColumnPropNameInTable="QAErrorTypeDescriptionColumn" msprop:Generator_UserColumnName="QAErrorTypeDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="QAProcessStepID" msprop:Generator_ColumnVarNameInTable="columnQAProcessStepID" msprop:Generator_ColumnPropNameInRow="QAProcessStepID" msprop:Generator_ColumnPropNameInTable="QAProcessStepIDColumn" msprop:Generator_UserColumnName="QAProcessStepID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAProcessStepDescription" msprop:Generator_ColumnVarNameInTable="columnQAProcessStepDescription" msprop:Generator_ColumnPropNameInRow="QAProcessStepDescription" msprop:Generator_ColumnPropNameInTable="QAProcessStepDescriptionColumn" msprop:Generator_UserColumnName="QAProcessStepDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorLogNumberOfErrors" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogNumberOfErrors" msprop:Generator_ColumnPropNameInRow="QAErrorLogNumberOfErrors" msprop:Generator_ColumnPropNameInTable="QAErrorLogNumberOfErrorsColumn" msprop:Generator_UserColumnName="QAErrorLogNumberOfErrors" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorLogDateTime" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogDateTime" msprop:Generator_ColumnPropNameInRow="QAErrorLogDateTime" msprop:Generator_ColumnPropNameInTable="QAErrorLogDateTimeColumn" msprop:Generator_UserColumnName="QAErrorLogDateTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="QAErrorLogHowIdentifiedID" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogHowIdentifiedID" msprop:Generator_ColumnPropNameInRow="QAErrorLogHowIdentifiedID" msprop:Generator_ColumnPropNameInTable="QAErrorLogHowIdentifiedIDColumn" msprop:Generator_UserColumnName="QAErrorLogHowIdentifiedID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAErrorLogHowIdentifiedDescription" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogHowIdentifiedDescription" msprop:Generator_ColumnPropNameInRow="QAErrorLogHowIdentifiedDescription" msprop:Generator_ColumnPropNameInTable="QAErrorLogHowIdentifiedDescriptionColumn" msprop:Generator_UserColumnName="QAErrorLogHowIdentifiedDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorLogTicketNumber" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogTicketNumber" msprop:Generator_ColumnPropNameInRow="QAErrorLogTicketNumber" msprop:Generator_ColumnPropNameInTable="QAErrorLogTicketNumberColumn" msprop:Generator_UserColumnName="QAErrorLogTicketNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorLogComments" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogComments" msprop:Generator_ColumnPropNameInRow="QAErrorLogComments" msprop:Generator_ColumnPropNameInTable="QAErrorLogCommentsColumn" msprop:Generator_UserColumnName="QAErrorLogComments" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorStatusID" msprop:Generator_ColumnVarNameInTable="columnQAErrorStatusID" msprop:Generator_ColumnPropNameInRow="QAErrorStatusID" msprop:Generator_ColumnPropNameInTable="QAErrorStatusIDColumn" msprop:Generator_UserColumnName="QAErrorStatusID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAErrorStatusDescription" msprop:Generator_ColumnVarNameInTable="columnQAErrorStatusDescription" msprop:Generator_ColumnPropNameInRow="QAErrorStatusDescription" msprop:Generator_ColumnPropNameInTable="QAErrorStatusDescriptionColumn" msprop:Generator_UserColumnName="QAErrorStatusDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorLogCorrection" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QAErrorLogCorrection" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogCorrection" msprop:Generator_ColumnPropNameInTable="QAErrorLogCorrectionColumn" msprop:Generator_UserColumnName="QAErrorLogCorrection" type="xs:string" minOccurs="0" />
+              <xs:element name="LocationDesc" msprop:Generator_ColumnVarNameInTable="columnLocationDesc" msprop:Generator_ColumnPropNameInRow="LocationDesc" msprop:Generator_ColumnPropNameInTable="LocationDescColumn" msprop:Generator_UserColumnName="LocationDesc" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorLogCorrectionLog" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QAErrorLogCorrectionLog" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogCorrectionLog" msprop:Generator_ColumnPropNameInTable="QAErrorLogCorrectionLogColumn" msprop:Generator_UserColumnName="QAErrorLogCorrectionLog" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorLocationID" msprop:Generator_ColumnVarNameInTable="columnQAErrorLocationID" msprop:Generator_ColumnPropNameInRow="QAErrorLocationID" msprop:Generator_ColumnPropNameInTable="QAErrorLocationIDColumn" msprop:Generator_UserColumnName="QAErrorLocationID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GridErrorTypesByEmployee" msprop:Generator_UserTableName="GridErrorTypesByEmployee" msprop:Generator_RowEvArgName="GridErrorTypesByEmployeeRowChangeEvent" msprop:Generator_TableVarName="tableGridErrorTypesByEmployee" msprop:Generator_TablePropName="GridErrorTypesByEmployee" msprop:Generator_RowDeletingName="GridErrorTypesByEmployeeRowDeleting" msprop:Generator_RowChangingName="GridErrorTypesByEmployeeRowChanging" msprop:Generator_RowDeletedName="GridErrorTypesByEmployeeRowDeleted" msprop:Generator_TableClassName="GridErrorTypesByEmployeeDataTable" msprop:Generator_RowChangedName="GridErrorTypesByEmployeeRowChanged" msprop:Generator_RowEvHandlerName="GridErrorTypesByEmployeeRowChangeEventHandler" msprop:Generator_RowClassName="GridErrorTypesByEmployeeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StatEmployeeName" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="StatEmployeeName" msprop:Generator_ColumnVarNameInTable="columnStatEmployeeName" msprop:Generator_ColumnPropNameInTable="StatEmployeeNameColumn" msprop:Generator_UserColumnName="StatEmployeeName" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorLocationDescription" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QAErrorLocationDescription" msprop:Generator_ColumnVarNameInTable="columnQAErrorLocationDescription" msprop:Generator_ColumnPropNameInTable="QAErrorLocationDescriptionColumn" msprop:Generator_UserColumnName="QAErrorLocationDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorLogNumberOfErrors" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="QAErrorLogNumberOfErrors" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogNumberOfErrors" msprop:Generator_ColumnPropNameInTable="QAErrorLogNumberOfErrorsColumn" msprop:Generator_UserColumnName="QAErrorLogNumberOfErrors" type="xs:int" minOccurs="0" />
+              <xs:element name="PersonID" msprop:Generator_ColumnVarNameInTable="columnPersonID" msprop:Generator_ColumnPropNameInRow="PersonID" msprop:Generator_ColumnPropNameInTable="PersonIDColumn" msprop:Generator_UserColumnName="PersonID" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorLocationID" msprop:Generator_ColumnVarNameInTable="columnQAErrorLocationID" msprop:Generator_ColumnPropNameInRow="QAErrorLocationID" msprop:Generator_ColumnPropNameInTable="QAErrorLocationIDColumn" msprop:Generator_UserColumnName="QAErrorLocationID" type="xs:string" minOccurs="0" />
+              <xs:element name="QATrackingTypeID" msprop:Generator_ColumnVarNameInTable="columnQATrackingTypeID" msprop:Generator_ColumnPropNameInRow="QATrackingTypeID" msprop:Generator_ColumnPropNameInTable="QATrackingTypeIDColumn" msprop:Generator_UserColumnName="QATrackingTypeID" type="xs:string" minOccurs="0" />
+              <xs:element name="QATrackingNumber" msprop:Generator_ColumnVarNameInTable="columnQATrackingNumber" msprop:Generator_ColumnPropNameInRow="QATrackingNumber" msprop:Generator_ColumnPropNameInTable="QATrackingNumberColumn" msprop:Generator_UserColumnName="QATrackingNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="QATrackingID" msprop:Generator_ColumnVarNameInTable="columnQATrackingID" msprop:Generator_ColumnPropNameInRow="QATrackingID" msprop:Generator_ColumnPropNameInTable="QATrackingIDColumn" msprop:Generator_UserColumnName="QATrackingID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GridPendingReview" msprop:Generator_UserTableName="GridPendingReview" msprop:Generator_RowEvArgName="GridPendingReviewRowChangeEvent" msprop:Generator_TableVarName="tableGridPendingReview" msprop:Generator_TablePropName="GridPendingReview" msprop:Generator_RowDeletingName="GridPendingReviewRowDeleting" msprop:Generator_RowChangingName="GridPendingReviewRowChanging" msprop:Generator_RowDeletedName="GridPendingReviewRowDeleted" msprop:Generator_TableClassName="GridPendingReviewDataTable" msprop:Generator_RowChangedName="GridPendingReviewRowChanged" msprop:Generator_RowEvHandlerName="GridPendingReviewRowChangeEventHandler" msprop:Generator_RowClassName="GridPendingReviewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QAErrorLogID" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QAErrorLogID" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogID" msprop:Generator_ColumnPropNameInTable="QAErrorLogIDColumn" msprop:Generator_UserColumnName="QAErrorLogID" type="xs:string" minOccurs="0" />
+              <xs:element name="QAMonitoringFormTemplateID" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormTemplateID" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormTemplateID" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormTemplateIDColumn" msprop:Generator_UserColumnName="QAMonitoringFormTemplateID" type="xs:string" minOccurs="0" />
+              <xs:element name="TrackingType" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="TrackingType" msprop:Generator_ColumnVarNameInTable="columnTrackingType" msprop:Generator_ColumnPropNameInTable="TrackingTypeColumn" msprop:Generator_UserColumnName="TrackingType" type="xs:string" minOccurs="0" />
+              <xs:element name="QATrackingNumber" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QATrackingNumber" msprop:Generator_ColumnVarNameInTable="columnQATrackingNumber" msprop:Generator_ColumnPropNameInTable="QATrackingNumberColumn" msprop:Generator_UserColumnName="QATrackingNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorLogDateTime" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QAErrorLogDateTime" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogDateTime" msprop:Generator_ColumnPropNameInTable="QAErrorLogDateTimeColumn" msprop:Generator_UserColumnName="QAErrorLogDateTime" type="xs:string" minOccurs="0" />
+              <xs:element name="StatEmployeeName" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="StatEmployeeName" msprop:Generator_ColumnVarNameInTable="columnStatEmployeeName" msprop:Generator_ColumnPropNameInTable="StatEmployeeNameColumn" msprop:Generator_UserColumnName="StatEmployeeName" type="xs:string" minOccurs="0" />
+              <xs:element name="QAMonitoringFormID" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormID" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormID" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormIDColumn" msprop:Generator_UserColumnName="QAMonitoringFormID" type="xs:string" minOccurs="0" />
+              <xs:element name="Employee" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Employee" msprop:Generator_ColumnVarNameInTable="columnEmployee" msprop:Generator_ColumnPropNameInTable="EmployeeColumn" msprop:Generator_UserColumnName="Employee" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorLogDateTimeString" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QAErrorLogDateTimeString" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogDateTimeString" msprop:Generator_ColumnPropNameInTable="QAErrorLogDateTimeStringColumn" msprop:Generator_UserColumnName="QAErrorLogDateTimeString" type="xs:string" minOccurs="0" />
+              <xs:element name="QATrackingFormID" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QATrackingFormID" msprop:Generator_ColumnVarNameInTable="columnQATrackingFormID" msprop:Generator_ColumnPropNameInTable="QATrackingFormIDColumn" msprop:Generator_UserColumnName="QATrackingFormID" type="xs:string" minOccurs="0" />
+              <xs:element name="LocationDesc" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="LocationDesc" msprop:Generator_ColumnVarNameInTable="columnLocationDesc" msprop:Generator_ColumnPropNameInTable="LocationDescColumn" msprop:Generator_UserColumnName="LocationDesc" type="xs:string" minOccurs="0" />
+              <xs:element name="LocationID" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="LocationID" msprop:Generator_ColumnVarNameInTable="columnLocationID" msprop:Generator_ColumnPropNameInTable="LocationIDColumn" msprop:Generator_UserColumnName="LocationID" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorLogHowIdentifiedDescription" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QAErrorLogHowIdentifiedDescription" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogHowIdentifiedDescription" msprop:Generator_ColumnPropNameInTable="QAErrorLogHowIdentifiedDescriptionColumn" msprop:Generator_UserColumnName="QAErrorLogHowIdentifiedDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorTypeDescription" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QAErrorTypeDescription" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeDescription" msprop:Generator_ColumnPropNameInTable="QAErrorTypeDescriptionColumn" msprop:Generator_UserColumnName="QAErrorTypeDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="PersonID" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PersonID" msprop:Generator_ColumnVarNameInTable="columnPersonID" msprop:Generator_ColumnPropNameInTable="PersonIDColumn" msprop:Generator_UserColumnName="PersonID" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorLogPersonID" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QAErrorLogPersonID" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogPersonID" msprop:Generator_ColumnPropNameInTable="QAErrorLogPersonIDColumn" msprop:Generator_UserColumnName="QAErrorLogPersonID" type="xs:string" minOccurs="0" />
+              <xs:element name="QATrackingID" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QATrackingID" msprop:Generator_ColumnVarNameInTable="columnQATrackingID" msprop:Generator_ColumnPropNameInTable="QATrackingIDColumn" msprop:Generator_UserColumnName="QATrackingID" type="xs:string" minOccurs="0" />
+              <xs:element name="QAProcessStepDescription" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QAProcessStepDescription" msprop:Generator_ColumnVarNameInTable="columnQAProcessStepDescription" msprop:Generator_ColumnPropNameInTable="QAProcessStepDescriptionColumn" msprop:Generator_UserColumnName="QAProcessStepDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="TrackingDesc" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="TrackingDesc" msprop:Generator_ColumnVarNameInTable="columnTrackingDesc" msprop:Generator_ColumnPropNameInTable="TrackingDescColumn" msprop:Generator_UserColumnName="TrackingDesc" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QATrackingStatus" msprop:Generator_UserTableName="QATrackingStatus" msprop:Generator_RowEvArgName="QATrackingStatusRowChangeEvent" msprop:Generator_TableVarName="tableQATrackingStatus" msprop:Generator_TablePropName="QATrackingStatus" msprop:Generator_RowDeletingName="QATrackingStatusRowDeleting" msprop:Generator_RowChangingName="QATrackingStatusRowChanging" msprop:Generator_RowDeletedName="QATrackingStatusRowDeleted" msprop:Generator_TableClassName="QATrackingStatusDataTable" msprop:Generator_RowChangedName="QATrackingStatusRowChanged" msprop:Generator_RowEvHandlerName="QATrackingStatusRowChangeEventHandler" msprop:Generator_RowClassName="QATrackingStatusRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QATrackingStatusID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnQATrackingStatusID" msprop:Generator_ColumnPropNameInRow="QATrackingStatusID" msprop:Generator_ColumnPropNameInTable="QATrackingStatusIDColumn" msprop:Generator_UserColumnName="QATrackingStatusID" type="xs:int" />
+              <xs:element name="QATrackingStatusDescription" msprop:Generator_ColumnVarNameInTable="columnQATrackingStatusDescription" msprop:Generator_ColumnPropNameInRow="QATrackingStatusDescription" msprop:Generator_ColumnPropNameInTable="QATrackingStatusDescriptionColumn" msprop:Generator_UserColumnName="QATrackingStatusDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" msprop:Generator_UserColumnName="LastModified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" msprop:Generator_UserColumnName="LastStatEmployeeID" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" msprop:Generator_UserColumnName="AuditLogTypeID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GridManageQualityMonitoringForms" msprop:Generator_UserTableName="GridManageQualityMonitoringForms" msprop:Generator_RowEvArgName="GridManageQualityMonitoringFormsRowChangeEvent" msprop:Generator_TableVarName="tableGridManageQualityMonitoringForms" msprop:Generator_TablePropName="GridManageQualityMonitoringForms" msprop:Generator_RowDeletingName="GridManageQualityMonitoringFormsRowDeleting" msprop:Generator_RowChangingName="GridManageQualityMonitoringFormsRowChanging" msprop:Generator_RowDeletedName="GridManageQualityMonitoringFormsRowDeleted" msprop:Generator_TableClassName="GridManageQualityMonitoringFormsDataTable" msprop:Generator_RowChangedName="GridManageQualityMonitoringFormsRowChanged" msprop:Generator_RowEvHandlerName="GridManageQualityMonitoringFormsRowChangeEventHandler" msprop:Generator_RowClassName="GridManageQualityMonitoringFormsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QAMonitoringFormID" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormID" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormID" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormIDColumn" msprop:Generator_UserColumnName="QAMonitoringFormID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAMonitoringFormName" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormName" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormName" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormNameColumn" msprop:Generator_UserColumnName="QAMonitoringFormName" type="xs:string" minOccurs="0" />
+              <xs:element name="QATrackingTypeID" msprop:Generator_ColumnVarNameInTable="columnQATrackingTypeID" msprop:Generator_ColumnPropNameInRow="QATrackingTypeID" msprop:Generator_ColumnPropNameInTable="QATrackingTypeIDColumn" msprop:Generator_UserColumnName="QATrackingTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="QATrackingTypeDescription" msprop:Generator_ColumnVarNameInTable="columnQATrackingTypeDescription" msprop:Generator_ColumnPropNameInRow="QATrackingTypeDescription" msprop:Generator_ColumnPropNameInTable="QATrackingTypeDescriptionColumn" msprop:Generator_UserColumnName="QATrackingTypeDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="QAMonitoringFormRequireReview" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormRequireReview" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormRequireReview" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormRequireReviewColumn" msprop:Generator_UserColumnName="QAMonitoringFormRequireReview" type="xs:short" minOccurs="0" />
+              <xs:element name="QAMonitoringFormCalculateScore" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormCalculateScore" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormCalculateScore" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormCalculateScoreColumn" msprop:Generator_UserColumnName="QAMonitoringFormCalculateScore" type="xs:short" minOccurs="0" />
+              <xs:element name="QAMonitoringFormActive" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormActive" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormActive" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormActiveColumn" msprop:Generator_UserColumnName="QAMonitoringFormActive" type="xs:short" minOccurs="0" />
+              <xs:element name="ImageName" msprop:Generator_ColumnVarNameInTable="columnImageName" msprop:Generator_ColumnPropNameInRow="ImageName" msprop:Generator_ColumnPropNameInTable="ImageNameColumn" msprop:Generator_UserColumnName="ImageName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GridAddEditQualityMonitoringForm" msprop:Generator_UserTableName="GridAddEditQualityMonitoringForm" msprop:Generator_RowEvArgName="GridAddEditQualityMonitoringFormRowChangeEvent" msprop:Generator_TableVarName="tableGridAddEditQualityMonitoringForm" msprop:Generator_TablePropName="GridAddEditQualityMonitoringForm" msprop:Generator_RowDeletingName="GridAddEditQualityMonitoringFormRowDeleting" msprop:Generator_RowChangingName="GridAddEditQualityMonitoringFormRowChanging" msprop:Generator_RowDeletedName="GridAddEditQualityMonitoringFormRowDeleted" msprop:Generator_TableClassName="GridAddEditQualityMonitoringFormDataTable" msprop:Generator_RowChangedName="GridAddEditQualityMonitoringFormRowChanged" msprop:Generator_RowEvHandlerName="GridAddEditQualityMonitoringFormRowChangeEventHandler" msprop:Generator_RowClassName="GridAddEditQualityMonitoringFormRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QAErrorLogID" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogID" msprop:Generator_ColumnPropNameInRow="QAErrorLogID" msprop:Generator_ColumnPropNameInTable="QAErrorLogIDColumn" msprop:Generator_UserColumnName="QAErrorLogID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAMonitoringFormName" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormName" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormName" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormNameColumn" msprop:Generator_UserColumnName="QAMonitoringFormName" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorLocationID" msprop:Generator_ColumnVarNameInTable="columnQAErrorLocationID" msprop:Generator_ColumnPropNameInRow="QAErrorLocationID" msprop:Generator_ColumnPropNameInTable="QAErrorLocationIDColumn" msprop:Generator_UserColumnName="QAErrorLocationID" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorLocationDescription" msprop:Generator_ColumnVarNameInTable="columnQAErrorLocationDescription" msprop:Generator_ColumnPropNameInRow="QAErrorLocationDescription" msprop:Generator_ColumnPropNameInTable="QAErrorLocationDescriptionColumn" msprop:Generator_UserColumnName="QAErrorLocationDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="QAMonitoringFormTemplateOrder" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormTemplateOrder" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormTemplateOrder" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormTemplateOrderColumn" msprop:Generator_UserColumnName="QAMonitoringFormTemplateOrder" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorTypeDescription" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeDescription" msprop:Generator_ColumnPropNameInRow="QAErrorTypeDescription" msprop:Generator_ColumnPropNameInTable="QAErrorTypeDescriptionColumn" msprop:Generator_UserColumnName="QAErrorTypeDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorTypeAssignedPoints" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeAssignedPoints" msprop:Generator_ColumnPropNameInRow="QAErrorTypeAssignedPoints" msprop:Generator_ColumnPropNameInTable="QAErrorTypeAssignedPointsColumn" msprop:Generator_UserColumnName="QAErrorTypeAssignedPoints" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorLogPointsYes" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogPointsYes" msprop:Generator_ColumnPropNameInRow="QAErrorLogPointsYes" msprop:Generator_ColumnPropNameInTable="QAErrorLogPointsYesColumn" msprop:Generator_UserColumnName="QAErrorLogPointsYes" type="xs:short" minOccurs="0" />
+              <xs:element name="QAErrorLogPointsNo" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogPointsNo" msprop:Generator_ColumnPropNameInRow="QAErrorLogPointsNo" msprop:Generator_ColumnPropNameInTable="QAErrorLogPointsNoColumn" msprop:Generator_UserColumnName="QAErrorLogPointsNo" type="xs:short" minOccurs="0" />
+              <xs:element name="QAErrorLogPointsNA" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogPointsNA" msprop:Generator_ColumnPropNameInRow="QAErrorLogPointsNA" msprop:Generator_ColumnPropNameInTable="QAErrorLogPointsNAColumn" msprop:Generator_UserColumnName="QAErrorLogPointsNA" type="xs:short" minOccurs="0" />
+              <xs:element name="QAErrorLogComments" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogComments" msprop:Generator_ColumnPropNameInRow="QAErrorLogComments" msprop:Generator_ColumnPropNameInTable="QAErrorLogCommentsColumn" msprop:Generator_UserColumnName="QAErrorLogComments" type="xs:string" minOccurs="0" />
+              <xs:element name="QAErrorTypeDisplayNA" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeDisplayNA" msprop:Generator_ColumnPropNameInRow="QAErrorTypeDisplayNA" msprop:Generator_ColumnPropNameInTable="QAErrorTypeDisplayNAColumn" msprop:Generator_UserColumnName="QAErrorTypeDisplayNA" type="xs:short" minOccurs="0" />
+              <xs:element name="QAErrorTypeDisplayComments" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeDisplayComments" msprop:Generator_ColumnPropNameInRow="QAErrorTypeDisplayComments" msprop:Generator_ColumnPropNameInTable="QAErrorTypeDisplayCommentsColumn" msprop:Generator_UserColumnName="QAErrorTypeDisplayComments" type="xs:short" minOccurs="0" />
+              <xs:element name="QAMonitoringFormCalculateScore" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormCalculateScore" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormCalculateScore" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormCalculateScoreColumn" msprop:Generator_UserColumnName="QAMonitoringFormCalculateScore" type="xs:short" minOccurs="0" />
+              <xs:element name="QAErrorTypeAutomaticZeroScore" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeAutomaticZeroScore" msprop:Generator_ColumnPropNameInRow="QAErrorTypeAutomaticZeroScore" msprop:Generator_ColumnPropNameInTable="QAErrorTypeAutomaticZeroScoreColumn" msprop:Generator_UserColumnName="QAErrorTypeAutomaticZeroScore" type="xs:string" minOccurs="0" />
+              <xs:element name="QAMonitoringFormTemplateOrder_Loc" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormTemplateOrder_Loc" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormTemplateOrder_Loc" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormTemplateOrder_LocColumn" msprop:Generator_UserColumnName="QAMonitoringFormTemplateOrder_Loc" type="xs:string" minOccurs="0" />
+              <xs:element name="QAMonitoringFormID" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormID" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormID" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormIDColumn" msprop:Generator_UserColumnName="QAMonitoringFormID" type="xs:int" minOccurs="0" />
+              <xs:element name="ImageName" msprop:Generator_ColumnVarNameInTable="columnImageName" msprop:Generator_ColumnPropNameInRow="ImageName" msprop:Generator_ColumnPropNameInTable="ImageNameColumn" msprop:Generator_UserColumnName="ImageName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DdlQAForms" msprop:Generator_UserTableName="DdlQAForms" msprop:Generator_RowEvArgName="DdlQAFormsRowChangeEvent" msprop:Generator_TableVarName="tableDdlQAForms" msprop:Generator_TablePropName="DdlQAForms" msprop:Generator_RowDeletingName="DdlQAFormsRowDeleting" msprop:Generator_RowChangingName="DdlQAFormsRowChanging" msprop:Generator_RowDeletedName="DdlQAFormsRowDeleted" msprop:Generator_TableClassName="DdlQAFormsDataTable" msprop:Generator_RowChangedName="DdlQAFormsRowChanged" msprop:Generator_RowEvHandlerName="DdlQAFormsRowChangeEventHandler" msprop:Generator_RowClassName="DdlQAFormsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QAMonitoringFormID" msdata:Caption="StatEmployeeName" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormID" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormID" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormIDColumn" msprop:Generator_UserColumnName="QAMonitoringFormID" type="xs:string" minOccurs="0" />
+              <xs:element name="QAMonitoringFormName" msdata:Caption="QAErrorLocationDescription" msprop:Generator_ColumnVarNameInTable="columnQAMonitoringFormName" msprop:Generator_ColumnPropNameInRow="QAMonitoringFormName" msprop:Generator_ColumnPropNameInTable="QAMonitoringFormNameColumn" msprop:Generator_UserColumnName="QAMonitoringFormName" type="xs:string" minOccurs="0" />
+              <xs:element name="TrackingDesc" msprop:Generator_ColumnVarNameInTable="columnTrackingDesc" msprop:Generator_ColumnPropNameInRow="TrackingDesc" msprop:Generator_ColumnPropNameInTable="TrackingDescColumn" msprop:Generator_UserColumnName="TrackingDesc" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DdlProcessStep" msprop:Generator_UserTableName="DdlProcessStep" msprop:Generator_RowEvArgName="DdlProcessStepRowChangeEvent" msprop:Generator_TableVarName="tableDdlProcessStep" msprop:Generator_TablePropName="DdlProcessStep" msprop:Generator_RowDeletingName="DdlProcessStepRowDeleting" msprop:Generator_RowChangingName="DdlProcessStepRowChanging" msprop:Generator_RowDeletedName="DdlProcessStepRowDeleted" msprop:Generator_TableClassName="DdlProcessStepDataTable" msprop:Generator_RowChangedName="DdlProcessStepRowChanged" msprop:Generator_RowEvHandlerName="DdlProcessStepRowChangeEventHandler" msprop:Generator_RowClassName="DdlProcessStepRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QAProcessStepID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnQAProcessStepID" msprop:Generator_ColumnPropNameInRow="QAProcessStepID" msprop:Generator_ColumnPropNameInTable="QAProcessStepIDColumn" msprop:Generator_UserColumnName="QAProcessStepID" type="xs:int" />
+              <xs:element name="QAProcessStepDescription" msprop:Generator_ColumnVarNameInTable="columnQAProcessStepDescription" msprop:Generator_ColumnPropNameInRow="QAProcessStepDescription" msprop:Generator_ColumnPropNameInTable="QAProcessStepDescriptionColumn" msprop:Generator_UserColumnName="QAProcessStepDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DdlErrorType" msprop:Generator_UserTableName="DdlErrorType" msprop:Generator_RowEvArgName="DdlErrorTypeRowChangeEvent" msprop:Generator_TableVarName="tableDdlErrorType" msprop:Generator_TablePropName="DdlErrorType" msprop:Generator_RowDeletingName="DdlErrorTypeRowDeleting" msprop:Generator_RowChangingName="DdlErrorTypeRowChanging" msprop:Generator_RowDeletedName="DdlErrorTypeRowDeleted" msprop:Generator_TableClassName="DdlErrorTypeDataTable" msprop:Generator_RowChangedName="DdlErrorTypeRowChanged" msprop:Generator_RowEvHandlerName="DdlErrorTypeRowChangeEventHandler" msprop:Generator_RowClassName="DdlErrorTypeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QAErrorTypeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeID" msprop:Generator_ColumnPropNameInRow="QAErrorTypeID" msprop:Generator_ColumnPropNameInTable="QAErrorTypeIDColumn" msprop:Generator_UserColumnName="QAErrorTypeID" type="xs:int" />
+              <xs:element name="QAErrorTypeDescription" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeDescription" msprop:Generator_ColumnPropNameInRow="QAErrorTypeDescription" msprop:Generator_ColumnPropNameInTable="QAErrorTypeDescriptionColumn" msprop:Generator_UserColumnName="QAErrorTypeDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QAErrorTypeGenerateLogIfNo" msprop:Generator_ColumnVarNameInTable="columnQAErrorTypeGenerateLogIfNo" msprop:Generator_ColumnPropNameInRow="QAErrorTypeGenerateLogIfNo" msprop:Generator_ColumnPropNameInTable="QAErrorTypeGenerateLogIfNoColumn" msprop:Generator_UserColumnName="QAErrorTypeGenerateLogIfNo" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QARefInfo" msprop:Generator_UserTableName="QARefInfo" msprop:Generator_RowEvArgName="QARefInfoRowChangeEvent" msprop:Generator_TableVarName="tableQARefInfo" msprop:Generator_TablePropName="QARefInfo" msprop:Generator_RowDeletingName="QARefInfoRowDeleting" msprop:Generator_RowChangingName="QARefInfoRowChanging" msprop:Generator_RowDeletedName="QARefInfoRowDeleted" msprop:Generator_TableClassName="QARefInfoDataTable" msprop:Generator_RowChangedName="QARefInfoRowChanged" msprop:Generator_RowEvHandlerName="QARefInfoRowChangeEventHandler" msprop:Generator_RowClassName="QARefInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CallID" msprop:Generator_ColumnVarNameInTable="columnCallID" msprop:Generator_ColumnPropNameInRow="CallID" msprop:Generator_ColumnPropNameInTable="CallIDColumn" msprop:Generator_UserColumnName="CallID" type="xs:int" minOccurs="0" />
+              <xs:element name="CallDateTime" msprop:Generator_ColumnVarNameInTable="columnCallDateTime" msprop:Generator_ColumnPropNameInRow="CallDateTime" msprop:Generator_ColumnPropNameInTable="CallDateTimeColumn" msprop:Generator_UserColumnName="CallDateTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SourceCodeName" msprop:Generator_ColumnVarNameInTable="columnSourceCodeName" msprop:Generator_ColumnPropNameInRow="SourceCodeName" msprop:Generator_ColumnPropNameInTable="SourceCodeNameColumn" msprop:Generator_UserColumnName="SourceCodeName" type="xs:string" minOccurs="0" />
+              <xs:element name="ReferralTypeName" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="ReferralTypeName" msprop:Generator_ColumnVarNameInTable="columnReferralTypeName" msprop:Generator_ColumnPropNameInTable="ReferralTypeNameColumn" msprop:Generator_UserColumnName="ReferralTypeName" type="xs:string" minOccurs="0" />
+              <xs:element name="ReferralTypeID1" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="ReferralTypeID1" msprop:Generator_ColumnVarNameInTable="columnReferralTypeID1" msprop:Generator_ColumnPropNameInTable="ReferralTypeID1Column" msprop:Generator_UserColumnName="ReferralTypeID1" type="xs:string" minOccurs="0" />
+              <xs:element name="CallTypeName" msprop:Generator_ColumnVarNameInTable="columnCallTypeName" msprop:Generator_ColumnPropNameInRow="CallTypeName" msprop:Generator_ColumnPropNameInTable="CallTypeNameColumn" msprop:Generator_UserColumnName="CallTypeName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QATrackingForm" msprop:Generator_UserTableName="QATrackingForm" msprop:Generator_RowEvArgName="QATrackingFormRowChangeEvent" msprop:Generator_TableVarName="tableQATrackingForm" msprop:Generator_TablePropName="QATrackingForm" msprop:Generator_RowDeletingName="QATrackingFormRowDeleting" msprop:Generator_RowChangingName="QATrackingFormRowChanging" msprop:Generator_RowDeletedName="QATrackingFormRowDeleted" msprop:Generator_TableClassName="QATrackingFormDataTable" msprop:Generator_RowChangedName="QATrackingFormRowChanged" msprop:Generator_RowEvHandlerName="QATrackingFormRowChangeEventHandler" msprop:Generator_RowClassName="QATrackingFormRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QATrackingFormID" msprop:Generator_ColumnVarNameInTable="columnQATrackingFormID" msprop:Generator_ColumnPropNameInRow="QATrackingFormID" msprop:Generator_ColumnPropNameInTable="QATrackingFormIDColumn" msprop:Generator_UserColumnName="QATrackingFormID" type="xs:int" />
+              <xs:element name="QAProcessStepID" msprop:Generator_ColumnVarNameInTable="columnQAProcessStepID" msprop:Generator_ColumnPropNameInRow="QAProcessStepID" msprop:Generator_ColumnPropNameInTable="QAProcessStepIDColumn" msprop:Generator_UserColumnName="QAProcessStepID" type="xs:int" minOccurs="0" />
+              <xs:element name="PersonID" msprop:Generator_ColumnVarNameInTable="columnPersonID" msprop:Generator_ColumnPropNameInRow="PersonID" msprop:Generator_ColumnPropNameInTable="PersonIDColumn" msprop:Generator_UserColumnName="PersonID" type="xs:int" minOccurs="0" />
+              <xs:element name="QATrackingEventDateTime" msprop:Generator_ColumnVarNameInTable="columnQATrackingEventDateTime" msprop:Generator_ColumnPropNameInRow="QATrackingEventDateTime" msprop:Generator_ColumnPropNameInTable="QATrackingEventDateTimeColumn" msprop:Generator_UserColumnName="QATrackingEventDateTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="QATrackingCAPANumber" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QATrackingCAPANumber" msprop:Generator_ColumnVarNameInTable="columnQATrackingCAPANumber" msprop:Generator_ColumnPropNameInTable="QATrackingCAPANumberColumn" msprop:Generator_UserColumnName="QATrackingCAPANumber" type="xs:string" minOccurs="0" />
+              <xs:element name="QATrackingApproved" msprop:Generator_ColumnVarNameInTable="columnQATrackingApproved" msprop:Generator_ColumnPropNameInRow="QATrackingApproved" msprop:Generator_ColumnPropNameInTable="QATrackingApprovedColumn" msprop:Generator_UserColumnName="QATrackingApproved" type="xs:short" minOccurs="0" />
+              <xs:element name="QATrackingStatusID" msprop:Generator_ColumnVarNameInTable="columnQATrackingStatusID" msprop:Generator_ColumnPropNameInRow="QATrackingStatusID" msprop:Generator_ColumnPropNameInTable="QATrackingStatusIDColumn" msprop:Generator_UserColumnName="QATrackingStatusID" type="xs:int" minOccurs="0" />
+              <xs:element name="QATrackingFormPoints" msprop:Generator_ColumnVarNameInTable="columnQATrackingFormPoints" msprop:Generator_ColumnPropNameInRow="QATrackingFormPoints" msprop:Generator_ColumnPropNameInTable="QATrackingFormPointsColumn" msprop:Generator_UserColumnName="QATrackingFormPoints" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QATrackingFormComments" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QATrackingFormComments" msprop:Generator_ColumnVarNameInTable="columnQATrackingFormComments" msprop:Generator_ColumnPropNameInTable="QATrackingFormCommentsColumn" msprop:Generator_UserColumnName="QATrackingFormComments" type="xs:string" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" msprop:Generator_UserColumnName="LastModified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" msprop:Generator_UserColumnName="LastStatEmployeeID" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" msprop:Generator_UserColumnName="AuditLogTypeID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QATrackingFormErrors" msprop:Generator_UserTableName="QATrackingFormErrors" msprop:Generator_RowEvArgName="QATrackingFormErrorsRowChangeEvent" msprop:Generator_TableVarName="tableQATrackingFormErrors" msprop:Generator_TablePropName="QATrackingFormErrors" msprop:Generator_RowDeletingName="QATrackingFormErrorsRowDeleting" msprop:Generator_RowChangingName="QATrackingFormErrorsRowChanging" msprop:Generator_RowDeletedName="QATrackingFormErrorsRowDeleted" msprop:Generator_TableClassName="QATrackingFormErrorsDataTable" msprop:Generator_RowChangedName="QATrackingFormErrorsRowChanged" msprop:Generator_RowEvHandlerName="QATrackingFormErrorsRowChangeEventHandler" msprop:Generator_RowClassName="QATrackingFormErrorsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QATrackingFormErrorsID" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnQATrackingFormErrorsID" msprop:Generator_ColumnPropNameInRow="QATrackingFormErrorsID" msprop:Generator_ColumnPropNameInTable="QATrackingFormErrorsIDColumn" msprop:Generator_UserColumnName="QATrackingFormErrorsID" type="xs:int" />
+              <xs:element name="QATrackingFormID" msprop:Generator_ColumnVarNameInTable="columnQATrackingFormID" msprop:Generator_ColumnPropNameInRow="QATrackingFormID" msprop:Generator_ColumnPropNameInTable="QATrackingFormIDColumn" msprop:Generator_UserColumnName="QATrackingFormID" type="xs:int" minOccurs="0" />
+              <xs:element name="QAErrorLogID" msprop:Generator_ColumnVarNameInTable="columnQAErrorLogID" msprop:Generator_ColumnPropNameInRow="QAErrorLogID" msprop:Generator_ColumnPropNameInTable="QAErrorLogIDColumn" msprop:Generator_UserColumnName="QAErrorLogID" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" msprop:Generator_UserColumnName="LastModified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" msprop:Generator_UserColumnName="LastStatEmployeeID" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" msprop:Generator_UserColumnName="AuditLogTypeID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QAErrorLocation" />
+      <xs:field xpath="mstns:QAErrorLocationID" />
+    </xs:unique>
+    <xs:unique name="QATracking_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QATracking" />
+      <xs:field xpath="mstns:QATrackingID" />
+    </xs:unique>
+    <xs:unique name="QAProcessStep_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QAProcessStep" />
+      <xs:field xpath="mstns:QAProcessStepID" />
+    </xs:unique>
+    <xs:unique name="QAMonitoringForm_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QAMonitoringForm" />
+      <xs:field xpath="mstns:QAMonitoringFormID" />
+    </xs:unique>
+    <xs:unique name="QAMonitoringFormTemplate_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QAMonitoringFormTemplate" />
+      <xs:field xpath="mstns:QAMonitoringFormTemplateID" />
+    </xs:unique>
+    <xs:unique name="QAErrorType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QAErrorType" />
+      <xs:field xpath="mstns:QAErrorTypeID" />
+    </xs:unique>
+    <xs:unique name="QAErrorStatus_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QAErrorStatus" />
+      <xs:field xpath="mstns:QAErrorStatusID" />
+    </xs:unique>
+    <xs:unique name="QAErrorLogHowIdentified_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QAErrorLogHowIdentified" />
+      <xs:field xpath="mstns:QAErrorLogHowIdentifiedID" />
+    </xs:unique>
+    <xs:unique name="QAErrorLog_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QAErrorLog" />
+      <xs:field xpath="mstns:QAErrorLogID" />
+    </xs:unique>
+    <xs:unique name="QATrackingType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QATrackingType" />
+      <xs:field xpath="mstns:QATrackingTypeID" />
+    </xs:unique>
+    <xs:unique name="QATrackingStatus_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QATrackingStatus" />
+      <xs:field xpath="mstns:QATrackingStatusID" />
+    </xs:unique>
+    <xs:unique name="DdlProcessStep_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DdlProcessStep" />
+      <xs:field xpath="mstns:QAProcessStepID" />
+    </xs:unique>
+    <xs:unique name="DdlErrorType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DdlErrorType" />
+      <xs:field xpath="mstns:QAErrorTypeID" />
+    </xs:unique>
+    <xs:unique name="QATrackingForm_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QATrackingForm" />
+      <xs:field xpath="mstns:QATrackingFormID" />
+    </xs:unique>
+    <xs:unique name="QATrackingFormErrors_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QATrackingFormErrors" />
+      <xs:field xpath="mstns:QATrackingFormErrorsID" />
+    </xs:unique>
+    <xs:keyref name="FK_QAErrorLog_QATrackingFormErrors" refer="QAErrorLog_Constraint1" msprop:rel_Generator_UserChildTable="QATrackingFormErrors" msprop:rel_Generator_ChildPropName="GetQATrackingFormErrorsRows" msprop:rel_Generator_UserParentTable="QAErrorLog" msprop:rel_Generator_UserRelationName="FK_QAErrorLog_QATrackingFormErrors" msprop:rel_Generator_RelationVarName="relationFK_QAErrorLog_QATrackingFormErrors" msprop:rel_Generator_ParentPropName="QAErrorLogRow">
+      <xs:selector xpath=".//mstns:QATrackingFormErrors" />
+      <xs:field xpath="mstns:QAErrorLogID" />
+    </xs:keyref>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_QAMonitoringForm" msdata:parent="QAMonitoringForm" msdata:child="QAMonitoringFormTemplate" msdata:parentkey="QAMonitoringFormID" msdata:childkey="QAMonitoringFormID" msprop:Generator_UserChildTable="QAMonitoringFormTemplate" msprop:Generator_ChildPropName="GetQAMonitoringFormTemplateRows" msprop:Generator_UserParentTable="QAMonitoringForm" msprop:Generator_UserRelationName="FK_QAMonitoringForm" msprop:Generator_RelationVarName="relationFK_QAMonitoringForm" msprop:Generator_ParentPropName="QAMonitoringFormRow" />
+      <msdata:Relationship name="FK_QAErrorType" msdata:parent="QAErrorType" msdata:child="QAMonitoringFormTemplate" msdata:parentkey="QAErrorTypeID" msdata:childkey="QAErrorTypeID" msprop:Generator_UserChildTable="QAMonitoringFormTemplate" msprop:Generator_ChildPropName="GetQAMonitoringFormTemplateRows" msprop:Generator_UserParentTable="QAErrorType" msprop:Generator_UserRelationName="FK_QAErrorType" msprop:Generator_RelationVarName="relationFK_QAErrorType" msprop:Generator_ParentPropName="QAErrorTypeRow" />
+      <msdata:Relationship name="FK_ErrorLogQAErrorLogHowIdentified" msdata:parent="QAErrorLogHowIdentified" msdata:child="QAErrorLog" msdata:parentkey="QAErrorLogHowIdentifiedID" msdata:childkey="QAErrorLogHowIdentifiedID" msprop:Generator_UserChildTable="QAErrorLog" msprop:Generator_ChildPropName="GetQAErrorLogRows" msprop:Generator_UserParentTable="QAErrorLogHowIdentified" msprop:Generator_UserRelationName="FK_ErrorLogQAErrorLogHowIdentified" msprop:Generator_RelationVarName="relationFK_ErrorLogQAErrorLogHowIdentified" msprop:Generator_ParentPropName="QAErrorLogHowIdentifiedRow" />
+      <msdata:Relationship name="FK_ErrorLogQAErrorStatus" msdata:parent="QAErrorStatus" msdata:child="QAErrorLog" msdata:parentkey="QAErrorStatusID" msdata:childkey="QAErrorStatusID" msprop:Generator_UserChildTable="QAErrorLog" msprop:Generator_ChildPropName="GetQAErrorLogRows" msprop:Generator_UserParentTable="QAErrorStatus" msprop:Generator_UserRelationName="FK_ErrorLogQAErrorStatus" msprop:Generator_RelationVarName="relationFK_ErrorLogQAErrorStatus" msprop:Generator_ParentPropName="QAErrorStatusRow" />
+      <msdata:Relationship name="FK_ErrorLogQAErrorType" msdata:parent="QAErrorType" msdata:child="QAErrorLog" msdata:parentkey="QAErrorTypeID" msdata:childkey="QAErrorTypeID" msprop:Generator_UserChildTable="QAErrorLog" msprop:Generator_ChildPropName="GetQAErrorLogRows" msprop:Generator_UserParentTable="QAErrorType" msprop:Generator_UserRelationName="FK_ErrorLogQAErrorType" msprop:Generator_RelationVarName="relationFK_ErrorLogQAErrorType" msprop:Generator_ParentPropName="QAErrorTypeRow" />
+      <msdata:Relationship name="FK_ErrorLogQATracking" msdata:parent="QATracking" msdata:child="QAErrorLog" msdata:parentkey="QATrackingID" msdata:childkey="QATrackingID" msprop:Generator_UserChildTable="QAErrorLog" msprop:Generator_ChildPropName="GetQAErrorLogRows" msprop:Generator_UserParentTable="QATracking" msprop:Generator_UserRelationName="FK_ErrorLogQATracking" msprop:Generator_RelationVarName="relationFK_ErrorLogQATracking" msprop:Generator_ParentPropName="QATrackingRow" />
+      <msdata:Relationship name="QATrackingStatus_QATracking" msdata:parent="QATrackingStatus" msdata:child="QATracking" msdata:parentkey="QATrackingStatusID" msdata:childkey="QATrackingStatusID" msprop:Generator_UserChildTable="QATracking" msprop:Generator_ChildPropName="GetQATrackingRows" msprop:Generator_UserParentTable="QATrackingStatus" msprop:Generator_UserRelationName="QATrackingStatus_QATracking" msprop:Generator_RelationVarName="relationQATrackingStatus_QATracking" msprop:Generator_ParentPropName="QATrackingStatusRow" />
+      <msdata:Relationship name="QATrackingType_QAErrorType" msdata:parent="QATrackingType" msdata:child="QAErrorType" msdata:parentkey="QATrackingTypeID" msdata:childkey="QATrackingTypeID" msprop:Generator_UserChildTable="QAErrorType" msprop:Generator_ChildPropName="GetQAErrorTypeRows" msprop:Generator_UserParentTable="QATrackingType" msprop:Generator_UserRelationName="QATrackingType_QAErrorType" msprop:Generator_RelationVarName="relationQATrackingType_QAErrorType" msprop:Generator_ParentPropName="QATrackingTypeRow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

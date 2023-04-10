@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RegistryData" targetNamespace="http://statline.com/Registry/Reports/RegistryData.xsd" xmlns:mstns="http://statline.com/Registry/Reports/RegistryData.xsd" xmlns="http://statline.com/Registry/Reports/RegistryData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DMV_COConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="DMV_COConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.Registry.Data.Types.Properties.Settings.GlobalReference.Default.DMV_COConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DMV_COConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="DMV_COConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.Registry.Data.Types.Properties.Settings.GlobalReference.Default.DMV_COConnectionString1" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RegistryData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="RegistryData" msprop:Generator_DataSetName="RegistryData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EventSubCategory" msprop:Generator_UserTableName="EventSubCategory" msprop:Generator_RowDeletedName="EventSubCategoryRowDeleted" msprop:Generator_RowChangedName="EventSubCategoryRowChanged" msprop:Generator_RowClassName="EventSubCategoryRow" msprop:Generator_RowChangingName="EventSubCategoryRowChanging" msprop:Generator_RowEvArgName="EventSubCategoryRowChangeEvent" msprop:Generator_RowEvHandlerName="EventSubCategoryRowChangeEventHandler" msprop:Generator_TableClassName="EventSubCategoryDataTable" msprop:Generator_TableVarName="tableEventSubCategory" msprop:Generator_RowDeletingName="EventSubCategoryRowDeleting" msprop:Generator_TablePropName="EventSubCategory">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EventSubCategoryID" msdata:ReadOnly="true" msprop:Generator_UserColumnName="EventSubCategoryID" msprop:Generator_ColumnPropNameInRow="EventSubCategoryID" msprop:Generator_ColumnVarNameInTable="columnEventSubCategoryID" msprop:Generator_ColumnPropNameInTable="EventSubCategoryIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="EventSubCategoryName" msdata:ReadOnly="true" msprop:Generator_UserColumnName="EventSubCategoryName" msprop:Generator_ColumnPropNameInRow="EventSubCategoryName" msprop:Generator_ColumnVarNameInTable="columnEventSubCategoryName" msprop:Generator_ColumnPropNameInTable="EventSubCategoryNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EventCategory" msprop:Generator_UserTableName="EventCategory" msprop:Generator_RowDeletedName="EventCategoryRowDeleted" msprop:Generator_RowChangedName="EventCategoryRowChanged" msprop:Generator_RowClassName="EventCategoryRow" msprop:Generator_RowChangingName="EventCategoryRowChanging" msprop:Generator_RowEvArgName="EventCategoryRowChangeEvent" msprop:Generator_RowEvHandlerName="EventCategoryRowChangeEventHandler" msprop:Generator_TableClassName="EventCategoryDataTable" msprop:Generator_TableVarName="tableEventCategory" msprop:Generator_RowDeletingName="EventCategoryRowDeleting" msprop:Generator_TablePropName="EventCategory">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EventCategoryID" msdata:ReadOnly="true" msprop:Generator_UserColumnName="EventCategoryID" msprop:Generator_ColumnPropNameInRow="EventCategoryID" msprop:Generator_ColumnVarNameInTable="columnEventCategoryID" msprop:Generator_ColumnPropNameInTable="EventCategoryIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="EventCategoryName" msdata:ReadOnly="true" msprop:Generator_UserColumnName="EventCategoryName" msprop:Generator_ColumnPropNameInRow="EventCategoryName" msprop:Generator_ColumnVarNameInTable="columnEventCategoryName" msprop:Generator_ColumnPropNameInTable="EventCategoryNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ZipCodeCityRegion" msprop:Generator_UserTableName="ZipCodeCityRegion" msprop:Generator_RowDeletedName="ZipCodeCityRegionRowDeleted" msprop:Generator_RowChangedName="ZipCodeCityRegionRowChanged" msprop:Generator_RowClassName="ZipCodeCityRegionRow" msprop:Generator_RowChangingName="ZipCodeCityRegionRowChanging" msprop:Generator_RowEvArgName="ZipCodeCityRegionRowChangeEvent" msprop:Generator_RowEvHandlerName="ZipCodeCityRegionRowChangeEventHandler" msprop:Generator_TableClassName="ZipCodeCityRegionDataTable" msprop:Generator_TableVarName="tableZipCodeCityRegion" msprop:Generator_RowDeletingName="ZipCodeCityRegionRowDeleting" msprop:Generator_TablePropName="ZipCodeCityRegion">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="checked" msprop:Generator_UserColumnName="checked" msprop:Generator_ColumnPropNameInRow="_checked" msprop:Generator_ColumnVarNameInTable="columnchecked" msprop:Generator_ColumnPropNameInTable="checkedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ZipCode" msprop:Generator_UserColumnName="ZipCode" msprop:Generator_ColumnVarNameInTable="columnZipCode" msprop:Generator_ColumnPropNameInRow="ZipCode" msprop:Generator_ColumnPropNameInTable="ZipCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="City" msprop:Generator_UserColumnName="City" msprop:Generator_ColumnVarNameInTable="columnCity" msprop:Generator_ColumnPropNameInRow="City" msprop:Generator_ColumnPropNameInTable="CityColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="State" msprop:Generator_UserColumnName="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnPropNameInTable="StateColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

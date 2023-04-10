@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>MessageCountSummary</Name>
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=ST-TESTSQLOLTP;Initial Catalog=_ReferralProd_DataWarehouse</ConnectString>
+	<IntegratedSecurity>true</IntegratedSecurity>
+  </ConnectionProperties>
+  <DataSourceID>611d8d7a-72af-41cd-8776-70cbf335ef82</DataSourceID>
+</RptDataSource>

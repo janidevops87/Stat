@@ -1,0 +1,67 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Instructions</title>
+</head>
+
+<body bgcolor="#F5EBDD">
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="575">
+  <tr>
+    <td><font face="Times New Roman"></font><font face="Arial" size="4"><strong><b>INSTRUCTIONS
+    &amp; ACCESS</b></strong></font><font face="Times New Roman"><p>Requirements for Internet
+    access to Statline data reports:</p>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <p>Windows 95</p>
+              <p>Microsoft Internet explorer version 3.0 or later</p>
+              <p>Internet access service provider (ISP)</p>
+            </blockquote>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+    <p>The process to retrieve your referral data reports is quite simple. The user must first
+    go to the Statline home page on the Internet. To get to Statline&#146;s home page, the
+    user must type in www.statline.com in the address section located at the top of the screen
+    after logging on to the Internet. Press enter after typing in www.statline.com.
+    Statline&#146;s web site will appear. You will notice that a table of contents is located
+    on the left side of the screen. The scroll bar to the right of the contents section will
+    allow you to scroll down to the bottom of the section. You will find the word Login. Click
+    on Login and you will be connected to the login screen.</p>
+    <p>To proceed, you must contact Statline for a user ID and password. Once a user ID and
+    password has been assigned, you may continue by typing in your user ID, password, and then
+    clicking on the shaded login box. You will now be connected to the Select Report
+    Parameters screen. If you would like to change your password at anytime, please contact
+    Statline.</p>
+    <p>The Select Report Parameters screen allows the user to choose the specific type of
+    report, the date range, report group, organization and type (referral type:
+    Organ/Tissue/Eye, Tissue/Eye, Eye only or Rule-out). Click the arrow to the right of the
+    report box and you will be able to choose the specific report you wish to retrieve. To
+    choose a report, guide the mouse to the highlighted report you wish and click once. Once a
+    report has been selected, the next step is to choose the date range for the report. Enter
+    the date and time range. The report group must be selected next. Report groups are
+    categorized as either messages/imports or referrals. Report groups are designed to reflect
+    a particular group of hospitals (ex: Healthone hospitals) or the report group for
+    referrals can include all referrals for a specific region. A report group can also be
+    designed for a hospital development coordinator to reflect the hospitals assigned to the
+    coordinator. Once a report group has been selected, the next section is organization. The
+    user has the ability to choose a specific organization (referring facility) or leave blank
+    to reflect all organizations. The last selection is the type. This section only pertains
+    to referral data. The four types of referrals are Organ/Tissue/Eye, Tissue/Eye, Eye only
+    and Rule-out. The user may choose a specific type when reviewing a referral or leave this
+    section blank to reflect all types.</p>
+    <p>Once all of the report parameters have been selected, press show to display the report.
+    To print the report, make sure all margins are at .25. Click on the printer at the top of
+    the page to print the report. To start the report selection process again, click on the x
+    box in the upper right hand corner to return to the Select Report Parameters screen. </font></td>
+  </tr>
+</table>
+</center></div>
+</body>
+</html>

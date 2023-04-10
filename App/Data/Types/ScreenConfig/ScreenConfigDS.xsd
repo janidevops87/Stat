@@ -1,0 +1,724 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ScreenConfigDS" targetNamespace="http://tempuri.org/ScreenConfigDS.xsd" xmlns:mstns="http://tempuri.org/ScreenConfigDS.xsd" xmlns="http://tempuri.org/ScreenConfigDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="_ReferralDev2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="_ReferralDev2ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.Stattrac.Data.Types.Properties.Settings.GlobalReference.Default._ReferralDev2ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ScreenConfigDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ScreenConfigDS" msprop:Generator_UserDSName="ScreenConfigDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ServiceLevel" msprop:Generator_UserTableName="ServiceLevel" msprop:Generator_RowEvArgName="ServiceLevelRowChangeEvent" msprop:Generator_TableVarName="tableServiceLevel" msprop:Generator_TablePropName="ServiceLevel" msprop:Generator_RowDeletingName="ServiceLevelRowDeleting" msprop:Generator_RowChangingName="ServiceLevelRowChanging" msprop:Generator_RowDeletedName="ServiceLevelRowDeleted" msprop:Generator_TableClassName="ServiceLevelDataTable" msprop:Generator_RowChangedName="ServiceLevelRowChanged" msprop:Generator_RowEvHandlerName="ServiceLevelRowChangeEventHandler" msprop:Generator_RowClassName="ServiceLevelRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ServiceLevelID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnServiceLevelID" msprop:Generator_ColumnPropNameInRow="ServiceLevelID" msprop:Generator_ColumnPropNameInTable="ServiceLevelIDColumn" msprop:Generator_UserColumnName="ServiceLevelID" type="xs:int" />
+              <xs:element name="ServiceLevelGroupName" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="ServiceLevelGroupName" msprop:Generator_ColumnVarNameInTable="columnServiceLevelGroupName" msprop:Generator_ColumnPropNameInTable="ServiceLevelGroupNameColumn" msprop:Generator_UserColumnName="ServiceLevelGroupName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceLevelTriageLevel" msprop:Generator_ColumnVarNameInTable="columnServiceLevelTriageLevel" msprop:Generator_ColumnPropNameInRow="ServiceLevelTriageLevel" msprop:Generator_ColumnPropNameInTable="ServiceLevelTriageLevelColumn" msprop:Generator_UserColumnName="ServiceLevelTriageLevel" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelOTEMROLevel" msprop:Generator_ColumnVarNameInTable="columnServiceLevelOTEMROLevel" msprop:Generator_ColumnPropNameInRow="ServiceLevelOTEMROLevel" msprop:Generator_ColumnPropNameInTable="ServiceLevelOTEMROLevelColumn" msprop:Generator_UserColumnName="ServiceLevelOTEMROLevel" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelTEMROLevel" msprop:Generator_ColumnVarNameInTable="columnServiceLevelTEMROLevel" msprop:Generator_ColumnPropNameInRow="ServiceLevelTEMROLevel" msprop:Generator_ColumnPropNameInTable="ServiceLevelTEMROLevelColumn" msprop:Generator_UserColumnName="ServiceLevelTEMROLevel" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelEMROLevel" msprop:Generator_ColumnVarNameInTable="columnServiceLevelEMROLevel" msprop:Generator_ColumnPropNameInRow="ServiceLevelEMROLevel" msprop:Generator_ColumnPropNameInTable="ServiceLevelEMROLevelColumn" msprop:Generator_UserColumnName="ServiceLevelEMROLevel" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelLastName" msprop:Generator_ColumnVarNameInTable="columnServiceLevelLastName" msprop:Generator_ColumnPropNameInRow="ServiceLevelLastName" msprop:Generator_ColumnPropNameInTable="ServiceLevelLastNameColumn" msprop:Generator_UserColumnName="ServiceLevelLastName" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ServiceLevelFirstName" msprop:Generator_ColumnVarNameInTable="columnServiceLevelFirstName" msprop:Generator_ColumnPropNameInRow="ServiceLevelFirstName" msprop:Generator_ColumnPropNameInTable="ServiceLevelFirstNameColumn" msprop:Generator_UserColumnName="ServiceLevelFirstName" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelRecNum" msprop:Generator_ColumnVarNameInTable="columnServiceLevelRecNum" msprop:Generator_ColumnPropNameInRow="ServiceLevelRecNum" msprop:Generator_ColumnPropNameInTable="ServiceLevelRecNumColumn" msprop:Generator_UserColumnName="ServiceLevelRecNum" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ServiceLevelSSN" msprop:Generator_ColumnVarNameInTable="columnServiceLevelSSN" msprop:Generator_ColumnPropNameInRow="ServiceLevelSSN" msprop:Generator_ColumnPropNameInTable="ServiceLevelSSNColumn" msprop:Generator_UserColumnName="ServiceLevelSSN" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ServiceLevelGender" msprop:Generator_ColumnVarNameInTable="columnServiceLevelGender" msprop:Generator_ColumnPropNameInRow="ServiceLevelGender" msprop:Generator_ColumnPropNameInTable="ServiceLevelGenderColumn" msprop:Generator_UserColumnName="ServiceLevelGender" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ServiceLevelAge" msprop:Generator_ColumnVarNameInTable="columnServiceLevelAge" msprop:Generator_ColumnPropNameInRow="ServiceLevelAge" msprop:Generator_ColumnPropNameInTable="ServiceLevelAgeColumn" msprop:Generator_UserColumnName="ServiceLevelAge" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelWeight" msprop:Generator_ColumnVarNameInTable="columnServiceLevelWeight" msprop:Generator_ColumnPropNameInRow="ServiceLevelWeight" msprop:Generator_ColumnPropNameInTable="ServiceLevelWeightColumn" msprop:Generator_UserColumnName="ServiceLevelWeight" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelWeightAgeLimit" msprop:Generator_ColumnVarNameInTable="columnServiceLevelWeightAgeLimit" msprop:Generator_ColumnPropNameInRow="ServiceLevelWeightAgeLimit" msprop:Generator_ColumnPropNameInTable="ServiceLevelWeightAgeLimitColumn" msprop:Generator_UserColumnName="ServiceLevelWeightAgeLimit" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ServiceLevelRace" msprop:Generator_ColumnVarNameInTable="columnServiceLevelRace" msprop:Generator_ColumnPropNameInRow="ServiceLevelRace" msprop:Generator_ColumnPropNameInTable="ServiceLevelRaceColumn" msprop:Generator_UserColumnName="ServiceLevelRace" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelVent" msprop:Generator_ColumnVarNameInTable="columnServiceLevelVent" msprop:Generator_ColumnPropNameInRow="ServiceLevelVent" msprop:Generator_ColumnPropNameInTable="ServiceLevelVentColumn" msprop:Generator_UserColumnName="ServiceLevelVent" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelPrevVentClass" msprop:Generator_ColumnVarNameInTable="columnServiceLevelPrevVentClass" msprop:Generator_ColumnPropNameInRow="ServiceLevelPrevVentClass" msprop:Generator_ColumnPropNameInTable="ServiceLevelPrevVentClassColumn" msprop:Generator_UserColumnName="ServiceLevelPrevVentClass" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelDead" msprop:Generator_ColumnVarNameInTable="columnServiceLevelDead" msprop:Generator_ColumnPropNameInRow="ServiceLevelDead" msprop:Generator_ColumnPropNameInTable="ServiceLevelDeadColumn" msprop:Generator_UserColumnName="ServiceLevelDead" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelDeathDate" msprop:Generator_ColumnVarNameInTable="columnServiceLevelDeathDate" msprop:Generator_ColumnPropNameInRow="ServiceLevelDeathDate" msprop:Generator_ColumnPropNameInTable="ServiceLevelDeathDateColumn" msprop:Generator_UserColumnName="ServiceLevelDeathDate" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelDeathTime" msprop:Generator_ColumnVarNameInTable="columnServiceLevelDeathTime" msprop:Generator_ColumnPropNameInRow="ServiceLevelDeathTime" msprop:Generator_ColumnPropNameInTable="ServiceLevelDeathTimeColumn" msprop:Generator_UserColumnName="ServiceLevelDeathTime" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelAdmitDate" msprop:Generator_ColumnVarNameInTable="columnServiceLevelAdmitDate" msprop:Generator_ColumnPropNameInRow="ServiceLevelAdmitDate" msprop:Generator_ColumnPropNameInTable="ServiceLevelAdmitDateColumn" msprop:Generator_UserColumnName="ServiceLevelAdmitDate" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelAdmitTime" msprop:Generator_ColumnVarNameInTable="columnServiceLevelAdmitTime" msprop:Generator_ColumnPropNameInRow="ServiceLevelAdmitTime" msprop:Generator_ColumnPropNameInTable="ServiceLevelAdmitTimeColumn" msprop:Generator_UserColumnName="ServiceLevelAdmitTime" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelCOD" msprop:Generator_ColumnVarNameInTable="columnServiceLevelCOD" msprop:Generator_ColumnPropNameInRow="ServiceLevelCOD" msprop:Generator_ColumnPropNameInTable="ServiceLevelCODColumn" msprop:Generator_UserColumnName="ServiceLevelCOD" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelDOB" msprop:Generator_ColumnVarNameInTable="columnServiceLevelDOB" msprop:Generator_ColumnPropNameInRow="ServiceLevelDOB" msprop:Generator_ColumnPropNameInTable="ServiceLevelDOBColumn" msprop:Generator_UserColumnName="ServiceLevelDOB" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelDOA" msprop:Generator_ColumnVarNameInTable="columnServiceLevelDOA" msprop:Generator_ColumnPropNameInRow="ServiceLevelDOA" msprop:Generator_ColumnPropNameInTable="ServiceLevelDOAColumn" msprop:Generator_UserColumnName="ServiceLevelDOA" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelCoroner" msprop:Generator_ColumnVarNameInTable="columnServiceLevelCoroner" msprop:Generator_ColumnPropNameInRow="ServiceLevelCoroner" msprop:Generator_ColumnPropNameInTable="ServiceLevelCoronerColumn" msprop:Generator_UserColumnName="ServiceLevelCoroner" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelAttendingMD" msprop:Generator_ColumnVarNameInTable="columnServiceLevelAttendingMD" msprop:Generator_ColumnPropNameInRow="ServiceLevelAttendingMD" msprop:Generator_ColumnPropNameInTable="ServiceLevelAttendingMDColumn" msprop:Generator_UserColumnName="ServiceLevelAttendingMD" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ServiceLevelPronouncingMD" msprop:Generator_ColumnVarNameInTable="columnServiceLevelPronouncingMD" msprop:Generator_ColumnPropNameInRow="ServiceLevelPronouncingMD" msprop:Generator_ColumnPropNameInTable="ServiceLevelPronouncingMDColumn" msprop:Generator_UserColumnName="ServiceLevelPronouncingMD" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ServiceLevelApproachMethod" msprop:Generator_ColumnVarNameInTable="columnServiceLevelApproachMethod" msprop:Generator_ColumnPropNameInRow="ServiceLevelApproachMethod" msprop:Generator_ColumnPropNameInTable="ServiceLevelApproachMethodColumn" msprop:Generator_UserColumnName="ServiceLevelApproachMethod" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelApproachBy" msprop:Generator_ColumnVarNameInTable="columnServiceLevelApproachBy" msprop:Generator_ColumnPropNameInRow="ServiceLevelApproachBy" msprop:Generator_ColumnPropNameInTable="ServiceLevelApproachByColumn" msprop:Generator_UserColumnName="ServiceLevelApproachBy" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelApproachOTEPrompt" msprop:Generator_ColumnVarNameInTable="columnServiceLevelApproachOTEPrompt" msprop:Generator_ColumnPropNameInRow="ServiceLevelApproachOTEPrompt" msprop:Generator_ColumnPropNameInTable="ServiceLevelApproachOTEPromptColumn" msprop:Generator_UserColumnName="ServiceLevelApproachOTEPrompt" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelApproachTEPrompt" msprop:Generator_ColumnVarNameInTable="columnServiceLevelApproachTEPrompt" msprop:Generator_ColumnPropNameInRow="ServiceLevelApproachTEPrompt" msprop:Generator_ColumnPropNameInTable="ServiceLevelApproachTEPromptColumn" msprop:Generator_UserColumnName="ServiceLevelApproachTEPrompt" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelApproachEPrompt" msprop:Generator_ColumnVarNameInTable="columnServiceLevelApproachEPrompt" msprop:Generator_ColumnPropNameInRow="ServiceLevelApproachEPrompt" msprop:Generator_ColumnPropNameInTable="ServiceLevelApproachEPromptColumn" msprop:Generator_UserColumnName="ServiceLevelApproachEPrompt" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelApproachROPrompt" msprop:Generator_ColumnVarNameInTable="columnServiceLevelApproachROPrompt" msprop:Generator_ColumnPropNameInRow="ServiceLevelApproachROPrompt" msprop:Generator_ColumnPropNameInTable="ServiceLevelApproachROPromptColumn" msprop:Generator_UserColumnName="ServiceLevelApproachROPrompt" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelNOK" msprop:Generator_ColumnVarNameInTable="columnServiceLevelNOK" msprop:Generator_ColumnPropNameInRow="ServiceLevelNOK" msprop:Generator_ColumnPropNameInTable="ServiceLevelNOKColumn" msprop:Generator_UserColumnName="ServiceLevelNOK" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelRelation" msprop:Generator_ColumnVarNameInTable="columnServiceLevelRelation" msprop:Generator_ColumnPropNameInRow="ServiceLevelRelation" msprop:Generator_ColumnPropNameInTable="ServiceLevelRelationColumn" msprop:Generator_UserColumnName="ServiceLevelRelation" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelNOKPhone" msprop:Generator_ColumnVarNameInTable="columnServiceLevelNOKPhone" msprop:Generator_ColumnPropNameInRow="ServiceLevelNOKPhone" msprop:Generator_ColumnPropNameInTable="ServiceLevelNOKPhoneColumn" msprop:Generator_UserColumnName="ServiceLevelNOKPhone" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelNOKAddress" msprop:Generator_ColumnVarNameInTable="columnServiceLevelNOKAddress" msprop:Generator_ColumnPropNameInRow="ServiceLevelNOKAddress" msprop:Generator_ColumnPropNameInTable="ServiceLevelNOKAddressColumn" msprop:Generator_UserColumnName="ServiceLevelNOKAddress" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelAppropriateOrgan" msprop:Generator_ColumnVarNameInTable="columnServiceLevelAppropriateOrgan" msprop:Generator_ColumnPropNameInRow="ServiceLevelAppropriateOrgan" msprop:Generator_ColumnPropNameInTable="ServiceLevelAppropriateOrganColumn" msprop:Generator_UserColumnName="ServiceLevelAppropriateOrgan" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelAppropriateBone" msprop:Generator_ColumnVarNameInTable="columnServiceLevelAppropriateBone" msprop:Generator_ColumnPropNameInRow="ServiceLevelAppropriateBone" msprop:Generator_ColumnPropNameInTable="ServiceLevelAppropriateBoneColumn" msprop:Generator_UserColumnName="ServiceLevelAppropriateBone" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelAppropriateTissue" msprop:Generator_ColumnVarNameInTable="columnServiceLevelAppropriateTissue" msprop:Generator_ColumnPropNameInRow="ServiceLevelAppropriateTissue" msprop:Generator_ColumnPropNameInTable="ServiceLevelAppropriateTissueColumn" msprop:Generator_UserColumnName="ServiceLevelAppropriateTissue" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelAppropriateSkin" msprop:Generator_ColumnVarNameInTable="columnServiceLevelAppropriateSkin" msprop:Generator_ColumnPropNameInRow="ServiceLevelAppropriateSkin" msprop:Generator_ColumnPropNameInTable="ServiceLevelAppropriateSkinColumn" msprop:Generator_UserColumnName="ServiceLevelAppropriateSkin" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelAppropriateValves" msprop:Generator_ColumnVarNameInTable="columnServiceLevelAppropriateValves" msprop:Generator_ColumnPropNameInRow="ServiceLevelAppropriateValves" msprop:Generator_ColumnPropNameInTable="ServiceLevelAppropriateValvesColumn" msprop:Generator_UserColumnName="ServiceLevelAppropriateValves" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelAppropriateEyes" msprop:Generator_ColumnVarNameInTable="columnServiceLevelAppropriateEyes" msprop:Generator_ColumnPropNameInRow="ServiceLevelAppropriateEyes" msprop:Generator_ColumnPropNameInTable="ServiceLevelAppropriateEyesColumn" msprop:Generator_UserColumnName="ServiceLevelAppropriateEyes" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelAppropriateRsch" msprop:Generator_ColumnVarNameInTable="columnServiceLevelAppropriateRsch" msprop:Generator_ColumnPropNameInRow="ServiceLevelAppropriateRsch" msprop:Generator_ColumnPropNameInTable="ServiceLevelAppropriateRschColumn" msprop:Generator_UserColumnName="ServiceLevelAppropriateRsch" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelApproachOrgan" msprop:Generator_ColumnVarNameInTable="columnServiceLevelApproachOrgan" msprop:Generator_ColumnPropNameInRow="ServiceLevelApproachOrgan" msprop:Generator_ColumnPropNameInTable="ServiceLevelApproachOrganColumn" msprop:Generator_UserColumnName="ServiceLevelApproachOrgan" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelApproachBone" msprop:Generator_ColumnVarNameInTable="columnServiceLevelApproachBone" msprop:Generator_ColumnPropNameInRow="ServiceLevelApproachBone" msprop:Generator_ColumnPropNameInTable="ServiceLevelApproachBoneColumn" msprop:Generator_UserColumnName="ServiceLevelApproachBone" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelApproachTissue" msprop:Generator_ColumnVarNameInTable="columnServiceLevelApproachTissue" msprop:Generator_ColumnPropNameInRow="ServiceLevelApproachTissue" msprop:Generator_ColumnPropNameInTable="ServiceLevelApproachTissueColumn" msprop:Generator_UserColumnName="ServiceLevelApproachTissue" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelApproachSkin" msprop:Generator_ColumnVarNameInTable="columnServiceLevelApproachSkin" msprop:Generator_ColumnPropNameInRow="ServiceLevelApproachSkin" msprop:Generator_ColumnPropNameInTable="ServiceLevelApproachSkinColumn" msprop:Generator_UserColumnName="ServiceLevelApproachSkin" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelApproachValves" msprop:Generator_ColumnVarNameInTable="columnServiceLevelApproachValves" msprop:Generator_ColumnPropNameInRow="ServiceLevelApproachValves" msprop:Generator_ColumnPropNameInTable="ServiceLevelApproachValvesColumn" msprop:Generator_UserColumnName="ServiceLevelApproachValves" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelApproachEyes" msprop:Generator_ColumnVarNameInTable="columnServiceLevelApproachEyes" msprop:Generator_ColumnPropNameInRow="ServiceLevelApproachEyes" msprop:Generator_ColumnPropNameInTable="ServiceLevelApproachEyesColumn" msprop:Generator_UserColumnName="ServiceLevelApproachEyes" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelApproachRsch" msprop:Generator_ColumnVarNameInTable="columnServiceLevelApproachRsch" msprop:Generator_ColumnPropNameInRow="ServiceLevelApproachRsch" msprop:Generator_ColumnPropNameInTable="ServiceLevelApproachRschColumn" msprop:Generator_UserColumnName="ServiceLevelApproachRsch" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelConsentOrgan" msprop:Generator_ColumnVarNameInTable="columnServiceLevelConsentOrgan" msprop:Generator_ColumnPropNameInRow="ServiceLevelConsentOrgan" msprop:Generator_ColumnPropNameInTable="ServiceLevelConsentOrganColumn" msprop:Generator_UserColumnName="ServiceLevelConsentOrgan" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelConsentBone" msprop:Generator_ColumnVarNameInTable="columnServiceLevelConsentBone" msprop:Generator_ColumnPropNameInRow="ServiceLevelConsentBone" msprop:Generator_ColumnPropNameInTable="ServiceLevelConsentBoneColumn" msprop:Generator_UserColumnName="ServiceLevelConsentBone" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelConsentTissue" msprop:Generator_ColumnVarNameInTable="columnServiceLevelConsentTissue" msprop:Generator_ColumnPropNameInRow="ServiceLevelConsentTissue" msprop:Generator_ColumnPropNameInTable="ServiceLevelConsentTissueColumn" msprop:Generator_UserColumnName="ServiceLevelConsentTissue" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelConsentSkin" msprop:Generator_ColumnVarNameInTable="columnServiceLevelConsentSkin" msprop:Generator_ColumnPropNameInRow="ServiceLevelConsentSkin" msprop:Generator_ColumnPropNameInTable="ServiceLevelConsentSkinColumn" msprop:Generator_UserColumnName="ServiceLevelConsentSkin" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelConsentValves" msprop:Generator_ColumnVarNameInTable="columnServiceLevelConsentValves" msprop:Generator_ColumnPropNameInRow="ServiceLevelConsentValves" msprop:Generator_ColumnPropNameInTable="ServiceLevelConsentValvesColumn" msprop:Generator_UserColumnName="ServiceLevelConsentValves" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelConsentEyes" msprop:Generator_ColumnVarNameInTable="columnServiceLevelConsentEyes" msprop:Generator_ColumnPropNameInRow="ServiceLevelConsentEyes" msprop:Generator_ColumnPropNameInTable="ServiceLevelConsentEyesColumn" msprop:Generator_UserColumnName="ServiceLevelConsentEyes" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelConsentRsch" msprop:Generator_ColumnVarNameInTable="columnServiceLevelConsentRsch" msprop:Generator_ColumnPropNameInRow="ServiceLevelConsentRsch" msprop:Generator_ColumnPropNameInTable="ServiceLevelConsentRschColumn" msprop:Generator_UserColumnName="ServiceLevelConsentRsch" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelRecoveryOrgan" msprop:Generator_ColumnVarNameInTable="columnServiceLevelRecoveryOrgan" msprop:Generator_ColumnPropNameInRow="ServiceLevelRecoveryOrgan" msprop:Generator_ColumnPropNameInTable="ServiceLevelRecoveryOrganColumn" msprop:Generator_UserColumnName="ServiceLevelRecoveryOrgan" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelRecoveryBone" msprop:Generator_ColumnVarNameInTable="columnServiceLevelRecoveryBone" msprop:Generator_ColumnPropNameInRow="ServiceLevelRecoveryBone" msprop:Generator_ColumnPropNameInTable="ServiceLevelRecoveryBoneColumn" msprop:Generator_UserColumnName="ServiceLevelRecoveryBone" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelRecoveryTissue" msprop:Generator_ColumnVarNameInTable="columnServiceLevelRecoveryTissue" msprop:Generator_ColumnPropNameInRow="ServiceLevelRecoveryTissue" msprop:Generator_ColumnPropNameInTable="ServiceLevelRecoveryTissueColumn" msprop:Generator_UserColumnName="ServiceLevelRecoveryTissue" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelRecoverySkin" msprop:Generator_ColumnVarNameInTable="columnServiceLevelRecoverySkin" msprop:Generator_ColumnPropNameInRow="ServiceLevelRecoverySkin" msprop:Generator_ColumnPropNameInTable="ServiceLevelRecoverySkinColumn" msprop:Generator_UserColumnName="ServiceLevelRecoverySkin" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelRecoveryValves" msprop:Generator_ColumnVarNameInTable="columnServiceLevelRecoveryValves" msprop:Generator_ColumnPropNameInRow="ServiceLevelRecoveryValves" msprop:Generator_ColumnPropNameInTable="ServiceLevelRecoveryValvesColumn" msprop:Generator_UserColumnName="ServiceLevelRecoveryValves" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelRecoveryEyes" msprop:Generator_ColumnVarNameInTable="columnServiceLevelRecoveryEyes" msprop:Generator_ColumnPropNameInRow="ServiceLevelRecoveryEyes" msprop:Generator_ColumnPropNameInTable="ServiceLevelRecoveryEyesColumn" msprop:Generator_UserColumnName="ServiceLevelRecoveryEyes" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelRecoveryRsch" msprop:Generator_ColumnVarNameInTable="columnServiceLevelRecoveryRsch" msprop:Generator_ColumnPropNameInRow="ServiceLevelRecoveryRsch" msprop:Generator_ColumnPropNameInTable="ServiceLevelRecoveryRschColumn" msprop:Generator_UserColumnName="ServiceLevelRecoveryRsch" type="xs:short" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" msprop:Generator_UserColumnName="LastModified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ServiceLevelExcludePrevVent" msprop:Generator_ColumnVarNameInTable="columnServiceLevelExcludePrevVent" msprop:Generator_ColumnPropNameInRow="ServiceLevelExcludePrevVent" msprop:Generator_ColumnPropNameInTable="ServiceLevelExcludePrevVentColumn" msprop:Generator_UserColumnName="ServiceLevelExcludePrevVent" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelCheckRegistry" msprop:Generator_ColumnVarNameInTable="columnServiceLevelCheckRegistry" msprop:Generator_ColumnPropNameInRow="ServiceLevelCheckRegistry" msprop:Generator_ColumnPropNameInTable="ServiceLevelCheckRegistryColumn" msprop:Generator_UserColumnName="ServiceLevelCheckRegistry" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelDonorIntentFaxYN" msprop:Generator_ColumnVarNameInTable="columnServiceLevelDonorIntentFaxYN" msprop:Generator_ColumnPropNameInRow="ServiceLevelDonorIntentFaxYN" msprop:Generator_ColumnPropNameInTable="ServiceLevelDonorIntentFaxYNColumn" msprop:Generator_UserColumnName="ServiceLevelDonorIntentFaxYN" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelDonorIntentNurseScript" msprop:Generator_ColumnVarNameInTable="columnServiceLevelDonorIntentNurseScript" msprop:Generator_ColumnPropNameInRow="ServiceLevelDonorIntentNurseScript" msprop:Generator_ColumnPropNameInTable="ServiceLevelDonorIntentNurseScriptColumn" msprop:Generator_UserColumnName="ServiceLevelDonorIntentNurseScript" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceLevelDonorIntentOrganizationId" msprop:Generator_ColumnVarNameInTable="columnServiceLevelDonorIntentOrganizationId" msprop:Generator_ColumnPropNameInRow="ServiceLevelDonorIntentOrganizationId" msprop:Generator_ColumnPropNameInTable="ServiceLevelDonorIntentOrganizationIdColumn" msprop:Generator_UserColumnName="ServiceLevelDonorIntentOrganizationId" type="xs:int" minOccurs="0" />
+              <xs:element name="ServiceLevelDonorIntentFaxId" msprop:Generator_ColumnVarNameInTable="columnServiceLevelDonorIntentFaxId" msprop:Generator_ColumnPropNameInRow="ServiceLevelDonorIntentFaxId" msprop:Generator_ColumnPropNameInTable="ServiceLevelDonorIntentFaxIdColumn" msprop:Generator_UserColumnName="ServiceLevelDonorIntentFaxId" type="xs:int" minOccurs="0" />
+              <xs:element name="ServiceLevelDonorIntentPersonId" msprop:Generator_ColumnVarNameInTable="columnServiceLevelDonorIntentPersonId" msprop:Generator_ColumnPropNameInRow="ServiceLevelDonorIntentPersonId" msprop:Generator_ColumnPropNameInTable="ServiceLevelDonorIntentPersonIdColumn" msprop:Generator_UserColumnName="ServiceLevelDonorIntentPersonId" type="xs:int" minOccurs="0" />
+              <xs:element name="ServiceLevelDonorIntentRetries" msprop:Generator_ColumnVarNameInTable="columnServiceLevelDonorIntentRetries" msprop:Generator_ColumnPropNameInRow="ServiceLevelDonorIntentRetries" msprop:Generator_ColumnPropNameInTable="ServiceLevelDonorIntentRetriesColumn" msprop:Generator_UserColumnName="ServiceLevelDonorIntentRetries" type="xs:int" minOccurs="0" />
+              <xs:element name="ServiceLevelDonorIntentDocumentName" msprop:Generator_ColumnVarNameInTable="columnServiceLevelDonorIntentDocumentName" msprop:Generator_ColumnPropNameInRow="ServiceLevelDonorIntentDocumentName" msprop:Generator_ColumnPropNameInTable="ServiceLevelDonorIntentDocumentNameColumn" msprop:Generator_UserColumnName="ServiceLevelDonorIntentDocumentName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceLevelRegCheckRegistry" msprop:Generator_ColumnVarNameInTable="columnServiceLevelRegCheckRegistry" msprop:Generator_ColumnPropNameInRow="ServiceLevelRegCheckRegistry" msprop:Generator_ColumnPropNameInTable="ServiceLevelRegCheckRegistryColumn" msprop:Generator_UserColumnName="ServiceLevelRegCheckRegistry" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelStatus" msprop:Generator_ColumnVarNameInTable="columnServiceLevelStatus" msprop:Generator_ColumnPropNameInRow="ServiceLevelStatus" msprop:Generator_ColumnPropNameInTable="ServiceLevelStatusColumn" msprop:Generator_UserColumnName="ServiceLevelStatus" type="xs:short" minOccurs="0" />
+              <xs:element name="WorkingStatusUpdatedFlag" msprop:Generator_ColumnVarNameInTable="columnWorkingStatusUpdatedFlag" msprop:Generator_ColumnPropNameInRow="WorkingStatusUpdatedFlag" msprop:Generator_ColumnPropNameInTable="WorkingStatusUpdatedFlagColumn" msprop:Generator_UserColumnName="WorkingStatusUpdatedFlag" type="xs:short" minOccurs="0" />
+              <xs:element name="WorkingServiceLevelId" msprop:Generator_ColumnVarNameInTable="columnWorkingServiceLevelId" msprop:Generator_ColumnPropNameInRow="WorkingServiceLevelId" msprop:Generator_ColumnPropNameInTable="WorkingServiceLevelIdColumn" msprop:Generator_UserColumnName="WorkingServiceLevelId" type="xs:int" minOccurs="0" />
+              <xs:element name="ServiceLevelEyeCareReminder" msprop:Generator_ColumnVarNameInTable="columnServiceLevelEyeCareReminder" msprop:Generator_ColumnPropNameInRow="ServiceLevelEyeCareReminder" msprop:Generator_ColumnPropNameInTable="ServiceLevelEyeCareReminderColumn" msprop:Generator_UserColumnName="ServiceLevelEyeCareReminder" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceLevelHeartBeat" msprop:Generator_ColumnVarNameInTable="columnServiceLevelHeartBeat" msprop:Generator_ColumnPropNameInRow="ServiceLevelHeartBeat" msprop:Generator_ColumnPropNameInTable="ServiceLevelHeartBeatColumn" msprop:Generator_UserColumnName="ServiceLevelHeartBeat" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelNOKConsent" msprop:Generator_ColumnVarNameInTable="columnServiceLevelNOKConsent" msprop:Generator_ColumnPropNameInRow="ServiceLevelNOKConsent" msprop:Generator_ColumnPropNameInTable="ServiceLevelNOKConsentColumn" msprop:Generator_UserColumnName="ServiceLevelNOKConsent" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ServiceLevelNOKRegistration" msprop:Generator_ColumnVarNameInTable="columnServiceLevelNOKRegistration" msprop:Generator_ColumnPropNameInRow="ServiceLevelNOKRegistration" msprop:Generator_ColumnPropNameInTable="ServiceLevelNOKRegistrationColumn" msprop:Generator_UserColumnName="ServiceLevelNOKRegistration" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ServiceLevelEmailDisposition" msprop:Generator_ColumnVarNameInTable="columnServiceLevelEmailDisposition" msprop:Generator_ColumnPropNameInRow="ServiceLevelEmailDisposition" msprop:Generator_ColumnPropNameInTable="ServiceLevelEmailDispositionColumn" msprop:Generator_UserColumnName="ServiceLevelEmailDisposition" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelDonorBrainDeathDate" msprop:Generator_ColumnVarNameInTable="columnServiceLevelDonorBrainDeathDate" msprop:Generator_ColumnPropNameInRow="ServiceLevelDonorBrainDeathDate" msprop:Generator_ColumnPropNameInTable="ServiceLevelDonorBrainDeathDateColumn" msprop:Generator_UserColumnName="ServiceLevelDonorBrainDeathDate" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelDonorBrainDeathTime" msprop:Generator_ColumnVarNameInTable="columnServiceLevelDonorBrainDeathTime" msprop:Generator_ColumnPropNameInRow="ServiceLevelDonorBrainDeathTime" msprop:Generator_ColumnPropNameInTable="ServiceLevelDonorBrainDeathTimeColumn" msprop:Generator_UserColumnName="ServiceLevelDonorBrainDeathTime" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelPronouncingMDPhone" msprop:Generator_ColumnVarNameInTable="columnServiceLevelPronouncingMDPhone" msprop:Generator_ColumnPropNameInRow="ServiceLevelPronouncingMDPhone" msprop:Generator_ColumnPropNameInTable="ServiceLevelPronouncingMDPhoneColumn" msprop:Generator_UserColumnName="ServiceLevelPronouncingMDPhone" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelAttendingMDPhone" msprop:Generator_ColumnVarNameInTable="columnServiceLevelAttendingMDPhone" msprop:Generator_ColumnPropNameInRow="ServiceLevelAttendingMDPhone" msprop:Generator_ColumnPropNameInTable="ServiceLevelAttendingMDPhoneColumn" msprop:Generator_UserColumnName="ServiceLevelAttendingMDPhone" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelDOB_ILB" msprop:Generator_ColumnVarNameInTable="columnServiceLevelDOB_ILB" msprop:Generator_ColumnPropNameInRow="ServiceLevelDOB_ILB" msprop:Generator_ColumnPropNameInTable="ServiceLevelDOB_ILBColumn" msprop:Generator_UserColumnName="ServiceLevelDOB_ILB" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelDonorNameMI" msprop:Generator_ColumnVarNameInTable="columnServiceLevelDonorNameMI" msprop:Generator_ColumnPropNameInRow="ServiceLevelDonorNameMI" msprop:Generator_ColumnPropNameInTable="ServiceLevelDonorNameMIColumn" msprop:Generator_UserColumnName="ServiceLevelDonorNameMI" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelDonorSpecificCOD" msprop:Generator_ColumnVarNameInTable="columnServiceLevelDonorSpecificCOD" msprop:Generator_ColumnPropNameInRow="ServiceLevelDonorSpecificCOD" msprop:Generator_ColumnPropNameInTable="ServiceLevelDonorSpecificCODColumn" msprop:Generator_UserColumnName="ServiceLevelDonorSpecificCOD" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelApproachLevel" msprop:Generator_ColumnVarNameInTable="columnServiceLevelApproachLevel" msprop:Generator_ColumnPropNameInRow="ServiceLevelApproachLevel" msprop:Generator_ColumnPropNameInTable="ServiceLevelApproachLevelColumn" msprop:Generator_UserColumnName="ServiceLevelApproachLevel" type="xs:int" minOccurs="0" />
+              <xs:element name="ServiceLevelDisableASPSave" msprop:Generator_ColumnVarNameInTable="columnServiceLevelDisableASPSave" msprop:Generator_ColumnPropNameInRow="ServiceLevelDisableASPSave" msprop:Generator_ColumnPropNameInTable="ServiceLevelDisableASPSaveColumn" msprop:Generator_UserColumnName="ServiceLevelDisableASPSave" type="xs:int" minOccurs="0" />
+              <xs:element name="ServiceLevelAlwaysPopRegistry" msprop:Generator_ColumnVarNameInTable="columnServiceLevelAlwaysPopRegistry" msprop:Generator_ColumnPropNameInRow="ServiceLevelAlwaysPopRegistry" msprop:Generator_ColumnPropNameInTable="ServiceLevelAlwaysPopRegistryColumn" msprop:Generator_UserColumnName="ServiceLevelAlwaysPopRegistry" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelBillSecondaryManualEnable" msprop:Generator_ColumnVarNameInTable="columnServiceLevelBillSecondaryManualEnable" msprop:Generator_ColumnPropNameInRow="ServiceLevelBillSecondaryManualEnable" msprop:Generator_ColumnPropNameInTable="ServiceLevelBillSecondaryManualEnableColumn" msprop:Generator_UserColumnName="ServiceLevelBillSecondaryManualEnable" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelBillFamilyApproachManualEnable" msprop:Generator_ColumnVarNameInTable="columnServiceLevelBillFamilyApproachManualEnable" msprop:Generator_ColumnPropNameInRow="ServiceLevelBillFamilyApproachManualEnable" msprop:Generator_ColumnPropNameInTable="ServiceLevelBillFamilyApproachManualEnableColumn" msprop:Generator_UserColumnName="ServiceLevelBillFamilyApproachManualEnable" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelBillMedSocManualEnable" msprop:Generator_ColumnVarNameInTable="columnServiceLevelBillMedSocManualEnable" msprop:Generator_ColumnPropNameInRow="ServiceLevelBillMedSocManualEnable" msprop:Generator_ColumnPropNameInTable="ServiceLevelBillMedSocManualEnableColumn" msprop:Generator_UserColumnName="ServiceLevelBillMedSocManualEnable" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelVerifyWeight" msprop:Generator_ColumnVarNameInTable="columnServiceLevelVerifyWeight" msprop:Generator_ColumnPropNameInRow="ServiceLevelVerifyWeight" msprop:Generator_ColumnPropNameInTable="ServiceLevelVerifyWeightColumn" msprop:Generator_UserColumnName="ServiceLevelVerifyWeight" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ServiceLevelVerifySex" msprop:Generator_ColumnVarNameInTable="columnServiceLevelVerifySex" msprop:Generator_ColumnPropNameInRow="ServiceLevelVerifySex" msprop:Generator_ColumnPropNameInTable="ServiceLevelVerifySexColumn" msprop:Generator_UserColumnName="ServiceLevelVerifySex" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ServiceLevelBillApproachOnly" msprop:Generator_ColumnVarNameInTable="columnServiceLevelBillApproachOnly" msprop:Generator_ColumnPropNameInRow="ServiceLevelBillApproachOnly" msprop:Generator_ColumnPropNameInTable="ServiceLevelBillApproachOnlyColumn" msprop:Generator_UserColumnName="ServiceLevelBillApproachOnly" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelPNEAllowSaveWithoutContactRequired" msprop:Generator_ColumnVarNameInTable="columnServiceLevelPNEAllowSaveWithoutContactRequired" msprop:Generator_ColumnPropNameInRow="ServiceLevelPNEAllowSaveWithoutContactRequired" msprop:Generator_ColumnPropNameInTable="ServiceLevelPNEAllowSaveWithoutContactRequiredColumn" msprop:Generator_UserColumnName="ServiceLevelPNEAllowSaveWithoutContactRequired" type="xs:short" minOccurs="0" />
+              <xs:element name="DRDSNID" msprop:Generator_ColumnVarNameInTable="columnDRDSNID" msprop:Generator_ColumnPropNameInRow="DRDSNID" msprop:Generator_ColumnPropNameInTable="DRDSNIDColumn" msprop:Generator_UserColumnName="DRDSNID" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ScreenConfig" msprop:Generator_UserTableName="ScreenConfig" msprop:Generator_RowEvArgName="ScreenConfigRowChangeEvent" msprop:Generator_TableVarName="tableScreenConfig" msprop:Generator_TablePropName="ScreenConfig" msprop:Generator_RowDeletingName="ScreenConfigRowDeleting" msprop:Generator_RowChangingName="ScreenConfigRowChanging" msprop:Generator_RowDeletedName="ScreenConfigRowDeleted" msprop:Generator_TableClassName="ScreenConfigDataTable" msprop:Generator_RowChangedName="ScreenConfigRowChanged" msprop:Generator_RowEvHandlerName="ScreenConfigRowChangeEventHandler" msprop:Generator_RowClassName="ScreenConfigRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ScreenConfigID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnScreenConfigID" msprop:Generator_ColumnPropNameInRow="ScreenConfigID" msprop:Generator_ColumnPropNameInTable="ScreenConfigIDColumn" msprop:Generator_UserColumnName="ScreenConfigID" type="xs:int" />
+              <xs:element name="ServiceLevelID" msprop:Generator_ColumnVarNameInTable="columnServiceLevelID" msprop:Generator_ColumnPropNameInRow="ServiceLevelID" msprop:Generator_ColumnPropNameInTable="ServiceLevelIDColumn" msprop:Generator_UserColumnName="ServiceLevelID" type="xs:int" />
+              <xs:element name="ScreenID" msprop:Generator_ColumnVarNameInTable="columnScreenID" msprop:Generator_ColumnPropNameInRow="ScreenID" msprop:Generator_ColumnPropNameInTable="ScreenIDColumn" msprop:Generator_UserColumnName="ScreenID" type="xs:int" />
+              <xs:element name="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" msprop:Generator_UserColumnName="LastModified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" msprop:Generator_UserColumnName="LastStatEmployeeID" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" msprop:Generator_UserColumnName="AuditLogTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="ScreenConfig" msprop:Generator_ColumnVarNameInTable="columnScreenConfig" msprop:Generator_ColumnPropNameInRow="ScreenConfig" msprop:Generator_ColumnPropNameInTable="ScreenConfigColumn" msprop:Generator_UserColumnName="ScreenConfig" type="xs:string" minOccurs="0" />
+              <xs:element name="Inactive" msprop:Generator_ColumnVarNameInTable="columnInactive" msprop:Generator_ColumnPropNameInRow="Inactive" msprop:Generator_ColumnPropNameInTable="InactiveColumn" msprop:Generator_UserColumnName="Inactive" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ScreenFieldAttribute" msprop:Generator_UserTableName="ScreenFieldAttribute" msprop:Generator_RowEvArgName="ScreenFieldAttributeRowChangeEvent" msprop:Generator_TableVarName="tableScreenFieldAttribute" msprop:Generator_TablePropName="ScreenFieldAttribute" msprop:Generator_RowDeletingName="ScreenFieldAttributeRowDeleting" msprop:Generator_RowChangingName="ScreenFieldAttributeRowChanging" msprop:Generator_RowDeletedName="ScreenFieldAttributeRowDeleted" msprop:Generator_TableClassName="ScreenFieldAttributeDataTable" msprop:Generator_RowChangedName="ScreenFieldAttributeRowChanged" msprop:Generator_RowEvHandlerName="ScreenFieldAttributeRowChangeEventHandler" msprop:Generator_RowClassName="ScreenFieldAttributeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ScreenFieldAttributeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnScreenFieldAttributeID" msprop:Generator_ColumnPropNameInRow="ScreenFieldAttributeID" msprop:Generator_ColumnPropNameInTable="ScreenFieldAttributeIDColumn" msprop:Generator_UserColumnName="ScreenFieldAttributeID" type="xs:int" />
+              <xs:element name="ScreenFieldID" msprop:Generator_ColumnVarNameInTable="columnScreenFieldID" msprop:Generator_ColumnPropNameInRow="ScreenFieldID" msprop:Generator_ColumnPropNameInTable="ScreenFieldIDColumn" msprop:Generator_UserColumnName="ScreenFieldID" type="xs:int" minOccurs="0" />
+              <xs:element name="Field" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Field" msprop:Generator_ColumnVarNameInTable="columnField" msprop:Generator_ColumnPropNameInTable="FieldColumn" msprop:Generator_UserColumnName="Field" type="xs:string" minOccurs="0" />
+              <xs:element name="Enabled" msprop:Generator_ColumnVarNameInTable="columnEnabled" msprop:Generator_ColumnPropNameInRow="Enabled" msprop:Generator_ColumnPropNameInTable="EnabledColumn" msprop:Generator_UserColumnName="Enabled" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Required" msprop:Generator_ColumnVarNameInTable="columnRequired" msprop:Generator_ColumnPropNameInRow="Required" msprop:Generator_ColumnPropNameInTable="RequiredColumn" msprop:Generator_UserColumnName="Required" type="xs:boolean" minOccurs="0" />
+              <xs:element name="EnableIfRO" msdata:Caption="Enable If RO" msprop:Generator_ColumnVarNameInTable="columnEnableIfRO" msprop:Generator_ColumnPropNameInRow="EnableIfRO" msprop:Generator_ColumnPropNameInTable="EnableIfROColumn" msprop:Generator_UserColumnName="EnableIfRO" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DuplicateReferral" msdata:Caption="Duplicate Referral" msprop:Generator_ColumnVarNameInTable="columnDuplicateReferral" msprop:Generator_ColumnPropNameInRow="DuplicateReferral" msprop:Generator_ColumnPropNameInTable="DuplicateReferralColumn" msprop:Generator_UserColumnName="DuplicateReferral" type="xs:boolean" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" msprop:Generator_UserColumnName="LastModified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" msprop:Generator_UserColumnName="LastStatEmployeeID" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" msprop:Generator_UserColumnName="AuditLogTypeID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ScreenField" msprop:Generator_UserTableName="ScreenField" msprop:Generator_RowEvArgName="ScreenFieldRowChangeEvent" msprop:Generator_TableVarName="tableScreenField" msprop:Generator_TablePropName="ScreenField" msprop:Generator_RowDeletingName="ScreenFieldRowDeleting" msprop:Generator_RowChangingName="ScreenFieldRowChanging" msprop:Generator_RowDeletedName="ScreenFieldRowDeleted" msprop:Generator_TableClassName="ScreenFieldDataTable" msprop:Generator_RowChangedName="ScreenFieldRowChanged" msprop:Generator_RowEvHandlerName="ScreenFieldRowChangeEventHandler" msprop:Generator_RowClassName="ScreenFieldRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ScreenFieldID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnScreenFieldID" msprop:Generator_ColumnPropNameInRow="ScreenFieldID" msprop:Generator_ColumnPropNameInTable="ScreenFieldIDColumn" msprop:Generator_UserColumnName="ScreenFieldID" type="xs:int" />
+              <xs:element name="ScreenField" msprop:Generator_ColumnVarNameInTable="columnScreenField" msprop:Generator_ColumnPropNameInRow="ScreenField" msprop:Generator_ColumnPropNameInTable="ScreenFieldColumn" msprop:Generator_UserColumnName="ScreenField" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FieldID" msprop:Generator_ColumnVarNameInTable="columnFieldID" msprop:Generator_ColumnPropNameInRow="FieldID" msprop:Generator_ColumnPropNameInTable="FieldIDColumn" msprop:Generator_UserColumnName="FieldID" type="xs:int" minOccurs="0" />
+              <xs:element name="ScreenID" msprop:Generator_ColumnVarNameInTable="columnScreenID" msprop:Generator_ColumnPropNameInRow="ScreenID" msprop:Generator_ColumnPropNameInTable="ScreenIDColumn" msprop:Generator_UserColumnName="ScreenID" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" msprop:Generator_UserColumnName="LastModified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" msprop:Generator_UserColumnName="LastStatEmployeeID" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" msprop:Generator_UserColumnName="AuditLogTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="Screen" msdata:Caption=" " msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Screen" msprop:Generator_ColumnVarNameInTable="columnScreen" msprop:Generator_ColumnPropNameInTable="ScreenColumn" msprop:Generator_UserColumnName="Screen" type="xs:string" minOccurs="0" />
+              <xs:element name="Hidden" msprop:Generator_ColumnVarNameInTable="columnHidden" msprop:Generator_ColumnPropNameInRow="Hidden" msprop:Generator_ColumnPropNameInTable="HiddenColumn" msprop:Generator_UserColumnName="Hidden" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ScreenConfigID" msprop:Generator_ColumnVarNameInTable="columnScreenConfigID" msprop:Generator_ColumnPropNameInRow="ScreenConfigID" msprop:Generator_ColumnPropNameInTable="ScreenConfigIDColumn" msprop:Generator_UserColumnName="ScreenConfigID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Field" msprop:Generator_UserTableName="Field" msprop:Generator_RowEvArgName="FieldRowChangeEvent" msprop:Generator_TableVarName="tableField" msprop:Generator_TablePropName="Field" msprop:Generator_RowDeletingName="FieldRowDeleting" msprop:Generator_RowChangingName="FieldRowChanging" msprop:Generator_RowDeletedName="FieldRowDeleted" msprop:Generator_TableClassName="FieldDataTable" msprop:Generator_RowChangedName="FieldRowChanged" msprop:Generator_RowEvHandlerName="FieldRowChangeEventHandler" msprop:Generator_RowClassName="FieldRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FieldID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnFieldID" msprop:Generator_ColumnPropNameInRow="FieldID" msprop:Generator_ColumnPropNameInTable="FieldIDColumn" msprop:Generator_UserColumnName="FieldID" type="xs:int" />
+              <xs:element name="FieldName" msprop:Generator_ColumnVarNameInTable="columnFieldName" msprop:Generator_ColumnPropNameInRow="FieldName" msprop:Generator_ColumnPropNameInTable="FieldNameColumn" msprop:Generator_UserColumnName="FieldName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" msprop:Generator_UserColumnName="LastModified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" msprop:Generator_UserColumnName="LastStatEmployeeID" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" msprop:Generator_UserColumnName="AuditLogTypeID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TcssListLab" msprop:Generator_UserTableName="TcssListLab" msprop:Generator_RowEvArgName="TcssListLabRowChangeEvent" msprop:Generator_TableVarName="tableTcssListLab" msprop:Generator_TablePropName="TcssListLab" msprop:Generator_RowDeletingName="TcssListLabRowDeleting" msprop:Generator_RowChangingName="TcssListLabRowChanging" msprop:Generator_RowDeletedName="TcssListLabRowDeleted" msprop:Generator_TableClassName="TcssListLabDataTable" msprop:Generator_RowChangedName="TcssListLabRowChanged" msprop:Generator_RowEvHandlerName="TcssListLabRowChangeEventHandler" msprop:Generator_RowClassName="TcssListLabRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TcssListLabId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnTcssListLabId" msprop:Generator_ColumnPropNameInRow="TcssListLabId" msprop:Generator_ColumnPropNameInTable="TcssListLabIdColumn" msprop:Generator_UserColumnName="TcssListLabId" type="xs:int" />
+              <xs:element name="LastUpdateStatEmployeeId" msprop:Generator_ColumnVarNameInTable="columnLastUpdateStatEmployeeId" msprop:Generator_ColumnPropNameInRow="LastUpdateStatEmployeeId" msprop:Generator_ColumnPropNameInTable="LastUpdateStatEmployeeIdColumn" msprop:Generator_UserColumnName="LastUpdateStatEmployeeId" type="xs:int" />
+              <xs:element name="LastUpdateDate" msprop:Generator_ColumnVarNameInTable="columnLastUpdateDate" msprop:Generator_ColumnPropNameInRow="LastUpdateDate" msprop:Generator_ColumnPropNameInTable="LastUpdateDateColumn" msprop:Generator_UserColumnName="LastUpdateDate" type="xs:dateTime" />
+              <xs:element name="SortOrder" msprop:Generator_ColumnVarNameInTable="columnSortOrder" msprop:Generator_ColumnPropNameInRow="SortOrder" msprop:Generator_ColumnPropNameInTable="SortOrderColumn" msprop:Generator_UserColumnName="SortOrder" type="xs:int" />
+              <xs:element name="FieldValue" msdata:Caption="Lab Value" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="FieldValue" msprop:Generator_ColumnVarNameInTable="columnFieldValue" msprop:Generator_ColumnPropNameInTable="FieldValueColumn" msprop:Generator_UserColumnName="FieldValue" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ConfigVersion" msprop:Generator_ColumnVarNameInTable="columnConfigVersion" msprop:Generator_ColumnPropNameInRow="ConfigVersion" msprop:Generator_ColumnPropNameInTable="ConfigVersionColumn" msprop:Generator_UserColumnName="ConfigVersion" type="xs:long" />
+              <xs:element name="IsLiver" msprop:Generator_ColumnVarNameInTable="columnIsLiver" msprop:Generator_ColumnPropNameInRow="IsLiver" msprop:Generator_ColumnPropNameInTable="IsLiverColumn" msprop:Generator_UserColumnName="IsLiver" type="xs:boolean" />
+              <xs:element name="IsActive" msdata:Caption="Enabled" msprop:Generator_ColumnVarNameInTable="columnIsActive" msprop:Generator_ColumnPropNameInRow="IsActive" msprop:Generator_ColumnPropNameInTable="IsActiveColumn" msprop:Generator_UserColumnName="IsActive" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsKidney" msprop:Generator_ColumnVarNameInTable="columnIsKidney" msprop:Generator_ColumnPropNameInRow="IsKidney" msprop:Generator_ColumnPropNameInTable="IsKidneyColumn" msprop:Generator_UserColumnName="IsKidney" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TcssListVitalSign" msprop:Generator_UserTableName="TcssListVitalSign" msprop:Generator_RowEvArgName="TcssListVitalSignRowChangeEvent" msprop:Generator_TableVarName="tableTcssListVitalSign" msprop:Generator_TablePropName="TcssListVitalSign" msprop:Generator_RowDeletingName="TcssListVitalSignRowDeleting" msprop:Generator_RowChangingName="TcssListVitalSignRowChanging" msprop:Generator_RowDeletedName="TcssListVitalSignRowDeleted" msprop:Generator_TableClassName="TcssListVitalSignDataTable" msprop:Generator_RowChangedName="TcssListVitalSignRowChanged" msprop:Generator_RowEvHandlerName="TcssListVitalSignRowChangeEventHandler" msprop:Generator_RowClassName="TcssListVitalSignRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TcssListVitalSignId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnTcssListVitalSignId" msprop:Generator_ColumnPropNameInRow="TcssListVitalSignId" msprop:Generator_ColumnPropNameInTable="TcssListVitalSignIdColumn" msprop:Generator_UserColumnName="TcssListVitalSignId" type="xs:int" />
+              <xs:element name="LastUpdateStatEmployeeId" msprop:Generator_ColumnVarNameInTable="columnLastUpdateStatEmployeeId" msprop:Generator_ColumnPropNameInRow="LastUpdateStatEmployeeId" msprop:Generator_ColumnPropNameInTable="LastUpdateStatEmployeeIdColumn" msprop:Generator_UserColumnName="LastUpdateStatEmployeeId" type="xs:int" />
+              <xs:element name="LastUpdateDate" msprop:Generator_ColumnVarNameInTable="columnLastUpdateDate" msprop:Generator_ColumnPropNameInRow="LastUpdateDate" msprop:Generator_ColumnPropNameInTable="LastUpdateDateColumn" msprop:Generator_UserColumnName="LastUpdateDate" type="xs:dateTime" />
+              <xs:element name="SortOrder" msprop:Generator_ColumnVarNameInTable="columnSortOrder" msprop:Generator_ColumnPropNameInRow="SortOrder" msprop:Generator_ColumnPropNameInTable="SortOrderColumn" msprop:Generator_UserColumnName="SortOrder" type="xs:int" />
+              <xs:element name="FieldValue" msdata:Caption="Vital Sign" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="FieldValue" msprop:Generator_ColumnVarNameInTable="columnFieldValue" msprop:Generator_ColumnPropNameInTable="FieldValueColumn" msprop:Generator_UserColumnName="FieldValue" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ConfigVersion" msprop:Generator_ColumnVarNameInTable="columnConfigVersion" msprop:Generator_ColumnPropNameInRow="ConfigVersion" msprop:Generator_ColumnPropNameInTable="ConfigVersionColumn" msprop:Generator_UserColumnName="ConfigVersion" type="xs:long" />
+              <xs:element name="IsLiver" msprop:Generator_ColumnVarNameInTable="columnIsLiver" msprop:Generator_ColumnPropNameInRow="IsLiver" msprop:Generator_ColumnPropNameInTable="IsLiverColumn" msprop:Generator_UserColumnName="IsLiver" type="xs:boolean" />
+              <xs:element name="IsActive" msdata:Caption="Enabled" msprop:Generator_ColumnVarNameInTable="columnIsActive" msprop:Generator_ColumnPropNameInRow="IsActive" msprop:Generator_ColumnPropNameInTable="IsActiveColumn" msprop:Generator_UserColumnName="IsActive" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsKidney" msprop:Generator_ColumnVarNameInTable="columnIsKidney" msprop:Generator_ColumnPropNameInRow="IsKidney" msprop:Generator_ColumnPropNameInTable="IsKidneyColumn" msprop:Generator_UserColumnName="IsKidney" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SourceCode" msprop:Generator_UserTableName="SourceCode" msprop:Generator_RowEvArgName="SourceCodeRowChangeEvent" msprop:Generator_TableVarName="tableSourceCode" msprop:Generator_TablePropName="SourceCode" msprop:Generator_RowDeletingName="SourceCodeRowDeleting" msprop:Generator_RowChangingName="SourceCodeRowChanging" msprop:Generator_RowDeletedName="SourceCodeRowDeleted" msprop:Generator_TableClassName="SourceCodeDataTable" msprop:Generator_RowChangedName="SourceCodeRowChanged" msprop:Generator_RowEvHandlerName="SourceCodeRowChangeEventHandler" msprop:Generator_RowClassName="SourceCodeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SourceCodeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnSourceCodeID" msprop:Generator_ColumnPropNameInRow="SourceCodeID" msprop:Generator_ColumnPropNameInTable="SourceCodeIDColumn" msprop:Generator_UserColumnName="SourceCodeID" type="xs:int" />
+              <xs:element name="SourceCodeName" msprop:Generator_ColumnVarNameInTable="columnSourceCodeName" msprop:Generator_ColumnPropNameInRow="SourceCodeName" msprop:Generator_ColumnPropNameInTable="SourceCodeNameColumn" msprop:Generator_UserColumnName="SourceCodeName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourceCodeDescription" msprop:Generator_ColumnVarNameInTable="columnSourceCodeDescription" msprop:Generator_ColumnPropNameInRow="SourceCodeDescription" msprop:Generator_ColumnPropNameInTable="SourceCodeDescriptionColumn" msprop:Generator_UserColumnName="SourceCodeDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" msprop:Generator_UserColumnName="LastModified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SourceCodeType" msprop:Generator_ColumnVarNameInTable="columnSourceCodeType" msprop:Generator_ColumnPropNameInRow="SourceCodeType" msprop:Generator_ColumnPropNameInTable="SourceCodeTypeColumn" msprop:Generator_UserColumnName="SourceCodeType" type="xs:int" minOccurs="0" />
+              <xs:element name="SourceCodeDefaultAlert" msprop:Generator_ColumnVarNameInTable="columnSourceCodeDefaultAlert" msprop:Generator_ColumnPropNameInRow="SourceCodeDefaultAlert" msprop:Generator_ColumnPropNameInTable="SourceCodeDefaultAlertColumn" msprop:Generator_UserColumnName="SourceCodeDefaultAlert" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourceCodeLineCheckInstruc" msprop:Generator_ColumnVarNameInTable="columnSourceCodeLineCheckInstruc" msprop:Generator_ColumnPropNameInRow="SourceCodeLineCheckInstruc" msprop:Generator_ColumnPropNameInTable="SourceCodeLineCheckInstrucColumn" msprop:Generator_UserColumnName="SourceCodeLineCheckInstruc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourceCodeLineCheckInterval" msprop:Generator_ColumnVarNameInTable="columnSourceCodeLineCheckInterval" msprop:Generator_ColumnPropNameInRow="SourceCodeLineCheckInterval" msprop:Generator_ColumnPropNameInTable="SourceCodeLineCheckIntervalColumn" msprop:Generator_UserColumnName="SourceCodeLineCheckInterval" type="xs:int" minOccurs="0" />
+              <xs:element name="SourceCode1Start" msprop:Generator_ColumnVarNameInTable="columnSourceCode1Start" msprop:Generator_ColumnPropNameInRow="SourceCode1Start" msprop:Generator_ColumnPropNameInTable="SourceCode1StartColumn" msprop:Generator_UserColumnName="SourceCode1Start" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourceCode1End" msprop:Generator_ColumnVarNameInTable="columnSourceCode1End" msprop:Generator_ColumnPropNameInRow="SourceCode1End" msprop:Generator_ColumnPropNameInTable="SourceCode1EndColumn" msprop:Generator_UserColumnName="SourceCode1End" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourceCode2Start" msprop:Generator_ColumnVarNameInTable="columnSourceCode2Start" msprop:Generator_ColumnPropNameInRow="SourceCode2Start" msprop:Generator_ColumnPropNameInTable="SourceCode2StartColumn" msprop:Generator_UserColumnName="SourceCode2Start" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourceCode2End" msprop:Generator_ColumnVarNameInTable="columnSourceCode2End" msprop:Generator_ColumnPropNameInRow="SourceCode2End" msprop:Generator_ColumnPropNameInTable="SourceCode2EndColumn" msprop:Generator_UserColumnName="SourceCode2End" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourceCode3Start" msprop:Generator_ColumnVarNameInTable="columnSourceCode3Start" msprop:Generator_ColumnPropNameInRow="SourceCode3Start" msprop:Generator_ColumnPropNameInTable="SourceCode3StartColumn" msprop:Generator_UserColumnName="SourceCode3Start" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourceCode3End" msprop:Generator_ColumnVarNameInTable="columnSourceCode3End" msprop:Generator_ColumnPropNameInRow="SourceCode3End" msprop:Generator_ColumnPropNameInTable="SourceCode3EndColumn" msprop:Generator_UserColumnName="SourceCode3End" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourceCode4Start" msprop:Generator_ColumnVarNameInTable="columnSourceCode4Start" msprop:Generator_ColumnPropNameInRow="SourceCode4Start" msprop:Generator_ColumnPropNameInTable="SourceCode4StartColumn" msprop:Generator_UserColumnName="SourceCode4Start" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourceCode4End" msprop:Generator_ColumnVarNameInTable="columnSourceCode4End" msprop:Generator_ColumnPropNameInRow="SourceCode4End" msprop:Generator_ColumnPropNameInTable="SourceCode4EndColumn" msprop:Generator_UserColumnName="SourceCode4End" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourceCode5Start" msprop:Generator_ColumnVarNameInTable="columnSourceCode5Start" msprop:Generator_ColumnPropNameInRow="SourceCode5Start" msprop:Generator_ColumnPropNameInTable="SourceCode5StartColumn" msprop:Generator_UserColumnName="SourceCode5Start" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourceCode5End" msprop:Generator_ColumnVarNameInTable="columnSourceCode5End" msprop:Generator_ColumnPropNameInRow="SourceCode5End" msprop:Generator_ColumnPropNameInTable="SourceCode5EndColumn" msprop:Generator_UserColumnName="SourceCode5End" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourceCode6Start" msprop:Generator_ColumnVarNameInTable="columnSourceCode6Start" msprop:Generator_ColumnPropNameInRow="SourceCode6Start" msprop:Generator_ColumnPropNameInTable="SourceCode6StartColumn" msprop:Generator_UserColumnName="SourceCode6Start" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourceCode6End" msprop:Generator_ColumnVarNameInTable="columnSourceCode6End" msprop:Generator_ColumnPropNameInRow="SourceCode6End" msprop:Generator_ColumnPropNameInTable="SourceCode6EndColumn" msprop:Generator_UserColumnName="SourceCode6End" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourceCode7Start" msprop:Generator_ColumnVarNameInTable="columnSourceCode7Start" msprop:Generator_ColumnPropNameInRow="SourceCode7Start" msprop:Generator_ColumnPropNameInTable="SourceCode7StartColumn" msprop:Generator_UserColumnName="SourceCode7Start" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourceCode7End" msprop:Generator_ColumnVarNameInTable="columnSourceCode7End" msprop:Generator_ColumnPropNameInRow="SourceCode7End" msprop:Generator_ColumnPropNameInTable="SourceCode7EndColumn" msprop:Generator_UserColumnName="SourceCode7End" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourceCodeDisabledInterval" msprop:Generator_ColumnVarNameInTable="columnSourceCodeDisabledInterval" msprop:Generator_ColumnPropNameInRow="SourceCodeDisabledInterval" msprop:Generator_ColumnPropNameInTable="SourceCodeDisabledIntervalColumn" msprop:Generator_UserColumnName="SourceCodeDisabledInterval" type="xs:short" />
+              <xs:element name="SourceCodeNameUnAbbrev" msprop:Generator_ColumnVarNameInTable="columnSourceCodeNameUnAbbrev" msprop:Generator_ColumnPropNameInRow="SourceCodeNameUnAbbrev" msprop:Generator_ColumnPropNameInTable="SourceCodeNameUnAbbrevColumn" msprop:Generator_UserColumnName="SourceCodeNameUnAbbrev" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourceCodeRotationActive" msprop:Generator_ColumnVarNameInTable="columnSourceCodeRotationActive" msprop:Generator_ColumnPropNameInRow="SourceCodeRotationActive" msprop:Generator_ColumnPropNameInTable="SourceCodeRotationActiveColumn" msprop:Generator_UserColumnName="SourceCodeRotationActive" type="xs:short" minOccurs="0" />
+              <xs:element name="SourcecodeRotationAlias" msprop:Generator_ColumnVarNameInTable="columnSourcecodeRotationAlias" msprop:Generator_ColumnPropNameInRow="SourcecodeRotationAlias" msprop:Generator_ColumnPropNameInTable="SourcecodeRotationAliasColumn" msprop:Generator_UserColumnName="SourcecodeRotationAlias" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourcecodeRotationTrue" msprop:Generator_ColumnVarNameInTable="columnSourcecodeRotationTrue" msprop:Generator_ColumnPropNameInRow="SourcecodeRotationTrue" msprop:Generator_ColumnPropNameInTable="SourcecodeRotationTrueColumn" msprop:Generator_UserColumnName="SourcecodeRotationTrue" type="xs:short" minOccurs="0" />
+              <xs:element name="SourcecodeDonorTracClient" msprop:Generator_ColumnVarNameInTable="columnSourcecodeDonorTracClient" msprop:Generator_ColumnPropNameInRow="SourcecodeDonorTracClient" msprop:Generator_ColumnPropNameInTable="SourcecodeDonorTracClientColumn" msprop:Generator_UserColumnName="SourcecodeDonorTracClient" type="xs:short" minOccurs="0" />
+              <xs:element name="SourceCodeDefault" msprop:Generator_ColumnVarNameInTable="columnSourceCodeDefault" msprop:Generator_ColumnPropNameInRow="SourceCodeDefault" msprop:Generator_ColumnPropNameInTable="SourceCodeDefaultColumn" msprop:Generator_UserColumnName="SourceCodeDefault" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Inactive" msprop:Generator_ColumnVarNameInTable="columnInactive" msprop:Generator_ColumnPropNameInRow="Inactive" msprop:Generator_ColumnPropNameInTable="InactiveColumn" msprop:Generator_UserColumnName="Inactive" type="xs:boolean" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" msprop:Generator_UserColumnName="LastStatEmployeeID" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" msprop:Generator_UserColumnName="AuditLogTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="SourceCodeOrgID" msprop:Generator_ColumnVarNameInTable="columnSourceCodeOrgID" msprop:Generator_ColumnPropNameInRow="SourceCodeOrgID" msprop:Generator_ColumnPropNameInTable="SourceCodeOrgIDColumn" msprop:Generator_UserColumnName="SourceCodeOrgID" type="xs:int" minOccurs="0" />
+              <xs:element name="SourceCodeCallTypeID" msprop:Generator_ColumnVarNameInTable="columnSourceCodeCallTypeID" msprop:Generator_ColumnPropNameInRow="SourceCodeCallTypeID" msprop:Generator_ColumnPropNameInTable="SourceCodeCallTypeIDColumn" msprop:Generator_UserColumnName="SourceCodeCallTypeID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ServiceLevelCustomList" msprop:Generator_UserTableName="ServiceLevelCustomList" msprop:Generator_RowEvArgName="ServiceLevelCustomListRowChangeEvent" msprop:Generator_TableVarName="tableServiceLevelCustomList" msprop:Generator_TablePropName="ServiceLevelCustomList" msprop:Generator_RowDeletingName="ServiceLevelCustomListRowDeleting" msprop:Generator_RowChangingName="ServiceLevelCustomListRowChanging" msprop:Generator_RowDeletedName="ServiceLevelCustomListRowDeleted" msprop:Generator_TableClassName="ServiceLevelCustomListDataTable" msprop:Generator_RowChangedName="ServiceLevelCustomListRowChanged" msprop:Generator_RowEvHandlerName="ServiceLevelCustomListRowChangeEventHandler" msprop:Generator_RowClassName="ServiceLevelCustomListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ServiceLevelID" msprop:Generator_ColumnVarNameInTable="columnServiceLevelID" msprop:Generator_ColumnPropNameInRow="ServiceLevelID" msprop:Generator_ColumnPropNameInTable="ServiceLevelIDColumn" msprop:Generator_UserColumnName="ServiceLevelID" type="xs:int" />
+              <xs:element name="ServiceLevelListField" msprop:Generator_ColumnVarNameInTable="columnServiceLevelListField" msprop:Generator_ColumnPropNameInRow="ServiceLevelListField" msprop:Generator_ColumnPropNameInTable="ServiceLevelListFieldColumn" msprop:Generator_UserColumnName="ServiceLevelListField" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelListItem" msprop:Generator_ColumnVarNameInTable="columnServiceLevelListItem" msprop:Generator_ColumnPropNameInRow="ServiceLevelListItem" msprop:Generator_ColumnPropNameInTable="ServiceLevelListItemColumn" msprop:Generator_UserColumnName="ServiceLevelListItem" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceLevelCustomListID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnServiceLevelCustomListID" msprop:Generator_ColumnPropNameInRow="ServiceLevelCustomListID" msprop:Generator_ColumnPropNameInTable="ServiceLevelCustomListIDColumn" msprop:Generator_UserColumnName="ServiceLevelCustomListID" type="xs:int" />
+              <xs:element name="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" msprop:Generator_UserColumnName="LastModified" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ServiceLevelCustomField" msprop:Generator_UserTableName="ServiceLevelCustomField" msprop:Generator_RowEvArgName="ServiceLevelCustomFieldRowChangeEvent" msprop:Generator_TableVarName="tableServiceLevelCustomField" msprop:Generator_TablePropName="ServiceLevelCustomField" msprop:Generator_RowDeletingName="ServiceLevelCustomFieldRowDeleting" msprop:Generator_RowChangingName="ServiceLevelCustomFieldRowChanging" msprop:Generator_RowDeletedName="ServiceLevelCustomFieldRowDeleted" msprop:Generator_TableClassName="ServiceLevelCustomFieldDataTable" msprop:Generator_RowChangedName="ServiceLevelCustomFieldRowChanged" msprop:Generator_RowEvHandlerName="ServiceLevelCustomFieldRowChangeEventHandler" msprop:Generator_RowClassName="ServiceLevelCustomFieldRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ServiceLevelID" msprop:Generator_ColumnVarNameInTable="columnServiceLevelID" msprop:Generator_ColumnPropNameInRow="ServiceLevelID" msprop:Generator_ColumnPropNameInTable="ServiceLevelIDColumn" msprop:Generator_UserColumnName="ServiceLevelID" type="xs:int" />
+              <xs:element name="ServiceLevelCustomOn" msprop:Generator_ColumnVarNameInTable="columnServiceLevelCustomOn" msprop:Generator_ColumnPropNameInRow="ServiceLevelCustomOn" msprop:Generator_ColumnPropNameInTable="ServiceLevelCustomOnColumn" msprop:Generator_UserColumnName="ServiceLevelCustomOn" type="xs:short" minOccurs="0" />
+              <xs:element name="ServiceLevelCustomTextAlert" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="ServiceLevelCustomTextAlert" msprop:Generator_ColumnVarNameInTable="columnServiceLevelCustomTextAlert" msprop:Generator_ColumnPropNameInTable="ServiceLevelCustomTextAlertColumn" msprop:Generator_UserColumnName="ServiceLevelCustomTextAlert" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceLevelCustomListAlert" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="ServiceLevelCustomListAlert" msprop:Generator_ColumnVarNameInTable="columnServiceLevelCustomListAlert" msprop:Generator_ColumnPropNameInTable="ServiceLevelCustomListAlertColumn" msprop:Generator_UserColumnName="ServiceLevelCustomListAlert" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceLevelCustomFieldLabel1" msprop:Generator_ColumnVarNameInTable="columnServiceLevelCustomFieldLabel1" msprop:Generator_ColumnPropNameInRow="ServiceLevelCustomFieldLabel1" msprop:Generator_ColumnPropNameInTable="ServiceLevelCustomFieldLabel1Column" msprop:Generator_UserColumnName="ServiceLevelCustomFieldLabel1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceLevelCustomFieldLabel2" msprop:Generator_ColumnVarNameInTable="columnServiceLevelCustomFieldLabel2" msprop:Generator_ColumnPropNameInRow="ServiceLevelCustomFieldLabel2" msprop:Generator_ColumnPropNameInTable="ServiceLevelCustomFieldLabel2Column" msprop:Generator_UserColumnName="ServiceLevelCustomFieldLabel2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceLevelCustomFieldLabel3" msprop:Generator_ColumnVarNameInTable="columnServiceLevelCustomFieldLabel3" msprop:Generator_ColumnPropNameInRow="ServiceLevelCustomFieldLabel3" msprop:Generator_ColumnPropNameInTable="ServiceLevelCustomFieldLabel3Column" msprop:Generator_UserColumnName="ServiceLevelCustomFieldLabel3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceLevelCustomFieldLabel4" msprop:Generator_ColumnVarNameInTable="columnServiceLevelCustomFieldLabel4" msprop:Generator_ColumnPropNameInRow="ServiceLevelCustomFieldLabel4" msprop:Generator_ColumnPropNameInTable="ServiceLevelCustomFieldLabel4Column" msprop:Generator_UserColumnName="ServiceLevelCustomFieldLabel4" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceLevelCustomFieldLabel5" msprop:Generator_ColumnVarNameInTable="columnServiceLevelCustomFieldLabel5" msprop:Generator_ColumnPropNameInRow="ServiceLevelCustomFieldLabel5" msprop:Generator_ColumnPropNameInTable="ServiceLevelCustomFieldLabel5Column" msprop:Generator_UserColumnName="ServiceLevelCustomFieldLabel5" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceLevelCustomFieldLabel6" msprop:Generator_ColumnVarNameInTable="columnServiceLevelCustomFieldLabel6" msprop:Generator_ColumnPropNameInRow="ServiceLevelCustomFieldLabel6" msprop:Generator_ColumnPropNameInTable="ServiceLevelCustomFieldLabel6Column" msprop:Generator_UserColumnName="ServiceLevelCustomFieldLabel6" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceLevelCustomFieldLabel7" msprop:Generator_ColumnVarNameInTable="columnServiceLevelCustomFieldLabel7" msprop:Generator_ColumnPropNameInRow="ServiceLevelCustomFieldLabel7" msprop:Generator_ColumnPropNameInTable="ServiceLevelCustomFieldLabel7Column" msprop:Generator_UserColumnName="ServiceLevelCustomFieldLabel7" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceLevelCustomFieldLabel8" msprop:Generator_ColumnVarNameInTable="columnServiceLevelCustomFieldLabel8" msprop:Generator_ColumnPropNameInRow="ServiceLevelCustomFieldLabel8" msprop:Generator_ColumnPropNameInTable="ServiceLevelCustomFieldLabel8Column" msprop:Generator_UserColumnName="ServiceLevelCustomFieldLabel8" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceLevelCustomFieldLabel9" msprop:Generator_ColumnVarNameInTable="columnServiceLevelCustomFieldLabel9" msprop:Generator_ColumnPropNameInRow="ServiceLevelCustomFieldLabel9" msprop:Generator_ColumnPropNameInTable="ServiceLevelCustomFieldLabel9Column" msprop:Generator_UserColumnName="ServiceLevelCustomFieldLabel9" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceLevelCustomFieldLabel10" msprop:Generator_ColumnVarNameInTable="columnServiceLevelCustomFieldLabel10" msprop:Generator_ColumnPropNameInRow="ServiceLevelCustomFieldLabel10" msprop:Generator_ColumnPropNameInTable="ServiceLevelCustomFieldLabel10Column" msprop:Generator_UserColumnName="ServiceLevelCustomFieldLabel10" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceLevelCustomFieldLabel11" msprop:Generator_ColumnVarNameInTable="columnServiceLevelCustomFieldLabel11" msprop:Generator_ColumnPropNameInRow="ServiceLevelCustomFieldLabel11" msprop:Generator_ColumnPropNameInTable="ServiceLevelCustomFieldLabel11Column" msprop:Generator_UserColumnName="ServiceLevelCustomFieldLabel11" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceLevelCustomFieldLabel12" msprop:Generator_ColumnVarNameInTable="columnServiceLevelCustomFieldLabel12" msprop:Generator_ColumnPropNameInRow="ServiceLevelCustomFieldLabel12" msprop:Generator_ColumnPropNameInTable="ServiceLevelCustomFieldLabel12Column" msprop:Generator_UserColumnName="ServiceLevelCustomFieldLabel12" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceLevelCustomFieldLabel13" msprop:Generator_ColumnVarNameInTable="columnServiceLevelCustomFieldLabel13" msprop:Generator_ColumnPropNameInRow="ServiceLevelCustomFieldLabel13" msprop:Generator_ColumnPropNameInTable="ServiceLevelCustomFieldLabel13Column" msprop:Generator_UserColumnName="ServiceLevelCustomFieldLabel13" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceLevelCustomFieldLabel14" msprop:Generator_ColumnVarNameInTable="columnServiceLevelCustomFieldLabel14" msprop:Generator_ColumnPropNameInRow="ServiceLevelCustomFieldLabel14" msprop:Generator_ColumnPropNameInTable="ServiceLevelCustomFieldLabel14Column" msprop:Generator_UserColumnName="ServiceLevelCustomFieldLabel14" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceLevelCustomFieldLabel15" msprop:Generator_ColumnVarNameInTable="columnServiceLevelCustomFieldLabel15" msprop:Generator_ColumnPropNameInRow="ServiceLevelCustomFieldLabel15" msprop:Generator_ColumnPropNameInTable="ServiceLevelCustomFieldLabel15Column" msprop:Generator_UserColumnName="ServiceLevelCustomFieldLabel15" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceLevelCustomFieldLabel16" msprop:Generator_ColumnVarNameInTable="columnServiceLevelCustomFieldLabel16" msprop:Generator_ColumnPropNameInRow="ServiceLevelCustomFieldLabel16" msprop:Generator_ColumnPropNameInTable="ServiceLevelCustomFieldLabel16Column" msprop:Generator_UserColumnName="ServiceLevelCustomFieldLabel16" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" msprop:Generator_UserColumnName="LastModified" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DRDSN" msprop:Generator_UserTableName="DRDSN" msprop:Generator_RowEvArgName="DRDSNRowChangeEvent" msprop:Generator_TableVarName="tableDRDSN" msprop:Generator_TablePropName="DRDSN" msprop:Generator_RowDeletingName="DRDSNRowDeleting" msprop:Generator_RowChangingName="DRDSNRowChanging" msprop:Generator_RowDeletedName="DRDSNRowDeleted" msprop:Generator_TableClassName="DRDSNDataTable" msprop:Generator_RowChangedName="DRDSNRowChanged" msprop:Generator_RowEvHandlerName="DRDSNRowChangeEventHandler" msprop:Generator_RowClassName="DRDSNRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DRDSNID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnDRDSNID" msprop:Generator_ColumnPropNameInRow="DRDSNID" msprop:Generator_ColumnPropNameInTable="DRDSNIDColumn" msprop:Generator_UserColumnName="DRDSNID" type="xs:short" />
+              <xs:element name="DRDSNName" msdata:Caption=" " msprop:Generator_ColumnVarNameInTable="columnDRDSNName" msprop:Generator_ColumnPropNameInRow="DRDSNName" msprop:Generator_ColumnPropNameInTable="DRDSNNameColumn" msprop:Generator_UserColumnName="DRDSNName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DRDSNODBC" msprop:Generator_ColumnVarNameInTable="columnDRDSNODBC" msprop:Generator_ColumnPropNameInRow="DRDSNODBC" msprop:Generator_ColumnPropNameInTable="DRDSNODBCColumn" msprop:Generator_UserColumnName="DRDSNODBC">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DRDSNStateID" msprop:Generator_ColumnVarNameInTable="columnDRDSNStateID" msprop:Generator_ColumnPropNameInRow="DRDSNStateID" msprop:Generator_ColumnPropNameInTable="DRDSNStateIDColumn" msprop:Generator_UserColumnName="DRDSNStateID" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" msprop:Generator_UserColumnName="LastModified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CreateDate" msprop:Generator_ColumnVarNameInTable="columnCreateDate" msprop:Generator_ColumnPropNameInRow="CreateDate" msprop:Generator_ColumnPropNameInTable="CreateDateColumn" msprop:Generator_UserColumnName="CreateDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DRDSNServerName" msprop:Generator_ColumnVarNameInTable="columnDRDSNServerName" msprop:Generator_ColumnPropNameInRow="DRDSNServerName" msprop:Generator_ColumnPropNameInTable="DRDSNServerNameColumn" msprop:Generator_UserColumnName="DRDSNServerName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DRDSNDBName" msprop:Generator_ColumnVarNameInTable="columnDRDSNDBName" msprop:Generator_ColumnPropNameInRow="DRDSNDBName" msprop:Generator_ColumnPropNameInTable="DRDSNDBNameColumn" msprop:Generator_UserColumnName="DRDSNDBName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WebServiceEnable" msprop:Generator_ColumnVarNameInTable="columnWebServiceEnable" msprop:Generator_ColumnPropNameInRow="WebServiceEnable" msprop:Generator_ColumnPropNameInTable="WebServiceEnableColumn" msprop:Generator_UserColumnName="WebServiceEnable" type="xs:int" minOccurs="0" />
+              <xs:element name="Hidden" msprop:Generator_ColumnVarNameInTable="columnHidden" msprop:Generator_ColumnPropNameInRow="Hidden" msprop:Generator_ColumnPropNameInTable="HiddenColumn" msprop:Generator_UserColumnName="Hidden" type="xs:boolean" minOccurs="0" />
+              <xs:element name="WebServiceOrder" msprop:Generator_ColumnVarNameInTable="columnWebServiceOrder" msprop:Generator_ColumnPropNameInRow="WebServiceOrder" msprop:Generator_ColumnPropNameInTable="WebServiceOrderColumn" msprop:Generator_UserColumnName="WebServiceOrder" type="xs:int" minOccurs="0" />
+              <xs:element name="ServiceLevelID" msprop:Generator_ColumnVarNameInTable="columnServiceLevelID" msprop:Generator_ColumnPropNameInRow="ServiceLevelID" msprop:Generator_ColumnPropNameInTable="ServiceLevelIDColumn" msprop:Generator_UserColumnName="ServiceLevelID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SourceCodeOrganization" msprop:Generator_UserTableName="SourceCodeOrganization" msprop:Generator_RowEvArgName="SourceCodeOrganizationRowChangeEvent" msprop:Generator_TableVarName="tableSourceCodeOrganization" msprop:Generator_TablePropName="SourceCodeOrganization" msprop:Generator_RowDeletingName="SourceCodeOrganizationRowDeleting" msprop:Generator_RowChangingName="SourceCodeOrganizationRowChanging" msprop:Generator_RowDeletedName="SourceCodeOrganizationRowDeleted" msprop:Generator_TableClassName="SourceCodeOrganizationDataTable" msprop:Generator_RowChangedName="SourceCodeOrganizationRowChanged" msprop:Generator_RowEvHandlerName="SourceCodeOrganizationRowChangeEventHandler" msprop:Generator_RowClassName="SourceCodeOrganizationRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SourceCodeOrganizationID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnSourceCodeOrganizationID" msprop:Generator_ColumnPropNameInRow="SourceCodeOrganizationID" msprop:Generator_ColumnPropNameInTable="SourceCodeOrganizationIDColumn" msprop:Generator_UserColumnName="SourceCodeOrganizationID" type="xs:int" />
+              <xs:element name="SourceCodeID" msprop:Generator_ColumnVarNameInTable="columnSourceCodeID" msprop:Generator_ColumnPropNameInRow="SourceCodeID" msprop:Generator_ColumnPropNameInTable="SourceCodeIDColumn" msprop:Generator_UserColumnName="SourceCodeID" type="xs:int" minOccurs="0" />
+              <xs:element name="OrganizationID" msprop:Generator_ColumnVarNameInTable="columnOrganizationID" msprop:Generator_ColumnPropNameInRow="OrganizationID" msprop:Generator_ColumnPropNameInTable="OrganizationIDColumn" msprop:Generator_UserColumnName="OrganizationID" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" msprop:Generator_UserColumnName="LastModified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" msprop:Generator_UserColumnName="LastStatEmployeeID" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" msprop:Generator_UserColumnName="AuditLogTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="OrganizationName" msdata:Caption="Organization Name" msprop:Generator_ColumnVarNameInTable="columnOrganizationName" msprop:Generator_ColumnPropNameInRow="OrganizationName" msprop:Generator_ColumnPropNameInTable="OrganizationNameColumn" msprop:Generator_UserColumnName="OrganizationName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrganizationCity" msdata:Caption="City" msprop:Generator_ColumnVarNameInTable="columnOrganizationCity" msprop:Generator_ColumnPropNameInRow="OrganizationCity" msprop:Generator_ColumnPropNameInTable="OrganizationCityColumn" msprop:Generator_UserColumnName="OrganizationCity" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StateAbbrv" msdata:Caption="State" msprop:Generator_ColumnVarNameInTable="columnStateAbbrv" msprop:Generator_ColumnPropNameInRow="StateAbbrv" msprop:Generator_ColumnPropNameInTable="StateAbbrvColumn" msprop:Generator_UserColumnName="StateAbbrv" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrganizationType" msdata:Caption="Organization Type" msprop:Generator_ColumnVarNameInTable="columnOrganizationType" msprop:Generator_ColumnPropNameInRow="OrganizationType" msprop:Generator_ColumnPropNameInTable="OrganizationTypeColumn" msprop:Generator_UserColumnName="OrganizationType" type="xs:string" minOccurs="0" />
+              <xs:element name="Hidden" msprop:Generator_ColumnVarNameInTable="columnHidden" msprop:Generator_ColumnPropNameInRow="Hidden" msprop:Generator_ColumnPropNameInTable="HiddenColumn" msprop:Generator_UserColumnName="Hidden" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ServiceLevelDRDSN" msprop:Generator_UserTableName="ServiceLevelDRDSN" msprop:Generator_RowEvArgName="ServiceLevelDRDSNRowChangeEvent" msprop:Generator_TableVarName="tableServiceLevelDRDSN" msprop:Generator_TablePropName="ServiceLevelDRDSN" msprop:Generator_RowDeletingName="ServiceLevelDRDSNRowDeleting" msprop:Generator_RowChangingName="ServiceLevelDRDSNRowChanging" msprop:Generator_RowDeletedName="ServiceLevelDRDSNRowDeleted" msprop:Generator_TableClassName="ServiceLevelDRDSNDataTable" msprop:Generator_RowChangedName="ServiceLevelDRDSNRowChanged" msprop:Generator_RowEvHandlerName="ServiceLevelDRDSNRowChangeEventHandler" msprop:Generator_RowClassName="ServiceLevelDRDSNRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ServiceLevelDRDSNID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnServiceLevelDRDSNID" msprop:Generator_ColumnPropNameInRow="ServiceLevelDRDSNID" msprop:Generator_ColumnPropNameInTable="ServiceLevelDRDSNIDColumn" msprop:Generator_UserColumnName="ServiceLevelDRDSNID" type="xs:int" />
+              <xs:element name="DRDSNID" msprop:Generator_ColumnVarNameInTable="columnDRDSNID" msprop:Generator_ColumnPropNameInRow="DRDSNID" msprop:Generator_ColumnPropNameInTable="DRDSNIDColumn" msprop:Generator_UserColumnName="DRDSNID" type="xs:short" />
+              <xs:element name="ServiceLevelID" msprop:Generator_ColumnVarNameInTable="columnServiceLevelID" msprop:Generator_ColumnPropNameInRow="ServiceLevelID" msprop:Generator_ColumnPropNameInTable="ServiceLevelIDColumn" msprop:Generator_UserColumnName="ServiceLevelID" type="xs:int" />
+              <xs:element name="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" msprop:Generator_UserColumnName="LastModified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Hidden" msprop:Generator_ColumnVarNameInTable="columnHidden" msprop:Generator_ColumnPropNameInRow="Hidden" msprop:Generator_ColumnPropNameInTable="HiddenColumn" msprop:Generator_UserColumnName="Hidden" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CreateDate" msprop:Generator_ColumnVarNameInTable="columnCreateDate" msprop:Generator_ColumnPropNameInRow="CreateDate" msprop:Generator_ColumnPropNameInTable="CreateDateColumn" msprop:Generator_UserColumnName="CreateDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DRDSNName" msdata:Caption=" " msprop:Generator_ColumnVarNameInTable="columnDRDSNName" msprop:Generator_ColumnPropNameInRow="DRDSNName" msprop:Generator_ColumnPropNameInTable="DRDSNNameColumn" msprop:Generator_UserColumnName="DRDSNName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ServiceLevel" />
+      <xs:field xpath="mstns:ServiceLevelID" />
+    </xs:unique>
+    <xs:unique name="ScreenConfig_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ScreenConfig" />
+      <xs:field xpath="mstns:ScreenConfigID" />
+    </xs:unique>
+    <xs:unique name="ScreenFieldAttribute_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ScreenFieldAttribute" />
+      <xs:field xpath="mstns:ScreenFieldAttributeID" />
+    </xs:unique>
+    <xs:unique name="ScreenField_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ScreenField" />
+      <xs:field xpath="mstns:ScreenFieldID" />
+    </xs:unique>
+    <xs:unique name="Field_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Field" />
+      <xs:field xpath="mstns:FieldID" />
+    </xs:unique>
+    <xs:unique name="TcssListLab_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TcssListLab" />
+      <xs:field xpath="mstns:TcssListLabId" />
+    </xs:unique>
+    <xs:unique name="TcssListVitalSign_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TcssListVitalSign" />
+      <xs:field xpath="mstns:TcssListVitalSignId" />
+    </xs:unique>
+    <xs:unique name="SourceCode_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SourceCode" />
+      <xs:field xpath="mstns:SourceCodeID" />
+    </xs:unique>
+    <xs:unique name="ServiceLevelCustomList_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ServiceLevelCustomList" />
+      <xs:field xpath="mstns:ServiceLevelCustomListID" />
+    </xs:unique>
+    <xs:unique name="ServiceLevelCustomField_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ServiceLevelCustomField" />
+      <xs:field xpath="mstns:ServiceLevelID" />
+    </xs:unique>
+    <xs:unique name="DRDSN_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DRDSN" />
+      <xs:field xpath="mstns:DRDSNID" />
+    </xs:unique>
+    <xs:unique name="SourceCodeOrganization_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SourceCodeOrganization" />
+      <xs:field xpath="mstns:SourceCodeOrganizationID" />
+    </xs:unique>
+    <xs:unique name="ServiceLevelDRDSN_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ServiceLevelDRDSN" />
+      <xs:field xpath="mstns:ServiceLevelDRDSNID" />
+      <xs:field xpath="mstns:DRDSNID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="ScreenConfig_ServiceLevel" msdata:parent="ScreenConfig" msdata:child="ServiceLevel" msdata:parentkey="ServiceLevelID" msdata:childkey="ServiceLevelID" msprop:Generator_UserChildTable="ServiceLevel" msprop:Generator_ChildPropName="GetServiceLevelRows" msprop:Generator_UserParentTable="ScreenConfig" msprop:Generator_UserRelationName="ScreenConfig_ServiceLevel" msprop:Generator_RelationVarName="relationScreenConfig_ServiceLevel" msprop:Generator_ParentPropName="ScreenConfigRow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

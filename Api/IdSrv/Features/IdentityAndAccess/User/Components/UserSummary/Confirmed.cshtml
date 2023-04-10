@@ -1,0 +1,29 @@
+﻿@model UserSummaryViewModel
+
+<div class="panel panel-default">
+    <div class="panel-heading">User information</div>
+    <div class="panel-body">
+        <p>
+            @Html.DisplayNameFor(m => m.Id): @Model.Id
+        </p>
+        <p>
+            @Html.DisplayNameFor(m => m.TenantOrganizationName):
+            <a asp-action="Edit"
+               asp-controller="Tenant"
+               asp-route-id="@Model.TenantId">
+                @Model.TenantOrganizationName
+            </a>
+        </p>
+        <div>
+            @Html.DisplayNameFor(m => m.IsActive): @(Model.IsActive ? "Yes" : "No")
+            <form asp-action=@(Model.IsActive ? "Deactivate" : "Activate")
+                  asp-route-id="@Model.Id"
+                  style="display:inline">
+                <input type="hidden" value="@Context.Request.Path" name="returnUrl" />
+                <button type="submit" class="btn btn-info btn-xs">
+                    @(Model.IsActive ? "Deactivate" : "Activate")
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

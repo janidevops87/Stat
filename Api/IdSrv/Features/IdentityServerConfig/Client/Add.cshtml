@@ -1,0 +1,41 @@
+﻿@model NewClientViewModel
+@{
+    ViewData["Title"] = "Create new client";
+    Layout = "_Layout";
+}
+
+<h2>Create new client</h2>
+
+<form asp-action="Add" method="post">
+    <div class="form-group row">
+        <div class="col-xs-4">
+            <label asp-for="ClientId"></label>
+            <input asp-for="ClientId" class="form-control">
+            <span asp-validation-for="ClientId" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-xs-4">
+            <label asp-for="ClientName"></label>
+            <input asp-for="ClientName" class="form-control">
+            <span asp-validation-for="ClientName"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-xs-4">
+            <label asp-for="Tenant.SelectedTenantId"></label>
+            <select asp-for="Tenant.SelectedTenantId"
+                    asp-items="Model.Tenant.AllTenants"
+                    class="form-control"></select>
+            <span asp-validation-for="Tenant.SelectedTenantId"></span>
+            <span class="help-block">
+                Choose a tenant to which the client should be bound.
+            </span>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-default">Add</button>
+</form>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

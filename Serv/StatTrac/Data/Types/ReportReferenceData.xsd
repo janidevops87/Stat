@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportReferenceData" targetNamespace="http://statline.com/StatTrac/ReportReferenceData.xsd" xmlns:mstns="http://statline.com/StatTrac/ReportReferenceData.xsd" xmlns="http://statline.com/StatTrac/ReportReferenceData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="_ReferralDev2ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="_ReferralDev2ConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.StatTrac.Data.Types.Properties.Settings.GlobalReference.Default._ReferralDev2ConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReportReferenceData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="ReportReferenceData" msprop:Generator_UserDSName="ReportReferenceData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="WebPerson" msprop:Generator_UserTableName="WebPerson" msprop:Generator_RowEvArgName="WebPersonRowChangeEvent" msprop:Generator_TableVarName="tableWebPerson" msprop:Generator_TablePropName="WebPerson" msprop:Generator_RowDeletingName="WebPersonRowDeleting" msprop:Generator_RowChangingName="WebPersonRowChanging" msprop:Generator_RowDeletedName="WebPersonRowDeleted" msprop:Generator_TableClassName="WebPersonDataTable" msprop:Generator_RowChangedName="WebPersonRowChanged" msprop:Generator_RowEvHandlerName="WebPersonRowChangeEventHandler" msprop:Generator_RowClassName="WebPersonRow">
+          <xs:complexType>
+            <xs:attribute name="WebPersonID" form="unqualified" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnWebPersonID" msprop:Generator_ColumnPropNameInRow="WebPersonID" msprop:Generator_ColumnPropNameInTable="WebPersonIDColumn" msprop:Generator_UserColumnName="WebPersonID" type="xs:int" />
+            <xs:attribute name="OrganizationID" form="unqualified" msprop:Generator_ColumnVarNameInTable="columnOrganizationID" msprop:Generator_ColumnPropNameInRow="OrganizationID" msprop:Generator_ColumnPropNameInTable="OrganizationIDColumn" msprop:Generator_UserColumnName="OrganizationID" type="xs:int" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="WebReportGroupList" msprop:Generator_UserTableName="WebReportGroupList" msprop:Generator_RowEvArgName="WebReportGroupListRowChangeEvent" msprop:Generator_TableVarName="tableWebReportGroupList" msprop:Generator_TablePropName="WebReportGroupList" msprop:Generator_RowDeletingName="WebReportGroupListRowDeleting" msprop:Generator_RowChangingName="WebReportGroupListRowChanging" msprop:Generator_RowDeletedName="WebReportGroupListRowDeleted" msprop:Generator_TableClassName="WebReportGroupListDataTable" msprop:Generator_RowChangedName="WebReportGroupListRowChanged" msprop:Generator_RowEvHandlerName="WebReportGroupListRowChangeEventHandler" msprop:Generator_RowClassName="WebReportGroupListRow">
+          <xs:complexType>
+            <xs:attribute name="ReportGroupName" form="unqualified" msprop:Generator_ColumnVarNameInTable="columnReportGroupName" msprop:Generator_ColumnPropNameInRow="ReportGroupName" msprop:Generator_ColumnPropNameInTable="ReportGroupNameColumn" msprop:Generator_UserColumnName="ReportGroupName" type="xs:string" />
+            <xs:attribute name="WebReportGroupID" form="unqualified" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnWebReportGroupID" msprop:Generator_ColumnPropNameInRow="WebReportGroupID" msprop:Generator_ColumnPropNameInTable="WebReportGroupIDColumn" msprop:Generator_UserColumnName="WebReportGroupID" type="xs:int" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OrganizationList" msprop:Generator_UserTableName="OrganizationList" msprop:Generator_RowEvArgName="OrganizationListRowChangeEvent" msprop:Generator_TableVarName="tableOrganizationList" msprop:Generator_TablePropName="OrganizationList" msprop:Generator_RowDeletingName="OrganizationListRowDeleting" msprop:Generator_RowChangingName="OrganizationListRowChanging" msprop:Generator_RowDeletedName="OrganizationListRowDeleted" msprop:Generator_TableClassName="OrganizationListDataTable" msprop:Generator_RowChangedName="OrganizationListRowChanged" msprop:Generator_RowEvHandlerName="OrganizationListRowChangeEventHandler" msprop:Generator_RowClassName="OrganizationListRow">
+          <xs:complexType>
+            <xs:attribute name="OrganizationName" form="unqualified" msprop:Generator_ColumnVarNameInTable="columnOrganizationName" msprop:Generator_ColumnPropNameInRow="OrganizationName" msprop:Generator_ColumnPropNameInTable="OrganizationNameColumn" msprop:Generator_UserColumnName="OrganizationName" type="xs:string" />
+            <xs:attribute name="OrganizationID" form="unqualified" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnOrganizationID" msprop:Generator_ColumnPropNameInRow="OrganizationID" msprop:Generator_ColumnPropNameInTable="OrganizationIDColumn" msprop:Generator_UserColumnName="OrganizationID" type="xs:int" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OrganizationCoordinatorList" msprop:Generator_UserTableName="OrganizationCoordinatorList" msprop:Generator_RowEvArgName="OrganizationCoordinatorListRowChangeEvent" msprop:Generator_TableVarName="tableOrganizationCoordinatorList" msprop:Generator_TablePropName="OrganizationCoordinatorList" msprop:Generator_RowDeletingName="OrganizationCoordinatorListRowDeleting" msprop:Generator_RowChangingName="OrganizationCoordinatorListRowChanging" msprop:Generator_RowDeletedName="OrganizationCoordinatorListRowDeleted" msprop:Generator_TableClassName="OrganizationCoordinatorListDataTable" msprop:Generator_RowChangedName="OrganizationCoordinatorListRowChanged" msprop:Generator_RowEvHandlerName="OrganizationCoordinatorListRowChangeEventHandler" msprop:Generator_RowClassName="OrganizationCoordinatorListRow">
+          <xs:complexType>
+            <xs:attribute name="StatEmployeeID" form="unqualified" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnStatEmployeeID" msprop:Generator_ColumnPropNameInRow="StatEmployeeID" msprop:Generator_ColumnPropNameInTable="StatEmployeeIDColumn" msprop:Generator_UserColumnName="StatEmployeeID" type="xs:int" />
+            <xs:attribute name="CoordinatorName" form="unqualified" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCoordinatorName" msprop:Generator_ColumnPropNameInRow="CoordinatorName" msprop:Generator_ColumnPropNameInTable="CoordinatorNameColumn" msprop:Generator_UserColumnName="CoordinatorName" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SourceCodeNameList" msprop:Generator_UserTableName="SourceCodeNameList" msprop:Generator_RowEvArgName="SourceCodeNameListRowChangeEvent" msprop:Generator_TableVarName="tableSourceCodeNameList" msprop:Generator_TablePropName="SourceCodeNameList" msprop:Generator_RowDeletingName="SourceCodeNameListRowDeleting" msprop:Generator_RowChangingName="SourceCodeNameListRowChanging" msprop:Generator_RowDeletedName="SourceCodeNameListRowDeleted" msprop:Generator_TableClassName="SourceCodeNameListDataTable" msprop:Generator_RowChangedName="SourceCodeNameListRowChanged" msprop:Generator_RowEvHandlerName="SourceCodeNameListRowChangeEventHandler" msprop:Generator_RowClassName="SourceCodeNameListRow">
+          <xs:complexType>
+            <xs:attribute name="SourceCodeID" form="unqualified" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnSourceCodeID" msprop:Generator_ColumnPropNameInRow="SourceCodeID" msprop:Generator_ColumnPropNameInTable="SourceCodeIDColumn" msprop:Generator_UserColumnName="SourceCodeID" type="xs:int" />
+            <xs:attribute name="SourceCodeName" form="unqualified" msprop:Generator_ColumnVarNameInTable="columnSourceCodeName" msprop:Generator_ColumnPropNameInRow="SourceCodeName" msprop:Generator_ColumnPropNameInTable="SourceCodeNameColumn" msprop:Generator_UserColumnName="SourceCodeName" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ReportParameterConfiguration" msprop:Generator_UserTableName="ReportParameterConfiguration" msprop:Generator_RowEvArgName="ReportParameterConfigurationRowChangeEvent" msprop:Generator_TableVarName="tableReportParameterConfiguration" msprop:Generator_TablePropName="ReportParameterConfiguration" msprop:Generator_RowDeletingName="ReportParameterConfigurationRowDeleting" msprop:Generator_RowChangingName="ReportParameterConfigurationRowChanging" msprop:Generator_RowDeletedName="ReportParameterConfigurationRowDeleted" msprop:Generator_TableClassName="ReportParameterConfigurationDataTable" msprop:Generator_RowChangedName="ReportParameterConfigurationRowChanged" msprop:Generator_RowEvHandlerName="ReportParameterConfigurationRowChangeEventHandler" msprop:Generator_RowClassName="ReportParameterConfigurationRow">
+          <xs:complexType>
+            <xs:attribute name="ReportID" form="unqualified" msprop:Generator_ColumnVarNameInTable="columnReportID" msprop:Generator_ColumnPropNameInRow="ReportID" msprop:Generator_ColumnPropNameInTable="ReportIDColumn" msprop:Generator_UserColumnName="ReportID" type="xs:int" />
+            <xs:attribute name="ReportParamSectionName" form="unqualified" msprop:Generator_ColumnVarNameInTable="columnReportParamSectionName" msprop:Generator_ColumnPropNameInRow="ReportParamSectionName" msprop:Generator_ColumnPropNameInTable="ReportParamSectionNameColumn" msprop:Generator_UserColumnName="ReportParamSectionName" type="xs:string" />
+            <xs:attribute name="ReportControlName" form="unqualified" msprop:Generator_ColumnVarNameInTable="columnReportControlName" msprop:Generator_ColumnPropNameInRow="ReportControlName" msprop:Generator_ColumnPropNameInTable="ReportControlNameColumn" msprop:Generator_UserColumnName="ReportControlName" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ReportInformation" msprop:Generator_UserTableName="ReportInformation" msprop:Generator_RowEvArgName="ReportInformationRowChangeEvent" msprop:Generator_TableVarName="tableReportInformation" msprop:Generator_TablePropName="ReportInformation" msprop:Generator_RowDeletingName="ReportInformationRowDeleting" msprop:Generator_RowChangingName="ReportInformationRowChanging" msprop:Generator_RowDeletedName="ReportInformationRowDeleted" msprop:Generator_TableClassName="ReportInformationDataTable" msprop:Generator_RowChangedName="ReportInformationRowChanged" msprop:Generator_RowEvHandlerName="ReportInformationRowChangeEventHandler" msprop:Generator_RowClassName="ReportInformationRow">
+          <xs:complexType>
+            <xs:attribute name="ReportID" form="unqualified" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnReportID" msprop:Generator_ColumnPropNameInRow="ReportID" msprop:Generator_ColumnPropNameInTable="ReportIDColumn" msprop:Generator_UserColumnName="ReportID" type="xs:int" />
+            <xs:attribute name="ReportVirtualURL" form="unqualified" msprop:Generator_ColumnVarNameInTable="columnReportVirtualURL" msprop:Generator_ColumnPropNameInRow="ReportVirtualURL" msprop:Generator_ColumnPropNameInTable="ReportVirtualURLColumn" msprop:Generator_UserColumnName="ReportVirtualURL" type="xs:string" />
+            <xs:attribute name="ReportDisplayName" form="unqualified" msprop:Generator_ColumnVarNameInTable="columnReportDisplayName" msprop:Generator_ColumnPropNameInRow="ReportDisplayName" msprop:Generator_ColumnPropNameInTable="ReportDisplayNameColumn" msprop:Generator_UserColumnName="ReportDisplayName" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ReportDateType" msprop:Generator_UserTableName="ReportDateType" msprop:Generator_RowEvArgName="ReportDateTypeRowChangeEvent" msprop:Generator_TableVarName="tableReportDateType" msprop:Generator_TablePropName="ReportDateType" msprop:Generator_RowDeletingName="ReportDateTypeRowDeleting" msprop:Generator_RowChangingName="ReportDateTypeRowChanging" msprop:Generator_RowDeletedName="ReportDateTypeRowDeleted" msprop:Generator_TableClassName="ReportDateTypeDataTable" msprop:Generator_RowChangedName="ReportDateTypeRowChanged" msprop:Generator_RowEvHandlerName="ReportDateTypeRowChangeEventHandler" msprop:Generator_RowClassName="ReportDateTypeRow">
+          <xs:complexType>
+            <xs:attribute name="ReportID" form="unqualified" msprop:Generator_ColumnVarNameInTable="columnReportID" msprop:Generator_ColumnPropNameInRow="ReportID" msprop:Generator_ColumnPropNameInTable="ReportIDColumn" msprop:Generator_UserColumnName="ReportID" type="xs:int" />
+            <xs:attribute name="ReportDateTypeName" form="unqualified" msprop:Generator_ColumnVarNameInTable="columnReportDateTypeName" msprop:Generator_ColumnPropNameInRow="ReportDateTypeName" msprop:Generator_ColumnPropNameInTable="ReportDateTypeNameColumn" msprop:Generator_UserColumnName="ReportDateTypeName" type="xs:string" />
+            <xs:attribute name="ReportDateTypeDisplayname" form="unqualified" msprop:Generator_ColumnVarNameInTable="columnReportDateTypeDisplayname" msprop:Generator_ColumnPropNameInRow="ReportDateTypeDisplayname" msprop:Generator_ColumnPropNameInTable="ReportDateTypeDisplaynameColumn" msprop:Generator_UserColumnName="ReportDateTypeDisplayname" type="xs:string" />
+            <xs:attribute name="ReportDateTypeConfigurationIsDefault" form="unqualified" msprop:Generator_ColumnVarNameInTable="columnReportDateTypeConfigurationIsDefault" msprop:Generator_ColumnPropNameInRow="ReportDateTypeConfigurationIsDefault" msprop:Generator_ColumnPropNameInTable="ReportDateTypeConfigurationIsDefaultColumn" msprop:Generator_UserColumnName="ReportDateTypeConfigurationIsDefault" type="xs:boolean" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="UserName" msprop:Generator_UserTableName="UserName" msprop:Generator_RowEvArgName="UserNameRowChangeEvent" msprop:Generator_TableVarName="tableUserName" msprop:Generator_TablePropName="UserName" msprop:Generator_RowDeletingName="UserNameRowDeleting" msprop:Generator_RowChangingName="UserNameRowChanging" msprop:Generator_RowDeletedName="UserNameRowDeleted" msprop:Generator_TableClassName="UserNameDataTable" msprop:Generator_RowChangedName="UserNameRowChanged" msprop:Generator_RowEvHandlerName="UserNameRowChangeEventHandler" msprop:Generator_RowClassName="UserNameRow">
+          <xs:complexType>
+            <xs:attribute name="WebPersonUserName" form="unqualified" msprop:Generator_ColumnVarNameInTable="columnWebPersonUserName" msprop:Generator_ColumnPropNameInRow="WebPersonUserName" msprop:Generator_ColumnPropNameInTable="WebPersonUserNameColumn" msprop:Generator_UserColumnName="WebPersonUserName" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="UserRoles" msprop:Generator_UserTableName="UserRoles" msprop:Generator_RowEvArgName="UserRolesRowChangeEvent" msprop:Generator_TableVarName="tableUserRoles" msprop:Generator_TablePropName="UserRoles" msprop:Generator_RowDeletingName="UserRolesRowDeleting" msprop:Generator_RowChangingName="UserRolesRowChanging" msprop:Generator_RowDeletedName="UserRolesRowDeleted" msprop:Generator_TableClassName="UserRolesDataTable" msprop:Generator_RowChangedName="UserRolesRowChanged" msprop:Generator_RowEvHandlerName="UserRolesRowChangeEventHandler" msprop:Generator_RowClassName="UserRolesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RoleName" msprop:Generator_ColumnVarNameInTable="columnRoleName" msprop:Generator_ColumnPropNameInRow="RoleName" msprop:Generator_ColumnPropNameInTable="RoleNameColumn" msprop:Generator_UserColumnName="RoleName" type="xs:string" msdata:Ordinal="1" />
+            </xs:sequence>
+            <xs:attribute name="RoleID" form="unqualified" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnRoleID" msprop:Generator_ColumnPropNameInRow="RoleID" msprop:Generator_ColumnPropNameInTable="RoleIDColumn" msprop:Generator_UserColumnName="RoleID" type="xs:int" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="UserReportList" msprop:Generator_UserTableName="UserReportList" msprop:Generator_RowEvArgName="UserReportListRowChangeEvent" msprop:Generator_TableVarName="tableUserReportList" msprop:Generator_TablePropName="UserReportList" msprop:Generator_RowDeletingName="UserReportListRowDeleting" msprop:Generator_RowChangingName="UserReportListRowChanging" msprop:Generator_RowDeletedName="UserReportListRowDeleted" msprop:Generator_TableClassName="UserReportListDataTable" msprop:Generator_RowChangedName="UserReportListRowChanged" msprop:Generator_RowEvHandlerName="UserReportListRowChangeEventHandler" msprop:Generator_RowClassName="UserReportListRow">
+          <xs:complexType>
+            <xs:attribute name="ReportID" form="unqualified" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnReportID" msprop:Generator_ColumnPropNameInRow="ReportID" msprop:Generator_ColumnPropNameInTable="ReportIDColumn" msprop:Generator_UserColumnName="ReportID" type="xs:int" />
+            <xs:attribute name="ReportVirtualURL" form="unqualified" msprop:Generator_ColumnVarNameInTable="columnReportVirtualURL" msprop:Generator_ColumnPropNameInRow="ReportVirtualURL" msprop:Generator_ColumnPropNameInTable="ReportVirtualURLColumn" msprop:Generator_UserColumnName="ReportVirtualURL" type="xs:string" />
+            <xs:attribute name="REPORTTYPENAME" form="unqualified" msprop:Generator_ColumnVarNameInTable="columnREPORTTYPENAME" msprop:Generator_ColumnPropNameInRow="REPORTTYPENAME" msprop:Generator_ColumnPropNameInTable="REPORTTYPENAMEColumn" msprop:Generator_UserColumnName="REPORTTYPENAME" type="xs:string" />
+            <xs:attribute name="ReportDisplayName" form="unqualified" msprop:Generator_ColumnVarNameInTable="columnReportDisplayName" msprop:Generator_ColumnPropNameInRow="ReportDisplayName" msprop:Generator_ColumnPropNameInTable="ReportDisplayNameColumn" msprop:Generator_UserColumnName="ReportDisplayName" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ReportSortType" msprop:Generator_UserTableName="ReportSortType" msprop:Generator_RowEvArgName="ReportSortTypeRowChangeEvent" msprop:Generator_TableVarName="tableReportSortType" msprop:Generator_TablePropName="ReportSortType" msprop:Generator_RowDeletingName="ReportSortTypeRowDeleting" msprop:Generator_RowChangingName="ReportSortTypeRowChanging" msprop:Generator_RowDeletedName="ReportSortTypeRowDeleted" msprop:Generator_TableClassName="ReportSortTypeDataTable" msprop:Generator_RowChangedName="ReportSortTypeRowChanged" msprop:Generator_RowEvHandlerName="ReportSortTypeRowChangeEventHandler" msprop:Generator_RowClassName="ReportSortTypeRow">
+          <xs:complexType>
+            <xs:attribute name="ReportSortTypeName" form="unqualified" msprop:Generator_ColumnVarNameInTable="columnReportSortTypeName" msprop:Generator_ColumnPropNameInRow="ReportSortTypeName" msprop:Generator_ColumnPropNameInTable="ReportSortTypeNameColumn" msprop:Generator_UserColumnName="ReportSortTypeName" type="xs:string" />
+            <xs:attribute name="ReportSortTypeDisplayname" form="unqualified" msprop:Generator_ColumnVarNameInTable="columnReportSortTypeDisplayname" msprop:Generator_ColumnPropNameInRow="ReportSortTypeDisplayname" msprop:Generator_ColumnPropNameInTable="ReportSortTypeDisplaynameColumn" msprop:Generator_UserColumnName="ReportSortTypeDisplayname" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CauseOfDeath" msprop:Generator_UserTableName="CauseOfDeath" msprop:Generator_RowEvArgName="CauseOfDeathRowChangeEvent" msprop:Generator_TableVarName="tableCauseOfDeath" msprop:Generator_TablePropName="CauseOfDeath" msprop:Generator_RowDeletingName="CauseOfDeathRowDeleting" msprop:Generator_RowChangingName="CauseOfDeathRowChanging" msprop:Generator_RowDeletedName="CauseOfDeathRowDeleted" msprop:Generator_TableClassName="CauseOfDeathDataTable" msprop:Generator_RowChangedName="CauseOfDeathRowChanged" msprop:Generator_RowEvHandlerName="CauseOfDeathRowChangeEventHandler" msprop:Generator_RowClassName="CauseOfDeathRow">
+          <xs:complexType>
+            <xs:attribute name="CauseOfDeathID" form="unqualified" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnCauseOfDeathID" msprop:Generator_ColumnPropNameInRow="CauseOfDeathID" msprop:Generator_ColumnPropNameInTable="CauseOfDeathIDColumn" msprop:Generator_UserColumnName="CauseOfDeathID" type="xs:int" />
+            <xs:attribute name="CauseOfDeathName" form="unqualified" msprop:Generator_ColumnVarNameInTable="columnCauseOfDeathName" msprop:Generator_ColumnPropNameInRow="CauseOfDeathName" msprop:Generator_ColumnPropNameInTable="CauseOfDeathNameColumn" msprop:Generator_UserColumnName="CauseOfDeathName" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ReferralType" msprop:Generator_UserTableName="ReferralType" msprop:Generator_RowEvArgName="ReferralTypeRowChangeEvent" msprop:Generator_TableVarName="tableReferralType" msprop:Generator_TablePropName="ReferralType" msprop:Generator_RowDeletingName="ReferralTypeRowDeleting" msprop:Generator_RowChangingName="ReferralTypeRowChanging" msprop:Generator_RowDeletedName="ReferralTypeRowDeleted" msprop:Generator_TableClassName="ReferralTypeDataTable" msprop:Generator_RowChangedName="ReferralTypeRowChanged" msprop:Generator_RowEvHandlerName="ReferralTypeRowChangeEventHandler" msprop:Generator_RowClassName="ReferralTypeRow">
+          <xs:complexType>
+            <xs:attribute name="ReferralTypeID" form="unqualified" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnReferralTypeID" msprop:Generator_ColumnPropNameInRow="ReferralTypeID" msprop:Generator_ColumnPropNameInTable="ReferralTypeIDColumn" msprop:Generator_UserColumnName="ReferralTypeID" type="xs:int" />
+            <xs:attribute name="ReferralTypeName" form="unqualified" msprop:Generator_ColumnVarNameInTable="columnReferralTypeName" msprop:Generator_ColumnPropNameInRow="ReferralTypeName" msprop:Generator_ColumnPropNameInTable="ReferralTypeNameColumn" msprop:Generator_UserColumnName="ReferralTypeName" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PersonList" msprop:Generator_UserTableName="PersonList" msprop:Generator_RowEvArgName="PersonListRowChangeEvent" msprop:Generator_TableVarName="tablePersonList" msprop:Generator_TablePropName="PersonList" msprop:Generator_RowDeletingName="PersonListRowDeleting" msprop:Generator_RowChangingName="PersonListRowChanging" msprop:Generator_RowDeletedName="PersonListRowDeleted" msprop:Generator_TableClassName="PersonListDataTable" msprop:Generator_RowChangedName="PersonListRowChanged" msprop:Generator_RowEvHandlerName="PersonListRowChangeEventHandler" msprop:Generator_RowClassName="PersonListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PersonID" msprop:Generator_ColumnVarNameInTable="columnPersonID" msprop:Generator_ColumnPropNameInRow="PersonID" msprop:Generator_ColumnPropNameInTable="PersonIDColumn" msprop:Generator_UserColumnName="PersonID" type="xs:int" minOccurs="0" />
+              <xs:element name="PersonName" msprop:Generator_ColumnVarNameInTable="columnPersonName" msprop:Generator_ColumnPropNameInRow="PersonName" msprop:Generator_ColumnPropNameInTable="PersonNameColumn" msprop:Generator_UserColumnName="PersonName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AlertList" msprop:Generator_UserTableName="AlertList" msprop:Generator_RowEvArgName="AlertListRowChangeEvent" msprop:Generator_TableVarName="tableAlertList" msprop:Generator_TablePropName="AlertList" msprop:Generator_RowDeletingName="AlertListRowDeleting" msprop:Generator_RowChangingName="AlertListRowChanging" msprop:Generator_RowDeletedName="AlertListRowDeleted" msprop:Generator_TableClassName="AlertListDataTable" msprop:Generator_RowChangedName="AlertListRowChanged" msprop:Generator_RowEvHandlerName="AlertListRowChangeEventHandler" msprop:Generator_RowClassName="AlertListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AlertID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnAlertID" msprop:Generator_ColumnPropNameInRow="AlertID" msprop:Generator_ColumnPropNameInTable="AlertIDColumn" msprop:Generator_UserColumnName="AlertID" type="xs:int" />
+              <xs:element name="AlertGroupName" msprop:Generator_ColumnVarNameInTable="columnAlertGroupName" msprop:Generator_ColumnPropNameInRow="AlertGroupName" msprop:Generator_ColumnPropNameInTable="AlertGroupNameColumn" msprop:Generator_UserColumnName="AlertGroupName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ApproachPersonList" msprop:Generator_UserTableName="ApproachPersonList" msprop:Generator_RowEvArgName="ApproachPersonListRowChangeEvent" msprop:Generator_TableVarName="tableApproachPersonList" msprop:Generator_TablePropName="ApproachPersonList" msprop:Generator_RowDeletingName="ApproachPersonListRowDeleting" msprop:Generator_RowChangingName="ApproachPersonListRowChanging" msprop:Generator_RowDeletedName="ApproachPersonListRowDeleted" msprop:Generator_TableClassName="ApproachPersonListDataTable" msprop:Generator_RowChangedName="ApproachPersonListRowChanged" msprop:Generator_RowEvHandlerName="ApproachPersonListRowChangeEventHandler" msprop:Generator_RowClassName="ApproachPersonListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PersonID" msprop:Generator_ColumnVarNameInTable="columnPersonID" msprop:Generator_ColumnPropNameInRow="PersonID" msprop:Generator_ColumnPropNameInTable="PersonIDColumn" msprop:Generator_UserColumnName="PersonID" type="xs:int" minOccurs="0" />
+              <xs:element name="PersonName" msprop:Generator_ColumnVarNameInTable="columnPersonName" msprop:Generator_ColumnPropNameInRow="PersonName" msprop:Generator_ColumnPropNameInTable="PersonNameColumn" msprop:Generator_UserColumnName="PersonName" type="xs:string" minOccurs="0" />
+              <xs:element name="PersonTitle" msprop:Generator_ColumnVarNameInTable="columnPersonTitle" msprop:Generator_ColumnPropNameInRow="PersonTitle" msprop:Generator_ColumnPropNameInTable="PersonTitleColumn" msprop:Generator_UserColumnName="PersonTitle" type="xs:string" minOccurs="0" />
+              <xs:element name="Checked" msprop:Generator_ColumnVarNameInTable="columnChecked" msprop:Generator_ColumnPropNameInRow="Checked" msprop:Generator_ColumnPropNameInTable="CheckedColumn" msprop:Generator_UserColumnName="Checked" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PersonTitleList" msprop:Generator_UserTableName="PersonTitleList" msprop:Generator_RowEvArgName="PersonTitleListRowChangeEvent" msprop:Generator_TableVarName="tablePersonTitleList" msprop:Generator_TablePropName="PersonTitleList" msprop:Generator_RowDeletingName="PersonTitleListRowDeleting" msprop:Generator_RowChangingName="PersonTitleListRowChanging" msprop:Generator_RowDeletedName="PersonTitleListRowDeleted" msprop:Generator_TableClassName="PersonTitleListDataTable" msprop:Generator_RowChangedName="PersonTitleListRowChanged" msprop:Generator_RowEvHandlerName="PersonTitleListRowChangeEventHandler" msprop:Generator_RowClassName="PersonTitleListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PersonID" msprop:Generator_ColumnVarNameInTable="columnPersonID" msprop:Generator_ColumnPropNameInRow="PersonID" msprop:Generator_ColumnPropNameInTable="PersonIDColumn" msprop:Generator_UserColumnName="PersonID" type="xs:int" minOccurs="0" />
+              <xs:element name="Person_x0020_Name" msprop:Generator_ColumnVarNameInTable="columnPerson_Name" msprop:Generator_ColumnPropNameInRow="Person_Name" msprop:Generator_ColumnPropNameInTable="Person_NameColumn" msprop:Generator_UserColumnName="Person Name" type="xs:string" minOccurs="0" />
+              <xs:element name="PersonTypeID" msprop:Generator_ColumnVarNameInTable="columnPersonTypeID" msprop:Generator_ColumnPropNameInRow="PersonTypeID" msprop:Generator_ColumnPropNameInTable="PersonTypeIDColumn" msprop:Generator_UserColumnName="PersonTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="PersonTitle" msprop:Generator_ColumnVarNameInTable="columnPersonTitle" msprop:Generator_ColumnPropNameInRow="PersonTitle" msprop:Generator_ColumnPropNameInTable="PersonTitleColumn" msprop:Generator_UserColumnName="PersonTitle" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AgeRange" msprop:Generator_TableClassName="AgeRangeDataTable" msprop:Generator_RowEvArgName="AgeRangeRowChangeEvent" msprop:Generator_TableVarName="tableAgeRange" msprop:Generator_TablePropName="AgeRange" msprop:Generator_RowDeletingName="AgeRangeRowDeleting" msprop:Generator_UserTableName="AgeRange" msprop:Generator_RowChangingName="AgeRangeRowChanging" msprop:Generator_RowDeletedName="AgeRangeRowDeleted" msprop:Generator_RowChangedName="AgeRangeRowChanged" msprop:Generator_RowEvHandlerName="AgeRangeRowChangeEventHandler" msprop:Generator_RowClassName="AgeRangeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Grouping" msprop:Generator_ColumnVarNameInTable="columnGrouping" msprop:Generator_ColumnPropNameInRow="Grouping" msprop:Generator_ColumnPropNameInTable="GroupingColumn" msprop:Generator_UserColumnName="Grouping" type="xs:string" msdata:Ordinal="1" />
+            </xs:sequence>
+            <xs:attribute name="Switch" form="unqualified" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnSwitch" msprop:Generator_ColumnPropNameInRow="Switch" msprop:Generator_ColumnPropNameInTable="SwitchColumn" msprop:Generator_UserColumnName="Switch" type="xs:int" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AlertList" />
+      <xs:field xpath="mstns:AlertID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

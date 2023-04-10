@@ -1,0 +1,14 @@
+<%
+Sub CheckError(pvErrorCount, pvLocation)
+	If pvErrorCount > 0 Then
+		Session("ErrorLocation") = pvLocation
+		Session("ErrorNumber") = Err.Number
+		Session("ErrorDescription") = Err.Description
+		script = "<script language=JavaScript> "
+		script = script & "url='http://" & Request.ServerVariables("SERVER_NAME") & "/loginstatline/errors/dbError.asp'; "
+		script = script & "window.open(url,'main'); "
+		script = script & "</script> "
+		Response.Write(script)
+	End If
+End Sub
+%>

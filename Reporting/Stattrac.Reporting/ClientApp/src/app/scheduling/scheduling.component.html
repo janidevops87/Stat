@@ -1,0 +1,628 @@
+<div class="card bg-light" id="buttonSection" style="margin-top:80px;margin-bottom:20px;">
+  <div class="card-body">
+    <h5 class="card-title">Search Schedules</h5>
+    <div class="row">
+      <div class="col-sm">
+        <label>Schedule Organization:</label>
+        <ng-select [(ngModel)]="scheduleOrganizationId" id="ScheduleOrganization" name="ScheduleOrganization"
+                   [ngModelOptions]="{standalone: true}"
+                   [items]="scheduleOrganizationList" bindLabel="label"
+                   bindValue="value" [selectOnTab]="true"
+                   (change)="OrganizationChanged()">
+
+        </ng-select>
+        <img style="position:absolute;top:10px; right:18px;" [hidden]="!ddlOrganizationSpinner"
+             src="../../assets/loading.gif" height="17" width="17" title="Loading Organizations..." />
+      </div>
+      <div class="col-sm">
+        <label>Schedule Group:</label>
+        <ng-select [(ngModel)]="scheduleGroupId" id="ScheduleGroup" name="ScheduleGroup"
+                   [ngModelOptions]="{standalone: true}"
+                   [items]="scheduleGroupList" bindLabel="label"
+                   bindValue="value" [selectOnTab]="true" (change)="scheduleGroupChanged()"></ng-select>
+        <img style="position:absolute;top:10px; right:18px;" [hidden]="!ddlScheduleGroupSpinner"
+             src="../../assets/loading.gif" height="17" width="17" title="Loading Schedule Groups..." />
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-sm" id="webDateTimeEditStart" style="margin-top:15px;">
+        <label for="StartDate">Start Date/Time:</label>
+        <div class="input-group">
+          <input type="text" class="form-control "
+                 id="StartDateTime" name="StartDateTime"
+                 [(ngModel)]="StartDateTime"
+                 [ngModelOptions]="{standalone: true}"
+                 bsDatepicker #dp1="bsDatepicker" [bsConfig]="{ showWeekNumbers:false, returnFocusToInput: true }"
+                 placeholder="mm/dd/yyyy" dropSpecialCharacters="false" maxlength="10">
+          <div class="input-group-btn">
+            <button style="padding:.375rem 0.3rem 0.2rem 0.3rem"
+                    class="btn btn-light" (click)="dp1.show();">
+              <img src="assets/calendar-4x.png" style="height: 25px" />
+            </button>
+          </div>
+          <input type="text" class="form-control" [(ngModel)]="StartTime"
+                 [ngModelOptions]="{standalone: true}"
+                 id="StartTime" name="StartTime" mask='00:00' (keydown)="timeKeyDown($event)"
+                 placeholder="  :  (24H format)"
+                 maxlength="5">
+          <div class="col-auto" style="margin-top: 3px;">
+            <span id="textExample2" class="form-text">{{staticGlobals().timeZone}}</span>
+          </div>
+        </div>
+        <div [hidden]="!dateRangeExceeded" style="color:red;margin-top:5px">Date range cannot be more than 365 days.</div>
+      </div>
+      <div class="col-sm" style="margin-top:15px;">
+        <label for="EndDate">End Date/Time:</label>
+        <div class="input-group">
+          <input type="text" class="form-control "
+                 id="EndDateTime" name="EndDateTime" #endDate="ngModel"
+                 [(ngModel)]="EndDateTime"
+                 [ngModelOptions]="{standalone: true}"
+                 bsDatepicker #dp2="bsDatepicker" [bsConfig]="{ showWeekNumbers:false, returnFocusToInput: true }"
+                 placeholder="mm/dd/yyyy" dropSpecialCharacters="false" maxlength="10">
+          <div class="input-group-btn">
+            <button style="padding:.375rem 0.3rem 0.2rem 0.3rem"
+                    class="btn btn-light" (click)="dp2.show();">
+              <img src="assets/calendar-4x.png" style="height: 25px" />
+            </button>
+          </div>
+          <input type="text" class="form-control"
+                 id="EndTime" name="EndTime" mask='00:00'
+                 [(ngModel)]="EndTime" (keydown)="timeKeyDown($event)"
+                 placeholder="  :  (24H format)"
+                 maxlength="5">
+          <div class="col-auto" style="margin-top:3px;">
+            <span id="textExample2" class="form-text">{{staticGlobals().timeZone}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top:5px;padding:0 0 0 15px">
+      <div class="col-sm" style="text-align:right;padding-left:0">
+        <div style="float:left; left:0;margin-right:20px;" [hidden]="!dataChanged || isScheduleLocked">
+          <button (click)="saveChanges();" style="" class="btn btn-info loginButton" [disabled]="showSpinner">
+            Save Changes
+            <span *ngIf="showSpinnerForSaveAll"><i class="fa fa-spinner fa-spin"></i></span>
+          </button>
+          <a (click)="checkLockAndSearch();" class="text-primary" id="btnCancelChanges"
+             style="cursor:pointer;display: inline-block; margin:0 15px 7px 16px; vertical-align: bottom;">
+            Cancel
+            <span *ngIf="showSpinner"><i class="fa fa-spinner fa-spin"></i></span>
+          </a>
+          <span class="deletedRowcount" title="Number of deleted rows" *ngIf="deletedRowcount>0">{{deletedRowcount}}</span>
+        </div>
+        <div style="float:left;display:inline-block;margin: 20px 10px 0 2px;"
+             [hidden]="gaps==0 && overlaps==0">
+          <div style="display: inline-block;
+                margin: 0 5px 0px 0;
+                background-color: #ffc0b3;
+                border-radius: 3px;
+                padding: 0 3px 1px 3px;
+                font-size: .7rem;
+                border: 1px solid #f5ac9d;"
+               [hidden]="overlaps==0">
+            {{overlaps}} Overlaps
+          </div>
+          <div style="display: inline-block;
+                background-color: #fdf452;
+                border-radius: 3px;
+                padding: 0 3px 1px 3px;
+                font-size: .7rem;
+                border: 1px solid #f3eb5e;"
+               [hidden]="gaps==0">
+            {{gaps}} Gaps
+          </div>
+        </div>
+        <a (click)="openModal();" class="text-primary" id="btnNewShift"
+           [class.disabledLink]="scheduleOrganizationId == undefined || scheduleGroupId == undefined || dataChanged || isScheduleLocked"
+           title="{{newShiftTitle}}"
+           style="cursor:pointer;display: inline-block; margin:0 30px 7px 0; vertical-align: bottom;">
+          New Shift
+        </a>
+        <a (click)="openModal('Split');" class="text-primary" id="btnSplitShift"
+           [class.disabledLink]="selectedRows == '' || isMultipleSelected || dataChanged || isScheduleLocked"
+           title="{{splitShiftTitle}}"
+           style="cursor:pointer;display: inline-block; margin:0 30px 7px 0; vertical-align: bottom;">
+          Split Shift
+        </a>
+        <a (click)="deleteShift();" class="text-primary" id="btnDeleteShift"
+           [class.disabledLink]="selectedRows == '' || isScheduleLocked" title="{{deleteTitle}}"
+           style="cursor:pointer;display: inline-block; margin:0 30px 7px 0; vertical-align: bottom;">
+          Delete Shift
+        </a>
+        <a (click)="clearPeople();" class="text-primary" id="btnClearPeople"
+           [class.disabledLink]="selectedRows == '' || isScheduleLocked" title="{{clearPeopleTitle}}"
+           style="cursor:pointer;display: inline-block; margin:0 30px 7px 0; vertical-align: bottom;">
+          Clear People
+        </a>
+        <button (click)="checkLockAndSearch();" style="width:6.5rem;" class="btn btn-primary loginButton"
+                [disabled]="dataChanged || scheduleOrganizationId == undefined ||
+                  scheduleGroupId == undefined || EndDateTime == undefined ||
+                  EndTime == undefined || EndTime == '' ||StartDateTime == undefined ||
+                  StartTime == undefined || StartTime == '' || peopleListSpinner || showSpinner"
+                title="{{searchTitle}}">
+          Search
+          <span *ngIf="showSpinner"><i class="fa fa-spinner fa-spin"></i></span>
+        </button>
+      </div>
+    </div>
+    <div style="color:red;" [hidden]="!isScheduleLocked">This schedule group is locked by another user for changes. </div>
+  </div>
+</div>
+
+
+<div id="divSchedules">
+  <div style="position: absolute; background-color: azure; opacity: 0.85; width: 100%;
+    text-align:center; height: 100%;padding-top:5px;" [hidden]="!showSpinner">
+    <label style="margin:0">Loading search results....</label><br />
+    <img src="../../assets/loading.gif" width="25">
+  </div>
+
+  <table border="0" id="schedules">
+    <tr>
+      <th style="display:none">
+
+      </th>
+      <th style="border-left:none;">
+        <input type="checkbox" id="cb_All" style="width:15px;height:15px;"
+               (change)="rowToggled($event);" />
+      </th>
+      <th (click)="sort('shift')" style="cursor:pointer;min-width:80px;">
+        Shift <label [hidden]="sortColumn!='shift'" class="sortArrow" [innerHtml]="sortDir_Shift"></label>
+      </th>
+      <th (click)="sort('start')" style="cursor:pointer;">
+        Start D/T <label [hidden]="sortColumn!='start'" class="sortArrow" [innerHtml]="sortDir_Start"></label> 
+      </th>
+      <th (click)="sort('end')" style="cursor:pointer;">
+        End D/T <label [hidden]="sortColumn!='end'" class="sortArrow" [innerHtml]="sortDir_End"></label>
+      </th>
+      <th (click)="sort('p1')" style="cursor:pointer;">
+        On Call 1 <label [hidden]="sortColumn!='p1'" class="sortArrow" [innerHtml]="sortDir_P1"></label>
+      </th>
+      <th (click)="sort('p2')" style="cursor:pointer;">
+        On Call 2 <label [hidden]="sortColumn!='p2'" class="sortArrow" [innerHtml]="sortDir_P2"></label>
+      </th>
+      <th (click)="sort('p3')" style="cursor:pointer;">
+        On Call 3 <label [hidden]="sortColumn!='p3'" class="sortArrow" [innerHtml]="sortDir_P3"></label>
+      </th>
+      <th (click)="sort('p4')" style="cursor:pointer;">
+        On Call 4 <label [hidden]="sortColumn!='p4'" class="sortArrow" [innerHtml]="sortDir_P4"></label>
+      </th>
+      <th (click)="sort('p5')" style="cursor:pointer;">
+        On Call 5 <label [hidden]="sortColumn!='p5'" class="sortArrow" [innerHtml]="sortDir_P5"></label>
+      </th>
+    </tr>
+    <tr class="tblRow" *ngFor="let schedule of schedules" (click)="rowClick($event);"
+        [ngClass]="{'tblRowConflict':schedule.shiftStatus == '1', 'tblRowGap':schedule.shiftStatus == '2','':schedule.shiftStatus == '0' }"
+        (doubleClick)="rowDoubleClick($event)" [attr.title]="setRowTitle(schedule.shiftStatus)"
+        attr.id="row_{{schedule.scheduleItemID}}">
+      <td style="display:none">
+        {{schedule.scheduleItemID}}
+      </td>
+      <td style="padding:5px" attr.id="td_{{schedule.scheduleItemID}}">
+        <input type="checkbox" attr.id="cb_{{schedule.scheduleItemID}}"
+               style="width:15px;height:15px" (change)="rowToggled($event);" />
+      </td>
+      <td>
+        <a attr.id="lnkShiftName_{{schedule.scheduleItemID}}" class="text-primary"
+           style="cursor:pointer;" (click)="openModal(schedule.scheduleItemID);"
+           title="Edit Shift"  [class.disabledLink]="isScheduleLocked">
+          {{schedule.scheduleItemName}}
+        </a>
+      </td>
+      <td attr.id="tdShiftStart_{{schedule.scheduleItemID}}">
+        {{schedule.shiftStart | date: 'MM/dd/yyyy HH:mm'}}
+      </td>
+      <td attr.id="tdShiftEnd_{{schedule.scheduleItemID}}">
+        {{schedule.shiftEnd | date: 'MM/dd/yyyy HH:mm'}}
+      </td>
+      <td>
+        <select (change)="personChange($event)" attr.id="p1_{{schedule.scheduleItemID}}"
+                style="margin:5px 0;width:100%" [disabled]="isScheduleLocked">
+          <option *ngFor="let person of schedulePeopleList"
+                  value={{person.value}} [selected]="schedule.personId1==person.value">
+            {{person.label}}
+          </option>
+        </select>
+      </td>
+      <td>
+        <select (change)="personChange($event)" attr.id="p2_{{schedule.scheduleItemID}}"
+                style="margin:5px 0;width:100%" [disabled]="isScheduleLocked">
+          <option *ngFor="let person of schedulePeopleList"
+                  value={{person.value}} [selected]="schedule.personId2==person.value">
+            {{person.label}}
+          </option>
+        </select>
+      </td>
+      <td>
+        <select (change)="personChange($event)" attr.id="p3_{{schedule.scheduleItemID}}"
+                style="margin:5px 0;width:100%" [disabled]="isScheduleLocked">
+          <option *ngFor="let person of schedulePeopleList"
+                  value={{person.value}} [selected]="schedule.personId3==person.value">
+            {{person.label}}
+          </option>
+        </select>
+      </td>
+      <td>
+        <select (change)="personChange($event)" attr.id="p4_{{schedule.scheduleItemID}}"
+                style="margin:5px 0;width:100%" [disabled]="isScheduleLocked">
+          <option *ngFor="let person of schedulePeopleList"
+                  value={{person.value}} [selected]="schedule.personId4==person.value">
+            {{person.label}}
+          </option>
+        </select>
+      </td>
+      <td>
+        <select (change)="personChange($event)" attr.id="p5_{{schedule.scheduleItemID}}"
+                style="margin:5px 0;width:100%" [disabled]="isScheduleLocked">
+          <option *ngFor="let person of schedulePeopleList"
+                  value={{person.value}} [selected]="schedule.personId5==person.value">
+            {{person.label}}
+          </option>
+        </select>
+      </td>
+    </tr>
+  </table>
+  <div style="width:100%;text-align:center;margin:5px 0;" [hidden]="schedules.length > 0">
+    No data to display.
+  </div>
+</div>
+
+
+<app-logoutmodal></app-logoutmodal>
+
+<ng-template #schedulePopup>
+  <div class="modal-header">
+    <h5 class="modal-title pull-left schedulePopupName">{{schedulePopupHeader}}</h5>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <h4 [hidden]="!isSplitting">Start Split</h4>
+    <div class="card bg-light" style="margin-bottom: 15px;">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm" style="">
+            <label for="StartDate">Shift Name:</label>
+            <div class="input-group">
+              <input type="text" class="form-control" id="shiftName" name="shiftName"
+                     [(ngModel)]="shiftName" [ngModelOptions]="{standalone: true}" maxlength="10" />
+            </div>
+          </div>
+          <div class="col-sm" style="margin-top:28px;">
+            <label style="display: block;font-size: 0.9rem;color: gray; margin-bottom: 0;">Organization: {{selectedOrganization}}</label>
+            <label style="display: block;font-size: 0.9rem;color: gray;">Group: {{scheduleGroup}}</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm" style="margin-top:15px;">
+            <label for="StartDate">Start Date/Time:</label>
+            <div class="input-group">
+              <input type="text" class="form-control" [disabled]="isSplitting"
+                     id="PopupStartDateTime" name="PopupStartDateTime"
+                     [(ngModel)]="popupStartDateTime" (blur) ="popupStartDateChange()"
+                     [ngModelOptions]="{standalone: true}"
+                     bsDatepicker #dp3="bsDatepicker" [bsConfig]="{ showWeekNumbers:false, returnFocusToInput: true }"
+                     placeholder="mm/dd/yyyy" dropSpecialCharacters="false" maxlength="10">
+              <div class="input-group-btn">
+                <button style="padding:.375rem 0.3rem 0.2rem 0.3rem" [disabled]="isSplitting"
+                        class="btn btn-light" (click)="dp3.show();">
+                  <img src="assets/calendar-4x.png" style="height: 25px" />
+                </button>
+              </div>
+              <input type="text" class="form-control" [(ngModel)]="popupStartTime" [disabled]="isSplitting"
+                     [ngModelOptions]="{standalone: true}" (blur) ="popupStartDateChange()"
+                     id="PopupStartTime" name="PopupStartTime" mask='00:00' (keydown)="timeKeyDown($event)"
+                     placeholder="  :  (24H format)" 
+                     maxlength="5">
+              <div class="col-auto" style="margin-top: 3px;">
+                <span class="form-text">{{staticGlobals().timeZone}}</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm" style="margin-top:15px;">
+            <label for="EndDate">End Date/Time:</label>
+            <div class="input-group">
+              <input type="text" class="form-control"
+                     (blur)="popupEndDateChange()"
+                     (dateSelect)="popupEndDateChange()"
+                     id="PopupEndDateTime" name="PopupEndDateTime"
+                     [(ngModel)]="popupEndDateTime" [ngModelOptions]="{standalone: true}"
+                     bsDatepicker #dp4="bsDatepicker" [bsConfig]="{ showWeekNumbers:false, returnFocusToInput: true }"
+                     placeholder="mm/dd/yyyy" dropSpecialCharacters="false" maxlength="10">
+              <div class="input-group-btn">
+                <button style="padding:.375rem 0.3rem 0.2rem 0.3rem"
+                        class="btn btn-light" (click)="dp4.show()">
+                  <img src="assets/calendar-4x.png" style="height: 25px" />
+                </button>
+              </div>
+              <input type="text" class="form-control"
+                     id="PopupEndTime" name="PopupEndTime" mask='00:00'
+                     [ngModelOptions]="{standalone: true}"
+                     [(ngModel)]="popupEndTime" (keydown)="timeKeyDown($event)"
+                     (change)="popupEndTimeChange()"
+                     placeholder="  :  (24H format)" 
+                     maxlength="5">
+              <div class="col-auto" style="margin-top:3px;">
+                <span class="form-text">{{staticGlobals().timeZone}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-light" style="margin-bottom: 15px;">
+      <div class="card-body">
+        <div class="row" style="">
+          <div class="col-sm">
+            <label for="PersonId1">On Call 1</label>
+            <ng-select [(ngModel)]="PersonId1" id="PersonId1" name="PersonId1"
+                       [ngModelOptions]="{standalone: true}"
+                       [items]="schedulePeopleList" bindLabel="label"
+                       bindValue="value" [selectOnTab]="true"></ng-select>
+          </div>
+          <div class="col-sm" style="">
+            <label for="PersonId2">On Call 2</label>
+            <ng-select [(ngModel)]="PersonId2" id="PersonId2" name="PersonId2"
+                       [ngModelOptions]="{standalone: true}"
+                       [items]="schedulePeopleList" bindLabel="label"
+                       bindValue="value" [selectOnTab]="true"></ng-select>
+          </div>
+          <div class="col-sm" style="">
+            <label for="PersonId2">On Call 3</label>
+            <ng-select [(ngModel)]="PersonId3" id="PersonId3" name="PersonId3"
+                       [ngModelOptions]="{standalone: true}"
+                       [items]="schedulePeopleList" bindLabel="label"
+                       bindValue="value" [selectOnTab]="true"></ng-select>
+          </div>
+        </div>
+        <div class="row" style="margin-top:20px;">
+          <div class="col-sm" style="">
+            <label for="PersonId4">On Call 4</label>
+            <ng-select [(ngModel)]="PersonId4" id="PersonId4" name="PersonId4"
+                       [ngModelOptions]="{standalone: true}"
+                       [items]="schedulePeopleList" bindLabel="label"
+                       bindValue="value" [selectOnTab]="true"></ng-select>
+          </div>
+          <div class="col-sm" style="">
+            <label for="PersonId5">On Call 5</label>
+            <ng-select [(ngModel)]="PersonId5" id="PersonId5" name="PersonId5"
+                       [ngModelOptions]="{standalone: true}"
+                       [items]="schedulePeopleList" bindLabel="label"
+                       bindValue="value" [selectOnTab]="true"></ng-select>
+          </div>
+          <div class="col-sm">
+            <a (click)="popUpClearPeople();" style="position: absolute; bottom: 6px;cursor:pointer;"
+               class="text-primary">Clear All</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--split -->
+    <h4 [hidden]="!isSplitting">End Split</h4>
+
+    <div class="card bg-light" style="margin-bottom: 15px;" [hidden]="!isSplitting">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm" style="">
+            <label for="StartDate2">Shift Name:</label>
+            <div class="input-group">
+              <input type="text" class="form-control" id="shiftName2" name="shiftName2"
+                     [(ngModel)]="shiftName2" [ngModelOptions]="{standalone: true}" maxlength="10" />
+            </div>
+          </div>
+          <div class="col-sm" style="margin-top:28px;">
+            <label style="display: block;font-size: 0.9rem;color: gray; margin-bottom: 0;">Organization: {{selectedOrganization}}</label>
+            <label style="display: block;font-size: 0.9rem;color: gray;">Group: {{scheduleGroup}}</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm" style="margin-top:15px;">
+            <label for="StartDate">Start Date/Time:</label>
+            <div class="input-group">
+              <input type="text" class="form-control" [disabled]="isSplitting"
+                     id="PopupStartDateTime2" name="PopupStartDateTime2"
+                     [(ngModel)]="popupStartDateTime2"
+                     [ngModelOptions]="{standalone: true}"
+                     bsDatepicker #dp7="bsDatepicker" [bsConfig]="{ showWeekNumbers:false, returnFocusToInput: true }"
+                     placeholder="mm/dd/yyyy" dropSpecialCharacters="false" maxlength="10">
+              <div class="input-group-btn">
+                <button style="padding:.375rem 0.3rem 0.2rem 0.3rem" [disabled]="isSplitting"
+                        class="btn btn-light" (click)="dp7.show();">
+                  <img src="assets/calendar-4x.png" style="height: 25px" />
+                </button>
+              </div>
+              <input type="text" class="form-control" [(ngModel)]="popupStartTime2"
+                     [ngModelOptions]="{standalone: true}" [disabled]="isSplitting"
+                     id="PopupStartTime2" name="PopupStartTime2" mask='00:00' (keydown)="timeKeyDown($event)"
+                     placeholder="  :  (24H format)"
+                     maxlength="5">
+              <div class="col-auto" style="margin-top: 3px;">
+                <span class="form-text">{{staticGlobals().timeZone}}</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm" style="margin-top:15px;">
+            <label for="EndDate">End Date/Time:</label>
+            <div class="input-group">
+              <input type="text" class="form-control" [disabled]="isSplitting"
+                     id="PopupEndDateTime2" name="PopupEndDateTime2" #endDate2="ngModel"
+                     [(ngModel)]="popupEndDateTime2" [ngModelOptions]="{standalone: true}"
+                     bsDatepicker #dp42="bsDatepicker" [bsConfig]="{ showWeekNumbers:false, returnFocusToInput: true }"
+                     placeholder="mm/dd/yyyy" dropSpecialCharacters="false" maxlength="10">
+              <div class="input-group-btn">
+                <button style="padding:.375rem 0.3rem 0.2rem 0.3rem" [disabled]="isSplitting"
+                        class="btn btn-light" (click)="dp42.show();">
+                  <img src="assets/calendar-4x.png" style="height: 25px" />
+                </button>
+              </div>
+              <input type="text" class="form-control" [disabled]="isSplitting"
+                     id="PopupEndTime2" name="PopupEndTime2" mask='00:00'
+                     [(ngModel)]="popupEndTime2" (keydown)="timeKeyDown($event)"
+                     placeholder="  :  (24H format)"
+                     maxlength="5">
+              <div class="col-auto" style="margin-top:3px;">
+                <span class="form-text">{{staticGlobals().timeZone}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-light" style="margin-bottom: 15px;" [hidden]="!isSplitting">
+      <div class="card-body">
+        <div class="row" style="">
+          <div class="col-sm">
+            <label for="PersonId1">On Call 1</label>
+            <ng-select [(ngModel)]="PersonId12" id="PersonId12" name="PersonId12"
+                       [ngModelOptions]="{standalone: true}"
+                       [items]="schedulePeopleList" bindLabel="label"
+                       bindValue="value" [selectOnTab]="true"></ng-select>
+          </div>
+          <div class="col-sm" style="">
+            <label for="PersonId2">On Call 2</label>
+            <ng-select [(ngModel)]="PersonId22" id="PersonId22" name="PersonId22"
+                       [ngModelOptions]="{standalone: true}"
+                       [items]="schedulePeopleList" bindLabel="label"
+                       bindValue="value" [selectOnTab]="true"></ng-select>
+          </div>
+          <div class="col-sm" style="">
+            <label for="PersonId2">On Call 3</label>
+            <ng-select [(ngModel)]="PersonId32" id="PersonId32" name="PersonId32"
+                       [ngModelOptions]="{standalone: true}"
+                       [items]="schedulePeopleList" bindLabel="label"
+                       bindValue="value" [selectOnTab]="true"></ng-select>
+          </div>
+        </div>
+        <div class="row" style="margin-top:20px;">
+          <div class="col-sm" style="">
+            <label for="PersonId4">On Call 4</label>
+            <ng-select [(ngModel)]="PersonId42" id="PersonId42" name="PersonId42"
+                       [ngModelOptions]="{standalone: true}"
+                       [items]="schedulePeopleList" bindLabel="label"
+                       bindValue="value" [selectOnTab]="true"></ng-select>
+          </div>
+          <div class="col-sm" style="">
+            <label for="PersonId5">On Call 5</label>
+            <ng-select [(ngModel)]="PersonId52" id="PersonId52" name="PersonId52"
+                       [ngModelOptions]="{standalone: true}"
+                       [items]="schedulePeopleList" bindLabel="label"
+                       bindValue="value" [selectOnTab]="true"></ng-select>
+          </div>
+          <div class="col-sm">
+            <a (click)="popUpClearPeople2();" style="position: absolute; bottom: 6px;cursor:pointer;"
+               class="text-primary">Clear All</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-light" style="margin-bottom:15px;" [hidden]="isEditing || isSplitting">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm" style="">
+            <label for="StartDate">Repeat Shift For Each Selected Day Until:</label>
+            <div class="input-group">
+              <input type="text" class="form-control "
+                     id="RepeatShiftDateTime" name="RepeatShiftDateTime"
+                     [(ngModel)]="repeatUntilDateTime"
+                     [ngModelOptions]="{standalone: true}"
+                     bsDatepicker #dp5="bsDatepicker" [bsConfig]="{ showWeekNumbers:false, returnFocusToInput: true }"
+                     placeholder="mm/dd/yyyy" dropSpecialCharacters="false" maxlength="10">
+              <div class="input-group-btn">
+                <button style="padding:.375rem 0.3rem 0.2rem 0.3rem"
+                        class="btn btn-light" (click)="dp5.show();">
+                  <img src="assets/calendar-4x.png" style="height: 25px" />
+                </button>
+              </div>
+              <input type="text" class="form-control" [(ngModel)]="repeatUntilTime"
+                     [ngModelOptions]="{standalone: true}"
+                     id="RepeatShiftTime" name="RepeatShiftTime" mask='00:00' (keydown)="timeKeyDown($event)"
+                     placeholder="  :  (24H format)"
+                     maxlength="5">
+              <div class="col-auto" style="margin-top: 3px;">
+                <span class="form-text">{{staticGlobals().timeZone}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top:20px;">
+          <div class="col-sm">
+            <input type="checkbox" id="cbSunday" name="cbSunday" [disabled]="repeatUntilDateTime==undefined || repeatUntilTime==undefined || repeatUntilTime == ''"
+                   value="true" [(ngModel)]="sunday" [ngModelOptions]="{standalone: true}"
+                   style="height:20px;width:20px;vertical-align: text-bottom;float:left">
+            <label for="cbSunday" style="padding-left:3px;display:flex;">Sunday</label>
+          </div>
+          <div class="col-sm">
+            <input type="checkbox" id="cbMonday" name="cbMonday" [disabled]="repeatUntilDateTime==undefined || repeatUntilTime==undefined || repeatUntilTime == ''"
+                   value="true" [(ngModel)]="monday" [ngModelOptions]="{standalone: true}"
+                   style="height:20px;width:20px;vertical-align: text-bottom;float:left">
+            <label for="cbMonday" style="padding-left:3px;display:flex;">Monday</label>
+          </div>
+          <div class="col-sm">
+            <input type="checkbox" id="cbTuesday" name="cbTuesday" [disabled]="repeatUntilDateTime==undefined || repeatUntilTime==undefined || repeatUntilTime == ''"
+                   value="true" [(ngModel)]="tuesday" [ngModelOptions]="{standalone: true}"
+                   style="height:20px;width:20px;vertical-align: text-bottom;float:left">
+            <label for="cbTuesday" style="padding-left:3px;display:flex;">Tuesday</label>
+          </div>
+          <div class="col-sm">
+            <input type="checkbox" id="cbWednesday" name="cbWednesday" [disabled]="repeatUntilDateTime==undefined || repeatUntilTime==undefined || repeatUntilTime == ''"
+                   value="true" [(ngModel)]="wednesday" [ngModelOptions]="{standalone: true}"
+                   style="height:20px;width:20px;vertical-align: text-bottom;float:left">
+            <label for="cbWednesday" style="padding-left:3px;display:flex;">Wednesday</label>
+          </div>
+          <div class="col-sm">
+            <input type="checkbox" id="cbThursday" name="cbThursday" [disabled]="repeatUntilDateTime==undefined || repeatUntilTime==undefined || repeatUntilTime == ''"
+                   value="true" [(ngModel)]="thursday" [ngModelOptions]="{standalone: true}"
+                   style="height:20px;width:20px;vertical-align: text-bottom;float:left">
+            <label for="cbThursday" style="padding-left:3px;display:flex;">Thursday</label>
+          </div>
+          <div class="col-sm">
+            <input type="checkbox" id="cbFriday" name="cbFriday" [disabled]="repeatUntilDateTime==undefined || repeatUntilTime==undefined || repeatUntilTime == ''"
+                   value="true" [(ngModel)]="friday" [ngModelOptions]="{standalone: true}"
+                   style="height:20px;width:20px;vertical-align: text-bottom;float:left">
+            <label for="cbFriday" style="padding-left:3px;display:flex;">Friday</label>
+          </div>
+          <div class="col-sm">
+            <input type="checkbox" id="cbSaturday" name="cbSaturday" [disabled]="repeatUntilDateTime==undefined || repeatUntilTime==undefined || repeatUntilTime == ''"
+                   value="true" [(ngModel)]="saturday" [ngModelOptions]="{standalone: true}"
+                   style="height:20px;width:20px;vertical-align: text-bottom;float:left">
+            <label for="cbSaturday" style="padding-left:3px;display:flex;">Saturday</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top:5px;">
+      <div class="col-sm" style="text-align:right;margin:0 10px 10px ">
+        <div style="color:#f3433b;text-align:left;" [hidden]="shiftStatusMessage == undefined" [innerHtml]="shiftStatusMessage"></div>
+        <div style="color:#f3433b;text-align:left;" [hidden]="invalidDateMessage == undefined" [innerHtml]="invalidDateMessage"></div>
+        <div style="color:#f3433b;text-align:left;" [hidden]="!popupDateRangeExceeded">Date range cannot be more than a year.</div>
+        <div style="color:#f3433b;text-align:left;" [hidden]="!popupRepeatDateExceeded">Repeat shift date cannot be more than a year.</div>
+
+        <button (click)="popUpSave()" style="width:100px;"
+                class="btn btn-primary loginButton"
+                [disabled]="shiftName == undefined || shiftName == '' || popupEndDateTime == undefined ||
+                   popupEndTime == undefined || popupEndTime == '' || popupStartDateTime == undefined ||
+                   popupStartTime == undefined || popupStartTime == '' || showPopupSpinner ||
+                  (isSplitting && (popupStartDateTime2 == undefined || popupStartTime2 == undefined ||
+                  shiftName2 == undefined || shiftName2 =='')) ||
+                  (repeatUntilDateTime!=undefined && !monday && !tuesday && !wednesday && !thursday && !friday && !saturday && !sunday)">
+          Save
+          <span *ngIf="showPopupSpinner"><i class="fa fa-spinner fa-spin"></i></span>
+        </button>
+        <div style="margin: 0 0 0 15px; display: inline-block; vertical-align: middle; padding-top: 12px; ">
+          <a (click)="modalRef.hide();" class="text-primary"
+             style="cursor:pointer;">
+            Cancel
+          </a>
+        </div>
+      </div>
+      </div>
+  </div>
+</ng-template>
+

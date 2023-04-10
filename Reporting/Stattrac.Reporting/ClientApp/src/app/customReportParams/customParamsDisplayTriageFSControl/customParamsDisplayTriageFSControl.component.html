@@ -1,0 +1,19 @@
+<div>
+  <div class="row">
+    <div class="col-sm">
+      <input type="checkbox" [(ngModel)]="model.DisplayTriage" id="DisplayTriage"
+             name="DisplayTriage" value="false" (change)="addtoParameterList()"
+             style="height:20px;width:20px;vertical-align: text-bottom;">
+      <label for="DisplayTriage" style="padding-left:3px">Display Triage</label>
+    </div>
+
+    <div class="col-sm">
+      <input type="checkbox" [(ngModel)]="model.DisplayFamilyServices"
+             id="DisplayFamilyServices" name="DisplayFamilyServices"
+             value="false" (change)="addtoParameterList()"
+             style="height:20px;width:20px;vertical-align: text-bottom;">
+      <label for="DisplayFamilyServices" style="padding-left: 3px">Display Family Services</label>
+    </div>
+  </div>
+  <input type="hidden" id="customParameterList" />
+  </div>

@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<title>Report Description</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<meta HTTP-EQUIV="EXPIRES" content="0">
+</head>
+
+<body bgcolor="#F5EBDD">
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="575">
+  <tr>
+    <td><font face="Arial" size="4"><b>IMPORT OFFER DETAIL</b></font><font
+    face="Times New Roman" size="3"><p>The Import Offer Detail Report is an explanation of the
+    import call received. Each import offer call is explained in this report.<br>
+    <font face="Times New Roman" size="3"><br>
+    The top left corner of each import offer call indicates who the call is for, the caller
+    name and organization, and the phone number of the caller. The top right corner of the
+    import offer indicates the Statline referral number, call date/time, and the Statline
+    Triage Coordinator who received the message. The Import Offer Detail report continues and
+    actually documents the offer that is being given to the organization. An event log follows
+    the import offer detail report. The event log tells the story of the import offer. The
+    event log lists the events that occurred in taking a particular message. The first event
+    of any call will be an <i>incoming call</i>. The name of the organization and the caller
+    will be documented with a description of the event. Other events that may occur during an
+    import offer call are the following:</font></p>
+    <blockquote>
+      <p><strong><em>Outgoing Call</em></strong> &#150; The Statline Triage Coordinator will
+      place an outgoing call to <font face="Times New Roman" size="3">the appropriate person.</font></p>
+      <p><em><strong>Page Pending</strong></em> &#150; The Statline Triage Coordinator pages the
+      appropriate person to relay the message.</p>
+      <p><em><strong>Page Response</strong></em> &#150; The Statline Triage Coordinator receives
+      a response from <font face="Times New Roman" size="3">the page pending event.</font></p>
+      <p><em><strong>No Page Response</strong></em> &#150; The Statline Triage Coordinator
+      documents that a <font face="Times New Roman" size="3">response from the page pending
+      event has not o<font face="Times New Roman" size="3">ccurred. </font></font></font></p>
+    </blockquote>
+    </td>
+  </tr>
+</table>
+</center></div>
+</body>
+</html>

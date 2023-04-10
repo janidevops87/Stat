@@ -1,0 +1,1269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F73E91C1-4588-4F56-94C7-F2D2F07EDA7B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Statline.Registry.Web.UI</RootNamespace>
+    <AssemblyName>Statline.Registry.Web.UI</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+    <PublishDatabases>false</PublishDatabases>
+    <DeployIisAppPath>DMV</DeployIisAppPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics4.WebUI.Misc.v11.1, Version=11.1.20111.2064, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.WebUI.Misc.v11.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.WebUI.Shared.v11.1, Version=11.1.20111.2064, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.WebUI.Shared.v11.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.WebUI.UltraWebGrid.v11.1, Version=11.1.20111.2064, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.WebUI.UltraWebGrid.v11.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.WebUI.UltraWebListbar.v11.1, Version=11.1.20111.2064, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.WebUI.UltraWebListbar.v11.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.WebUI.WebCombo.v11.1, Version=11.1.20111.2064, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.WebUI.WebCombo.v11.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.WebUI.WebDataInput.v11.1, Version=11.1.20111.2064, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.WebUI.WebDataInput.v11.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.WebUI.WebDateChooser.v11.1, Version=11.1.20111.2064, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.WebUI.WebDateChooser.v11.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.WebUI.WebSchedule.v11.1, Version=11.1.20111.2064, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.WebUI.WebSchedule.v11.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Stattrac\SupportingFiles\Microsoft.ApplicationBlocks.ExceptionManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\StatTrac\SupportingFiles\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging.Database, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\StatTrac\SupportingFiles\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\LogoutControl.ascx" />
+    <Content Include="Controls\Dynamic\ValidateDynamicMobileControl.ascx" />
+    <Content Include="Controls\Dynamic\EnrollmentConfirmationMobileControl.ascx" />
+    <Content Include="Controls\Dynamic\ElectronicSignatureMobileControl.ascx" />
+    <Content Include="Controls\Dynamic\EnrollmentMobileControl.ascx" />
+    <Content Include="Controls\Dynamic\DonorVerificationControl.ascx" />
+    <Content Include="Framework\Themes\Default\Images\emptybox.gif" />
+    <Content Include="Framework\Themes\MIOP\Enrollment.css" />
+    <Content Include="Framework\Themes\MIOP\Images\donorheart.gif" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Framework\Scripts\jquery.mask.min.js" />
+    <Content Include="Framework\Scripts\Registry.js" />
+    <Content Include="Framework\Templates\BasicRegisterMobileView.ascx" />
+    <Content Include="Framework\Templates\BasicRegisterVerificationView.ascx" />
+    <Content Include="Framework\Themes\CODA\Enrollment.css" />
+    <Content Include="Framework\Themes\CODA\EnrollmentMobile.css" />
+    <Content Include="Framework\Themes\CODA\Print.css" />
+    <Content Include="Framework\Themes\Default\datepicker.css" />
+    <Content Include="Framework\Themes\Default\EnrollmentMobile.css" />
+    <Content Include="Framework\Themes\Default\Images\calendar.gif" />
+    <Content Include="Framework\Themes\Default\Images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Framework\Themes\Default\Images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Framework\Themes\Default\Images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Framework\Themes\Default\Images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Framework\Themes\Default\Images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Framework\Themes\Default\Images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Framework\Themes\Default\Images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Framework\Themes\Default\Images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Framework\Themes\Default\Images\ui-icons_222222_256x240.png" />
+    <Content Include="Framework\Themes\Default\Images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Framework\Themes\Default\Images\ui-icons_454545_256x240.png" />
+    <Content Include="Framework\Themes\Default\Images\ui-icons_888888_256x240.png" />
+    <Content Include="Framework\Themes\Default\Images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Framework\Themes\HIOP\Enrollment.css" />
+    <Content Include="Framework\Themes\HIOP\EnrollmentMobile.css" />
+    <Content Include="Framework\Themes\HIOP\Images\logo-donate-life.png" />
+    <Content Include="Framework\Themes\HIOP\Images\HIOP-logo.jpg" />
+    <Content Include="Framework\Themes\NEOB\EnrollmentMobile.css" />
+    <Content Include="Framework\Themes\NEOB\Enrollment.css" />
+    <Content Include="Framework\Themes\NORS\EnrollmentMobile.css" />
+    <None Include="Images\nors_logo.png" />
+    <Content Include="Images\da_logo.jpg" />
+    <Content Include="Images\rmleb.jpg" />
+    <Content Include="Register\Dynamic\images\DONATELIFE_resized_small.gif" />
+    <Content Include="Register\Dynamic\images\ndn_da_form_header.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Register\Dynamic\images\ndn_da_mobile_header.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Register\Dynamic\images\CO_WY_mobile_header.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Register\Dynamic\images\da_logo.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Register\Dynamic\images\ndn_es_form_header.jpg" />
+    <Content Include="Register\Dynamic\images\nors_eyebank.gif" />
+    <Content Include="Register\Dynamic\images\nors_form_header.jpg" />
+    <Content Include="Register\Dynamic\images\nors_logo.gif" />
+    <Content Include="Register\Dynamic\images\rmleb.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Register\Dynamic\QuestionTemplateMobile.xslt" />
+    <Content Include="Register\Dynamic\images\DonateLife_mobile_header.jpg" />
+    <Content Include="Register\Dynamic\ValidateDynamicMobile.aspx" />
+    <Content Include="Register\Dynamic\EnrollmentConfirmationMobile.aspx" />
+    <Content Include="Register\Dynamic\ElectronicSignatureMobile.aspx" />
+    <Content Include="Register\Dynamic\EnrollmentMobile.aspx" />
+    <Content Include="Register\Dynamic\images\coda_mobile_header.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Register\Dynamic\images\ndn_mobile_header.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Register\Dynamic\images\NOR-LOGO-TAGLINE-CMYK.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Register\Dynamic\images\nors_mobile_header.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Register\Dynamic\DonorVerification.aspx" />
+    <None Include="Web.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CategoryEdit.aspx.cs">
+      <DependentUpon>CategoryEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategoryEdit.aspx.designer.cs">
+      <DependentUpon>CategoryEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CategoryEditControl.ascx.cs">
+      <DependentUpon>CategoryEditControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CategoryEditControl.ascx.designer.cs">
+      <DependentUpon>CategoryEditControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LogoutControl.ascx.cs">
+      <DependentUpon>LogoutControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\LogoutControl.ascx.designer.cs">
+      <DependentUpon>LogoutControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dynamic\ValidateDynamicMobileControl.ascx.cs">
+      <DependentUpon>ValidateDynamicMobileControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Dynamic\ValidateDynamicMobileControl.ascx.designer.cs">
+      <DependentUpon>ValidateDynamicMobileControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dynamic\EnrollmentConfirmationMobileControl.ascx.cs">
+      <DependentUpon>EnrollmentConfirmationMobileControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Dynamic\EnrollmentConfirmationMobileControl.ascx.designer.cs">
+      <DependentUpon>EnrollmentConfirmationMobileControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dynamic\ElectronicSignatureMobileControl.ascx.cs">
+      <DependentUpon>ElectronicSignatureMobileControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Dynamic\ElectronicSignatureMobileControl.ascx.designer.cs">
+      <DependentUpon>ElectronicSignatureMobileControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dynamic\ElectronicSignatureControl.ascx.cs">
+      <DependentUpon>ElectronicSignatureControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Dynamic\ElectronicSignatureControl.ascx.designer.cs">
+      <DependentUpon>ElectronicSignatureControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dynamic\EnrollmentConfirmationControl.ascx.cs">
+      <DependentUpon>EnrollmentConfirmationControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Dynamic\EnrollmentConfirmationControl.ascx.designer.cs">
+      <DependentUpon>EnrollmentConfirmationControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dynamic\EnrollmentControl.ascx.cs">
+      <DependentUpon>EnrollmentControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Dynamic\EnrollmentControl.ascx.designer.cs">
+      <DependentUpon>EnrollmentControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dynamic\EnrollmentMobileControl.ascx.cs">
+      <DependentUpon>EnrollmentMobileControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Dynamic\EnrollmentMobileControl.ascx.designer.cs">
+      <DependentUpon>EnrollmentMobileControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dynamic\ValidateDynamicControl.ascx.cs">
+      <DependentUpon>ValidateDynamicControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Dynamic\ValidateDynamicControl.ascx.designer.cs">
+      <DependentUpon>ValidateDynamicControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dynamic\DonorVerificationControl.ascx.cs">
+      <DependentUpon>DonorVerificationControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Dynamic\DonorVerificationControl.ascx.designer.cs">
+      <DependentUpon>DonorVerificationControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ElectronicSignatureControl.ascx.cs">
+      <DependentUpon>ElectronicSignatureControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ElectronicSignatureControl.ascx.designer.cs">
+      <DependentUpon>ElectronicSignatureControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EnrollmentConfirmationControl.ascx.cs">
+      <DependentUpon>EnrollmentConfirmationControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\EnrollmentConfirmationControl.ascx.designer.cs">
+      <DependentUpon>EnrollmentConfirmationControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EnrollmentControl.ascx.cs">
+      <DependentUpon>EnrollmentControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\EnrollmentControl.ascx.designer.cs">
+      <DependentUpon>EnrollmentControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LoginControl.ascx.cs">
+      <DependentUpon>LoginControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\LoginControl.ascx.designer.cs">
+      <DependentUpon>LoginControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LoginFailureControl.ascx.cs">
+      <DependentUpon>LoginFailureControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\LoginFailureControl.ascx.designer.cs">
+      <DependentUpon>LoginFailureControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MaintainCategoryControl.ascx.cs">
+      <DependentUpon>MaintainCategoryControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\MaintainCategoryControl.ascx.designer.cs">
+      <DependentUpon>MaintainCategoryControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RegistrySearchControl.ascx.cs">
+      <DependentUpon>RegistrySearchControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\RegistrySearchControl.ascx.designer.cs">
+      <DependentUpon>RegistrySearchControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RegistrySearchResultsControl.ascx.cs">
+      <DependentUpon>RegistrySearchResultsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\RegistrySearchResultsControl.ascx.designer.cs">
+      <DependentUpon>RegistrySearchResultsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RegistryStatisticsReportControl.ascx.cs">
+      <DependentUpon>RegistryStatisticsReportControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\RegistryStatisticsReportControl.ascx.designer.cs">
+      <DependentUpon>RegistryStatisticsReportControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ValidateControl.ascx.cs">
+      <DependentUpon>ValidateControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ValidateControl.ascx.designer.cs">
+      <DependentUpon>ValidateControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\Routes\DynamicRouteHandler.cs" />
+    <Compile Include="Framework\Templates\BasicRegisterMobileView.ascx.cs">
+      <DependentUpon>BasicRegisterMobileView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Framework\Templates\BasicRegisterMobileView.ascx.designer.cs">
+      <DependentUpon>BasicRegisterMobileView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\Templates\BasicRegisterVerificationView.ascx.cs">
+      <DependentUpon>BasicRegisterVerificationView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Framework\Templates\BasicRegisterVerificationView.ascx.designer.cs">
+      <DependentUpon>BasicRegisterVerificationView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Register\Dynamic\ValidateDynamicMobile.aspx.cs">
+      <DependentUpon>ValidateDynamicMobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register\Dynamic\ValidateDynamicMobile.aspx.designer.cs">
+      <DependentUpon>ValidateDynamicMobile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register\Dynamic\EnrollmentConfirmationMobile.aspx.cs">
+      <DependentUpon>EnrollmentConfirmationMobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register\Dynamic\EnrollmentConfirmationMobile.aspx.designer.cs">
+      <DependentUpon>EnrollmentConfirmationMobile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register\Dynamic\ElectronicSignatureMobile.aspx.cs">
+      <DependentUpon>ElectronicSignatureMobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register\Dynamic\ElectronicSignatureMobile.aspx.designer.cs">
+      <DependentUpon>ElectronicSignatureMobile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register\Dynamic\ElectronicSignature.aspx.cs">
+      <DependentUpon>ElectronicSignature.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register\Dynamic\ElectronicSignature.aspx.designer.cs">
+      <DependentUpon>ElectronicSignature.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register\Dynamic\Enrollment.aspx.cs">
+      <DependentUpon>Enrollment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register\Dynamic\Enrollment.aspx.designer.cs">
+      <DependentUpon>Enrollment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\Templates\BasicRegisterView.ascx.cs">
+      <DependentUpon>BasicRegisterView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Framework\Templates\BasicRegisterView.ascx.designer.cs">
+      <DependentUpon>BasicRegisterView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFailure.aspx.cs">
+      <DependentUpon>LoginFailure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginFailure.aspx.designer.cs">
+      <DependentUpon>LoginFailure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register\Dynamic\EnrollmentConfirmation.aspx.cs">
+      <DependentUpon>EnrollmentConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register\Dynamic\EnrollmentConfirmation.aspx.designer.cs">
+      <DependentUpon>EnrollmentConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register\Dynamic\EnrollmentMobile.aspx.cs">
+      <DependentUpon>EnrollmentMobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register\Dynamic\EnrollmentMobile.aspx.designer.cs">
+      <DependentUpon>EnrollmentMobile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register\Dynamic\ValidateDynamic.aspx.cs">
+      <DependentUpon>ValidateDynamic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register\Dynamic\ValidateDynamic.aspx.designer.cs">
+      <DependentUpon>ValidateDynamic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register\Dynamic\DonorVerification.aspx.cs">
+      <DependentUpon>DonorVerification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register\Dynamic\DonorVerification.aspx.designer.cs">
+      <DependentUpon>DonorVerification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register\ElectronicSignature.aspx.cs">
+      <DependentUpon>ElectronicSignature.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register\ElectronicSignature.aspx.designer.cs">
+      <DependentUpon>ElectronicSignature.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register\Enrollment.aspx.cs">
+      <DependentUpon>Enrollment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register\Enrollment.aspx.designer.cs">
+      <DependentUpon>Enrollment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register\EnrollmentConfirmation.aspx.cs">
+      <DependentUpon>EnrollmentConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register\EnrollmentConfirmation.aspx.designer.cs">
+      <DependentUpon>EnrollmentConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register\Validate.aspx.cs">
+      <DependentUpon>Validate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register\Validate.aspx.designer.cs">
+      <DependentUpon>Validate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrySearchResults.aspx.cs">
+      <DependentUpon>RegistrySearchResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrySearchResults.aspx.designer.cs">
+      <DependentUpon>RegistrySearchResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistryStatisticsReport.aspx.cs">
+      <DependentUpon>RegistryStatisticsReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistryStatisticsReport.aspx.designer.cs">
+      <DependentUpon>RegistryStatisticsReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SubCategoryEdit.aspx.cs">
+      <DependentUpon>SubCategoryEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SubCategoryEdit.aspx.designer.cs">
+      <DependentUpon>SubCategoryEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SubCategoryEditControl.ascx.cs">
+      <DependentUpon>SubCategoryEditControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SubCategoryEditControl.ascx.designer.cs">
+      <DependentUpon>SubCategoryEditControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VerificationControl.ascx.cs">
+      <DependentUpon>VerificationControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\VerificationControl.ascx.designer.cs">
+      <DependentUpon>VerificationControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\Navigation\Data\GenerateMenu.aspx.cs">
+      <DependentUpon>GenerateMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Framework\Navigation\Data\GenerateMenu.aspx.designer.cs">
+      <DependentUpon>GenerateMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\Navigation\InnerMenuControl.ascx.cs">
+      <DependentUpon>InnerMenuControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Framework\Navigation\InnerMenuControl.ascx.designer.cs">
+      <DependentUpon>InnerMenuControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\Navigation\MenuControl.ascx.cs">
+      <DependentUpon>MenuControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Framework\Navigation\MenuControl.ascx.designer.cs">
+      <DependentUpon>MenuControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\Navigation\NavigationTestPage.aspx.cs">
+      <DependentUpon>NavigationTestPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Framework\Navigation\NavigationTestPage.aspx.designer.cs">
+      <DependentUpon>NavigationTestPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\Navigation\OuterMenuControl.ascx.cs">
+      <DependentUpon>OuterMenuControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Framework\Navigation\OuterMenuControl.ascx.designer.cs">
+      <DependentUpon>OuterMenuControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\Templates\BasicMaster.ascx.cs">
+      <DependentUpon>BasicMaster.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Framework\Templates\BasicMaster.ascx.designer.cs">
+      <DependentUpon>BasicMaster.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\Templates\BasicView.ascx.cs">
+      <DependentUpon>BasicView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Framework\Templates\BasicView.ascx.designer.cs">
+      <DependentUpon>BasicView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\Templates\BasicViewSecure.ascx.cs">
+      <DependentUpon>BasicViewSecure.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Framework\Templates\BasicViewSecure.ascx.designer.cs">
+      <DependentUpon>BasicViewSecure.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="IDology_Test.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>IDology_Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IDology_Test.aspx.designer.cs">
+      <DependentUpon>IDology_Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaintainCategory.aspx.cs">
+      <DependentUpon>MaintainCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaintainCategory.aspx.designer.cs">
+      <DependentUpon>MaintainCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+    </Compile>
+    <Compile Include="RegistrySearch.aspx.cs">
+      <DependentUpon>RegistrySearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrySearch.aspx.designer.cs">
+      <DependentUpon>RegistrySearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Verification.aspx.cs">
+      <DependentUpon>Verification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Verification.aspx.designer.cs">
+      <DependentUpon>Verification.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CategoryEdit.aspx" />
+    <Content Include="Controls\CategoryEditControl.ascx" />
+    <Content Include="Controls\Dynamic\ElectronicSignatureControl.ascx" />
+    <Content Include="Controls\Dynamic\EnrollmentConfirmationControl.ascx" />
+    <Content Include="Controls\Dynamic\EnrollmentControl.ascx">
+    </Content>
+    <Content Include="Controls\Dynamic\ValidateDynamicControl.ascx" />
+    <Content Include="Controls\ElectronicSignatureControl.ascx" />
+    <Content Include="Controls\EnrollmentConfirmationControl.ascx" />
+    <Content Include="Controls\EnrollmentControl.ascx" />
+    <Content Include="Controls\LoginControl.ascx" />
+    <Content Include="Controls\LoginFailureControl.ascx" />
+    <Content Include="Controls\MaintainCategoryControl.ascx" />
+    <Content Include="Controls\RegistrySearchControl.ascx" />
+    <Content Include="Controls\RegistrySearchResultsControl.ascx" />
+    <Content Include="Controls\RegistryStatisticsReportControl.ascx" />
+    <Content Include="Controls\ValidateControl.ascx" />
+    <Content Include="Images\nors_crest.gif">
+    </Content>
+    <Content Include="Images\nors_eyebank.gif">
+    </Content>
+    <Content Include="Images\nors_logo.gif" />
+    <Content Include="Register\Dynamic\images\nors_form_header.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Register\Dynamic\QuestionTemplateSp.xslt" />
+    <Content Include="Register\Dynamic\ElectronicSignature.aspx" />
+    <Content Include="Register\Dynamic\Enrollment.aspx" />
+    <Content Include="Framework\Templates\BasicRegisterView.ascx" />
+    <Content Include="Framework\Themes\Default\Display.css" />
+    <Content Include="Framework\Themes\Default\Images\back.bgLeft.jpg" />
+    <Content Include="Framework\Themes\Default\Images\back.bgLogo.gif" />
+    <Content Include="Framework\Themes\Default\Images\back.bgMenu.gif" />
+    <Content Include="Framework\Themes\Default\Images\back.bgMenuTop.gif" />
+    <Content Include="Framework\Themes\Default\Images\back.logoR.gif" />
+    <Content Include="Framework\Themes\Default\Images\back.logoRFade.gif" />
+    <Content Include="Framework\Themes\Default\Images\back.taMenuBorder.gif" />
+    <Content Include="Framework\Themes\Default\Images\back.taMenuLeft.gif" />
+    <Content Include="Framework\Themes\Default\Images\back.taMenuRight.gif" />
+    <Content Include="Framework\Themes\Default\Images\bgBottom.gif" />
+    <Content Include="Framework\Themes\Default\Images\bgIndexGetStartedTop.gif" />
+    <Content Include="Framework\Themes\Default\Images\bgIndexLogo.gif" />
+    <Content Include="Framework\Themes\Default\Images\bgIndexMenuTop.gif" />
+    <Content Include="Framework\Themes\Default\Images\bgIndexOptionsTop.gif" />
+    <Content Include="Framework\Themes\Default\Images\bgIndexUsingEETop.gif" />
+    <Content Include="Framework\Themes\Default\Images\bgLeft.jpg" />
+    <Content Include="Framework\Themes\Default\Images\bgLogo.gif" />
+    <Content Include="Framework\Themes\Default\Images\bgLogoR.gif" />
+    <Content Include="Framework\Themes\Default\Images\bgMenu.gif" />
+    <Content Include="Framework\Themes\Default\Images\bgMenuTop.gif" />
+    <Content Include="Framework\Themes\Default\Images\boxBL.gif" />
+    <Content Include="Framework\Themes\Default\Images\boxBottom.gif" />
+    <Content Include="Framework\Themes\Default\Images\boxBR.gif" />
+    <Content Include="Framework\Themes\Default\Images\boxLeft.gif" />
+    <Content Include="Framework\Themes\Default\Images\boxRight.gif" />
+    <Content Include="Framework\Themes\Default\Images\boxTL.gif" />
+    <Content Include="Framework\Themes\Default\Images\boxTop.gif" />
+    <Content Include="Framework\Themes\Default\Images\boxTR.gif" />
+    <Content Include="Framework\Themes\Default\Images\contentColumnsTitle-Tile.gif" />
+    <Content Include="Framework\Themes\Default\Images\contentRow-Tile.gif" />
+    <Content Include="Framework\Themes\Default\Images\contentTitle-Tile.gif" />
+    <Content Include="Framework\Themes\Default\Images\logoR.gif" />
+    <Content Include="Framework\Themes\Default\Images\logoRFade.gif" />
+    <Content Include="Framework\Themes\Default\Images\logoTopLeft.gif" />
+    <Content Include="Framework\Themes\Default\Images\m.gif" />
+    <Content Include="Framework\Themes\Default\Images\mW.gif" />
+    <Content Include="Framework\Themes\Default\Images\taMenuBorder.gif" />
+    <Content Include="Framework\Themes\Default\Images\taMenuLeft.gif" />
+    <Content Include="Framework\Themes\Default\Images\taMenuRight.gif" />
+    <Content Include="Framework\Themes\Default\Print.css" />
+    <Content Include="Framework\Themes\Default\SaveDisplay.css" />
+    <Content Include="Global.asax">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Login.aspx" />
+    <Content Include="LoginFailure.aspx" />
+    <Content Include="Register\Dynamic\EnrollmentConfirmation.aspx" />
+    <Content Include="Register\Dynamic\images\ndn_form_header.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Register\Dynamic\QuestionTemplate.xslt" />
+    <Content Include="Register\Dynamic\ValidateDynamic.aspx" />
+    <Content Include="Register\ElectronicSignature.aspx" />
+    <Content Include="Register\Enrollment.aspx" />
+    <Content Include="Register\EnrollmentConfirmation.aspx" />
+    <Content Include="Register\images\da_logo.jpg" />
+    <Content Include="Register\images\neob_form_header.jpg" />
+    <None Include="Register\images\nors_logo.png" />
+    <Content Include="Register\images\nors_eyebank.gif" />
+    <Content Include="Register\images\rmleb.jpg" />
+    <Content Include="Register\Validate.aspx" />
+    <Content Include="RegistrySearchResults.aspx" />
+    <Content Include="RegistryStatisticsReport.aspx" />
+    <Content Include="SubCategoryEdit.aspx" />
+    <Content Include="Controls\SubCategoryEditControl.ascx" />
+    <Content Include="Controls\VerificationControl.ascx" />
+    <None Include="dataconfiguration.config" />
+    <Content Include="Framework\Navigation\Data\BasicMenuData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Framework\Navigation\Data\GenerateMenu.aspx" />
+    <Content Include="Framework\Navigation\Images\activeTab-Left.gif" />
+    <Content Include="Framework\Navigation\Images\activeTab-Right.gif" />
+    <Content Include="Framework\Navigation\Images\activeTab-Tile.gif" />
+    <Content Include="Framework\Navigation\Images\headerBkgrd01-Tile.gif" />
+    <Content Include="Framework\Navigation\Images\headerBkgrd01.gif" />
+    <Content Include="Framework\Navigation\Images\headerBkgrd02-Tile.gif" />
+    <Content Include="Framework\Navigation\Images\headerBkgrd02.gif" />
+    <Content Include="Framework\Navigation\Images\inactiveTab-Left.gif" />
+    <Content Include="Framework\Navigation\Images\inactiveTab-Right.gif" />
+    <Content Include="Framework\Navigation\Images\inactiveTab-Tile.gif" />
+    <Content Include="Framework\Navigation\Images\leftTile.gif" />
+    <Content Include="Framework\Navigation\Images\mainLinks-Line.gif" />
+    <Content Include="Framework\Navigation\Images\mainTabBkgrd-Tile.gif" />
+    <Content Include="Framework\Navigation\Images\Menu\collapsed.gif" />
+    <Content Include="Framework\Navigation\Images\Menu\expanded.gif" />
+    <Content Include="Framework\Navigation\Images\Menu\Spacer.gif" />
+    <Content Include="Framework\Navigation\Images\rightTile.gif" />
+    <Content Include="Framework\Navigation\Images\spacer.gif" />
+    <Content Include="Framework\Navigation\Images\subTab-Left.gif" />
+    <Content Include="Framework\Navigation\Images\subTab-Right.gif" />
+    <Content Include="Framework\Navigation\Images\subTab-Tile.gif" />
+    <Content Include="Framework\Navigation\Images\subTabBkgrd-Tile.gif" />
+    <Content Include="Framework\Navigation\Images\subTabInactive-Left.gif" />
+    <Content Include="Framework\Navigation\Images\subTabInactive-Right.gif" />
+    <Content Include="Framework\Navigation\Images\subTabInactiveBkgrd-Tile.gif" />
+    <Content Include="Framework\Navigation\InnerMenuControl.ascx" />
+    <Content Include="Framework\Navigation\MenuControl.ascx" />
+    <Content Include="Framework\Navigation\NavigationTestPage.aspx" />
+    <Content Include="Framework\Navigation\OuterMenuControl.ascx" />
+    <Content Include="Framework\Scripts\Framework.js" />
+    <Content Include="Framework\Templates\BasicMaster.ascx" />
+    <Content Include="Framework\Templates\BasicView.ascx" />
+    <Content Include="Framework\Templates\BasicViewSecure.ascx" />
+    <Content Include="Framework\Themes\Shared\Images\Spacer.gif" />
+    <Content Include="IDology_Test.aspx" />
+    <Content Include="Images\ig_res\StatlineReports\ig_calendar.css" />
+    <Content Include="Images\ig_res\StatlineReports\ig_calendarview.css" />
+    <Content Include="Images\ig_res\StatlineReports\ig_combo.css" />
+    <Content Include="Images\ig_res\StatlineReports\ig_datechooser.css" />
+    <Content Include="Images\ig_res\StatlineReports\ig_dayview.css" />
+    <Content Include="Images\ig_res\StatlineReports\ig_dialogwindow.css" />
+    <Content Include="Images\ig_res\StatlineReports\ig_grid.css" />
+    <Content Include="Images\ig_res\StatlineReports\ig_grid_opt.css" />
+    <Content Include="Images\ig_res\StatlineReports\ig_imageViewer.css" />
+    <Content Include="Images\ig_res\StatlineReports\ig_listbar.css" />
+    <Content Include="Images\ig_res\StatlineReports\ig_menu.css" />
+    <Content Include="Images\ig_res\StatlineReports\ig_monthview.css" />
+    <Content Include="Images\ig_res\StatlineReports\ig_navbar.css" />
+    <Content Include="Images\ig_res\StatlineReports\ig_panel.css" />
+    <Content Include="Images\ig_res\StatlineReports\ig_shared.css" />
+    <Content Include="Images\ig_res\StatlineReports\ig_spellCheckerDialog.css" />
+    <Content Include="Images\ig_res\StatlineReports\ig_splitter.css" />
+    <Content Include="Images\ig_res\StatlineReports\ig_tab.css" />
+    <Content Include="Images\ig_res\StatlineReports\ig_textedit.css" />
+    <Content Include="Images\ig_res\StatlineReports\ig_toolbar.css" />
+    <Content Include="Images\ig_res\StatlineReports\ig_tree.css" />
+    <Content Include="Images\ig_res\StatlineReports\ig_weekview.css" />
+    <Content Include="Images\ig_res\StatlineReports\images\add_disabled.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\add_down.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\add_hover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\add_up.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\button_silver.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\del_disabled.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\del_down.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\del_hover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\del_up.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\downarrows_white.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\end_disabled.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\end_down.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\end_hover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\end_up.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ff_disabled.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ff_down.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ff_hover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ff_up.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\gradient.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\igdw_Close.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igdw_CloseHover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igdw_CloseMouseDown.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igdw_Maximize.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igdw_MaximizeHover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igdw_MaximizeMouseDown.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igdw_Minimize.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igdw_MinimizeHover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igdw_MinimizeMouseDown.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igdw_ResizingHandle.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igdw_Restore.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igdw_RestoreHover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igdw_RestoreMouseDown.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igiv_H_NextButton.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\igiv_H_NextButtonDisabled.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\igiv_H_NextButtonHover.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\igiv_H_NextButtonPressed.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\igiv_H_PrevButton.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\igiv_H_PrevButtonDisabled.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\igiv_H_PrevButtonHover.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\igiv_H_PrevButtonPressed.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\igiv_V_NextButton.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\igiv_V_NextButtonDisabled.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\igiv_V_NextButtonHover.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\igiv_V_NextButtonPressed.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\igiv_V_PrevButton.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\igiv_V_PrevButtonDisabled.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\igiv_V_PrevButtonHover.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\igiv_V_PrevButtonPressed.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\igpnl_dwn.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igpnl_up.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsch_xpbluedn.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsch_xpblueup.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_MinusDisableH.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_MinusDisableV.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_MinusFocusH.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_MinusFocusV.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_MinusH.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_MinusHoverH.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_MinusHoverV.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_MinusPressH.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_MinusPressV.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_MinusV.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_PlusDisableH.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_PlusDisableV.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_PlusFocusH.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_PlusFocusV.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_PlusH.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_PlusHoverH.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_PlusHoverV.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_PlusPressH.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_PlusPressV.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_PlusV.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_ThumbDisableH.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_ThumbDisableV.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_ThumbFocusH.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_ThumbFocusV.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_ThumbH.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_ThumbHoverH.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_ThumbHoverV.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_ThumbPressH.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_ThumbPressV.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igsli_ThumbV.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igspl_CollapseDown.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igspl_CollapseDownHover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igspl_CollapseLeft.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igspl_CollapseLeftHover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igspl_CollapseRight.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igspl_CollapseRightHover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igspl_CollapseUp.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igspl_CollapseUpHover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igspl_ExpandDown.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igspl_ExpandDownHover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igspl_ExpandLeft.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igspl_ExpandLeftHover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igspl_ExpandRight.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igspl_ExpandRightHover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igspl_ExpandUp.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igspl_ExpandUpHover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igspl_splitHoriz.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igspl_splitHorizHover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igspl_splitHorizPressed.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igspl_splitVerPressed.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igspl_splitVert.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\igspl_splitVertHover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_cal_next.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_cal_prev.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_cmboDown01.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_cmboDown02.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_cmboDown1.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_cmboDown2.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_cmboDownXP1.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_cmboDownXP2.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_edit_0.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_edit_01.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_edit_1.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_edit_11.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_edit_2.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_edit_21.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_menutri.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_menu_scrolldown.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_menu_scrolldown_disabled.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_menu_scrollup.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_menu_scrollup_disabled.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_progressIndicator.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_sched_next.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_sched_prev.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_sched_recurrence.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_sched_reminder.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_sched_variance.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tab_scroll0.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tab_scroll1.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tab_scroll2.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tab_scroll3.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tab_scrollXP0.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tab_scrollXP1.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tab_scrollXP2.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tab_scrollXP3.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblBlank.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblFilter.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblFilterApplied.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblFilterContains.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblFilterDoesNotContain.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblFilterDoesNotEndWith.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblFilterDoesNotMatch.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblFilterDoesNotMatch2.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblFilterDoesNotStartWith.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblFilterEndsWith.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblFilterEqual.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblFilterGreaterThan.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblFilterGreaterThanOrEqualTo.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblFilterLessThan.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblFilterLessThanOrEqualTo.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblFilterLike.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblFilterMatch.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblFilterMatch2.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblFilterNotEqual.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblFilterNotLike.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblFilterStartsWith.png" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblFixedOff.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblFixedOn.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblGroupBy.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblMinus.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblNewrow.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblPimgDn.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblPimgUp.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblPlus.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblSortAsc.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblSortDesc.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_tblTri.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_treeF.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_treeFminus.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_treeFplus.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_treeI.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_treeL.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_treeLminus.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_treeLplus.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_treeMinus.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_treeMminus.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_treeMplus.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_treeOminus.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_treeOplus.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_treePlus.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_treeS.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_treeT.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\ig_treeWhite.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\next_disabled.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\next_down.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\next_hover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\next_up.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\page_bg.jpg" />
+    <Content Include="Images\ig_res\StatlineReports\images\prev_disabled.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\prev_down.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\prev_hover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\prev_up.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\rew_disabled.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\rew_down.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\rew_hover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\rew_up.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\start_disabled.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\start_down.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\start_hover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\start_up.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\submit_disabled.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\submit_down.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\submit_hover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\submit_up.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\tab_bottom.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\tab_bottom_hover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\tab_left.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\tab_left_hover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\tab_right.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\tab_right_hover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\tab_top.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\tab_top_hover.gif" />
+    <Content Include="Images\ig_res\StatlineReports\images\uparrows_white.gif" />
+    <Content Include="Images\ig_res\StatlineReports\NotNeeded\ig_calendar.css" />
+    <Content Include="Images\ig_res\StatlineReports\NotNeeded\ig_calendarview.css" />
+    <Content Include="Images\ig_res\StatlineReports\NotNeeded\ig_datechooser.css" />
+    <Content Include="Images\ig_res\StatlineReports\NotNeeded\ig_dayview.css" />
+    <Content Include="Images\ig_res\StatlineReports\NotNeeded\ig_dialogwindow.css" />
+    <Content Include="Images\ig_res\StatlineReports\NotNeeded\ig_imageViewer.css" />
+    <Content Include="Images\ig_res\StatlineReports\NotNeeded\ig_listbar.css" />
+    <Content Include="Images\ig_res\StatlineReports\NotNeeded\ig_menu.css" />
+    <Content Include="Images\ig_res\StatlineReports\NotNeeded\ig_monthview.css" />
+    <Content Include="Images\ig_res\StatlineReports\NotNeeded\ig_navbar.css" />
+    <Content Include="Images\ig_res\StatlineReports\NotNeeded\ig_shared.css" />
+    <Content Include="Images\ig_res\StatlineReports\NotNeeded\ig_spellCheckerDialog.css" />
+    <Content Include="Images\ig_res\StatlineReports\NotNeeded\ig_splitter.css" />
+    <Content Include="Images\ig_res\StatlineReports\NotNeeded\ig_tab.css" />
+    <Content Include="Images\ig_res\StatlineReports\NotNeeded\ig_textedit.css" />
+    <Content Include="Images\ig_res\StatlineReports\NotNeeded\ig_toolbar.css" />
+    <Content Include="Images\ig_res\StatlineReports\NotNeeded\ig_tree.css" />
+    <Content Include="Images\ig_res\StatlineReports\NotNeeded\ig_weekview.css" />
+    <Content Include="Images\activeTab-Left.gif" />
+    <Content Include="Images\activeTab-Right.gif" />
+    <Content Include="Images\activeTab-Tile.gif" />
+    <Content Include="Images\Buttons\buttons.htm" />
+    <Content Include="Images\Buttons\formButton-CenterTile.gif" />
+    <Content Include="Images\Buttons\formButton-LeftEnd.gif" />
+    <Content Include="Images\Buttons\formButton-RightEnd.gif" />
+    <Content Include="Images\Buttons\spacer.gif" />
+    <Content Include="Images\cal.gif" />
+    <Content Include="Images\calbutton.gif" />
+    <Content Include="Images\Circles\circles-red-01.gif" />
+    <Content Include="Images\Circles\circles-red-02.gif" />
+    <Content Include="Images\Circles\circles-red-03.gif" />
+    <Content Include="Images\Circles\circles-red-04.gif" />
+    <Content Include="Images\Circles\circles-red-05.gif" />
+    <Content Include="Images\Circles\circles-red-06.gif" />
+    <Content Include="Images\Circles\circles-red-07.gif" />
+    <Content Include="Images\Circles\circles-red-08.gif" />
+    <Content Include="Images\Circles\circles-red-09.gif" />
+    <Content Include="Images\Circles\circles-yellow-01.gif" />
+    <Content Include="Images\Circles\circles-yellow-02.gif" />
+    <Content Include="Images\Circles\circles-yellow-03.gif" />
+    <Content Include="Images\Circles\circles-yellow-04.gif" />
+    <Content Include="Images\Circles\circles-yellow-05.gif" />
+    <Content Include="Images\Circles\circles-yellow-06.gif" />
+    <Content Include="Images\Circles\circles-yellow-07.gif" />
+    <Content Include="Images\Circles\circles-yellow-08.gif" />
+    <Content Include="Images\Circles\circles-yellow-09.gif" />
+    <Content Include="Images\collapsed.gif" />
+    <Content Include="Images\contentColumnsTitle-Tile.gif" />
+    <Content Include="Images\contentRow-RedTile.gif" />
+    <Content Include="Images\contentRow-Tile.gif" />
+    <Content Include="Images\contentRow-YellowTile.gif" />
+    <Content Include="Images\contentTitle-Tile.gif" />
+    <Content Include="Images\expanded.gif" />
+    <Content Include="Images\headerBkgrd01-Tile.gif" />
+    <Content Include="Images\headerBkgrd01.gif" />
+    <Content Include="Images\headerBkgrd02-Tile.gif" />
+    <Content Include="Images\headerBkgrd02.gif" />
+    <Content Include="Images\headerBkgrd03.gif" />
+    <Content Include="Images\headerBkgrd04.gif" />
+    <Content Include="Images\inactiveTab-Left.gif" />
+    <Content Include="Images\inactiveTab-Right.gif" />
+    <Content Include="Images\inactiveTab-Tile.gif" />
+    <Content Include="Images\leftTile.gif" />
+    <Content Include="Images\Logos\logo1.gif" />
+    <Content Include="Images\Logos\logo2.gif" />
+    <Content Include="Images\Logos\Statline.bmp" />
+    <Content Include="Images\Logos\statline.GIF" />
+    <Content Include="Images\Logos\statline.jpg" />
+    <Content Include="Images\Logos\statline96x96.GIF" />
+    <Content Include="Images\Logos\statlinereduced.GIF" />
+    <Content Include="Images\Logos\statlineWeb.GIF" />
+    <Content Include="Images\mainLinks-Line.gif" />
+    <Content Include="Images\mainTabBkgrd-Tile.gif" />
+    <Content Include="Images\Menu\collapsed.gif" />
+    <Content Include="Images\Menu\expanded.gif" />
+    <Content Include="Images\Menu\marker01.gif" />
+    <Content Include="Images\Menu\marker02.gif" />
+    <Content Include="Images\Menu\marker03.gif" />
+    <Content Include="Images\Menu\markerOrange.gif" />
+    <Content Include="Images\Menu\Spacer.gif" />
+    <Content Include="Images\RedTile.gif" />
+    <Content Include="Images\rightTile.gif" />
+    <Content Include="Images\spacer.gif" />
+    <Content Include="Images\subTab-Left.gif" />
+    <Content Include="Images\subTab-Right.gif" />
+    <Content Include="Images\subTab-Tile.gif" />
+    <Content Include="Images\subTabBkgrd-Tile.gif" />
+    <Content Include="Images\subTabInactive-Left.gif" />
+    <Content Include="Images\subTabInactive-Right.gif" />
+    <Content Include="Images\subTabInactiveBkgrd-Tile.gif" />
+    <Content Include="Images\YellowTile.gif" />
+    <Content Include="MaintainCategory.aspx" />
+    <Content Include="Register\QuestionTemplate.xslt" />
+    <Content Include="RegistrySearch.aspx" />
+    <Content Include="Scripts\CharactersRemaining.js" />
+    <Content Include="Scripts\DateChooser.js" />
+    <Content Include="Scripts\GenericPage.js" />
+    <Content Include="Scripts\ig_dropCalendar.js" />
+    <Content Include="Scripts\InputMasks.js" />
+    <Content Include="Verification.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Framework\Themes\Default\Enrollment.css" />
+    <Content Include="Framework\Themes\NORS\Enrollment.css" />
+    <Content Include="Framework\Themes\NORS\Images\bg-page.png" />
+    <Content Include="Framework\Themes\NORS\Images\bg-paper-interior.jpg" />
+    <Content Include="Framework\Themes\NORS\Images\footer-bg.png" />
+    <Content Include="Framework\Themes\NORS\Images\footer-border.png" />
+    <Content Include="Framework\Themes\NORS\Images\logo-donate-life.png" />
+    <Content Include="Framework\Themes\web.config" />
+    <Content Include="Framework\Navigation\Images\web.config" />
+    <None Include="Images\ig_res\StatlineReports\images\Thumbs.db" />
+    <None Include="Images\web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\RegistrySearchControl.ascx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RegistrySearchControl.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Framework\Navigation\Data\GenerateMenu.aspx.resx">
+      <DependentUpon>GenerateMenu.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Framework\Navigation\InnerMenuControl.ascx.resx">
+      <DependentUpon>InnerMenuControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Framework\Navigation\MenuControl.ascx.resx">
+      <DependentUpon>MenuControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Framework\Navigation\NavigationTestPage.aspx.resx">
+      <DependentUpon>NavigationTestPage.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Framework\Navigation\OuterMenuControl.ascx.resx">
+      <DependentUpon>OuterMenuControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Framework\Templates\BasicMaster.ascx.resx">
+      <DependentUpon>BasicMaster.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Framework\Templates\BasicView.ascx.resx">
+      <DependentUpon>BasicView.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Framework\Templates\BasicViewSecure.ascx.resx">
+      <DependentUpon>BasicViewSecure.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Framework\Templates\BasicRegisterView.ascx.resx">
+      <DependentUpon>BasicRegisterView.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Framework\Templates\BasicRegisterVerificationView.ascx.resx">
+      <DependentUpon>BasicRegisterVerificationView.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Statline.csproj">
+      <Project>{BBA5E70D-40A8-4399-84A6-A76E2E63AE62}</Project>
+      <Name>Statline</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StatTrac\Data\Statline.StatTrac.Data.csproj">
+      <Project>{C2F5CDF4-1631-47FE-AAA9-157D3944884C}</Project>
+      <Name>Statline.StatTrac.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StatTrac\Data\Types\Statline.StatTrac.Data.Types.csproj">
+      <Project>{086C5AB4-C591-4EE4-B1EF-837B3254EC3B}</Project>
+      <Name>Statline.StatTrac.Data.Types</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StatTrac\Statline.StatTrac.csproj">
+      <Project>{EE640ABE-AB1E-4AD9-935D-6AAF8A8F079F}</Project>
+      <Name>Statline.StatTrac</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StatTrac\Web\Statline.StatTrac.Web.csproj">
+      <Project>{6CA162B0-2880-441B-A383-A030764FAF28}</Project>
+      <Name>Statline.StatTrac.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\Statline.Registry.Data.csproj">
+      <Project>{9A52A8C5-D85C-4995-8512-4A18C1C56F4B}</Project>
+      <Name>Statline.Registry.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\Types\Statline.Registry.Data.Types.csproj">
+      <Project>{EB2B77E3-2153-4DDC-91FC-5A714E5DA97D}</Project>
+      <Name>Statline.Registry.Data.Types</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Statline.Framework\Statline.Framework.csproj">
+      <Project>{57F28C1A-B454-423A-980D-0C14DE9CA4E5}</Project>
+      <Name>Statline.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Statline.Registry.csproj">
+      <Project>{8D3D256B-169F-4962-B519-629683CA4141}</Project>
+      <Name>Statline.Registry</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Framework\Themes\CODA\Images\" />
+    <Folder Include="Framework\Themes\NEOB\Images\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49573</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Statline.Registry.Web.UI</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

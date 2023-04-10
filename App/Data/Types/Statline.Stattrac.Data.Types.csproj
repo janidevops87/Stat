@@ -1,0 +1,1054 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C2D6EFBE-279F-42B1-B0BC-F2862693ECD9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Statline.Stattrac.Data.Types</RootNamespace>
+    <AssemblyName>Statline.Stattrac.Data.Types</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\Solution Items\Reference\StatLine.snk</AssemblyOriginatorKeyFile>
+    <PublishUrl>http://localhost/Statline.Stattrac.Data.Types/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Solution Items\Reference\SharedAssemblyInfo.cs">
+      <Link>SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Administration\AlertDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AlertDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ScheduleGroupOrganizationDS.cs">
+      <DependentUpon>ScheduleGroupOrganizationDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ScheduleGroupOrganizationDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScheduleGroupOrganizationDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ServiceLevel30OrganizationDS.cs">
+      <DependentUpon>ServiceLevel30OrganizationDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ServiceLevel30OrganizationDS.Designer.cs">
+      <DependentUpon>ServiceLevel30OrganizationDS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ServiceLevel30OrganizationDS1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServiceLevel30OrganizationDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Criteria\CriteriaDS.cs">
+      <DependentUpon>CriteriaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Criteria\CriteriaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CriteriaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\BulletinBoardDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BulletinBoardDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\DashboardHelperDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DashboardHelperDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\FamilyServiceViewDS.cs">
+      <DependentUpon>FamilyServiceViewDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\FamilyServiceViewDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FamilyServiceViewDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\FsbActiveCasesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FsbActiveCasesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\PendingCasesDS.Designer.cs">
+      <DependentUpon>PendingCasesDS.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Dashboard\IncompletesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IncompletesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\LogEventDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogEventDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\LogEventsLockDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogEventsLockDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\MessageandImportDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MessageandImportDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\NoCallsDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NoCallsDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\PendingEventsDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PendingEventsDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\RecycledCasesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecycledCasesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\ReferralDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReferralDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\TcssActiveCasesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TcssActiveCasesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\UpdateDS.cs">
+      <DependentUpon>UpdateDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\UpdateDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\ListFamilyServiceStatus.cs" />
+    <Compile Include="Framework\AppScreenDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppScreenDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\GeneralAlertDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GeneralAlertDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\ListControlDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListControlDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\StatEmployeeDS.cs">
+      <DependentUpon>StatEmployeeDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\StatEmployeeDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatEmployeeDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\WebPersonDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebPersonDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NewCall\FamilyServicesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FamilyServicesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NewCall\MessageDS.cs">
+      <DependentUpon>MessageDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NewCall\MessageDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MessageDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NewCall\ReferralDS.cs">
+      <DependentUpon>ReferralDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NewCall\ReferralDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReferralDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NewCall\TcssDS.cs">
+      <DependentUpon>TcssDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NewCall\TcssDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TcssDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NewCall\TcssDuplicateReferalsDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TcssDuplicateReferalsDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NewCall\TcssHeaderDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TcssHeaderDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NewCall\TcssHelperDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TcssHelperDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Organization\OrganizationAssociatedCallDS.cs">
+      <DependentUpon>OrganizationAssociatedCallDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Organization\OrganizationAssociatedCallDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrganizationAssociatedCallDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Organization\OrganizationDS.cs">
+      <DependentUpon>OrganizationDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Organization\OrganizationDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrganizationDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Organization\OrganizationSearchDS.cs">
+      <DependentUpon>OrganizationSearchDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Organization\OrganizationSearchDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrganizationSearchDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\StattracIdentity.cs" />
+    <Compile Include="Framework\StattracPrincipal.cs" />
+    <Compile Include="Question\QuestionDS.cs">
+      <DependentUpon>QuestionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Question\QuestionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuestionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\RecycledRestoreDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecycledRestoreDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralDonorData\ReferralDonorDataDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReferralDonorDataDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RuleOutIndications\RuleOutIndicationsDS.cs">
+      <DependentUpon>RuleOutIndicationsDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RuleOutIndications\RuleOutIndicationsDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RuleOutIndicationsDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule\ScheduleDS.cs">
+      <DependentUpon>ScheduleDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule\ScheduleDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScheduleDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule\ScheduleLogDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScheduleLogDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenConfig\ScreenConfigDS.cs">
+      <DependentUpon>ScreenConfigDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenConfig\ScreenConfigDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScreenConfigDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Security\AuthorizationRuleProviderDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AuthorizationRuleProviderDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SourceCode\SourceCodeListCallType.cs" />
+    <Compile Include="SourceCode\SourceCodeDS.cs">
+      <DependentUpon>SourceCodeDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SourceCode\SourceCodeDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SourceCodeDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TcssListString\TcssListRaceString.cs" />
+    <Compile Include="TcssList\TcssListTotalParenteralNutrition.cs" />
+    <Compile Include="TcssList\TcssListAbo.cs" />
+    <Compile Include="TcssList\TcssListAgeUnit.cs" />
+    <Compile Include="TcssList\TcssListAntihypertensive.cs" />
+    <Compile Include="TcssList\TcssListArginineVasopressin.cs" />
+    <Compile Include="TcssList\TcssListBreathingOverVent.cs" />
+    <Compile Include="TcssList\TcssListCallType.cs" />
+    <Compile Include="TcssList\TcssListCardiacArrestDownTime.cs" />
+    <Compile Include="TcssList\TcssListCauseOfDeath.cs" />
+    <Compile Include="TcssList\TcssListChestTrauma.cs" />
+    <Compile Include="TcssList\TcssListCigaretteUse.cs" />
+    <Compile Include="TcssList\TcssListCigaretteUseContinued.cs" />
+    <Compile Include="TcssList\TcssListCircumstancesOfDeath.cs" />
+    <Compile Include="TcssList\TcssListCloseReason.cs" />
+    <Compile Include="TcssList\TcssListCompliantWithTreatment.cs" />
+    <Compile Include="TcssList\TcssListCprAdministered.cs" />
+    <Compile Include="TcssList\TcssListCultureResult.cs" />
+    <Compile Include="TcssList\TcssListCultureType.cs" />
+    <Compile Include="TcssList\TcssListDaylightSavingsObserved.cs" />
+    <Compile Include="TcssList\TcssListDcd.cs" />
+    <Compile Include="TcssList\TcssListDdavp.cs" />
+    <Compile Include="TcssList\TcssListDextroseInIvFluids.cs" />
+    <Compile Include="TcssList\TcssListDiagnosisHeartMethod.cs" />
+    <Compile Include="TcssList\TcssListDiagnosisLungChestXray.cs" />
+    <Compile Include="TcssList\TcssListDiuretic.cs" />
+    <Compile Include="TcssList\TcssListDonorDbdSubDefinition.cs" />
+    <Compile Include="TcssList\TcssListDonorDcdSubDefinition.cs" />
+    <Compile Include="TcssList\TcssListDonorDefinition.cs" />
+    <Compile Include="TcssList\TcssListDonorMeetCdcGuidelines.cs" />
+    <Compile Include="TcssList\TcssListDonorMeetsDcdCriteria.cs" />
+    <Compile Include="TcssList\TcssListDonorMeetsEcdCriteria.cs" />
+    <Compile Include="TcssList\TcssListEcd.cs" />
+    <Compile Include="TcssList\TcssListEthnicity.cs" />
+    <Compile Include="TcssList\TcssListGender.cs" />
+    <Compile Include="TcssList\TcssListHeavyAlcoholUse.cs" />
+    <Compile Include="TcssList\TcssListHemodynamicallyStable.cs" />
+    <Compile Include="TcssList\TcssListHeparin.cs" />
+    <Compile Include="TcssList\TcssListHistoryOfCancer.cs" />
+    <Compile Include="TcssList\TcssListHistoryOfCoronaryArteryDisease.cs" />
+    <Compile Include="TcssList\TcssListHistoryOfDiabetes.cs" />
+    <Compile Include="TcssList\TcssListHistoryOfGastrointestinalDisease.cs" />
+    <Compile Include="TcssList\TcssListHlaA1.cs" />
+    <Compile Include="TcssList\TcssListHlaA2.cs" />
+    <Compile Include="TcssList\TcssListHlaB1.cs" />
+    <Compile Include="TcssList\TcssListHlaB2.cs" />
+    <Compile Include="TcssList\TcssListHlaBw4.cs" />
+    <Compile Include="TcssList\TcssListHlaBw6.cs" />
+    <Compile Include="TcssList\TcssListHlaC1.cs" />
+    <Compile Include="TcssList\TcssListHlaC2.cs" />
+    <Compile Include="TcssList\TcssListHlaDq1.cs" />
+    <Compile Include="TcssList\TcssListHlaDq2.cs" />
+    <Compile Include="TcssList\TcssListHlaDr1.cs" />
+    <Compile Include="TcssList\TcssListHlaDr2.cs" />
+    <Compile Include="TcssList\TcssListHlaDr51.cs" />
+    <Compile Include="TcssList\TcssListHlaDr52.cs" />
+    <Compile Include="TcssList\TcssListHlaDr53.cs" />
+    <Compile Include="TcssList\TcssListHypertensionHistory.cs" />
+    <Compile Include="TcssList\TcssListInsulin.cs" />
+    <Compile Include="TcssList\TcssListKidney.cs" />
+    <Compile Include="TcssList\TcssListKidneyAorticCuff.cs" />
+    <Compile Include="TcssList\TcssListKidneyAorticPlaque.cs" />
+    <Compile Include="TcssList\TcssListKidneyArterialPlaque.cs" />
+    <Compile Include="TcssList\TcssListKidneyArtery.cs" />
+    <Compile Include="TcssList\TcssListKidneyBiopsy.cs" />
+    <Compile Include="TcssList\TcssListKidneyCapsularTear.cs" />
+    <Compile Include="TcssList\TcssListKidneyCystsDiscoloration.cs" />
+    <Compile Include="TcssList\TcssListKidneyFatCleaned.cs" />
+    <Compile Include="TcssList\TcssListKidneyFullVena.cs" />
+    <Compile Include="TcssList\TcssListKidneyHematoma.cs" />
+    <Compile Include="TcssList\TcssListKidneyHorseshoeShape.cs" />
+    <Compile Include="TcssList\TcssListKidneyInfarctedArea.cs" />
+    <Compile Include="TcssList\TcssListKidneyPumpDevice.cs" />
+    <Compile Include="TcssList\TcssListKidneyPumpSolution.cs" />
+    <Compile Include="TcssList\TcssListKidneyRecoveryBiopsy.cs" />
+    <Compile Include="TcssList\TcssListKidneySubcapsular.cs" />
+    <Compile Include="TcssList\TcssListKidneyType.cs" />
+    <Compile Include="TcssList\TcssListKidneyUreter.cs" />
+    <Compile Include="TcssList\TcssListKidneyUreterTissueQuality.cs" />
+    <Compile Include="TcssList\TcssListKidneyVein.cs" />
+    <Compile Include="TcssList\TcssListLiverBiopsy.cs" />
+    <Compile Include="TcssList\TcssListLiverType.cs" />
+    <Compile Include="TcssList\TcssListLungType.cs" />
+    <Compile Include="TcssList\TcssListMechanismOfDeath.cs" />
+    <Compile Include="TcssList\TcssListMedication.cs" />
+    <Compile Include="TcssList\TcssListNumberOfTransfusion.cs" />
+    <Compile Include="TcssList\TcssListOfferStatus.cs" />
+    <Compile Include="TcssList\TcssListOrganType.cs" />
+    <Compile Include="TcssList\TcssListOtherBloodProduct.cs" />
+    <Compile Include="TcssList\TcssListOtherDrugUse.cs" />
+    <Compile Include="TcssList\TcssListOtherOrgan.cs" />
+    <Compile Include="TcssList\TcssListPreliminaryCrossmatch.cs" />
+    <Compile Include="TcssList\TcssListRace.cs" />
+    <Compile Include="TcssList\TcssListRefusalReason.cs" />
+    <Compile Include="TcssList\TcssListRefusedByOtherCenter.cs" />
+    <Compile Include="TcssList\TcssListScd.cs" />
+    <Compile Include="TcssList\TcssListSerologyAnswer.cs" />
+    <Compile Include="TcssList\TcssListStatus.cs" />
+    <Compile Include="TcssList\TcssListStatusOfImportData.cs" />
+    <Compile Include="TcssList\TcssListSteroid.cs" />
+    <Compile Include="TcssList\TcssListT3.cs" />
+    <Compile Include="TcssList\TcssListT4.cs" />
+    <Compile Include="TcssList\TcssListTestType.cs" />
+    <Compile Include="TcssList\TcssListTimeZone.cs" />
+    <Compile Include="TcssList\TcssListUrinalysisBacteria.cs" />
+    <Compile Include="TcssList\TcssListUrinalysisBlood.cs" />
+    <Compile Include="TcssList\TcssListUrinalysisCast.cs" />
+    <Compile Include="TcssList\TcssListUrinalysisEpith.cs" />
+    <Compile Include="TcssList\TcssListUrinalysisGlucose.cs" />
+    <Compile Include="TcssList\TcssListUrinalysisLeukocyte.cs" />
+    <Compile Include="TcssList\TcssListUrinalysisProtein.cs" />
+    <Compile Include="TcssList\TcssListUrinalysisRbc.cs" />
+    <Compile Include="TcssList\TcssListUrinalysisWbc.cs" />
+    <Compile Include="TcssList\TcssListVentSettingMode.cs" />
+    <Compile Include="TcssList\TcssListVasodilator.cs" />
+    <Compile Include="Administration\WebReportGroupOrgDS.cs">
+      <DependentUpon>WebReportGroupOrgDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\WebReportGroupOrgDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebReportGroupOrgDS.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Administration\AlertDS.xsc">
+      <DependentUpon>AlertDS.xsd</DependentUpon>
+    </None>
+    <None Include="Administration\AlertDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AlertDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Administration\AlertDS.xss">
+      <DependentUpon>AlertDS.xsd</DependentUpon>
+    </None>
+    <None Include="Administration\ScheduleGroupOrganizationDS.xsc">
+      <DependentUpon>ScheduleGroupOrganizationDS.xsd</DependentUpon>
+    </None>
+    <None Include="Administration\ScheduleGroupOrganizationDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScheduleGroupOrganizationDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Administration\ScheduleGroupOrganizationDS.xss">
+      <DependentUpon>ScheduleGroupOrganizationDS.xsd</DependentUpon>
+    </None>
+    <None Include="Administration\ServiceLevel30OrganizationDS.xsc">
+      <DependentUpon>ServiceLevel30OrganizationDS.xsd</DependentUpon>
+    </None>
+    <None Include="Administration\ServiceLevel30OrganizationDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ServiceLevel30OrganizationDS1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Administration\ServiceLevel30OrganizationDS.xss">
+      <DependentUpon>ServiceLevel30OrganizationDS.xsd</DependentUpon>
+    </None>
+    <None Include="Criteria\CriteriaDS.xsc">
+      <DependentUpon>CriteriaDS.xsd</DependentUpon>
+    </None>
+    <None Include="Criteria\CriteriaDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CriteriaDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Criteria\CriteriaDS.xss">
+      <DependentUpon>CriteriaDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\BulletinBoardDS.xsc">
+      <DependentUpon>BulletinBoardDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\BulletinBoardDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BulletinBoardDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dashboard\BulletinBoardDS.xss">
+      <DependentUpon>BulletinBoardDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\DashboardHelperDS.xsc">
+      <DependentUpon>DashboardHelperDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\DashboardHelperDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DashboardHelperDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dashboard\DashboardHelperDS.xss">
+      <DependentUpon>DashboardHelperDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\FamilyServiceViewDS.xsc">
+      <DependentUpon>FamilyServiceViewDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\FamilyServiceViewDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FamilyServiceViewDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dashboard\FamilyServiceViewDS.xss">
+      <DependentUpon>FamilyServiceViewDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\FsbActiveCasesDS.xsc">
+      <DependentUpon>FsbActiveCasesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\FsbActiveCasesDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FsbActiveCasesDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dashboard\FsbActiveCasesDS.xss">
+      <DependentUpon>FsbActiveCasesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\PendingCasesDS.xsc">
+      <DependentUpon>PendingCasesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\PendingCasesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PendingCasesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dashboard\PendingCasesDS.xss">
+      <DependentUpon>PendingCasesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\IncompletesDS.xsc">
+      <DependentUpon>IncompletesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\IncompletesDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IncompletesDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dashboard\IncompletesDS.xss">
+      <DependentUpon>IncompletesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\LogEventDS.xsc">
+      <DependentUpon>LogEventDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\LogEventDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LogEventDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dashboard\LogEventDS.xss">
+      <DependentUpon>LogEventDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\LogEventsLockDS.xsc">
+      <DependentUpon>LogEventsLockDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\LogEventsLockDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LogEventsLockDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dashboard\LogEventsLockDS.xss">
+      <DependentUpon>LogEventsLockDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\MessageandImportDS.xsc">
+      <DependentUpon>MessageandImportDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\MessageandImportDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MessageandImportDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dashboard\MessageandImportDS.xss">
+      <DependentUpon>MessageandImportDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\NoCallsDS.xsc">
+      <DependentUpon>NoCallsDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\NoCallsDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NoCallsDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dashboard\NoCallsDS.xss">
+      <DependentUpon>NoCallsDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\PendingEventsDS.xsc">
+      <DependentUpon>PendingEventsDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\PendingEventsDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PendingEventsDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dashboard\PendingEventsDS.xss">
+      <DependentUpon>PendingEventsDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\RecycledCasesDS.xsc">
+      <DependentUpon>RecycledCasesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\RecycledCasesDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RecycledCasesDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dashboard\RecycledCasesDS.xss">
+      <DependentUpon>RecycledCasesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\ReferralDS.xsc">
+      <DependentUpon>ReferralDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\ReferralDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReferralDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dashboard\ReferralDS.xss">
+      <DependentUpon>ReferralDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\TcssActiveCasesDS.xsc">
+      <DependentUpon>TcssActiveCasesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\TcssActiveCasesDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TcssActiveCasesDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dashboard\TcssActiveCasesDS.xss">
+      <DependentUpon>TcssActiveCasesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\UpdateDS.xsc">
+      <DependentUpon>UpdateDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\UpdateDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dashboard\UpdateDS.xss">
+      <DependentUpon>UpdateDS.xsd</DependentUpon>
+    </None>
+    <None Include="Framework\AppScreenDS.xsc">
+      <DependentUpon>AppScreenDS.xsd</DependentUpon>
+    </None>
+    <None Include="Framework\AppScreenDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AppScreenDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Framework\AppScreenDS.xss">
+      <DependentUpon>AppScreenDS.xsd</DependentUpon>
+    </None>
+    <None Include="Framework\GeneralAlertDS.xsc">
+      <DependentUpon>GeneralAlertDS.xsd</DependentUpon>
+    </None>
+    <None Include="Framework\GeneralAlertDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GeneralAlertDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Framework\GeneralAlertDS.xss">
+      <DependentUpon>GeneralAlertDS.xsd</DependentUpon>
+    </None>
+    <None Include="Framework\ListControlDS.xsc">
+      <DependentUpon>ListControlDS.xsd</DependentUpon>
+    </None>
+    <None Include="Framework\ListControlDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ListControlDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Framework\ListControlDS.xss">
+      <DependentUpon>ListControlDS.xsd</DependentUpon>
+    </None>
+    <None Include="Framework\StatEmployeeDS.xsc">
+      <DependentUpon>StatEmployeeDS.xsd</DependentUpon>
+    </None>
+    <None Include="Framework\StatEmployeeDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StatEmployeeDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Framework\StatEmployeeDS.xss">
+      <DependentUpon>StatEmployeeDS.xsd</DependentUpon>
+    </None>
+    <None Include="Framework\WebPersonDS.xsc">
+      <DependentUpon>WebPersonDS.xsd</DependentUpon>
+    </None>
+    <None Include="Framework\WebPersonDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WebPersonDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Framework\WebPersonDS.xss">
+      <DependentUpon>WebPersonDS.xsd</DependentUpon>
+    </None>
+    <None Include="NewCall\FamilyServicesDS.xsc">
+      <DependentUpon>FamilyServicesDS.xsd</DependentUpon>
+    </None>
+    <None Include="NewCall\FamilyServicesDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FamilyServicesDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="NewCall\FamilyServicesDS.xss">
+      <DependentUpon>FamilyServicesDS.xsd</DependentUpon>
+    </None>
+    <None Include="NewCall\MessageDS.xsc">
+      <DependentUpon>MessageDS.xsd</DependentUpon>
+    </None>
+    <None Include="NewCall\MessageDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MessageDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="NewCall\MessageDS.xss">
+      <DependentUpon>MessageDS.xsd</DependentUpon>
+    </None>
+    <None Include="NewCall\ReferralDS.xsc">
+      <DependentUpon>ReferralDS.xsd</DependentUpon>
+    </None>
+    <None Include="NewCall\ReferralDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReferralDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="NewCall\ReferralDS.xss">
+      <DependentUpon>ReferralDS.xsd</DependentUpon>
+    </None>
+    <None Include="NewCall\TcssDS.xsc">
+      <DependentUpon>TcssDS.xsd</DependentUpon>
+    </None>
+    <None Include="NewCall\TcssDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>TcssDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="NewCall\TcssDS.xss">
+      <DependentUpon>TcssDS.xsd</DependentUpon>
+    </None>
+    <None Include="NewCall\TcssDuplicateReferalsDS.xsc">
+      <DependentUpon>TcssDuplicateReferalsDS.xsd</DependentUpon>
+    </None>
+    <None Include="NewCall\TcssDuplicateReferalsDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TcssDuplicateReferalsDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="NewCall\TcssDuplicateReferalsDS.xss">
+      <DependentUpon>TcssDuplicateReferalsDS.xsd</DependentUpon>
+    </None>
+    <None Include="NewCall\TcssHeaderDS.xsc">
+      <DependentUpon>TcssHeaderDS.xsd</DependentUpon>
+    </None>
+    <None Include="NewCall\TcssHeaderDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TcssHeaderDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="NewCall\TcssHeaderDS.xss">
+      <DependentUpon>TcssHeaderDS.xsd</DependentUpon>
+    </None>
+    <None Include="NewCall\TcssHelperDS.xsc">
+      <DependentUpon>TcssHelperDS.xsd</DependentUpon>
+    </None>
+    <None Include="NewCall\TcssHelperDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TcssHelperDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="NewCall\TcssHelperDS.xss">
+      <DependentUpon>TcssHelperDS.xsd</DependentUpon>
+    </None>
+    <None Include="Organization\OrganizationAssociatedCallDS.xsc">
+      <DependentUpon>OrganizationAssociatedCallDS.xsd</DependentUpon>
+    </None>
+    <None Include="Organization\OrganizationAssociatedCallDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrganizationAssociatedCallDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Organization\OrganizationAssociatedCallDS.xss">
+      <DependentUpon>OrganizationAssociatedCallDS.xsd</DependentUpon>
+    </None>
+    <None Include="Organization\OrganizationDS.xsc">
+      <DependentUpon>OrganizationDS.xsd</DependentUpon>
+    </None>
+    <None Include="Organization\OrganizationDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrganizationDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Organization\OrganizationDS.xss">
+      <DependentUpon>OrganizationDS.xsd</DependentUpon>
+    </None>
+    <None Include="Organization\OrganizationSearchDS.xsc">
+      <DependentUpon>OrganizationSearchDS.xsd</DependentUpon>
+    </None>
+    <None Include="Organization\OrganizationSearchDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrganizationSearchDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Organization\OrganizationSearchDS.xss">
+      <DependentUpon>OrganizationSearchDS.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Question\QuestionDS.xsc">
+      <DependentUpon>QuestionDS.xsd</DependentUpon>
+    </None>
+    <None Include="Question\QuestionDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuestionDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Question\QuestionDS.xss">
+      <DependentUpon>QuestionDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\RecycledRestoreDS.xsc">
+      <DependentUpon>RecycledRestoreDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\RecycledRestoreDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RecycledRestoreDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dashboard\RecycledRestoreDS.xss">
+      <DependentUpon>RecycledRestoreDS.xsd</DependentUpon>
+    </None>
+    <None Include="ReferralDonorData\ReferralDonorDataDS.xsc">
+      <DependentUpon>ReferralDonorDataDS.xsd</DependentUpon>
+    </None>
+    <None Include="ReferralDonorData\ReferralDonorDataDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReferralDonorDataDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReferralDonorData\ReferralDonorDataDS.xss">
+      <DependentUpon>ReferralDonorDataDS.xsd</DependentUpon>
+    </None>
+    <None Include="RuleOutIndications\RuleOutIndicationsDS.xsc">
+      <DependentUpon>RuleOutIndicationsDS.xsd</DependentUpon>
+    </None>
+    <None Include="RuleOutIndications\RuleOutIndicationsDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RuleOutIndicationsDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RuleOutIndications\RuleOutIndicationsDS.xss">
+      <DependentUpon>RuleOutIndicationsDS.xsd</DependentUpon>
+    </None>
+    <None Include="Schedule\ScheduleDS.xsc">
+      <DependentUpon>ScheduleDS.xsd</DependentUpon>
+    </None>
+    <None Include="Schedule\ScheduleDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScheduleDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Schedule\ScheduleDS.xss">
+      <DependentUpon>ScheduleDS.xsd</DependentUpon>
+    </None>
+    <None Include="Schedule\ScheduleLogDS.xsc">
+      <DependentUpon>ScheduleLogDS.xsd</DependentUpon>
+    </None>
+    <None Include="Schedule\ScheduleLogDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScheduleLogDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Schedule\ScheduleLogDS.xss">
+      <DependentUpon>ScheduleLogDS.xsd</DependentUpon>
+    </None>
+    <None Include="ScreenConfig\ScreenConfigDS.xsc">
+      <DependentUpon>ScreenConfigDS.xsd</DependentUpon>
+    </None>
+    <None Include="ScreenConfig\ScreenConfigDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScreenConfigDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ScreenConfig\ScreenConfigDS.xss">
+      <DependentUpon>ScreenConfigDS.xsd</DependentUpon>
+    </None>
+    <None Include="Security\AuthorizationRuleProviderDS.xsc">
+      <DependentUpon>AuthorizationRuleProviderDS.xsd</DependentUpon>
+    </None>
+    <None Include="Security\AuthorizationRuleProviderDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AuthorizationRuleProviderDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Security\AuthorizationRuleProviderDS.xss">
+      <DependentUpon>AuthorizationRuleProviderDS.xsd</DependentUpon>
+    </None>
+    <None Include="SourceCode\SourceCodeDS.xsc">
+      <DependentUpon>SourceCodeDS.xsd</DependentUpon>
+    </None>
+    <None Include="SourceCode\SourceCodeDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SourceCodeDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SourceCode\SourceCodeDS.xss">
+      <DependentUpon>SourceCodeDS.xsd</DependentUpon>
+    </None>
+    <None Include="Administration\WebReportGroupOrgDS.xsc">
+      <DependentUpon>WebReportGroupOrgDS.xsd</DependentUpon>
+    </None>
+    <None Include="Administration\WebReportGroupOrgDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WebReportGroupOrgDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Administration\WebReportGroupOrgDS.xss">
+      <DependentUpon>WebReportGroupOrgDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Constant\Statline.Stattrac.Constant.csproj">
+      <Project>{71627A9C-06CA-4157-8F0D-4C68D2668424}</Project>
+      <Name>Statline.Stattrac.Constant</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\Statline.Stattrac.Framework.csproj">
+      <Project>{32AC6F34-9A54-4342-B3DE-EA64077D0C46}</Project>
+      <Name>Statline.Stattrac.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="..\..\Solution Items\Reference\CustomDictionary.xml">
+      <Link>CustomDictionary.xml</Link>
+    </CodeAnalysisDictionary>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

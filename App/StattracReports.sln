@@ -1,0 +1,115 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "StatLine.StatTrac.Reports", "Reports\StatLine.StatTrac.Reports.rptproj", "{13F8469B-CB90-46DB-9A05-F5DB513654A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2AE1BBC1-199E-4D1B-9DA0-BEB29FB3DA2F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{0CC2AA65-6275-4EAB-9140-AC29507EB2EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Production", "Production", "{1817D402-7A3F-40D1-9AB7-0505704DA589}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Configuration\Production\Statline.Stattrac.Windows.UI.exe.config = Solution Items\Configuration\Production\Statline.Stattrac.Windows.UI.exe.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dbCommandFile", "dbCommandFile", "{30E64A71-66A9-4B5C-8839-2B602F16B1AE}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\dbCommandFile\BuildSQLFile.cmd = Solution Items\dbCommandFile\BuildSQLFile.cmd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reference", "Reference", "{E7685257-157F-471B-8C23-ECF70E56CF9E}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Reference\CustomDictionary.xml = Solution Items\Reference\CustomDictionary.xml
+		Solution Items\Reference\SharedAssemblyInfo.cs = Solution Items\Reference\SharedAssemblyInfo.cs
+		Solution Items\Reference\StatLine.pfx = Solution Items\Reference\StatLine.pfx
+		Solution Items\Reference\StatTracKey.xml = Solution Items\Reference\StatTracKey.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SSRS", "SSRS", "{C37FEF4F-B8FF-4978-ACC9-32F7DA783F54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Production", "Production", "{CA6A580D-B400-4FFC-8654-7E1A0B068484}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Configuration\SSRS\Production\rsreportserver.config = Solution Items\Configuration\SSRS\Production\rsreportserver.config
+		Solution Items\Configuration\SSRS\Production\rssrvpolicy.config = Solution Items\Configuration\SSRS\Production\rssrvpolicy.config
+		Solution Items\Configuration\SSRS\Production\web.config = Solution Items\Configuration\SSRS\Production\web.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{405488D5-237B-409A-B49C-FEEA24218EE6}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Configuration\SSRS\Test\rsreportserver.config = Solution Items\Configuration\SSRS\Test\rsreportserver.config
+		Solution Items\Configuration\SSRS\Test\rssrvpolicy.config = Solution Items\Configuration\SSRS\Test\rssrvpolicy.config
+		Solution Items\Configuration\SSRS\Test\web.config = Solution Items\Configuration\SSRS\Test\web.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug BusinessRules|Any CPU = Debug BusinessRules|Any CPU
+		Debug BusinessRules|x86 = Debug BusinessRules|x86
+		Debug UI|Any CPU = Debug UI|Any CPU
+		Debug UI|x86 = Debug UI|x86
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		DebugLocal|Any CPU = DebugLocal|Any CPU
+		DebugLocal|x86 = DebugLocal|x86
+		Production|Any CPU = Production|Any CPU
+		Production|x86 = Production|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.Debug BusinessRules|Any CPU.ActiveCfg = DebugLocal
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.Debug BusinessRules|Any CPU.Build.0 = DebugLocal
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.Debug BusinessRules|Any CPU.Deploy.0 = DebugLocal
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.Debug BusinessRules|x86.ActiveCfg = DebugLocal
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.Debug BusinessRules|x86.Build.0 = DebugLocal
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.Debug BusinessRules|x86.Deploy.0 = DebugLocal
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.Debug UI|Any CPU.ActiveCfg = DebugLocal
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.Debug UI|Any CPU.Build.0 = DebugLocal
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.Debug UI|Any CPU.Deploy.0 = DebugLocal
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.Debug UI|x86.ActiveCfg = DebugLocal
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.Debug UI|x86.Build.0 = DebugLocal
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.Debug UI|x86.Deploy.0 = DebugLocal
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.Debug|Any CPU.ActiveCfg = DebugLocal
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.Debug|x86.ActiveCfg = DebugLocal
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.DebugLocal|Any CPU.ActiveCfg = DebugLocal
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.DebugLocal|Any CPU.Build.0 = DebugLocal
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.DebugLocal|Any CPU.Deploy.0 = DebugLocal
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.DebugLocal|x86.ActiveCfg = DebugLocal
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.DebugLocal|x86.Build.0 = DebugLocal
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.DebugLocal|x86.Deploy.0 = DebugLocal
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.Production|Any CPU.ActiveCfg = Production
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.Production|Any CPU.Build.0 = Production
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.Production|Any CPU.Deploy.0 = Production
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.Production|x86.ActiveCfg = Production
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.Production|x86.Build.0 = Production
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.Production|x86.Deploy.0 = Production
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.Release|Any CPU.ActiveCfg = Production
+		{13F8469B-CB90-46DB-9A05-F5DB513654A1}.Release|x86.ActiveCfg = Production
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0CC2AA65-6275-4EAB-9140-AC29507EB2EB} = {2AE1BBC1-199E-4D1B-9DA0-BEB29FB3DA2F}
+		{1817D402-7A3F-40D1-9AB7-0505704DA589} = {0CC2AA65-6275-4EAB-9140-AC29507EB2EB}
+		{30E64A71-66A9-4B5C-8839-2B602F16B1AE} = {2AE1BBC1-199E-4D1B-9DA0-BEB29FB3DA2F}
+		{E7685257-157F-471B-8C23-ECF70E56CF9E} = {2AE1BBC1-199E-4D1B-9DA0-BEB29FB3DA2F}
+		{C37FEF4F-B8FF-4978-ACC9-32F7DA783F54} = {0CC2AA65-6275-4EAB-9140-AC29507EB2EB}
+		{CA6A580D-B400-4FFC-8654-7E1A0B068484} = {C37FEF4F-B8FF-4978-ACC9-32F7DA783F54}
+		{405488D5-237B-409A-B49C-FEEA24218EE6} = {C37FEF4F-B8FF-4978-ACC9-32F7DA783F54}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D4C514A-12EC-4FC2-AFEB-70EEBA18BB95}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/Statline
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Reports\\StatLine.StatTrac.Reports.rptproj
+		SccProjectName1 = Reports
+		SccLocalPath1 = Reports
+	EndGlobalSection
+EndGlobal

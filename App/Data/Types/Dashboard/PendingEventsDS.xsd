@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PendingEventsDS" targetNamespace="http://tempuri.org/PendingEventsDS.xsd" xmlns:mstns="http://tempuri.org/PendingEventsDS.xsd" xmlns="http://tempuri.org/PendingEventsDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ReferralTestConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ReferralTestConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.Stattrac.Data.Types.Properties.Settings.GlobalReference.Default.ReferralTestConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PendingEventsDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PendingEventsDS" msprop:Generator_DataSetName="PendingEventsDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PendingList" msprop:Generator_UserTableName="PendingList" msprop:Generator_RowDeletedName="PendingListRowDeleted" msprop:Generator_RowChangedName="PendingListRowChanged" msprop:Generator_RowClassName="PendingListRow" msprop:Generator_RowChangingName="PendingListRowChanging" msprop:Generator_RowEvArgName="PendingListRowChangeEvent" msprop:Generator_RowEvHandlerName="PendingListRowChangeEventHandler" msprop:Generator_TableClassName="PendingListDataTable" msprop:Generator_TableVarName="tablePendingList" msprop:Generator_RowDeletingName="PendingListRowDeleting" msprop:Generator_TablePropName="PendingList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CallID" msdata:ReadOnly="true" msprop:Generator_UserColumnName="CallID" msprop:Generator_ColumnVarNameInTable="columnCallID" msprop:Generator_ColumnPropNameInRow="CallID" msprop:Generator_ColumnPropNameInTable="CallIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LogEventTime" msdata:ReadOnly="true" msprop:Generator_UserColumnName="LogEventTime" msprop:Generator_ColumnVarNameInTable="columnLogEventTime" msprop:Generator_ColumnPropNameInRow="LogEventTime" msprop:Generator_ColumnPropNameInTable="LogEventTimeColumn" type="xs:duration" minOccurs="0" />
+              <xs:element name="LogEventName" msprop:Generator_UserColumnName="LogEventName" msprop:Generator_ColumnVarNameInTable="columnLogEventName" msprop:Generator_ColumnPropNameInRow="LogEventName" msprop:Generator_ColumnPropNameInTable="LogEventNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LogEventOrg" msdata:ReadOnly="true" msprop:Generator_UserColumnName="LogEventOrg" msprop:Generator_ColumnVarNameInTable="columnLogEventOrg" msprop:Generator_ColumnPropNameInRow="LogEventOrg" msprop:Generator_ColumnPropNameInTable="LogEventOrgColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CreatedBy" msdata:ReadOnly="true" msprop:Generator_UserColumnName="CreatedBy" msprop:Generator_ColumnVarNameInTable="columnCreatedBy" msprop:Generator_ColumnPropNameInRow="CreatedBy" msprop:Generator_ColumnPropNameInTable="CreatedByColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="52" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Spacer" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Spacer" msprop:Generator_ColumnVarNameInTable="columnSpacer" msprop:Generator_ColumnPropNameInRow="Spacer" msprop:Generator_ColumnPropNameInTable="SpacerColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LogEventCalloutDateTime" msprop:Generator_UserColumnName="LogEventCalloutDateTime" msprop:Generator_ColumnVarNameInTable="columnLogEventCalloutDateTime" msprop:Generator_ColumnPropNameInRow="LogEventCalloutDateTime" msprop:Generator_ColumnPropNameInTable="LogEventCalloutDateTimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LogEventDateTime" msprop:Generator_UserColumnName="LogEventDateTime" msprop:Generator_ColumnVarNameInTable="columnLogEventDateTime" msprop:Generator_ColumnPropNameInRow="LogEventDateTime" msprop:Generator_ColumnPropNameInTable="LogEventDateTimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CallType" msdata:ReadOnly="true" msprop:Generator_UserColumnName="CallType" msprop:Generator_ColumnVarNameInTable="columnCallType" msprop:Generator_ColumnPropNameInRow="CallType" msprop:Generator_ColumnPropNameInTable="CallTypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LogEventTypeID" msdata:ReadOnly="true" msprop:Generator_UserColumnName="LogEventTypeID" msprop:Generator_ColumnVarNameInTable="columnLogEventTypeID" msprop:Generator_ColumnPropNameInRow="LogEventTypeID" msprop:Generator_ColumnPropNameInTable="LogEventTypeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="OrganizationID" msdata:ReadOnly="true" msprop:Generator_UserColumnName="OrganizationID" msprop:Generator_ColumnVarNameInTable="columnOrganizationID" msprop:Generator_ColumnPropNameInRow="OrganizationID" msprop:Generator_ColumnPropNameInTable="OrganizationIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="expirationminutes" msdata:ReadOnly="true" msprop:Generator_UserColumnName="expirationminutes" msprop:Generator_ColumnVarNameInTable="columnexpirationminutes" msprop:Generator_ColumnPropNameInRow="expirationminutes" msprop:Generator_ColumnPropNameInTable="expirationminutesColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="overexpirationminutes" msdata:ReadOnly="true" msprop:Generator_UserColumnName="overexpirationminutes" msprop:Generator_ColumnVarNameInTable="columnoverexpirationminutes" msprop:Generator_ColumnPropNameInRow="overexpirationminutes" msprop:Generator_ColumnPropNameInTable="overexpirationminutesColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="interval" msdata:ReadOnly="true" msprop:Generator_UserColumnName="interval" msprop:Generator_ColumnVarNameInTable="columninterval" msprop:Generator_ColumnPropNameInRow="interval" msprop:Generator_ColumnPropNameInTable="intervalColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CallLocked" msprop:Generator_UserColumnName="CallLocked" msprop:Generator_ColumnVarNameInTable="columnCallLocked" msprop:Generator_ColumnPropNameInRow="CallLocked" msprop:Generator_ColumnPropNameInTable="CallLockedColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="InQueue" msprop:Generator_UserColumnName="InQueue" msprop:Generator_ColumnVarNameInTable="columnInQueue" msprop:Generator_ColumnPropNameInRow="InQueue" msprop:Generator_ColumnPropNameInTable="InQueueColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="StatEmployeeID" msprop:Generator_UserColumnName="StatEmployeeID" msprop:Generator_ColumnPropNameInRow="StatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnStatEmployeeID" msprop:Generator_ColumnPropNameInTable="StatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="acknowledgeevalexpireminutes" msprop:Generator_UserColumnName="acknowledgeevalexpireminutes" msprop:Generator_ColumnVarNameInTable="columnacknowledgeevalexpireminutes" msprop:Generator_ColumnPropNameInRow="acknowledgeevalexpireminutes" msprop:Generator_ColumnPropNameInTable="acknowledgeevalexpireminutesColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CanOpenPopUp" msprop:Generator_UserColumnName="CanOpenPopUp" msprop:Generator_ColumnVarNameInTable="columnCanOpenPopUp" msprop:Generator_ColumnPropNameInRow="CanOpenPopUp" msprop:Generator_ColumnPropNameInTable="CanOpenPopUpColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LogEventID" msprop:Generator_UserColumnName="LogEventID" msprop:Generator_ColumnPropNameInRow="LogEventID" msprop:Generator_ColumnVarNameInTable="columnLogEventID" msprop:Generator_ColumnPropNameInTable="LogEventIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AuthorizationRuleProviderDS" targetNamespace="http://tempuri.org/AuthorizationRuleProviderDS.xsd" xmlns:mstns="http://tempuri.org/AuthorizationRuleProviderDS.xsd" xmlns="http://tempuri.org/AuthorizationRuleProviderDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="_ReferralDev2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="_ReferralDev2ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.Stattrac.Data.Types.Properties.Settings.GlobalReference.Default._ReferralDev2ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AuthorizationRuleProviderDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="AuthorizationRuleProviderDS" msprop:Generator_UserDSName="AuthorizationRuleProviderDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SecurityRule" msprop:Generator_UserTableName="SecurityRule" msprop:Generator_RowDeletedName="SecurityRuleRowDeleted" msprop:Generator_TableClassName="SecurityRuleDataTable" msprop:Generator_RowChangedName="SecurityRuleRowChanged" msprop:Generator_RowClassName="SecurityRuleRow" msprop:Generator_RowChangingName="SecurityRuleRowChanging" msprop:Generator_RowEvArgName="SecurityRuleRowChangeEvent" msprop:Generator_RowEvHandlerName="SecurityRuleRowChangeEventHandler" msprop:Generator_TablePropName="SecurityRule" msprop:Generator_TableVarName="tableSecurityRule" msprop:Generator_RowDeletingName="SecurityRuleRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SecurityRuleID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="SecurityRuleID" msprop:Generator_ColumnPropNameInRow="SecurityRuleID" msprop:Generator_ColumnVarNameInTable="columnSecurityRuleID" msprop:Generator_ColumnPropNameInTable="SecurityRuleIDColumn" type="xs:int" />
+              <xs:element name="SecurityRule" msprop:Generator_UserColumnName="SecurityRule" msprop:Generator_ColumnPropNameInRow="SecurityRule" msprop:Generator_ColumnVarNameInTable="columnSecurityRule" msprop:Generator_ColumnPropNameInTable="SecurityRuleColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expression" msprop:Generator_UserColumnName="Expression" msprop:Generator_ColumnPropNameInRow="Expression" msprop:Generator_ColumnVarNameInTable="columnExpression" msprop:Generator_ColumnPropNameInTable="ExpressionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SecurityRule" />
+      <xs:field xpath="mstns:SecurityRuleID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

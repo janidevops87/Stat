@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Statline</Authors>
+    <Description>Contains implementations of services defined in Statline.Common.Domain package as well as some DDD-related ifrastructural stuff such repository.</Description>
+    <PackageTags>DDD domain infrastructure event repository</PackageTags>
+    <Version>2.1.0</Version>
+    <PackageReleaseNotes>This release switches to .Net Core 2.1 libraries</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="4.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.5.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Statline.Common.Domain\Statline.Common.Domain.csproj" />
+    <ProjectReference Include="..\Statline.Common.Infrastructure\Statline.Common.Infrastructure.csproj" />
+    <ProjectReference Include="..\Statline.Common\Statline.Common.csproj" />
+  </ItemGroup>
+
+</Project>

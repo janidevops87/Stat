@@ -1,0 +1,20 @@
+<div>
+  <div class="row">
+    <div class="col-sm">
+      <label>Schedule Organization:</label>
+      <ng-select [(ngModel)]="model.ScheduleOrganization" id="ScheduleOrganization" name="ScheduleOrganization"
+                 [ngModelOptions]="{standalone: true}"
+                 [items]="scheduleOrganizationList" bindLabel="label"
+                 bindValue="value" [selectOnTab]="true" (change)="OrganizationChanged()"></ng-select>
+    </div>
+    <div class="col-sm">
+      <label>Schedule Group:</label>
+      <ng-select [(ngModel)]="model.ScheduleGroup" id="ScheduleGroup" name="ScheduleGroup"
+                 [ngModelOptions]="{standalone: true}"
+                 [items]="scheduleGroupList" bindLabel="label"
+                 bindValue="value" [selectOnTab]="true" (change)="addtoParameterList()"></ng-select>
+    </div>
+  </div>
+  <!-- hidden field is need to feed back to parent -->
+  <input type="hidden" id="customParameterList" />
+</div>

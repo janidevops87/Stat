@@ -1,0 +1,43 @@
+﻿@model UserViewModel
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = $"Edit user '{Model.UserName}'";
+}
+
+<h2>Edit user <b>@Model.UserName</b></h2>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-xs-7">
+            <ul class="nav nav-tabs">
+                <li class="@(Model is EditPropertiesViewModel ? "active" : "")">
+                    <a asp-action="EditProperties" asp-route-id="@Model.Id">Properties</a>
+                </li>
+                <li class="@(Model is EditClaimsViewModel ? "active" : "")">
+                    <a asp-action="EditClaims" asp-route-id="@Model.Id">Claims</a>
+                </li>
+                <li class="@(Model is EditRolesViewModel ? "active" : "")">
+                    <a asp-action="EditRoles" asp-route-id="@Model.Id">Roles</a>
+                </li>
+            </ul>
+            <br />
+            <div>
+                @RenderBody()
+            </div>
+        </div>
+        <div class="col-xs-5">
+            <vc:user-summary user-id="@Model.Id" />
+        </div>
+    </div>
+</div>
+<br />
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

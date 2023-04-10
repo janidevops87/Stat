@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Statline.StatTrac.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Statline.StatTrac.Api.Controllers.HeartbeatController.Get">
+            <summary>
+            Verifies communication between a user's computer and the server.
+            Also checks health of downstream systems and services. 
+            </summary>
+        </member>
+        <member name="T:Statline.StatTrac.Api.Controllers.LowLevel.ReferralsController">
+            <summary>Referrals Controller</summary>
+            <remarks>
+            Date/time should be provided in the round-trip format (ISO 8601).
+            Here are some examples and how they are treated by the API:
+            
+            1. Local date/time: 2017-10-25T01:00:00-07:00.
+            Here you provide date/time in your time zone, specifying time zone offset.
+            
+            2. UTC date/time: 2017-10-25T01:00:00Z.
+            No time zone offset provided, the 'Z' at the end is important.
+            The same effect has case 1 with offset 00:00.
+            
+            3. Unspecified date/time kind: 2017-10-25T01:00:00.
+            In this case, server has no idea how treat this date/time, so it will
+            fall back to its default - will treat it as date/time local to the
+            SERVER's time zone. E.g. if server machine is set up with time zone 
+            offset +03:00, full date/time it will use in our example will look like
+            2017-10-25T01:00:00+03:00, which may be quite not what you want.
+            So generally this format should be avoided.
+            </remarks>
+        </member>
+        <member name="M:Statline.StatTrac.Api.Controllers.LowLevel.ReferralsController.GetUpdatedReferrals(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Returns referrals which have been updated within specified time frame.
+            </summary>
+            <param name="from">The date/time of the oldest update.</param>
+            <param name="to">The date/time of the latest update.</param>
+            <returns>
+            A collection of referral IDs. Use <see cref="M:Statline.StatTrac.Api.Controllers.LowLevel.ReferralsController.GetReferralDetail(System.Int32)"/>
+            to get each referral details.
+            </returns>
+        </member>
+        <member name="M:Statline.StatTrac.Api.Controllers.LowLevel.ReferralsController.GetReferralsByCallDateTime(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Returns referrals that have occurred within a specified time range.
+            </summary>       
+            <param name="from">The date/time of the oldest call.</param>
+            <param name="to">The date/time of the latest call.</param>
+            <returns>
+            A collection of referral IDs. Use <see cref="M:Statline.StatTrac.Api.Controllers.LowLevel.ReferralsController.GetReferralDetail(System.Int32)"/>
+            to get each referral details.
+            </returns>
+        </member>
+        <member name="M:Statline.StatTrac.Api.Controllers.LowLevel.ReferralsController.GetReferralDetail(System.Int32)">
+            <summary>
+            Retrieves referral details.
+            </summary>
+            <param name="referralId">The ID of the referral.</param>
+            <returns>
+            A referral details object.
+            </returns>
+            <response code="200">Returns existing referral details.</response>
+            <response code="404">Referral with given ID was not found.</response>            
+        </member>
+        <member name="M:Statline.StatTrac.Api.Controllers.LowLevel.ReferralsController.FindByReferralId(System.Int32,AutoMapper.IMapper)">
+            <summary>
+            Retrieves referral.
+            </summary>
+            <param name="referralId">The ID of the referral.</param>
+            <param name="mapper">Object mapper.</param>
+            <returns>
+            A referral object.
+            </returns>
+            <response code="200">Returns existing referral details.</response>
+            <response code="404">Referral with given ID was not found.</response>            
+        </member>
+        <member name="T:Statline.StatTrac.Api.Swagger.CommonParameterDocsOperationFilter`1">
+            <summary>
+            Adds additional docs to operations which
+            have parameters of specified type. This allows to avoid
+            specifying the same lengthy comments for each action.
+            </summary>
+            <typeparam name="TParam">The type of parameter to search.</typeparam>
+            <remarks>
+            For example, if its needed to describe how date/time parameters should 
+            be formatted for all operation with such parameters, that information 
+            can be injected by this filter.
+            </remarks>
+        </member>
+        <member name="T:Statline.StatTrac.Api.Swagger.SecurityRequirementsOperationFilter">
+            <summary>
+            Translates different security policies attached to actions
+            into swagger annotations.
+            </summary>
+        </member>
+        <member name="T:Statline.StatTrac.Api.ViewModels.HighLevel.Common.ValidationMessages">
+            <summary>
+            Holds messages which need to be referenced in multiple places.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilderExtensions">
+            <summary>
+            Extensions for creating scope related authorization policies
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilderExtensions.RequireScope(Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder,System.String[])">
+            <summary>
+            Adds a policy to check for required scopes.
+            </summary>
+            <param name="builder"></param>
+            <param name="scope">List of any required scopes. The token must contain at least one of the listed scopes.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,1675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F96C15B5-53CD-4669-96D5-11E8E94044F4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Statline.Stattrac.Windows.UI</RootNamespace>
+    <AssemblyName>Statline.Stattrac.Windows.UI</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <StartupObject>Statline.Stattrac.Windows.UI.Program</StartupObject>
+    <ManifestCertificateThumbprint>0643E7434C42649E73DB9EA578FAF736653ED443</ManifestCertificateThumbprint>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\Solution Items\Reference\StatLine.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <PublishUrl>\\st-share\StatTrac.net\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Stattrac 2.0</ProductName>
+    <PublisherName>StatLine</PublisherName>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>9.6.5.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics4.Shared.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Shared.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.Misc.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.Misc.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinDataSource.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinDataSource.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinDock.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinDock.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinEditors.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinExplorerBar.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinExplorerBar.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinGrid.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinMaskedEdit.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinMaskedEdit.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinSchedule.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinSchedule.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinSpellChecker.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinSpellChecker.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinTabControl.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinToolbars.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\..\SolutionItems\Reference\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging.Database">
+      <HintPath>..\..\SolutionItems\Reference\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Solution Items\Reference\SharedAssemblyInfo.cs">
+      <Link>SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Controls\AddItemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AddItemControl.Designer.cs">
+      <DependentUpon>AddItemControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\AddItemForm.Designer.cs">
+      <DependentUpon>AddItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaApplyToMultipleGroups.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaApplyToMultipleGroups.Designer.cs">
+      <DependentUpon>CriteriaApplyToMultipleGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaAssociatedSourceCodesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaAssociatedSourceCodesControl.Designer.cs">
+      <DependentUpon>CriteriaAssociatedSourceCodesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaEditManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaEditManager.Designer.cs">
+      <DependentUpon>CriteriaEditManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaFSControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaFSControl.Designer.cs">
+      <DependentUpon>CriteriaFSControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaFSProcessorsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaFSProcessorsControl.Designer.cs">
+      <DependentUpon>CriteriaFSProcessorsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaFSUpdateAssociatedQuestionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaFSUpdateAssociatedQuestionsControl.Designer.cs">
+      <DependentUpon>CriteriaFSUpdateAssociatedQuestionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaFSUpdateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaFSUpdateControl.Designer.cs">
+      <DependentUpon>CriteriaFSUpdateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaFSUpdateCriteriaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaFSUpdateCriteriaControl.Designer.cs">
+      <DependentUpon>CriteriaFSUpdateCriteriaControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaFSUpdateQuestionConfigurationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaFSUpdateQuestionConfigurationControl.Designer.cs">
+      <DependentUpon>CriteriaFSUpdateQuestionConfigurationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaFSUpdateQuestionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaFSUpdateQuestionsControl.Designer.cs">
+      <DependentUpon>CriteriaFSUpdateQuestionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaQuestionTimingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaQuestionTimingControl.Designer.cs">
+      <DependentUpon>CriteriaQuestionTimingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaRuleOutControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaRuleOutControl.Designer.cs">
+      <DependentUpon>CriteriaRuleOutControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaTriageAssociatedQuestionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaTriageAssociatedQuestionsControl.Designer.cs">
+      <DependentUpon>CriteriaTriageAssociatedQuestionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaTriageCriteriaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaTriageCriteriaControl.Designer.cs">
+      <DependentUpon>CriteriaTriageCriteriaControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaTriageQuestionConfigurationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaTriageQuestionConfigurationControl.Designer.cs">
+      <DependentUpon>CriteriaTriageQuestionConfigurationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaTriageQuestionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Criteria\CriteriaTriageQuestionsControl.Designer.cs">
+      <DependentUpon>CriteriaTriageQuestionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Question\QuestionConfigurationQuestionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Question\QuestionConfigurationQuestionsControl.Designer.cs">
+      <DependentUpon>QuestionConfigurationQuestionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Question\QuestionAddEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Question\QuestionAddEditControl.Designer.cs">
+      <DependentUpon>QuestionAddEditControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Question\QuestionConfigurationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Question\QuestionConfigurationControl.Designer.cs">
+      <DependentUpon>QuestionConfigurationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Question\QuestionConfigurationEventLogControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Question\QuestionConfigurationEventLogControl.Designer.cs">
+      <DependentUpon>QuestionConfigurationEventLogControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Question\QuestionConfigurationRefTypeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Question\QuestionConfigurationRefTypeControl.Designer.cs">
+      <DependentUpon>QuestionConfigurationRefTypeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Question\QuestionConfigurationUpdateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Question\QuestionConfigurationUpdateControl.Designer.cs">
+      <DependentUpon>QuestionConfigurationUpdateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Question\QuestionDetailsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Question\QuestionDetailsControl.Designer.cs">
+      <DependentUpon>QuestionDetailsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Question\QuestionGroupsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Question\QuestionGroupsControl.Designer.cs">
+      <DependentUpon>QuestionGroupsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Question\QuestionMultiGroupsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Question\QuestionMultiGroupsControl.Designer.cs">
+      <DependentUpon>QuestionMultiGroupsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Question\QuestionNavigation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Question\QuestionNavigation.Designer.cs">
+      <DependentUpon>QuestionNavigation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\Question\QuestionAssociatedControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\Question\QuestionAssociatedControl.Designer.cs">
+      <DependentUpon>QuestionAssociatedControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\RuleOutIndications\RuleOutIndicationsAddEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\RuleOutIndications\RuleOutIndicationsAddEditControl.Designer.cs">
+      <DependentUpon>RuleOutIndicationsAddEditControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\RuleOutIndications\RuleOutIndicationsNavigation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\RuleOutIndications\RuleOutIndicationsNavigation.Designer.cs">
+      <DependentUpon>RuleOutIndicationsNavigation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\RuleOutIndications\RuleOutIndicationsDetailControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\RuleOutIndications\RuleOutIndicationsDetailControl.Designer.cs">
+      <DependentUpon>RuleOutIndicationsDetailControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\ApplyScreenConfigControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\ApplyScreenConfigControl.Designer.cs">
+      <DependentUpon>ApplyScreenConfigControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\AssociatedSourceCodeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\AssociatedSourceCodeControl.Designer.cs">
+      <DependentUpon>AssociatedSourceCodeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\AuthorizationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\AuthorizationControl.Designer.cs">
+      <DependentUpon>AuthorizationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\ContactInformationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\ContactInformationControl.Designer.cs">
+      <DependentUpon>ContactInformationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\CoronerMEControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\CoronerMEControl.Designer.cs">
+      <DependentUpon>CoronerMEControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\FamilyServicesNavigation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\FamilyServicesNavigation.Designer.cs">
+      <DependentUpon>FamilyServicesNavigation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\FSBodyCareControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\FSBodyCareControl.Designer.cs">
+      <DependentUpon>FSBodyCareControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\FSCaseManagementControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\FSCaseManagementControl.Designer.cs">
+      <DependentUpon>FSCaseManagementControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\FSCoronerMEAutopsyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\FSCoronerMEAutopsyControl.Designer.cs">
+      <DependentUpon>FSCoronerMEAutopsyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\FSHPControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\FSHPControl.Designer.cs">
+      <DependentUpon>FSHPControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\FSNextofKinControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\FSNextofKinControl.Designer.cs">
+      <DependentUpon>FSNextofKinControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\OtherEventLogControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\OtherEventLogControl.Designer.cs">
+      <DependentUpon>OtherEventLogControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\ReferralEventLogControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\ReferralEventLogControl.Designer.cs">
+      <DependentUpon>ReferralEventLogControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\FuneralHomeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\FuneralHomeControl.Designer.cs">
+      <DependentUpon>FuneralHomeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\ImportOfferControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\ImportOfferControl.Designer.cs">
+      <DependentUpon>ImportOfferControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\MedicalHistoryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\MedicalHistoryControl.Designer.cs">
+      <DependentUpon>MedicalHistoryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\MessageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\MessageControl.Designer.cs">
+      <DependentUpon>MessageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\MoreDataControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\MoreDataControl.Designer.cs">
+      <DependentUpon>MoreDataControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\NextofKinControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\NextofKinControl.Designer.cs">
+      <DependentUpon>NextofKinControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\OverallDispoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\OverallDispoControl.Designer.cs">
+      <DependentUpon>OverallDispoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\PatientInformationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\PatientInformationControl.Designer.cs">
+      <DependentUpon>PatientInformationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\RegistryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\RegistryControl.Designer.cs">
+      <DependentUpon>RegistryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\ScreenConfigNavigation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\ScreenConfigNavigation.Designer.cs">
+      <DependentUpon>ScreenConfigNavigation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\TCSSControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\TCSSControl.Designer.cs">
+      <DependentUpon>TCSSControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\UpdateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Administration\ScreenConfig\UpdateControl.Designer.cs">
+      <DependentUpon>UpdateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DashboardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DashboardControl.Designer.cs">
+      <DependentUpon>DashboardControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dashboard\DeleteCasesPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Dashboard\DeleteCasesPopUp.Designer.cs">
+      <DependentUpon>DeleteCasesPopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dashboard\FamilyServiceViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dashboard\FamilyServiceViewControl.Designer.cs">
+      <DependentUpon>FamilyServiceViewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dashboard\PendingEventsPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Dashboard\PendingEventsPopUp.Designer.cs">
+      <DependentUpon>PendingEventsPopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dashboard\MainControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dashboard\MainControl.Designer.cs">
+      <DependentUpon>MainControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dashboard\FamilyServiceActiveCaseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dashboard\FamilyServiceActiveCaseControl.Designer.cs">
+      <DependentUpon>FamilyServiceActiveCaseControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dashboard\MessageandImportControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dashboard\MessageandImportControl.Designer.cs">
+      <DependentUpon>MessageandImportControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dashboard\NoCallsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dashboard\NoCallsControl.Designer.cs">
+      <DependentUpon>NoCallsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dashboard\RecycledCasesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dashboard\RecycledCasesControl.Designer.cs">
+      <DependentUpon>RecycledCasesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dashboard\ReferralsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dashboard\ReferralsControl.Designer.cs">
+      <DependentUpon>ReferralsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dashboard\RestoreCasesPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Dashboard\RestoreCasesPopUp.Designer.cs">
+      <DependentUpon>RestoreCasesPopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dashboard\RestoreMessagesPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Dashboard\RestoreMessagesPopUp.Designer.cs">
+      <DependentUpon>RestoreMessagesPopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dashboard\RestoreOASISPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Dashboard\RestoreOASISPopUp.Designer.cs">
+      <DependentUpon>RestoreOASISPopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dashboard\TcssActiveCasesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dashboard\TcssActiveCasesControl.Designer.cs">
+      <DependentUpon>TcssActiveCasesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dashboard\UpdateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dashboard\UpdateControl.Designer.cs">
+      <DependentUpon>UpdateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewCall\FamilyServices\CaseStatusControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NewCall\FamilyServices\CaseStatusControl.Designer.cs">
+      <DependentUpon>CaseStatusControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewCall\FamilyServices\FamilyServicesManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NewCall\FamilyServices\FamilyServicesManager.Designer.cs">
+      <DependentUpon>FamilyServicesManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\AbgVentSettingsDetailsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\AbgVentSettingsDetailsControl.designer.cs">
+      <DependentUpon>AbgVentSettingsDetailsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\ContactInformationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\ContactInformationControl.designer.cs">
+      <DependentUpon>ContactInformationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\DiagnosticsDetailsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\DiagnosticsDetailsControl.designer.cs">
+      <DependentUpon>DiagnosticsDetailsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\DiagnosticsSummaryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\DiagnosticsSummaryControl.designer.cs">
+      <DependentUpon>DiagnosticsSummaryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\DonorCardStatusAssocControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\DonorCardStatusAssocControl.designer.cs">
+      <DependentUpon>DonorCardStatusAssocControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\DonorRecipientHlaInformationDetailsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\DonorRecipientHlaInformationDetailsControl.designer.cs">
+      <DependentUpon>DonorRecipientHlaInformationDetailsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\DonorRecipientHlaInformationSummaryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\DonorRecipientHlaInformationSummaryControl.designer.cs">
+      <DependentUpon>DonorRecipientHlaInformationSummaryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\DuplicateReferalsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\DuplicateReferalsForm.designer.cs">
+      <DependentUpon>DuplicateReferalsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\FluidsBloodDetailsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\FluidsBloodDetailsControl.designer.cs">
+      <DependentUpon>FluidsBloodDetailsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\ImportDonorCardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\ImportDonorCardControl.designer.cs">
+      <DependentUpon>ImportDonorCardControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\LabProfileDetailsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\LabProfileDetailsControl.designer.cs">
+      <DependentUpon>LabProfileDetailsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\LabProfileSummaryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\LabProfileSummaryControl.designer.cs">
+      <DependentUpon>LabProfileSummaryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\MedicalSocialHistoryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\MedicalSocialHistoryControl.designer.cs">
+      <DependentUpon>MedicalSocialHistoryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\OfferInformationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\OfferInformationControl.designer.cs">
+      <DependentUpon>OfferInformationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\SerologiesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\SerologiesControl.designer.cs">
+      <DependentUpon>SerologiesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\TcssManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\TcssManager.designer.cs">
+      <DependentUpon>TcssManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\TestDiagnosesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\TestDiagnosesControl.designer.cs">
+      <DependentUpon>TestDiagnosesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\UrinalysisCulturesDetailsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\UrinalysisCulturesDetailsControl.designer.cs">
+      <DependentUpon>UrinalysisCulturesDetailsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\VitalSignsDetailsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\VitalSignsDetailsControl.designer.cs">
+      <DependentUpon>VitalSignsDetailsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\VitalSignsSummaryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NewCall\Tcss\VitalSignsSummaryControl.designer.cs">
+      <DependentUpon>VitalSignsSummaryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InFormPrompt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InFormPrompt.Designer.cs">
+      <DependentUpon>InFormPrompt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Header\TcssHeader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Header\TcssHeader.Designer.cs">
+      <DependentUpon>TcssHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogOnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogOnForm.Designer.cs">
+      <DependentUpon>LogOnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Header\MainHeader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Header\MainHeader.Designer.cs">
+      <DependentUpon>MainHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecureForm.Designer.cs">
+      <DependentUpon>SecureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Header\HeaderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Header\HeaderControl.Designer.cs">
+      <DependentUpon>HeaderControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Telemetry.cs" />
+    <EmbeddedResource Include="Header\MainHeader.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainHeader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Header\HeaderControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeaderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+      <TransformOnBuild>true</TransformOnBuild>
+    </None>
+    <None Include="App.Debug.config">
+      <DependentUpon>App.config</DependentUpon>
+      <IsTransformFile>true</IsTransformFile>
+    </None>
+    <None Include="App.Release.config">
+      <DependentUpon>App.config</DependentUpon>
+      <IsTransformFile>true</IsTransformFile>
+    </None>
+    <None Include="ApplicationInsights.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\AddItemControl.resx">
+      <DependentUpon>AddItemControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AddItemForm.resx">
+      <DependentUpon>AddItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Criteria\CriteriaAssociatedSourceCodesControl.resx">
+      <DependentUpon>CriteriaAssociatedSourceCodesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Criteria\CriteriaEditManager.resx">
+      <DependentUpon>CriteriaEditManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Criteria\CriteriaFSControl.resx">
+      <DependentUpon>CriteriaFSControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Criteria\CriteriaFSProcessorsControl.resx">
+      <DependentUpon>CriteriaFSProcessorsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Criteria\CriteriaFSUpdateAssociatedQuestionsControl.resx">
+      <DependentUpon>CriteriaFSUpdateAssociatedQuestionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Criteria\CriteriaFSUpdateControl.resx">
+      <DependentUpon>CriteriaFSUpdateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Criteria\CriteriaFSUpdateCriteriaControl.resx">
+      <DependentUpon>CriteriaFSUpdateCriteriaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Criteria\CriteriaFSUpdateQuestionConfigurationControl.resx">
+      <DependentUpon>CriteriaFSUpdateQuestionConfigurationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Criteria\CriteriaFSUpdateQuestionsControl.resx">
+      <DependentUpon>CriteriaFSUpdateQuestionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Criteria\CriteriaQuestionTimingControl.resx">
+      <DependentUpon>CriteriaQuestionTimingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Criteria\CriteriaRuleOutControl.resx">
+      <DependentUpon>CriteriaRuleOutControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Criteria\CriteriaTriageAssociatedQuestionsControl.resx">
+      <DependentUpon>CriteriaTriageAssociatedQuestionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Criteria\CriteriaTriageCriteriaControl.resx">
+      <DependentUpon>CriteriaTriageCriteriaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Criteria\CriteriaTriageQuestionConfigurationControl.resx">
+      <DependentUpon>CriteriaTriageQuestionConfigurationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Criteria\CriteriaTriageQuestionsControl.resx">
+      <DependentUpon>CriteriaTriageQuestionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Question\QuestionConfigurationQuestionsControl.resx">
+      <DependentUpon>QuestionConfigurationQuestionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Question\QuestionAddEditControl.resx">
+      <DependentUpon>QuestionAddEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Question\QuestionConfigurationControl.resx">
+      <DependentUpon>QuestionConfigurationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Question\QuestionConfigurationEventLogControl.resx">
+      <DependentUpon>QuestionConfigurationEventLogControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Question\QuestionConfigurationRefTypeControl.resx">
+      <DependentUpon>QuestionConfigurationRefTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Question\QuestionConfigurationUpdateControl.resx">
+      <DependentUpon>QuestionConfigurationUpdateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Question\QuestionDetailsControl.resx">
+      <DependentUpon>QuestionDetailsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Question\QuestionGroupsControl.resx">
+      <DependentUpon>QuestionGroupsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Question\QuestionMultiGroupsControl.resx">
+      <DependentUpon>QuestionMultiGroupsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Question\QuestionNavigation.resx">
+      <DependentUpon>QuestionNavigation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\Question\QuestionAssociatedControl.resx">
+      <DependentUpon>QuestionAssociatedControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\RuleOutIndications\RuleOutIndicationsAddEditControl.resx">
+      <DependentUpon>RuleOutIndicationsAddEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\RuleOutIndications\RuleOutIndicationsNavigation.resx">
+      <DependentUpon>RuleOutIndicationsNavigation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\RuleOutIndications\RuleOutIndicationsDetailControl.resx">
+      <DependentUpon>RuleOutIndicationsDetailControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\ApplyScreenConfigControl.resx">
+      <DependentUpon>ApplyScreenConfigControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\AssociatedSourceCodeControl.resx">
+      <DependentUpon>AssociatedSourceCodeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\AuthorizationControl.resx">
+      <DependentUpon>AuthorizationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\ContactInformationControl.resx">
+      <DependentUpon>ContactInformationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\CoronerMEControl.resx">
+      <DependentUpon>CoronerMEControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\FamilyServicesNavigation.resx">
+      <DependentUpon>FamilyServicesNavigation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\FSBodyCareControl.resx">
+      <DependentUpon>FSBodyCareControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\FSCaseManagementControl.resx">
+      <DependentUpon>FSCaseManagementControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\FSCoronerMEAutopsyControl.resx">
+      <DependentUpon>FSCoronerMEAutopsyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\FSHPControl.resx">
+      <DependentUpon>FSHPControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\FSNextofKinControl.resx">
+      <DependentUpon>FSNextofKinControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\ImportOfferControl.resx">
+      <DependentUpon>ImportOfferControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\MessageControl.resx">
+      <DependentUpon>MessageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\OtherEventLogControl.resx">
+      <DependentUpon>OtherEventLogControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\ReferralEventLogControl.resx">
+      <DependentUpon>ReferralEventLogControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\FuneralHomeControl.resx">
+      <DependentUpon>FuneralHomeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\MedicalHistoryControl.resx">
+      <DependentUpon>MedicalHistoryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\MoreDataControl.resx">
+      <DependentUpon>MoreDataControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\NextofKinControl.resx">
+      <DependentUpon>NextofKinControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\OverallDispoControl.resx">
+      <DependentUpon>OverallDispoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\PatientInformationControl.resx">
+      <DependentUpon>PatientInformationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\RegistryControl.resx">
+      <DependentUpon>RegistryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\ScreenConfigNavigation.resx">
+      <DependentUpon>ScreenConfigNavigation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\TCSSControl.resx">
+      <DependentUpon>TCSSControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Administration\ScreenConfig\UpdateControl.resx">
+      <DependentUpon>UpdateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DashboardControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DashboardControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dashboard\DeleteCasesPopUp.resx">
+      <DependentUpon>DeleteCasesPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dashboard\FamilyServiceViewControl.resx">
+      <DependentUpon>FamilyServiceViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dashboard\PendingEventsPopUp.resx">
+      <DependentUpon>PendingEventsPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dashboard\MainControl.resx">
+      <DependentUpon>MainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dashboard\FamilyServiceActiveCaseControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FamilyServiceActiveCaseControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dashboard\MessageandImportControl.resx">
+      <DependentUpon>MessageandImportControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dashboard\NoCallsControl.resx">
+      <DependentUpon>NoCallsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dashboard\RecycledCasesControl.resx">
+      <DependentUpon>RecycledCasesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dashboard\ReferralsControl.resx">
+      <DependentUpon>ReferralsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dashboard\RestoreCasesPopUp.resx">
+      <DependentUpon>RestoreCasesPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dashboard\RestoreMessagesPopUp.resx">
+      <DependentUpon>RestoreMessagesPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dashboard\RestoreOASISPopUp.resx">
+      <DependentUpon>RestoreOASISPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dashboard\TcssActiveCasesControl.resx">
+      <DependentUpon>TcssActiveCasesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dashboard\UpdateControl.resx">
+      <DependentUpon>UpdateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewCall\FamilyServices\CaseStatusControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CaseStatusControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewCall\FamilyServices\FamilyServicesManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FamilyServicesManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewCall\Tcss\AbgVentSettingsDetailsControl.resx">
+      <DependentUpon>AbgVentSettingsDetailsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewCall\Tcss\ContactInformationControl.resx">
+      <DependentUpon>ContactInformationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewCall\Tcss\DiagnosticsDetailsControl.resx">
+      <DependentUpon>DiagnosticsDetailsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewCall\Tcss\DiagnosticsSummaryControl.resx">
+      <DependentUpon>DiagnosticsSummaryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewCall\Tcss\DonorCardStatusAssocControl.resx">
+      <DependentUpon>DonorCardStatusAssocControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewCall\Tcss\DonorRecipientHlaInformationDetailsControl.resx">
+      <DependentUpon>DonorRecipientHlaInformationDetailsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewCall\Tcss\DonorRecipientHlaInformationSummaryControl.resx">
+      <DependentUpon>DonorRecipientHlaInformationSummaryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewCall\Tcss\DuplicateReferalsForm.resx">
+      <DependentUpon>DuplicateReferalsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewCall\Tcss\FluidsBloodDetailsControl.resx">
+      <DependentUpon>FluidsBloodDetailsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewCall\Tcss\ImportDonorCardControl.resx">
+      <DependentUpon>ImportDonorCardControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewCall\Tcss\LabProfileDetailsControl.resx">
+      <DependentUpon>LabProfileDetailsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewCall\Tcss\LabProfileSummaryControl.resx">
+      <DependentUpon>LabProfileSummaryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewCall\Tcss\MedicalSocialHistoryControl.resx">
+      <DependentUpon>MedicalSocialHistoryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewCall\Tcss\OfferInformationControl.resx">
+      <DependentUpon>OfferInformationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewCall\Tcss\SerologiesControl.resx">
+      <DependentUpon>SerologiesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewCall\Tcss\TcssManager.resx">
+      <DependentUpon>TcssManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewCall\Tcss\TestDiagnosesControl.resx">
+      <DependentUpon>TestDiagnosesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewCall\Tcss\UrinalysisCulturesDetailsControl.resx">
+      <DependentUpon>UrinalysisCulturesDetailsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewCall\Tcss\VitalSignsDetailsControl.resx">
+      <DependentUpon>VitalSignsDetailsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewCall\Tcss\VitalSignsSummaryControl.resx">
+      <DependentUpon>VitalSignsSummaryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Header\TcssHeader.resx">
+      <DependentUpon>TcssHeader.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="Images\Q.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Search.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="InFormPrompt.resx">
+      <DependentUpon>InFormPrompt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogOnForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LogOnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecureForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SecureForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="..\..\Solution Items\Reference\CustomDictionary.xml">
+      <Link>CustomDictionary.xml</Link>
+    </CodeAnalysisDictionary>
+    <Content Include="..\..\Solution Items\Reference\StatTracKey.xml">
+      <Link>StatTracKey.xml</Link>
+    </Content>
+    <Content Include="Images\chili-pepper5.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\chili-pepper9.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\company-icon.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\disaster-icon.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\help-icon.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\lock-icon.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\lungs.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\notepad 21.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\organization.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\phone-icon.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Phone.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\phone2-icon.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\printer.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Q.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\search-icon.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Stattrac.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Stattrac.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\status0.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\status1.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\status2.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\status3.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\text_data-icon.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\user-comment-icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\warning-icon.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Styles\Blank.xml" />
+    <Content Include="Styles\GridAddEditSearch.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Properties\DataSources\Statline.Stattrac.Data.Types.Dashboard.FamilyServiceViewDS.datasource" />
+    <None Include="Properties\DataSources\Statline.Stattrac.Data.Types.Dashboard.RecycledRestoreDS.datasource" />
+    <None Include="Resources\lungs.bmp" />
+    <Content Include="Styles\CustomDictionary.dict">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Styles\GridReadOnly.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Styles\GridEditOnly.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Styles\GridAddEdit.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Styles\GridSearch.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Styles\GridVerticalAddEdit.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Styles\GridVerticalEditOnly.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Styles\GridVerticalReadOnly.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Infragistics2.Shared.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.Misc.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinDataSource.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinDataSource.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinDock.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinDock.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinEditors.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinExplorerBar.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinExplorerBar.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinGrid.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinListView.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinListView.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinMaskedEdit.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinMaskedEdit.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinSchedule.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinSpellChecker.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinSpellChecker.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinStatusBar.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinStatusBar.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinTabControl.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinToolbars.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Styles\Blank.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Styles\GridAddEdit.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Styles\GridAddEditSearch.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Styles\GridEditOnly.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Styles\GridReadOnly.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Styles\GridSearch.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Styles\GridVerticalAddEdit.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Styles\GridVerticalEditOnly.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Styles\GridVerticalReadOnly.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BusinessRules\Statline.Stattrac.BusinessRules.csproj">
+      <Project>{e02cddb9-b7fa-4abe-b957-8f7f08668211}</Project>
+      <Name>Statline.Stattrac.BusinessRules</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\Statline.Stattrac.Common.csproj">
+      <Project>{626a7991-a1f9-4f2d-b8e4-3ea411d60814}</Project>
+      <Name>Statline.Stattrac.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Constant\Statline.Stattrac.Constant.csproj">
+      <Project>{71627a9c-06ca-4157-8f0d-4c68d2668424}</Project>
+      <Name>Statline.Stattrac.Constant</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\Types\Statline.Stattrac.Data.Types.csproj">
+      <Project>{c2d6efbe-279f-42b1-b0bc-f2862693ecd9}</Project>
+      <Name>Statline.Stattrac.Data.Types</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\Statline.Stattrac.Framework.csproj">
+      <Project>{32ac6f34-9a54-4342-b3de-ea64077d0c46}</Project>
+      <Name>Statline.Stattrac.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Security\Statline.Stattrac.Security.csproj">
+      <Project>{2a224ce9-c53e-480f-b7fc-675efbe187b0}</Project>
+      <Name>Statline.Stattrac.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpUIMap\Statline.Stattrac.Windows.CSharpUIMap.csproj">
+      <Project>{5990e464-6eb4-4b7f-a67d-c3c8df12d97e}</Project>
+      <Name>Statline.Stattrac.Windows.CSharpUIMap</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Statline.Stattrac.Windows.csproj">
+      <Project>{2501a2e5-de77-4767-b84f-7c2788cb4f9d}</Project>
+      <Name>Statline.Stattrac.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VBUIMap\Statline.Stattrac.Windows.VBUIMap.csproj">
+      <Project>{05cb08c8-4472-4528-859d-acf86ee9cc3d}</Project>
+      <Name>Statline.Stattrac.Windows.VBUIMap</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel">
+      <Version>2.14.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.SlowCheetah">
+      <Version>3.2.26</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

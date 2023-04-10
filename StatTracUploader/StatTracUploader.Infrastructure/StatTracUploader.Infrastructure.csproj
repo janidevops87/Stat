@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Statline.StatTracUploader.Infrastructure</AssemblyName>
+    <RootNamespace>Statline.StatTracUploader.Infrastructure</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- 
+    Cosmos DB persistence implementation remains in the code base, but
+    compilation is disabled to remove dependency on Cosmos DB package 
+    and transitive dependencies.
+    -->
+    <Compile Remove="Persistence\Ef\CosmosDb\*.*" />
+    <None Include="Persistence\Ef\CosmosDb\*.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.12.1" />
+    <PackageReference Include="IdentityModel" Version="5.0.1" />
+    <PackageReference Include="IdentityModel.AspNetCore" Version="3.0.0" />
+    <PackageReference Include="MailKit" Version="2.10.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="5.0.0" />
+    <PackageReference Include="Statline.Common" Version="1.0.10" />
+    <PackageReference Include="Statline.Common.Configuration.Email" Version="3.1.1" />
+    <PackageReference Include="Statline.Common.Infrastructure.Networking" Version="3.2.2" />
+    <PackageReference Include="Statline.Extensions.Configuration.Database.SqlServer" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StatTracUploader.App\StatTracUploader.App.csproj" />
+  </ItemGroup>
+
+</Project>

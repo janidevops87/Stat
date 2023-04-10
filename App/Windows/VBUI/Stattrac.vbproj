@@ -1,0 +1,1365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
+    <ProjectType>Local</ProjectType>
+    <MyType>Windows</MyType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3061B709-14AF-42DE-A9D6-212606C5FF51}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>Stattrac</AssemblyName>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <AssemblyMajorVersion>8</AssemblyMajorVersion>
+    <AssemblyMinorVersion>4</AssemblyMinorVersion>
+    <AssemblyRevisionNumber>8</AssemblyRevisionNumber>
+    <GenerateRevisionNumber>False</GenerateRevisionNumber>
+    <AssemblyCompanyName>Statline</AssemblyCompanyName>
+    <StartWithIE>False</StartWithIE>
+    <ApplicationIcon>Stattrac.ico</ApplicationIcon>
+    <RootNamespace>Stattrac</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <ManifestCertificateThumbprint>2E5AC8E839B9278A8CCBB39DDF7A474DF26F9070</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Stattrac_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\Solution Items\Reference\StatLine.snk</AssemblyOriginatorKeyFile>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <LangVersion>latest</LangVersion>
+    <PublishUrl>\\st-file\StatTrac.net\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>StatTrac</ProductName>
+    <PublisherName>Statline, A Division of MTF</PublisherName>
+    <MinimumRequiredVersion>8.5.0.6</MinimumRequiredVersion>
+    <TrustUrlParameters>true</TrustUrlParameters>
+    <ApplicationRevision>145</ApplicationRevision>
+    <ApplicationVersion>9.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>.\bin\</OutputPath>
+    <DocumentationFile>Stattrac.xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DefineDebug>True</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win32=True</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>41998,41999,42004,42016,42017,42018,42019,42020,42021,42022,42024,42025,42026,42029,42030,42031,42032,42036,42099,42104,42105,42106,42107,42108,42109,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <WarningLevel>0</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>.\bin\</OutputPath>
+    <DocumentationFile>Stattrac.xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DefineDebug>False</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win32=True</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>41998,41999,42004,42016,42017,42018,42019,42020,42021,42022,42024,42025,42026,42029,42030,42031,42032,42036,42099,42104,42105,42106,42107,42108,42109,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <WarningLevel>0</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>Win32=True</DefineConstants>
+    <DocumentationFile>Stattrac.xml</DocumentationFile>
+    <WarningLevel>0</WarningLevel>
+    <NoWarn>41998,41999,42004,42016,42017,42018,42019,42020,42021,42022,42024,42025,42026,42029,42030,42031,42032,42036,42099,42104,42105,42106,42107,42108,42109,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>Win32=True</DefineConstants>
+    <DocumentationFile>Stattrac.xml</DocumentationFile>
+    <WarningLevel>0</WarningLevel>
+    <NoWarn>41998,41999,42004,42016,42017,42018,42019,42020,42021,42022,42024,42025,42026,42029,42030,42031,42032,42036,42099,42104,42105,42106,42107,42108,42109,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="AxInterop.MSComCtl2, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d836d80d63eed852, processorArchitecture=MSIL" />
+    <Reference Include="AxInterop.MSFlexGridLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d836d80d63eed852, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ApplicationResources\AxInterop.MSFlexGridLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.PVDataTable5, Version=6.0.0.0, Culture=neutral, PublicKeyToken=d836d80d63eed852, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ApplicationResources\AxInterop.PVDataTable5.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.SSDataWidgets_B, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d836d80d63eed852, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ApplicationResources\AxInterop.SSDataWidgets_B.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Shared.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.Misc.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.Misc.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinDataSource.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinDataSource.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinDock.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinDock.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinEditors.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinExplorerBar.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinExplorerBar.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinGrid.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinMaskedEdit.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinMaskedEdit.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinSchedule.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinSchedule.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinSpellChecker.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinSpellChecker.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinTabControl.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinToolbars.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.MSComCtl2, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ApplicationResources\Interop.MSComCtl2.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.MSFlexGridLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d836d80d63eed852, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ApplicationResources\Interop.MSFlexGridLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.PVDataTable5, Version=6.0.0.0, Culture=neutral, PublicKeyToken=d836d80d63eed852, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ApplicationResources\Interop.PVDataTable5.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.SHDocVw, Version=1.1.0.0, Culture=neutral, PublicKeyToken=d836d80d63eed852, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\BusinessRules\obj\x86\Debug\Interop.SHDocVw.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.SSDataWidgets_B, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d836d80d63eed852, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ApplicationResources\Interop.SSDataWidgets_B.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility">
+      <Name>Microsoft.VisualBasic.Compatibility</Name>
+    </Reference>
+    <Reference Include="msdatasrc, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>ApplicationResources\msdatasrc.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="ADODB" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.Compatibility" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdoDbRecordsetExtensions.vb" />
+    <Compile Include="AppMain.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Array2.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="BaseFormReferralData.Designer.vb">
+      <DependentUpon>BaseFormReferralData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseFormReferralData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckRegistryMode.vb" />
+    <Compile Include="CInternetHTTP.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsAlphaPage.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsCall.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsError.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsGeneralAlert.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsOrganization.vb" />
+    <Compile Include="clsReferralSecondary.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsRotation.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsRTF.vb" />
+    <Compile Include="clsServiceLevel.vb" />
+    <Compile Include="clsSourceCode.vb" />
+    <Compile Include="colGeneralAlerts.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="colOrganizations.vb" />
+    <Compile Include="colRotation.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="colSourceCodes.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Control.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Conv.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ctlItemList.Designer.vb">
+      <DependentUpon>ctlItemList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlItemList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlItemListArray.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CtlSecondaryDisposition.Designer.vb">
+      <DependentUpon>CtlSecondaryDisposition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CtlSecondaryDisposition.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataSourceLookup\DataSourceInfoExtensions.vb" />
+    <Compile Include="FrmCustomMessageBox.Designer.vb">
+      <DependentUpon>FrmCustomMessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCustomMessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIServices\Donor\Search\DonorRegistrySearchStatus.vb" />
+    <Compile Include="UIServices\Donor\Search\DonorRegistryTypeSelection.vb" />
+    <Compile Include="Services\Donor\DatabaseDonorServiceConfigurationProvider.vb" />
+    <Compile Include="Services\Donor\DonorServiceExtensions.vb" />
+    <Compile Include="DataSourceLookup\DatabaseDataSourceLookup.vb" />
+    <Compile Include="Services\Donor\DonorServiceFactory.vb" />
+    <Compile Include="Services\Donor\LoggingServiceConfigurationProviderDecorator.vb" />
+    <Compile Include="File.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FrmAbout.Designer.vb">
+      <DependentUpon>FrmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlert.Designer.vb">
+      <DependentUpon>FrmAlert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAlert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlertGroup.Designer.vb">
+      <DependentUpon>FrmAlertGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAlertGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlphaMsg.Designer.vb">
+      <DependentUpon>FrmAlphaMsg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAlphaMsg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAuthenticate.Designer.vb">
+      <DependentUpon>FrmAuthenticate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAuthenticate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCauseOfDeath.Designer.vb">
+      <DependentUpon>FrmCauseOfDeath.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCauseOfDeath.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmColorKey.Designer.vb">
+      <DependentUpon>FrmColorKey.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmColorKey.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConditional.Designer.vb">
+      <DependentUpon>FrmConditional.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConditional.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsentInterval.Designer.vb">
+      <DependentUpon>FrmConsentInterval.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsentInterval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCounty.Designer.vb">
+      <DependentUpon>FrmCounty.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCounty.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCriteria.Designer.vb">
+      <DependentUpon>FrmCriteria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCriteria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCriteriaGroup.Designer.vb">
+      <DependentUpon>FrmCriteriaGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCriteriaGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCriteriaTemplate.Designer.vb">
+      <DependentUpon>FrmCriteriaTemplate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCriteriaTemplate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCustom1.Designer.vb">
+      <DependentUpon>FrmCustom1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCustom1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDCDPotential.Designer.vb">
+      <DependentUpon>FrmDCDPotential.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDCDPotential.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDictionaryItem.Designer.vb">
+      <DependentUpon>FrmDictionaryItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDictionaryItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDictionaryItemSelect.Designer.vb">
+      <DependentUpon>FrmDictionaryItemSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDictionaryItemSelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDonorIntent.Designer.vb">
+      <DependentUpon>FrmDonorIntent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDonorIntent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDonorIntentFax.Designer.vb">
+      <DependentUpon>FrmDonorIntentFax.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDonorIntentFax.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDynamicDonorCategory.Designer.vb">
+      <DependentUpon>FrmDynamicDonorCategory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDynamicDonorCategory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditDynamicDonorCategory.Designer.vb">
+      <DependentUpon>FrmEditDynamicDonorCategory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditDynamicDonorCategory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmail.Designer.vb">
+      <DependentUpon>FrmEmail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEventLogDescription.Designer.vb">
+      <DependentUpon>FrmEventLogDescription.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEventLogDescription.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFax.Designer.vb">
+      <DependentUpon>FrmFax.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFax.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFSCondition.Designer.vb">
+      <DependentUpon>FrmFSCondition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFSCondition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFSIndication.Designer.vb">
+      <DependentUpon>FrmFSIndication.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFSIndication.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGeneralAlert.Designer.vb">
+      <DependentUpon>FrmGeneralAlert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGeneralAlert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIndication.Designer.vb">
+      <DependentUpon>FrmIndication.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIndication.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIndicationSelect.Designer.vb">
+      <DependentUpon>FrmIndicationSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIndicationSelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKeyCode.Designer.vb">
+      <DependentUpon>FrmKeyCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKeyCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKeyCodeSelect.Designer.vb">
+      <DependentUpon>FrmKeyCodeSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKeyCodeSelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLeaseOrganizationCalls.Designer.vb">
+      <DependentUpon>FrmLeaseOrganizationCalls.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLeaseOrganizationCalls.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLineCheckList.Designer.vb">
+      <DependentUpon>FrmLineCheckList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLineCheckList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmList.Designer.vb">
+      <DependentUpon>FrmList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListItem.Designer.vb">
+      <DependentUpon>FrmListItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogEvent.Designer.vb">
+      <DependentUpon>FrmLogEvent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogEvent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMessage.Designer.vb">
+      <DependentUpon>FrmMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMessageType.Designer.vb">
+      <DependentUpon>FrmMessageType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMessageType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMisspelling.Designer.vb">
+      <DependentUpon>FrmMisspelling.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMisspelling.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNDRICallSheet.Designer.vb">
+      <DependentUpon>FrmNDRICallSheet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNDRICallSheet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNew.Designer.vb">
+      <DependentUpon>FrmNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNoCall.Designer.vb">
+      <DependentUpon>FrmNoCall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNoCall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNoCallType.Designer.vb">
+      <DependentUpon>FrmNoCallType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNoCallType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOnCall.Designer.vb">
+      <DependentUpon>FrmOnCall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOnCall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOnCallEvent.Designer.vb">
+      <DependentUpon>FrmOnCallEvent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOnCallEvent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOpenAll.Designer.vb">
+      <DependentUpon>FrmOpenAll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOpenAll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOpenOrganization.Designer.vb">
+      <DependentUpon>FrmOpenOrganization.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOpenOrganization.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrganization.Designer.vb">
+      <DependentUpon>FrmOrganization.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrganization.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrganizationList.Designer.vb">
+      <DependentUpon>FrmOrganizationList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrganizationList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrganizationProperties.Designer.vb">
+      <DependentUpon>FrmOrganizationProperties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrganizationProperties.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrganizationType.Designer.vb">
+      <DependentUpon>FrmOrganizationType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrganizationType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPerson.Designer.vb">
+      <DependentUpon>FrmPerson.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPerson.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonPhone.Designer.vb">
+      <DependentUpon>FrmPersonPhone.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersonPhone.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonProperties.Designer.vb">
+      <DependentUpon>FrmPersonProperties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersonProperties.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonType.Designer.vb">
+      <DependentUpon>FrmPersonType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersonType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPossibleDCDCase.Designer.vb">
+      <DependentUpon>FrmPossibleDCDCase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPossibleDCDCase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQuickLook.Designer.vb">
+      <DependentUpon>FrmQuickLook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQuickLook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRefDups.Designer.vb">
+      <DependentUpon>FrmRefDups.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRefDups.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReference.Designer.vb">
+      <DependentUpon>FrmReference.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReference.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReferral.Designer.vb">
+      <DependentUpon>FrmReferral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReferral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReferralDonorList.Designer.vb">
+      <DependentUpon>FrmReferralDonorList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReferralDonorList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReferralList.Designer.vb">
+      <DependentUpon>FrmReferralList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReferralList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReferralView.Designer.vb">
+      <DependentUpon>FrmReferralView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReferralView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReport.Designer.vb">
+      <DependentUpon>FrmReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportGroup.Designer.vb">
+      <DependentUpon>FrmReportGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRotateOrganization.Designer.vb">
+      <DependentUpon>FrmRotateOrganization.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRotateOrganization.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRotationCreate.Designer.vb">
+      <DependentUpon>FrmRotationCreate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRotationCreate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRotationNew.Designer.vb">
+      <DependentUpon>FrmRotationNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRotationNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSchedule.Designer.vb">
+      <DependentUpon>FrmSchedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSchedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmScheduleGroup.Designer.vb">
+      <DependentUpon>FrmScheduleGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmScheduleGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmScheduleShift.Designer.vb">
+      <DependentUpon>FrmScheduleShift.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmScheduleShift.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmScheduleShiftItem.Designer.vb">
+      <DependentUpon>FrmScheduleShiftItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmScheduleShiftItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmScheduleSplitShift.Designer.vb">
+      <DependentUpon>FrmScheduleSplitShift.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmScheduleSplitShift.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmServiceLevel.Designer.vb">
+      <DependentUpon>FrmServiceLevel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmServiceLevel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmServiceLevelGroup.Designer.vb">
+      <DependentUpon>FrmServiceLevelGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmServiceLevelGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSourceCode.Designer.vb">
+      <DependentUpon>FrmSourceCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSourceCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSourceCodeGroup.Designer.vb">
+      <DependentUpon>FrmSourceCodeGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSourceCodeGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSubLocation.Designer.vb">
+      <DependentUpon>FrmSubLocation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSubLocation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSubtype.Designer.vb">
+      <DependentUpon>FrmSubtype.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSubtype.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSystemAlerts.Designer.vb">
+      <DependentUpon>FrmSystemAlerts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSystemAlerts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVerifySex.Designer.vb">
+      <DependentUpon>FrmVerifySex.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVerifySex.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVerifyWeight.Designer.vb">
+      <DependentUpon>FrmVerifyWeight.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVerifyWeight.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSourceLookup\IDataSourceLookup.vb" />
+    <Compile Include="ListView.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListViewItemComparer.vb" />
+    <Compile Include="Login.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mask.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MDIForm.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>MDIForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modCloseBtn.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="modLogon.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="modReport.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="modStatAudit.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StatQuery.DataSources.vb" />
+    <None Include="StatQuery.QueryDonorRegistry.vb" />
+    <Compile Include="modStatSecurity.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="modStatTimeZone.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MsgForm.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="odbcado.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScheduleItemPerson.vb" />
+    <Compile Include="SecondaryDisposition_bas.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FrmSecondaryDisposition_Conditionals.Designer.vb">
+      <DependentUpon>FrmSecondaryDisposition_Conditionals.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecondaryDisposition_Conditionals.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecondaryDisposition_rollups.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sort.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SSGrid.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StatConstant.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataQuery.vb" />
+    <Compile Include="StatQuery.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StatRefQuery.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StatSave.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StatValidate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="String.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UIServices\Donor\Search\DonorSearchFormState.vb" />
+    <Compile Include="UIServices\Donor\Search\DonorSearchResultsExtensions.vb" />
+    <Compile Include="Util.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ValueDescriptionPair.vb" />
+    <EmbeddedResource Include="ctlItemList.resX">
+      <DependentUpon>ctlItemList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtlSecondaryDisposition.resx">
+      <DependentUpon>CtlSecondaryDisposition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAbout.resX">
+      <DependentUpon>FrmAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAlert.resX">
+      <DependentUpon>FrmAlert.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAlertGroup.resX">
+      <DependentUpon>FrmAlertGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAlphaMsg.resX">
+      <DependentUpon>FrmAlphaMsg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAuthenticate.resX">
+      <DependentUpon>FrmAuthenticate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCauseOfDeath.resX">
+      <DependentUpon>FrmCauseOfDeath.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmColorKey.resX">
+      <DependentUpon>FrmColorKey.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConditional.resX">
+      <DependentUpon>FrmConditional.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsentInterval.resX">
+      <DependentUpon>FrmConsentInterval.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCounty.resX">
+      <DependentUpon>FrmCounty.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCriteria.resX">
+      <DependentUpon>FrmCriteria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCriteriaGroup.resX">
+      <DependentUpon>FrmCriteriaGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCriteriaTemplate.resX">
+      <DependentUpon>FrmCriteriaTemplate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCustom1.resX">
+      <DependentUpon>FrmCustom1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCustomMessageBox.resx">
+      <DependentUpon>FrmCustomMessageBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDCDPotential.resx">
+      <DependentUpon>FrmDCDPotential.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDictionaryItem.resX">
+      <DependentUpon>FrmDictionaryItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDictionaryItemSelect.resX">
+      <DependentUpon>FrmDictionaryItemSelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDonorIntent.resX">
+      <DependentUpon>FrmDonorIntent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDonorIntentFax.resX">
+      <DependentUpon>FrmDonorIntentFax.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDynamicDonorCategory.resX">
+      <DependentUpon>FrmDynamicDonorCategory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditDynamicDonorCategory.resX">
+      <DependentUpon>FrmEditDynamicDonorCategory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmail.resX">
+      <DependentUpon>FrmEmail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEventLogDescription.resX">
+      <DependentUpon>FrmEventLogDescription.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFax.resX">
+      <DependentUpon>FrmFax.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFSCondition.resX">
+      <DependentUpon>FrmFSCondition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFSIndication.resX">
+      <DependentUpon>FrmFSIndication.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGeneralAlert.resX">
+      <DependentUpon>FrmGeneralAlert.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIndication.resX">
+      <DependentUpon>FrmIndication.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIndicationSelect.resX">
+      <DependentUpon>FrmIndicationSelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKeyCode.resX">
+      <DependentUpon>FrmKeyCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKeyCodeSelect.resX">
+      <DependentUpon>FrmKeyCodeSelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLeaseOrganizationCalls.resX">
+      <DependentUpon>FrmLeaseOrganizationCalls.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLineCheckList.resX">
+      <DependentUpon>FrmLineCheckList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmList.resX">
+      <DependentUpon>FrmList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListItem.resX">
+      <DependentUpon>FrmListItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogEvent.resX">
+      <DependentUpon>FrmLogEvent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMessage.resX">
+      <DependentUpon>FrmMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMessageType.resX">
+      <DependentUpon>FrmMessageType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMisspelling.resX">
+      <DependentUpon>FrmMisspelling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNDRICallSheet.resX">
+      <DependentUpon>FrmNDRICallSheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNew.resX">
+      <DependentUpon>FrmNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNoCall.resX">
+      <DependentUpon>FrmNoCall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNoCallType.resX">
+      <DependentUpon>FrmNoCallType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOnCall.resX">
+      <DependentUpon>FrmOnCall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOnCallEvent.resX">
+      <DependentUpon>FrmOnCallEvent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOpenAll.resX">
+      <DependentUpon>FrmOpenAll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOpenOrganization.resX">
+      <DependentUpon>FrmOpenOrganization.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrganization.resX">
+      <DependentUpon>FrmOrganization.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrganizationList.resX">
+      <DependentUpon>FrmOrganizationList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrganizationProperties.resX">
+      <DependentUpon>FrmOrganizationProperties.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrganizationType.resX">
+      <DependentUpon>FrmOrganizationType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPerson.resX">
+      <DependentUpon>FrmPerson.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonPhone.resX">
+      <DependentUpon>FrmPersonPhone.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonProperties.resX">
+      <DependentUpon>FrmPersonProperties.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonType.resX">
+      <DependentUpon>FrmPersonType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPossibleDCDCase.resx">
+      <DependentUpon>FrmPossibleDCDCase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQuickLook.resX">
+      <DependentUpon>FrmQuickLook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRefDups.resX">
+      <DependentUpon>FrmRefDups.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReference.resX">
+      <DependentUpon>FrmReference.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReferral.resX">
+      <DependentUpon>FrmReferral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReferralDonorList.resX">
+      <DependentUpon>FrmReferralDonorList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReferralList.resX">
+      <DependentUpon>FrmReferralList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReferralView.resX">
+      <DependentUpon>FrmReferralView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReport.resX">
+      <DependentUpon>FrmReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportGroup.resX">
+      <DependentUpon>FrmReportGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRotateOrganization.resX">
+      <DependentUpon>FrmRotateOrganization.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRotationCreate.resX">
+      <DependentUpon>FrmRotationCreate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRotationNew.resX">
+      <DependentUpon>FrmRotationNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSchedule.resX">
+      <DependentUpon>FrmSchedule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmScheduleGroup.resX">
+      <DependentUpon>FrmScheduleGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmScheduleShift.resX">
+      <DependentUpon>FrmScheduleShift.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmScheduleShiftItem.resX">
+      <DependentUpon>FrmScheduleShiftItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmScheduleSplitShift.resX">
+      <DependentUpon>FrmScheduleSplitShift.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmServiceLevel.resX">
+      <DependentUpon>FrmServiceLevel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmServiceLevelGroup.resX">
+      <DependentUpon>FrmServiceLevelGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSourceCode.resX">
+      <DependentUpon>FrmSourceCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSourceCodeGroup.resX">
+      <DependentUpon>FrmSourceCodeGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSubLocation.resX">
+      <DependentUpon>FrmSubLocation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSubtype.resX">
+      <DependentUpon>FrmSubtype.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSystemAlerts.resX">
+      <DependentUpon>FrmSystemAlerts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVerifySex.resX">
+      <DependentUpon>FrmVerifySex.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVerifyWeight.resX">
+      <DependentUpon>FrmVerifyWeight.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resX">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIForm.resX">
+      <DependentUpon>MDIForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecondaryDisposition_Conditionals.resX">
+      <DependentUpon>FrmSecondaryDisposition_Conditionals.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Lightning.bmp" />
+    <None Include="Criteria1.bmp" />
+    <Content Include="..\..\Solution Items\Reference\SharedAssemblyInfo.cs">
+      <Link>SharedAssemblyInfo.cs</Link>
+    </Content>
+    <Content Include="..\..\Solution Items\Reference\StatTracKey.xml">
+      <Link>StatTracKey.xml</Link>
+    </Content>
+    <Content Include="ApplicationResources\adodb.dll" />
+    <Content Include="ApplicationResources\AxInterop.MSComCtl2.dll" />
+    <Content Include="ApplicationResources\AxInterop.MSFlexGridLib.dll" />
+    <Content Include="ApplicationResources\AxInterop.PVDataTable5.dll" />
+    <Content Include="ApplicationResources\AxInterop.SSDataWidgets_B.dll" />
+    <Content Include="ApplicationResources\Interop.MSComCtl2.dll" />
+    <Content Include="ApplicationResources\Interop.MSFlexGridLib.dll" />
+    <Content Include="ApplicationResources\Interop.PVDataTable5.dll" />
+    <Content Include="ApplicationResources\Interop.SSDataWidgets_B.dll" />
+    <Content Include="ApplicationResources\msdatasrc.dll" />
+    <Content Include="Stattrac.ico" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\app.manifest" />
+    <None Include="Stattrac_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Infragistics2.Shared.v9.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinGrid.v9.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.v9.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="MSDATASRC">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BusinessRules\Statline.Stattrac.BusinessRules.csproj">
+      <Project>{E02CDDB9-B7FA-4ABE-B957-8F7F08668211}</Project>
+      <Name>Statline.Stattrac.BusinessRules</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\Statline.Stattrac.Common.csproj">
+      <Project>{626A7991-A1F9-4F2D-B8E4-3EA411D60814}</Project>
+      <Name>Statline.Stattrac.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Constant\Statline.Stattrac.Constant.csproj">
+      <Project>{71627A9C-06CA-4157-8F0D-4C68D2668424}</Project>
+      <Name>Statline.Stattrac.Constant</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataAccess\Statline.Stattrac.DataAccess.csproj">
+      <Project>{051E4E3D-08C7-4D79-BEB2-079F61FAB90B}</Project>
+      <Name>Statline.Stattrac.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\Types\Statline.Stattrac.Data.Types.csproj">
+      <Project>{C2D6EFBE-279F-42B1-B0BC-F2862693ECD9}</Project>
+      <Name>Statline.Stattrac.Data.Types</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\Statline.Stattrac.Framework.csproj">
+      <Project>{32AC6F34-9A54-4342-B3DE-EA64077D0C46}</Project>
+      <Name>Statline.Stattrac.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Security\Statline.Stattrac.Security.csproj">
+      <Project>{2A224CE9-C53E-480F-B7FC-675EFBE187B0}</Project>
+      <Name>Statline.Stattrac.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpUIMap\Statline.Stattrac.Windows.CSharpUIMap.csproj">
+      <Project>{5990E464-6EB4-4B7F-A67D-C3C8DF12D97E}</Project>
+      <Name>Statline.Stattrac.Windows.CSharpUIMap</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSUI\StattracCS.csproj">
+      <Project>{a0385bbc-b00b-40b7-b9a6-081fee533b76}</Project>
+      <Name>StattracCS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Statline.Stattrac.Windows.csproj">
+      <Project>{2501A2E5-DE77-4767-B84F-7C2788CB4F9D}</Project>
+      <Name>Statline.Stattrac.Windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="System.Collections.Immutable">
+      <Version>1.7.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\DataSources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

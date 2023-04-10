@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RecycledRestoreDS" targetNamespace="http://tempuri.org/RecycledRestoreDS.xsd" xmlns:mstns="http://tempuri.org/RecycledRestoreDS.xsd" xmlns="http://tempuri.org/RecycledRestoreDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ReferralTestConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ReferralTestConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.Stattrac.Data.Types.Properties.Settings.GlobalReference.Default.ReferralTestConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RecycledRestoreDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="RecycledRestoreDS" msprop:Generator_DataSetName="RecycledRestoreDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RecycleRestoreList" msprop:Generator_UserTableName="RecycleRestoreList" msprop:Generator_RowDeletedName="RecycleRestoreListRowDeleted" msprop:Generator_RowChangedName="RecycleRestoreListRowChanged" msprop:Generator_RowClassName="RecycleRestoreListRow" msprop:Generator_RowChangingName="RecycleRestoreListRowChanging" msprop:Generator_RowEvArgName="RecycleRestoreListRowChangeEvent" msprop:Generator_RowEvHandlerName="RecycleRestoreListRowChangeEventHandler" msprop:Generator_TableClassName="RecycleRestoreListDataTable" msprop:Generator_TableVarName="tableRecycleRestoreList" msprop:Generator_RowDeletingName="RecycleRestoreListRowDeleting" msprop:Generator_TablePropName="RecycleRestoreList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ReferralDonorFirstName" msprop:Generator_UserColumnName="ReferralDonorFirstName" msprop:Generator_ColumnPropNameInRow="ReferralDonorFirstName" msprop:Generator_ColumnVarNameInTable="columnReferralDonorFirstName" msprop:Generator_ColumnPropNameInTable="ReferralDonorFirstNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReferralDonorLastName" msprop:Generator_UserColumnName="ReferralDonorLastName" msprop:Generator_ColumnPropNameInRow="ReferralDonorLastName" msprop:Generator_ColumnVarNameInTable="columnReferralDonorLastName" msprop:Generator_ColumnPropNameInTable="ReferralDonorLastNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReferralDonorRecNumber" msprop:Generator_UserColumnName="ReferralDonorRecNumber" msprop:Generator_ColumnPropNameInRow="ReferralDonorRecNumber" msprop:Generator_ColumnVarNameInTable="columnReferralDonorRecNumber" msprop:Generator_ColumnPropNameInTable="ReferralDonorRecNumberColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReferralDonorNameMI" msprop:Generator_UserColumnName="ReferralDonorNameMI" msprop:Generator_ColumnPropNameInRow="ReferralDonorNameMI" msprop:Generator_ColumnVarNameInTable="columnReferralDonorNameMI" msprop:Generator_ColumnPropNameInTable="ReferralDonorNameMIColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LogEventDateTime" msprop:Generator_UserColumnName="LogEventDateTime" msprop:Generator_ColumnPropNameInRow="LogEventDateTime" msprop:Generator_ColumnVarNameInTable="columnLogEventDateTime" msprop:Generator_ColumnPropNameInTable="LogEventDateTimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CreatedBy" msdata:ReadOnly="true" msprop:Generator_UserColumnName="CreatedBy" msprop:Generator_ColumnPropNameInRow="CreatedBy" msprop:Generator_ColumnVarNameInTable="columnCreatedBy" msprop:Generator_ColumnPropNameInTable="CreatedByColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="52" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LogEventTypeName" msprop:Generator_UserColumnName="LogEventTypeName" msprop:Generator_ColumnPropNameInRow="LogEventTypeName" msprop:Generator_ColumnVarNameInTable="columnLogEventTypeName" msprop:Generator_ColumnPropNameInTable="LogEventTypeNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LogEventOrg" msprop:Generator_UserColumnName="LogEventOrg" msprop:Generator_ColumnPropNameInRow="LogEventOrg" msprop:Generator_ColumnVarNameInTable="columnLogEventOrg" msprop:Generator_ColumnPropNameInTable="LogEventOrgColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LogEventDesc" msprop:Generator_UserColumnName="LogEventDesc" msprop:Generator_ColumnPropNameInRow="LogEventDesc" msprop:Generator_ColumnVarNameInTable="columnLogEventDesc" msprop:Generator_ColumnPropNameInTable="LogEventDescColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LogEventNumber" msprop:Generator_UserColumnName="LogEventNumber" msprop:Generator_ColumnPropNameInRow="LogEventNumber" msprop:Generator_ColumnVarNameInTable="columnLogEventNumber" msprop:Generator_ColumnPropNameInTable="LogEventNumberColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LogEventName" msprop:Generator_UserColumnName="LogEventName" msprop:Generator_ColumnPropNameInRow="LogEventName" msprop:Generator_ColumnVarNameInTable="columnLogEventName" msprop:Generator_ColumnPropNameInTable="LogEventNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RecycleRestoreMessagesList" msprop:Generator_UserTableName="RecycleRestoreMessagesList" msprop:Generator_RowDeletedName="RecycleRestoreMessagesListRowDeleted" msprop:Generator_TableClassName="RecycleRestoreMessagesListDataTable" msprop:Generator_RowChangedName="RecycleRestoreMessagesListRowChanged" msprop:Generator_RowClassName="RecycleRestoreMessagesListRow" msprop:Generator_RowChangingName="RecycleRestoreMessagesListRowChanging" msprop:Generator_RowEvArgName="RecycleRestoreMessagesListRowChangeEvent" msprop:Generator_RowEvHandlerName="RecycleRestoreMessagesListRowChangeEventHandler" msprop:Generator_TablePropName="RecycleRestoreMessagesList" msprop:Generator_TableVarName="tableRecycleRestoreMessagesList" msprop:Generator_RowDeletingName="RecycleRestoreMessagesListRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MessageCallerName" msprop:Generator_UserColumnName="MessageCallerName" msprop:Generator_ColumnPropNameInRow="MessageCallerName" msprop:Generator_ColumnVarNameInTable="columnMessageCallerName" msprop:Generator_ColumnPropNameInTable="MessageCallerNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MessageCallerOrganization" msprop:Generator_UserColumnName="MessageCallerOrganization" msprop:Generator_ColumnPropNameInRow="MessageCallerOrganization" msprop:Generator_ColumnVarNameInTable="columnMessageCallerOrganization" msprop:Generator_ColumnPropNameInTable="MessageCallerOrganizationColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourceCodeName" msprop:Generator_UserColumnName="SourceCodeName" msprop:Generator_ColumnPropNameInRow="SourceCodeName" msprop:Generator_ColumnVarNameInTable="columnSourceCodeName" msprop:Generator_ColumnPropNameInTable="SourceCodeNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MessageImportUNOSID" msprop:Generator_UserColumnName="MessageImportUNOSID" msprop:Generator_ColumnPropNameInRow="MessageImportUNOSID" msprop:Generator_ColumnVarNameInTable="columnMessageImportUNOSID" msprop:Generator_ColumnPropNameInTable="MessageImportUNOSIDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrganizationName" msprop:Generator_UserColumnName="OrganizationName" msprop:Generator_ColumnPropNameInRow="OrganizationName" msprop:Generator_ColumnVarNameInTable="columnOrganizationName" msprop:Generator_ColumnPropNameInTable="OrganizationNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LogEventDateTime" msprop:Generator_UserColumnName="LogEventDateTime" msprop:Generator_ColumnPropNameInRow="LogEventDateTime" msprop:Generator_ColumnVarNameInTable="columnLogEventDateTime" msprop:Generator_ColumnPropNameInTable="LogEventDateTimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CreatedBy" msdata:ReadOnly="true" msprop:Generator_UserColumnName="CreatedBy" msprop:Generator_ColumnPropNameInRow="CreatedBy" msprop:Generator_ColumnVarNameInTable="columnCreatedBy" msprop:Generator_ColumnPropNameInTable="CreatedByColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="52" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LogEventTypeName" msprop:Generator_UserColumnName="LogEventTypeName" msprop:Generator_ColumnPropNameInRow="LogEventTypeName" msprop:Generator_ColumnVarNameInTable="columnLogEventTypeName" msprop:Generator_ColumnPropNameInTable="LogEventTypeNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LogEventOrg" msprop:Generator_UserColumnName="LogEventOrg" msprop:Generator_ColumnPropNameInRow="LogEventOrg" msprop:Generator_ColumnVarNameInTable="columnLogEventOrg" msprop:Generator_ColumnPropNameInTable="LogEventOrgColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LogEventDesc" msprop:Generator_UserColumnName="LogEventDesc" msprop:Generator_ColumnPropNameInRow="LogEventDesc" msprop:Generator_ColumnVarNameInTable="columnLogEventDesc" msprop:Generator_ColumnPropNameInTable="LogEventDescColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LogEventNumber" msprop:Generator_UserColumnName="LogEventNumber" msprop:Generator_ColumnPropNameInRow="LogEventNumber" msprop:Generator_ColumnVarNameInTable="columnLogEventNumber" msprop:Generator_ColumnPropNameInTable="LogEventNumberColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LogEventName" msprop:Generator_UserColumnName="LogEventName" msprop:Generator_ColumnPropNameInRow="LogEventName" msprop:Generator_ColumnVarNameInTable="columnLogEventName" msprop:Generator_ColumnPropNameInTable="LogEventNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

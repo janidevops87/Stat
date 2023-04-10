@@ -1,0 +1,31 @@
+<html>
+
+<head>
+<title>Report Description</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<meta http-equiv="EXPIRES" content="0">
+</head>
+
+<body bgcolor="antiquewhite">
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="575">
+  <tr>
+    <td>
+            <P><font face="Arial" size="4"><b>Organization Requestor/Callers</b></font><font face="Times New Roman"></font></P>
+    </td>        
+  </tr>			
+  <tr>
+        <td><br>
+			This report is a summary (by hospital) of the individuals who’ve approached families for donation 
+			over the date range selected by the report user.  Names are separated by Designated Requestor (DR) vs. Non- DR (DR is a feature any Statline client using consent tracking services has access to- to activate it, the client must send a list of hospital staff that are considered DR’s so that Statline can enter them into the referral database).
+			<p>
+			Additionally, a summary of each hospital caller (by hospital) who makes a referral is included with this report.  The total number of deaths referred by each person is summarized here.
+		</td>
+  </tr>
+ 
+</table></center></div></FONT></TR></TABLE>
+<CENTER></CENTER>
+<DIV></DIV>
+</body>
+</html>

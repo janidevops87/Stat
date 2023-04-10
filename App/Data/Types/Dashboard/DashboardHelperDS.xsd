@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DashboardHelperDS" targetNamespace="http://tempuri.org/DashboardHelperDS.xsd" xmlns:mstns="http://tempuri.org/DashboardHelperDS.xsd" xmlns="http://tempuri.org/DashboardHelperDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ReferralTestConnectionString1" IsAppSettingsProperty="true" Modifier="Assembly" Name="ReferralTestConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.Stattrac.Data.Types.Properties.Settings.GlobalReference.Default.ReferralTestConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DashboardHelperDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DashboardHelperDS" msprop:Generator_UserDSName="DashboardHelperDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DashboardFindCall" msprop:Generator_UserTableName="DashboardFindCall" msprop:Generator_RowDeletedName="DashboardFindCallRowDeleted" msprop:Generator_TableClassName="DashboardFindCallDataTable" msprop:Generator_RowChangedName="DashboardFindCallRowChanged" msprop:Generator_RowClassName="DashboardFindCallRow" msprop:Generator_RowChangingName="DashboardFindCallRowChanging" msprop:Generator_RowEvArgName="DashboardFindCallRowChangeEvent" msprop:Generator_RowEvHandlerName="DashboardFindCallRowChangeEventHandler" msprop:Generator_TablePropName="DashboardFindCall" msprop:Generator_TableVarName="tableDashboardFindCall" msprop:Generator_RowDeletingName="DashboardFindCallRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CallID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="CallID" msprop:Generator_ColumnPropNameInRow="CallID" msprop:Generator_ColumnVarNameInTable="columnCallID" msprop:Generator_ColumnPropNameInTable="CallIDColumn" type="xs:int" />
+              <xs:element name="IsReferral" msdata:ReadOnly="true" msprop:Generator_UserColumnName="IsReferral" msprop:Generator_ColumnPropNameInRow="IsReferral" msprop:Generator_ColumnVarNameInTable="columnIsReferral" msprop:Generator_ColumnPropNameInTable="IsReferralColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IsMessage" msdata:ReadOnly="true" msprop:Generator_UserColumnName="IsMessage" msprop:Generator_ColumnPropNameInRow="IsMessage" msprop:Generator_ColumnVarNameInTable="columnIsMessage" msprop:Generator_ColumnPropNameInTable="IsMessageColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IsNocall" msdata:ReadOnly="true" msprop:Generator_UserColumnName="IsNocall" msprop:Generator_ColumnPropNameInRow="IsNocall" msprop:Generator_ColumnVarNameInTable="columnIsNocall" msprop:Generator_ColumnPropNameInTable="IsNocallColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IsRecycledCall" msdata:ReadOnly="true" msprop:Generator_UserColumnName="IsRecycledCall" msprop:Generator_ColumnPropNameInRow="IsRecycledCall" msprop:Generator_ColumnVarNameInTable="columnIsRecycledCall" msprop:Generator_ColumnPropNameInTable="IsRecycledCallColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IsRecycledMsg" msdata:ReadOnly="true" msprop:Generator_UserColumnName="IsRecycledMsg" msprop:Generator_ColumnPropNameInRow="IsRecycledMsg" msprop:Generator_ColumnVarNameInTable="columnIsRecycledMsg" msprop:Generator_ColumnPropNameInTable="IsRecycledMsgColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IsRecycleOasis" msdata:ReadOnly="true" msprop:Generator_UserColumnName="IsRecycleOasis" msprop:Generator_ColumnPropNameInRow="IsRecycleOasis" msprop:Generator_ColumnVarNameInTable="columnIsRecycleOasis" msprop:Generator_ColumnPropNameInTable="IsRecycleOasisColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IsUpdate" msdata:ReadOnly="true" msprop:Generator_UserColumnName="IsUpdate" msprop:Generator_ColumnPropNameInRow="IsUpdate" msprop:Generator_ColumnVarNameInTable="columnIsUpdate" msprop:Generator_ColumnPropNameInTable="IsUpdateColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IsFSActive" msdata:ReadOnly="true" msprop:Generator_UserColumnName="IsFSActive" msprop:Generator_ColumnPropNameInRow="IsFSActive" msprop:Generator_ColumnVarNameInTable="columnIsFSActive" msprop:Generator_ColumnPropNameInTable="IsFSActiveColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IsOasis" msdata:ReadOnly="true" msprop:Generator_UserColumnName="IsOasis" msprop:Generator_ColumnPropNameInRow="IsOasis" msprop:Generator_ColumnVarNameInTable="columnIsOasis" msprop:Generator_ColumnPropNameInTable="IsOasisColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DashboardFindCall" />
+      <xs:field xpath="mstns:CallID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

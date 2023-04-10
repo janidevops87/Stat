@@ -1,0 +1,104 @@
+﻿@page
+@using System.Globalization
+@model Statline.StatTracUploader.Pages.UploadedReferralsModel
+@{
+    ViewData["Title"] = "Upload Status";
+}
+
+<div class="d-flex align-items-center">
+    <h2>@ViewData["Title"]</h2>
+    <button type="button" class="btn btn-info mx-2" onclick="document.location.reload()">&#x27F3; Refresh</button>
+</div>
+<table class="table">
+
+    <thead>
+        <tr>
+            <th>
+                Uploaded
+            </th>
+            <th>
+                Call Date/Time
+            </th>
+            <th>
+                File Name
+            </th>
+            <th>
+                Referral number
+            </th>
+            <th>
+                Source code
+            </th>
+            <th>
+                Donor first name
+            </th>
+            <th>
+                Donor last name
+            </th>
+            <th>
+                Date of birth
+            </th>
+            <th>
+                Status
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @await foreach (var item in Model.UploadedReferrals)
+        {
+        <tr>
+            <td>
+                @item.AddedToSystemOn.ToString("g", CultureInfo.InvariantCulture)
+            </td>
+            <td>
+                @item.CallReceivedOn.ToString("g", CultureInfo.InvariantCulture)
+            </td>
+            <td>
+                @Html.DisplayFor(pageModel => item.SourceFileName)
+            </td>
+            <td>
+                @Html.DisplayFor(pageModel => item.ReferralNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(pageModel => item.CallerSourceCode)
+            </td>
+            <td>
+                @Html.DisplayFor(pageModel => item.DonorName!.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(pageModel => item.DonorName!.LastName)
+            </td>
+            <td>
+                @item.DonorDateOfBirth?.ToString("d", CultureInfo.InvariantCulture)
+            </td>
+            <td>
+                @{
+                    string? textClass = null;
+                    string? tooltipText = null;
+                    string dataHtml = "false";
+
+                    switch (item.ProcessingStatus.Status)
+                    {
+                        case Domain.Temporary.ProcessingStatus.Pending:
+                            textClass = "text-warning";
+                            break;
+                        case Domain.Temporary.ProcessingStatus.Success:
+                            textClass = "text-success";
+                            dataHtml = "true";
+                            tooltipText = $"<div>Referral id: {item.ReferralId?.ToString() ?? "N/A"}</div><div>Call id: {item.CallId?.ToString() ?? "N/A"}</div>";
+                            break;
+                        case Domain.Temporary.ProcessingStatus.Failure:
+                            textClass = "text-danger";
+                            tooltipText = item.ProcessingStatus.ErrorMessage;
+                            break;
+                    }
+                }
+
+                <span class="@textClass"
+                      data-toggle="tooltip"
+                      data-html="@dataHtml"
+                      title="@tooltipText">@item.ProcessingStatus.Status.ToString()</span>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

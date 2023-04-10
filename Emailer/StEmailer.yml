@@ -1,0 +1,49 @@
+name: StEmailer-$(Build.SourceBranchName)-Build.$(Build.BuildId)-$(date:yyyy.MM.dd.HH.mm.ss)
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'debug'
+
+steps:
+- checkout: self
+
+- task: DotNetCoreCLI@2
+  displayName: dotnet restore
+  inputs:
+    command: restore
+    projects: 'Emailer/**/*.csproj'
+    feedsToUse: 'config'
+    nugetConfigPath: 'Emailer/NuGet.Config'
+
+- task: DotNetCoreCLI@2
+  displayName: dotnet publish
+  inputs:
+    command: publish
+    publishWebProjects: false
+    projects: 'Emailer/**/**.csproj'
+    arguments: -c $(buildConfiguration) -o $(Build.SourcesDirectory)\ToPublish --no-restore
+    zipAfterPublish: false
+    modifyOutputPath: false
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)\ToPublish'
+    Contents: '*'
+    TargetFolder: '$(Build.StagingDirectory)\app_data\Jobs\Triggered\Emailer-$(Build.SourceBranchName)'
+
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(Build.StagingDirectory)'
+    includeRootFolder: false
+    archiveType: 'zip'
+    archiveFile: '$(Build.StagingDirectory)/StEmailer-$(Build.BuildId).zip'
+    replaceExistingArchive: true
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.StagingDirectory)/StEmailer-$(Build.BuildId).zip'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'

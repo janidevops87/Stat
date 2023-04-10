@@ -1,0 +1,26 @@
+﻿@model EditGrantTypesViewModel
+
+<div class="form-group row">
+    <div class="col-xs-12 col-sm-4">
+        <label asp-for="AllowedGrantTypes"></label>
+        <select asp-for="AllowedGrantTypes"
+                asp-items="Model.AllGrantTypes"
+                class="form-control"></select>
+        <span asp-validation-for="AllowedGrantTypes"></span>
+        <span class="help-block">
+            Specifies the grant types the client is allowed to use.
+        </span>
+    </div>
+    <div class="col-xs-12 col-sm-8">
+        <br />
+        <p class="help-block">
+            Note that some combinations are invalid:
+            <ul>
+                <li><b>Implicit</b> and <b>Authorization Code</b></li>
+                <li><b>Implicit</b> and <b>Hybrid</b></li>
+                <li><b>Authorization Code</b> and <b>Hybrid</b></li>
+            </ul>
+        </p>
+
+    </div>
+</div>

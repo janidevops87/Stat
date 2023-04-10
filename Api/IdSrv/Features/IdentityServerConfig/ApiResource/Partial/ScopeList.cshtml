@@ -1,0 +1,26 @@
+﻿@model EditScopesViewModel
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.Scopes[0].Name)</th>
+            <th>@Html.DisplayNameFor(m => m.Scopes[0].DisplayName)</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var scope in Model.Scopes)
+        {
+            <tr>
+                <td>@scope.Name</td>
+                <td>@scope.DisplayName</td>
+                <td>
+                    <form asp-action="DeleteScope" asp-route-id="@Model.ApiResourceId">
+                        <input type="hidden" asp-for="@scope.Name" name="scopeName"/>
+                        <button type="submit" class="btn btn-sm btn-danger">delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,34 @@
+<html>
+
+<head>
+<title>Report Description</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<meta HTTP-EQUIV="EXPIRES" content="0">
+</head>
+
+<body bgcolor="#F5EBDD">
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="575">
+  <tr>
+    <td><font face="Arial" size="4"><b>MESSAGE ACTIVITY</b></font><font face="Times New Roman"
+    size="3"><p>This report tracks all <i>non- referral</i> related calls. The top of the
+    report summarizes the number of calls and is labeled Message Type Summary. There are three
+    different types of message calls, General Message, Recipient Listing or Status Change, and
+    Request For Information. A <i>general message</i> is a call that comes into the system
+    that is not a referral, import offer, recipient listing/status change or request for
+    information (ex: an individual calling to leave a message for someone). A <i>recipient
+    listing/status change</i> is a call from a transplant center to a recovery agency to list
+    a patient or change the status of a waiting recipient (ex: Jane from University Hospital
+    called to list a patient for a liver transplant). This message is passed along
+    immediately. A <i>request for information</i> message is a call from someone who is
+    requesting information (donor cards, literature on donation/transplantation). </p>
+    <p>The report continues to be followed by a section for each call type. The calls are
+    listed by referral number, date and time. Each message listed indicates whom the call is
+    for, who called and the organization they are calling from (if any). To receive more
+    information regarding a particular message, you must refer to the Message Detail report.</font></td>
+  </tr>
+</table>
+</center></div>
+</body>
+</html>

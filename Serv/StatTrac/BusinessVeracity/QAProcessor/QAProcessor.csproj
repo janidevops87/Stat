@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk;Microsoft.NET.Sdk.Publish">
+	<!--
+	NOTE: Common settings can be found in "..\Directory.Build.props"
+	-->
+	<PropertyGroup Label="Globals">
+		<SccProjectName>SAK</SccProjectName>
+		<SccProvider>SAK</SccProvider>
+		<SccAuxPath>SAK</SccAuxPath>
+		<SccLocalPath>SAK</SccLocalPath>
+	</PropertyGroup>
+	
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<AssemblyName>Statline.StatTrac.BusinessVeracity.QAProcessor</AssemblyName>
+		<RootNamespace>Statline.StatTrac.BusinessVeracity.QAProcessor</RootNamespace>
+		<UserSecretsId>e04fc2c4-7bd9-4aff-ba3f-88d9df3fe6be</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.Interactive.Async" Version="5.1.0" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <ProjectReference Include="..\Common\Common.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Update="Settings.job">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+</Project>

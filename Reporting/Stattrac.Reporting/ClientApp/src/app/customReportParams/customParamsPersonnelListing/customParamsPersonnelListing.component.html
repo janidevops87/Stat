@@ -1,0 +1,33 @@
+<div>
+  <div class="row">
+    <div class="col-sm">
+      <label>Organization State:</label>
+      <ng-select [(ngModel)]="model.StateId" id="organizationStateId" name="organizationStateId"
+                 [items]="stateList" bindLabel="label"
+                 bindValue="value" [selectOnTab]="true"
+                 (change)="getOrganizationList()"></ng-select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <label>Organization Type:</label>
+      <ng-select [(ngModel)]="model.OrganizationTypeId" id="organizationTypeId" name="organizationTypeId"
+                 [items]="typeList" bindLabel="label"
+                 bindValue="value" [selectOnTab]="true"
+                 (change)="getOrganizationList()"></ng-select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <label>Organization:</label>
+      <ng-select [(ngModel)]="model.OrganizationID" id="OrganizationID" name="OrganizationID"
+                 [ngModelOptions]="{standalone: true}"
+                 [items]="orgList" bindLabel="label"
+                 bindValue="value" [selectOnTab]="true"
+                 (change)="addtoParameterList()" required></ng-select>
+      <div class="generalErrors" style="margin-top:5px; margin-left: 5px;" [hidden]="OrganizationIsValid()">Organization is required.</div>
+    </div>
+  </div>
+  <!-- hidden field is need to feed back to parent -->
+  <input type="hidden" id="customParameterList" />
+</div>

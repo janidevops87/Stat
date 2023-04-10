@@ -1,0 +1,55 @@
+.igtr_StatlineReportsControl
+{
+	border-color:Transparent;
+}
+
+
+.igtr_StatlineReportsIsland
+{
+}
+
+
+.igtr_StatlineReportsNode
+{
+}
+
+
+.igtr_StatlineReportsParent
+{
+}
+
+
+.igtr_StatlineReportsLeaf
+{
+}
+
+
+.igtr_StatlineReportsEdit
+{
+}
+
+
+.igtr_StatlineReportsRoot
+{
+	font-weight:bold;
+}
+
+
+.igtr_StatlineReportsHover
+{
+	text-decoration:underline;
+}
+
+
+.igtr_StatlineReportsSelected
+{
+	font-weight:bold;
+}
+
+
+.igtr_StatlineReportsDisabled
+{
+	color:#D2D2D2;
+}
+
+

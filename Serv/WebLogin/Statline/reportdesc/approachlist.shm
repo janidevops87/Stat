@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="EXPIRES" content="0">
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR"
+content="Microsoft FrontPage (Visual InterDev Edition) 2.0">
+<title>Report Description</title>
+</head>
+
+<body bgcolor="#F5EBDD">
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="575">
+    <tr>
+        <td><font size="4" face="Arial"><strong>APPROACH LIST
+        DATA</strong></font><p>Selection of this report creates a
+        data file containing a list of hospital staff who
+        performed a family approach. The primary use of this data
+        file is to use the data for a mail merge letter which is
+        sent to the hospital staff to thank them for their
+        approach efforts if the patient did <em>not</em> become a
+        donor. Obviously, this file is only useful if your region
+        allows hospital staff to approach families for donation.
+        (Additionally, this report is only useful if your region
+        collects approach informaiton through Statline.)</p>
+        <p>This report is a file of data which is downloaded to
+        your computer. When this report is selected, a data file
+        is created based on the date, report group, and referral
+        type parameters selected. When the file is created, you
+        are asked to selected a location on your computer to
+        download and save the file. It is this data file which
+        may be used to create a mail merge document.</p>
+        <p><em><strong>Setting Report Parameters</strong></em></p>
+        <p>As well as setting the date and report group
+        parameters, it is important to set the referral type
+        parameter. It is this parameter which will filter which
+        referrals are used. For example, if you are an eye bank,
+        you will want to select <em>Eyes Only</em> under the <em>Referral
+        Type</em> parameter.</p>
+        <p><em><strong>Creating a Mail Merge Document</strong></em></p>
+        <p>The instructions below are specific to Microsoft's
+        Word 95 or Word 97:</p>
+        <div align="center"><center><table border="0"
+        cellpadding="0" cellspacing="0" width="75%">
+            <tr>
+                <td colspan="2"><em><u>Creating and Downloading
+                Report File</u></em></td>
+            </tr>
+            <tr>
+                <td valign="top" width="5%"><font size="3"
+                face="Times New Roman">1.</font></td>
+                <td width="50%"><font size="3">Select the <em>Approach
+                List</em> report, set all appropriate parameters,
+                and click <em>Show.</em></font></td>
+            </tr>
+            <tr>
+                <td valign="top" width="5%"><font size="3"
+                face="Times New Roman">2.</font></td>
+                <td width="50%"><font size="3">Your browser will
+                ask you if you would like to save the requested
+                document. Click <em>Yes</em> or <em>Save As</em>.
+                Choose a directory on your computer where you can
+                find the document after it is downloaded. (If you
+                are asked to logon to an FTP server, select <em>Anonymous</em>
+                and click <em>OK</em>. If you are using Internet
+                Explorer 4.0, MS Word may automatically open the
+                file instead of downloading the document. Simply
+                save the document to your hard drive if this
+                occurs.)</font></td>
+            </tr>
+            <tr>
+                <td valign="top" width="5%"><font size="3"
+                face="Times New Roman">3.</font></td>
+                <td width="50%">After the download is complete,
+                you are ready to create a mail merge document.</td>
+            </tr>
+        </table>
+        </center></div><div align="center"><center><table
+        border="0" cellpadding="0" cellspacing="0" width="75%">
+            <tr>
+                <td colspan="2"><em><u>Perform Mail Merge</u></em></td>
+            </tr>
+            <tr>
+                <td valign="top" width="5%"><font size="3"
+                face="Times New Roman">1.</font></td>
+                <td width="50%"><font size="3">If you have never
+                used the MS Word mail merge function before,
+                please download this sample letter for the next
+                steps. </font><a
+                href="ftp://www2.statline.com/sample.doc"><font
+                size="3">Download</font></a><font size="3">.</font></td>
+            </tr>
+            <tr>
+                <td valign="top" width="5%"><font size="3"
+                face="Times New Roman">2.</font></td>
+                <td width="50%"><font size="3">Once you have
+                downloaded the sample letter, open the document
+                using Word 95 or Word 97. </font></td>
+            </tr>
+            <tr>
+                <td valign="top" width="5%"><font size="3"
+                face="Times New Roman">3.</font></td>
+                <td width="50%">The sample letter document
+                already has the data fields defined. To merge
+                with the data file you downloaded, simply select <em>Mail
+                Merge...</em> under the <em>Tools</em> menu.</td>
+            </tr>
+            <tr>
+                <td valign="top">4.</td>
+                <td>Do not change the setting under <em>Main
+                Document </em>(step 1). Instead, click the <em>Get
+                Data </em>button and then selecte <em>Open Data
+                Source...</em>. </td>
+            </tr>
+            <tr>
+                <td valign="top"><em>5.</em></td>
+                <td valign="top">Navigate to the directory where
+                you downloaded the data file and click <em>Open.</em>.
+                (To see the downloaded file, you may have to
+                change the <em>Files of type</em> setting to <em>All
+                Files *.*</em>.)</td>
+            </tr>
+            <tr>
+                <td valign="top">6.</td>
+                <td>To complete the mail merge process, click the
+                <em>Merge...</em> button.</td>
+            </tr>
+        </table>
+        </center></div><p>If you have any questions or
+        difficulties with the instructions in this document
+        please feel free to contact Client Services at (888)
+        881-7828  or email at 
+        <!--#include virtual="/loginstatline/includes/ClientServicesMailTo.sls"-->.
+        </p>
+        </td>
+    </tr>
+</table>
+</center></div>
+</body>
+</html>

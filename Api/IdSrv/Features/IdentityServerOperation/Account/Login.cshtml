@@ -1,0 +1,97 @@
+﻿@using System.Collections.Generic
+
+@model LoginViewModel
+
+@{
+    ViewData["Title"] = "Log In";
+}
+
+<h2>@ViewData["Title"]</h2>
+<div class="row">
+
+    <div class="col-md-4">
+        <section>
+            <h4>Use external service to log in</h4>
+            <hr />
+            @{
+                var loginProviders = Model.ExternalProviders.ToArray();
+                if (loginProviders.Length == 0)
+                {
+                    <div>
+                        <p>
+                            There are no external authentication services configured. See <a href="http://go.microsoft.com/fwlink/?LinkID=532715">this article</a>
+                            for details on setting up this ASP.NET application to support logging in via external services.
+                        </p>
+                    </div>
+                }
+                else
+                {
+                    <form asp-controller="Account" asp-action="ExternalLogin" asp-route-returnurl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                        <div>
+                            <p>
+                                @foreach (var provider in loginProviders)
+                                {
+                                    <button type="submit" class="btn btn-default" name="provider" value="@provider.AuthenticationScheme" title="Log in using your @provider.DisplayName account">@provider.AuthenticationScheme</button>
+                                }
+                            </p>
+                        </div>
+                    </form>
+                }
+            }
+        </section>
+    </div>
+    @*For now we don't support local accounts except for default admin, so to avoid user
+        confusion the section should be hidden by default.*@
+    <div class="col-md-8">
+        <h4>
+            <a data-toggle="collapse" href="#localAccountLogin">
+                Use a local account to log in
+            </a>
+        </h4>
+        <hr />
+
+        @*
+            Collapsed/expanded state is not preserved between post-backs.
+            To avoid collapsing (by default) when model state is invalid
+            we force "collapsed in" class (expanded) for this case.
+        *@
+        <section id="localAccountLogin"
+                 class="collapse@(ViewData.ModelState.IsValid ? "" : " in")">
+            <form asp-controller="Account" asp-action="Login" asp-route-returnurl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Username" class="col-md-2 control-label"></label>
+                    <div class="col-md-5">
+                        <input asp-for="Username" class="form-control" />
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" class="col-md-2 control-label"></label>
+                    <div class="col-md-5">
+                        <input asp-for="Password" class="form-control" type="password" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <div class="checkbox">
+                            <label asp-for="RememberLogin">
+                                <input asp-for="RememberLogin" />
+                                Remember Login
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <button type="submit" class="btn btn-default">Log in</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

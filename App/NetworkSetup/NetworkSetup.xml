@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NetworkSetup sourceDirectory="C:\Projects\Statline\StatTrac\Development\Tcss\Main\Windows\UI\bin\Release" 
+				  protectedConfigurationProvider="StatTracProtectedConfigurationProvider" 
+				  exeConfigurationFile="Statline.Stattrac.Windows.UI.exe">
+	<Destination directory="C:\Program Files\StatLine\StatTrac2.0"/>
+</NetworkSetup>

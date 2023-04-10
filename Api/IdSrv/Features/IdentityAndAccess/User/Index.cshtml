@@ -1,0 +1,69 @@
+﻿@model IEnumerable<UserListSummaryViewModel>
+@{
+    ViewData["Title"] = "Users";
+    Layout = "_Layout";
+}
+
+<h2>Users</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.UserName)</th>
+            <th>@Html.DisplayNameFor(m => m.Email)</th>
+            <th>@Html.DisplayNameFor(m => m.TenantOrganizationName)</th>
+            <th>@Html.DisplayNameFor(m => m.IsActive)</th>
+            <th>@Html.DisplayNameFor(m => m.IsConfirmed)</th>
+            <th class="text-center">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+        <tr>
+            <td>@user.UserName</td>
+            <td>@user.Email</td>
+            <td>
+                @if (user.TenantId.HasValue)
+                {
+                    <a asp-action="Edit"
+                       asp-controller="Tenant"
+                       asp-route-id="@user.TenantId">
+                        @user.TenantOrganizationName
+                    </a>
+                }
+                else
+                {
+                    @:N/A
+                }
+            </td>
+            <td>@user.IsActive</td>
+            <td><span class="@(user.IsConfirmed ? "": "text-danger")">@user.IsConfirmed</span></td>
+            <td class="text-left">
+                <a asp-action="Edit"
+                   asp-route-id="@user.Id"
+                   class="btn btn-sm btn-warning">
+                    edit
+                </a>
+
+                <form asp-action="Delete"
+                      asp-route-id="@user.Id"
+                      style="display:inline">
+                    <button type="submit" class="btn btn-sm btn-danger">delete</button>
+                </form>
+
+                <form asp-action=@(user.IsActive ? "deactivate" : "activate")
+                      asp-route-id="@user.Id"
+                      style="display:inline">
+                    <input type="hidden" value="@Context.Request.Path" name="returnUrl" />
+                    <button type="submit"
+                            class="btn btn-sm btn-info"
+                            disabled=@(!user.CanActivate)>
+                        @(user.IsActive ? "deactivate" : "activate")
+                    </button>
+                </form>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

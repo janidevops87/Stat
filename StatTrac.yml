@@ -1,0 +1,102 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+name: StatTrac-$(Build.SourceBranchName)-Build.$(Build.BuildId)-$(date:yyyy.MM.dd.HH.mm.ss)
+
+pool:
+  vmImage: 'windows-2019'
+
+variables:
+  solution: 'App/StatTrac.sln'
+  buildPlatform: 'Any CPU'
+
+steps:
+- task: NuGetToolInstaller@1
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    restoreSolution: '$(solution)'
+    feedsToUse: 'config'
+    nugetConfigPath: 'App/NuGet.Config'
+
+- task: PowerShell@2
+  displayName: Get version from SharedAssemblyInfo.cs
+  inputs:
+    targetType: 'inline'
+    script: |
+      $assemblyRegex = Select-String -Path "$(Build.SourcesDirectory)\App\Solution Items\Reference\SharedAssemblyInfo.cs" -Pattern 'AssemblyFileVersion\("(.*)"\)'
+      
+      $version = $assemblyRegex.Matches.Groups[1]
+      
+      Write-Host "##vso[task.setvariable variable=StVersion;]$version"
+
+- task: VSBuild@1
+  inputs:
+    solution: '$(solution)'
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+
+- task: PowerShell@2
+  displayName: Set build configuration path
+  inputs:
+    targetType: 'inline'
+    script: |
+      $BuildConfiguration = $env:BUILDCONFIGURATION
+      
+      if ($BuildConfiguration -eq "production") {
+          "##vso[task.setvariable variable=BuildConfigurationPath]release"
+      }
+      elseif ($BuildConfiguration -eq "debug") {
+          "##vso[task.setvariable variable=BuildConfigurationPath]x86\debug"
+      }
+      else {
+          "##vso[task.setvariable variable=BuildConfigurationPath]$BuildConfiguration"
+      }
+      
+      Write-Host "Build configuration now '$env:BUILDCONFIGURATIONPATH'"
+
+- task: CopyFiles@2
+  displayName: Copy App.*config files
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)\App\Windows\UI'
+    Contents: 'App.*config'
+    TargetFolder: '$(Build.SourcesDirectory)\App\Windows\UI\bin\$(BuildConfigurationPath)'
+    
+- task: PowerShell@2
+  displayName: Create and populate BranchInfo.txt
+  inputs:
+    targetType: 'inline'
+    script: |
+      $branchNameFound = "$(Build.SourceBranchName)" -match "(CCRST[0-9]*)"
+
+      if ($branchNameFound) {
+          # Found CCRST in branch name, use that
+          $ccr = $Matches[0]
+      }
+      else {
+          # Didn't find CCRST in branch name, default to whole branch name
+          $ccr = "$(Build.SourceBranchName)"
+      }
+      
+      # Create custom object w/ branch info
+      $branchInfoJson = (New-Object PSObject -Property @{ CCR = $ccr; Version = "$(StVersion)" }) | ConvertTo-Json -Compress
+      
+      # Create file, add $branchInfoJson
+      New-Item -Path "$(Build.SourcesDirectory)\App\Windows\UI\bin\$(BuildConfigurationPath)" -Name "BranchInfo.txt" -ItemType File -Value $branchInfoJson
+
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(Build.SourcesDirectory)\App\Windows\UI\bin\$(BuildConfigurationPath)'
+    includeRootFolder: false
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/StApp-$(Build.BuildId).zip'
+    replaceExistingArchive: true
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'

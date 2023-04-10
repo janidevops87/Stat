@@ -1,0 +1,69 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Company>Statline</Company>
+		<Version>1.0.6</Version>
+		<Authors>Statline</Authors>
+		<Product>StatTrac API Client</Product>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<PackageReleaseNotes></PackageReleaseNotes>
+		<NoWarn>
+			1591 <!--Warning about missing XML docs-->
+		</NoWarn>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="IdentityModel" Version="6.0.0" />
+		<PackageReference Include="IdentityModel.AspNetCore" Version="4.2.0" />
+		<PackageReference Include="Microsoft.Extensions.Http.Polly" Version="6.0.6" />
+		<PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="1.1.1">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Statline.Common.Infrastructure.Networking" Version="3.5.0" />
+	</ItemGroup>
+
+	<!-- SourceLink configuration. -->
+	<PropertyGroup>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<!--
+		Symbol files are required for SourceLink to work. 
+		The modern approach to distribute symbols via .snupkg packages
+		doesn't work with Azure DevOps private package feeds:
+		https://stackoverflow.com/questions/54211644/publish-snupkg-symbol-package-to-private-feed-in-vsts
+   
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		-->
+
+		<!--
+		An alternative approach could be to use legacy symbol packages:
+		https://docs.microsoft.com/en-us/nuget/create-packages/symbol-packages
+		But this requires publishing these packages to NuGet or to some other 
+		symbol server, and both are not in option for us.
+    
+		Next approach would be just include symbols in the main package:
+		https://github.com/dotnet/sourcelink#alternative-pdb-distribution
+		However, it turns out that build system is currently not copying 
+		symbol files from package folder to output folder, to the debugger
+		is not able to locate them. And this is not gonna be fixed 
+		until .Net 6.x.x :(
+		https://github.com/dotnet/sdk/issues/1458
+    
+		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+		-->
+
+		<!--
+		The last option is to embed symbols in the binaries. 
+		The drawback is that it will blow the size of the binaries.
+		But this seems to be the only working approach in our case.
+		-->
+		<DebugType>embedded</DebugType>
+		<PackageTags>StatTrac</PackageTags>
+	</PropertyGroup>
+</Project>

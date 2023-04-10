@@ -1,0 +1,18 @@
+<div>
+  <div class="row">
+    <div class="col-sm">
+      <label>Tracking #:</label>
+      <input class="form-control " type="text" id="TrackingNum"
+             [(ngModel)]="model.TrackingNum" (change)="addtoParameterList()" />
+    </div>
+    <div class="col-sm">
+      <label>Tracking Type:</label>
+      <ng-select [(ngModel)]="model.TrackingTypeID" id="TrackingTypeId" name="TrackingTypeId"
+                 [ngModelOptions]="{standalone: true}"
+                 [items]="trackingTypeList" bindLabel="label"
+                 bindValue="value" [selectOnTab]="true" (change)="addtoParameterList()"></ng-select>
+    </div>
+  </div>
+  <!-- hidden field is need to feed back to parent -->
+  <input type="hidden" id="customParameterList" />
+</div>

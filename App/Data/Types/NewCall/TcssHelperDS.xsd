@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TcssHelperDS" targetNamespace="http://tempuri.org/TcssHelperDS.xsd" xmlns:mstns="http://tempuri.org/TcssHelperDS.xsd" xmlns="http://tempuri.org/TcssHelperDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TcssHelperDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TcssHelperDS" msprop:Generator_DataSetName="TcssHelperDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DoesCallExist" msprop:Generator_UserTableName="DoesCallExist" msprop:Generator_RowDeletedName="DoesCallExistRowDeleted" msprop:Generator_RowChangedName="DoesCallExistRowChanged" msprop:Generator_RowClassName="DoesCallExistRow" msprop:Generator_RowChangingName="DoesCallExistRowChanging" msprop:Generator_RowEvArgName="DoesCallExistRowChangeEvent" msprop:Generator_RowEvHandlerName="DoesCallExistRowChangeEventHandler" msprop:Generator_TableClassName="DoesCallExistDataTable" msprop:Generator_TableVarName="tableDoesCallExist" msprop:Generator_RowDeletingName="DoesCallExistRowDeleting" msprop:Generator_TablePropName="DoesCallExist">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CallId" msprop:Generator_UserColumnName="CallId" msprop:Generator_ColumnVarNameInTable="columnCallId" msprop:Generator_ColumnPropNameInRow="CallId" msprop:Generator_ColumnPropNameInTable="CallIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CallTypeID" msprop:Generator_UserColumnName="CallTypeID" msprop:Generator_ColumnPropNameInRow="CallTypeID" msprop:Generator_ColumnVarNameInTable="columnCallTypeID" msprop:Generator_ColumnPropNameInTable="CallTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

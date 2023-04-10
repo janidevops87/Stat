@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR"
+content="Microsoft FrontPage (Visual InterDev Edition) 2.0">
+<meta http-equiv="EXPIRES" content="0">
+<title>Referral Volumes</title>
+</head>
+
+<body bgcolor="#F5EBDD">
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="575"
+height="300">
+    <tr>
+        <td valign="top"><font size="4" face="Arial"><strong>Referral
+        Volume Estimates</strong></font><p><font size="2"
+        face="Arial"><br clear="left">
+        Below is a guidline for anticipating how a region's
+        referral volume will be impacted by the new HCFA rule.
+        The formula below is only a method of estimating your
+        volume increase. It is based on our experience with
+        regions currently serviced by us, including regions which
+        already participate in a routine referral program.</font></p>
+        <table border="0">
+            <tr>
+                <th align="left" width="120">Population (mil)</th>
+                <th align="left">Referral Volume (annual)</th>
+            </tr>
+            <tr>
+                <td width="120">1</td>
+                <td>4545</td>
+            </tr>
+            <tr>
+                <td width="120">2</td>
+                <td>9090</td>
+            </tr>
+            <tr>
+                <td width="120">3</td>
+                <td>13635</td>
+            </tr>
+            <tr>
+                <td width="120">4</td>
+                <td>18180</td>
+            </tr>
+            <tr>
+                <td width="120">5</td>
+                <td>22725</td>
+            </tr>
+            <tr>
+                <td width="120">6</td>
+                <td>27270</td>
+            </tr>
+            <tr>
+                <td width="120">7</td>
+                <td>31850</td>
+            </tr>
+            <tr>
+                <td width="120">8</td>
+                <td>36360</td>
+            </tr>
+            <tr>
+                <td width="120">9</td>
+                <td>40905</td>
+            </tr>
+            <tr>
+                <td width="120">10</td>
+                <td>45450</td>
+            </tr>
+            <tr>
+                <td width="120">11</td>
+                <td>49995</td>
+            </tr>
+        </table>
+        <p><font size="2" face="Arial">Based on the formula:
+        Referral Volume = Population Base (mil) * 4545</font></p>
+        <p><font size="2" face="Arial"><br>
+        <br>
+        If you have questions please contact Client Services at, <br>
+        (888) 881-7828 or email </font><font size="2"
+        face="Arial"><!--#include virtual="/loginstatline/includes/ClientServicesMailTo.sls"--></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td valign="bottom" width="100%" height="25"><p
+        align="center"><font size="1" face="Arial">Statline, LLC
+        6000 East Evans Avenue, Ste. 3-204, Denver, CO 80222. </font><font
+        size="1"><align="center"></font><font size="1" face="Arial">Toll-Free
+        Phone: 1-888-881-7828 </font><font size="1"><align="center"></font><font
+        size="1" face="Arial">&nbsp; Fax: (303) 758-5148</font></p>
+        </td>
+    </tr>
+</table>
+</center></div>
+
+<p><a href="mailto:info@statline.com"></a></p>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<div>
+  <div class="row">
+    <div class="col-sm">
+      <label>Message #:</label>
+      <input class="form-control " type="text" id="CallID" [(ngModel)]="model.CallID"
+             (change)="addtoParameterList()" />
+    </div>
+    <div class="col-sm">
+      <label> &nbsp;</label><br />
+      <input type="checkbox" id="DisplayEventLog" name="DisplayEventLog" value="true"
+             [(ngModel)]="model.DisplayEventLog"
+             style="vertical-align: text-bottom;margin: 8px 0px 0 4px; height: 20px; width: 20px;"
+             (change)="addtoParameterList()">
+      <label for="DisplayEventLog" style="padding-left:3px;">Display Event Log</label>
+    </div>
+  </div>
+  <!-- hidden field is need to feed back to parent -->
+  <input type="hidden" id="customParameterList" />
+</div>

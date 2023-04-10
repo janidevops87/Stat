@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ServiceLevel30OrganizationDS" targetNamespace="http://tempuri.org/ServiceLevel30OrganizationDS.xsd" xmlns:mstns="http://tempuri.org/ServiceLevel30OrganizationDS.xsd" xmlns="http://tempuri.org/ServiceLevel30OrganizationDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ServiceLevel30OrganizationDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ServiceLevel30OrganizationDS" msprop:Generator_DataSetName="ServiceLevel30OrganizationDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ServiceLevel30Organization" msprop:Generator_UserTableName="ServiceLevel30Organization" msprop:Generator_RowDeletedName="ServiceLevel30OrganizationRowDeleted" msprop:Generator_RowChangedName="ServiceLevel30OrganizationRowChanged" msprop:Generator_RowClassName="ServiceLevel30OrganizationRow" msprop:Generator_RowChangingName="ServiceLevel30OrganizationRowChanging" msprop:Generator_RowEvArgName="ServiceLevel30OrganizationRowChangeEvent" msprop:Generator_RowEvHandlerName="ServiceLevel30OrganizationRowChangeEventHandler" msprop:Generator_TableClassName="ServiceLevel30OrganizationDataTable" msprop:Generator_TableVarName="tableServiceLevel30Organization" msprop:Generator_RowDeletingName="ServiceLevel30OrganizationRowDeleting" msprop:Generator_TablePropName="ServiceLevel30Organization">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ServiceLevelOrganizationID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ServiceLevelOrganizationID" msprop:Generator_ColumnPropNameInRow="ServiceLevelOrganizationID" msprop:Generator_ColumnVarNameInTable="columnServiceLevelOrganizationID" msprop:Generator_ColumnPropNameInTable="ServiceLevelOrganizationIDColumn" type="xs:int" />
+              <xs:element name="ServiceLevelID" msprop:Generator_UserColumnName="ServiceLevelID" msprop:Generator_ColumnPropNameInRow="ServiceLevelID" msprop:Generator_ColumnVarNameInTable="columnServiceLevelID" msprop:Generator_ColumnPropNameInTable="ServiceLevelIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="OrganizationID" msprop:Generator_UserColumnName="OrganizationID" msprop:Generator_ColumnPropNameInRow="OrganizationID" msprop:Generator_ColumnVarNameInTable="columnOrganizationID" msprop:Generator_ColumnPropNameInTable="OrganizationIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UpdatedFlag" msprop:Generator_UserColumnName="UpdatedFlag" msprop:Generator_ColumnPropNameInRow="UpdatedFlag" msprop:Generator_ColumnVarNameInTable="columnUpdatedFlag" msprop:Generator_ColumnPropNameInTable="UpdatedFlagColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="ServiceLevel30OrganizationKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ServiceLevel30Organization" />
+      <xs:field xpath="mstns:ServiceLevelOrganizationID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

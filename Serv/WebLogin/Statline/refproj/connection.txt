@@ -1,0 +1,10 @@
+<%
+Session("ConnectionString") = "DSN=Production;UID=sa;PWD=kuvasz;APP=Microsoft(R) Windows NT(TM) Operating System;DATABASE=_ReferralProd"
+Session("ConnectionTimeout") = 15
+Session("CommandTimeout") = 45
+Session("RuntimeUserName") = "sa"
+Session("RuntimePassword") = "kuvasz"
+
+Set Session("Conn")=Server.CreateObject("ADODB.Connection")
+Session("Conn").Open Session("ConnectionString")
+%>

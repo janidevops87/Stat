@@ -1,0 +1,154 @@
+.igdw_StatlineReportsControl
+{
+}
+
+
+.igdw_StatlineReportsHeaderArea
+{
+	background-color:Gainsboro;
+	font-weight:bold;
+	border-width:0px;
+	height: 24px;
+	cursor:default;
+	color:White;
+}
+
+
+.igdw_StatlineReportsBodyContent
+{
+	border:solid 0px #999999;
+}
+
+
+.igdw_StatlineReportsHeaderButton
+{
+	margin:4px 3px 3px 3px;
+	cursor:pointer;
+}
+
+
+.igdw_StatlineReportsHeaderCaption
+{
+	margin-top:16px;
+	margin-left:6px;
+	padding-top:10px;
+	color:#666666;
+}
+
+
+.igdw_StatlineReportsHeaderButtonArea
+{
+	width: 120px;
+	vertical-align:middle;
+}
+
+
+.igdw_StatlineReportsHeaderImage
+{
+	cursor:default;
+}
+
+
+.igdw_StatlineReportsModalBackground
+{
+	filter: alpha(opacity : 50);
+	opacity: 0.5;
+	z-index: 99999;
+}
+
+
+.igdw_StatlineReportsResizingHandle
+{
+	cursor:se-resize;
+}
+
+
+/* used only when header visible */
+.igdw_StatlineReportsHeaderCornerLeft
+{
+	background-position:top left ;
+	width: 9px;
+}
+
+
+/* used only when header visible */
+.igdw_StatlineReportsHeaderContent
+{
+}
+
+
+/* used only when header visible */
+.igdw_StatlineReportsHeaderCornerRight
+{
+	background-position:top right ;
+	width: 9px;
+}
+
+
+/* used only when header hidden */
+.igdw_StatlineReportsBodyCornerTopLeft
+{
+	background-color:Gainsboro;
+}
+
+
+/* used only when header hidden */
+.igdw_StatlineReportsBodyEdgeTop
+{
+	background-color:Gainsboro;
+}
+
+
+/* used only when header hidden */
+.igdw_StatlineReportsBodyCornerTopRight
+{
+	background-color:Gainsboro;
+}
+
+
+.igdw_StatlineReportsBodyEdgeLeft
+{
+	background-color:Gainsboro;
+	width: 6px;
+}
+
+
+.igdw_StatlineReportsBodyEdgeRight
+{
+	background-color:Gainsboro;
+	width: 6px;
+}
+
+
+.igdw_StatlineReportsBodyCornerBottomLeft
+{
+	background-color:Gainsboro;
+	font-size:1px;
+	height: 14px;
+	width: 9px;
+}
+
+
+.igdw_StatlineReportsBodyContentArea
+{
+	vertical-align:top;
+}
+
+
+.igdw_StatlineReportsBodyCornerBottomRight
+{
+	background-color:Gainsboro;
+	font-size:1px;
+	height: 14px;
+	width: 9px;
+}
+
+
+.igdw_StatlineReportsBodyEdgeBottom
+{
+	background-color:Gainsboro;
+	font-size:1px;
+	height: 14px;
+}
+
+

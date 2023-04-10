@@ -1,0 +1,25 @@
+<div>
+  <div class="row">
+    <div class="col-sm">
+      <label>Organization:</label>
+      <ng-select [(ngModel)]="model.OrganizationID" id="OrganizationID" name="OrganizationID"
+                 [ngModelOptions]="{standalone: true}"
+                 [items]="orgList" bindLabel="label"
+                 bindValue="value" [selectOnTab]="true"
+                 (change)="getCriteriaGroupList()" required></ng-select>
+      <div class="generalErrors" style="margin-top:5px; margin-left: 5px;" [hidden]="OrganizationIsValid()">Organization is required.</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <label>Criteria Group:</label>
+      <ng-select [(ngModel)]="model.CriteriaID" id="CriteriaID" name="CriteriaID"
+                 [ngModelOptions]="{standalone: true}"
+                 [items]="criteriaGroupList" bindLabel="label"
+                 bindValue="value" [selectOnTab]="true"
+                 (change)="addtoParameterList()"></ng-select>
+    </div>
+  </div>
+  <!-- hidden field is need to feed back to parent -->
+  <input type="hidden" id="customParameterList" />
+</div>

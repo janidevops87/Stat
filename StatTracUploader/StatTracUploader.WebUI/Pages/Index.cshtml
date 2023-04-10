@@ -1,0 +1,72 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Upload referral files";
+}
+
+<div class="container text-center">
+    <h2>Upload referral files</h2>
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <div class="custom-file">
+                <input type="file" accept=".xlsx" class="custom-file-input" id="uploadFilesInput" asp-for="UploadedFiles" multiple>
+                <label class="custom-file-label" for="customFile">Choose file</label>
+            </div>
+            @*
+                TODO: Add client-side validation to prevent submitting when no files selected.
+                Start from here: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file
+            *@
+            <span asp-validation-for="UploadedFiles" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary my-3">Submit</button>
+    </form>
+
+    <br />
+
+    @if (Model.UploadResults.Count > 0)
+    {
+        <div class="text-left">
+            <ul class="list-group">
+
+                @* Render failed results first to be sure user will notice them. *@
+
+                @foreach (var result in Model.UploadResults.Where(r => !r.IsOk))
+                {
+                    <li class="list-group-item list-group-item-danger my-1">
+                        <b>File '@result.FileName' couldn't be uploaded due to these errors:</b>
+                        @* TODO: Use html/tag helper with a template to render the list *@
+                        <ul class="list-group">
+                            @foreach (var error in result.Errors)
+                            {
+                                <li class="list-group-item">@error</li>
+                            }
+                        </ul>
+                    </li>
+                }
+
+                @foreach (var result in Model.UploadResults.Where(r => r.IsOk))
+                {
+                    <li class="list-group-item list-group-item-success">
+                        <b>File '@result.FileName' was uploaded successfully</b>
+                    </li>
+                }
+
+            </ul>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        @* Based on https://stackoverflow.com/a/51928387 *@
+
+        $('.custom-file input').change(function (e) {
+            var files = [];
+            for (var i = 0; i < $(this)[0].files.length; i++) {
+                files.push($(this)[0].files[i].name);
+            }
+            $(this).next('.custom-file-label').html(files.join(', '));
+        });
+    </script>
+    <partial name="_ValidationScriptsPartial" />
+}

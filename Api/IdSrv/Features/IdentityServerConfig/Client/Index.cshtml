@@ -1,0 +1,47 @@
+﻿@model IEnumerable<ClientSummaryViewModel>
+@{
+    ViewData["Title"] = "Clients";
+    Layout = "_Layout";
+}
+
+<h2>Clients</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.ClientName)</th>
+            <th>@Html.DisplayNameFor(m => m.ClientId)</th>
+            <th>@Html.DisplayNameFor(m => m.Id)</th>
+            <th>@Html.DisplayNameFor(m => m.TenantId)</th>
+            <th class="text-center">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var client in Model)
+        {
+            <tr>
+                <td>@client.ClientName</td>
+                <td>@client.ClientId</td>
+                <td>@client.Id</td>
+                <td>@client.TenantId</td>
+                <td class="text-center">
+                    <form asp-action="Delete" asp-route-id="@client.Id"
+                          asp-authorize="@AuthorizationPolicies.WholeApplicationAdministrationPolicy">
+                        <a 
+                           asp-action="Edit"
+                           asp-route-id="@client.Id"
+                           class="btn btn-sm btn-warning">edit</a>
+
+                        <button type="submit" class="btn btn-sm btn-danger">delete</button>
+                    </form>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Add" class="btn btn-primary"
+   asp-authorize="@AuthorizationPolicies.WholeApplicationAdministrationPolicy">
+    New Client
+</a>

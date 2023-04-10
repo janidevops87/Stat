@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{051E4E3D-08C7-4D79-BEB2-079F61FAB90B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Statline.Stattrac.DataAccess</RootNamespace>
+    <AssemblyName>Statline.Stattrac.DataAccess</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/Statline.Stattrac.DataAccess/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\Solution Items\Reference\StatLine.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisRuleSet>Migrated rules for Statline.Stattrac.DataAccess.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>Migrated rules for Statline.Stattrac.DataAccess.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Solution Items\Reference\SharedAssemblyInfo.cs">
+      <Link>SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Administration\AlertDA.cs" />
+    <Compile Include="Administration\ScheduleGroupOrganizationDA.cs" />
+    <Compile Include="Administration\ServiceLevel30OrganizationDA.cs" />
+    <Compile Include="Administration\WebReportGroupOrgDA.cs" />
+    <Compile Include="Criteria\CriteriaDA.cs" />
+    <Compile Include="Dashboard\BulletinBoardDA.cs" />
+    <Compile Include="Dashboard\CommitClientChangesDA.cs" />
+    <Compile Include="Dashboard\DashboardHelperDA.cs" />
+    <Compile Include="Dashboard\FamilyServiceViewDA.cs" />
+    <Compile Include="Dashboard\PendingCasesDA.cs" />
+    <Compile Include="Dashboard\IncompletesDA.cs" />
+    <Compile Include="Dashboard\LogEventLockedHelperDA.cs" />
+    <Compile Include="Dashboard\PendingEventsPopUpDA.cs" />
+    <Compile Include="Dashboard\RestoreCasesDA.cs" />
+    <Compile Include="Dashboard\RestoreMessagesDA.cs" />
+    <Compile Include="NewCall\LogEventDA.cs" />
+    <Compile Include="Dashboard\LogEventLockDA.cs" />
+    <Compile Include="Dashboard\MessageandImportDA.cs" />
+    <Compile Include="Dashboard\NoCallsDA.cs" />
+    <Compile Include="Dashboard\PendingEventsDA.cs" />
+    <Compile Include="Dashboard\RecycledCasesDA.cs" />
+    <Compile Include="Dashboard\ReferralDA.cs" />
+    <Compile Include="Dashboard\TcssActiveCasesDA.cs" />
+    <Compile Include="Dashboard\FamilyServiceActiveCasesDA.cs" />
+    <Compile Include="Dashboard\UpdateDA.cs" />
+    <Compile Include="Framework\AppScreenDA.cs" />
+    <Compile Include="Framework\GeneralAlertDA.cs" />
+    <Compile Include="Framework\ListControlDA.cs" />
+    <Compile Include="Framework\StatEmployeeDA.cs" />
+    <Compile Include="NewCall\FamilyServicesDA.cs" />
+    <Compile Include="NewCall\MessageDA.cs" />
+    <Compile Include="NewCall\ReferralDA.cs" />
+    <Compile Include="NewCall\TcssDA.cs" />
+    <Compile Include="NewCall\TcssDuplicateReferalsDA.cs" />
+    <Compile Include="NewCall\TcssHeaderDA.cs" />
+    <Compile Include="NewCall\TcssHelperDA.cs" />
+    <Compile Include="ReferralDonorData\ReferralDonorDataDA.cs" />
+    <Compile Include="Organization\OrganizationDA.cs" />
+    <Compile Include="Organization\OrganizationAssociatedCallDA.cs" />
+    <Compile Include="Organization\OrganizationSearchDA.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Question\QuestionDetailDA.cs" />
+    <Compile Include="Question\QuestionGroupsConfigDA.cs" />
+    <Compile Include="Question\QuestionGroupsDA.cs" />
+    <Compile Include="RuleOutIndications\RuleOutIndicationsDA.cs" />
+    <Compile Include="Schedule\ScheduleDA.cs" />
+    <Compile Include="Schedule\ScheduleLogDA.cs" />
+    <Compile Include="ScreenConfig\ScreenConfigDA.cs" />
+    <Compile Include="Security\AuthorizationRuleProviderDA.cs" />
+    <Compile Include="SourceCode\SourceCodeDA.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Statline.Stattrac.Common.csproj">
+      <Project>{626A7991-A1F9-4F2D-B8E4-3EA411D60814}</Project>
+      <Name>Statline.Stattrac.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Constant\Statline.Stattrac.Constant.csproj">
+      <Project>{71627A9C-06CA-4157-8F0D-4C68D2668424}</Project>
+      <Name>Statline.Stattrac.Constant</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\Types\Statline.Stattrac.Data.Types.csproj">
+      <Project>{C2D6EFBE-279F-42B1-B0BC-F2862693ECD9}</Project>
+      <Name>Statline.Stattrac.Data.Types</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\Statline.Stattrac.Framework.csproj">
+      <Project>{32AC6F34-9A54-4342-B3DE-EA64077D0C46}</Project>
+      <Name>Statline.Stattrac.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Migrated rules for Statline.Stattrac.DataAccess.ruleset" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="..\Solution Items\Reference\CustomDictionary.xml">
+      <Link>CustomDictionary.xml</Link>
+    </CodeAnalysisDictionary>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

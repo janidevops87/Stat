@@ -1,0 +1,28 @@
+﻿@model EditClaimsViewModel
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.Claims[0].Type)</th>
+            <th>@Html.DisplayNameFor(m => m.Claims[0].Value)</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var claim in Model.Claims)
+        {
+            <tr>
+                <td>@claim.Type</td>
+                <td>@claim.Value</td>
+                <td>
+                    <form asp-action="DeleteClaim" asp-route-id="@Model.Id" 
+                          asp-authorize="@AuthorizationPolicies.WholeApplicationAdministrationPolicy">
+                        <input type="hidden" asp-for="@claim.Type" name="@nameof(claim.Type)" />
+                        <input type="hidden" asp-for="@claim.Value" name="@nameof(claim.Value)" />
+                        <button type="submit" class="btn btn-sm btn-danger">delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

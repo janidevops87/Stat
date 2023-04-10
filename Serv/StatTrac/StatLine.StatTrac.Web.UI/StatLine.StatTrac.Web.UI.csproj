@@ -1,0 +1,2925 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <Import Project="..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BDD7C40A-D8AA-4009-A859-C46FC9FA33D9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Statline.StatTrac.Web.UI</RootNamespace>
+    <AssemblyName>Statline.StatTrac.Web.UI</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ApplicationIcon>Controls\Images\favicon.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Test|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Production|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DisasterRecovery|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics4.Web.v11.1, Version=11.1.20111.2064, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Web.v11.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.WebUI.Misc.v11.1, Version=11.1.20111.2064, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.WebUI.Misc.v11.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.WebUI.Shared.v11.1, Version=11.1.20111.2064, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.WebUI.Shared.v11.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.WebUI.UltraWebGrid.v11.1, Version=11.1.20111.2064, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.WebUI.UltraWebGrid.v11.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.WebUI.WebCombo.v11.1, Version=11.1.20111.2064, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.WebUI.WebCombo.v11.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.WebUI.WebDataInput.v11.1, Version=11.1.20111.2064, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.WebUI.WebDataInput.v11.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.WebUI.WebDateChooser.v11.1, Version=11.1.20111.2064, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.WebUI.WebDateChooser.v11.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.WebUI.WebSchedule.v11.1, Version=11.1.20111.2064, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.WebUI.WebSchedule.v11.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\EnterpriseLibrary.Logging.5.0.505.1\lib\NET35\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging.Database, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\EnterpriseLibrary.Logging.Database.5.0.505.0\lib\NET35\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SupportingFiles\Microsoft.Practices.EnterpriseLibrary.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ReportViewer.Common.v12.12.0.0.0\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ReportViewer.WebForms.v12.12.0.0.0\lib\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessDenied.aspx.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessDenied.aspx.designer.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Administration.aspx.cs">
+      <DependentUpon>Administration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Administration.aspx.designer.cs">
+      <DependentUpon>Administration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ReportAccessGroup.aspx.cs">
+      <DependentUpon>ReportAccessGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ReportAccessGroup.aspx.designer.cs">
+      <DependentUpon>ReportAccessGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ReportAccessGroupConfiguration.aspx.cs">
+      <DependentUpon>ReportAccessGroupConfiguration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ReportAccessGroupConfiguration.aspx.designer.cs">
+      <DependentUpon>ReportAccessGroupConfiguration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ReportConfiguration.aspx.cs">
+      <DependentUpon>ReportConfiguration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ReportConfiguration.aspx.designer.cs">
+      <DependentUpon>ReportConfiguration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RoleAdmin.aspx.cs">
+      <DependentUpon>RoleAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RoleAdmin.aspx.designer.cs">
+      <DependentUpon>RoleAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RoleAdminEdit.aspx.cs">
+      <DependentUpon>RoleAdminEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RoleAdminEdit.aspx.designer.cs">
+      <DependentUpon>RoleAdminEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Roles.aspx.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Roles.aspx.designer.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserAdmin.aspx.cs">
+      <DependentUpon>UserAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserAdmin.aspx.designer.cs">
+      <DependentUpon>UserAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserAdminEdit.aspx.cs">
+      <DependentUpon>UserAdminEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserAdminEdit.aspx.designer.cs">
+      <DependentUpon>UserAdminEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\AdministrationControl.ascx.cs">
+      <DependentUpon>AdministrationControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\AdministrationControl.ascx.designer.cs">
+      <DependentUpon>AdministrationControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\RoleAccessControl.ascx.cs">
+      <DependentUpon>RoleAccessControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\RoleAccessControl.ascx.designer.cs">
+      <DependentUpon>RoleAccessControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\RoleAdminControl.ascx.cs">
+      <DependentUpon>RoleAdminControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\RoleAdminControl.ascx.designer.cs">
+      <DependentUpon>RoleAdminControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\RoleAdminEditControl.ascx.cs">
+      <DependentUpon>RoleAdminEditControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\RoleAdminEditControl.ascx.designer.cs">
+      <DependentUpon>RoleAdminEditControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\UserAdminControl.ascx.cs">
+      <DependentUpon>UserAdminControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\UserAdminControl.ascx.designer.cs">
+      <DependentUpon>UserAdminControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\UserAdminEditControl.ascx.cs">
+      <DependentUpon>UserAdminEditControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\UserAdminEditControl.ascx.designer.cs">
+      <DependentUpon>UserAdminEditControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsAgeRangeControl.ascx.cs">
+      <DependentUpon>CustomParamsAgeRangeControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsAgeRangeControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsAgeRangeControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsAlertsControl.ascx.cs">
+      <DependentUpon>CustomParamsAlertsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsAlertsControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsAlertsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsApproacher.ascx.cs">
+      <DependentUpon>CustomParamsApproacher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsApproacher.ascx.designer.cs">
+      <DependentUpon>CustomParamsApproacher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsAvayaTroubleReportControl.ascx.cs">
+      <DependentUpon>CustomParamsAvayaTroubleReportControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsAvayaTroubleReportControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsAvayaTroubleReportControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsCallControl.ascx.cs">
+      <DependentUpon>CustomParamsCallControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsCallControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsCallControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsCAPANumberControl.ascx.cs">
+      <DependentUpon>CustomParamsCAPANumberControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsCAPANumberControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsCAPANumberControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsCauseOfDeathControl.ascx.cs">
+      <DependentUpon>CustomParamsCauseOfDeathControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsCauseOfDeathControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsCauseOfDeathControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsCompletedByControl.ascx.cs">
+      <DependentUpon>CustomParamsCompletedByControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsCompletedByControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsCompletedByControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsDisplayDisposition.ascx.cs">
+      <DependentUpon>CustomParamsDisplayDisposition.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsDisplayDisposition.ascx.designer.cs">
+      <DependentUpon>CustomParamsDisplayDisposition.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsDisplayEventLog.ascx.cs">
+      <DependentUpon>CustomParamsDisplayEventLog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsDisplayEventLog.ascx.designer.cs">
+      <DependentUpon>CustomParamsDisplayEventLog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsDisplayTriageFSControl.ascx.cs">
+      <DependentUpon>CustomParamsDisplayTriageFSControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsDisplayTriageFSControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsDisplayTriageFSControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsErrorControl.ascx.cs">
+      <DependentUpon>CustomParamsErrorControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsErrorControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsErrorControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsErrorInfoControl.ascx.cs">
+      <DependentUpon>CustomParamsErrorInfoControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsErrorInfoControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsErrorInfoControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsFSConversionRateControl.ascx.cs">
+      <DependentUpon>CustomParamsFSConversionRateControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsFSConversionRateControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsFSConversionRateControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsFSSummaryControl.ascx.cs">
+      <DependentUpon>CustomParamsFSSummaryControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsFSSummaryControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsFSSummaryControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsGroupByFacilityControl.ascx.cs">
+      <DependentUpon>CustomParamsGroupByFacilityControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsGroupByFacilityControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsGroupByFacilityControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsMedicalRecordNumberControl.ascx.cs">
+      <DependentUpon>CustomParamsMedicalRecordNumberControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsMedicalRecordNumberControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsMedicalRecordNumberControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsMessageImportControl.ascx.cs">
+      <DependentUpon>CustomParamsMessageImportControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsMessageImportControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsMessageImportControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsOrganizationControl.ascx.cs">
+      <DependentUpon>CustomParamsOrganizationControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsOrganizationControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsOrganizationControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsPageBreakByEmployeeControl.ascx.cs">
+      <DependentUpon>CustomParamsPageBreakByEmployeeControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsPageBreakByEmployeeControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsPageBreakByEmployeeControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsPatientNameControl.ascx.cs">
+      <DependentUpon>CustomParamsPatientNameControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsPatientNameControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsPatientNameControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsPersonControl.ascx.cs">
+      <DependentUpon>CustomParamsPersonControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsPersonControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsPersonControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsProcessor.ascx.cs">
+      <DependentUpon>CustomParamsProcessor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsProcessor.ascx.designer.cs">
+      <DependentUpon>CustomParamsProcessor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsReferralDetail.ascx.cs">
+      <DependentUpon>CustomParamsReferralDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsReferralDetail.ascx.designer.cs">
+      <DependentUpon>CustomParamsReferralDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsReferralTypeControl.ascx.cs">
+      <DependentUpon>CustomParamsReferralTypeControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsReferralTypeControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsReferralTypeControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsRegistryDonorDesignationStatus.ascx.cs">
+      <DependentUpon>CustomParamsRegistryDonorDesignationStatus.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsRegistryDonorDesignationStatus.ascx.designer.cs">
+      <DependentUpon>CustomParamsRegistryDonorDesignationStatus.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsRegistryDonorStatusControl.ascx.cs">
+      <DependentUpon>CustomParamsRegistryDonorStatusControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsRegistryDonorStatusControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsRegistryDonorStatusControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsRegistryGroupByControl.ascx.cs">
+      <DependentUpon>CustomParamsRegistryGroupByControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsRegistryGroupByControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsRegistryGroupByControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsRegistryMailingLabelsSourceControl.ascx.cs">
+      <DependentUpon>CustomParamsRegistryMailingLabelsSourceControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsRegistryMailingLabelsSourceControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsRegistryMailingLabelsSourceControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsRegistryOutreachEvents.ascx.cs">
+      <DependentUpon>CustomParamsRegistryOutreachEvents.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsRegistryOutreachEvents.ascx.designer.cs">
+      <DependentUpon>CustomParamsRegistryOutreachEvents.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsRegistryStateControl.ascx.cs">
+      <DependentUpon>CustomParamsRegistryStateControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsRegistryStateControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsRegistryStateControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsRegistryZipCode.ascx.cs">
+      <DependentUpon>CustomParamsRegistryZipCode.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsRegistryZipCode.ascx.designer.cs">
+      <DependentUpon>CustomParamsRegistryZipCode.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsScheduleLookupControl.ascx.cs">
+      <DependentUpon>CustomParamsScheduleLookupControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsScheduleLookupControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsScheduleLookupControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsStatTracUserControl.ascx.cs">
+      <DependentUpon>CustomParamsStatTracUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsStatTracUserControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsStatTracUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsSummarizeByEmployeeControl.ascx.cs">
+      <DependentUpon>CustomParamsSummarizeByEmployeeControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsSummarizeByEmployeeControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsSummarizeByEmployeeControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsSummarizeByMonthControl.ascx.cs">
+      <DependentUpon>CustomParamsSummarizeByMonthControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsSummarizeByMonthControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsSummarizeByMonthControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsTrackingNumberControl.ascx.cs">
+      <DependentUpon>CustomParamsTrackingNumberControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsTrackingNumberControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsTrackingNumberControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EventLogUpdateControl.ascx.cs">
+      <DependentUpon>EventLogUpdateControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\EventLogUpdateControl.ascx.designer.cs">
+      <DependentUpon>EventLogUpdateControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LoginControl.ascx.cs">
+      <DependentUpon>LoginControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\LoginControl.ascx.designer.cs">
+      <DependentUpon>LoginControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsPendingReferralTypeControl.ascx.cs">
+      <DependentUpon>CustomParamsPendingReferralTypeControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsPendingReferralTypeControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsPendingReferralTypeControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\QAAddEditErrorControl.ascx.cs">
+      <DependentUpon>QAAddEditErrorControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\QAAddEditErrorControl.ascx.designer.cs">
+      <DependentUpon>QAAddEditErrorControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\QAAddEditErrorTypeControl.ascx.cs">
+      <DependentUpon>QAAddEditErrorTypeControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\QAAddEditErrorTypeControl.ascx.designer.cs">
+      <DependentUpon>QAAddEditErrorTypeControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\QAConfigControl.ascx.cs">
+      <DependentUpon>QAConfigControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\QAConfigControl.ascx.designer.cs">
+      <DependentUpon>QAConfigControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\QAErrorDetailControl.ascx.cs">
+      <DependentUpon>QAErrorDetailControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\QAErrorDetailControl.ascx.designer.cs">
+      <DependentUpon>QAErrorDetailControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\QAManageErrorListControl.ascx.cs">
+      <DependentUpon>QAManageErrorListControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\QAManageErrorListControl.ascx.designer.cs">
+      <DependentUpon>QAManageErrorListControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\QAErrorLogControl.ascx.cs">
+      <DependentUpon>QAErrorLogControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\QAErrorLogControl.ascx.designer.cs">
+      <DependentUpon>QAErrorLogControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\QAManageErrorLocationControl.ascx.cs">
+      <DependentUpon>QAManageErrorLocationControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\QAManageErrorLocationControl.ascx.designer.cs">
+      <DependentUpon>QAManageErrorLocationControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\QAManageErrorTypesControl.ascx.cs">
+      <DependentUpon>QAManageErrorTypesControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\QAManageErrorTypesControl.ascx.designer.cs">
+      <DependentUpon>QAManageErrorTypesControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\QAManageProcessStepsControl.ascx.cs">
+      <DependentUpon>QAManageProcessStepsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\QAManageProcessStepsControl.ascx.designer.cs">
+      <DependentUpon>QAManageProcessStepsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\QAManageQualityMonitoringFormsControl.ascx.cs">
+      <DependentUpon>QAManageQualityMonitoringFormsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\QAManageQualityMonitoringFormsControl.ascx.designer.cs">
+      <DependentUpon>QAManageQualityMonitoringFormsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\QAMonitoringControl.ascx.cs">
+      <DependentUpon>QAMonitoringControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\QAMonitoringControl.ascx.designer.cs">
+      <DependentUpon>QAMonitoringControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\QAPendingReviewControl.ascx.cs">
+      <DependentUpon>QAPendingReviewControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\QAPendingReviewControl.ascx.designer.cs">
+      <DependentUpon>QAPendingReviewControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\QAReviewControl.ascx.cs">
+      <DependentUpon>QAReviewControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\QAReviewControl.ascx.designer.cs">
+      <DependentUpon>QAReviewControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ReferralFacilityComplianceControl.ascx.cs">
+      <DependentUpon>ReferralFacilityComplianceControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ReferralFacilityComplianceControl.ascx.designer.cs">
+      <DependentUpon>ReferralFacilityComplianceControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ReferralSearchControl.ascx.cs">
+      <DependentUpon>ReferralSearchControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ReferralSearchControl.ascx.designer.cs">
+      <DependentUpon>ReferralSearchControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ReferralUpdateControl.ascx.cs">
+      <DependentUpon>ReferralUpdateControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ReferralUpdateControl.ascx.designer.cs">
+      <DependentUpon>ReferralUpdateControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ReportDisplayControl.ascx.cs">
+      <DependentUpon>ReportDisplayControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ReportDisplayControl.ascx.designer.cs">
+      <DependentUpon>ReportDisplayControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ReportListControl.ascx.cs">
+      <DependentUpon>ReportListControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ReportListControl.ascx.designer.cs">
+      <DependentUpon>ReportListControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ReportParamsControl.ascx.cs">
+      <DependentUpon>ReportParamsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ReportParamsControl.ascx.designer.cs">
+      <DependentUpon>ReportParamsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ReportsControl.ascx.cs">
+      <DependentUpon>ReportsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ReportsControl.ascx.designer.cs">
+      <DependentUpon>ReportsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ScheduleCreateUpdateShiftControl.ascx.cs">
+      <DependentUpon>ScheduleCreateUpdateShiftControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ScheduleCreateUpdateShiftControl.ascx.designer.cs">
+      <DependentUpon>ScheduleCreateUpdateShiftControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ScheduleOnCallControl.ascx.cs">
+      <DependentUpon>ScheduleOnCallControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ScheduleOnCallControl.ascx.designer.cs">
+      <DependentUpon>ScheduleOnCallControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ScheduleSearchControl.ascx.cs">
+      <DependentUpon>ScheduleSearchControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ScheduleSearchControl.ascx.designer.cs">
+      <DependentUpon>ScheduleSearchControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ScheduleShiftControl.ascx.cs">
+      <DependentUpon>ScheduleShiftControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ScheduleShiftControl.ascx.designer.cs">
+      <DependentUpon>ScheduleShiftControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ScheduleSplitShiftControl.ascx.cs">
+      <DependentUpon>ScheduleSplitShiftControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ScheduleSplitShiftControl.ascx.designer.cs">
+      <DependentUpon>ScheduleSplitShiftControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsEmployeeControl.ascx.cs">
+      <DependentUpon>CustomParamsEmployeeControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsEmployeeControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsEmployeeControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsTrackingTypeControl.ascx.cs">
+      <DependentUpon>CustomParamsTrackingTypeControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsTrackingTypeControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsTrackingTypeControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomParamsRegistryDMVWebControl.ascx.cs">
+      <DependentUpon>CustomParamsRegistryDMVWebControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomParamsRegistryDMVWebControl.ascx.designer.cs">
+      <DependentUpon>CustomParamsRegistryDMVWebControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventLogUpdate.aspx.cs">
+      <DependentUpon>EventLogUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventLogUpdate.aspx.designer.cs">
+      <DependentUpon>EventLogUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\Navigation\Data\GenerateMenu.aspx.cs">
+      <DependentUpon>GenerateMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Framework\Navigation\Data\GenerateMenu.aspx.designer.cs">
+      <DependentUpon>GenerateMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\Navigation\InnerMenuControl.ascx.cs">
+      <DependentUpon>InnerMenuControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Framework\Navigation\InnerMenuControl.ascx.designer.cs">
+      <DependentUpon>InnerMenuControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\Navigation\MenuControl.ascx.cs">
+      <DependentUpon>MenuControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Framework\Navigation\MenuControl.ascx.designer.cs">
+      <DependentUpon>MenuControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\Navigation\NavigationTestPage.aspx.cs">
+      <DependentUpon>NavigationTestPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Framework\Navigation\NavigationTestPage.aspx.designer.cs">
+      <DependentUpon>NavigationTestPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\Navigation\OuterMenuControl.ascx.cs">
+      <DependentUpon>OuterMenuControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Framework\Navigation\OuterMenuControl.ascx.designer.cs">
+      <DependentUpon>OuterMenuControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\Templates\BasicMaster.ascx.cs">
+      <DependentUpon>BasicMaster.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Framework\Templates\BasicMaster.ascx.designer.cs">
+      <DependentUpon>BasicMaster.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\Templates\BasicView.ascx.cs">
+      <DependentUpon>BasicView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Framework\Templates\BasicView.ascx.designer.cs">
+      <DependentUpon>BasicView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\Templates\BasicViewSecure.ascx.cs">
+      <DependentUpon>BasicViewSecure.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Framework\Templates\BasicViewSecure.ascx.designer.cs">
+      <DependentUpon>BasicViewSecure.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralError.aspx.cs">
+      <DependentUpon>GeneralError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GeneralError.aspx.designer.cs">
+      <DependentUpon>GeneralError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance.aspx.cs">
+      <DependentUpon>Maintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maintenance.aspx.designer.cs">
+      <DependentUpon>Maintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QA.aspx.cs">
+      <DependentUpon>QA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QA.aspx.designer.cs">
+      <DependentUpon>QA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QAAddEditError.aspx.cs">
+      <DependentUpon>QAAddEditError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QAAddEditError.aspx.designer.cs">
+      <DependentUpon>QAAddEditError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QAAddEditErrorType.aspx.cs">
+      <DependentUpon>QAAddEditErrorType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QAAddEditErrorType.aspx.designer.cs">
+      <DependentUpon>QAAddEditErrorType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QAConfig.aspx.cs">
+      <DependentUpon>QAConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QAConfig.aspx.designer.cs">
+      <DependentUpon>QAConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QAErrorDetail.aspx.cs">
+      <DependentUpon>QAErrorDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QAErrorDetail.aspx.designer.cs">
+      <DependentUpon>QAErrorDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QAManageErrorList.aspx.cs">
+      <DependentUpon>QAManageErrorList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QAManageErrorList.aspx.designer.cs">
+      <DependentUpon>QAManageErrorList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QAErrorLog.aspx.cs">
+      <DependentUpon>QAErrorLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QAErrorLog.aspx.designer.cs">
+      <DependentUpon>QAErrorLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\QAManageErrorHeaderControl.ascx.cs">
+      <DependentUpon>QAManageErrorHeaderControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\QAManageErrorHeaderControl.ascx.designer.cs">
+      <DependentUpon>QAManageErrorHeaderControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="QAManageErrorLocation.aspx.cs">
+      <DependentUpon>QAManageErrorLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QAManageErrorLocation.aspx.designer.cs">
+      <DependentUpon>QAManageErrorLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QAManageErrorTypes.aspx.cs">
+      <DependentUpon>QAManageErrorTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QAManageErrorTypes.aspx.designer.cs">
+      <DependentUpon>QAManageErrorTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QAManageProcessSteps.aspx.cs">
+      <DependentUpon>QAManageProcessSteps.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QAManageProcessSteps.aspx.designer.cs">
+      <DependentUpon>QAManageProcessSteps.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QAManageQualityMonitoringForms.aspx.cs">
+      <DependentUpon>QAManageQualityMonitoringForms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QAManageQualityMonitoringForms.aspx.designer.cs">
+      <DependentUpon>QAManageQualityMonitoringForms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QAMonitoring.aspx.cs">
+      <DependentUpon>QAMonitoring.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QAMonitoring.aspx.designer.cs">
+      <DependentUpon>QAMonitoring.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QAPendingReview.aspx.cs">
+      <DependentUpon>QAPendingReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QAPendingReview.aspx.designer.cs">
+      <DependentUpon>QAPendingReview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QAReview.aspx.cs">
+      <DependentUpon>QAReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QAReview.aspx.designer.cs">
+      <DependentUpon>QAReview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralFacilityCompliance.aspx.cs">
+      <DependentUpon>ReferralFacilityCompliance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReferralFacilityCompliance.aspx.designer.cs">
+      <DependentUpon>ReferralFacilityCompliance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralSearch.aspx.cs">
+      <DependentUpon>ReferralSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReferralSearch.aspx.designer.cs">
+      <DependentUpon>ReferralSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralUpdate.aspx.cs">
+      <DependentUpon>ReferralUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReferralUpdate.aspx.designer.cs">
+      <DependentUpon>ReferralUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDisplay.aspx.cs">
+      <DependentUpon>ReportDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportDisplay.aspx.designer.cs">
+      <DependentUpon>ReportDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportParams.aspx.cs">
+      <DependentUpon>ReportParams.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportParams.aspx.designer.cs">
+      <DependentUpon>ReportParams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPassThroughLogin.aspx.cs">
+      <DependentUpon>ReportPassThroughLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPassThroughLogin.aspx.designer.cs">
+      <DependentUpon>ReportPassThroughLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.aspx.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleCreateUpdateShift.aspx.cs">
+      <DependentUpon>ScheduleCreateUpdateShift.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScheduleCreateUpdateShift.aspx.designer.cs">
+      <DependentUpon>ScheduleCreateUpdateShift.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleSearch.aspx.cs">
+      <DependentUpon>ScheduleSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScheduleSearch.aspx.designer.cs">
+      <DependentUpon>ScheduleSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleSplitShift.aspx.cs">
+      <DependentUpon>ScheduleSplitShift.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScheduleSplitShift.aspx.designer.cs">
+      <DependentUpon>ScheduleSplitShift.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowWindowsUsername.aspx.cs">
+      <DependentUpon>ShowWindowsUsername.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowWindowsUsername.aspx.designer.cs">
+      <DependentUpon>ShowWindowsUsername.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CallHeaderControl.ascx.cs">
+      <DependentUpon>CallHeaderControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CallHeaderControl.ascx.designer.cs">
+      <DependentUpon>CallHeaderControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonData.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>PersonData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonData.aspx.designer.cs">
+      <DependentUpon>PersonData.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Registry\Data\Types\Statline.Registry.Data.Types.csproj">
+      <Project>{EB2B77E3-2153-4DDC-91FC-5A714E5DA97D}</Project>
+      <Name>Statline.Registry.Data.Types</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Registry\Statline.Framework\Statline.Framework.csproj">
+      <Project>{57F28C1A-B454-423A-980D-0C14DE9CA4E5}</Project>
+      <Name>Statline.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Registry\Statline.Registry.csproj">
+      <Project>{8D3D256B-169F-4962-B519-629683CA4141}</Project>
+      <Name>Statline.Registry</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Statline.csproj">
+      <Project>{BBA5E70D-40A8-4399-84A6-A76E2E63AE62}</Project>
+      <Name>Statline</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\Statline.StatTrac.Data.csproj">
+      <Project>{C2F5CDF4-1631-47FE-AAA9-157D3944884C}</Project>
+      <Name>Statline.StatTrac.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\Types\Statline.StatTrac.Data.Types.csproj">
+      <Project>{086C5AB4-C591-4EE4-B1EF-837B3254EC3B}</Project>
+      <Name>Statline.StatTrac.Data.Types</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Statline.StatTrac.csproj">
+      <Project>{EE640ABE-AB1E-4AD9-935D-6AAF8A8F079F}</Project>
+      <Name>Statline.StatTrac</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Web\Statline.StatTrac.Web.csproj">
+      <Project>{6CA162B0-2880-441B-A383-A030764FAF28}</Project>
+      <Name>Statline.StatTrac.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Administration.aspx" />
+    <Content Include="Admin\Images\activeTab-Left.gif" />
+    <Content Include="Admin\Images\activeTab-Right.gif" />
+    <Content Include="Admin\Images\activeTab-Tile.gif" />
+    <Content Include="Admin\Images\air_Icon.gif" />
+    <Content Include="Admin\Images\bacmain1.jpg" />
+    <Content Include="Admin\Images\bacmain2.jpg" />
+    <Content Include="Admin\Images\bugAlert_Button.gif" />
+    <Content Include="Admin\Images\bug_button_off.gif" />
+    <Content Include="Admin\Images\bug_button_on.gif" />
+    <Content Include="Admin\Images\Buttons\buttons.htm" />
+    <Content Include="Admin\Images\Buttons\formButton-CenterTile.gif" />
+    <Content Include="Admin\Images\Buttons\formButton-LeftEnd.gif" />
+    <Content Include="Admin\Images\Buttons\formButton-RightEnd.gif" />
+    <Content Include="Admin\Images\Buttons\spacer.gif" />
+    <Content Include="Admin\Images\cal.gif" />
+    <Content Include="Admin\Images\car_Icon.gif" />
+    <Content Include="Admin\Images\changePages\activeTab-Left.gif" />
+    <Content Include="Admin\Images\changePages\activeTab-Right.gif" />
+    <Content Include="Admin\Images\changePages\activeTab-Tile.gif" />
+    <Content Include="Admin\Images\changePages\cancel-Button.gif" />
+    <Content Include="Admin\Images\changePages\challengePhrase-Button.gif" />
+    <Content Include="Admin\Images\changePages\challengePhrase-TabBkgrd.gif" />
+    <Content Include="Admin\Images\changePages\changePages-TabBkgrd.jpg" />
+    <Content Include="Admin\Images\changePages\changePages-TabBkgrd02.jpg" />
+    <Content Include="Admin\Images\changePages\changePassword-Button.gif" />
+    <Content Include="Admin\Images\changePages\changePassword-Tab.gif" />
+    <Content Include="Admin\Images\changePages\changePassword-TabBkgrd.gif" />
+    <Content Include="Admin\Images\changePages\checkAll.gif" />
+    <Content Include="Admin\Images\changePages\checkAll_Button.gif" />
+    <Content Include="Admin\Images\changePages\clearSelection_Button.gif" />
+    <Content Include="Admin\Images\changePages\contentColumnsTitle-Tile.gif" />
+    <Content Include="Admin\Images\changePages\contentRow-RedTile.gif" />
+    <Content Include="Admin\Images\changePages\contentRow-Tile.gif" />
+    <Content Include="Admin\Images\changePages\contentRow-YellowTile.gif" />
+    <Content Include="Admin\Images\changePages\contentTitle-Tile.gif" />
+    <Content Include="Admin\Images\changePages\forgotPassword-Tab.gif" />
+    <Content Include="Admin\Images\changePages\forgotPassword-TabBkgrd.gif" />
+    <Content Include="Admin\Images\changePages\formButton-CenterTile.gif" />
+    <Content Include="Admin\Images\changePages\formButton-LeftEnd.gif" />
+    <Content Include="Admin\Images\changePages\formButton-RightEnd.gif" />
+    <Content Include="Admin\Images\changePages\generatePDF_Button.gif" />
+    <Content Include="Admin\Images\changePages\getacro.gif" />
+    <Content Include="Admin\Images\changePages\headerBkgrd.gif" />
+    <Content Include="Admin\Images\changePages\headerBkgrd01-Tile.gif" />
+    <Content Include="Admin\Images\changePages\headerBkgrd01.gif" />
+    <Content Include="Admin\Images\changePages\headerBkgrd02-Tile.gif" />
+    <Content Include="Admin\Images\changePages\headerBkgrd02.gif" />
+    <Content Include="Admin\Images\changePages\headerFade.gif" />
+    <Content Include="Admin\Images\changePages\headerLogo.gif" />
+    <Content Include="Admin\Images\changePages\inactiveTab-Left.gif" />
+    <Content Include="Admin\Images\changePages\inactiveTab-Right.gif" />
+    <Content Include="Admin\Images\changePages\inactiveTab-Tile.gif" />
+    <Content Include="Admin\Images\changePages\leftTile.gif" />
+    <Content Include="Admin\Images\changePages\loginBkgrd.gif" />
+    <Content Include="Admin\Images\changePages\loginBkgrd.jpg" />
+    <Content Include="Admin\Images\changePages\loginButton.gif" />
+    <Content Include="Admin\Images\changePages\mainLinks-Line.gif" />
+    <Content Include="Admin\Images\changePages\mainTabBkgrd-Tile.gif" />
+    <Content Include="Admin\Images\changePages\Marker01.gif" />
+    <Content Include="Admin\Images\changePages\newSearchButton.gif" />
+    <Content Include="Admin\Images\changePages\pageBkgrd.jpg" />
+    <Content Include="Admin\Images\changePages\polf.gif" />
+    <Content Include="Admin\Images\changePages\postIt-Bullets.gif" />
+    <Content Include="Admin\Images\changePages\postIt-Bullets.jpg" />
+    <Content Include="Admin\Images\changePages\rightTile.gif" />
+    <Content Include="Admin\Images\changePages\save-Button.gif" />
+    <Content Include="Admin\Images\changePages\searchButton.gif" />
+    <Content Include="Admin\Images\changePages\sendPassword-Button.gif" />
+    <Content Include="Admin\Images\changePages\spacer.gif" />
+    <Content Include="Admin\Images\changePages\subTab-Left.gif" />
+    <Content Include="Admin\Images\changePages\subTab-Right.gif" />
+    <Content Include="Admin\Images\changePages\subTab-Tile.gif" />
+    <Content Include="Admin\Images\changePages\subTabBkgrd-Tile.gif" />
+    <Content Include="Admin\Images\changePages\subTabInactive-Left.gif" />
+    <Content Include="Admin\Images\changePages\subTabInactive-Right.gif" />
+    <Content Include="Admin\Images\changePages\subTabInactiveBkgrd-Tile.gif" />
+    <Content Include="Admin\Images\changePages\tab.gif" />
+    <Content Include="Admin\Images\changePages\tabBkgrd.gif" />
+    <Content Include="Admin\Images\changePages\tq3nav.gif" />
+    <Content Include="Admin\Images\changePages\unCheckAll.gif" />
+    <Content Include="Admin\Images\changePages\uncheckAll_Button.gif" />
+    <Content Include="Admin\Images\changePages\YellowTile.gif" />
+    <Content Include="Admin\Images\checkAll.gif" />
+    <Content Include="Admin\Images\checkAll_Button.gif" />
+    <Content Include="Admin\Images\clear.gif" />
+    <Content Include="Admin\Images\clearSelection_Button.gif" />
+    <Content Include="Admin\Images\close_55wX25h.gif" />
+    <Content Include="Admin\Images\contentColumnsTitle-Tile.gif" />
+    <Content Include="Admin\Images\contentRow-RedTile.gif" />
+    <Content Include="Admin\Images\contentRow-Tile.gif" />
+    <Content Include="Admin\Images\contentRow-YellowTile.gif" />
+    <Content Include="Admin\Images\contentTitle-Tile.gif" />
+    <Content Include="Admin\Images\continue.gif" />
+    <Content Include="Admin\Images\edit-Button.gif" />
+    <Content Include="Admin\Images\edit-Button02.gif" />
+    <Content Include="Admin\Images\edit_invoice.gif" />
+    <Content Include="Admin\Images\formButton-CenterTile.gif" />
+    <Content Include="Admin\Images\formButton-LeftEnd.gif" />
+    <Content Include="Admin\Images\formButton-RightEnd.gif" />
+    <Content Include="Admin\Images\generatePDF_Button.gif" />
+    <Content Include="Admin\Images\getacro.gif" />
+    <Content Include="Admin\Images\GreenLight.gif" />
+    <Content Include="Admin\Images\headerBkgrd.gif" />
+    <Content Include="Admin\Images\headerBkgrd01-Tile.gif" />
+    <Content Include="Admin\Images\headerBkgrd01.gif" />
+    <Content Include="Admin\Images\headerBkgrd02-Tile.gif" />
+    <Content Include="Admin\Images\headerBkgrd02.gif" />
+    <Content Include="Admin\Images\headerFade.gif" />
+    <Content Include="Admin\Images\headerLogo.gif" />
+    <Content Include="Admin\Images\headerTile.gif" />
+    <Content Include="Admin\Images\hotel_Icon.gif" />
+    <Content Include="Admin\Images\IMG_usrtab_left_6wX20h.gif" />
+    <Content Include="Admin\Images\IMG_usrtab_right_6wX20h.gif" />
+    <Content Include="Admin\Images\inactiveTab-Left.gif" />
+    <Content Include="Admin\Images\inactiveTab-Right.gif" />
+    <Content Include="Admin\Images\inactiveTab-Tile.gif" />
+    <Content Include="Admin\Images\InvFLYR1.gif" />
+    <Content Include="Admin\Images\InvoiceFLYR_Logo.gif" />
+    <Content Include="Admin\Images\leftTile.gif" />
+    <Content Include="Admin\Images\loginAssistance_Button.gif" />
+    <Content Include="Admin\Images\loginAssistance_Button.old.gif" />
+    <Content Include="Admin\Images\loginBkgrd.gif" />
+    <Content Include="Admin\Images\loginBkgrd.jpg" />
+    <Content Include="Admin\Images\loginButton.gif" />
+    <Content Include="Admin\Images\loginTitle.gif" />
+    <Content Include="Admin\Images\logoclear.gif" />
+    <Content Include="Admin\Images\logon.gif" />
+    <Content Include="Admin\Images\Logos\logo1.gif" />
+    <Content Include="Admin\Images\Logos\logo2.gif" />
+    <Content Include="Admin\Images\mainLinks-Line.gif" />
+    <Content Include="Admin\Images\mainTabBkgrd-Tile.gif" />
+    <Content Include="Admin\Images\Marker01.gif" />
+    <Content Include="Admin\Images\menuLine.gif" />
+    <Content Include="Admin\Images\Menu\collapsed.gif" />
+    <Content Include="Admin\Images\Menu\expanded.gif" />
+    <Content Include="Admin\Images\Menu\marker01.gif" />
+    <Content Include="Admin\Images\Menu\marker02.gif" />
+    <Content Include="Admin\Images\Menu\marker03.gif" />
+    <Content Include="Admin\Images\Menu\markerOrange.gif" />
+    <Content Include="Admin\Images\Menu\Spacer.gif" />
+    <Content Include="Admin\Images\Navigantlogo.gif" />
+    <Content Include="Admin\Images\newSearchButton.gif" />
+    <Content Include="Admin\Images\next.gif" />
+    <Content Include="Admin\Images\next_year.gif" />
+    <Content Include="Admin\Images\ODIrgb.jpg" />
+    <Content Include="Admin\Images\ok.gif" />
+    <Content Include="Admin\Images\pageBkgrd.jpg" />
+    <Content Include="Admin\Images\pixel.gif" />
+    <Content Include="Admin\Images\polf.gif" />
+    <Content Include="Admin\Images\postIt-Bullets.gif" />
+    <Content Include="Admin\Images\postIt-Bullets.jpg" />
+    <Content Include="Admin\Images\prev.gif" />
+    <Content Include="Admin\Images\prev_year.gif" />
+    <Content Include="Admin\Images\print.gif" />
+    <Content Include="Admin\Images\printableVersion-Button.gif" />
+    <Content Include="Admin\Images\printableVersion-Button02.gif" />
+    <Content Include="Admin\Images\printableVersion-ButtonBlue.gif" />
+    <Content Include="Admin\Images\printable_version_130wX25h.gif" />
+    <Content Include="Admin\Images\RedLight.gif" />
+    <Content Include="Admin\Images\return-Button.gif" />
+    <Content Include="Admin\Images\return-Button02.gif" />
+    <Content Include="Admin\Images\return.gif" />
+    <Content Include="Admin\Images\rightTile.gif" />
+    <Content Include="Admin\Images\save-Button.gif" />
+    <Content Include="Admin\Images\search-Button.gif" />
+    <Content Include="Admin\Images\search-Button02.gif" />
+    <Content Include="Admin\Images\search.gif" />
+    <Content Include="Admin\Images\searchButton.gif" />
+    <Content Include="Admin\Images\search_106wX27h.gif" />
+    <Content Include="Admin\Images\spacer.gif" />
+    <Content Include="Admin\Images\step1-02.gif" />
+    <Content Include="Admin\Images\step1_248wX20h.gif" />
+    <Content Include="Admin\Images\step2-02.gif" />
+    <Content Include="Admin\Images\step2_248wX20h.gif" />
+    <Content Include="Admin\Images\step2_254wX20h.gif" />
+    <Content Include="Admin\Images\submit.gif" />
+    <Content Include="Admin\Images\subTab-Left.gif" />
+    <Content Include="Admin\Images\subTab-Right.gif" />
+    <Content Include="Admin\Images\subTab-Tile.gif" />
+    <Content Include="Admin\Images\subTabBkgrd-Tile.gif" />
+    <Content Include="Admin\Images\subTabInactive-Left.gif" />
+    <Content Include="Admin\Images\subTabInactive-Right.gif" />
+    <Content Include="Admin\Images\subTabInactiveBkgrd-Tile.gif" />
+    <Content Include="Admin\Images\tab.gif" />
+    <Content Include="Admin\Images\tabBkgrd.gif" />
+    <Content Include="Admin\Images\top_stripe5.gif" />
+    <Content Include="Admin\Images\top_stripe6.gif" />
+    <Content Include="Admin\Images\top_stripe7.gif" />
+    <Content Include="Admin\Images\tq3nav.gif" />
+    <Content Include="Admin\Images\unCheckAll.gif" />
+    <Content Include="Admin\Images\uncheckAll_Button.gif" />
+    <Content Include="Admin\Images\username_168wX20h.gif" />
+    <Content Include="Admin\Images\YellowLight.gif" />
+    <Content Include="Admin\Images\YellowTile.gif" />
+    <Content Include="Admin\ReportAccessGroup.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\ReportAccessGroupConfiguration.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\ReportConfiguration.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\RoleAdmin.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\RoleAdminEdit.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\Roles.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\UserAdmin.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\UserAdminEdit.aspx">
+      <SubType>Form</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AccessDenied.aspx.resx">
+      <DependentUpon>AccessDenied.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Administration.aspx.resx">
+      <DependentUpon>Administration.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ReportAccessGroup.aspx.resx">
+      <DependentUpon>ReportAccessGroup.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ReportAccessGroupConfiguration.aspx.resx">
+      <DependentUpon>ReportAccessGroupConfiguration.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ReportConfiguration.aspx.resx">
+      <DependentUpon>ReportConfiguration.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\RoleAdmin.aspx.resx">
+      <DependentUpon>RoleAdmin.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\RoleAdminEdit.aspx.resx">
+      <DependentUpon>RoleAdminEdit.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Roles.aspx.resx">
+      <DependentUpon>Roles.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\UserAdmin.aspx.resx">
+      <DependentUpon>UserAdmin.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\UserAdminEdit.aspx.resx">
+      <DependentUpon>UserAdminEdit.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Admin\AdministrationControl.ascx.resx">
+      <DependentUpon>AdministrationControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Admin\RoleAccessControl.ascx.resx">
+      <DependentUpon>RoleAccessControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Admin\RoleAdminControl.ascx.resx">
+      <DependentUpon>RoleAdminControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Admin\RoleAdminEditControl.ascx.resx">
+      <DependentUpon>RoleAdminEditControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Admin\UserAdminControl.ascx.resx">
+      <DependentUpon>UserAdminControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Admin\UserAdminEditControl.ascx.resx">
+      <DependentUpon>UserAdminEditControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CustomParamsAvayaTroubleReportControl.ascx.resx">
+      <DependentUpon>CustomParamsAvayaTroubleReportControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CustomParamsCallControl.ascx.resx">
+      <DependentUpon>CustomParamsCallControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CustomParamsCauseOfDeathControl.ascx.resx">
+      <DependentUpon>CustomParamsCauseOfDeathControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CustomParamsDisplayTriageFSControl.ascx.resx">
+      <DependentUpon>CustomParamsDisplayTriageFSControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CustomParamsFSConversionRateControl.ascx.resx">
+      <DependentUpon>CustomParamsFSConversionRateControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CustomParamsMedicalRecordNumberControl.ascx.resx">
+      <DependentUpon>CustomParamsMedicalRecordNumberControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CustomParamsOrganizationControl.ascx.resx">
+      <DependentUpon>CustomParamsOrganizationControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CustomParamsPatientNameControl.ascx.resx">
+      <DependentUpon>CustomParamsPatientNameControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CustomParamsPersonControl.ascx.resx">
+      <DependentUpon>CustomParamsPersonControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CustomParamsProcessor.ascx.resx">
+      <DependentUpon>CustomParamsProcessor.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CustomParamsReferralDetail.ascx.resx">
+      <DependentUpon>CustomParamsReferralDetail.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CustomParamsReferralTypeControl.ascx.resx">
+      <DependentUpon>CustomParamsReferralTypeControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CustomParamsStatTracUserControl.ascx.resx">
+      <DependentUpon>CustomParamsStatTracUserControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LoginControl.ascx.resx">
+      <DependentUpon>LoginControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ReportDisplayControl.ascx.resx">
+      <DependentUpon>ReportDisplayControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ReportListControl.ascx.resx">
+      <DependentUpon>ReportListControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ReportParamsControl.ascx.resx">
+      <DependentUpon>ReportParamsControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ReportsControl.ascx.resx">
+      <DependentUpon>ReportsControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="default.aspx.resx">
+      <DependentUpon>default.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Framework\Navigation\Data\GenerateMenu.aspx.resx">
+      <DependentUpon>GenerateMenu.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Framework\Navigation\InnerMenuControl.ascx.resx">
+      <DependentUpon>InnerMenuControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Framework\Navigation\MenuControl.ascx.resx">
+      <DependentUpon>MenuControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Framework\Navigation\NavigationTestPage.aspx.resx">
+      <DependentUpon>NavigationTestPage.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Framework\Navigation\OuterMenuControl.ascx.resx">
+      <DependentUpon>OuterMenuControl.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Framework\Templates\BasicMaster.ascx.resx">
+      <DependentUpon>BasicMaster.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Framework\Templates\BasicView.ascx.resx">
+      <DependentUpon>BasicView.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Framework\Templates\BasicViewSecure.ascx.resx">
+      <DependentUpon>BasicViewSecure.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralError.aspx.resx">
+      <DependentUpon>GeneralError.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.aspx.resx">
+      <DependentUpon>Help.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.aspx.resx">
+      <DependentUpon>Login.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance.aspx.resx">
+      <DependentUpon>Maintenance.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="ReportDisplay.aspx.resx">
+      <DependentUpon>ReportDisplay.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportParams.aspx.resx">
+      <DependentUpon>ReportParams.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportPassThroughLogin.aspx.resx">
+      <DependentUpon>ReportPassThroughLogin.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports.aspx.resx">
+      <DependentUpon>Reports.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowWindowsUsername.aspx.resx">
+      <DependentUpon>ShowWindowsUsername.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AccessDenied.aspx" />
+    <Content Include="Controls\Images\Logos\QA\bloodcenter_logo.png" />
+    <Content Include="Controls\Images\Logos\QA\LifeSharing.jpg" />
+    <Content Include="Controls\Images\Logos\QA\mtf.jpg" />
+    <Content Include="Framework\Navigation\Data\BasicMenuData.xml" />
+    <Content Include="Framework\Navigation\Data\GenerateMenu.aspx" />
+    <Content Include="Framework\Navigation\Images\activeTab-Left.gif" />
+    <Content Include="Framework\Navigation\Images\activeTab-Right.gif" />
+    <Content Include="Framework\Navigation\Images\activeTab-Tile.gif" />
+    <Content Include="Framework\Navigation\Images\headerBkgrd01-Tile.gif" />
+    <Content Include="Framework\Navigation\Images\headerBkgrd01.gif" />
+    <Content Include="Framework\Navigation\Images\headerBkgrd02-Tile.gif" />
+    <Content Include="Framework\Navigation\Images\headerBkgrd02.gif" />
+    <Content Include="Framework\Navigation\Images\inactiveTab-Left.gif" />
+    <Content Include="Framework\Navigation\Images\inactiveTab-Right.gif" />
+    <Content Include="Framework\Navigation\Images\inactiveTab-Tile.gif" />
+    <Content Include="Framework\Navigation\Images\leftTile.gif" />
+    <Content Include="Framework\Navigation\Images\mainLinks-Line.gif" />
+    <Content Include="Framework\Navigation\Images\mainTabBkgrd-Tile.gif" />
+    <Content Include="Framework\Navigation\Images\Menu\collapsed.gif" />
+    <Content Include="Framework\Navigation\Images\Menu\expanded.gif" />
+    <Content Include="Framework\Navigation\Images\Menu\Spacer.gif" />
+    <Content Include="Framework\Navigation\Images\rightTile.gif" />
+    <Content Include="Framework\Navigation\Images\spacer.gif" />
+    <Content Include="Framework\Navigation\Images\subTab-Left.gif" />
+    <Content Include="Framework\Navigation\Images\subTab-Right.gif" />
+    <Content Include="Framework\Navigation\Images\subTab-Tile.gif" />
+    <Content Include="Framework\Navigation\Images\subTabBkgrd-Tile.gif" />
+    <Content Include="Framework\Navigation\Images\subTabInactive-Left.gif" />
+    <Content Include="Framework\Navigation\Images\subTabInactive-Right.gif" />
+    <Content Include="Framework\Navigation\Images\subTabInactiveBkgrd-Tile.gif" />
+    <Content Include="Framework\Navigation\InnerMenuControl.ascx" />
+    <Content Include="Framework\Navigation\MenuControl.ascx" />
+    <Content Include="Framework\Navigation\NavigationTestPage.aspx" />
+    <Content Include="Framework\Navigation\OuterMenuControl.ascx" />
+    <Content Include="Framework\Scripts\Framework.js" />
+    <Content Include="Framework\Templates\BasicMaster.ascx" />
+    <Content Include="Framework\Templates\BasicView.ascx" />
+    <Content Include="Framework\Templates\BasicViewSecure.ascx" />
+    <Content Include="Framework\Themes\Default\Display.css" />
+    <Content Include="Framework\Themes\Default\Images\back.bgLeft.jpg" />
+    <Content Include="Framework\Themes\Default\Images\back.bgLogo.gif" />
+    <Content Include="Framework\Themes\Default\Images\back.bgMenu.gif" />
+    <Content Include="Framework\Themes\Default\Images\back.bgMenuTop.gif" />
+    <Content Include="Framework\Themes\Default\Images\back.logoR.gif" />
+    <Content Include="Framework\Themes\Default\Images\back.logoRFade.gif" />
+    <Content Include="Framework\Themes\Default\Images\back.taMenuBorder.gif" />
+    <Content Include="Framework\Themes\Default\Images\back.taMenuLeft.gif" />
+    <Content Include="Framework\Themes\Default\Images\back.taMenuRight.gif" />
+    <Content Include="Framework\Themes\Default\Images\bgBottom.gif" />
+    <Content Include="Framework\Themes\Default\Images\bgIndexGetStartedTop.gif" />
+    <Content Include="Framework\Themes\Default\Images\bgIndexLogo.gif" />
+    <Content Include="Framework\Themes\Default\Images\bgIndexMenuTop.gif" />
+    <Content Include="Framework\Themes\Default\Images\bgIndexOptionsTop.gif" />
+    <Content Include="Framework\Themes\Default\Images\bgIndexUsingEETop.gif" />
+    <Content Include="Framework\Themes\Default\Images\bgLeft.jpg" />
+    <Content Include="Framework\Themes\Default\Images\bgLogo.gif" />
+    <Content Include="Framework\Themes\Default\Images\bgLogoR.gif" />
+    <Content Include="Framework\Themes\Default\Images\bgMenu.gif" />
+    <Content Include="Framework\Themes\Default\Images\bgMenuTop.gif" />
+    <Content Include="Framework\Themes\Default\Images\boxBL.gif" />
+    <Content Include="Framework\Themes\Default\Images\boxBottom.gif" />
+    <Content Include="Framework\Themes\Default\Images\boxBR.gif" />
+    <Content Include="Framework\Themes\Default\Images\boxLeft.gif" />
+    <Content Include="Framework\Themes\Default\Images\boxRight.gif" />
+    <Content Include="Framework\Themes\Default\Images\boxTL.gif" />
+    <Content Include="Framework\Themes\Default\Images\boxTop.gif" />
+    <Content Include="Framework\Themes\Default\Images\boxTR.gif" />
+    <Content Include="Framework\Themes\Default\Images\contentColumnsTitle-Tile.gif" />
+    <Content Include="Framework\Themes\Default\Images\contentRow-Tile.gif" />
+    <Content Include="Framework\Themes\Default\Images\contentTitle-Tile.gif" />
+    <Content Include="Framework\Themes\Default\Images\logoR.gif" />
+    <Content Include="Framework\Themes\Default\Images\logoRFade.gif" />
+    <Content Include="Framework\Themes\Default\Images\logoTopLeft.gif" />
+    <Content Include="Framework\Themes\Default\Images\m.gif" />
+    <Content Include="Framework\Themes\Default\Images\mW.gif" />
+    <Content Include="Framework\Themes\Default\Images\taMenuBorder.gif" />
+    <Content Include="Framework\Themes\Default\Images\taMenuLeft.gif" />
+    <Content Include="Framework\Themes\Default\Images\taMenuRight.gif" />
+    <Content Include="Framework\Themes\Default\Print.css" />
+    <Content Include="Framework\Themes\Default\SaveDisplay.css" />
+    <Content Include="Framework\Themes\Shared\Images\Spacer.gif" />
+    <Content Include="Images\activeTab-Left.gif" />
+    <Content Include="Images\activeTab-Right.gif" />
+    <Content Include="Images\activeTab-Tile.gif" />
+    <Content Include="Images\Buttons\buttons.htm" />
+    <Content Include="Images\Buttons\formButton-CenterTile.gif" />
+    <Content Include="Images\Buttons\formButton-LeftEnd.gif" />
+    <Content Include="Images\Buttons\formButton-RightEnd.gif" />
+    <Content Include="Images\Buttons\spacer.gif" />
+    <Content Include="Images\calbutton.gif" />
+    <Content Include="Images\Circles\circles-red-01.gif" />
+    <Content Include="Images\Circles\circles-red-02.gif" />
+    <Content Include="Images\Circles\circles-red-03.gif" />
+    <Content Include="Images\Circles\circles-red-04.gif" />
+    <Content Include="Images\Circles\circles-red-05.gif" />
+    <Content Include="Images\Circles\circles-red-06.gif" />
+    <Content Include="Images\Circles\circles-red-07.gif" />
+    <Content Include="Images\Circles\circles-red-08.gif" />
+    <Content Include="Images\Circles\circles-red-09.gif" />
+    <Content Include="Images\Circles\circles-yellow-01.gif" />
+    <Content Include="Images\Circles\circles-yellow-02.gif" />
+    <Content Include="Images\Circles\circles-yellow-03.gif" />
+    <Content Include="Images\Circles\circles-yellow-04.gif" />
+    <Content Include="Images\Circles\circles-yellow-05.gif" />
+    <Content Include="Images\Circles\circles-yellow-06.gif" />
+    <Content Include="Images\Circles\circles-yellow-07.gif" />
+    <Content Include="Images\Circles\circles-yellow-08.gif" />
+    <Content Include="Images\Circles\circles-yellow-09.gif" />
+    <Content Include="Images\collapsed.gif" />
+    <Content Include="Images\contentColumnsTitle-Tile.gif" />
+    <Content Include="Images\contentRow-RedTile.gif" />
+    <Content Include="Images\contentRow-Tile.gif" />
+    <Content Include="Images\contentRow-YellowTile.gif" />
+    <Content Include="Images\contentTitle-Tile.gif" />
+    <Content Include="Images\expanded.gif" />
+    <Content Include="Images\headerBkgrd01-Tile.gif" />
+    <Content Include="Images\headerBkgrd01.gif" />
+    <Content Include="Images\headerBkgrd02-Tile.gif" />
+    <Content Include="Images\headerBkgrd02.gif" />
+    <Content Include="Images\headerBkgrd03.gif" />
+    <Content Include="Images\headerBkgrd04.gif" />
+    <Content Include="Images\inactiveTab-Left.gif" />
+    <Content Include="Images\inactiveTab-Right.gif" />
+    <Content Include="Images\inactiveTab-Tile.gif" />
+    <Content Include="Images\leftTile.gif" />
+    <Content Include="Images\Logos\logo1.gif" />
+    <Content Include="Images\Logos\logo2.gif" />
+    <Content Include="Images\mainLinks-Line.gif" />
+    <Content Include="Images\mainTabBkgrd-Tile.gif" />
+    <Content Include="Images\Menu\collapsed.gif" />
+    <Content Include="Images\Menu\expanded.gif" />
+    <Content Include="Images\Menu\marker01.gif" />
+    <Content Include="Images\Menu\marker02.gif" />
+    <Content Include="Images\Menu\marker03.gif" />
+    <Content Include="Images\Menu\markerOrange.gif" />
+    <Content Include="Images\Menu\Spacer.gif" />
+    <Content Include="Images\RedTile.gif" />
+    <Content Include="Images\rightTile.gif" />
+    <Content Include="Images\spacer.gif" />
+    <Content Include="Images\subTab-Left.gif" />
+    <Content Include="Images\subTab-Right.gif" />
+    <Content Include="Images\subTab-Tile.gif" />
+    <Content Include="Images\subTabBkgrd-Tile.gif" />
+    <Content Include="Images\subTabInactive-Left.gif" />
+    <Content Include="Images\subTabInactive-Right.gif" />
+    <Content Include="Images\subTabInactiveBkgrd-Tile.gif" />
+    <Content Include="Images\YellowTile.gif" />
+    <Content Include="scripts\DateChooser.js" />
+    <Content Include="scripts\GenericPage.js" />
+    <Content Include="scripts\InputMasks.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="default.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="GeneralError.aspx" />
+    <Content Include="Global.asax">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Help.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Login.aspx" />
+    <Content Include="Maintenance.aspx" />
+    <Content Include="ReportDisplay.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="ReportParams.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="ReportPassThroughLogin.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Reports.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\Admin\AdministrationControl.ascx" />
+    <Content Include="Controls\Admin\Images\activeTab-Left.gif" />
+    <Content Include="Controls\Admin\Images\activeTab-Right.gif" />
+    <Content Include="Controls\Admin\Images\activeTab-Tile.gif" />
+    <Content Include="Controls\Admin\Images\air_Icon.gif" />
+    <Content Include="Controls\Admin\Images\bacmain1.jpg" />
+    <Content Include="Controls\Admin\Images\bacmain2.jpg" />
+    <Content Include="Controls\Admin\Images\bugAlert_Button.gif" />
+    <Content Include="Controls\Admin\Images\bug_button_off.gif" />
+    <Content Include="Controls\Admin\Images\bug_button_on.gif" />
+    <Content Include="Controls\Admin\Images\Buttons\buttons.htm" />
+    <Content Include="Controls\Admin\Images\Buttons\formButton-CenterTile.gif" />
+    <Content Include="Controls\Admin\Images\Buttons\formButton-LeftEnd.gif" />
+    <Content Include="Controls\Admin\Images\Buttons\formButton-RightEnd.gif" />
+    <Content Include="Controls\Admin\Images\Buttons\spacer.gif" />
+    <Content Include="Controls\Admin\Images\cal.gif" />
+    <Content Include="Controls\Admin\Images\car_Icon.gif" />
+    <Content Include="Controls\Admin\Images\changePages\activeTab-Left.gif" />
+    <Content Include="Controls\Admin\Images\changePages\activeTab-Right.gif" />
+    <Content Include="Controls\Admin\Images\changePages\activeTab-Tile.gif" />
+    <Content Include="Controls\Admin\Images\changePages\cancel-Button.gif" />
+    <Content Include="Controls\Admin\Images\changePages\challengePhrase-Button.gif" />
+    <Content Include="Controls\Admin\Images\changePages\challengePhrase-TabBkgrd.gif" />
+    <Content Include="Controls\Admin\Images\changePages\changePages-TabBkgrd.jpg" />
+    <Content Include="Controls\Admin\Images\changePages\changePages-TabBkgrd02.jpg" />
+    <Content Include="Controls\Admin\Images\changePages\changePassword-Button.gif" />
+    <Content Include="Controls\Admin\Images\changePages\changePassword-Tab.gif" />
+    <Content Include="Controls\Admin\Images\changePages\changePassword-TabBkgrd.gif" />
+    <Content Include="Controls\Admin\Images\changePages\checkAll.gif" />
+    <Content Include="Controls\Admin\Images\changePages\checkAll_Button.gif" />
+    <Content Include="Controls\Admin\Images\changePages\clearSelection_Button.gif" />
+    <Content Include="Controls\Admin\Images\changePages\contentColumnsTitle-Tile.gif" />
+    <Content Include="Controls\Admin\Images\changePages\contentRow-RedTile.gif" />
+    <Content Include="Controls\Admin\Images\changePages\contentRow-Tile.gif" />
+    <Content Include="Controls\Admin\Images\changePages\contentRow-YellowTile.gif" />
+    <Content Include="Controls\Admin\Images\changePages\contentTitle-Tile.gif" />
+    <Content Include="Controls\Admin\Images\changePages\forgotPassword-Tab.gif" />
+    <Content Include="Controls\Admin\Images\changePages\forgotPassword-TabBkgrd.gif" />
+    <Content Include="Controls\Admin\Images\changePages\formButton-CenterTile.gif" />
+    <Content Include="Controls\Admin\Images\changePages\formButton-LeftEnd.gif" />
+    <Content Include="Controls\Admin\Images\changePages\formButton-RightEnd.gif" />
+    <Content Include="Controls\Admin\Images\changePages\generatePDF_Button.gif" />
+    <Content Include="Controls\Admin\Images\changePages\getacro.gif" />
+    <Content Include="Controls\Admin\Images\changePages\headerBkgrd.gif" />
+    <Content Include="Controls\Admin\Images\changePages\headerBkgrd01-Tile.gif" />
+    <Content Include="Controls\Admin\Images\changePages\headerBkgrd01.gif" />
+    <Content Include="Controls\Admin\Images\changePages\headerBkgrd02-Tile.gif" />
+    <Content Include="Controls\Admin\Images\changePages\headerBkgrd02.gif" />
+    <Content Include="Controls\Admin\Images\changePages\headerFade.gif" />
+    <Content Include="Controls\Admin\Images\changePages\headerLogo.gif" />
+    <Content Include="Controls\Admin\Images\changePages\inactiveTab-Left.gif" />
+    <Content Include="Controls\Admin\Images\changePages\inactiveTab-Right.gif" />
+    <Content Include="Controls\Admin\Images\changePages\inactiveTab-Tile.gif" />
+    <Content Include="Controls\Admin\Images\changePages\leftTile.gif" />
+    <Content Include="Controls\Admin\Images\changePages\loginBkgrd.gif" />
+    <Content Include="Controls\Admin\Images\changePages\loginBkgrd.jpg" />
+    <Content Include="Controls\Admin\Images\changePages\loginButton.gif" />
+    <Content Include="Controls\Admin\Images\changePages\mainLinks-Line.gif" />
+    <Content Include="Controls\Admin\Images\changePages\mainTabBkgrd-Tile.gif" />
+    <Content Include="Controls\Admin\Images\changePages\Marker01.gif" />
+    <Content Include="Controls\Admin\Images\changePages\newSearchButton.gif" />
+    <Content Include="Controls\Admin\Images\changePages\pageBkgrd.jpg" />
+    <Content Include="Controls\Admin\Images\changePages\polf.gif" />
+    <Content Include="Controls\Admin\Images\changePages\postIt-Bullets.gif" />
+    <Content Include="Controls\Admin\Images\changePages\postIt-Bullets.jpg" />
+    <Content Include="Controls\Admin\Images\changePages\rightTile.gif" />
+    <Content Include="Controls\Admin\Images\changePages\save-Button.gif" />
+    <Content Include="Controls\Admin\Images\changePages\searchButton.gif" />
+    <Content Include="Controls\Admin\Images\changePages\sendPassword-Button.gif" />
+    <Content Include="Controls\Admin\Images\changePages\spacer.gif" />
+    <Content Include="Controls\Admin\Images\changePages\subTab-Left.gif" />
+    <Content Include="Controls\Admin\Images\changePages\subTab-Right.gif" />
+    <Content Include="Controls\Admin\Images\changePages\subTab-Tile.gif" />
+    <Content Include="Controls\Admin\Images\changePages\subTabBkgrd-Tile.gif" />
+    <Content Include="Controls\Admin\Images\changePages\subTabInactive-Left.gif" />
+    <Content Include="Controls\Admin\Images\changePages\subTabInactive-Right.gif" />
+    <Content Include="Controls\Admin\Images\changePages\subTabInactiveBkgrd-Tile.gif" />
+    <Content Include="Controls\Admin\Images\changePages\tab.gif" />
+    <Content Include="Controls\Admin\Images\changePages\tabBkgrd.gif" />
+    <Content Include="Controls\Admin\Images\changePages\tq3nav.gif" />
+    <Content Include="Controls\Admin\Images\changePages\unCheckAll.gif" />
+    <Content Include="Controls\Admin\Images\changePages\uncheckAll_Button.gif" />
+    <Content Include="Controls\Admin\Images\changePages\YellowTile.gif" />
+    <Content Include="Controls\Admin\Images\checkAll.gif" />
+    <Content Include="Controls\Admin\Images\checkAll_Button.gif" />
+    <Content Include="Controls\Admin\Images\clear.gif" />
+    <Content Include="Controls\Admin\Images\clearSelection_Button.gif" />
+    <Content Include="Controls\Admin\Images\close_55wX25h.gif" />
+    <Content Include="Controls\Admin\Images\contentColumnsTitle-Tile.gif" />
+    <Content Include="Controls\Admin\Images\contentRow-RedTile.gif" />
+    <Content Include="Controls\Admin\Images\contentRow-Tile.gif" />
+    <Content Include="Controls\Admin\Images\contentRow-YellowTile.gif" />
+    <Content Include="Controls\Admin\Images\contentTitle-Tile.gif" />
+    <Content Include="Controls\Admin\Images\continue.gif" />
+    <Content Include="Controls\Admin\Images\edit-Button.gif" />
+    <Content Include="Controls\Admin\Images\edit-Button02.gif" />
+    <Content Include="Controls\Admin\Images\edit_invoice.gif" />
+    <Content Include="Controls\Admin\Images\formButton-CenterTile.gif" />
+    <Content Include="Controls\Admin\Images\formButton-LeftEnd.gif" />
+    <Content Include="Controls\Admin\Images\formButton-RightEnd.gif" />
+    <Content Include="Controls\Admin\Images\generatePDF_Button.gif" />
+    <Content Include="Controls\Admin\Images\getacro.gif" />
+    <Content Include="Controls\Admin\Images\GreenLight.gif" />
+    <Content Include="Controls\Admin\Images\headerBkgrd.gif" />
+    <Content Include="Controls\Admin\Images\headerBkgrd01-Tile.gif" />
+    <Content Include="Controls\Admin\Images\headerBkgrd01.gif" />
+    <Content Include="Controls\Admin\Images\headerBkgrd02-Tile.gif" />
+    <Content Include="Controls\Admin\Images\headerBkgrd02.gif" />
+    <Content Include="Controls\Admin\Images\headerFade.gif" />
+    <Content Include="Controls\Admin\Images\headerLogo.gif" />
+    <Content Include="Controls\Admin\Images\headerTile.gif" />
+    <Content Include="Controls\Admin\Images\hotel_Icon.gif" />
+    <Content Include="Controls\Admin\Images\IMG_usrtab_left_6wX20h.gif" />
+    <Content Include="Controls\Admin\Images\IMG_usrtab_right_6wX20h.gif" />
+    <Content Include="Controls\Admin\Images\inactiveTab-Left.gif" />
+    <Content Include="Controls\Admin\Images\inactiveTab-Right.gif" />
+    <Content Include="Controls\Admin\Images\inactiveTab-Tile.gif" />
+    <Content Include="Controls\Admin\Images\InvFLYR1.gif" />
+    <Content Include="Controls\Admin\Images\InvoiceFLYR_Logo.gif" />
+    <Content Include="Controls\Admin\Images\leftTile.gif" />
+    <Content Include="Controls\Admin\Images\loginAssistance_Button.gif" />
+    <Content Include="Controls\Admin\Images\loginAssistance_Button.old.gif" />
+    <Content Include="Controls\Admin\Images\loginBkgrd.gif" />
+    <Content Include="Controls\Admin\Images\loginBkgrd.jpg" />
+    <Content Include="Controls\Admin\Images\loginButton.gif" />
+    <Content Include="Controls\Admin\Images\loginTitle.gif" />
+    <Content Include="Controls\Admin\Images\logoclear.gif" />
+    <Content Include="Controls\Admin\Images\logon.gif" />
+    <Content Include="Controls\Admin\Images\Logos\logo1.gif" />
+    <Content Include="Controls\Admin\Images\Logos\logo2.gif" />
+    <Content Include="Controls\Admin\Images\mainLinks-Line.gif" />
+    <Content Include="Controls\Admin\Images\mainTabBkgrd-Tile.gif" />
+    <Content Include="Controls\Admin\Images\Marker01.gif" />
+    <Content Include="Controls\Admin\Images\menuLine.gif" />
+    <Content Include="Controls\Admin\Images\Menu\collapsed.gif" />
+    <Content Include="Controls\Admin\Images\Menu\expanded.gif" />
+    <Content Include="Controls\Admin\Images\Menu\marker01.gif" />
+    <Content Include="Controls\Admin\Images\Menu\marker02.gif" />
+    <Content Include="Controls\Admin\Images\Menu\marker03.gif" />
+    <Content Include="Controls\Admin\Images\Menu\markerOrange.gif" />
+    <Content Include="Controls\Admin\Images\Menu\Spacer.gif" />
+    <Content Include="Controls\Admin\Images\Navigantlogo.gif" />
+    <Content Include="Controls\Admin\Images\newSearchButton.gif" />
+    <Content Include="Controls\Admin\Images\next.gif" />
+    <Content Include="Controls\Admin\Images\next_year.gif" />
+    <Content Include="Controls\Admin\Images\ODIrgb.jpg" />
+    <Content Include="Controls\Admin\Images\ok.gif" />
+    <Content Include="Controls\Admin\Images\pageBkgrd.jpg" />
+    <Content Include="Controls\Admin\Images\pixel.gif" />
+    <Content Include="Controls\Admin\Images\polf.gif" />
+    <Content Include="Controls\Admin\Images\postIt-Bullets.gif" />
+    <Content Include="Controls\Admin\Images\postIt-Bullets.jpg" />
+    <Content Include="Controls\Admin\Images\prev.gif" />
+    <Content Include="Controls\Admin\Images\prev_year.gif" />
+    <Content Include="Controls\Admin\Images\print.gif" />
+    <Content Include="Controls\Admin\Images\printableVersion-Button.gif" />
+    <Content Include="Controls\Admin\Images\printableVersion-Button02.gif" />
+    <Content Include="Controls\Admin\Images\printableVersion-ButtonBlue.gif" />
+    <Content Include="Controls\Admin\Images\printable_version_130wX25h.gif" />
+    <Content Include="Controls\Admin\Images\RedLight.gif" />
+    <Content Include="Controls\Admin\Images\return-Button.gif" />
+    <Content Include="Controls\Admin\Images\return-Button02.gif" />
+    <Content Include="Controls\Admin\Images\return.gif" />
+    <Content Include="Controls\Admin\Images\rightTile.gif" />
+    <Content Include="Controls\Admin\Images\save-Button.gif" />
+    <Content Include="Controls\Admin\Images\search-Button.gif" />
+    <Content Include="Controls\Admin\Images\search-Button02.gif" />
+    <Content Include="Controls\Admin\Images\search.gif" />
+    <Content Include="Controls\Admin\Images\searchButton.gif" />
+    <Content Include="Controls\Admin\Images\search_106wX27h.gif" />
+    <Content Include="Controls\Admin\Images\spacer.gif" />
+    <Content Include="Controls\Admin\Images\step1-02.gif" />
+    <Content Include="Controls\Admin\Images\step1_248wX20h.gif" />
+    <Content Include="Controls\Admin\Images\step2-02.gif" />
+    <Content Include="Controls\Admin\Images\step2_248wX20h.gif" />
+    <Content Include="Controls\Admin\Images\step2_254wX20h.gif" />
+    <Content Include="Controls\Admin\Images\submit.gif" />
+    <Content Include="Controls\Admin\Images\subTab-Left.gif" />
+    <Content Include="Controls\Admin\Images\subTab-Right.gif" />
+    <Content Include="Controls\Admin\Images\subTab-Tile.gif" />
+    <Content Include="Controls\Admin\Images\subTabBkgrd-Tile.gif" />
+    <Content Include="Controls\Admin\Images\subTabInactive-Left.gif" />
+    <Content Include="Controls\Admin\Images\subTabInactive-Right.gif" />
+    <Content Include="Controls\Admin\Images\subTabInactiveBkgrd-Tile.gif" />
+    <Content Include="Controls\Admin\Images\tab.gif" />
+    <Content Include="Controls\Admin\Images\tabBkgrd.gif" />
+    <Content Include="Controls\Admin\Images\top_stripe5.gif" />
+    <Content Include="Controls\Admin\Images\top_stripe6.gif" />
+    <Content Include="Controls\Admin\Images\top_stripe7.gif" />
+    <Content Include="Controls\Admin\Images\tq3nav.gif" />
+    <Content Include="Controls\Admin\Images\unCheckAll.gif" />
+    <Content Include="Controls\Admin\Images\uncheckAll_Button.gif" />
+    <Content Include="Controls\Admin\Images\username_168wX20h.gif" />
+    <Content Include="Controls\Admin\Images\YellowLight.gif" />
+    <Content Include="Controls\Admin\Images\YellowTile.gif" />
+    <Content Include="Controls\Admin\RoleAccessControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\Admin\RoleAdminControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\Admin\RoleAdminEditControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\Admin\UserAdminControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\Admin\UserAdminEditControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\CustomParamsAgeRangeControl.ascx" />
+    <Content Include="Controls\CustomParamsAlertsControl.ascx" />
+    <Content Include="Controls\CustomParamsApproacher.ascx" />
+    <Content Include="Controls\CustomParamsAvayaTroubleReportControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\CustomParamsCallControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\CustomParamsCAPANumberControl.ascx" />
+    <Content Include="Controls\CustomParamsCauseOfDeathControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\CustomParamsCompletedByControl.ascx" />
+    <Content Include="Controls\CustomParamsDisplayDisposition.ascx" />
+    <Content Include="Controls\CustomParamsDisplayEventLog.ascx" />
+    <Content Include="Controls\CustomParamsDisplayTriageFSControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\CustomParamsErrorControl.ascx" />
+    <Content Include="Controls\CustomParamsErrorInfoControl.ascx" />
+    <Content Include="Controls\CustomParamsFSConversionRateControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\CustomParamsFSSummaryControl.ascx" />
+    <Content Include="Controls\CustomParamsGroupByFacilityControl.ascx" />
+    <Content Include="Controls\CustomParamsMedicalRecordNumberControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\CustomParamsMessageImportControl.ascx" />
+    <Content Include="Controls\CustomParamsOrganizationControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\CustomParamsPageBreakByEmployeeControl.ascx" />
+    <Content Include="Controls\CustomParamsPatientNameControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\CustomParamsPersonControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\CustomParamsProcessor.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\CustomParamsReferralDetail.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\CustomParamsReferralTypeControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\CustomParamsRegistryDonorDesignationStatus.ascx" />
+    <Content Include="Controls\CustomParamsRegistryDonorStatusControl.ascx" />
+    <Content Include="Controls\CustomParamsRegistryGroupByControl.ascx" />
+    <Content Include="Controls\CustomParamsRegistryMailingLabelsSourceControl.ascx" />
+    <Content Include="Controls\CustomParamsRegistryOutreachEvents.ascx" />
+    <Content Include="Controls\CustomParamsRegistryStateControl.ascx" />
+    <Content Include="Controls\CustomParamsRegistryZipCode.ascx" />
+    <Content Include="Controls\CustomParamsScheduleLookupControl.ascx" />
+    <Content Include="Controls\CustomParamsStatTracUserControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\CustomParamsSummarizeByEmployeeControl.ascx" />
+    <Content Include="Controls\CustomParamsSummarizeByMonthControl.ascx" />
+    <Content Include="Controls\CustomParamsTrackingNumberControl.ascx" />
+    <Content Include="Controls\EventLogUpdateControl.ascx" />
+    <Content Include="Controls\Images\activeTab-Left.gif" />
+    <Content Include="Controls\Images\activeTab-Right.gif" />
+    <Content Include="Controls\Images\activeTab-Tile.gif" />
+    <Content Include="Controls\Images\air_Icon.gif" />
+    <Content Include="Controls\Images\bacmain1.jpg" />
+    <Content Include="Controls\Images\bacmain2.jpg" />
+    <Content Include="Controls\Images\bugAlert_Button.gif" />
+    <Content Include="Controls\Images\bug_button_off.gif" />
+    <Content Include="Controls\Images\bug_button_on.gif" />
+    <Content Include="Controls\Images\Buttons\buttons.htm" />
+    <Content Include="Controls\Images\Buttons\formButton-CenterTile.gif" />
+    <Content Include="Controls\Images\Buttons\formButton-LeftEnd.gif" />
+    <Content Include="Controls\Images\Buttons\formButton-RightEnd.gif" />
+    <Content Include="Controls\Images\Buttons\spacer.gif" />
+    <Content Include="Controls\Images\cal.gif" />
+    <Content Include="Controls\Images\car_Icon.gif" />
+    <Content Include="Controls\Images\changePages\activeTab-Left.gif" />
+    <Content Include="Controls\Images\changePages\activeTab-Right.gif" />
+    <Content Include="Controls\Images\changePages\activeTab-Tile.gif" />
+    <Content Include="Controls\Images\changePages\cancel-Button.gif" />
+    <Content Include="Controls\Images\changePages\challengePhrase-Button.gif" />
+    <Content Include="Controls\Images\changePages\challengePhrase-TabBkgrd.gif" />
+    <Content Include="Controls\Images\changePages\changePages-TabBkgrd.jpg" />
+    <Content Include="Controls\Images\changePages\changePages-TabBkgrd02.jpg" />
+    <Content Include="Controls\Images\changePages\changePassword-Button.gif" />
+    <Content Include="Controls\Images\changePages\changePassword-Tab.gif" />
+    <Content Include="Controls\Images\changePages\changePassword-TabBkgrd.gif" />
+    <Content Include="Controls\Images\changePages\checkAll.gif" />
+    <Content Include="Controls\Images\changePages\checkAll_Button.gif" />
+    <Content Include="Controls\Images\changePages\clearSelection_Button.gif" />
+    <Content Include="Controls\Images\changePages\contentColumnsTitle-Tile.gif" />
+    <Content Include="Controls\Images\changePages\contentRow-RedTile.gif" />
+    <Content Include="Controls\Images\changePages\contentRow-Tile.gif" />
+    <Content Include="Controls\Images\changePages\contentRow-YellowTile.gif" />
+    <Content Include="Controls\Images\changePages\contentTitle-Tile.gif" />
+    <Content Include="Controls\Images\changePages\forgotPassword-Tab.gif" />
+    <Content Include="Controls\Images\changePages\forgotPassword-TabBkgrd.gif" />
+    <Content Include="Controls\Images\changePages\formButton-CenterTile.gif" />
+    <Content Include="Controls\Images\changePages\formButton-LeftEnd.gif" />
+    <Content Include="Controls\Images\changePages\formButton-RightEnd.gif" />
+    <Content Include="Controls\Images\changePages\generatePDF_Button.gif" />
+    <Content Include="Controls\Images\changePages\getacro.gif" />
+    <Content Include="Controls\Images\changePages\headerBkgrd.gif" />
+    <Content Include="Controls\Images\changePages\headerBkgrd01-Tile.gif" />
+    <Content Include="Controls\Images\changePages\headerBkgrd01.gif" />
+    <Content Include="Controls\Images\changePages\headerBkgrd02-Tile.gif" />
+    <Content Include="Controls\Images\changePages\headerBkgrd02.gif" />
+    <Content Include="Controls\Images\changePages\headerFade.gif" />
+    <Content Include="Controls\Images\changePages\headerLogo.gif" />
+    <Content Include="Controls\Images\changePages\inactiveTab-Left.gif" />
+    <Content Include="Controls\Images\changePages\inactiveTab-Right.gif" />
+    <Content Include="Controls\Images\changePages\inactiveTab-Tile.gif" />
+    <Content Include="Controls\Images\changePages\leftTile.gif" />
+    <Content Include="Controls\Images\changePages\loginBkgrd.gif" />
+    <Content Include="Controls\Images\changePages\loginBkgrd.jpg" />
+    <Content Include="Controls\Images\changePages\loginButton.gif" />
+    <Content Include="Controls\Images\changePages\mainLinks-Line.gif" />
+    <Content Include="Controls\Images\changePages\mainTabBkgrd-Tile.gif" />
+    <Content Include="Controls\Images\changePages\Marker01.gif" />
+    <Content Include="Controls\Images\changePages\newSearchButton.gif" />
+    <Content Include="Controls\Images\changePages\pageBkgrd.jpg" />
+    <Content Include="Controls\Images\changePages\polf.gif" />
+    <Content Include="Controls\Images\changePages\postIt-Bullets.gif" />
+    <Content Include="Controls\Images\changePages\postIt-Bullets.jpg" />
+    <Content Include="Controls\Images\changePages\rightTile.gif" />
+    <Content Include="Controls\Images\changePages\save-Button.gif" />
+    <Content Include="Controls\Images\changePages\searchButton.gif" />
+    <Content Include="Controls\Images\changePages\sendPassword-Button.gif" />
+    <Content Include="Controls\Images\changePages\spacer.gif" />
+    <Content Include="Controls\Images\changePages\subTab-Left.gif" />
+    <Content Include="Controls\Images\changePages\subTab-Right.gif" />
+    <Content Include="Controls\Images\changePages\subTab-Tile.gif" />
+    <Content Include="Controls\Images\changePages\subTabBkgrd-Tile.gif" />
+    <Content Include="Controls\Images\changePages\subTabInactive-Left.gif" />
+    <Content Include="Controls\Images\changePages\subTabInactive-Right.gif" />
+    <Content Include="Controls\Images\changePages\subTabInactiveBkgrd-Tile.gif" />
+    <Content Include="Controls\Images\changePages\tab.gif" />
+    <Content Include="Controls\Images\changePages\tabBkgrd.gif" />
+    <Content Include="Controls\Images\changePages\tq3nav.gif" />
+    <Content Include="Controls\Images\changePages\unCheckAll.gif" />
+    <Content Include="Controls\Images\changePages\uncheckAll_Button.gif" />
+    <Content Include="Controls\Images\changePages\YellowTile.gif" />
+    <Content Include="Controls\Images\checkAll.gif" />
+    <Content Include="Controls\Images\checkAll_Button.gif" />
+    <Content Include="Controls\Images\clear.gif" />
+    <Content Include="Controls\Images\clearSelection_Button.gif" />
+    <Content Include="Controls\Images\close_55wX25h.gif" />
+    <Content Include="Controls\Images\contentColumnsTitle-Tile.gif" />
+    <Content Include="Controls\Images\contentRow-RedTile.gif" />
+    <Content Include="Controls\Images\contentRow-Tile.gif" />
+    <Content Include="Controls\Images\contentRow-YellowTile.gif" />
+    <Content Include="Controls\Images\contentTitle-Tile.gif" />
+    <Content Include="Controls\Images\continue.gif" />
+    <Content Include="Controls\Images\edit-Button.gif" />
+    <Content Include="Controls\Images\edit-Button02.gif" />
+    <Content Include="Controls\Images\edit_invoice.gif" />
+    <Content Include="Controls\Images\favicon.ico" />
+    <Content Include="Controls\Images\formButton-CenterTile.gif" />
+    <Content Include="Controls\Images\formButton-LeftEnd.gif" />
+    <Content Include="Controls\Images\formButton-RightEnd.gif" />
+    <Content Include="Controls\Images\generatePDF_Button.gif" />
+    <Content Include="Controls\Images\getacro.gif" />
+    <Content Include="Controls\Images\GreenLight.gif" />
+    <Content Include="Controls\Images\headerBkgrd.gif" />
+    <Content Include="Controls\Images\headerBkgrd01-Tile.gif" />
+    <Content Include="Controls\Images\headerBkgrd01.gif" />
+    <Content Include="Controls\Images\headerBkgrd02-Tile.gif" />
+    <Content Include="Controls\Images\headerBkgrd02.gif" />
+    <Content Include="Controls\Images\headerFade.gif" />
+    <Content Include="Controls\Images\headerLogo.gif" />
+    <Content Include="Controls\Images\headerTile.gif" />
+    <Content Include="Controls\Images\hotel_Icon.gif" />
+    <Content Include="Controls\Images\IMG_usrtab_left_6wX20h.gif" />
+    <Content Include="Controls\Images\IMG_usrtab_right_6wX20h.gif" />
+    <Content Include="Controls\Images\inactiveTab-Left.gif" />
+    <Content Include="Controls\Images\inactiveTab-Right.gif" />
+    <Content Include="Controls\Images\inactiveTab-Tile.gif" />
+    <Content Include="Controls\Images\InvFLYR1.gif" />
+    <Content Include="Controls\Images\InvoiceFLYR_Logo.gif" />
+    <Content Include="Controls\Images\leftTile.gif" />
+    <Content Include="Controls\Images\loginAssistance_Button.gif" />
+    <Content Include="Controls\Images\loginAssistance_Button.old.gif" />
+    <Content Include="Controls\Images\loginBkgrd.gif" />
+    <Content Include="Controls\Images\loginBkgrd.jpg" />
+    <Content Include="Controls\Images\loginButton.gif" />
+    <Content Include="Controls\Images\loginTitle.gif" />
+    <Content Include="Controls\Images\logoclear.gif" />
+    <Content Include="Controls\Images\logon.gif" />
+    <Content Include="Controls\Images\Logos\logo1.gif" />
+    <Content Include="Controls\Images\Logos\logo2.gif" />
+    <Content Include="Controls\Images\Logos\QA\DonorTrac.gif" />
+    <Content Include="Controls\Images\Logos\QA\oasis.JPG" />
+    <Content Include="Controls\Images\Logos\QA\statline.jpg" />
+    <Content Include="Controls\Images\mainLinks-Line.gif" />
+    <Content Include="Controls\Images\mainTabBkgrd-Tile.gif" />
+    <Content Include="Controls\Images\Marker01.gif" />
+    <Content Include="Controls\Images\menuLine.gif" />
+    <Content Include="Controls\Images\Menu\collapsed.gif" />
+    <Content Include="Controls\Images\Menu\expanded.gif" />
+    <Content Include="Controls\Images\Menu\marker01.gif" />
+    <Content Include="Controls\Images\Menu\marker02.gif" />
+    <Content Include="Controls\Images\Menu\marker03.gif" />
+    <Content Include="Controls\Images\Menu\markerOrange.gif" />
+    <Content Include="Controls\Images\Menu\Spacer.gif" />
+    <Content Include="Controls\Images\Navigantlogo.gif" />
+    <Content Include="Controls\Images\newSearchButton.gif" />
+    <Content Include="Controls\Images\next.gif" />
+    <Content Include="Controls\Images\next_year.gif" />
+    <Content Include="Controls\Images\ODIrgb.jpg" />
+    <Content Include="Controls\Images\ok.gif" />
+    <Content Include="Controls\Images\pageBkgrd.jpg" />
+    <Content Include="Controls\Images\pixel.gif" />
+    <Content Include="Controls\Images\polf.gif" />
+    <Content Include="Controls\Images\postIt-Bullets.gif" />
+    <Content Include="Controls\Images\postIt-Bullets.jpg" />
+    <Content Include="Controls\Images\prev.gif" />
+    <Content Include="Controls\Images\prev_year.gif" />
+    <Content Include="Controls\Images\print.gif" />
+    <Content Include="Controls\Images\printableVersion-Button.gif" />
+    <Content Include="Controls\Images\printableVersion-Button02.gif" />
+    <Content Include="Controls\Images\printableVersion-ButtonBlue.gif" />
+    <Content Include="Controls\Images\printable_version_130wX25h.gif" />
+    <Content Include="Controls\Images\RedLight.gif" />
+    <Content Include="Controls\Images\return-Button.gif" />
+    <Content Include="Controls\Images\return-Button02.gif" />
+    <Content Include="Controls\Images\return.gif" />
+    <Content Include="Controls\Images\rightTile.gif" />
+    <Content Include="Controls\Images\save-Button.gif" />
+    <Content Include="Controls\Images\search-Button.gif" />
+    <Content Include="Controls\Images\search-Button02.gif" />
+    <Content Include="Controls\Images\search.gif" />
+    <Content Include="Controls\Images\searchButton.gif" />
+    <Content Include="Controls\Images\search_106wX27h.gif" />
+    <Content Include="Controls\Images\spacer.gif" />
+    <Content Include="Controls\Images\step1-02.gif" />
+    <Content Include="Controls\Images\step1_248wX20h.gif" />
+    <Content Include="Controls\Images\step2-02.gif" />
+    <Content Include="Controls\Images\step2_248wX20h.gif" />
+    <Content Include="Controls\Images\step2_254wX20h.gif" />
+    <Content Include="Controls\Images\submit.gif" />
+    <Content Include="Controls\Images\subTab-Left.gif" />
+    <Content Include="Controls\Images\subTab-Right.gif" />
+    <Content Include="Controls\Images\subTab-Tile.gif" />
+    <Content Include="Controls\Images\subTabBkgrd-Tile.gif" />
+    <Content Include="Controls\Images\subTabInactive-Left.gif" />
+    <Content Include="Controls\Images\subTabInactive-Right.gif" />
+    <Content Include="Controls\Images\subTabInactiveBkgrd-Tile.gif" />
+    <Content Include="Controls\Images\tab.gif" />
+    <Content Include="Controls\Images\tabBkgrd.gif" />
+    <Content Include="Controls\Images\top_stripe5.gif" />
+    <Content Include="Controls\Images\top_stripe6.gif" />
+    <Content Include="Controls\Images\top_stripe7.gif" />
+    <Content Include="Controls\Images\tq3nav.gif" />
+    <Content Include="Controls\Images\unCheckAll.gif" />
+    <Content Include="Controls\Images\uncheckAll_Button.gif" />
+    <Content Include="Controls\Images\username_168wX20h.gif" />
+    <Content Include="Controls\Images\YellowLight.gif" />
+    <Content Include="Controls\Images\YellowTile.gif" />
+    <Content Include="Controls\LoginControl.ascx" />
+    <Content Include="Controls\CustomParamsPendingReferralTypeControl.ascx" />
+    <Content Include="Controls\QAAddEditErrorControl.ascx" />
+    <Content Include="Controls\QAAddEditErrorTypeControl.ascx" />
+    <Content Include="Controls\QAConfigControl.ascx" />
+    <Content Include="Controls\QAErrorDetailControl.ascx" />
+    <Content Include="Controls\QAManageErrorListControl.ascx" />
+    <Content Include="Controls\QAErrorLogControl.ascx" />
+    <Content Include="Controls\QAManageErrorLocationControl.ascx" />
+    <Content Include="Controls\QAManageErrorTypesControl.ascx" />
+    <Content Include="Controls\QAManageProcessStepsControl.ascx" />
+    <Content Include="Controls\QAManageQualityMonitoringFormsControl.ascx" />
+    <Content Include="Controls\QAMonitoringControl.ascx" />
+    <Content Include="Controls\QAPendingReviewControl.ascx" />
+    <Content Include="Controls\QAReviewControl.ascx" />
+    <Content Include="Controls\ReferralFacilityComplianceControl.ascx" />
+    <Content Include="Controls\ReferralSearchControl.ascx" />
+    <Content Include="Controls\ReferralUpdateControl.ascx" />
+    <Content Include="Controls\ReportDisplayControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\ReportListControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\ReportParamsControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\ReportsControl.ascx" />
+    <Content Include="Controls\ScheduleCreateUpdateShiftControl.ascx" />
+    <Content Include="Controls\ScheduleOnCallControl.ascx" />
+    <Content Include="Controls\ScheduleSearchControl.ascx" />
+    <Content Include="Controls\ScheduleShiftControl.ascx" />
+    <Content Include="Controls\ScheduleSplitShiftControl.ascx" />
+    <Content Include="Controls\CustomParamsEmployeeControl.ascx" />
+    <Content Include="Controls\CustomParamsTrackingTypeControl.ascx" />
+    <Content Include="Controls\CustomParamsRegistryDMVWebControl.ascx" />
+    <Content Include="EventLogUpdate.aspx" />
+    <Content Include="ig_res\Default\ig_calendar.css" />
+    <Content Include="ig_res\Default\ig_calendarview.css" />
+    <Content Include="ig_res\Default\ig_combo.css" />
+    <Content Include="ig_res\Default\ig_dataGrid.css" />
+    <Content Include="ig_res\Default\ig_datamenu.css" />
+    <Content Include="ig_res\Default\ig_datatree.css" />
+    <Content Include="ig_res\Default\ig_datechooser.css" />
+    <Content Include="ig_res\Default\ig_dayview.css" />
+    <Content Include="ig_res\Default\ig_dialogwindow.css" />
+    <Content Include="ig_res\Default\ig_dropDown.css" />
+    <Content Include="ig_res\Default\ig_grid.css" />
+    <Content Include="ig_res\Default\ig_grid_opt.css" />
+    <Content Include="ig_res\Default\ig_imageViewer.css" />
+    <Content Include="ig_res\Default\ig_listbar.css" />
+    <Content Include="ig_res\Default\ig_menu.css" />
+    <Content Include="ig_res\Default\ig_monthview.css" />
+    <Content Include="ig_res\Default\ig_navbar.css" />
+    <Content Include="ig_res\Default\ig_panel.css" />
+    <Content Include="ig_res\Default\ig_progressbar.css" />
+    <Content Include="ig_res\Default\ig_shared.css" />
+    <Content Include="ig_res\Default\ig_slider.css" />
+    <Content Include="ig_res\Default\ig_spellCheckerDialog.css" />
+    <Content Include="ig_res\Default\ig_splitter.css" />
+    <Content Include="ig_res\Default\ig_tab.css" />
+    <Content Include="ig_res\Default\ig_textedit.css" />
+    <Content Include="ig_res\Default\ig_toolbar.css" />
+    <Content Include="ig_res\Default\ig_tree.css" />
+    <Content Include="ig_res\Default\ig_weekview.css" />
+    <Content Include="ig_res\Default\images\ActiveRowSelector.gif" />
+    <Content Include="ig_res\Default\images\addnewrow.gif" />
+    <Content Include="ig_res\Default\images\addnewrow_image.gif" />
+    <Content Include="ig_res\Default\images\add_disabled.gif" />
+    <Content Include="ig_res\Default\images\add_down.gif" />
+    <Content Include="ig_res\Default\images\add_hover.gif" />
+    <Content Include="ig_res\Default\images\add_up.gif" />
+    <Content Include="ig_res\Default\images\back_horiz.gif" />
+    <Content Include="ig_res\Default\images\back_vert.gif" />
+    <Content Include="ig_res\Default\images\buttonBG.png" />
+    <Content Include="ig_res\Default\images\button_bg.jpg" />
+    <Content Include="ig_res\Default\images\button_officeBlue.gif" />
+    <Content Include="ig_res\Default\images\button_officeBlue.png" />
+    <Content Include="ig_res\Default\images\button_silver.gif" />
+    <Content Include="ig_res\Default\images\Caption_bg.jpg" />
+    <Content Include="ig_res\Default\images\dayheader.jpg" />
+    <Content Include="ig_res\Default\images\day_header.jpg" />
+    <Content Include="ig_res\Default\images\day_header1.gif" />
+    <Content Include="ig_res\Default\images\day_header_active.jpg" />
+    <Content Include="ig_res\Default\images\del_disabled.gif" />
+    <Content Include="ig_res\Default\images\del_down.gif" />
+    <Content Include="ig_res\Default\images\del_hover.gif" />
+    <Content Include="ig_res\Default\images\del_up.gif" />
+    <Content Include="ig_res\Default\images\downarrows_white.gif" />
+    <Content Include="ig_res\Default\images\end_disabled.gif" />
+    <Content Include="ig_res\Default\images\end_down.gif" />
+    <Content Include="ig_res\Default\images\end_hover.gif" />
+    <Content Include="ig_res\Default\images\end_up.gif" />
+    <Content Include="ig_res\Default\images\ff_disabled.gif" />
+    <Content Include="ig_res\Default\images\ff_down.gif" />
+    <Content Include="ig_res\Default\images\ff_hover.gif" />
+    <Content Include="ig_res\Default\images\ff_up.gif" />
+    <Content Include="ig_res\Default\images\fill_horiz.gif" />
+    <Content Include="ig_res\Default\images\fill_vert.gif" />
+    <Content Include="ig_res\Default\images\groupbyHeader.gif" />
+    <Content Include="ig_res\Default\images\header.gif" />
+    <Content Include="ig_res\Default\images\header_hover.gif" />
+    <Content Include="ig_res\Default\images\igdd_DropDownButton.png" />
+    <Content Include="ig_res\Default\images\igdd_DropDownListContainerBG.png" />
+    <Content Include="ig_res\Default\images\igdm_bg_normal.jpg" />
+    <Content Include="ig_res\Default\images\igdt_Blank.gif" />
+    <Content Include="ig_res\Default\images\igdt_First.gif" />
+    <Content Include="ig_res\Default\images\igdt_FirstMinus.gif" />
+    <Content Include="ig_res\Default\images\igdt_FirstPlus.gif" />
+    <Content Include="ig_res\Default\images\igdt_folder.gif" />
+    <Content Include="ig_res\Default\images\igdt_folder_open.gif" />
+    <Content Include="ig_res\Default\images\igdt_Last.gif" />
+    <Content Include="ig_res\Default\images\igdt_LastMinus.gif" />
+    <Content Include="ig_res\Default\images\igdt_LastPlus.gif" />
+    <Content Include="ig_res\Default\images\igdt_Leaf.gif" />
+    <Content Include="ig_res\Default\images\igdt_Line.gif" />
+    <Content Include="ig_res\Default\images\igdt_Middle.gif" />
+    <Content Include="ig_res\Default\images\igdt_MiddleMinus.gif" />
+    <Content Include="ig_res\Default\images\igdt_MiddlePlus.gif" />
+    <Content Include="ig_res\Default\images\igdt_Minus.gif" />
+    <Content Include="ig_res\Default\images\igdt_Plus.gif" />
+    <Content Include="ig_res\Default\images\igdt_Single.gif" />
+    <Content Include="ig_res\Default\images\igdt_SingleMinus.gif" />
+    <Content Include="ig_res\Default\images\igdt_SinglePlus.gif" />
+    <Content Include="ig_res\Default\images\igdw_BodyCornerBottomLeft.gif" />
+    <Content Include="ig_res\Default\images\igdw_BodyCornerBottomRight.gif" />
+    <Content Include="ig_res\Default\images\igdw_BodyCornerTopLeft.gif" />
+    <Content Include="ig_res\Default\images\igdw_BodyCornerTopRight.gif" />
+    <Content Include="ig_res\Default\images\igdw_BodyEdgeBottom.gif" />
+    <Content Include="ig_res\Default\images\igdw_BodyEdgeTop.gif" />
+    <Content Include="ig_res\Default\images\igdw_Bottom.gif" />
+    <Content Include="ig_res\Default\images\igdw_BottomLeft.gif" />
+    <Content Include="ig_res\Default\images\igdw_BottomRight.gif" />
+    <Content Include="ig_res\Default\images\igdw_Close.gif" />
+    <Content Include="ig_res\Default\images\igdw_CloseHover.gif" />
+    <Content Include="ig_res\Default\images\igdw_CloseMouseDown.gif" />
+    <Content Include="ig_res\Default\images\igdw_EdgeLeft.gif" />
+    <Content Include="ig_res\Default\images\igdw_EdgeRight.gif" />
+    <Content Include="ig_res\Default\images\igdw_HeaderContent.gif" />
+    <Content Include="ig_res\Default\images\igdw_HeaderCornerLeft.gif" />
+    <Content Include="ig_res\Default\images\igdw_HeaderCornerRight.gif" />
+    <Content Include="ig_res\Default\images\igdw_Maximize.gif" />
+    <Content Include="ig_res\Default\images\igdw_MaximizeHover.gif" />
+    <Content Include="ig_res\Default\images\igdw_MaximizeMouseDown.gif" />
+    <Content Include="ig_res\Default\images\igdw_Minimize.gif" />
+    <Content Include="ig_res\Default\images\igdw_MinimizeHover.gif" />
+    <Content Include="ig_res\Default\images\igdw_MinimizeMouseDown.gif" />
+    <Content Include="ig_res\Default\images\igdw_Pin.gif" />
+    <Content Include="ig_res\Default\images\igdw_PinHover.gif" />
+    <Content Include="ig_res\Default\images\igdw_PinMouseDown.gif" />
+    <Content Include="ig_res\Default\images\igdw_ResizingHandle.gif" />
+    <Content Include="ig_res\Default\images\igdw_Restore.gif" />
+    <Content Include="ig_res\Default\images\igdw_RestoreHover.gif" />
+    <Content Include="ig_res\Default\images\igdw_RestoreMouseDown.gif" />
+    <Content Include="ig_res\Default\images\igdw_top.gif" />
+    <Content Include="ig_res\Default\images\igdw_topHidden.gif" />
+    <Content Include="ig_res\Default\images\igdw_TopLeft.gif" />
+    <Content Include="ig_res\Default\images\igdw_TopLeftHidden.gif" />
+    <Content Include="ig_res\Default\images\igdw_TopRight.gif" />
+    <Content Include="ig_res\Default\images\igdw_TopRightHidden.gif" />
+    <Content Include="ig_res\Default\images\igdw_Unpin.gif" />
+    <Content Include="ig_res\Default\images\igdw_UnpinHover.gif" />
+    <Content Include="ig_res\Default\images\igdw_UnpinMouseDown.gif" />
+    <Content Include="ig_res\Default\images\igg_Filter.gif" />
+    <Content Include="ig_res\Default\images\igg_FilterApplied.gif" />
+    <Content Include="ig_res\Default\images\igg_filterrow.gif" />
+    <Content Include="ig_res\Default\images\igg_header.gif" />
+    <Content Include="ig_res\Default\images\igg_rowselector.gif" />
+    <Content Include="ig_res\Default\images\igg_Selected.gif" />
+    <Content Include="ig_res\Default\images\igg_sortAsc.gif" />
+    <Content Include="ig_res\Default\images\igg_sortDesc.gif" />
+    <Content Include="ig_res\Default\images\igiv_CornerBottomLeft.gif" />
+    <Content Include="ig_res\Default\images\igiv_CornerBottomLeft_Vert.gif" />
+    <Content Include="ig_res\Default\images\igiv_CornerBottomRight.gif" />
+    <Content Include="ig_res\Default\images\igiv_CornerBottomRight_Vert.gif" />
+    <Content Include="ig_res\Default\images\igiv_CornerTopLeft.gif" />
+    <Content Include="ig_res\Default\images\igiv_CornerTopLeft_Vert.gif" />
+    <Content Include="ig_res\Default\images\igiv_CornerTopRight.gif" />
+    <Content Include="ig_res\Default\images\igiv_CornerTopRight_Vert.gif" />
+    <Content Include="ig_res\Default\images\igiv_EdgeBottom.gif" />
+    <Content Include="ig_res\Default\images\igiv_EdgeBottom_Vert.gif" />
+    <Content Include="ig_res\Default\images\igiv_EdgeLeft.gif" />
+    <Content Include="ig_res\Default\images\igiv_EdgeLeft_Vert.gif" />
+    <Content Include="ig_res\Default\images\igiv_EdgeRight.gif" />
+    <Content Include="ig_res\Default\images\igiv_EdgeRight_Vert.gif" />
+    <Content Include="ig_res\Default\images\igiv_EdgeTop.gif" />
+    <Content Include="ig_res\Default\images\igiv_EdgeTop_Vert.gif" />
+    <Content Include="ig_res\Default\images\igiv_H_NextButton.png" />
+    <Content Include="ig_res\Default\images\igiv_H_NextButtonDisabled.png" />
+    <Content Include="ig_res\Default\images\igiv_H_NextButtonHover.png" />
+    <Content Include="ig_res\Default\images\igiv_H_NextButtonPressed.png" />
+    <Content Include="ig_res\Default\images\igiv_H_PrevButton.png" />
+    <Content Include="ig_res\Default\images\igiv_H_PrevButtonDisabled.png" />
+    <Content Include="ig_res\Default\images\igiv_H_PrevButtonHover.png" />
+    <Content Include="ig_res\Default\images\igiv_H_PrevButtonPressed.png" />
+    <Content Include="ig_res\Default\images\igiv_V_NextButton.png" />
+    <Content Include="ig_res\Default\images\igiv_V_NextButtonDisabled.png" />
+    <Content Include="ig_res\Default\images\igiv_V_NextButtonHover.png" />
+    <Content Include="ig_res\Default\images\igiv_V_NextButtonPressed.png" />
+    <Content Include="ig_res\Default\images\igiv_V_PNextButtonPressed.png" />
+    <Content Include="ig_res\Default\images\igiv_V_PrevButton.png" />
+    <Content Include="ig_res\Default\images\igiv_V_PrevButtonDisabled.png" />
+    <Content Include="ig_res\Default\images\igiv_V_PrevButtonHover.png" />
+    <Content Include="ig_res\Default\images\igiv_V_PrevButtonPressed.png" />
+    <Content Include="ig_res\Default\images\igpnl_dwn.gif" />
+    <Content Include="ig_res\Default\images\igpnl_up.gif" />
+    <Content Include="ig_res\Default\images\igsch_xpbluedn.gif" />
+    <Content Include="ig_res\Default\images\igsch_xpblueup.gif" />
+    <Content Include="ig_res\Default\images\igsli_MinusDisableH.gif" />
+    <Content Include="ig_res\Default\images\igsli_MinusDisableV.gif" />
+    <Content Include="ig_res\Default\images\igsli_MinusFocusH.gif" />
+    <Content Include="ig_res\Default\images\igsli_MinusFocusV.gif" />
+    <Content Include="ig_res\Default\images\igsli_MinusH.gif" />
+    <Content Include="ig_res\Default\images\igsli_MinusHoverH.gif" />
+    <Content Include="ig_res\Default\images\igsli_MinusHoverV.gif" />
+    <Content Include="ig_res\Default\images\igsli_MinusPressH.gif" />
+    <Content Include="ig_res\Default\images\igsli_MinusPressV.gif" />
+    <Content Include="ig_res\Default\images\igsli_MinusV.gif" />
+    <Content Include="ig_res\Default\images\igsli_PlusDisableH.gif" />
+    <Content Include="ig_res\Default\images\igsli_PlusDisableV.gif" />
+    <Content Include="ig_res\Default\images\igsli_PlusFocusH.gif" />
+    <Content Include="ig_res\Default\images\igsli_PlusFocusV.gif" />
+    <Content Include="ig_res\Default\images\igsli_PlusH.gif" />
+    <Content Include="ig_res\Default\images\igsli_PlusHoverH.gif" />
+    <Content Include="ig_res\Default\images\igsli_PlusHoverV.gif" />
+    <Content Include="ig_res\Default\images\igsli_PlusPressH.gif" />
+    <Content Include="ig_res\Default\images\igsli_PlusPressV.gif" />
+    <Content Include="ig_res\Default\images\igsli_PlusV.gif" />
+    <Content Include="ig_res\Default\images\igsli_ThumbDisableH.gif" />
+    <Content Include="ig_res\Default\images\igsli_ThumbDisableV.gif" />
+    <Content Include="ig_res\Default\images\igsli_ThumbFocusH.gif" />
+    <Content Include="ig_res\Default\images\igsli_ThumbFocusV.gif" />
+    <Content Include="ig_res\Default\images\igsli_ThumbH.gif" />
+    <Content Include="ig_res\Default\images\igsli_ThumbHoverH.gif" />
+    <Content Include="ig_res\Default\images\igsli_ThumbHoverV.gif" />
+    <Content Include="ig_res\Default\images\igsli_ThumbPressH.gif" />
+    <Content Include="ig_res\Default\images\igsli_ThumbPressV.gif" />
+    <Content Include="ig_res\Default\images\igsli_ThumbV.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackEdges.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackEdgesV.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackFill.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackFillV.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackValueEdges2H.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackValueEdges2V.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackValueEdgesH.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackValueEdgesV.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackValueFill2H.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackValueFill2V.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackValueFillH.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackValueFillV.gif" />
+    <Content Include="ig_res\Default\images\igspl_CollapseDown.gif" />
+    <Content Include="ig_res\Default\images\igspl_CollapseDownHover.gif" />
+    <Content Include="ig_res\Default\images\igspl_CollapseLeft.gif" />
+    <Content Include="ig_res\Default\images\igspl_CollapseLeftHover.gif" />
+    <Content Include="ig_res\Default\images\igspl_CollapseRight.gif" />
+    <Content Include="ig_res\Default\images\igspl_CollapseRightHover.gif" />
+    <Content Include="ig_res\Default\images\igspl_CollapseUp.gif" />
+    <Content Include="ig_res\Default\images\igspl_CollapseUpHover.gif" />
+    <Content Include="ig_res\Default\images\igspl_ExpandDown.gif" />
+    <Content Include="ig_res\Default\images\igspl_ExpandDownHover.gif" />
+    <Content Include="ig_res\Default\images\igspl_ExpandLeft.gif" />
+    <Content Include="ig_res\Default\images\igspl_ExpandLeftHover.gif" />
+    <Content Include="ig_res\Default\images\igspl_ExpandRight.gif" />
+    <Content Include="ig_res\Default\images\igspl_ExpandRightHover.gif" />
+    <Content Include="ig_res\Default\images\igspl_ExpandUp.gif" />
+    <Content Include="ig_res\Default\images\igspl_ExpandUpHover.gif" />
+    <Content Include="ig_res\Default\images\igspl_splitHoriz.gif" />
+    <Content Include="ig_res\Default\images\igspl_splitHorizHover.gif" />
+    <Content Include="ig_res\Default\images\igspl_splitHorizPressed.gif" />
+    <Content Include="ig_res\Default\images\igspl_splitVerPressed.gif" />
+    <Content Include="ig_res\Default\images\igspl_splitVert.gif" />
+    <Content Include="ig_res\Default\images\igspl_splitVertHover.gif" />
+    <Content Include="ig_res\Default\images\igspl_splitVertPressed.gif" />
+    <Content Include="ig_res\Default\images\igwt_tab_hover.jpg" />
+    <Content Include="ig_res\Default\images\igwt_tab_normal.jpg" />
+    <Content Include="ig_res\Default\images\igwt_tab_selected.jpg" />
+    <Content Include="ig_res\Default\images\ig_cal_next.gif" />
+    <Content Include="ig_res\Default\images\ig_cal_prev.gif" />
+    <Content Include="ig_res\Default\images\ig_cmboDown1.png" />
+    <Content Include="ig_res\Default\images\ig_cmboDown2.png" />
+    <Content Include="ig_res\Default\images\ig_cmboDownXP1.png" />
+    <Content Include="ig_res\Default\images\ig_cmboDownXP2.png" />
+    <Content Include="ig_res\Default\images\ig_edit_0.gif" />
+    <Content Include="ig_res\Default\images\ig_edit_01.gif" />
+    <Content Include="ig_res\Default\images\ig_edit_1.gif" />
+    <Content Include="ig_res\Default\images\ig_edit_11.gif" />
+    <Content Include="ig_res\Default\images\ig_edit_2.gif" />
+    <Content Include="ig_res\Default\images\ig_edit_21.gif" />
+    <Content Include="ig_res\Default\images\ig_menutri.gif" />
+    <Content Include="ig_res\Default\images\ig_menu_scrolldown.gif" />
+    <Content Include="ig_res\Default\images\ig_menu_scrolldown_disabled.gif" />
+    <Content Include="ig_res\Default\images\ig_menu_scrollup.gif" />
+    <Content Include="ig_res\Default\images\ig_menu_scrollup_disabled.gif" />
+    <Content Include="ig_res\Default\images\ig_progressIndicator.gif" />
+    <Content Include="ig_res\Default\images\ig_sched_next.gif" />
+    <Content Include="ig_res\Default\images\ig_sched_prev.gif" />
+    <Content Include="ig_res\Default\images\ig_sched_recurrence.gif" />
+    <Content Include="ig_res\Default\images\ig_sched_reminder.gif" />
+    <Content Include="ig_res\Default\images\ig_sched_variance.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_BottomHover.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_BottomNormal.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_BottomSelected.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_scroll0.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_scroll1.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_scroll2.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_scroll3.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_scrollXP0.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_scrollXP1.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_scrollXP2.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_scrollXP3.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_TopHover.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_TopNormal.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_TopSelected.gif" />
+    <Content Include="ig_res\Default\images\ig_tblBlank.gif" />
+    <Content Include="ig_res\Default\images\ig_tblFilter.gif" />
+    <Content Include="ig_res\Default\images\ig_tblFilterApplied.gif" />
+    <Content Include="ig_res\Default\images\ig_tblFilterContains.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterDoesNotContain.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterDoesNotEndWith.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterDoesNotMatch.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterDoesNotMatch2.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterDoesNotStartWith.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterEndsWith.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterEqual.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterGreaterThan.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterGreaterThanOrEqualTo.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterLessThan.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterLessThanOrEqualTo.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterLike.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterMatch.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterMatch2.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterNotEqual.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterNotLike.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterStartsWith.png" />
+    <Content Include="ig_res\Default\images\ig_tblFixedOff.gif" />
+    <Content Include="ig_res\Default\images\ig_tblFixedOn.gif" />
+    <Content Include="ig_res\Default\images\ig_tblGroupBy.gif" />
+    <Content Include="ig_res\Default\images\ig_tblMinus.gif" />
+    <Content Include="ig_res\Default\images\ig_tblNewrow.gif" />
+    <Content Include="ig_res\Default\images\ig_tblPimgDn.gif" />
+    <Content Include="ig_res\Default\images\ig_tblPimgUp.gif" />
+    <Content Include="ig_res\Default\images\ig_tblPlus.gif" />
+    <Content Include="ig_res\Default\images\ig_tblSortAsc.gif" />
+    <Content Include="ig_res\Default\images\ig_tblSortDesc.gif" />
+    <Content Include="ig_res\Default\images\ig_tblTri.gif" />
+    <Content Include="ig_res\Default\images\ig_tblTriEdit.gif" />
+    <Content Include="ig_res\Default\images\ig_treeBlack_box.gif" />
+    <Content Include="ig_res\Default\images\ig_treeDownArrow.gif" />
+    <Content Include="ig_res\Default\images\ig_treeF.gif" />
+    <Content Include="ig_res\Default\images\ig_treeFminus.gif" />
+    <Content Include="ig_res\Default\images\ig_treeFplus.gif" />
+    <Content Include="ig_res\Default\images\ig_treeI.gif" />
+    <Content Include="ig_res\Default\images\ig_treeL.gif" />
+    <Content Include="ig_res\Default\images\ig_treeLminus.gif" />
+    <Content Include="ig_res\Default\images\ig_treeLplus.gif" />
+    <Content Include="ig_res\Default\images\ig_treeMinus.gif" />
+    <Content Include="ig_res\Default\images\ig_treeMinus2.gif" />
+    <Content Include="ig_res\Default\images\ig_treeMminus.gif" />
+    <Content Include="ig_res\Default\images\ig_treeMplus.gif" />
+    <Content Include="ig_res\Default\images\ig_treeMsdn_minus.gif" />
+    <Content Include="ig_res\Default\images\ig_treeMsdn_plus.gif" />
+    <Content Include="ig_res\Default\images\ig_treeOminus.gif" />
+    <Content Include="ig_res\Default\images\ig_treeOplus.gif" />
+    <Content Include="ig_res\Default\images\ig_treePlus.gif" />
+    <Content Include="ig_res\Default\images\ig_treePlus2.gif" />
+    <Content Include="ig_res\Default\images\ig_treeRightArrow.gif" />
+    <Content Include="ig_res\Default\images\ig_treeS.gif" />
+    <Content Include="ig_res\Default\images\ig_treeT.gif" />
+    <Content Include="ig_res\Default\images\ig_treeTri.gif" />
+    <Content Include="ig_res\Default\images\ig_treeUpArrow.gif" />
+    <Content Include="ig_res\Default\images\ig_treeWhite.gif" />
+    <Content Include="ig_res\Default\images\ig_treeXPMinus.GIF" />
+    <Content Include="ig_res\Default\images\ig_treeXPPlus.GIF" />
+    <Content Include="ig_res\Default\images\ItemBackground.gif" />
+    <Content Include="ig_res\Default\images\next_disabled.gif" />
+    <Content Include="ig_res\Default\images\next_down.gif" />
+    <Content Include="ig_res\Default\images\next_hover.gif" />
+    <Content Include="ig_res\Default\images\next_up.gif" />
+    <Content Include="ig_res\Default\images\officeBlue.jpg" />
+    <Content Include="ig_res\Default\images\office_grid_header.jpg" />
+    <Content Include="ig_res\Default\images\page_bg.jpg" />
+    <Content Include="ig_res\Default\images\prev_disabled.gif" />
+    <Content Include="ig_res\Default\images\prev_down.gif" />
+    <Content Include="ig_res\Default\images\prev_hover.gif" />
+    <Content Include="ig_res\Default\images\prev_up.gif" />
+    <Content Include="ig_res\Default\images\rew_disabled.gif" />
+    <Content Include="ig_res\Default\images\rew_down.gif" />
+    <Content Include="ig_res\Default\images\rew_hover.gif" />
+    <Content Include="ig_res\Default\images\rew_up.gif" />
+    <Content Include="ig_res\Default\images\SelectedRowSelector.gif" />
+    <Content Include="ig_res\Default\images\start_disabled.gif" />
+    <Content Include="ig_res\Default\images\start_down.gif" />
+    <Content Include="ig_res\Default\images\start_hover.gif" />
+    <Content Include="ig_res\Default\images\start_up.gif" />
+    <Content Include="ig_res\Default\images\submit_disable.gif" />
+    <Content Include="ig_res\Default\images\submit_disabled.gif" />
+    <Content Include="ig_res\Default\images\submit_down.gif" />
+    <Content Include="ig_res\Default\images\submit_hover.gif" />
+    <Content Include="ig_res\Default\images\submit_up.gif" />
+    <Content Include="ig_res\Default\images\tabBG.jpg" />
+    <Content Include="ig_res\Default\images\tabbottom_hover.jpg" />
+    <Content Include="ig_res\Default\images\tabbottom_hover_F.jpg" />
+    <Content Include="ig_res\Default\images\tabbottom_normal.jpg" />
+    <Content Include="ig_res\Default\images\tabbottom_normal_F.jpg" />
+    <Content Include="ig_res\Default\images\tabbottom_selected.jpg" />
+    <Content Include="ig_res\Default\images\tabbottom_selected_f.jpg" />
+    <Content Include="ig_res\Default\images\tabtob_selected_f.jpg" />
+    <Content Include="ig_res\Default\images\tabtop_hover_F.jpg" />
+    <Content Include="ig_res\Default\images\tabtop_normal_F.jpg" />
+    <Content Include="ig_res\Default\images\tab_bottom.gif" />
+    <Content Include="ig_res\Default\images\tab_bottom_f.gif" />
+    <Content Include="ig_res\Default\images\tab_bottom_hover.gif" />
+    <Content Include="ig_res\Default\images\tab_left.gif" />
+    <Content Include="ig_res\Default\images\tab_left_f.gif" />
+    <Content Include="ig_res\Default\images\tab_left_hover.gif" />
+    <Content Include="ig_res\Default\images\tab_left_hover_f.gif" />
+    <Content Include="ig_res\Default\images\tab_left_normal.gif" />
+    <Content Include="ig_res\Default\images\tab_left_normal_f.gif" />
+    <Content Include="ig_res\Default\images\tab_right.gif" />
+    <Content Include="ig_res\Default\images\tab_right_f.gif" />
+    <Content Include="ig_res\Default\images\tab_right_hover.gif" />
+    <Content Include="ig_res\Default\images\tab_right_hover_f.gif" />
+    <Content Include="ig_res\Default\images\tab_right_normal.gif" />
+    <Content Include="ig_res\Default\images\tab_right_normal_f.gif" />
+    <Content Include="ig_res\Default\images\tab_top.gif" />
+    <Content Include="ig_res\Default\images\tab_top_f.gif" />
+    <Content Include="ig_res\Default\images\tab_top_hover.gif" />
+    <Content Include="ig_res\Default\images\uparrows_white.gif" />
+    <Content Include="ig_res\StatlineReports\ig_calendar.css" />
+    <Content Include="ig_res\StatlineReports\ig_calendarview.css" />
+    <Content Include="ig_res\StatlineReports\ig_combo.css" />
+    <Content Include="ig_res\StatlineReports\ig_datechooser.css" />
+    <Content Include="ig_res\StatlineReports\ig_dayview.css" />
+    <Content Include="ig_res\StatlineReports\ig_dialogwindow.css" />
+    <Content Include="ig_res\StatlineReports\ig_grid.css" />
+    <Content Include="ig_res\StatlineReports\ig_grid_opt.css" />
+    <Content Include="ig_res\StatlineReports\ig_imageViewer.css" />
+    <Content Include="ig_res\StatlineReports\ig_listbar.css" />
+    <Content Include="ig_res\StatlineReports\ig_menu.css" />
+    <Content Include="ig_res\StatlineReports\ig_monthview.css" />
+    <Content Include="ig_res\StatlineReports\ig_navbar.css" />
+    <Content Include="ig_res\StatlineReports\ig_panel.css" />
+    <Content Include="ig_res\StatlineReports\ig_shared.css" />
+    <Content Include="ig_res\StatlineReports\ig_spellCheckerDialog.css" />
+    <Content Include="ig_res\StatlineReports\ig_splitter.css" />
+    <Content Include="ig_res\StatlineReports\ig_tab.css" />
+    <Content Include="ig_res\StatlineReports\ig_textedit.css" />
+    <Content Include="ig_res\StatlineReports\ig_toolbar.css" />
+    <Content Include="ig_res\StatlineReports\ig_tree.css" />
+    <Content Include="ig_res\StatlineReports\ig_weekview.css" />
+    <Content Include="ig_res\StatlineReports\images\add_disabled.gif" />
+    <Content Include="ig_res\StatlineReports\images\add_down.gif" />
+    <Content Include="ig_res\StatlineReports\images\add_hover.gif" />
+    <Content Include="ig_res\StatlineReports\images\add_up.gif" />
+    <Content Include="ig_res\StatlineReports\images\button_silver.gif" />
+    <Content Include="ig_res\StatlineReports\images\del_disabled.gif" />
+    <Content Include="ig_res\StatlineReports\images\del_down.gif" />
+    <Content Include="ig_res\StatlineReports\images\del_hover.gif" />
+    <Content Include="ig_res\StatlineReports\images\del_up.gif" />
+    <Content Include="ig_res\StatlineReports\images\downarrows_white.gif" />
+    <Content Include="ig_res\StatlineReports\images\end_disabled.gif" />
+    <Content Include="ig_res\StatlineReports\images\end_down.gif" />
+    <Content Include="ig_res\StatlineReports\images\end_hover.gif" />
+    <Content Include="ig_res\StatlineReports\images\end_up.gif" />
+    <Content Include="ig_res\StatlineReports\images\ff_disabled.gif" />
+    <Content Include="ig_res\StatlineReports\images\ff_down.gif" />
+    <Content Include="ig_res\StatlineReports\images\ff_hover.gif" />
+    <Content Include="ig_res\StatlineReports\images\ff_up.gif" />
+    <Content Include="ig_res\StatlineReports\images\igdw_Close.gif" />
+    <Content Include="ig_res\StatlineReports\images\igdw_CloseHover.gif" />
+    <Content Include="ig_res\StatlineReports\images\igdw_CloseMouseDown.gif" />
+    <Content Include="ig_res\StatlineReports\images\igdw_Maximize.gif" />
+    <Content Include="ig_res\StatlineReports\images\igdw_MaximizeHover.gif" />
+    <Content Include="ig_res\StatlineReports\images\igdw_MaximizeMouseDown.gif" />
+    <Content Include="ig_res\StatlineReports\images\igdw_Minimize.gif" />
+    <Content Include="ig_res\StatlineReports\images\igdw_MinimizeHover.gif" />
+    <Content Include="ig_res\StatlineReports\images\igdw_MinimizeMouseDown.gif" />
+    <Content Include="ig_res\StatlineReports\images\igdw_ResizingHandle.gif" />
+    <Content Include="ig_res\StatlineReports\images\igdw_Restore.gif" />
+    <Content Include="ig_res\StatlineReports\images\igdw_RestoreHover.gif" />
+    <Content Include="ig_res\StatlineReports\images\igdw_RestoreMouseDown.gif" />
+    <Content Include="ig_res\StatlineReports\images\igiv_H_NextButton.png" />
+    <Content Include="ig_res\StatlineReports\images\igiv_H_NextButtonDisabled.png" />
+    <Content Include="ig_res\StatlineReports\images\igiv_H_NextButtonHover.png" />
+    <Content Include="ig_res\StatlineReports\images\igiv_H_NextButtonPressed.png" />
+    <Content Include="ig_res\StatlineReports\images\igiv_H_PrevButton.png" />
+    <Content Include="ig_res\StatlineReports\images\igiv_H_PrevButtonDisabled.png" />
+    <Content Include="ig_res\StatlineReports\images\igiv_H_PrevButtonHover.png" />
+    <Content Include="ig_res\StatlineReports\images\igiv_H_PrevButtonPressed.png" />
+    <Content Include="ig_res\StatlineReports\images\igiv_V_NextButton.png" />
+    <Content Include="ig_res\StatlineReports\images\igiv_V_NextButtonDisabled.png" />
+    <Content Include="ig_res\StatlineReports\images\igiv_V_NextButtonHover.png" />
+    <Content Include="ig_res\StatlineReports\images\igiv_V_NextButtonPressed.png" />
+    <Content Include="ig_res\StatlineReports\images\igiv_V_PrevButton.png" />
+    <Content Include="ig_res\StatlineReports\images\igiv_V_PrevButtonDisabled.png" />
+    <Content Include="ig_res\StatlineReports\images\igiv_V_PrevButtonHover.png" />
+    <Content Include="ig_res\StatlineReports\images\igiv_V_PrevButtonPressed.png" />
+    <Content Include="ig_res\StatlineReports\images\igpnl_dwn.gif" />
+    <Content Include="ig_res\StatlineReports\images\igpnl_up.gif" />
+    <Content Include="ig_res\StatlineReports\images\igsch_xpbluedn.gif" />
+    <Content Include="ig_res\StatlineReports\images\igsch_xpblueup.gif" />
+    <Content Include="ig_res\StatlineReports\images\igspl_CollapseDown.gif" />
+    <Content Include="ig_res\StatlineReports\images\igspl_CollapseDownHover.gif" />
+    <Content Include="ig_res\StatlineReports\images\igspl_CollapseLeft.gif" />
+    <Content Include="ig_res\StatlineReports\images\igspl_CollapseLeftHover.gif" />
+    <Content Include="ig_res\StatlineReports\images\igspl_CollapseRight.gif" />
+    <Content Include="ig_res\StatlineReports\images\igspl_CollapseRightHover.gif" />
+    <Content Include="ig_res\StatlineReports\images\igspl_CollapseUp.gif" />
+    <Content Include="ig_res\StatlineReports\images\igspl_CollapseUpHover.gif" />
+    <Content Include="ig_res\StatlineReports\images\igspl_ExpandDown.gif" />
+    <Content Include="ig_res\StatlineReports\images\igspl_ExpandDownHover.gif" />
+    <Content Include="ig_res\StatlineReports\images\igspl_ExpandLeft.gif" />
+    <Content Include="ig_res\StatlineReports\images\igspl_ExpandLeftHover.gif" />
+    <Content Include="ig_res\StatlineReports\images\igspl_ExpandRight.gif" />
+    <Content Include="ig_res\StatlineReports\images\igspl_ExpandRightHover.gif" />
+    <Content Include="ig_res\StatlineReports\images\igspl_ExpandUp.gif" />
+    <Content Include="ig_res\StatlineReports\images\igspl_ExpandUpHover.gif" />
+    <Content Include="ig_res\StatlineReports\images\igspl_splitHoriz.gif" />
+    <Content Include="ig_res\StatlineReports\images\igspl_splitHorizHover.gif" />
+    <Content Include="ig_res\StatlineReports\images\igspl_splitHorizPressed.gif" />
+    <Content Include="ig_res\StatlineReports\images\igspl_splitVerPressed.gif" />
+    <Content Include="ig_res\StatlineReports\images\igspl_splitVert.gif" />
+    <Content Include="ig_res\StatlineReports\images\igspl_splitVertHover.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_cal_next.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_cal_prev.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_cmboDown1.png" />
+    <Content Include="ig_res\StatlineReports\images\ig_cmboDown2.png" />
+    <Content Include="ig_res\StatlineReports\images\ig_cmboDownXP1.png" />
+    <Content Include="ig_res\StatlineReports\images\ig_cmboDownXP2.png" />
+    <Content Include="ig_res\StatlineReports\images\ig_edit_0.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_edit_01.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_edit_1.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_edit_11.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_edit_2.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_edit_21.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_menutri.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_menu_scrolldown.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_menu_scrolldown_disabled.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_menu_scrollup.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_menu_scrollup_disabled.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_progressIndicator.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_sched_next.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_sched_prev.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_sched_recurrence.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_sched_reminder.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_sched_variance.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_tab_scroll0.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_tab_scroll1.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_tab_scroll2.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_tab_scroll3.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_tab_scrollXP0.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_tab_scrollXP1.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_tab_scrollXP2.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_tab_scrollXP3.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblBlank.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblFilter.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblFilterApplied.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblFilterContains.png" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblFilterDoesNotContain.png" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblFilterDoesNotEndWith.png" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblFilterDoesNotMatch.png" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblFilterDoesNotMatch2.png" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblFilterDoesNotStartWith.png" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblFilterEndsWith.png" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblFilterEqual.png" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblFilterGreaterThan.png" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblFilterGreaterThanOrEqualTo.png" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblFilterLessThan.png" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblFilterLessThanOrEqualTo.png" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblFilterLike.png" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblFilterMatch.png" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblFilterMatch2.png" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblFilterNotEqual.png" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblFilterNotLike.png" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblFilterStartsWith.png" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblFixedOff.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblFixedOn.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblGroupBy.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblMinus.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblNewrow.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblPimgDn.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblPimgUp.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblPlus.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblSortAsc.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblSortDesc.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_tblTri.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_treeF.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_treeFminus.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_treeFplus.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_treeI.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_treeL.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_treeLminus.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_treeLplus.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_treeMinus.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_treeMminus.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_treeMplus.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_treeOminus.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_treeOplus.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_treePlus.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_treeS.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_treeT.gif" />
+    <Content Include="ig_res\StatlineReports\images\ig_treeWhite.gif" />
+    <Content Include="ig_res\StatlineReports\images\next_disabled.gif" />
+    <Content Include="ig_res\StatlineReports\images\next_down.gif" />
+    <Content Include="ig_res\StatlineReports\images\next_hover.gif" />
+    <Content Include="ig_res\StatlineReports\images\next_up.gif" />
+    <Content Include="ig_res\StatlineReports\images\page_bg.jpg" />
+    <Content Include="ig_res\StatlineReports\images\prev_disabled.gif" />
+    <Content Include="ig_res\StatlineReports\images\prev_down.gif" />
+    <Content Include="ig_res\StatlineReports\images\prev_hover.gif" />
+    <Content Include="ig_res\StatlineReports\images\prev_up.gif" />
+    <Content Include="ig_res\StatlineReports\images\rew_disabled.gif" />
+    <Content Include="ig_res\StatlineReports\images\rew_down.gif" />
+    <Content Include="ig_res\StatlineReports\images\rew_hover.gif" />
+    <Content Include="ig_res\StatlineReports\images\rew_up.gif" />
+    <Content Include="ig_res\StatlineReports\images\start_disabled.gif" />
+    <Content Include="ig_res\StatlineReports\images\start_down.gif" />
+    <Content Include="ig_res\StatlineReports\images\start_hover.gif" />
+    <Content Include="ig_res\StatlineReports\images\start_up.gif" />
+    <Content Include="ig_res\StatlineReports\images\submit_disabled.gif" />
+    <Content Include="ig_res\StatlineReports\images\submit_down.gif" />
+    <Content Include="ig_res\StatlineReports\images\submit_hover.gif" />
+    <Content Include="ig_res\StatlineReports\images\submit_up.gif" />
+    <Content Include="ig_res\StatlineReports\images\tab_bottom.gif" />
+    <Content Include="ig_res\StatlineReports\images\tab_bottom_hover.gif" />
+    <Content Include="ig_res\StatlineReports\images\tab_left.gif" />
+    <Content Include="ig_res\StatlineReports\images\tab_left_hover.gif" />
+    <Content Include="ig_res\StatlineReports\images\tab_right.gif" />
+    <Content Include="ig_res\StatlineReports\images\tab_right_hover.gif" />
+    <Content Include="ig_res\StatlineReports\images\tab_top.gif" />
+    <Content Include="ig_res\StatlineReports\images\tab_top_hover.gif" />
+    <Content Include="ig_res\StatlineReports\images\uparrows_white.gif" />
+    <Content Include="ig_res\StatlineReports\NotNeeded\ig_calendar.css" />
+    <Content Include="ig_res\StatlineReports\NotNeeded\ig_calendarview.css" />
+    <Content Include="ig_res\StatlineReports\NotNeeded\ig_datechooser.css" />
+    <Content Include="ig_res\StatlineReports\NotNeeded\ig_dayview.css" />
+    <Content Include="ig_res\StatlineReports\NotNeeded\ig_dialogwindow.css" />
+    <Content Include="ig_res\StatlineReports\NotNeeded\ig_imageViewer.css" />
+    <Content Include="ig_res\StatlineReports\NotNeeded\ig_listbar.css" />
+    <Content Include="ig_res\StatlineReports\NotNeeded\ig_menu.css" />
+    <Content Include="ig_res\StatlineReports\NotNeeded\ig_monthview.css" />
+    <Content Include="ig_res\StatlineReports\NotNeeded\ig_navbar.css" />
+    <Content Include="ig_res\StatlineReports\NotNeeded\ig_shared.css" />
+    <Content Include="ig_res\StatlineReports\NotNeeded\ig_spellCheckerDialog.css" />
+    <Content Include="ig_res\StatlineReports\NotNeeded\ig_splitter.css" />
+    <Content Include="ig_res\StatlineReports\NotNeeded\ig_tab.css" />
+    <Content Include="ig_res\StatlineReports\NotNeeded\ig_textedit.css" />
+    <Content Include="ig_res\StatlineReports\NotNeeded\ig_toolbar.css" />
+    <Content Include="ig_res\StatlineReports\NotNeeded\ig_tree.css" />
+    <Content Include="ig_res\StatlineReports\NotNeeded\ig_weekview.css" />
+    <Content Include="Images\cal.gif" />
+    <Content Include="Images\Logos\Statline.bmp" />
+    <Content Include="QA.aspx" />
+    <Content Include="QAAddEditError.aspx" />
+    <Content Include="QAAddEditErrorType.aspx" />
+    <Content Include="QAConfig.aspx" />
+    <Content Include="QAErrorDetail.aspx" />
+    <Content Include="QAManageErrorList.aspx" />
+    <Content Include="QAErrorLog.aspx" />
+    <Content Include="Controls\QAManageErrorHeaderControl.ascx" />
+    <Content Include="QAManageErrorLocation.aspx" />
+    <Content Include="QAManageErrorTypes.aspx" />
+    <Content Include="QAManageProcessSteps.aspx" />
+    <Content Include="QAManageQualityMonitoringForms.aspx" />
+    <Content Include="QAMonitoring.aspx" />
+    <Content Include="QAPendingReview.aspx" />
+    <Content Include="QAReview.aspx" />
+    <Content Include="ReferralFacilityCompliance.aspx" />
+    <Content Include="ReferralSearch.aspx" />
+    <Content Include="ReferralUpdate.aspx" />
+    <Content Include="ScheduleCreateUpdateShift.aspx" />
+    <Content Include="ScheduleSearch.aspx" />
+    <Content Include="ScheduleSplitShift.aspx" />
+    <Content Include="scripts\CharactersRemaining.js" />
+    <Content Include="scripts\ig_dropCalendar.js" />
+    <Content Include="ShowWindowsUsername.aspx" />
+    <Content Include="Controls\CallHeaderControl.ascx" />
+    <Content Include="Update.aspx" />
+    <Content Include="PersonData.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Images\web.config" />
+    <None Include="ClassDiagram1.cd" />
+    <Content Include="Images\web.config" />
+    <Content Include="ig_res\StatlineReports\images\web.config" />
+    <Content Include="ig_res\Default\images\web.config" />
+    <Content Include="Framework\Themes\web.config" />
+    <Content Include="Framework\Navigation\Images\web.config" />
+    <Content Include="Controls\Images\Web.config" />
+    <Content Include="Controls\Admin\Images\Web.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Web.DisasterRecovery.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Production.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Test.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Target Name="CopyRoslynFiles" AfterTargets="AfterBuild" Condition="!$(Disable_CopyWebApplication) And '$(OutDir)' != '$(OutputPath)'">
+    <ItemGroup>
+      <RoslynFiles Include="$(CscToolPath)\*" />
+    </ItemGroup>
+    <MakeDir Directories="$(WebProjectOutputDir)\bin\roslyn" />
+    <Copy SourceFiles="@(RoslynFiles)" DestinationFolder="$(WebProjectOutputDir)\bin\roslyn" SkipUnchangedFiles="true" Retries="$(CopyRetryCount)" RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)" />
+ </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>46055</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Statline.StatTrac.Web.UI</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+</Project>

@@ -1,0 +1,101 @@
+﻿@model EditPropertiesViewModel
+
+<form asp-action="EditProperties" asp-route-id="@Model.Id" method="post" 
+      asp-authorize="@AuthorizationPolicies.WholeApplicationAdministrationPolicy">
+    <div class="form-group row">
+        <div class="col-xs-12 col-sm-4">
+            <label asp-for="EditableClientId"></label>
+            <input asp-for="EditableClientId" class="form-control">
+            <span asp-validation-for="EditableClientId" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-xs-12 col-sm-4">
+            <label asp-for="ClientName"></label>
+            <input asp-for="ClientName" class="form-control">
+            <span asp-validation-for="ClientName"></span>
+        </div>
+    </div>
+
+    @Html.EditorFor(m => m.GrantTypes)
+
+    @* TODO: Consider moving to Claims tab. *@
+    <div class="form-group row">
+        <div class="col-xs-12 col-sm-4">
+            <label asp-for="ClientClaimsPrefix"></label>
+            <input asp-for="ClientClaimsPrefix" class="form-control">
+            <span asp-validation-for="ClientClaimsPrefix"></span>
+            <span class="help-block">
+                If set, client claim types will be prefixed with the prefix.
+                Defaults to <b>client_</b>. The intent is to make sure they don’t
+                accidentally collide with user claims.
+            </span>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-xs-12 col-sm-4">
+            <label asp-for="AccessTokenLifetime"></label>
+            <input asp-for="AccessTokenLifetime" class="form-control">
+            <span asp-validation-for="AccessTokenLifetime"></span>
+            <span class="help-block">
+                Lifetime of access token in seconds (defaults to 3600 seconds / 1 hour).
+            </span>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-xs-12 col-sm-12">
+            <label>Flags</label>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div>
+                        @Html.EditorFor(m => m.AlwaysSendClientClaims)
+                        <span class="help-block">
+                            If set, the client claims will be sent for every flow.
+                            If not, only for client credentials flow. Default is unchecked.
+                        </span>
+                    </div>
+
+                    <div>
+                        @Html.EditorFor(m => m.AlwaysIncludeUserClaimsInIdToken)
+                        <span class="help-block">
+                            When requesting both an id token and access token,
+                            should the user claims always be added to the id token
+                            instead of requiring the client to use the <b>userinfo</b> endpoint.
+                            Default is unchecked.
+                        </span>
+                    </div>
+
+                    <div>
+                        @Html.EditorFor(m => m.AllowAccessTokensViaBrowser)
+                        <span class="help-block">
+                            Specifies whether this client is allowed to receive access
+                            tokens via the browser. This is useful to harden flows that
+                            allow multiple response types (e.g. by disallowing a hybrid
+                            flow client that is supposed to use code id_token to add the
+                            token response type and thus leaking the token to the browser.
+                        </span>
+                    </div>
+
+                    <div>
+                        @Html.EditorFor(m => m.RequireConsent)
+                        <span class="help-block">
+                            Specifies whether a consent screen is required. Default is checked.
+                        </span>
+                    </div>
+
+                    <div>
+                        @Html.EditorFor(m => m.AllowOfflineAccess)
+                        <span class="help-block">
+                            Specifies whether this client can request refresh tokens
+                            (be requesting the <b>offline_access</b> scope).
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>

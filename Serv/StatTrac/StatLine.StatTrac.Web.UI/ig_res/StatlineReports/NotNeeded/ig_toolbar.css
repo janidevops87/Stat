@@ -1,0 +1,50 @@
+.igtb_StatlineReportsControl
+{
+	background-color:#F0F0F0;
+	border-color:Transparent;
+}
+
+
+.igtb_StatlineReportsItem
+{
+}
+
+
+.igtb_StatlineReportsButton
+{
+	background-color:Transparent;
+	border:solid 1px Transparent;
+	padding-right:38px;
+	padding-left:4px;
+}
+
+
+.igtb_StatlineReportsButtonHover
+{
+	background-color:Gainsboro;
+	border-color:DarkGray;
+}
+
+
+.igtb_StatlineReportsButtonPressed
+{
+}
+
+
+.igtb_StatlineReportsLabel
+{
+	background-color:Transparent;
+}
+
+
+.igtb_StatlineReportsTextBox
+{
+}
+
+
+.igtb_StatlineReportsSeparator
+{
+	background-color:Transparent;
+}
+
+

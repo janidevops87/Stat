@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Statline.Stattrac.Windows.UI.AddItemControl" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQCAAAFEAAACAAEACAAAAABAAEAAAAAIAAAA=</HashCode>
+      <FileName>Controls\AddItemControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.InFormPrompt" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAEAACAEAAAAAQCAAAACAAQAAABAAIAAgAEBAAo=</HashCode>
+      <FileName>InFormPrompt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.LogOnForm" Collapsed="true">
+    <Position X="14.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAggQAUAECUQAAIgAAiSABJiADAILIBAhgBAgADQCKA=</HashCode>
+      <FileName>LogOnForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Program" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.SecureForm" Collapsed="true">
+    <Position X="4" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAEAEEAACAEAAABGUCYABCSgAQAAAFACJAAoBEBAgI=</HashCode>
+      <FileName>SecureForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.AddItemForm" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABEAAACAAAACAAAAAAAAEAAAAAIAAAA=</HashCode>
+      <FileName>Controls\AddItemForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.DashboardControl" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABIAAAACADBAAAAAAAKAAAACAAAABASAAAABIAAAQQA=</HashCode>
+      <FileName>Controls\DashboardControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Criteria.CriteriaApplyToMultipleGroups" Collapsed="true">
+    <Position X="18" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\Administration\Criteria\CriteriaApplyToMultipleGroups.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Criteria.CriteriaAssociatedSourceCodesControl" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAgAiCAACAAAACAAAACAAEAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\Administration\Criteria\CriteriaAssociatedSourceCodesControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Criteria.CriteriaEditManager" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAgAAmAhACAAAKAABECAAAAGAAIAiAQAACKAkQABAUA=</HashCode>
+      <FileName>Controls\Administration\Criteria\CriteriaEditManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Criteria.CriteriaFSControl" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAEAACCAAAAAAACAAAASAAIAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\Administration\Criteria\CriteriaFSControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Criteria.CriteriaFSProcessorsControl" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAACIAAgCCJACAAEACAIAAiAAAAAAAgAgAAIAAAAAI=</HashCode>
+      <FileName>Controls\Administration\Criteria\CriteriaFSProcessorsControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Criteria.CriteriaFSUpdateAssociatedQuestionsControl" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAACCAAAACEAAAgAAAAAAAAAAABAA=</HashCode>
+      <FileName>Controls\Administration\Criteria\CriteriaFSUpdateAssociatedQuestionsControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Criteria.CriteriaFSUpdateControl" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAIgAACCAAAAAAAACAAAACAAIAAAQACAAQAQAAAAA=</HashCode>
+      <FileName>Controls\Administration\Criteria\CriteriaFSUpdateControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Criteria.CriteriaFSUpdateCriteriaControl" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Controls\Administration\Criteria\CriteriaFSUpdateCriteriaControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Criteria.CriteriaFSUpdateQuestionConfigurationControl" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAgAAAAAC8AQASAAAAAAAAkAABAAAAABA=</HashCode>
+      <FileName>Controls\Administration\Criteria\CriteriaFSUpdateQuestionConfigurationControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Criteria.CriteriaFSUpdateQuestionsControl" Collapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAAGAAIAAAQAAAAAAAQAAAA=</HashCode>
+      <FileName>Controls\Administration\Criteria\CriteriaFSUpdateQuestionsControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Criteria.CriteriaQuestionTimingControl" Collapsed="true">
+    <Position X="16.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AiAEAAgBACAkgAAEAACwAAASAAAoAACAAAgAAAAABAA=</HashCode>
+      <FileName>Controls\Administration\Criteria\CriteriaQuestionTimingControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Criteria.CriteriaRuleOutControl" Collapsed="true">
+    <Position X="18" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kwBRMnQ4KSCCUuIxJGDAsGEGjAUBzBEtApOcHSxBR7M=</HashCode>
+      <FileName>Controls\Administration\Criteria\CriteriaRuleOutControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Criteria.CriteriaTriageAssociatedQuestionsControl" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAEAACEAAAgAgAAAAAAAAABAA=</HashCode>
+      <FileName>Controls\Administration\Criteria\CriteriaTriageAssociatedQuestionsControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Criteria.CriteriaTriageCriteriaControl" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAgACCAAAAAAACAAAACAAAACAAAAAAQAQIAAAE=</HashCode>
+      <FileName>Controls\Administration\Criteria\CriteriaTriageCriteriaControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Criteria.CriteriaTriageQuestionConfigurationControl" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAgAAAAACsAQACAAAAAAAAkAAAAAAAABA=</HashCode>
+      <FileName>Controls\Administration\Criteria\CriteriaTriageQuestionConfigurationControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Criteria.CriteriaTriageQuestionsControl" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAIAAAwAAAAAAAAEAAA=</HashCode>
+      <FileName>Controls\Administration\Criteria\CriteriaTriageQuestionsControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Question.QuestionAddEditControl" Collapsed="true">
+    <Position X="2.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQCCCACAEAACAAAACAAAAEAAAQAAAgAAAAYI=</HashCode>
+      <FileName>Controls\Administration\Question\QuestionAddEditControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Question.QuestionAssociatedControl" Collapsed="true">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ECIYAAAMECAEAAAAAAKAAAACBAAAwABAACFAAAAAAAI=</HashCode>
+      <FileName>Controls\Administration\Question\QuestionAssociatedControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Question.QuestionConfigurationControl" Collapsed="true">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAEQQAkkICAhgCACAADsQgQCwDIiACEAkGEAAAAAABA=</HashCode>
+      <FileName>Controls\Administration\Question\QuestionConfigurationControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Question.QuestionConfigurationEventLogControl" Collapsed="true">
+    <Position X="7.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAAAAAQAiAEAACAAAAIAAAACAAAAAAAAA=</HashCode>
+      <FileName>Controls\Administration\Question\QuestionConfigurationEventLogControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Question.QuestionConfigurationQuestionControl" Collapsed="true">
+    <Position X="9.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAAAAAQACAEAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\Administration\Question\QuestionConfigurationQuestionsControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Question.QuestionConfigurationRefTypeControl" Collapsed="true">
+    <Position X="11" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAAAAAAAKAAACAAQACAEAACAAAAKAAAACAAAAAAAAA=</HashCode>
+      <FileName>Controls\Administration\Question\QuestionConfigurationRefTypeControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Question.QuestionConfigurationUpdateControl" Collapsed="true">
+    <Position X="12.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAEAAAQACAEAACAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Controls\Administration\Question\QuestionConfigurationUpdateControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Question.QuestionDetailsControl" Collapsed="true">
+    <Position X="14.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAGIAGAAgBCAACCoAAICAAAwEAABAQowAAAAQAA=</HashCode>
+      <FileName>Controls\Administration\Question\QuestionDetailsControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Question.QuestionGroupsControl" Collapsed="true">
+    <Position X="16.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAkCBAKAAAAAgAAKAAAQCACIAAIQAAACgAUAAAQA=</HashCode>
+      <FileName>Controls\Administration\Question\QuestionGroupsControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Question.QuestionMultiGroupsControl" Collapsed="true">
+    <Position X="18" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EABAAAAIESAAABAAAACAAAACiAAAAAAwAAiAAAIAAQI=</HashCode>
+      <FileName>Controls\Administration\Question\QuestionMultiGroupsControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.Question.QuestionNavigation" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAASAAAACICIAABQAAAAAAEAAAAA=</HashCode>
+      <FileName>Controls\Administration\Question\QuestionNavigation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.RuleOutIndications.RuleOutIndicationsAddEditControl" Collapsed="true">
+    <Position X="16.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAIACAEAACIAAASAAAAAAAAAAAAIAAAgYI=</HashCode>
+      <FileName>Controls\Administration\RuleOutIndications\RuleOutIndicationsAddEditControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.RuleOutIndications.RuleOutIndicationsDetailControl" Collapsed="true">
+    <Position X="18" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FQgAAACgICABICAAAACAAAAKAAAgAAAEAAAQACAQAgQ=</HashCode>
+      <FileName>Controls\Administration\RuleOutIndications\RuleOutIndicationsDetailControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.RuleOutIndications.RuleOutIndicationsNavigation" Collapsed="true">
+    <Position X="0.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAIABAQAACAgAEAAQAA=</HashCode>
+      <FileName>Controls\Administration\RuleOutIndications\RuleOutIndicationsNavigation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.ApplyScreenConfigControl" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAQACAEAACAAAAAAAAACAAAAgAACA=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\ApplyScreenConfigControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.AssociatedSourceCodeControl" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAAAAAQACAEAACAAAAAAAAACAAAAgAACA=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\AssociatedSourceCodeControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.AuthorizationControl" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAABAAQACAEIACAAAAAAAAACAAAAAAQAA=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\AuthorizationControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.ContactInformationControl" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAIBACQACAEgACAAIAgAAIACAQACgAACI=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\ContactInformationControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.CoronerMEControl" Collapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAABAAQACAEAACAAAAAAAAACAAAAIAAEA=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\CoronerMEControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.FamilyServicesNavigation" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCAAAAEACCAAABAAAACAAAAKAAIAAAQAAAAAIAAAAAI=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\FamilyServicesNavigation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.FSBodyCareControl" Collapsed="true">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAABAAwACAEAAKABAAAAAAACAAAgAAABA=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\FSBodyCareControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.FSCaseManagementControl" Collapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAABAAwACCEAACAAAAAAAAACAAAgAAQAA=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\FSCaseManagementControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.FSCoronerMEAutopsyControl" Collapsed="true">
+    <Position X="16.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAABAAwACAEAACAAAAAAAAACAAAgAAABA=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\FSCoronerMEAutopsyControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.FSHPControl" Collapsed="true">
+    <Position X="18" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAIgACAACAAABAAwAOAEAACAAAAAAAEACAAAgAAABA=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\FSHPControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.FSNextofKinControl" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAABAAQACAEAAKAAAAAAAAACAAAAAAAgA=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\FSNextofKinControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.FuneralHomeControl" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACQAABAAQACAEAACAAAAAAAAACAAAAAAAgA=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\FuneralHomeControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.ImportOfferControl" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAIAAAQACAEAACAAAAgAAAACAQACgAAAI=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\ImportOfferControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.MedicalHistoryControl" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAAAAAAgACAUAAgAQACAEQACAAAAAAAAACAAAAgAACA=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\MedicalHistoryControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.MessageControl" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAIAAAQQCAEAACAAAAgAAAACAQACgAAAI=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\MessageControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.MoreDataControl" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/+AfAAAgACQAABDAAPuAAAACARAA+P8BfTMAIIgBADQ=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\MoreDataControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.NextofKinControl" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAgADAAABAAQACAEAgCAAAAAAAAACAAAAgAAyA=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\NextofKinControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.OtherEventLogControl" Collapsed="true">
+    <Position X="14.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAICBAAAACAAAQCAAAAAAAAACAAAAgAACA=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\OtherEventLogControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.OverallDispoControl" Collapsed="true">
+    <Position X="16.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAABAAQACCEAACAAAAAQAAACAAAAAAAAA=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\OverallDispoControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.PatientInformationControl" Collapsed="true">
+    <Position X="18" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIAAAAAgACAACAAAQACBEEAGAIAAQAAAACAAAAiAgCI=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\PatientInformationControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.ReferralEventLogControl" Collapsed="true">
+    <Position X="4" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAICBAAAACAAAQCAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\ReferralEventLogControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.RegistryControl" Collapsed="true">
+    <Position X="7.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAZQBCgECABABAAQBDAECACJAACCBAgACAAQAgBACI=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\RegistryControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.ScreenConfigNavigation" Collapsed="true">
+    <Position X="2.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBQgkgGBICAIAEAAAQjAEAMCCCMChBwAAACBAAgAUQE=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\ScreenConfigNavigation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.TCSSControl" Collapsed="true">
+    <Position X="11" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAIAAAwACAEAACAAAAgAAAACAQAigAAAI=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\TCSSControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Administration.ScreenConfig.UpdateControl" Collapsed="true">
+    <Position X="18" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAgAAgACABABAAQACAEAACAAAAAAAAADAAAAgAAAA=</HashCode>
+      <FileName>Controls\Administration\ScreenConfig\UpdateControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Dashboard.DeleteCasesPopUp" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAACAAABEAAACAAGACAAAAAAAAEAAAAAAAAAQ=</HashCode>
+      <FileName>Controls\Dashboard\DeleteCasesPopUp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Dashboard.FamilyServiceActiveCaseControl" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIQAEAAAACACIAAEAACAAAAiABAAAAAgCAAAAAMCAIA=</HashCode>
+      <FileName>Controls\Dashboard\FamilyServiceActiveCaseControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Dashboard.FamilyServiceViewControl" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>lAagBCAAECQQCAEAAICBBAACEIAIACAABAAiAUQAAwY=</HashCode>
+      <FileName>Controls\Dashboard\FamilyServiceViewControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Dashboard.MainControl" Collapsed="true">
+    <Position X="16.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQQAABEAACAAQABBBgCnDBACBAAAAAIEBASQCSmAAAA=</HashCode>
+      <FileName>Controls\Dashboard\MainControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Dashboard.MessageandImportControl" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQgEAEAACCAAAAEAACAAAACABAAAAAACAAQAgMCAYI=</HashCode>
+      <FileName>Controls\Dashboard\MessageandImportControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Dashboard.NoCallsControl" Collapsed="true">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQgEAFAACCAAAAEAACAAAACABAAAAAACAAQAAMCAYI=</HashCode>
+      <FileName>Controls\Dashboard\NoCallsControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Dashboard.FormPendingEventsPop" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAACAQSAEAAACABEAiAAAAAAIABAAACAAAEAA=</HashCode>
+      <FileName>Controls\Dashboard\PendingEventsPopUp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Dashboard.RecycledCasesControl" Collapsed="true">
+    <Position X="2.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAEgEAACCAAAAEAACAAAACCBAAAAABCAAAAAMCAII=</HashCode>
+      <FileName>Controls\Dashboard\RecycledCasesControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Dashboard.ReferralsControl" Collapsed="true">
+    <Position X="5.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQgEAEAACCACAAEAACAAAACABAAAAAACAAQAAMCAYI=</HashCode>
+      <FileName>Controls\Dashboard\ReferralsControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Dashboard.RestoreCasesPopUp" Collapsed="true">
+    <Position X="11" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAAAAAMAACABAAEQQBCBAEgCAAFAIABAAAAAAQBAAAA=</HashCode>
+      <FileName>Controls\Dashboard\RestoreCasesPopUp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Dashboard.RestoreMessagesPopUp" Collapsed="true">
+    <Position X="12.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAECAjAAAQEAAJCBAEACAgEUAAAQAAAgBABAEAA=</HashCode>
+      <FileName>Controls\Dashboard\RestoreMessagesPopUp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Dashboard.RestoreOASISPopUp" Collapsed="true">
+    <Position X="14.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQAAAECACAAQAUAIBCCAEACAAEAAIAAEAAAAAAAAAA=</HashCode>
+      <FileName>Controls\Dashboard\RestoreOASISPopUp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Dashboard.TcssActiveCasesControl" Collapsed="true">
+    <Position X="9.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIQAEAEIQCACAAAEAACAAAAiABAAAAAACAAAAAMCAYA=</HashCode>
+      <FileName>Controls\Dashboard\TcssActiveCasesControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.Dashboard.UpdateControl" Collapsed="true">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAEAEAACCAAAAEAACAAACiABAAAAAACAAQAAMCAII=</HashCode>
+      <FileName>Controls\Dashboard\UpdateControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.NewCall.FamilyServices.CaseStatusControl" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UgAEAAAgBCEAALEQRBCAAAAKAAACAQiAAAAAAAAFgAA=</HashCode>
+      <FileName>Controls\NewCall\FamilyServices\CaseStatusControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.NewCall.FamilyServices.FamilyServicesManager" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAAAAQCAACAAAAAAAAGABAAKAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\NewCall\FamilyServices\FamilyServicesManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.NewCall.Tcss.AbgVentSettingsControl" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAAACAAAACAAAAAAAACAIAACABBABAEAAAgAAQAAACA=</HashCode>
+      <FileName>Controls\NewCall\Tcss\AbgVentSettingsDetailsControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.NewCall.Tcss.ContactInformationControl" Collapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EKAAAAACgCAgACAKAASCAYUCAAEUIAgAAFAAhAAQAAA=</HashCode>
+      <FileName>Controls\NewCall\Tcss\ContactInformationControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.NewCall.Tcss.DiagnosticsDetailsControl" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FBzEl4i7EDEDSAAAsmKABIySiQISRAmFkECYRHVOJSQ=</HashCode>
+      <FileName>Controls\NewCall\Tcss\DiagnosticsDetailsControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.NewCall.Tcss.DiagnosticsSummaryControl" Collapsed="true">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GiZ6UJAZUeBBZgABowTCQIcuABnSAgUAAQhggCCAFAk=</HashCode>
+      <FileName>Controls\NewCall\Tcss\DiagnosticsSummaryControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.NewCall.Tcss.DonorCardStatusAssocControl" Collapsed="true">
+    <Position X="14.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kgAIAAAAICAAAAgAAgCAIAACAEOAAAAAAEEAAgCAAIA=</HashCode>
+      <FileName>Controls\NewCall\Tcss\DonorCardStatusAssocControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.NewCall.Tcss.DonorRecipientHlaDetailsControl" Collapsed="true">
+    <Position X="16.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GgBCAAgoEiChBwBgUgKsESAKAGUwpIEgPCWCBYgIAFE=</HashCode>
+      <FileName>Controls\NewCall\Tcss\DonorRecipientHlaInformationDetailsControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.NewCall.Tcss.DonorRecipientHlaSummaryControl" Collapsed="true">
+    <Position X="18" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQBikmxwgDQNDgBASgCEIaiPikEApchIFADIKKiMgRM=</HashCode>
+      <FileName>Controls\NewCall\Tcss\DonorRecipientHlaInformationSummaryControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.NewCall.Tcss.DuplicateReferalsForm" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAACBAAAAAAACAAAECAAAAQAAAAAAEAAAAAQA=</HashCode>
+      <FileName>Controls\NewCall\Tcss\DuplicateReferalsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.NewCall.Tcss.FluidsBloodControl" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>VoAOIAIAPGkAANDQQASCQMESPwwQEbBRgCAACKBBsAA=</HashCode>
+      <FileName>Controls\NewCall\Tcss\FluidsBloodDetailsControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.NewCall.Tcss.ImportDonorCardControl" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>NIgQAKAAhiaDAAAAgACAZAQCAqABAQQQAwGCAAAAAAA=</HashCode>
+      <FileName>Controls\NewCall\Tcss\ImportDonorCardControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.NewCall.Tcss.LabProfileDetailsControl" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQIAAAAAACAAAhAAAACAAAASgQAAAAQBCKAAAIAAgAI=</HashCode>
+      <FileName>Controls\NewCall\Tcss\LabProfileDetailsControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.NewCall.Tcss.LabProfileSummaryControl" Collapsed="true">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAhAAAAAASACABAAAACEAQACIIABAAAEEQQgAQEAACA=</HashCode>
+      <FileName>Controls\NewCall\Tcss\LabProfileSummaryControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.NewCall.Tcss.MedicalSocialHistoryControl" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAABQAAIGQgAAAAAQCQCgAiABEAgAoAgAKAwIACyAA=</HashCode>
+      <FileName>Controls\NewCall\Tcss\MedicalSocialHistoryControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.NewCall.Tcss.OfferInformationControl" Collapsed="true">
+    <Position X="12.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAgkBDSUBmcgJCUAsgCA4CUOIsEsCiCER0GAaXIIE6A=</HashCode>
+      <FileName>Controls\NewCall\Tcss\OfferInformationControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.NewCall.Tcss.SerologiesControl" Collapsed="true">
+    <Position X="5.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EEAAAAAAACQAAAAAAACAAAECAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Controls\NewCall\Tcss\SerologiesControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.NewCall.Tcss.TcssManager" Collapsed="true">
+    <Position X="14.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAAAJcmAAyKAACABAOiAAwgOJKJQAAQRAoQIoAAAgcg=</HashCode>
+      <FileName>Controls\NewCall\Tcss\TcssManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.NewCall.Tcss.TestDiagnosesControl" Collapsed="true">
+    <Position X="16.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAAAAAAACAMAACAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Controls\NewCall\Tcss\TestDiagnosesControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.NewCall.Tcss.UrinalysisCulturesControl" Collapsed="true">
+    <Position X="2.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAABAAACAAAAAAAACCIAAGAAAAAAAAAAAAAAAAACI=</HashCode>
+      <FileName>Controls\NewCall\Tcss\UrinalysisCulturesDetailsControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.NewCall.Tcss.VitalSignsDetailsControl" Collapsed="true">
+    <Position X="4" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAAgAAAAKAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\NewCall\Tcss\VitalSignsDetailsControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Controls.NewCall.Tcss.VitalSignsSummaryControl" Collapsed="true">
+    <Position X="5.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAgAAASAAEBAAAAqABEACgAAABAAgAAggAQAQCCA=</HashCode>
+      <FileName>Controls\NewCall\Tcss\VitalSignsSummaryControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.WindowsApplication.HeaderControl" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>cAAAAAAAACAAABAAAASAAAACAAAIAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Header\HeaderControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Header.MainHeader" Collapsed="true">
+    <Position X="18" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EMJAEQACQigKCSgAAFCBBHQGAAgBFQEJTAAAAJIEEgA=</HashCode>
+      <FileName>Header\MainHeader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Header.TcssHeader" Collapsed="true">
+    <Position X="12.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MUgERCAAEmcgQgAAAAiYAACKAIAEAhCQQACMABICGEI=</HashCode>
+      <FileName>Header\TcssHeader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Properties.Resources" Collapsed="true">
+    <Position X="9.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAIAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statline.Stattrac.Windows.UI.Properties.Settings" Collapsed="true">
+    <Position X="7.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAIAAAAAABAAAIAAAAAAQAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,19 @@
+<html>
+<body>
+	<dt>
+	<%
+
+	IF Instr(Request.ServerVariables("PATH_TRANSLATED"), "reports\") > 0 then
+		IF GetSourceCodeNameReportGroupID(request("ReportGroupID")) = "GOLM" then
+			response.write("<font size='-3'>The data within this report are unaudited and require that hospital administration validate its content and respond to Gift of Life with any requests for reconciliation. <BR>Data older than 60 days are to be considered audited. Please contact the Gift of Life at 1-800-482-4881 for data questions or adjustments.<BR>Preliminary: Hospital data preliminarily reported to Gift of Life.<BR>Validated: Hospital data that has been reconciled 60 days following the end of month reporting period.<BR>YTD: Validated hospital data through the end of report period.</font><BR>")
+		End IF	
+	End IF
+	%><!-- ccarroll 03/26/2008 changed legal notice -->
+	<a href="http://<%= Request.ServerVariables("SERVER_NAME") %>/loginstatline/legal.sls" target="_blank"><font size="1" face="Arial">©1996-<%=DatePart("yyyy",Now)%> Statline, A Division of MTF, All rights reserved.</font></a></dt>
+<%
+	'ccarroll 11/16/2006 - added disclaimer for StatTrac 8.2 changes to service levels
+	response.write("<div><font size=1 face=Arial>*Note: Approach, consent and recovery information may not be displayed because of service level access settings.</font></div>")
+%>
+
+</body>
+</html>

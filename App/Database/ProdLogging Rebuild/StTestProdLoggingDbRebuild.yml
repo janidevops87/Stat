@@ -1,0 +1,24 @@
+name: StTestProdLoggingDbRebuild-$(Build.SourceBranchName)-Build.$(Build.BuildId)-$(date:yyyy.MM.dd.HH.mm.ss)
+
+pool:
+  vmImage: 'windows-2019'
+
+jobs:
+- job: CopyFiles
+  displayName: CopyFiles
+
+  steps:
+  - checkout: self
+  
+  - task: CopyFiles@2
+    displayName: 'Copy Files to: $(Build.SourcesDirectory)\StTestProdLoggingDbRebuild'
+    inputs:
+      SourceFolder: '$(Build.SourcesDirectory)/App/Database/ProdLogging Rebuild/'
+      Contents: '**/*.ps1'
+      TargetFolder: $(Build.SourcesDirectory)\StTestProdLoggingDbRebuild
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact: StTestProdLoggingDbRebuild'
+    inputs:
+      PathtoPublish: $(Build.SourcesDirectory)\StTestProdLoggingDbRebuild
+      ArtifactName: StTestProdLoggingDbRebuild

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ApplicationData" targetNamespace="http://statline.com/StatTrac/applicationdata.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://statline.com/StatTrac/applicationdata.xsd"
+	xmlns:mstns="http://statline.com/StatTrac/applicationdata.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ApplicationData" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="StatTracOption">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="OptionName" type="xs:string" />
+							<xs:element name="OptionValue" type="xs:string" />
+							<xs:element name="InsertedBy" type="xs:string" />
+							<xs:element name="UpdatedBy" type="xs:string" />
+							<xs:element name="DateInserted" type="xs:dateTime" />
+							<xs:element name="DateUpdated" type="xs:dateTime" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="StatTracCase">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="StatTracCaseId" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="SourceCodeId" type="xs:int" />
+							<xs:element name="ReferralNumber" type="xs:string" />
+							<xs:element name="PatientName" type="xs:string" />
+							<xs:element name="FSCPersonId" type="xs:int" minOccurs="0" />
+							<xs:element name="StatTracCaseTypeId" type="xs:int" />
+							<xs:element name="InsertedBy" type="xs:string" />
+							<xs:element name="UpdatedBy" type="xs:string" />
+							<xs:element name="DateInserted" type="xs:dateTime" />
+							<xs:element name="DateUpdated" type="xs:dateTime" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="StatTracCaseStatusLog">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="StatTracCaseId" type="xs:int" />
+							<xs:element name="StatTracStatusId" type="xs:int" />
+							<xs:element name="StatusChangedDateTime" type="xs:dateTime" />
+							<xs:element name="InsertedBy" type="xs:string" />
+							<xs:element name="DateInserted" type="xs:dateTime" />
+							<xs:element name="DateUpdated" type="xs:dateTime" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="StatTracCaseList">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="StatTracCaseId" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="SourceCodeId" type="xs:int" />
+							<xs:element name="SourceCodeName" type="xs:string" />
+							<xs:element name="ReferralNumber" type="xs:string" />
+							<xs:element name="PatientName" type="xs:string" />
+							<xs:element name="FSCPersonId" type="xs:int" />
+							<xs:element name="PersonName" type="xs:string" />
+							<xs:element name="PreviousFSCPersonId" type="xs:int" />
+							<xs:element name="PreviousPersonName" type="xs:string" />
+							<xs:element name="StatTracStatusId" type="xs:int" />
+							<xs:element name="StatTracStatusName" type="xs:string" />
+							<xs:element name="Comment" type="xs:string" />
+							<xs:element name="StatTracCaseTypeId" type="xs:int" />
+							<xs:element name="StatTracCaseTypeName" type="xs:string" />
+							<xs:element name="InsertedBy" type="xs:string" />
+							<xs:element name="UpdatedBy" type="xs:string" />
+							<xs:element name="DateInserted" type="xs:dateTime" />
+							<xs:element name="DateUpdated" type="xs:dateTime" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="StatTracCaseListBoard">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="SourceCodeName" type="xs:string" msdata:Caption="Client" />
+							<xs:element name="ReferralNumber" type="xs:string" />
+							<xs:element name="PatientName" type="xs:string" />
+							<xs:element name="PersonName" type="xs:string" />
+							<xs:element name="StatTracStatusName" type="xs:string" />
+							<xs:element name="StatTracCaseTypeName" type="xs:string" />
+							<xs:element name="InsertedBy" type="xs:string" />
+							<xs:element name="UpdatedBy" type="xs:string" />
+							<xs:element name="DateInserted" type="xs:dateTime" />
+							<xs:element name="DateUpdated" type="xs:dateTime" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="StatTracCaseCommentLog">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="StatTracCaseCommentLogId" msdata:ReadOnly="true" msdata:AutoIncrement="true"
+								type="xs:int" />
+							<xs:element name="Comment" type="xs:string" />
+							<xs:element name="StatTracCaseId" type="xs:int" />
+							<xs:element name="InsertedBy" type="xs:string" />
+							<xs:element name="UpdatedBy" type="xs:string" />
+							<xs:element name="DateInserted" type="xs:dateTime" />
+							<xs:element name="DateUpdated" type="xs:dateTime" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:key name="ApplicationDataKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:StatTracOption" />
+			<xs:field xpath="mstns:OptionName" />
+		</xs:key>
+		<xs:unique name="ApplicationDataKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:StatTracCase" />
+			<xs:field xpath="mstns:StatTracCaseId" />
+		</xs:unique>
+		<xs:unique name="ApplicationDataKey3" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:StatTracCaseStatusLog" />
+			<xs:field xpath="mstns:StatTracCaseId" />
+			<xs:field xpath="mstns:StatTracStatusId" />
+			<xs:field xpath="mstns:StatusChangedDateTime" />
+		</xs:unique>
+		<xs:keyref name="StatTracCaseStatTracCaseStatusLog" refer="ApplicationDataKey1">
+			<xs:selector xpath=".//mstns:StatTracCaseStatusLog" />
+			<xs:field xpath="mstns:StatTracCaseId" />
+		</xs:keyref>
+		<xs:key name="ApplicationDataKey4" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:StatTracCaseList" />
+			<xs:field xpath="mstns:StatTracCaseId" />
+		</xs:key>
+		<xs:unique name="ApplicationDataKey5" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:StatTracCaseCommentLog" />
+			<xs:field xpath="mstns:StatTracCaseCommentLogId" />
+		</xs:unique>
+		<xs:keyref name="StatTracCaseStatTracComment" refer="ApplicationDataKey1">
+			<xs:selector xpath=".//mstns:StatTracCaseCommentLog" />
+			<xs:field xpath="mstns:StatTracCaseId" />
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

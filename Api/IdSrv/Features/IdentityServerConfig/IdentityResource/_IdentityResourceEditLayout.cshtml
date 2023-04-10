@@ -1,0 +1,45 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = $"Edit Identity Resource '{Model.IdentityResourceName}'";
+}
+
+@model IdentityResourceViewModel
+
+<h2>Edit Identity Resource <b>@Model.IdentityResourceName</b></h2>
+<p>
+    Identity resources are data like user ID, name, or email 
+    address of a user. An identity resource has a unique name, 
+    and you can assign arbitrary claim types to it. 
+    These claims will then be included in the identity token for 
+    the user. The client will use the scope parameter to request 
+    access to an identity resource.
+</p>
+<p>
+    The OpenID Connect specification specifies a couple of standard
+    identity resources. The minimum requirement is, that you provide
+    support for emitting a unique ID for your users - also called the
+    subject id. This is done by exposing the standard identity resource called
+    openid.
+</p>
+<ul class="nav nav-tabs">
+    <li class="@(Model is EditPropertiesViewModel ? "active" : "")">
+        <a asp-action="EditProperties" asp-route-id="@Model.IdentityResourceId">Properties</a>
+    </li>
+    
+    <li class="@(Model is EditUserClaimsViewModel ? "active" : "")">
+        <a asp-action="EditUserClaims" asp-route-id="@Model.IdentityResourceId">User claims</a>
+    </li>
+</ul>
+<br />
+<div>
+    @RenderBody()
+</div>
+<br />
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

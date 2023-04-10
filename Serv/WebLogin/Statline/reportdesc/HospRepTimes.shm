@@ -1,0 +1,36 @@
+<html>
+
+<head>
+<title>Report Description</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<meta http-equiv="EXPIRES" content="0">
+</head>
+
+<body bgcolor="#F5EBDD">
+
+<table border="0" cellpadding="0" cellspacing="0" width="575">
+  <tr>
+    <td><strong>Hospital Report Times</strong></td>
+  </tr>
+</table>
+This report details the range of time in which the hospital reports the referral.  
+The time the call is received in the communications center is compared to the 
+reported time of death.  These are the time ranges:  
+<p>
+<table>
+<tr>
+	<td>0 – 1 hours</td>
+</tr>
+<tr>
+	<td>1 – 3 hours</td>
+</tr>
+<tr>
+	<td>3 – 6 hours</td>
+</tr>
+</table>
+<p>
+This report will be helpful in determining if hospitals are reporting in a timely manner.  In addition to the total number of referrals, this report also identifies the number of appropriate option types per time range.
+
+</div>
+</body>
+</html>

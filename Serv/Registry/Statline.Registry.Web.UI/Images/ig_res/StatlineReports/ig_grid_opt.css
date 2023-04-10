@@ -1,0 +1,178 @@
+.igtbl_StatlineReportsControl
+{
+	border:solid 1px #B4B4B4;
+}
+
+
+.igtbl_StatlineReportsPagerArea
+{
+	border-width:0px;
+	padding:15px;
+}
+
+
+.igtbl_StatlineReportsPageCurrent
+{
+	margin-right:10px;
+	color:Gray;
+}
+
+
+.igtbl_StatlineReportsPageLink
+{
+	margin-right:10px;
+	color:Black;
+}
+
+
+.igtbl_StatlineReportsGroupByBox
+{
+}
+
+
+.igtbl_StatlineReportsAddNewBox
+{
+}
+
+
+TBODY.igtbl_StatlineReportsItem TR TD, THEAD.igtbl_StatlineReportsItem TR TH, TFOOT.igtbl_StatlineReportsItem TR TH, TBODY.igtbl_StatlineReportsItem TR TH
+{
+	border-width:0px;
+	border-color:Transparent;
+	border-top:solid 1px WhiteSmoke;
+	border-right:solid 1px WhiteSmoke;
+}
+
+
+.igtbl_StatlineReportsFilterOperandButton
+{
+	background-color:Transparent;
+	background-repeat:no-repeat;
+	background-image: url(images/submit_up.gif);
+	border-width:0px;
+	width: 18px;
+}
+
+
+.igtbl_StatlineReportsFilterDropDown
+{
+}
+
+
+.igtbl_StatlineReportsFilterOperandDropDown
+{
+}
+
+
+TBODY.igtbl_StatlineReportsItem TR.igtbl_StatlineReportsAlt TD
+{
+	background-color:#FCFCFC;
+	border-color:WhiteSmoke;
+	border-top-width:1px;
+}
+
+
+.igtbl_StatlineReportsEdit
+{
+	font-size:xx-small;
+	font-family: Verdana;
+	padding-top:5px;
+}
+
+
+.igtbl_StatlineReportsButton
+{
+}
+
+
+TBODY.igtbl_StatlineReportsItem TR TD.igtbl_StatlineReportsFxdCell
+{
+}
+
+
+THEAD.igtbl_StatlineReportsHeader TR TH, TFOOT.igtbl_StatlineReportsHeader TR TH, TBODY.igtbl_StatlineReportsHeader TR TH
+{
+	background-color:Gainsboro;
+	border-width:0px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+
+TFOOT.igtbl_StatlineReportsFooter TR TH
+{
+}
+
+
+TBODY.igtbl_StatlineReportsHeader TR TH.igtbl_StatlineReportsLabel
+{
+	background-color:#F0F0F0;
+	border-top-width:1px;
+	border-top-color:White;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+
+TBODY.igtbl_StatlineReportsHeader TR TH.igtbl_StatlineReportsExpArea, TFOOT.igtbl_StatlineReportsHeader TR TH.igtbl_StatlineReportsExpArea
+{
+}
+
+
+TBODY.igtbl_StatlineReportsHeader TR TH.igtbl_StatlineReportsGrpItem
+{
+}
+
+
+THEAD.igtbl_StatlineReportsHeader TR TH.igtbl_StatlineReportsFxdHeader
+{
+}
+
+
+.igtbl_StatlineReportsGroupBandLabel
+{
+}
+
+
+TFOOT.igtbl_StatlineReportsHeader TR TH.igtbl_StatlineReportsFxdFooter
+{
+}
+
+
+.igtbl_StatlineReportsDropDown
+{
+	background-color:WhiteSmoke;
+	font-size:xx-small;
+	font-family: Verdana;
+	border:solid 1px LightGrey;
+}
+
+
+.igtbl_StatlineReportsDropDownSel
+{
+}
+
+
+TBODY.igtbl_StatlineReportsItem TR.igtbl_StatlineReportsSelected TD, TBODY.igtbl_StatlineReportsItem TR TD.igtbl_StatlineReportsSelected, .igtbl_StatlineReportsSelected
+{
+	background-color:#E1E1E1;
+	border-width:1px 0px 0px 0px;
+	border-left-color:#E1E1E1;
+}
+
+
+TBODY.igtbl_StatlineReportsItem TR TD.igtbl_StatlineReportsActiveBorder_TB, .igtbl_StatlineReportsActiveBorder_TB
+{
+}
+
+
+TBODY.igtbl_StatlineReportsItem TR TD.igtbl_StatlineReportsActiveBorder_L, .igtbl_StatlineReportsActiveBorder_L
+{
+}
+
+
+TBODY.igtbl_StatlineReportsItem TR TD.igtbl_StatlineReportsActiveBorder_R, .igtbl_StatlineReportsActiveBorder_R
+{
+}
+
+

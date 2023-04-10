@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AppScreenDS" targetNamespace="http://tempuri.org/AppScreenDS.xsd" xmlns:mstns="http://tempuri.org/AppScreenDS.xsd" xmlns="http://tempuri.org/AppScreenDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsPropertyName="_ReferralDev2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="_ReferralDev2ConnectionString ()" ParameterPrefix="@" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AppScreenDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="AppScreenDS" msprop:Generator_DataSetName="AppScreenDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AppScreen" msprop:Generator_UserTableName="AppScreen" msprop:Generator_RowDeletedName="AppScreenRowDeleted" msprop:Generator_TableClassName="AppScreenDataTable" msprop:Generator_RowChangedName="AppScreenRowChanged" msprop:Generator_RowClassName="AppScreenRow" msprop:Generator_RowChangingName="AppScreenRowChanging" msprop:Generator_RowEvArgName="AppScreenRowChangeEvent" msprop:Generator_RowEvHandlerName="AppScreenRowChangeEventHandler" msprop:Generator_TablePropName="AppScreen" msprop:Generator_TableVarName="tableAppScreen" msprop:Generator_RowDeletingName="AppScreenRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AppScreenId" msprop:Generator_UserColumnName="AppScreenId" msprop:Generator_ColumnPropNameInRow="AppScreenId" msprop:Generator_ColumnVarNameInTable="columnAppScreenId" msprop:Generator_ColumnPropNameInTable="AppScreenIdColumn" type="xs:int" />
+              <xs:element name="ParentId" msprop:Generator_UserColumnName="ParentId" msprop:Generator_ColumnPropNameInRow="ParentId" msprop:Generator_ColumnVarNameInTable="columnParentId" msprop:Generator_ColumnPropNameInTable="ParentIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ScreenName" msprop:Generator_UserColumnName="ScreenName" msprop:Generator_ColumnPropNameInRow="ScreenName" msprop:Generator_ColumnVarNameInTable="columnScreenName" msprop:Generator_ColumnPropNameInTable="ScreenNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SortOrder" msprop:Generator_UserColumnName="SortOrder" msprop:Generator_ColumnPropNameInRow="SortOrder" msprop:Generator_ColumnVarNameInTable="columnSortOrder" msprop:Generator_ColumnPropNameInTable="SortOrderColumn" type="xs:int" />
+              <xs:element name="ShortCutKey" msprop:Generator_UserColumnName="ShortCutKey" msprop:Generator_ColumnPropNameInRow="ShortCutKey" msprop:Generator_ColumnVarNameInTable="columnShortCutKey" msprop:Generator_ColumnPropNameInTable="ShortCutKeyColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AppScreen" />
+      <xs:field xpath="mstns:AppScreenId" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_AppScreen_ParentId_AppScreen_AppScreenId" msdata:parent="AppScreen" msdata:child="AppScreen" msdata:parentkey="AppScreenId" msdata:childkey="ParentId" msprop:Generator_UserRelationName="FK_AppScreen_ParentId_AppScreen_AppScreenId" msprop:Generator_RelationVarName="relationFK_AppScreen_ParentId_AppScreen_AppScreenId" msprop:Generator_UserChildTable="AppScreen" msprop:Generator_UserParentTable="AppScreen" msprop:Generator_ParentPropName="AppScreenRowParent" msprop:Generator_ChildPropName="GetAppScreenRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

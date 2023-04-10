@@ -1,0 +1,32 @@
+﻿@model TenantViewModel
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = $"Edit tenant '{Model.OrganizationName}'";
+}
+
+<h2>Edit tenant <b>@Model.OrganizationName</b></h2>
+
+<vc:tenant-summary tenant-id="@Model.Id"/>
+<br/>
+<ul class="nav nav-tabs">
+    <li class="@(Model is EditPropertiesViewModel ? "active" : "")">
+        <a asp-action="EditProperties" asp-route-id="@Model.Id">Properties</a>
+    </li>
+    <li class="@(Model is EditClaimsViewModel ? "active" : "")">
+        <a asp-action="EditClaims" asp-route-id="@Model.Id">Claims</a>
+    </li>
+</ul>
+<br />
+<div>
+    @RenderBody()
+</div>
+<br />
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

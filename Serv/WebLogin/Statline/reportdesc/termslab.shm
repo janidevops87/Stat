@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="EXPIRES" content="0">
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR"
+content="Microsoft FrontPage (Visual InterDev Edition) 2.0">
+<title>Report Description</title>
+</head>
+
+<body bgcolor="#F5EBDD">
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="575">
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td><table border="1" cellpadding="7" cellspacing="1"
+        width="637">
+            <tr>
+                <td colspan="4" width="100%"><font size="3"
+                face="Arial"><strong><i>Clinical Lab and Related
+                Procedures</i></strong></font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>Ab</b></font></td>
+                <td width="36%"><font size="2">Antibody</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>K</b></font></td>
+                <td width="36%"><font size="2">Potassium</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>ABG</b></font></td>
+                <td width="36%"><font size="2">Arterial blood
+                gases</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>LDH</b></font></td>
+                <td width="36%"><font size="2">Lactic acid
+                dehydrogenase</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>AG</b></font></td>
+                <td width="36%"><font size="2">Antigen</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>LFT</b></font></td>
+                <td width="36%"><font size="2">Liver function
+                tests</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>Alb</b></font></td>
+                <td width="36%"><font size="2">Albumin</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>Lymphs</b></font></td>
+                <td width="36%"><font size="2">Lymphocytes</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>BANDS</b></font></td>
+                <td width="36%"><font size="2">Banded WBC's</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>Na</b></font></td>
+                <td width="36%"><font size="2">Sodium</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>Bili</b></font></td>
+                <td width="36%"><font size="2">Bilirubin</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>Neut.</b></font></td>
+                <td width="36%"><font size="2">Neutrophils</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>Bld</b></font></td>
+                <td width="36%"><font size="2">Blood</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>pCO2</b></font></td>
+                <td width="36%"><font size="2">Partial pressure
+                carbon dioxide</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>BS</b></font></td>
+                <td width="36%"><font size="2">Blood sugar</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>Plt</b></font></td>
+                <td width="36%"><font size="2">Platelet</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>BUN</b></font></td>
+                <td width="36%"><font size="2">Blood urea
+                nitrogen</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>pOZ</b></font></td>
+                <td width="36%"><font size="2">Partial pressure
+                of oxygen</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>Cl</b></font></td>
+                <td width="36%"><font size="2">Chloride</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>PT</b></font></td>
+                <td width="36%"><font size="2">Prothrombin time</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>CPK,
+                CK</b></font></td>
+                <td width="36%"><font size="2">Creatine
+                (phospho)kinase</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>PTT</b></font></td>
+                <td width="36%"><font size="2">Partial
+                thromboplastin time</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>CKMB</b></font></td>
+                <td width="36%"><font size="2">Cardiac-specific
+                CK enzyme</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>RBC</b></font></td>
+                <td width="36%"><font size="2">Red blood cell</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>GGT</b></font></td>
+                <td width="36%"><font size="2">gamma glutamyl
+                transferase</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>Segs</b></font></td>
+                <td width="36%"><font size="2">Segmented
+                neutrohils</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>Hct</b></font></td>
+                <td width="36%"><font size="2">Hematocrit</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>SGOT</b></font><p><font
+                size="2"><b>(AST)</b></font></p>
+                </td>
+                <td width="36%"><font size="2">Serum glutamic
+                oxaloacetic transaminase</font></td>
+            </tr>
+            <tr>
+                <td><font size="2"><b>HLA</b></font></td>
+                <td><font size="2">Human leukocyte antigen</font></td>
+                <td><font size="2"><b>WBC</b></font></td>
+                <td><font size="2">White Blood Cell Count</font></td>
+            </tr>
+            <tr>
+                <td><font size="2"><b>Ig</b></font></td>
+                <td><font size="2">Immunoglobulin</font></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+</table>
+</center></div>
+</body>
+</html>

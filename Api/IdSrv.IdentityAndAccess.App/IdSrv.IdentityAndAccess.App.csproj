@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Statline.IdentityServer.IdentityAndAccess.App</AssemblyName>
+    <RootNamespace>Statline.IdentityServer.IdentityAndAccess.App</RootNamespace>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Collection" Version="6.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="IdentityServer4" Version="3.1.4" />
+    <PackageReference Include="IdentityServer4.EntityFramework" Version="3.1.4" />
+    <PackageReference Include="MediatR" Version="4.1.0" />
+    <PackageReference Include="Statline.Common" Version="1.0.9" />
+    <PackageReference Include="Statline.Common.Infrastructure.Domain" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IdSrv.IdentityAndAccess.Domain\IdSrv.IdentityAndAccess.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

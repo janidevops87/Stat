@@ -1,0 +1,6 @@
+<%
+Dim ENVIRONMENT
+
+ENVIRONMENT = "PROD"
+
+%>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="TransplantCenterData" targetNamespace="http://statline.com/StatTrac/TransplantCenterData.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://statline.com/StatTrac/TransplantCenterData.xsd"
+	xmlns:mstns="http://statline.com/StatTrac/TransplantCenterData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="TransplantCenterData" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="TransplantCenter">
+					<xs:complexType>
+						<xs:sequence></xs:sequence>
+						<xs:attribute name="SourceCodeTransplanCenterID" msdata:ReadOnly="true" msdata:AutoIncrement="true"
+							type="xs:int" />
+						<xs:attribute name="OrganizationID" type="xs:int" />
+						<xs:attribute name="TransplantCode" type="xs:string" />
+						<xs:attribute name="SourceCodeID" type="xs:int" />
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

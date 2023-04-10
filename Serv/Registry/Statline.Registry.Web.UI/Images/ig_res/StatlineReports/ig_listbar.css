@@ -1,0 +1,175 @@
+.iglb_StatlineReportsControl
+{
+	font-size:medium;
+	border:solid 1px #B4B4B4;
+	margin-bottom:0px;
+}
+
+
+.iglb_StatlineReportsControl_Exp
+{
+	font-size:medium;
+	border:solid 1px #B4B4B4;
+}
+
+
+.iglb_StatlineReportsButton
+{
+	background-color:#F0F0F0;
+	font-size:smaller;
+	border-bottom:solid 1px #C3C3C3;
+	padding-top:2px;
+	padding-bottom:1px;
+	padding-left:3px;
+	color:Black;
+}
+
+
+.iglb_StatlineReportsButtonHover
+{
+	background-color:#A5A5A5;
+	font-size:smaller;
+	border-bottom:solid 1px #C3C3C3;
+	padding-top:2px;
+	padding-bottom:1px;
+	padding-left:3px;
+	color:White;
+}
+
+
+.iglb_StatlineReportsButtonSelected
+{
+	background-color:#969696;
+	font-size:smaller;
+	padding-top:2px;
+	padding-bottom:1px;
+	padding-left:3px;
+	color:White;
+}
+
+
+.iglb_StatlineReportsHeaderCollapsed
+{
+	background-color:#F0F0F0;
+	font-size:smaller;
+	border-bottom:solid 1px #A5A5A5;
+	padding-top:0px;
+	padding-bottom:3px;
+	padding-left:3px;
+	color:Black;
+}
+
+
+.iglb_StatlineReportsHeaderExpanded
+{
+	background-color:#F0F0F0;
+	font-size:smaller;
+	border-bottom:solid 1px #B4B4B4;
+	padding-top:0px;
+	padding-bottom:3px;
+	padding-left:3px;
+	color:Black;
+}
+
+
+.iglb_StatlineReportsHeaderHover
+{
+	background-color:#D2D2D2;
+	font-size:smaller;
+	border-bottom:solid 1px #878787;
+	padding-top:0px;
+	padding-bottom:3px;
+	padding-left:3px;
+	color:White;
+}
+
+
+.iglb_StatlineReportsGroup
+{
+}
+
+
+.iglb_StatlineReportsGroup_Exp
+{
+	margin-bottom:0px;
+}
+
+
+.iglb_StatlineReportsItem
+{
+	font-size:xx-small;
+	margin-top:8px;
+	margin-bottom:3px;
+	padding-left:4px;
+	color:DimGray;
+	text-align:left;
+}
+
+
+.iglb_StatlineReportsItem_Exp
+{
+	font-size:xx-small;
+	margin-top:4px;
+	margin-bottom:0px;
+	padding-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	color:DimGray;
+	text-align:left;
+}
+
+
+.iglb_StatlineReportsItemHover
+{
+	font-size:xx-small;
+	margin-top:8px;
+	margin-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	color:Black;
+	text-align:left;
+	text-decoration:underline;
+}
+
+
+.iglb_StatlineReportsItemHover_Exp
+{
+	font-size:xx-small;
+	margin-top:4px;
+	margin-bottom:0px;
+	padding-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	color:Black;
+	text-align:left;
+	text-decoration:underline;
+}
+
+
+.iglb_StatlineReportsItemSelected
+{
+	font-weight:bold;
+	font-size:xx-small;
+	margin-top:8px;
+	margin-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	color:Black;
+	text-align:left;
+}
+
+
+.iglb_StatlineReportsItemSelected_Exp
+{
+	font-weight:bold;
+	font-size:xx-small;
+	margin-top:4px;
+	margin-bottom:0px;
+	padding-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	color:Black;
+	text-align:left;
+}
+
+

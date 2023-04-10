@@ -1,0 +1,76 @@
+<html>
+
+<head>
+<title>Report Description</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<meta http-equiv="EXPIRES" content="0">
+</head>
+
+<body bgcolor="antiquewhite">
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="575">
+  <tr>
+    <td><font face="Arial" size="4"><b>AGE DEMOGRAPHICS</b></font><font face="Times New Roman"><i><p>What
+    can this report do for you?</i></p>
+    <div align="center"><center><table border="0" cellpadding="0" cellspacing="0" width="75%">
+      <tr>
+        <td width="5%" valign="top">1.</td>
+        <td width="50%">Identify the total number of referrals by age and gender category for a
+        specific time period or referring facility.</td>
+      </tr>
+      <tr>
+        <td width="5%" valign="top">2.</td>
+        <td width="50%">Identify the average age of the total number of referrals by gender.</td>
+      </tr>
+      <tr>
+        <td width="5%" valign="top"><font face="Times New Roman">3.</font></td>
+        <td width="50%">Identify the average age of appropriate, approached, consented and
+        recovered referrals.</font></td>
+      </tr>
+    </table>
+    </center></div><font face="Times New Roman" size="3"><p>The Age Demographics report is a
+    statistical breakdown of referrals by age. The report is divided into two sections, male
+    and female. Each section will total the number of referrals by age category. The age
+    categories for this report are:</p>
+    <div align="center"><center><table border="0" cellpadding="0" cellspacing="0" width="75%">
+      <tr>
+        <td width="23%">0-5 years<br>
+        6-10 years<br>
+        11-15 years<br>
+        16-20 years<br>
+        21-30 years<br>
+        31-40 years<br>
+        41-50 years<br>
+        51-60 years<br>
+        61-70 years<br>
+        71-80 years<br>
+        81+ years</td>
+        <td width="77%"></td>
+      </tr>
+    </table>
+    </center></div><p>The age categories are listed in increments of 5 years up to the age of
+    20 years old. Since donor size is more important in pediatric patients, five year age
+    increments will allow you to take a closer look at the age demographics for pediatric
+    donor referrals. Above the age of 20 years old, the age categories are in ten year
+    increments.</p><!--
+    <p>The columns for each section from left to right are Male (or Female), # of Total
+    Referrals (the number of referral calls that Statline took), Appropriate (donation options
+    that are appropriate according to the criteria received from the recovery agency),
+    Approach (specific options that were approached for donation), Consent (specific options
+    that the next of kin consented to for donation), and Recovery (specific options that were
+    recovered for transplant or research). </p>
+    <p>For each age category, the total number of referrals and how many were Appropriate,
+    Approached, Consented, and Recovered will be documented. The Appropriate, Approach,
+    Consent and Recovery columns are subdivided into specific option types (O for organ, B for
+    bone, ST for soft tissue, SK for skin, HV for heart valve and E for eyes).</p>
+    <p>At the bottom of each section, the columns are totaled. Below the totals, the average
+    age for each column will be documented. With this report, you can identify the average age
+    of appropriate, approached, consented and recovered donor referrals by specific type
+    (organ, bone, soft tissue, skin, heart valve and eyes).</font></td>-->
+  </tr>
+</table>
+</center></div>
+</body>
+</html>
+

@@ -1,0 +1,25 @@
+﻿@model EditScopesViewModel
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.AllowedScopes[0].Value)</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var scope in Model.AllowedScopes)
+        {
+            <tr>
+                <td>@scope.Value</td>
+                <td>
+                    <form asp-action="DeleteScope" asp-route-id="@Model.Id"
+                        asp-authorize="@AuthorizationPolicies.WholeApplicationAdministrationPolicy">
+                        <input type="hidden" asp-for="@scope.Value" name="@nameof(scope.Value)" />
+                        <button type="submit" class="btn btn-sm btn-danger">delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

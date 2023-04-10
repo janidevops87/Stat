@@ -1,0 +1,42 @@
+﻿@model IEnumerable<RoleListSummaryViewModel>
+@{
+    ViewData["Title"] = "Roles";
+    Layout = "_Layout";
+}
+
+<h2>Roles</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.Name)</th>
+            <th class="text-center">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var role in Model)
+        {
+            <tr>
+                <td>@role.Name</td>
+                <td class="text-center">
+                    <a asp-action="Edit"
+                       asp-route-id="@role.Id"
+                       class="btn btn-sm btn-warning">
+                        edit
+                    </a>
+
+                    <form asp-action="Delete"
+                          asp-route-id="@role.Id"
+                          style="display:inline">
+                        <button type="submit" class="btn btn-sm btn-danger">delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+<a asp-action="Add" class="btn btn-primary">
+    New Role
+</a>

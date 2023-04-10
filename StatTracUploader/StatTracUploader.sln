@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30608.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatTracUploader.WebUI", "StatTracUploader.WebUI\StatTracUploader.WebUI.csproj", "{184A6C0C-4463-41D4-852B-943FC63C1CC5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatTracUploader.App", "StatTracUploader.App\StatTracUploader.App.csproj", "{071D6C12-D412-4B83-9F7D-F826AB42E864}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A4BFFE3F-1C35-4FE8-929C-0843367B0C32}"
+	ProjectSection(SolutionItems) = preProject
+		NuGet.Config = NuGet.Config
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatTracUploader.Infrastructure", "StatTracUploader.Infrastructure\StatTracUploader.Infrastructure.csproj", "{E46D8CFA-14A2-4706-BC21-804A59BC291E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatTracUploader.Domain", "StatTracUploader.Domain\StatTracUploader.Domain.csproj", "{27FB4087-A792-4566-98AB-01E969301091}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsoleApp", "TestConsoleApp\TestConsoleApp.csproj", "{A56915FD-545E-4FAE-A3BE-047294F9B337}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{184A6C0C-4463-41D4-852B-943FC63C1CC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{184A6C0C-4463-41D4-852B-943FC63C1CC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{184A6C0C-4463-41D4-852B-943FC63C1CC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{184A6C0C-4463-41D4-852B-943FC63C1CC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{071D6C12-D412-4B83-9F7D-F826AB42E864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{071D6C12-D412-4B83-9F7D-F826AB42E864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{071D6C12-D412-4B83-9F7D-F826AB42E864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{071D6C12-D412-4B83-9F7D-F826AB42E864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E46D8CFA-14A2-4706-BC21-804A59BC291E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E46D8CFA-14A2-4706-BC21-804A59BC291E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E46D8CFA-14A2-4706-BC21-804A59BC291E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E46D8CFA-14A2-4706-BC21-804A59BC291E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27FB4087-A792-4566-98AB-01E969301091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27FB4087-A792-4566-98AB-01E969301091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27FB4087-A792-4566-98AB-01E969301091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27FB4087-A792-4566-98AB-01E969301091}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A56915FD-545E-4FAE-A3BE-047294F9B337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A56915FD-545E-4FAE-A3BE-047294F9B337}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A56915FD-545E-4FAE-A3BE-047294F9B337}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A56915FD-545E-4FAE-A3BE-047294F9B337}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17526626-93D3-41FB-BA2F-9708A86F736D}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/statline
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TestConsoleApp\\TestConsoleApp.csproj
+		SccProjectName1 = TestConsoleApp
+		SccLocalPath1 = TestConsoleApp
+		SccProjectUniqueName2 = StatTracUploader.WebUI\\StatTracUploader.WebUI.csproj
+		SccProjectName2 = StatTracUploader.WebUI
+		SccLocalPath2 = StatTracUploader.WebUI
+		SccProjectUniqueName3 = StatTracUploader.Infrastructure\\StatTracUploader.Infrastructure.csproj
+		SccProjectName3 = StatTracUploader.Infrastructure
+		SccLocalPath3 = StatTracUploader.Infrastructure
+		SccProjectUniqueName4 = StatTracUploader.Domain\\StatTracUploader.Domain.csproj
+		SccProjectName4 = StatTracUploader.Domain
+		SccLocalPath4 = StatTracUploader.Domain
+		SccProjectUniqueName5 = StatTracUploader.App\\StatTracUploader.App.csproj
+		SccProjectName5 = StatTracUploader.App
+		SccLocalPath5 = StatTracUploader.App
+	EndGlobalSection
+EndGlobal

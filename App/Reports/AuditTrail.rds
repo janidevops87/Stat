@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="AuditTrail">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=testsql.inside.statline.com;Initial Catalog=_ReferralAuditTrail</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>6da86d20-cb85-4c78-8dff-a857df89a1f5</DataSourceID>
+</RptDataSource>

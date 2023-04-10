@@ -1,0 +1,165 @@
+.main
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    COLOR: #333333;
+    PADDING-TOP: 0px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    HEIGHT: 20px
+}
+.bold
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    COLOR: #999999;
+    PADDING-TOP: 0px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    HEIGHT: 20px
+}
+.headline
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 24px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    COLOR: #999999;
+    PADDING-TOP: 0px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    HEIGHT: 20px
+}
+TABLE.sortable A.sortheader
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    COLOR: #ffffff;
+    PADDING-TOP: 0px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    HEIGHT: 20px
+}
+TABLE.sortable SPAN.sortarrow
+{
+    COLOR: white;
+    TEXT-DECORATION: none
+}
+TABLE.sortable
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    COLOR: #333333;
+    PADDING-TOP: 0px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    HEIGHT: 20px
+}
+.title
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 14px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    COLOR: #999999;
+    PADDING-TOP: 0px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    HEIGHT: 20px
+}
+.highlight
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    COLOR: #ffffff;
+    PADDING-TOP: 0px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    HEIGHT: 20px
+}
+.alert1
+{
+    BORDER-RIGHT: gainsboro thin inset;
+    BORDER-TOP: gainsboro thin inset;
+    MARGIN: 1px;
+    OVERFLOW: scroll;
+    BORDER-LEFT: gainsboro thin inset;
+    WIDTH: 375px;
+    BORDER-BOTTOM: gainsboro thin inset;
+    HEIGHT: 270px;
+    BACKGROUND-COLOR: #ffffff;
+    TEXT-ALIGN: left
+}
+.alert2
+{
+    BORDER-RIGHT: gainsboro thin inset;
+    BORDER-TOP: gainsboro thin inset;
+    MARGIN: 1px;
+    OVERFLOW: scroll;
+    BORDER-LEFT: gainsboro thin inset;
+    WIDTH: 375px;
+    BORDER-BOTTOM: gainsboro thin inset;
+    HEIGHT: 270px;
+    BACKGROUND-COLOR: #ffffff;
+    TEXT-ALIGN: left
+}
+.alert3
+{
+    BORDER-RIGHT: gainsboro thin inset;
+    BORDER-TOP: gainsboro thin inset;
+    MARGIN: 1px;
+    OVERFLOW: scroll;
+    BORDER-LEFT: gainsboro thin inset;
+    WIDTH: 375px;
+    BORDER-BOTTOM: gainsboro thin inset;
+    HEIGHT: 270px;
+    BACKGROUND-COLOR: #ffffff;
+    TEXT-ALIGN: left
+}
+.alert4
+{
+    BORDER-RIGHT: gainsboro thin inset;
+    BORDER-TOP: gainsboro thin inset;
+    MARGIN: 1px;
+    OVERFLOW: scroll;
+    BORDER-LEFT: gainsboro thin inset;
+    WIDTH: 375px;
+    BORDER-BOTTOM: gainsboro thin inset;
+    HEIGHT: 270px;
+    BACKGROUND-COLOR: #ffffff;
+    TEXT-ALIGN: left
+}
+A:link
+{
+    FONT-WEIGHT: bold;
+    COLOR: #565b89;
+    TEXT-DECORATION: none
+}
+A:visited
+{
+    COLOR: #b4acd5;
+    TEXT-DECORATION: none
+}
+A:hover
+{
+    COLOR: #3300ff
+}
+A:active
+{
+    COLOR: #ff0000
+}

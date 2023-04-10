@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="NavigationData" targetNamespace="http://statline.com/StatTrac/navigationdata.xsd"
+	elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://statline.com/StatTrac/navigationdata.xsd"
+	xmlns:mstns="http://statline.com/StatTrac/navigationdata.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="NavigationData" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="MenuLinks">
+					<xs:complexType>
+						<xs:sequence></xs:sequence>
+						<xs:attribute name="MenuName" type="xs:string" />
+						<xs:attribute name="ParentMenuName" type="xs:string" />
+						<xs:attribute name="PageName" type="xs:string" />
+						<xs:attribute name="Text" type="xs:string" />
+						<xs:attribute name="Target" type="xs:string" />
+						<xs:attribute name="SortOrder" type="xs:int" />
+						<xs:attribute name="RequiredPrivilege" type="xs:string" />
+						<xs:attribute name="RequiresAuthentication" type="xs:boolean" />
+						<xs:attribute name="Description" type="xs:string" />
+						<xs:attribute name="Active" type="xs:boolean" />
+						<xs:attribute name="Enabled" type="xs:boolean" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Pages">
+					<xs:complexType>
+						<xs:sequence></xs:sequence>
+						<xs:attribute name="PageName" type="xs:string" />
+						<xs:attribute name="Text" type="xs:string" />
+						<xs:attribute name="Description" type="xs:string" />
+						<xs:attribute name="Url" type="xs:string" />
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:key name="NavigationDataKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Pages" />
+			<xs:field xpath="@PageName" />
+		</xs:key>
+		<xs:key name="NavigationDataKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:MenuLinks" />
+			<xs:field xpath="@MenuName" />
+		</xs:key>
+		<xs:keyref name="PagesMenuLinks" refer="NavigationDataKey1">
+			<xs:selector xpath=".//mstns:MenuLinks" />
+			<xs:field xpath="@PageName" />
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

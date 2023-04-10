@@ -1,0 +1,132 @@
+<div class="card-columns" [style.display]="staticGlobals().isAuthenticated?'block':'none'" style="margin:70px 0 100px 0;">
+  <div class="card bg-light" style="margin:15px 0 0 0;min-width:200px;">
+    <div class="card-body" style="max-height: 350px; overflow-y: auto;">
+      <h5 class="card-title favoriteimg">Favorites</h5>
+      <div class="card-text" [hidden]="reportFavorites.length > 0">
+        To add a report as favorite, click on a report and then toggle the favorite switch.
+      </div>
+      <bs-sortable [(ngModel)]="reportFavorites"
+                   fieldName="reportName"
+                   [itemTemplate]="favoriteItemTemplate"
+                   itemClass="sortable-item"
+                   itemActiveClass="sortable-item-active"
+                   placeholderItem="Drag here"
+                   placeholderClass="sortable-placeHolder"
+                   wrapperClass="sortable-wrapper"
+                   (drop)="onFavoriteDrop($event)">
+      </bs-sortable>
+    </div>
+  </div>
+  <div class="card bg-light" style="margin:10px 0 0 0;min-width:200px;">
+    <div class="card-body">
+      <h5 class="card-title recentimg">Recent Reports</h5>
+      <div class="card-text" [hidden]="recentReports.length > 0">
+        Your recently executed reports will display here
+      </div>
+      <div class="card-text" *ngFor="let report of recentReports">
+        <div class="divRecent">
+          <a style="display:inline-block;width: 100%" [routerLink]="" (click)="openModal(report.url, report.reportName, report.reportID, report.customReportControlName);">{{report.reportName}} </a>
+          <label style="display:block;color:gray;font-size:11px;margin:0">{{report.lastModified}}</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card bg-light" style="margin:15px 0 0 0;min-width:200px;" *ngFor="let rtype of reportTypes | keyvalue">
+    <div class="col mb-4" style="margin-bottom:0 !important">
+      <div class="card-body" style="padding-left: 0 !important;padding-right: 0 !important;">
+        <h5 class="card-title" style="padding-left:5px;">{{rtype.key}}</h5>
+        <div class="card-text" *ngFor="let report of rtype.value">
+          <a class="reportLink" [routerLink]="" (click)="openModal(report.url, report.reportName, report.reportID, report.customReportControlName);">{{report.reportName}} </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <alert style="position:fixed; bottom:30px;right:10px;"
+         type="success" dismissible="dismissible"
+         [hidden]="passwordExpirationWarning == undefined"
+         [dismissOnTimeout]="10000" (onClosed)="onPasswordChangeNotificationClosed(alert)">
+    Your password will expire in {{passwordExpirationWarning}} days.
+    <a [routerLink]="['/newpassword']" [queryParams]="{changeRequested:'1'}" class="link"> Click here to change it.</a>&nbsp;&nbsp;
+    <label title="This notitication will close after the counter times out."
+           style="background: #8ece95;
+                  color: white;
+                  border-radius: 59%;
+                  padding: 0 7px;
+                  margin: 0;
+                  position: absolute;
+                  right: 38px;
+                  top: 14px;">
+      {{passwordExpirationCounter}}
+    </label>
+  </alert>
+</div>
+<div [hidden]="reportListLoaded" class="loadingReports">Loading your reports...</div>
+
+<app-logoutmodal></app-logoutmodal>
+
+<ng-template #favoriteItemTemplate let-item="item" let-index="index">
+  <a style="display:inline-block; max-width: 80%;" [routerLink]=""
+     (click)="openModal(item.initData.url, item.initData.reportName, item.initData.reportID, item.initData.customReportControlName);">{{item.value}} </a>
+</ng-template>
+
+<ng-template #parametersPopup>
+  <div class="modal-header" id="parameterHeader">
+    <h5 class="modal-title pull-left reportName">{{selectedReportName}}</h5>
+    <div class="custom-control custom-switch pull-right" style="cursor:pointer; position: absolute; right: 60px;top:14px">
+      <input type="checkbox" class="custom-control-input" style="cursor:pointer;" id="chkReportFavorite"
+             (change)="updateFavorite();" [(ngModel)]="selectedReportFavorite"
+             [ngModelOptions]="{standalone: true}">
+      <label class="custom-control-label" style="cursor:pointer;line-height:1.4" for="chkReportFavorite">Favorite</label>
+    </div>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="row" style=" margin-bottom: -10px;" id="reportButtons">
+      <div id="secondaryReportHeader">
+        {{selectedReportName}}
+        <button type="button" class="close pull-right" aria-label="Close"
+                style="display: table-cell;line-height: 0.8;"
+                (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="col-sm">
+        <button class="btn btn-primary viewButton" style="margin-top: 4px;"
+                (click)="reportView(ParamPopup.CreateParameterList());"
+                [disabled]="showSpinner || RequiredFieldsIsEmpty()">
+          View
+          <span *ngIf="showSpinner"><i class="fa fa-spinner fa-spin"></i></span>
+        </button>
+        <div class="generalErrors" style="position: absolute; top:13px; left: 120px;" [hidden]="!RequiredFieldsIsEmpty()">Please enter data into required fields.</div>
+
+        <div class="pull-right" style="text-align:right">
+          <div class="exportAs">Export as </div>
+          <div class="pdf" [class.disabledExportButton]="showSpinner || RequiredFieldsIsEmpty()"
+               title="Export to Pdf" (click)="(showSpinner || RequiredFieldsIsEmpty()) ? $event.stopPropagation() : downloadFile('PDF',ParamPopup.CreateParameterList());">
+            <div [hidden]="!fileInProgress1" class="loadingFile"></div>
+          </div>
+          <div class="word" [class.disabledExportButton]="showSpinner || RequiredFieldsIsEmpty()"
+               title="Export to Word" (click)="(showSpinner || RequiredFieldsIsEmpty()) ? $event.stopPropagation() : downloadFile('WordOPENXML', ParamPopup.CreateParameterList());">
+            <div [hidden]="!fileInProgress2" class="loadingFile"></div>
+          </div>
+          <div class="excel" [class.disabledExportButton]="showSpinner || RequiredFieldsIsEmpty()"
+               title="Export to Excel" (click)="(showSpinner || RequiredFieldsIsEmpty()) ? $event.stopPropagation() : downloadFile('EXCELOPENXML',ParamPopup.CreateParameterList());">
+            <div [hidden]="!fileInProgress3" class="loadingFile"></div>
+          </div>
+          <div class="text" [class.disabledExportButton]="showSpinner || RequiredFieldsIsEmpty()"
+               title="Export to Tab Delimited Text" (click)="(showSpinner || RequiredFieldsIsEmpty()) ? $event.stopPropagation() : downloadFile('TAB',ParamPopup.CreateParameterList());">
+            <div [hidden]="!fileInProgress4" class="loadingFile"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="paramList" style="margin-top: -10px;">
+      <app-parameter-popup #ParamPopup [reportId]="selectedReportId" [reportURL]="selectedReportUrl" [reportName]="selectedReportName" [customControl]="selectedCustomReportControlName">
+      </app-parameter-popup>
+    </div>
+  </div>
+</ng-template>
+

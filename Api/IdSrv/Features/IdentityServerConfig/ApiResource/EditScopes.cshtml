@@ -1,0 +1,13 @@
+﻿@model EditScopesViewModel
+
+<p>
+    An API must have at least one scope. A scope defines what access a user grants to a client.
+    A resource (API) checks which scopes are included in token and decides how to interact with
+    client based on that.
+</p>
+
+<partial name="Partial/ScopeList"/>
+
+<a asp-action="AddScope" asp-route-id="@Model.ApiResourceId" class="btn btn-primary">Add scope</a>
+
+

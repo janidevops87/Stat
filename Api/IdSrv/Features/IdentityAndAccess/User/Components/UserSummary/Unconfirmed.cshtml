@@ -1,0 +1,18 @@
+﻿@model UserSummaryViewModel
+
+<div class="panel panel-default">
+    <div class="panel-heading">User information</div>
+    <div class="panel-body">
+        <p>
+            @Html.DisplayNameFor(m => m.Id): @Model.Id
+        </p>
+        <div>
+            <span class="text-warning">The user is not confirmed.</span>
+            <a asp-action="ConfirmRegistration"
+               asp-route-id="@Model.Id"
+               class="btn btn-xs btn-info">
+                Confirm registration...
+            </a>
+        </div>
+    </div>
+</div>

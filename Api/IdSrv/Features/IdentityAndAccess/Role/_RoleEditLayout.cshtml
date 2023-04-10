@@ -1,0 +1,27 @@
+﻿@model RoleViewModel
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = $"Edit role '{Model.Name}'";
+}
+
+<h2>Edit role <b>@Model.Name</b></h2>
+
+<ul class="nav nav-tabs">
+    <li class="@(Model is EditPropertiesViewModel ? "active" : "")">
+        <a asp-action="EditProperties" asp-route-id="@Model.Id">Properties</a>
+    </li>
+</ul>
+<br />
+<div>
+    @RenderBody()
+</div>
+<br />
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

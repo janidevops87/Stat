@@ -1,0 +1,19 @@
+<div>
+  <div class="row">
+    <div class="col-sm">
+      <label for="ReferralTypeID">Type:</label>
+      <ng-select [(ngModel)]="model.ReferralTypeID" id="ReferralTypeID" name="ReferralTypeID"
+                 [ngModelOptions]="{standalone: true}"
+                 [items]="referralTypeList" bindLabel="label"
+                 bindValue="value" [selectOnTab]="true"
+                 (change)="addtoParameterList()"></ng-select>
+    </div>
+    <div class="col-sm">
+      <label for="CallID">Referral #:</label>
+      <input class="form-control " type="text" id="CallID" [(ngModel)]="model.CallID"
+             (change)="addtoParameterList()" />
+    </div>
+  </div>
+  <!-- hidden field is need to feed back to parent -->
+  <input type="hidden" id="customParameterList" />
+</div>

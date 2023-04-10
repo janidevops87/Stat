@@ -1,0 +1,24 @@
+name: StDbRebuild-$(Build.SourceBranchName)-Build.$(Build.BuildId)-$(date:yyyy.MM.dd.HH.mm.ss)
+
+pool:
+  vmImage: 'windows-2019'
+
+jobs:
+- job: CopyFiles
+  displayName: CopyFiles
+
+  steps:
+  - checkout: self
+
+  - task: CopyFiles@2
+    displayName: 'Copy Files to: $(Build.SourcesDirectory)\StDbRebuild'
+    inputs:
+      SourceFolder: '$(Build.SourcesDirectory)/App/Database/DB Rebuild/'
+      Contents: '**\*.ps1'
+      TargetFolder: $(Build.SourcesDirectory)\StDbRebuild
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact: StDbRebuild'
+    inputs:
+      PathtoPublish: $(Build.SourcesDirectory)\StDbRebuild
+      ArtifactName: StDbRebuild

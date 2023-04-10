@@ -1,0 +1,17 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Home Page</title>
+</head>
+
+<body>
+<script language="JavaScript">
+<!--
+window.location.href = "/loginstatline/default.sls"
+//-->
+</script>
+
+</body>
+</html>
+

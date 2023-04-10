@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="WebPersonDS" targetNamespace="http://tempuri.org/WebPersonDS.xsd" xmlns:mstns="http://tempuri.org/WebPersonDS.xsd" xmlns="http://tempuri.org/WebPersonDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="_ReferralDev2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="_ReferralDev2ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.Stattrac.Data.Types.Properties.Settings.GlobalReference.Default._ReferralDev2ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="WebPersonDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="WebPersonDS" msprop:Generator_UserDSName="WebPersonDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="WebPerson" msprop:Generator_UserTableName="WebPerson" msprop:Generator_RowDeletedName="WebPersonRowDeleted" msprop:Generator_TableClassName="WebPersonDataTable" msprop:Generator_RowChangedName="WebPersonRowChanged" msprop:Generator_RowClassName="WebPersonRow" msprop:Generator_RowChangingName="WebPersonRowChanging" msprop:Generator_RowEvArgName="WebPersonRowChangeEvent" msprop:Generator_RowEvHandlerName="WebPersonRowChangeEventHandler" msprop:Generator_TablePropName="WebPerson" msprop:Generator_TableVarName="tableWebPerson" msprop:Generator_RowDeletingName="WebPersonRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WebPersonID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="WebPersonID" msprop:Generator_ColumnPropNameInRow="WebPersonID" msprop:Generator_ColumnVarNameInTable="columnWebPersonID" msprop:Generator_ColumnPropNameInTable="WebPersonIDColumn" type="xs:int" />
+              <xs:element name="WebPersonUserName" msprop:Generator_UserColumnName="WebPersonUserName" msprop:Generator_ColumnPropNameInRow="WebPersonUserName" msprop:Generator_ColumnVarNameInTable="columnWebPersonUserName" msprop:Generator_ColumnPropNameInTable="WebPersonUserNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonID" msprop:Generator_UserColumnName="PersonID" msprop:Generator_ColumnPropNameInRow="PersonID" msprop:Generator_ColumnVarNameInTable="columnPersonID" msprop:Generator_ColumnPropNameInTable="PersonIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="UnusedField1" msprop:Generator_UserColumnName="UnusedField1" msprop:Generator_ColumnPropNameInRow="UnusedField1" msprop:Generator_ColumnVarNameInTable="columnUnusedField1" msprop:Generator_ColumnPropNameInTable="UnusedField1Column" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="WebPersonSessionCounter" msprop:Generator_UserColumnName="WebPersonSessionCounter" msprop:Generator_ColumnPropNameInRow="WebPersonSessionCounter" msprop:Generator_ColumnVarNameInTable="columnWebPersonSessionCounter" msprop:Generator_ColumnPropNameInTable="WebPersonSessionCounterColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="UnusedField2" msprop:Generator_UserColumnName="UnusedField2" msprop:Generator_ColumnPropNameInRow="UnusedField2" msprop:Generator_ColumnVarNameInTable="columnUnusedField2" msprop:Generator_ColumnPropNameInTable="UnusedField2Column" type="xs:int" minOccurs="0" />
+              <xs:element name="WebPersonLastSessionAccess" msprop:Generator_UserColumnName="WebPersonLastSessionAccess" msprop:Generator_ColumnPropNameInRow="WebPersonLastSessionAccess" msprop:Generator_ColumnVarNameInTable="columnWebPersonLastSessionAccess" msprop:Generator_ColumnPropNameInTable="WebPersonLastSessionAccessColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="WebPersonEmail" msprop:Generator_UserColumnName="WebPersonEmail" msprop:Generator_ColumnPropNameInRow="WebPersonEmail" msprop:Generator_ColumnVarNameInTable="columnWebPersonEmail" msprop:Generator_ColumnPropNameInTable="WebPersonEmailColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UpdatedFlag" msprop:Generator_UserColumnName="UpdatedFlag" msprop:Generator_ColumnPropNameInRow="UpdatedFlag" msprop:Generator_ColumnVarNameInTable="columnUpdatedFlag" msprop:Generator_ColumnPropNameInTable="UpdatedFlagColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="WebPersonUserAgent" msprop:Generator_UserColumnName="WebPersonUserAgent" msprop:Generator_ColumnPropNameInRow="WebPersonUserAgent" msprop:Generator_ColumnVarNameInTable="columnWebPersonUserAgent" msprop:Generator_ColumnPropNameInTable="WebPersonUserAgentColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Access" msprop:Generator_UserColumnName="Access" msprop:Generator_ColumnPropNameInRow="Access" msprop:Generator_ColumnVarNameInTable="columnAccess" msprop:Generator_ColumnPropNameInTable="AccessColumn" type="xs:int" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:WebPerson" />
+      <xs:field xpath="mstns:WebPersonID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

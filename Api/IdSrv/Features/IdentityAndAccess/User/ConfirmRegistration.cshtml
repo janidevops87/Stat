@@ -1,0 +1,34 @@
+﻿@model ConfirmRegistrationViewModel
+
+
+@{
+    ViewData["Title"] = $"Confirm user '{Model.UserName}' registration";
+    Layout = "_Layout";
+}
+
+<h2>Confirm user <b>@Model.UserName</b> registration</h2>
+<hr />
+
+<form asp-action="ConfirmRegistration" asp-route-id="@Model.Id">
+    <div class="form-group row">
+        <div class="col-xs-3">
+            <label asp-for="Tenant.SelectedTenantId"></label>
+            <select asp-for="Tenant.SelectedTenantId"
+                    asp-items="Model.Tenant.AllTenants"
+                    class="form-control">
+                <option value="">-- Choose a tenant --</option>
+            </select>
+            <span asp-validation-for="Tenant.SelectedTenantId"></span>
+            <span class="help-block">
+                Choose a tenant to which the client should be bound.
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Confirm" class="btn btn-default" />
+    </div>
+</form>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

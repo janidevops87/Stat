@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SecurityData" targetNamespace="http://statline.com/StatTrac/SecurityData.xsd" xmlns:mstns="http://statline.com/StatTrac/SecurityData.xsd" xmlns="http://statline.com/StatTrac/SecurityData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="_ReferralDev2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="_ReferralDev2ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.StatTrac.Data.Types.Properties.Settings.GlobalReference.Default._ReferralDev2ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SecurityData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SecurityData" msprop:Generator_DataSetName="SecurityData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Reports" msprop:Generator_UserTableName="Reports" msprop:Generator_RowDeletedName="ReportsRowDeleted" msprop:Generator_RowChangedName="ReportsRowChanged" msprop:Generator_RowClassName="ReportsRow" msprop:Generator_RowChangingName="ReportsRowChanging" msprop:Generator_RowEvArgName="ReportsRowChangeEvent" msprop:Generator_RowEvHandlerName="ReportsRowChangeEventHandler" msprop:Generator_TableClassName="ReportsDataTable" msprop:Generator_TableVarName="tableReports" msprop:Generator_RowDeletingName="ReportsRowDeleting" msprop:Generator_TablePropName="Reports">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ReportID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="ReportID" msprop:Generator_ColumnPropNameInRow="ReportID" msprop:Generator_ColumnVarNameInTable="columnReportID" msprop:Generator_ColumnPropNameInTable="ReportIDColumn" type="xs:int" />
+              <xs:element name="ReportVirtualURL" msprop:Generator_UserColumnName="ReportVirtualURL" msprop:Generator_ColumnPropNameInRow="ReportVirtualURL" msprop:Generator_ColumnVarNameInTable="columnReportVirtualURL" msprop:Generator_ColumnPropNameInTable="ReportVirtualURLColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReportDisplayName" msprop:Generator_UserColumnName="ReportDisplayName" msprop:Generator_ColumnPropNameInRow="ReportDisplayName" msprop:Generator_ColumnVarNameInTable="columnReportDisplayName" msprop:Generator_ColumnPropNameInTable="ReportDisplayNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ReportRule" msprop:Generator_UserTableName="ReportRule" msprop:Generator_RowDeletedName="ReportRuleRowDeleted" msprop:Generator_RowChangedName="ReportRuleRowChanged" msprop:Generator_RowClassName="ReportRuleRow" msprop:Generator_RowChangingName="ReportRuleRowChanging" msprop:Generator_RowEvArgName="ReportRuleRowChangeEvent" msprop:Generator_RowEvHandlerName="ReportRuleRowChangeEventHandler" msprop:Generator_TableClassName="ReportRuleDataTable" msprop:Generator_TableVarName="tableReportRule" msprop:Generator_RowDeletingName="ReportRuleRowDeleting" msprop:Generator_TablePropName="ReportRule">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ReportRuleID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ReportRuleID" msprop:Generator_ColumnPropNameInRow="ReportRuleID" msprop:Generator_ColumnVarNameInTable="columnReportRuleID" msprop:Generator_ColumnPropNameInTable="ReportRuleIDColumn" type="xs:int" />
+              <xs:element name="ReportID" msprop:Generator_UserColumnName="ReportID" msprop:Generator_ColumnPropNameInRow="ReportID" msprop:Generator_ColumnVarNameInTable="columnReportID" msprop:Generator_ColumnPropNameInTable="ReportIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RoleID" msprop:Generator_UserColumnName="RoleID" msprop:Generator_ColumnPropNameInRow="RoleID" msprop:Generator_ColumnVarNameInTable="columnRoleID" msprop:Generator_ColumnPropNameInTable="RoleIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ReportVirtualURL" msprop:Generator_UserColumnName="ReportVirtualURL" msprop:Generator_ColumnPropNameInRow="ReportVirtualURL" msprop:Generator_ColumnVarNameInTable="columnReportVirtualURL" msprop:Generator_ColumnPropNameInTable="ReportVirtualURLColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReportDisplayName" msprop:Generator_UserColumnName="ReportDisplayName" msprop:Generator_ColumnPropNameInRow="ReportDisplayName" msprop:Generator_ColumnVarNameInTable="columnReportDisplayName" msprop:Generator_ColumnPropNameInTable="ReportDisplayNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="UserList" msprop:Generator_UserTableName="UserList" msprop:Generator_RowDeletedName="UserListRowDeleted" msprop:Generator_RowChangedName="UserListRowChanged" msprop:Generator_RowClassName="UserListRow" msprop:Generator_RowChangingName="UserListRowChanging" msprop:Generator_RowEvArgName="UserListRowChangeEvent" msprop:Generator_RowEvHandlerName="UserListRowChangeEventHandler" msprop:Generator_TableClassName="UserListDataTable" msprop:Generator_TableVarName="tableUserList" msprop:Generator_RowDeletingName="UserListRowDeleting" msprop:Generator_TablePropName="UserList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WebPersonID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="WebPersonID" msprop:Generator_ColumnPropNameInRow="WebPersonID" msprop:Generator_ColumnVarNameInTable="columnWebPersonID" msprop:Generator_ColumnPropNameInTable="WebPersonIDColumn" type="xs:int" />
+              <xs:element name="WebPersonUserName" msprop:Generator_UserColumnName="WebPersonUserName" msprop:Generator_ColumnPropNameInRow="WebPersonUserName" msprop:Generator_ColumnVarNameInTable="columnWebPersonUserName" msprop:Generator_ColumnPropNameInTable="WebPersonUserNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonName" msdata:ReadOnly="true" msprop:Generator_UserColumnName="PersonName" msprop:Generator_ColumnPropNameInRow="PersonName" msprop:Generator_ColumnVarNameInTable="columnPersonName" msprop:Generator_ColumnPropNameInTable="PersonNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="102" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Inactive" msprop:Generator_UserColumnName="Inactive" msprop:Generator_ColumnPropNameInRow="Inactive" msprop:Generator_ColumnVarNameInTable="columnInactive" msprop:Generator_ColumnPropNameInTable="InactiveColumn" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Roles" msprop:Generator_UserTableName="Roles" msprop:Generator_RowDeletedName="RolesRowDeleted" msprop:Generator_RowChangedName="RolesRowChanged" msprop:Generator_RowClassName="RolesRow" msprop:Generator_RowChangingName="RolesRowChanging" msprop:Generator_RowEvArgName="RolesRowChangeEvent" msprop:Generator_RowEvHandlerName="RolesRowChangeEventHandler" msprop:Generator_TableClassName="RolesDataTable" msprop:Generator_TableVarName="tableRoles" msprop:Generator_RowDeletingName="RolesRowDeleting" msprop:Generator_TablePropName="Roles">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RoleID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="RoleID" msprop:Generator_ColumnPropNameInRow="RoleID" msprop:Generator_ColumnVarNameInTable="columnRoleID" msprop:Generator_ColumnPropNameInTable="RoleIDColumn" type="xs:int" />
+              <xs:element name="RoleName" msprop:Generator_UserColumnName="RoleName" msprop:Generator_ColumnPropNameInRow="RoleName" msprop:Generator_ColumnVarNameInTable="columnRoleName" msprop:Generator_ColumnPropNameInTable="RoleNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RoleDescription" msprop:Generator_UserColumnName="RoleDescription" msprop:Generator_ColumnPropNameInRow="RoleDescription" msprop:Generator_ColumnVarNameInTable="columnRoleDescription" msprop:Generator_ColumnPropNameInTable="RoleDescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Inactive" msprop:Generator_UserColumnName="Inactive" msprop:Generator_ColumnPropNameInRow="Inactive" msprop:Generator_ColumnVarNameInTable="columnInactive" msprop:Generator_ColumnPropNameInTable="InactiveColumn" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Reports" />
+      <xs:field xpath="mstns:ReportID" />
+    </xs:unique>
+    <xs:unique name="ReportRule_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ReportRule" />
+      <xs:field xpath="mstns:ReportRuleID" />
+    </xs:unique>
+    <xs:unique name="UserList_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:UserList" />
+      <xs:field xpath="mstns:WebPersonID" />
+    </xs:unique>
+    <xs:unique name="Roles_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Roles" />
+      <xs:field xpath="mstns:RoleID" />
+    </xs:unique>
+    <xs:keyref name="FK_Roles_ReportRule" refer="Roles_Constraint1" msprop:rel_Generator_UserRelationName="FK_Roles_ReportRule" msprop:rel_Generator_RelationVarName="relationFK_Roles_ReportRule" msprop:rel_Generator_UserChildTable="ReportRule" msprop:rel_Generator_UserParentTable="Roles" msprop:rel_Generator_ParentPropName="RolesRow" msprop:rel_Generator_ChildPropName="GetReportRuleRows">
+      <xs:selector xpath=".//mstns:ReportRule" />
+      <xs:field xpath="mstns:RoleID" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

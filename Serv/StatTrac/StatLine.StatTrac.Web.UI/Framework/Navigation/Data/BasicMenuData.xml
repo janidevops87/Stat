@@ -1,0 +1,121 @@
+<?xml version="1.0" standalone="yes"?>
+<NavigationData xmlns="http://statline.com/StatTrac/navigationdata.xsd">
+  <MenuLinks MenuName="Root" ParentMenuName="Root" PageName="None" Text="None" Target="" SortOrder="1" RequiredPrivilege="None" RequiresAuthentication="true" Description="None" Active="true" Enabled="true" />
+  <MenuLinks MenuName="Administration" ParentMenuName="Root" PageName="UserAdmin" Text="Administration" Target="" SortOrder="3" RequiredPrivilege="GeneralAdministration" RequiresAuthentication="true" Description="Administration" Active="true" Enabled="true" />
+  <MenuLinks MenuName="Update" ParentMenuName="Root" PageName="Update" Text="Update" Target="" SortOrder="2" RequiredPrivilege="Update" RequiresAuthentication="true" Description="None" Active="true" Enabled="true" />
+  <MenuLinks MenuName="ReferralSearch" ParentMenuName="Update" PageName="ReferralSearch" Text="Referrals Search" Target="" SortOrder="1" RequiredPrivilege="Update" RequiresAuthentication="true" Description="None" Active="true" Enabled="true" />
+  <MenuLinks MenuName="ReferralFacilityCompliance" ParentMenuName="Update" PageName="ReferralFacilityCompliance" Text="Referral Facility Compliance" Target="" SortOrder="2" RequiredPrivilege="ReferralFacilityCompliance" RequiresAuthentication="true" Description="None" Active="true" Enabled="true" />
+  <MenuLinks MenuName="ReferralUpdate" ParentMenuName="ReferralSearch" PageName="ReferralUpdate" Text="Referral" Target="" SortOrder="1" RequiredPrivilege="ReferralUpdate" RequiresAuthentication="true" Description="None" Active="true" Enabled="true" />
+  <MenuLinks MenuName="EventLogUpdate" ParentMenuName="ReferralSearch" PageName="EventLogUpdate" Text="Event Log" Target="" SortOrder="2" RequiredPrivilege="EventLogUpdate" RequiresAuthentication="true" Description="None" Active="true" Enabled="true" />
+  <MenuLinks MenuName="ScheduleSearch" ParentMenuName="Update" PageName="ScheduleSearch" Text="Schedules Search" Target="" SortOrder="3" RequiredPrivilege="ScheduleSearch" RequiresAuthentication="true" Description="None" Active="true" Enabled="true" />
+  <MenuLinks MenuName="ScheduleCreateUpdateShift" ParentMenuName="ScheduleSearch" PageName="ScheduleCreateUpdateShift" Text="Create/Update Shift" Target="" SortOrder="1" RequiredPrivilege="ScheduleShiftUpdate" RequiresAuthentication="true" Description="None" Active="false" Enabled="true" />
+  <MenuLinks MenuName="ScheduleSplitShift" ParentMenuName="ScheduleSearch" PageName="ScheduleSplitShift" Text="Split Shift" Target="" SortOrder="1" RequiredPrivilege="ScheduleShiftUpdate" RequiresAuthentication="true" Description="None" Active="false" Enabled="true" />
+  <MenuLinks MenuName="QA" ParentMenuName="Root" PageName="QA" Text="QA" Target="" SortOrder="4" RequiredPrivilege="QA" RequiresAuthentication="true" Description="None" Active="true" Enabled="true" />
+  <MenuLinks MenuName="QAReview" ParentMenuName="QA" PageName="QAReview" Text="QA Review" Target="" SortOrder="2" RequiredPrivilege="QAReview" RequiresAuthentication="true" Description="None" Active="true" Enabled="true" />
+  <MenuLinks MenuName="QAErrorLog" ParentMenuName="QAReview" PageName="QAErrorLog" Text="QA Error Log" Target="" SortOrder="1" RequiredPrivilege="QACreate" RequiresAuthentication="true" Description="None" Active="true" Enabled="true" />
+  <MenuLinks MenuName="QAErrorDetail" ParentMenuName="QAReview" PageName="QAErrorDetail" Text="QA Error Detail" Target="" SortOrder="2" RequiredPrivilege="QACreate" RequiresAuthentication="true" Description="None" Active="true" Enabled="true" />
+  <MenuLinks MenuName="QAManageErrorList" ParentMenuName="QAConfig" PageName="QAManageErrorList" Text="Form Configuration" Target="" SortOrder="5" RequiredPrivilege="QAConfig" RequiresAuthentication="true" Description="None" Active="true" Enabled="true" />
+  <MenuLinks MenuName="QAAddEditError" ParentMenuName="QAMonitoring" PageName="QAAddEditError" Text="QA Add/Edit Error" Target="" SortOrder="1" RequiredPrivilege="QAUpdate" RequiresAuthentication="true" Description="None" Active="true" Enabled="true" />
+  <MenuLinks MenuName="Options" ParentMenuName="Administration" PageName="Administration" Text="Options" Target="" SortOrder="1" RequiredPrivilege="GeneralAdministration" RequiresAuthentication="true" Description="Options" Active="true" Enabled="true" />
+  <MenuLinks MenuName="Reports" ParentMenuName="Root" PageName="Reports" Text="Reports" Target="" SortOrder="1" RequiredPrivilege="User" RequiresAuthentication="true" Description="Report Group" Active="true" Enabled="true" />
+  <MenuLinks MenuName="ReportList" ParentMenuName="Reports" PageName="Reports" Text="Access" Target="" SortOrder="1" RequiredPrivilege="User" RequiresAuthentication="true" Description="Report Access" Active="true" Enabled="true" />
+  <MenuLinks MenuName="ReportParams" ParentMenuName="Reports" PageName="ReportParams" Text="Parameters" Target="" SortOrder="2" RequiredPrivilege="User" RequiresAuthentication="true" Description="Report Params" Active="true" Enabled="true" />
+  <MenuLinks MenuName="ReportDisplay" ParentMenuName="Reports" PageName="ReportDisplay" Text="Display" Target="" SortOrder="3" RequiredPrivilege="User" RequiresAuthentication="true" Description="Report Display" Active="false" Enabled="true" />
+  <MenuLinks MenuName="RolesAccess" ParentMenuName="Administration" PageName="Roles" Text="Roles Access" Target="" SortOrder="2" RequiredPrivilege="Role" RequiresAuthentication="true" Description="Role Access" Active="false" Enabled="true" />
+  <MenuLinks MenuName="RolesConfigure" ParentMenuName="Administration" PageName="RolesConfigure" Text="Roles Configuration" Target="" SortOrder="3" RequiredPrivilege="RoleConfigure" RequiresAuthentication="true" Description="Role Configuration" Active="false" Enabled="true" />
+  <MenuLinks MenuName="ReportAccessGroup" ParentMenuName="Administration" PageName="ReportAccessGroup" Text="Report Access Group" Target="" SortOrder="4" RequiredPrivilege="ReportAccessGroup" RequiresAuthentication="true" Description="Report Access Group Manage" Active="false" Enabled="true" />
+  <MenuLinks MenuName="ReportAccessGroupConfiguration" ParentMenuName="Administration" PageName="ReportAccessGroupConfiguration" Text="Report Group Configure" Target="" SortOrder="5" RequiredPrivilege="ReportAccessGroupConfigure" RequiresAuthentication="true" Description="Report Access" Active="false" Enabled="true" />
+  <MenuLinks MenuName="ReportConfiguration" ParentMenuName="Administration" PageName="ReportConfiguration" Text="Report Configuration" Target="" SortOrder="6" RequiredPrivilege="GeneralAdministration" RequiresAuthentication="true" Description="Report Configure" Active="false" Enabled="true" />
+  <Pages PageName="Administration" Text="Administration" Description="Administration" Url="Admin/Administration.aspx" />
+  <Pages PageName="AccessDenied" Text="Access Denied" Description="Access Denied" Url="AccessDenied.aspx" />
+  <Pages PageName="Help" Text="Help" Description="Help" Url="Help.aspx" />
+  <Pages PageName="Maintenance" Text="Maintenance" Description="Maintenance." Url="Maintenance.aspx" />
+  <Pages PageName="GeneralError" Text="General Error" Description="General Error." Url="GeneralError.aspx" />
+  <Pages PageName="None" Text="None" Description="None." Url="None.aspx" />
+  <Pages PageName="Login" Text="Login Page" Description="Login Form" Url="Login.aspx" />
+  <Pages PageName="Reports" Text="Reports" Description="List of Reports" Url="Reports.aspx" />
+  <Pages PageName="ReportDisplay" Text="Display" Description="Current Displayed Report" Url="ReportDisplay.aspx" />
+  <Pages PageName="ReportParams" Text="Parameters" Description="Current Parameters" Url="ReportParams.aspx" />
+  <Pages PageName="ReportPassThroughLogin" Text="ReportPassThroughLogin" Description="ReportPassThroughLogin" Url="ReportPassThroughLogin.aspx" />
+  <Pages PageName="ReportAccessGroup" Text="ReportAccess" Description="ReportAccess" Url="Admin/ReportAccessGroup.aspx" />
+  <Pages PageName="ReportAccessGroupConfiguration" Text="ReportAccess GroupConfiguration" Description="ReportAccessGroupConfiguration" Url="Admin/ReportAccessGroupConfiguration.aspx" />
+  <Pages PageName="Roles" Text="RolesAccess" Description="RolesAccess" Url="Admin/Roles.aspx" />
+  <Pages PageName="RolesConfigure" Text="RolesConfigure" Description="Roles Configure" Url="Admin/RolesConfigure.aspx" />
+  <Pages PageName="ReportConfiguration" Text="Report Configuration" Description="Report Configuration" Url="Admin/ReportConfiguration.aspx" />
+  <MenuLinks MenuName="RoleAdmin" ParentMenuName="Administration" PageName="RoleAdmin" Text="Add/Edit Role" Target="" SortOrder="7" RequiredPrivilege="RoleConfigure" RequiresAuthentication="true" Description="Add/Edit Role" Active="true" Enabled="true">
+  </MenuLinks>
+  <MenuLinks MenuName="RoleAdminEdit" ParentMenuName="Administration" PageName="RoleAdminEdit" Text="Add/Edit Role Detail" Target="" SortOrder="7" RequiredPrivilege="RoleConfigure" RequiresAuthentication="true" Description="Add/Edit Role Detail" Active="false" Enabled="true">
+  </MenuLinks>
+  <MenuLinks MenuName="UserAdmin" ParentMenuName="Administration" PageName="UserAdmin" Text="Add/Edit User" Target="" SortOrder="8" RequiredPrivilege="UserConfigure" RequiresAuthentication="true" Description="Add/Edit User" Active="true" Enabled="true">
+  </MenuLinks>
+  <MenuLinks MenuName="UserAdminEdit" ParentMenuName="Administration" PageName="UserAdminEdit" Text="Add/Edit User Detail" Target=" " SortOrder="8" RequiredPrivilege="UserConfigure" RequiresAuthentication="true" Description="Add/Edit User Detail" Active="false" Enabled="true">
+  </MenuLinks>
+  <Pages PageName="RoleAdmin" Text="Role Configuration" Description="Role Configuration" Url="Admin/RoleAdmin.aspx">
+  </Pages>
+  <Pages PageName="UserAdmin" Text="User Configuration" Description="User Configuration" Url="Admin/UserAdmin.aspx">
+  </Pages>
+  <Pages PageName="RoleAdminEdit" Text="Add/Edit Role" Description="Role Add/Edit" Url="Admin/RoleAdminEdit.aspx">
+  </Pages>
+  <Pages PageName="UserAdminEdit" Text="Add/Edit User" Description="User Add/Edit" Url="Admin/UserAdminEdit.aspx">
+  </Pages>
+  <Pages PageName="Update" Text="Update" Description="Reporting Site Update Section" Url="Update.aspx">
+  </Pages>
+  <Pages PageName="ReferralSearch" Text="Referral Search" Description="Referral Search" Url="ReferralSearch.aspx">
+  </Pages>
+  <Pages PageName="ReferralFacilityCompliance" Text="Referral Facility Compliance" Description="Referral Facility Compliance" Url="ReferralFacilityCompliance.aspx">
+  </Pages>
+  <Pages PageName="ReferralUpdate" Text="Referral" Description="Referral Edit" Url="ReferralUpdate.aspx">
+  </Pages>
+  <Pages PageName="EventLogUpdate" Text="EventLog" Description="EventLog Add/Edit" Url="EventLogUpdate.aspx">
+  </Pages>
+  <Pages PageName="ScheduleSearch" Text="Schedule Search" Description="Schedule Search" Url="ScheduleSearch.aspx">
+  </Pages>
+  <Pages PageName="ScheduleCreateUpdateShift" Text="Create/Update Shift" Description="Schedule Shift Add/Edit" Url="ScheduleCreateUpdateShift.aspx">
+  </Pages>
+  <Pages PageName="ScheduleSplitShift" Text="Split Shift" Description="Schedule Shift Split" Url="ScheduleSplitShift.aspx">
+  </Pages>
+  <Pages PageName="QA" Text="QA" Description="QA Section" Url="QA.aspx">
+  </Pages>
+  <Pages PageName="QAReview" Text="QA Review" Description="QA Review Section" Url="QAReview.aspx">
+  </Pages>
+  <Pages PageName="QAErrorLog" Text="Error Log" Description="Error Log" Url="QAErrorLog.aspx">
+  </Pages>
+  <Pages PageName="QAErrorDetail" Text="Error Detail" Description="Error Log Detail" Url="QAErrorDetail.aspx">
+  </Pages>
+  <Pages PageName="QAManageErrorList" Text="Error List" Description="Form Configuration" Url="QAManageErrorList.aspx">
+  </Pages>
+  <Pages PageName="QAAddEditError" Text="Add/Edit Error" Description="Error Add/Edit" Url="QAAddEditError.aspx">
+  </Pages>
+  <Pages PageName="QAConfig" Text="Configuration" Description="QA Configuration" Url="QAConfig.aspx">
+  </Pages>
+  <MenuLinks MenuName="QAConfig" ParentMenuName="QA" PageName="QAConfig" Text="Configuration" Target="" SortOrder="4" RequiredPrivilege="QAConfig" RequiresAuthentication="true" Description="None" Active="true" Enabled="true">
+  </MenuLinks>
+  <MenuLinks MenuName="QAMonitoring" ParentMenuName="QA" PageName="QAMonitoring" Text="Quality Monitoring Forms" Target="" SortOrder="1" RequiredPrivilege="QAQMForm" RequiresAuthentication="true" Description="None" Active="true" Enabled="true">
+  </MenuLinks>
+  <Pages PageName="QAMonitoring" Text="Quality Monitoring Forms" Description="test" Url="QAMonitoring.aspx">
+  </Pages>
+  <MenuLinks MenuName="QAPendingReview" ParentMenuName="QA" PageName="QAPendingReview" Text="Pending Review" Target="" SortOrder="3" RequiredPrivilege="QAPendingReview" RequiresAuthentication="true" Description="None" Active="true" Enabled="true">
+  </MenuLinks>
+  <Pages PageName="QAPendingReview" Text="Pending Review" Description="None" Url="QAPendingReview.aspx">
+  </Pages>
+  <MenuLinks MenuName="QAManageQualityMonitoringForms" ParentMenuName="QAConfig" PageName="QAManageQualityMonitoringForms" Text="Manage Quality Monitoring Forms" Target="" SortOrder="1" RequiredPrivilege="QAConfig" RequiresAuthentication="true" Description="None" Active="true" Enabled="true">
+  </MenuLinks>
+  <Pages PageName="QAManageQualityMonitoringForms" Text="Manage Quality Monitoring Forms" Description="None" Url="QAManageQualityMonitoringForms.aspx">
+  </Pages>
+  <Pages PageName="QAManageErrorLocation" Text="Manage Error Location" Description="None" Url="QAManageErrorLocation.aspx">
+  </Pages>
+  <MenuLinks MenuName="QAManageErrorLocation" ParentMenuName="QAConfig" PageName="QAManageErrorLocation" Text="Manage Error Locations" Target="" SortOrder="2" RequiredPrivilege="QAConfig" RequiresAuthentication="true" Description="None" Active="true" Enabled="true">
+  </MenuLinks>
+  <MenuLinks MenuName="QAManageProcessSteps" ParentMenuName="QAConfig" PageName="QAManageProcessSteps" Text="Manage Process Steps" Target="" SortOrder="3" RequiredPrivilege="QAConfig" RequiresAuthentication="true" Description="None" Active="true" Enabled="true">
+  </MenuLinks>
+  <Pages PageName="QAManageProcessSteps" Text="Manage Process Steps" Description="None" Url="QAManageProcessSteps.aspx">
+  </Pages>
+  <Pages PageName="QAManageErrorTypes" Text="Manage Error Types" Description="None" Url="QAManageErrorTypes.aspx">
+  </Pages>
+  <MenuLinks MenuName="QAManageErrorTypes" ParentMenuName="QAConfig" PageName="QAManageErrorTypes" Text="Manage Error Types" Target="" SortOrder="4" RequiredPrivilege="QAConfig" RequiresAuthentication="true" Description="None" Active="true" Enabled="true">
+  </MenuLinks>
+  <Pages PageName="QAAddEditErrorType" Text="Add/Edit Error Type" Description="None" Url="QAAddEditErrorType.aspx">
+  </Pages>
+  <MenuLinks MenuName="QAAddEditErrorType" ParentMenuName="QAErrorList" PageName="QAAddEditErrorType" Text="Add/Edit Error Type" Target="" SortOrder="1" RequiredPrivilege="QACreate" RequiresAuthentication="true" Description="None" Active="true">
+  </MenuLinks>
+</NavigationData>

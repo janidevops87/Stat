@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D432F030-D126-4D0F-A539-FA90DECEC972}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Statline.Stattrac.Windows.Controls</RootNamespace>
+    <AssemblyName>Statline.Stattrac.Windows.Controls</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\Solution Items\Reference\StatLine.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics4.Shared.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Shared.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.Misc.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.Misc.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinDataSource.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinDataSource.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinDock.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinDock.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinEditors.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinExplorerBar.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinExplorerBar.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinGrid.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinMaskedEdit.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinMaskedEdit.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinSchedule.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinSchedule.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinSpellChecker.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinSpellChecker.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinTabControl.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.UltraWinToolbars.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v18.2, Version=18.2.20182.175, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolutionItems\Reference\Infragistics4.Win.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Solution Items\Reference\SharedAssemblyInfo.cs">
+      <Link>SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Administration\AssociatedOrganizationsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administration\AssociatedOrganizationsControl.Designer.cs">
+      <DependentUpon>AssociatedOrganizationsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\SourceCode\SourceCodeEditManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administration\SourceCode\SourceCodeEditManager.Designer.cs">
+      <DependentUpon>SourceCodeEditManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\SourceCode\SourceCodeSourceCodeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administration\SourceCode\SourceCodeSourceCodeControl.Designer.cs">
+      <DependentUpon>SourceCodeSourceCodeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\OrganizationSearchParameter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\OrganizationSearchParameter.Designer.cs">
+      <DependentUpon>OrganizationSearchParameter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ReportIssueFeedback.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\ReportIssueFeedback.Designer.cs">
+      <DependentUpon>ReportIssueFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ReportIssueFeedbackHelper.cs" />
+    <Compile Include="Organization\ContactCallInstructionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Organization\ContactCallInstructionsControl.Designer.cs">
+      <DependentUpon>ContactCallInstructionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organization\ContactNumbersControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Organization\ContactNumbersControl.Designer.cs">
+      <DependentUpon>ContactNumbersControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organization\ContactPermissionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Organization\ContactPermissionControl.Designer.cs">
+      <DependentUpon>ContactPermissionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organization\ContactPermissionMainControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Organization\ContactPermissionMainControl.Designer.cs">
+      <DependentUpon>ContactPermissionMainControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organization\ContactPropertiesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Organization\ContactPropertiesControl.Designer.cs">
+      <DependentUpon>ContactPropertiesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organization\ContactRoleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Organization\ContactRoleControl.Designer.cs">
+      <DependentUpon>ContactRoleControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organization\OrganizationAliasesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Organization\OrganizationAliasesControl.Designer.cs">
+      <DependentUpon>OrganizationAliasesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organization\OrganizationAssociatedCall.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Organization\OrganizationAssociatedCall.Designer.cs">
+      <DependentUpon>OrganizationAssociatedCall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organization\OrganizationBaseConfigurationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Organization\OrganizationBaseConfigurationControl.Designer.cs">
+      <DependentUpon>OrganizationBaseConfigurationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organization\OrganizationContactsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Organization\OrganizationContactsControl.Designer.cs">
+      <DependentUpon>OrganizationContactsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organization\OrganizationDeleteControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Organization\OrganizationDeleteControl.Designer.cs">
+      <DependentUpon>OrganizationDeleteControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organization\OrganizationEditManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Organization\OrganizationEditManager.Designer.cs">
+      <DependentUpon>OrganizationEditManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organization\OrganizationOrganizationNumbersControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Organization\OrganizationOrganizationNumbersControl.Designer.cs">
+      <DependentUpon>OrganizationOrganizationNumbersControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organization\OrganizationPropertiesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Organization\OrganizationPropertiesControl.Designer.cs">
+      <DependentUpon>OrganizationPropertiesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organization\OrganizationSearchControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Organization\OrganizationSearchControl.Designer.cs">
+      <DependentUpon>OrganizationSearchControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Administration\AssociatedOrganizationsControl.resx">
+      <DependentUpon>AssociatedOrganizationsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\SourceCode\SourceCodeEditManager.resx">
+      <DependentUpon>SourceCodeEditManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\SourceCode\SourceCodeSourceCodeControl.resx">
+      <DependentUpon>SourceCodeSourceCodeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\OrganizationSearchParameter.resx">
+      <DependentUpon>OrganizationSearchParameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ReportIssueFeedback.resx">
+      <DependentUpon>ReportIssueFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organization\ContactCallInstructionsControl.resx">
+      <DependentUpon>ContactCallInstructionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organization\ContactNumbersControl.resx">
+      <DependentUpon>ContactNumbersControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organization\ContactPermissionControl.resx">
+      <DependentUpon>ContactPermissionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organization\ContactPermissionMainControl.resx">
+      <DependentUpon>ContactPermissionMainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organization\ContactPropertiesControl.resx">
+      <DependentUpon>ContactPropertiesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organization\ContactRoleControl.resx">
+      <DependentUpon>ContactRoleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organization\OrganizationAliasesControl.resx">
+      <DependentUpon>OrganizationAliasesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organization\OrganizationAssociatedCall.resx">
+      <DependentUpon>OrganizationAssociatedCall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organization\OrganizationBaseConfigurationControl.resx">
+      <DependentUpon>OrganizationBaseConfigurationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organization\OrganizationContactsControl.resx">
+      <DependentUpon>OrganizationContactsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organization\OrganizationDeleteControl.resx">
+      <DependentUpon>OrganizationDeleteControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organization\OrganizationEditManager.resx">
+      <DependentUpon>OrganizationEditManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organization\OrganizationOrganizationNumbersControl.resx">
+      <DependentUpon>OrganizationOrganizationNumbersControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organization\OrganizationPropertiesControl.resx">
+      <DependentUpon>OrganizationPropertiesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organization\OrganizationSearchControl.resx">
+      <DependentUpon>OrganizationSearchControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BusinessRules\Statline.Stattrac.BusinessRules.csproj">
+      <Project>{E02CDDB9-B7FA-4ABE-B957-8F7F08668211}</Project>
+      <Name>Statline.Stattrac.BusinessRules</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\Statline.Stattrac.Common.csproj">
+      <Project>{626A7991-A1F9-4F2D-B8E4-3EA411D60814}</Project>
+      <Name>Statline.Stattrac.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Constant\Statline.Stattrac.Constant.csproj">
+      <Project>{71627A9C-06CA-4157-8F0D-4C68D2668424}</Project>
+      <Name>Statline.Stattrac.Constant</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\Types\Statline.Stattrac.Data.Types.csproj">
+      <Project>{C2D6EFBE-279F-42B1-B0BC-F2862693ECD9}</Project>
+      <Name>Statline.Stattrac.Data.Types</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\Statline.Stattrac.Framework.csproj">
+      <Project>{32AC6F34-9A54-4342-B3DE-EA64077D0C46}</Project>
+      <Name>Statline.Stattrac.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Security\Statline.Stattrac.Security.csproj">
+      <Project>{2A224CE9-C53E-480F-B7FC-675EFBE187B0}</Project>
+      <Name>Statline.Stattrac.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Statline.Stattrac.Windows.csproj">
+      <Project>{2501A2E5-DE77-4767-B84F-7C2788CB4F9D}</Project>
+      <Name>Statline.Stattrac.Windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\Solution Items\Reference\CustomDictionary.xml">
+      <Link>CustomDictionary.xml</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

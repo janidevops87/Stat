@@ -1,0 +1,16 @@
+﻿@model UserClaimViewModel
+
+<div class="row">
+    <div class="col-md-8">
+        <form asp-action="AddUserClaim" asp-route-id="@Model.IdentityResourceId" class="form-inline">
+            <div class="form-group">
+                <label asp-for="Type" class="control-label">Add user claim type:</label>
+                <input asp-for="Type" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Add" class="btn btn-primary" />
+                <span asp-validation-for="Type" class="text-danger"></span>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,79 @@
+.igmn_StatlineReportsControl
+{
+	background-color:WhiteSmoke;
+	border-color:Transparent;
+}
+
+
+.igmn_StatlineReportsIsland
+{
+	background-color:#F0F0F0;
+}
+
+
+.igmn_StatlineReportsItem
+{
+	background-color:Transparent;
+	border:solid 1px Transparent;
+}
+
+
+.igmn_StatlineReportsLeaf
+{
+}
+
+
+.igmn_StatlineReportsParent
+{
+}
+
+
+.igmn_StatlineReportsTopLevelLeaf
+{
+}
+
+
+.igmn_StatlineReportsTopLevelParent
+{
+}
+
+
+.igmn_StatlineReportsHeader
+{
+}
+
+
+.igmn_StatlineReportsSeparator
+{
+}
+
+
+.igmn_StatlineReportsHover
+{
+	background-color: LightGrey;
+	border-width:1px;
+	border-color:#C3C3C3;
+}
+
+
+.igmn_StatlineReportsTopLevelHover
+{
+	background-color: LightGrey;
+	border-width:1px;
+	border-color:#C3C3C3;
+}
+
+
+.igmn_StatlineReportsTopSelected
+{
+}
+
+
+.igmn_StatlineReportsDisabled
+{
+	font-size:xx-small;
+	font-family: Verdana;
+	color:#D2D2D2;
+}
+
+

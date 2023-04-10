@@ -1,0 +1,15 @@
+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Body>
+<a1:ObjectStreamer id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Shared.Serialization/Infragistics4.Shared.v18.2">
+<PresetType>-1</PresetType>
+<TargetTypeName id="ref-3">UltraGridBase</TargetTypeName>
+<PresetName id="ref-4">Blank</PresetName>
+<DisplayLayout href="#ref-5"/>
+<PresetDescription id="ref-6"></PresetDescription>
+</a1:ObjectStreamer>
+<a1:ObjectStreamer id="ref-5" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Shared.Serialization/Infragistics4.Shared.v18.2">
+<PresetType>-1</PresetType>
+<TargetTypeName id="ref-7">UltraGridLayout</TargetTypeName>
+</a1:ObjectStreamer>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

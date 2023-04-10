@@ -1,0 +1,121 @@
+.igwv_StatlineReportsControl
+{
+	margin-top:2px;
+}
+
+
+.igwv_StatlineReportsCaptionHeader
+{
+	background-color:#CECECE;
+	background-repeat:repeat-x;
+	font-weight:bold;
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	border-top:solid 1px Silver;
+	border-right:solid 1px Silver;
+	border-bottom:solid 0px Silver;
+	border-left:solid 1px Silver;
+	padding-top:3px;
+	padding-bottom:2px;
+	line-height: 16px;
+	height: 17px;
+	color:Black;
+	text-align:center;
+}
+
+
+.igwv_StatlineReportsDayHeader
+{
+	background-color:Gainsboro;
+	background-repeat:repeat-x;
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0px 2px 0px 0px;
+	height: 18px;
+	cursor:default;
+	text-align:right;
+}
+
+
+.igwv_StatlineReportsDay
+{
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow-x: hidden;
+}
+
+
+.igwv_StatlineReportsAppointment
+{
+	margin:0px 1px 0px 1px;
+	padding:2px;
+	line-height: 150%;
+	white-space: nowrap;
+	cursor:pointer;
+}
+
+
+.igwv_StatlineReportsAllDayEvent
+{
+	background-color:#FAFAFA;
+	border:solid 1px Silver;
+}
+
+
+.igwv_StatlineReportsNavigationButton
+{
+	background-color:Transparent;
+	border-width:0px;
+	width: 17px;
+	cursor:hand;
+	vertical-align:middle;
+}
+
+
+.igwv_StatlineReportsDayArea
+{
+	border:solid 1px Silver;
+}
+
+
+.igwv_StatlineReportsTodayHeader
+{
+	background-color:DarkGray;
+	background-repeat:repeat-x;
+	background-position:top ;
+	color:Black;
+}
+
+
+.igwv_StatlineReportsToday
+{
+}
+
+
+.igwv_StatlineReportsSelectedAppointment
+{
+	background-color:#DAEAFF;
+	margin-top:1px;
+	margin-right:1px;
+	margin-left:1px;
+	padding:1px;
+	cursor:pointer;
+	color:Black;
+}
+
+
+.igwv_StatlineReportsActiveDayHeader
+{
+	background-color:Gainsboro;
+	background-repeat:repeat-x;
+	font-weight:bold;
+	color:Black;
+}
+
+
+.igwv_StatlineReportsActiveDay
+{
+	background-color:#E6EDF7;
+}
+
+

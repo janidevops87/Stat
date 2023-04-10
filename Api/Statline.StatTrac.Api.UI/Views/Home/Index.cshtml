@@ -1,0 +1,24 @@
+﻿@using Microsoft.AspNetCore.Authentication;
+@if (User.Identity.IsAuthenticated)
+{
+    <h2>Welcome back @User.Identity.Name</h2>  
+}
+<h3>User claims</h3>
+<div>
+    <a asp-action="CallHeartbeat">Get Heartbeat</a>
+</div>
+<div>
+    <a asp-action="CallReferralNext">Get Referral Next</a>
+</div>
+<div>
+    <a asp-action="CallApiUsingUserAccessToken">Call API using application identity</a>
+</div>
+<dl>
+    @foreach (var claim in User.Claims)
+    {
+        <dt>@claim.Type</dt>
+        <dd>@claim.Value</dd>
+
+    }
+</dl>
+

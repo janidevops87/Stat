@@ -1,0 +1,42 @@
+<?xml version="1.0" standalone="yes"?>
+<NavigationData xmlns="http://statline.com/StatTrac/navigationdata.xsd">
+  <MenuLinks MenuName="Root" ParentMenuName="Root" PageName="None" Text="None" Target="" SortOrder="1" RequiredPrivilege="None" RequiresAuthentication="true" Description="None" Active="true" Enabled="true" />
+  <MenuLinks MenuName="MaintainCategory" ParentMenuName="Root" PageName="MaintainCategory" Text="Maintain Category" Target="" SortOrder="3" RequiredPrivilege="MaintainCategory" RequiresAuthentication="true" Description="Maintain Registry Category" Active="true" Enabled="true" />
+  <MenuLinks MenuName="CategoryEdit" ParentMenuName="MaintainCategory" PageName="CategoryEdit" Text="Category Edit" Target="" SortOrder="1" RequiredPrivilege="MaintainCategory" Description="Edit Registry Category" Active="false" />
+  <MenuLinks MenuName="SubCategoryEdit" ParentMenuName="CategoryEdit" PageName="SubCategoryEdit" Text="Sub Category Edit" Target="" SortOrder="1" RequiredPrivilege="MaintainCategory" Description="Edit Registry Sub Category" Active="false" />
+  <MenuLinks MenuName="Registry" ParentMenuName="Root" PageName="RegistrySearch" Text="Registry Search" Target="" SortOrder="1" RequiredPrivilege="Search" RequiresAuthentication="true" Description="None" Active="true" Enabled="true" />
+  <MenuLinks MenuName="RegistrySearch" ParentMenuName="Registry" PageName="RegistrySearch" Text="Registry Search" Target="" SortOrder="1" RequiredPrivilege="Search" RequiresAuthentication="true" Description="None" Active="true" Enabled="true" />
+  <MenuLinks MenuName="RegistrySearchResults" ParentMenuName="RegistrySearch" PageName="RegistrySearchResults" Text="RegistrySearchResults" Target="" SortOrder="2" RequiredPrivilege="Search" Description="Registry Search Results" Active="false" />
+  <MenuLinks MenuName="Administration" ParentMenuName="Root" PageName="Administration" Text="Administration" Target="" SortOrder="4" RequiredPrivilege="Administration" RequiresAuthentication="true" Description="Administration" Active="false" Enabled="false" />
+  <MenuLinks MenuName="Verification" ParentMenuName="Root" PageName="Verification" Text="Verification" Target="" SortOrder="1" RequiredPrivilege="Search" Description="Verification" Active="false" />
+  <MenuLinks MenuName="Enrollment" ParentMenuName="root" PageName="Enrollment" Text="Enrollment" Target="_new" SortOrder="2" RequiredPrivilege="Enrollment" RequiresAuthentication="true" Description="Enrollment Form" Active="true" Enabled="true" />
+  <MenuLinks MenuName="DynamicEnrollment" ParentMenuName="root" PageName="DynamicEnrollment" Text="Enrollment" Target="_new" SortOrder="2" RequiredPrivilege="DynamicEnrollment" RequiresAuthentication="true" Description="Enrollment Form Dynamic" Active="true" Enabled="true" />
+  <Pages PageName="Administration" Text="Administration" Description="Administration" Url="Admin/Administration.aspx" />
+  <Pages PageName="MaintainCategory" Text="Maintain Category" Description="Maintain Category" Url="MaintainCategory.aspx" />
+  <Pages PageName="RegistrySearch" Text="RegistrySearch" Description="RegistrySearch" Url="RegistrySearch.aspx" />
+  <Pages PageName="CategoryEdit" Text="CategoryEdit" Description="CategoryEdit" Url="CategoryEdit.aspx" />
+  <Pages PageName="SubCategoryEdit" Text="SubCategoryEdit" Description="SubCategoryEdit" Url="Admin/SubCategoryEdit.aspx" />
+  <Pages PageName="Login" Text="Login Page" Description="Login Form" Url="Login.aspx" />
+  <Pages PageName="RegistrySearchResults" Text="Registry Search Results" Description="Registry Search Results" Url="RegistrySearchResults.aspx" />
+  <Pages PageName="Verification" Text="Verification" Description="Verification" Url="Verification.aspx" />
+  <Pages PageName="Validate" Text="Validate" Description="Validate" Url="Register/Validate.aspx" />
+  <Pages PageName="Enrollment" Text="Enrollment" Description="Enrollment" Url="Register/Enrollment.aspx" />
+  <Pages PageName="DynamicEnrollment" Text="Enrollment" Description="Enrollment" Url="Register/Dynamic/Enrollment.aspx" />
+  <Pages PageName="DynamicEnrollmentMobile" Text="Enrollment" Description="Enrollment" Url="Register/Dynamic/EnrollmentMobile.aspx" />
+  <Pages PageName="DynamicEnrollmentConfirmation" Text="Enrollment Confirmation" Description="Enrollment Confirmation" Url="Register/Dynamic/EnrollmentConfirmation.aspx" />
+  <Pages PageName="DynamicEnrollmentConfirmationMobile" Text="Enrollment Confirmation" Description="Enrollment Confirmation" Url="Register/Dynamic/EnrollmentConfirmationMobile.aspx" />
+  <Pages PageName="DynamicValidate" Text="Validate" Description="Validate" Url="Register/Dynamic/ValidateDynamic.aspx" />
+  <Pages PageName="DynamicValidateMobile" Text="Validate" Description="Validate" Url="Register/Dynamic/ValidateDynamicMobile.aspx" />
+  <Pages PageName="DynamicElectronicSignature" Text="ElectronicSignature" Description="ElectronicSignature" Url="Register/Dynamic/ElectronicSignature.aspx" />
+  <Pages PageName="DynamicElectronicSignatureMobile" Text="ElectronicSignature" Description="ElectronicSignature" Url="Register/Dynamic/ElectronicSignatureMobile.aspx" />
+  <Pages PageName="DynamicDonorVerification" Text="DonorVerification" Description="DonorVerification" Url="Register/Dynamic/DonorVerification.aspx" />
+  <Pages PageName="EnrollmentConfirmation" Text="Enrollment Confirmation" Description="Enrollment Confirmation" Url="Register/EnrollmentConfirmation.aspx" />
+  <Pages PageName="None" Text="None" Description="None" Url="None.aspx" />
+  <Pages PageName="ElectronicSignature" Text="ElectronicSignature" Description="ElectronicSignature" Url="Register/ElectronicSignature.aspx" />
+  <Pages PageName="LoginFailure" Text="Login Failure" Description="Login Failure" Url="LoginFailure.aspx">
+  </Pages>
+  <MenuLinks MenuName="RegistryReport" ParentMenuName="Root" PageName="RegistryStatisticsReport" Text="Reports" Target="" SortOrder="4" RequiredPrivilege="Search" RequiresAuthentication="true" Description="RegistryStatisticsReport" Active="true" Enabled="true">
+  </MenuLinks>
+  <Pages PageName="RegistryStatisticsReport" Text="RegistryStastisticsReport" Description="RegistryStatisticsReport" Url="RegistryStatisticsReport.aspx">
+  </Pages>
+</NavigationData>

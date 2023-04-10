@@ -1,0 +1,59 @@
+<html>
+
+<head>
+<title>Report Description</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<meta HTTP-EQUIV="EXPIRES" content="0">
+</head>
+
+<body bgcolor="#F5EBDD">
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="575">
+  <tr>
+    <td><font size="4" face="Arial"><strong><b>CALLER PERSON SUMMARY</b></strong></font><font
+    face="Times New Roman" size="3"><i><p>What can this report do for you?</i></p>
+    <div align="center"><center><table border="0" cellpadding="0" cellspacing="0" width="75%">
+      <tr>
+        <td width="5%" valign="top">1.</td>
+        <td width="50%">Identify key people at the hospitals who call in referrals.</td>
+      </tr>
+      <tr>
+        <td width="5%" valign="top">2.</td>
+        <td width="50%">Identify specific individuals and the number of referrals they called into
+        Statline.</td>
+      </tr>
+      <tr>
+        <td width="5%" valign="top">3.</td>
+        <td width="50%"><font size="3"><font face="Times New Roman"></font></font>Identify the
+        number of appropriate, approached, consented and recovered referrals by the person who
+        called in the referral.<font size="3"><font face="Times New Roman"></font></font></td>
+      </tr>
+    </table>
+    </center></div><p>The Caller Person Summary report is a summary of the individuals who have called referrals into the communication center. The report identifies the number of referral calls by individual names and how many of the referrals were appropriate for organ, tissue and eye donation.  
+    <!--The Caller Person Summary report is a summary of the individuals who
+    have called referrals into the communication center. The report identifies the number of
+    referral calls by individual names and how many of the referrals were Appropriate,
+    Approached, Consented and Recovered. The report can be printed to give numbers or
+    percentages (see examples).</p>
+    <p>The column headings from left to right are Referral Facility/Caller person, # of Total
+    Referrals (the number of referral calls that Statline took), Appropriate (donation options
+    that are appropriate according to the criteria received from the recovery agency),
+    Approach (specific options that were approached for donation), Consent (specific options
+    that the next of kin consented to for donation), and Recovery (specific options that were
+    recovered for transplant or research). The Appropriate, Approach, Consent and Recovery
+    categories are broken down into sub categories by specific types (O for organ, B for bone,
+    ST for soft tissue, SK for skin, HV for heart valves and E for eyes).</p>
+    <p>The total number of referral calls for the specific hospital will be listed first
+    followed to the right with the number of appropriate, approach, consent and recovery
+    information. For each caller person, the total number of referrals will be listed first
+    followed to the right with what specific options were appropriate, approached, consented
+    and recovered.</p>
+    <p>At the bottom of the report, the columns will be totaled. The total number of referrals
+    will be listed followed by the total number of referrals for the appropriate, approach,
+    consent and recovery columns by specific type.--></font></td>
+  </tr>
+</table>
+</center></div>
+</body>
+</html>

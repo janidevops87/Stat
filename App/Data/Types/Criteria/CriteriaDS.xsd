@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CriteriaDS" targetNamespace="http://tempuri.org/CriteriaDS.xsd" xmlns:mstns="http://tempuri.org/CriteriaDS.xsd" xmlns="http://tempuri.org/CriteriaDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="_ReferralDev2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="_ReferralDev2ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.Stattrac.Data.Types.Properties.Settings.GlobalReference.Default._ReferralDev2ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CriteriaDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="CriteriaDS" msprop:Generator_DataSetName="CriteriaDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CriteriaSubType" msprop:Generator_UserTableName="CriteriaSubType" msprop:Generator_RowDeletedName="CriteriaSubTypeRowDeleted" msprop:Generator_RowChangedName="CriteriaSubTypeRowChanged" msprop:Generator_RowClassName="CriteriaSubTypeRow" msprop:Generator_RowChangingName="CriteriaSubTypeRowChanging" msprop:Generator_RowEvArgName="CriteriaSubTypeRowChangeEvent" msprop:Generator_RowEvHandlerName="CriteriaSubTypeRowChangeEventHandler" msprop:Generator_TableClassName="CriteriaSubTypeDataTable" msprop:Generator_TableVarName="tableCriteriaSubType" msprop:Generator_RowDeletingName="CriteriaSubTypeRowDeleting" msprop:Generator_TablePropName="CriteriaSubType">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CriteriaSubTypeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="CriteriaSubTypeID" msprop:Generator_ColumnVarNameInTable="columnCriteriaSubTypeID" msprop:Generator_ColumnPropNameInRow="CriteriaSubTypeID" msprop:Generator_ColumnPropNameInTable="CriteriaSubTypeIDColumn" type="xs:int" />
+              <xs:element name="CriteriaID" msprop:Generator_UserColumnName="CriteriaID" msprop:Generator_ColumnVarNameInTable="columnCriteriaID" msprop:Generator_ColumnPropNameInRow="CriteriaID" msprop:Generator_ColumnPropNameInTable="CriteriaIDColumn" type="xs:int" />
+              <xs:element name="SubTypeID" msprop:Generator_UserColumnName="SubTypeID" msprop:Generator_ColumnVarNameInTable="columnSubTypeID" msprop:Generator_ColumnPropNameInRow="SubTypeID" msprop:Generator_ColumnPropNameInTable="SubTypeIDColumn" type="xs:int" />
+              <xs:element name="SubCriteriaPrecedence" msprop:Generator_UserColumnName="SubCriteriaPrecedence" msprop:Generator_ColumnVarNameInTable="columnSubCriteriaPrecedence" msprop:Generator_ColumnPropNameInRow="SubCriteriaPrecedence" msprop:Generator_ColumnPropNameInTable="SubCriteriaPrecedenceColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CriteriaScheduleGroup" msprop:Generator_UserTableName="CriteriaScheduleGroup" msprop:Generator_RowDeletedName="CriteriaScheduleGroupRowDeleted" msprop:Generator_RowChangedName="CriteriaScheduleGroupRowChanged" msprop:Generator_RowClassName="CriteriaScheduleGroupRow" msprop:Generator_RowChangingName="CriteriaScheduleGroupRowChanging" msprop:Generator_RowEvArgName="CriteriaScheduleGroupRowChangeEvent" msprop:Generator_RowEvHandlerName="CriteriaScheduleGroupRowChangeEventHandler" msprop:Generator_TableClassName="CriteriaScheduleGroupDataTable" msprop:Generator_TableVarName="tableCriteriaScheduleGroup" msprop:Generator_RowDeletingName="CriteriaScheduleGroupRowDeleting" msprop:Generator_TablePropName="CriteriaScheduleGroup">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CriteriaScheduleGroupID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="CriteriaScheduleGroupID" msprop:Generator_ColumnVarNameInTable="columnCriteriaScheduleGroupID" msprop:Generator_ColumnPropNameInRow="CriteriaScheduleGroupID" msprop:Generator_ColumnPropNameInTable="CriteriaScheduleGroupIDColumn" type="xs:int" />
+              <xs:element name="CriteriaID" msprop:Generator_UserColumnName="CriteriaID" msprop:Generator_ColumnVarNameInTable="columnCriteriaID" msprop:Generator_ColumnPropNameInRow="CriteriaID" msprop:Generator_ColumnPropNameInTable="CriteriaIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ScheduleGroupID" msprop:Generator_UserColumnName="ScheduleGroupID" msprop:Generator_ColumnVarNameInTable="columnScheduleGroupID" msprop:Generator_ColumnPropNameInRow="ScheduleGroupID" msprop:Generator_ColumnPropNameInTable="ScheduleGroupIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CriteriaScheduleGroupOrgan" msprop:Generator_UserColumnName="CriteriaScheduleGroupOrgan" msprop:Generator_ColumnVarNameInTable="columnCriteriaScheduleGroupOrgan" msprop:Generator_ColumnPropNameInRow="CriteriaScheduleGroupOrgan" msprop:Generator_ColumnPropNameInTable="CriteriaScheduleGroupOrganColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="CriteriaScheduleGroupBone" msprop:Generator_UserColumnName="CriteriaScheduleGroupBone" msprop:Generator_ColumnVarNameInTable="columnCriteriaScheduleGroupBone" msprop:Generator_ColumnPropNameInRow="CriteriaScheduleGroupBone" msprop:Generator_ColumnPropNameInTable="CriteriaScheduleGroupBoneColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="CriteriaScheduleGroupTissue" msprop:Generator_UserColumnName="CriteriaScheduleGroupTissue" msprop:Generator_ColumnVarNameInTable="columnCriteriaScheduleGroupTissue" msprop:Generator_ColumnPropNameInRow="CriteriaScheduleGroupTissue" msprop:Generator_ColumnPropNameInTable="CriteriaScheduleGroupTissueColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="CriteriaScheduleGroupSkin" msprop:Generator_UserColumnName="CriteriaScheduleGroupSkin" msprop:Generator_ColumnVarNameInTable="columnCriteriaScheduleGroupSkin" msprop:Generator_ColumnPropNameInRow="CriteriaScheduleGroupSkin" msprop:Generator_ColumnPropNameInTable="CriteriaScheduleGroupSkinColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="CriteriaScheduleGroupValves" msprop:Generator_UserColumnName="CriteriaScheduleGroupValves" msprop:Generator_ColumnVarNameInTable="columnCriteriaScheduleGroupValves" msprop:Generator_ColumnPropNameInRow="CriteriaScheduleGroupValves" msprop:Generator_ColumnPropNameInTable="CriteriaScheduleGroupValvesColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="CriteriaScheduleGroupEyes" msprop:Generator_UserColumnName="CriteriaScheduleGroupEyes" msprop:Generator_ColumnVarNameInTable="columnCriteriaScheduleGroupEyes" msprop:Generator_ColumnPropNameInRow="CriteriaScheduleGroupEyes" msprop:Generator_ColumnPropNameInTable="CriteriaScheduleGroupEyesColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="CriteriaScheduleGroupResearch" msprop:Generator_UserColumnName="CriteriaScheduleGroupResearch" msprop:Generator_ColumnVarNameInTable="columnCriteriaScheduleGroupResearch" msprop:Generator_ColumnPropNameInRow="CriteriaScheduleGroupResearch" msprop:Generator_ColumnPropNameInTable="CriteriaScheduleGroupResearchColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="CriteriaScheduleNoContactOnDny" msprop:Generator_UserColumnName="CriteriaScheduleNoContactOnDny" msprop:Generator_ColumnVarNameInTable="columnCriteriaScheduleNoContactOnDny" msprop:Generator_ColumnPropNameInRow="CriteriaScheduleNoContactOnDny" msprop:Generator_ColumnPropNameInTable="CriteriaScheduleNoContactOnDnyColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="CriteriaScheduleContactOnCnsnt" msprop:Generator_UserColumnName="CriteriaScheduleContactOnCnsnt" msprop:Generator_ColumnVarNameInTable="columnCriteriaScheduleContactOnCnsnt" msprop:Generator_ColumnPropNameInRow="CriteriaScheduleContactOnCnsnt" msprop:Generator_ColumnPropNameInTable="CriteriaScheduleContactOnCnsntColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="CriteriaScheduleContactOnAprch" msprop:Generator_UserColumnName="CriteriaScheduleContactOnAprch" msprop:Generator_ColumnVarNameInTable="columnCriteriaScheduleContactOnAprch" msprop:Generator_ColumnPropNameInRow="CriteriaScheduleContactOnAprch" msprop:Generator_ColumnPropNameInTable="CriteriaScheduleContactOnAprchColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="CriteriaScheduleContactOnCrnr" msprop:Generator_UserColumnName="CriteriaScheduleContactOnCrnr" msprop:Generator_ColumnVarNameInTable="columnCriteriaScheduleContactOnCrnr" msprop:Generator_ColumnPropNameInRow="CriteriaScheduleContactOnCrnr" msprop:Generator_ColumnPropNameInTable="CriteriaScheduleContactOnCrnrColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="CriteriaScheduleContactOnStatSec" msprop:Generator_UserColumnName="CriteriaScheduleContactOnStatSec" msprop:Generator_ColumnVarNameInTable="columnCriteriaScheduleContactOnStatSec" msprop:Generator_ColumnPropNameInRow="CriteriaScheduleContactOnStatSec" msprop:Generator_ColumnPropNameInTable="CriteriaScheduleContactOnStatSecColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="CriteriaScheduleContactOnStatCnsnt" msprop:Generator_UserColumnName="CriteriaScheduleContactOnStatCnsnt" msprop:Generator_ColumnVarNameInTable="columnCriteriaScheduleContactOnStatCnsnt" msprop:Generator_ColumnPropNameInRow="CriteriaScheduleContactOnStatCnsnt" msprop:Generator_ColumnPropNameInTable="CriteriaScheduleContactOnStatCnsntColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="CriteriaScheduleContactOnCoronerOnly" msprop:Generator_UserColumnName="CriteriaScheduleContactOnCoronerOnly" msprop:Generator_ColumnVarNameInTable="columnCriteriaScheduleContactOnCoronerOnly" msprop:Generator_ColumnPropNameInRow="CriteriaScheduleContactOnCoronerOnly" msprop:Generator_ColumnPropNameInTable="CriteriaScheduleContactOnCoronerOnlyColumn" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CriteriaOrganization" msprop:Generator_UserTableName="CriteriaOrganization" msprop:Generator_RowDeletedName="CriteriaOrganizationRowDeleted" msprop:Generator_RowChangedName="CriteriaOrganizationRowChanged" msprop:Generator_RowClassName="CriteriaOrganizationRow" msprop:Generator_RowChangingName="CriteriaOrganizationRowChanging" msprop:Generator_RowEvArgName="CriteriaOrganizationRowChangeEvent" msprop:Generator_RowEvHandlerName="CriteriaOrganizationRowChangeEventHandler" msprop:Generator_TableClassName="CriteriaOrganizationDataTable" msprop:Generator_TableVarName="tableCriteriaOrganization" msprop:Generator_RowDeletingName="CriteriaOrganizationRowDeleting" msprop:Generator_TablePropName="CriteriaOrganization">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CriteriaOrganizationID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="CriteriaOrganizationID" msprop:Generator_ColumnPropNameInRow="CriteriaOrganizationID" msprop:Generator_ColumnVarNameInTable="columnCriteriaOrganizationID" msprop:Generator_ColumnPropNameInTable="CriteriaOrganizationIDColumn" type="xs:int" />
+              <xs:element name="CriteriaID" msprop:Generator_UserColumnName="CriteriaID" msprop:Generator_ColumnPropNameInRow="CriteriaID" msprop:Generator_ColumnVarNameInTable="columnCriteriaID" msprop:Generator_ColumnPropNameInTable="CriteriaIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="OrganizationID" msprop:Generator_UserColumnName="OrganizationID" msprop:Generator_ColumnPropNameInRow="OrganizationID" msprop:Generator_ColumnVarNameInTable="columnOrganizationID" msprop:Generator_ColumnPropNameInTable="OrganizationIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="OrganizationName" msprop:Generator_UserColumnName="OrganizationName" msprop:Generator_ColumnPropNameInRow="OrganizationName" msprop:Generator_ColumnVarNameInTable="columnOrganizationName" msprop:Generator_ColumnPropNameInTable="OrganizationNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrganizationCity" msprop:Generator_UserColumnName="OrganizationCity" msprop:Generator_ColumnPropNameInRow="OrganizationCity" msprop:Generator_ColumnVarNameInTable="columnOrganizationCity" msprop:Generator_ColumnPropNameInTable="OrganizationCityColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StateAbbrv" msprop:Generator_UserColumnName="StateAbbrv" msprop:Generator_ColumnPropNameInRow="StateAbbrv" msprop:Generator_ColumnVarNameInTable="columnStateAbbrv" msprop:Generator_ColumnPropNameInTable="StateAbbrvColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrganizationType" msprop:Generator_UserColumnName="OrganizationType" msprop:Generator_ColumnPropNameInRow="OrganizationType" msprop:Generator_ColumnVarNameInTable="columnOrganizationType" msprop:Generator_ColumnPropNameInTable="OrganizationTypeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Hidden" msprop:Generator_UserColumnName="Hidden" msprop:Generator_ColumnPropNameInRow="Hidden" msprop:Generator_ColumnVarNameInTable="columnHidden" msprop:Generator_ColumnPropNameInTable="HiddenColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CriteriaAgeUnit" msprop:Generator_UserTableName="CriteriaAgeUnit" msprop:Generator_RowDeletedName="CriteriaAgeUnitRowDeleted" msprop:Generator_RowChangedName="CriteriaAgeUnitRowChanged" msprop:Generator_RowClassName="CriteriaAgeUnitRow" msprop:Generator_RowChangingName="CriteriaAgeUnitRowChanging" msprop:Generator_RowEvArgName="CriteriaAgeUnitRowChangeEvent" msprop:Generator_RowEvHandlerName="CriteriaAgeUnitRowChangeEventHandler" msprop:Generator_TableClassName="CriteriaAgeUnitDataTable" msprop:Generator_TableVarName="tableCriteriaAgeUnit" msprop:Generator_RowDeletingName="CriteriaAgeUnitRowDeleting" msprop:Generator_TablePropName="CriteriaAgeUnit">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CriteriaAgeUnitID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="CriteriaAgeUnitID" msprop:Generator_ColumnPropNameInRow="CriteriaAgeUnitID" msprop:Generator_ColumnVarNameInTable="columnCriteriaAgeUnitID" msprop:Generator_ColumnPropNameInTable="CriteriaAgeUnitIDColumn" type="xs:int" />
+              <xs:element name="CriteriaAgeUnitName" msprop:Generator_UserColumnName="CriteriaAgeUnitName" msprop:Generator_ColumnPropNameInRow="CriteriaAgeUnitName" msprop:Generator_ColumnVarNameInTable="columnCriteriaAgeUnitName" msprop:Generator_ColumnPropNameInTable="CriteriaAgeUnitNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DisplayOrder" msprop:Generator_UserColumnName="DisplayOrder" msprop:Generator_ColumnPropNameInRow="DisplayOrder" msprop:Generator_ColumnVarNameInTable="columnDisplayOrder" msprop:Generator_ColumnPropNameInTable="DisplayOrderColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Inactive" msprop:Generator_UserColumnName="Inactive" msprop:Generator_ColumnPropNameInRow="Inactive" msprop:Generator_ColumnVarNameInTable="columnInactive" msprop:Generator_ColumnPropNameInTable="InactiveColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CriteriaWeightUnit" msprop:Generator_UserTableName="CriteriaWeightUnit" msprop:Generator_RowDeletedName="CriteriaWeightUnitRowDeleted" msprop:Generator_RowChangedName="CriteriaWeightUnitRowChanged" msprop:Generator_RowClassName="CriteriaWeightUnitRow" msprop:Generator_RowChangingName="CriteriaWeightUnitRowChanging" msprop:Generator_RowEvArgName="CriteriaWeightUnitRowChangeEvent" msprop:Generator_RowEvHandlerName="CriteriaWeightUnitRowChangeEventHandler" msprop:Generator_TableClassName="CriteriaWeightUnitDataTable" msprop:Generator_TableVarName="tableCriteriaWeightUnit" msprop:Generator_RowDeletingName="CriteriaWeightUnitRowDeleting" msprop:Generator_TablePropName="CriteriaWeightUnit">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CriteriaWeightUnitID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="CriteriaWeightUnitID" msprop:Generator_ColumnPropNameInRow="CriteriaWeightUnitID" msprop:Generator_ColumnVarNameInTable="columnCriteriaWeightUnitID" msprop:Generator_ColumnPropNameInTable="CriteriaWeightUnitIDColumn" type="xs:int" />
+              <xs:element name="CriteriaWeightUnitName" msprop:Generator_UserColumnName="CriteriaWeightUnitName" msprop:Generator_ColumnPropNameInRow="CriteriaWeightUnitName" msprop:Generator_ColumnVarNameInTable="columnCriteriaWeightUnitName" msprop:Generator_ColumnPropNameInTable="CriteriaWeightUnitNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DisplayOrder" msprop:Generator_UserColumnName="DisplayOrder" msprop:Generator_ColumnPropNameInRow="DisplayOrder" msprop:Generator_ColumnVarNameInTable="columnDisplayOrder" msprop:Generator_ColumnPropNameInTable="DisplayOrderColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Inactive" msprop:Generator_UserColumnName="Inactive" msprop:Generator_ColumnPropNameInRow="Inactive" msprop:Generator_ColumnVarNameInTable="columnInactive" msprop:Generator_ColumnPropNameInTable="InactiveColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Criteria" msprop:Generator_UserTableName="Criteria" msprop:Generator_RowDeletedName="CriteriaRowDeleted" msprop:Generator_RowChangedName="CriteriaRowChanged" msprop:Generator_RowClassName="CriteriaRow" msprop:Generator_RowChangingName="CriteriaRowChanging" msprop:Generator_RowEvArgName="CriteriaRowChangeEvent" msprop:Generator_RowEvHandlerName="CriteriaRowChangeEventHandler" msprop:Generator_TableClassName="CriteriaDataTable" msprop:Generator_TableVarName="tableCriteria" msprop:Generator_RowDeletingName="CriteriaRowDeleting" msprop:Generator_TablePropName="Criteria">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CriteriaID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="CriteriaID" msprop:Generator_ColumnVarNameInTable="columnCriteriaID" msprop:Generator_ColumnPropNameInRow="CriteriaID" msprop:Generator_ColumnPropNameInTable="CriteriaIDColumn" type="xs:int" />
+              <xs:element name="CriteriaGroupName" msprop:Generator_UserColumnName="CriteriaGroupName" msprop:Generator_ColumnVarNameInTable="columnCriteriaGroupName" msprop:Generator_ColumnPropNameInRow="CriteriaGroupName" msprop:Generator_ColumnPropNameInTable="CriteriaGroupNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DonorCategoryID" msprop:Generator_UserColumnName="DonorCategoryID" msprop:Generator_ColumnVarNameInTable="columnDonorCategoryID" msprop:Generator_ColumnPropNameInRow="DonorCategoryID" msprop:Generator_ColumnPropNameInTable="DonorCategoryIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CriteriaMaleUpperAge" msprop:Generator_UserColumnName="CriteriaMaleUpperAge" msprop:Generator_ColumnVarNameInTable="columnCriteriaMaleUpperAge" msprop:Generator_ColumnPropNameInRow="CriteriaMaleUpperAge" msprop:Generator_ColumnPropNameInTable="CriteriaMaleUpperAgeColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="CriteriaMaleLowerAge" msprop:Generator_UserColumnName="CriteriaMaleLowerAge" msprop:Generator_ColumnVarNameInTable="columnCriteriaMaleLowerAge" msprop:Generator_ColumnPropNameInRow="CriteriaMaleLowerAge" msprop:Generator_ColumnPropNameInTable="CriteriaMaleLowerAgeColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="CriteriaFemaleUpperAge" msprop:Generator_UserColumnName="CriteriaFemaleUpperAge" msprop:Generator_ColumnVarNameInTable="columnCriteriaFemaleUpperAge" msprop:Generator_ColumnPropNameInRow="CriteriaFemaleUpperAge" msprop:Generator_ColumnPropNameInTable="CriteriaFemaleUpperAgeColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="CriteriaFemaleLowerAge" msprop:Generator_UserColumnName="CriteriaFemaleLowerAge" msprop:Generator_ColumnVarNameInTable="columnCriteriaFemaleLowerAge" msprop:Generator_ColumnPropNameInRow="CriteriaFemaleLowerAge" msprop:Generator_ColumnPropNameInTable="CriteriaFemaleLowerAgeColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="CriteriaGeneralRuleout" msprop:Generator_UserColumnName="CriteriaGeneralRuleout" msprop:Generator_ColumnVarNameInTable="columnCriteriaGeneralRuleout" msprop:Generator_ColumnPropNameInRow="CriteriaGeneralRuleout" msprop:Generator_ColumnPropNameInTable="CriteriaGeneralRuleoutColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Unused1" msprop:Generator_UserColumnName="Unused1" msprop:Generator_ColumnVarNameInTable="columnUnused1" msprop:Generator_ColumnPropNameInRow="Unused1" msprop:Generator_ColumnPropNameInTable="Unused1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CriteriaMaleNotAppropriate" msprop:Generator_UserColumnName="CriteriaMaleNotAppropriate" msprop:Generator_ColumnVarNameInTable="columnCriteriaMaleNotAppropriate" msprop:Generator_ColumnPropNameInRow="CriteriaMaleNotAppropriate" msprop:Generator_ColumnPropNameInTable="CriteriaMaleNotAppropriateColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CriteriaFemaleNotAppropriate" msprop:Generator_UserColumnName="CriteriaFemaleNotAppropriate" msprop:Generator_ColumnVarNameInTable="columnCriteriaFemaleNotAppropriate" msprop:Generator_ColumnPropNameInRow="CriteriaFemaleNotAppropriate" msprop:Generator_ColumnPropNameInTable="CriteriaFemaleNotAppropriateColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="CriteriaReferNonPotential" msprop:Generator_UserColumnName="CriteriaReferNonPotential" msprop:Generator_ColumnVarNameInTable="columnCriteriaReferNonPotential" msprop:Generator_ColumnPropNameInRow="CriteriaReferNonPotential" msprop:Generator_ColumnPropNameInTable="CriteriaReferNonPotentialColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="Unused2" msprop:Generator_UserColumnName="Unused2" msprop:Generator_ColumnVarNameInTable="columnUnused2" msprop:Generator_ColumnPropNameInRow="Unused2" msprop:Generator_ColumnPropNameInTable="Unused2Column" type="xs:short" minOccurs="0" />
+              <xs:element name="CriteriaLowerWeight" msprop:Generator_UserColumnName="CriteriaLowerWeight" msprop:Generator_ColumnVarNameInTable="columnCriteriaLowerWeight" msprop:Generator_ColumnPropNameInRow="CriteriaLowerWeight" msprop:Generator_ColumnPropNameInTable="CriteriaLowerWeightColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="CriteriaUpperWeight" msprop:Generator_UserColumnName="CriteriaUpperWeight" msprop:Generator_ColumnVarNameInTable="columnCriteriaUpperWeight" msprop:Generator_ColumnPropNameInRow="CriteriaUpperWeight" msprop:Generator_ColumnPropNameInTable="CriteriaUpperWeightColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="CriteriaLowerAgeUnit" msprop:Generator_UserColumnName="CriteriaLowerAgeUnit" msprop:Generator_ColumnVarNameInTable="columnCriteriaLowerAgeUnit" msprop:Generator_ColumnPropNameInRow="CriteriaLowerAgeUnit" msprop:Generator_ColumnPropNameInTable="CriteriaLowerAgeUnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CriteriaDisableAppropriate" msprop:Generator_UserColumnName="CriteriaDisableAppropriate" msprop:Generator_ColumnVarNameInTable="columnCriteriaDisableAppropriate" msprop:Generator_ColumnPropNameInRow="CriteriaDisableAppropriate" msprop:Generator_ColumnPropNameInTable="CriteriaDisableAppropriateColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="Unused3" msprop:Generator_UserColumnName="Unused3" msprop:Generator_ColumnVarNameInTable="columnUnused3" msprop:Generator_ColumnPropNameInRow="Unused3" msprop:Generator_ColumnPropNameInTable="Unused3Column" type="xs:short" minOccurs="0" />
+              <xs:element name="Unused4" msprop:Generator_UserColumnName="Unused4" msprop:Generator_ColumnVarNameInTable="columnUnused4" msprop:Generator_ColumnPropNameInRow="Unused4" msprop:Generator_ColumnPropNameInTable="Unused4Column" type="xs:short" minOccurs="0" />
+              <xs:element name="Unused5" msprop:Generator_UserColumnName="Unused5" msprop:Generator_ColumnVarNameInTable="columnUnused5" msprop:Generator_ColumnPropNameInRow="Unused5" msprop:Generator_ColumnPropNameInTable="Unused5Column" type="xs:short" minOccurs="0" />
+              <xs:element name="Unused6" msprop:Generator_UserColumnName="Unused6" msprop:Generator_ColumnVarNameInTable="columnUnused6" msprop:Generator_ColumnPropNameInRow="Unused6" msprop:Generator_ColumnPropNameInTable="Unused6Column" type="xs:short" minOccurs="0" />
+              <xs:element name="CriteriaMaleUpperAgeUnit" msprop:Generator_UserColumnName="CriteriaMaleUpperAgeUnit" msprop:Generator_ColumnVarNameInTable="columnCriteriaMaleUpperAgeUnit" msprop:Generator_ColumnPropNameInRow="CriteriaMaleUpperAgeUnit" msprop:Generator_ColumnPropNameInTable="CriteriaMaleUpperAgeUnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CriteriaMaleLowerAgeUnit" msprop:Generator_UserColumnName="CriteriaMaleLowerAgeUnit" msprop:Generator_ColumnVarNameInTable="columnCriteriaMaleLowerAgeUnit" msprop:Generator_ColumnPropNameInRow="CriteriaMaleLowerAgeUnit" msprop:Generator_ColumnPropNameInTable="CriteriaMaleLowerAgeUnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CriteriaFemaleUpperAgeUnit" msprop:Generator_UserColumnName="CriteriaFemaleUpperAgeUnit" msprop:Generator_ColumnVarNameInTable="columnCriteriaFemaleUpperAgeUnit" msprop:Generator_ColumnPropNameInRow="CriteriaFemaleUpperAgeUnit" msprop:Generator_ColumnPropNameInTable="CriteriaFemaleUpperAgeUnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CriteriaFemaleLowerAgeUnit" msprop:Generator_UserColumnName="CriteriaFemaleLowerAgeUnit" msprop:Generator_ColumnVarNameInTable="columnCriteriaFemaleLowerAgeUnit" msprop:Generator_ColumnPropNameInRow="CriteriaFemaleLowerAgeUnit" msprop:Generator_ColumnPropNameInTable="CriteriaFemaleLowerAgeUnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UpdatedFlag" msprop:Generator_UserColumnName="UpdatedFlag" msprop:Generator_ColumnVarNameInTable="columnUpdatedFlag" msprop:Generator_ColumnPropNameInRow="UpdatedFlag" msprop:Generator_ColumnPropNameInTable="UpdatedFlagColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="DynamicDonorCategoryID" msprop:Generator_UserColumnName="DynamicDonorCategoryID" msprop:Generator_ColumnVarNameInTable="columnDynamicDonorCategoryID" msprop:Generator_ColumnPropNameInRow="DynamicDonorCategoryID" msprop:Generator_ColumnPropNameInTable="DynamicDonorCategoryIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CriteriaStatus" msprop:Generator_UserColumnName="CriteriaStatus" msprop:Generator_ColumnVarNameInTable="columnCriteriaStatus" msprop:Generator_ColumnPropNameInRow="CriteriaStatus" msprop:Generator_ColumnPropNameInTable="CriteriaStatusColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="WorkingStatusUpdatedFlag" msprop:Generator_UserColumnName="WorkingStatusUpdatedFlag" msprop:Generator_ColumnVarNameInTable="columnWorkingStatusUpdatedFlag" msprop:Generator_ColumnPropNameInRow="WorkingStatusUpdatedFlag" msprop:Generator_ColumnPropNameInTable="WorkingStatusUpdatedFlagColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="WorkingCriteriaId" msprop:Generator_UserColumnName="WorkingCriteriaId" msprop:Generator_ColumnVarNameInTable="columnWorkingCriteriaId" msprop:Generator_ColumnPropNameInRow="WorkingCriteriaId" msprop:Generator_ColumnPropNameInTable="WorkingCriteriaIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CriteriaDonorTracMap" msprop:Generator_UserColumnName="CriteriaDonorTracMap" msprop:Generator_ColumnVarNameInTable="columnCriteriaDonorTracMap" msprop:Generator_ColumnPropNameInRow="CriteriaDonorTracMap" msprop:Generator_ColumnPropNameInTable="CriteriaDonorTracMapColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Inactive" msprop:Generator_UserColumnName="Inactive" msprop:Generator_ColumnVarNameInTable="columnInactive" msprop:Generator_ColumnPropNameInRow="Inactive" msprop:Generator_ColumnPropNameInTable="InactiveColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DefaultGroupForSourceCode" msprop:Generator_UserColumnName="DefaultGroupForSourceCode" msprop:Generator_ColumnVarNameInTable="columnDefaultGroupForSourceCode" msprop:Generator_ColumnPropNameInRow="DefaultGroupForSourceCode" msprop:Generator_ColumnPropNameInTable="DefaultGroupForSourceCodeColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CriteriaFetalDemiseUpperAge" msprop:Generator_UserColumnName="CriteriaFetalDemiseUpperAge" msprop:Generator_ColumnVarNameInTable="columnCriteriaFetalDemiseUpperAge" msprop:Generator_ColumnPropNameInRow="CriteriaFetalDemiseUpperAge" msprop:Generator_ColumnPropNameInTable="CriteriaFetalDemiseUpperAgeColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CriteriaFetalDemiseLowerAge" msprop:Generator_UserColumnName="CriteriaFetalDemiseLowerAge" msprop:Generator_ColumnVarNameInTable="columnCriteriaFetalDemiseLowerAge" msprop:Generator_ColumnPropNameInRow="CriteriaFetalDemiseLowerAge" msprop:Generator_ColumnPropNameInTable="CriteriaFetalDemiseLowerAgeColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CriteriaMaleUpperWeight" msprop:Generator_UserColumnName="CriteriaMaleUpperWeight" msprop:Generator_ColumnVarNameInTable="columnCriteriaMaleUpperWeight" msprop:Generator_ColumnPropNameInRow="CriteriaMaleUpperWeight" msprop:Generator_ColumnPropNameInTable="CriteriaMaleUpperWeightColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="CriteriaMaleLowerWeight" msprop:Generator_UserColumnName="CriteriaMaleLowerWeight" msprop:Generator_ColumnVarNameInTable="columnCriteriaMaleLowerWeight" msprop:Generator_ColumnPropNameInRow="CriteriaMaleLowerWeight" msprop:Generator_ColumnPropNameInTable="CriteriaMaleLowerWeightColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="CriteriaFemaleUpperWeight" msprop:Generator_UserColumnName="CriteriaFemaleUpperWeight" msprop:Generator_ColumnVarNameInTable="columnCriteriaFemaleUpperWeight" msprop:Generator_ColumnPropNameInRow="CriteriaFemaleUpperWeight" msprop:Generator_ColumnPropNameInTable="CriteriaFemaleUpperWeightColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="CriteriaFemaleLowerWeight" msprop:Generator_UserColumnName="CriteriaFemaleLowerWeight" msprop:Generator_ColumnVarNameInTable="columnCriteriaFemaleLowerWeight" msprop:Generator_ColumnPropNameInRow="CriteriaFemaleLowerWeight" msprop:Generator_ColumnPropNameInTable="CriteriaFemaleLowerWeightColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="CriteriaFetalDemiseUpperWeight" msprop:Generator_UserColumnName="CriteriaFetalDemiseUpperWeight" msprop:Generator_ColumnVarNameInTable="columnCriteriaFetalDemiseUpperWeight" msprop:Generator_ColumnPropNameInRow="CriteriaFetalDemiseUpperWeight" msprop:Generator_ColumnPropNameInTable="CriteriaFetalDemiseUpperWeightColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="CriteriaFetalDemiseLowerWeight" msprop:Generator_UserColumnName="CriteriaFetalDemiseLowerWeight" msprop:Generator_ColumnVarNameInTable="columnCriteriaFetalDemiseLowerWeight" msprop:Generator_ColumnPropNameInRow="CriteriaFetalDemiseLowerWeight" msprop:Generator_ColumnPropNameInTable="CriteriaFetalDemiseLowerWeightColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="CriteriaMaleUpperWeightUnit" msprop:Generator_UserColumnName="CriteriaMaleUpperWeightUnit" msprop:Generator_ColumnVarNameInTable="columnCriteriaMaleUpperWeightUnit" msprop:Generator_ColumnPropNameInRow="CriteriaMaleUpperWeightUnit" msprop:Generator_ColumnPropNameInTable="CriteriaMaleUpperWeightUnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CriteriaMaleLowerWeightUnit" msprop:Generator_UserColumnName="CriteriaMaleLowerWeightUnit" msprop:Generator_ColumnVarNameInTable="columnCriteriaMaleLowerWeightUnit" msprop:Generator_ColumnPropNameInRow="CriteriaMaleLowerWeightUnit" msprop:Generator_ColumnPropNameInTable="CriteriaMaleLowerWeightUnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CriteriaFemaleUpperWeightUnit" msprop:Generator_UserColumnName="CriteriaFemaleUpperWeightUnit" msprop:Generator_ColumnVarNameInTable="columnCriteriaFemaleUpperWeightUnit" msprop:Generator_ColumnPropNameInRow="CriteriaFemaleUpperWeightUnit" msprop:Generator_ColumnPropNameInTable="CriteriaFemaleUpperWeightUnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CriteriaFemaleLowerWeightUnit" msprop:Generator_UserColumnName="CriteriaFemaleLowerWeightUnit" msprop:Generator_ColumnVarNameInTable="columnCriteriaFemaleLowerWeightUnit" msprop:Generator_ColumnPropNameInRow="CriteriaFemaleLowerWeightUnit" msprop:Generator_ColumnPropNameInTable="CriteriaFemaleLowerWeightUnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CriteriaFetalDemiseUpperWeightUnit" msprop:Generator_UserColumnName="CriteriaFetalDemiseUpperWeightUnit" msprop:Generator_ColumnVarNameInTable="columnCriteriaFetalDemiseUpperWeightUnit" msprop:Generator_ColumnPropNameInRow="CriteriaFetalDemiseUpperWeightUnit" msprop:Generator_ColumnPropNameInTable="CriteriaFetalDemiseUpperWeightUnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CriteriaFetalDemiseLowerWeightUnit" msprop:Generator_UserColumnName="CriteriaFetalDemiseLowerWeightUnit" msprop:Generator_ColumnVarNameInTable="columnCriteriaFetalDemiseLowerWeightUnit" msprop:Generator_ColumnPropNameInRow="CriteriaFetalDemiseLowerWeightUnit" msprop:Generator_ColumnPropNameInTable="CriteriaFetalDemiseLowerWeightUnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CriteriaProcessor" msprop:Generator_UserTableName="CriteriaProcessor" msprop:Generator_RowDeletedName="CriteriaProcessorRowDeleted" msprop:Generator_RowChangedName="CriteriaProcessorRowChanged" msprop:Generator_RowClassName="CriteriaProcessorRow" msprop:Generator_RowChangingName="CriteriaProcessorRowChanging" msprop:Generator_RowEvArgName="CriteriaProcessorRowChangeEvent" msprop:Generator_RowEvHandlerName="CriteriaProcessorRowChangeEventHandler" msprop:Generator_TableClassName="CriteriaProcessorDataTable" msprop:Generator_TableVarName="tableCriteriaProcessor" msprop:Generator_RowDeletingName="CriteriaProcessorRowDeleting" msprop:Generator_TablePropName="CriteriaProcessor">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CriteriaProcessorID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="CriteriaProcessorID" msprop:Generator_ColumnPropNameInRow="CriteriaProcessorID" msprop:Generator_ColumnVarNameInTable="columnCriteriaProcessorID" msprop:Generator_ColumnPropNameInTable="CriteriaProcessorIDColumn" type="xs:int" />
+              <xs:element name="CriteriaID" msprop:Generator_UserColumnName="CriteriaID" msprop:Generator_ColumnPropNameInRow="CriteriaID" msprop:Generator_ColumnVarNameInTable="columnCriteriaID" msprop:Generator_ColumnPropNameInTable="CriteriaIDColumn" type="xs:int" />
+              <xs:element name="OrganizationID" msprop:Generator_UserColumnName="OrganizationID" msprop:Generator_ColumnPropNameInRow="OrganizationID" msprop:Generator_ColumnVarNameInTable="columnOrganizationID" msprop:Generator_ColumnPropNameInTable="OrganizationIDColumn" type="xs:int" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="OrganizationName" msdata:Caption="Processor" msprop:Generator_UserColumnName="OrganizationName" msprop:Generator_ColumnPropNameInRow="OrganizationName" msprop:Generator_ColumnVarNameInTable="columnOrganizationName" msprop:Generator_ColumnPropNameInTable="OrganizationNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OrganizationCity" msdata:Caption="City" msprop:Generator_UserColumnName="OrganizationCity" msprop:Generator_ColumnPropNameInRow="OrganizationCity" msprop:Generator_ColumnVarNameInTable="columnOrganizationCity" msprop:Generator_ColumnPropNameInTable="OrganizationCityColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="StateAbbrv" msdata:Caption="State" msprop:Generator_UserColumnName="StateAbbrv" msprop:Generator_ColumnPropNameInRow="StateAbbrv" msprop:Generator_ColumnVarNameInTable="columnStateAbbrv" msprop:Generator_ColumnPropNameInTable="StateAbbrvColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OrganizationType" msprop:Generator_UserColumnName="OrganizationType" msprop:Generator_ColumnPropNameInRow="OrganizationType" msprop:Generator_ColumnVarNameInTable="columnOrganizationType" msprop:Generator_ColumnPropNameInTable="OrganizationTypeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Hidden" msprop:Generator_UserColumnName="Hidden" msprop:Generator_ColumnPropNameInRow="Hidden" msprop:Generator_ColumnVarNameInTable="columnHidden" msprop:Generator_ColumnPropNameInTable="HiddenColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CriteriaSourceCode" msprop:Generator_UserTableName="CriteriaSourceCode" msprop:Generator_RowDeletedName="CriteriaSourceCodeRowDeleted" msprop:Generator_RowChangedName="CriteriaSourceCodeRowChanged" msprop:Generator_RowClassName="CriteriaSourceCodeRow" msprop:Generator_RowChangingName="CriteriaSourceCodeRowChanging" msprop:Generator_RowEvArgName="CriteriaSourceCodeRowChangeEvent" msprop:Generator_RowEvHandlerName="CriteriaSourceCodeRowChangeEventHandler" msprop:Generator_TableClassName="CriteriaSourceCodeDataTable" msprop:Generator_TableVarName="tableCriteriaSourceCode" msprop:Generator_RowDeletingName="CriteriaSourceCodeRowDeleting" msprop:Generator_TablePropName="CriteriaSourceCode">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CriteriaSourceCodeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="CriteriaSourceCodeID" msprop:Generator_ColumnVarNameInTable="columnCriteriaSourceCodeID" msprop:Generator_ColumnPropNameInRow="CriteriaSourceCodeID" msprop:Generator_ColumnPropNameInTable="CriteriaSourceCodeIDColumn" type="xs:int" />
+              <xs:element name="CriteriaID" msprop:Generator_UserColumnName="CriteriaID" msprop:Generator_ColumnVarNameInTable="columnCriteriaID" msprop:Generator_ColumnPropNameInRow="CriteriaID" msprop:Generator_ColumnPropNameInTable="CriteriaIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="SourceCodeID" msprop:Generator_UserColumnName="SourceCodeID" msprop:Generator_ColumnVarNameInTable="columnSourceCodeID" msprop:Generator_ColumnPropNameInRow="SourceCodeID" msprop:Generator_ColumnPropNameInTable="SourceCodeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UpdatedFlag" msprop:Generator_UserColumnName="UpdatedFlag" msprop:Generator_ColumnVarNameInTable="columnUpdatedFlag" msprop:Generator_ColumnPropNameInRow="UpdatedFlag" msprop:Generator_ColumnPropNameInTable="UpdatedFlagColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="SourceCodeName" msdata:Caption="Source Codes" msprop:Generator_UserColumnName="SourceCodeName" msprop:Generator_ColumnVarNameInTable="columnSourceCodeName" msprop:Generator_ColumnPropNameInRow="SourceCodeName" msprop:Generator_ColumnPropNameInTable="SourceCodeNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CriteriaIndication" msprop:Generator_UserTableName="CriteriaIndication" msprop:Generator_RowDeletedName="CriteriaIndicationRowDeleted" msprop:Generator_RowChangedName="CriteriaIndicationRowChanged" msprop:Generator_RowClassName="CriteriaIndicationRow" msprop:Generator_RowChangingName="CriteriaIndicationRowChanging" msprop:Generator_RowEvArgName="CriteriaIndicationRowChangeEvent" msprop:Generator_RowEvHandlerName="CriteriaIndicationRowChangeEventHandler" msprop:Generator_TableClassName="CriteriaIndicationDataTable" msprop:Generator_TableVarName="tableCriteriaIndication" msprop:Generator_RowDeletingName="CriteriaIndicationRowDeleting" msprop:Generator_TablePropName="CriteriaIndication">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CriteriaIndicationID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="CriteriaIndicationID" msprop:Generator_ColumnPropNameInRow="CriteriaIndicationID" msprop:Generator_ColumnVarNameInTable="columnCriteriaIndicationID" msprop:Generator_ColumnPropNameInTable="CriteriaIndicationIDColumn" type="xs:int" />
+              <xs:element name="CriteriaID" msprop:Generator_UserColumnName="CriteriaID" msprop:Generator_ColumnPropNameInRow="CriteriaID" msprop:Generator_ColumnVarNameInTable="columnCriteriaID" msprop:Generator_ColumnPropNameInTable="CriteriaIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IndicationID" msprop:Generator_UserColumnName="IndicationID" msprop:Generator_ColumnPropNameInRow="IndicationID" msprop:Generator_ColumnVarNameInTable="columnIndicationID" msprop:Generator_ColumnPropNameInTable="IndicationIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IndicationHighRisk" msprop:Generator_UserColumnName="IndicationHighRisk" msprop:Generator_ColumnPropNameInRow="IndicationHighRisk" msprop:Generator_ColumnVarNameInTable="columnIndicationHighRisk" msprop:Generator_ColumnPropNameInTable="IndicationHighRiskColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="IndicationStandardMRO" msprop:Generator_UserColumnName="IndicationStandardMRO" msprop:Generator_ColumnPropNameInRow="IndicationStandardMRO" msprop:Generator_ColumnVarNameInTable="columnIndicationStandardMRO" msprop:Generator_ColumnPropNameInTable="IndicationStandardMROColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="UpdatedFlag" msprop:Generator_UserColumnName="UpdatedFlag" msprop:Generator_ColumnPropNameInRow="UpdatedFlag" msprop:Generator_ColumnVarNameInTable="columnUpdatedFlag" msprop:Generator_ColumnPropNameInTable="UpdatedFlagColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IndicationName" msdata:Caption="Rule Out Indication" msprop:Generator_UserColumnName="IndicationName" msprop:Generator_ColumnPropNameInRow="IndicationName" msprop:Generator_ColumnVarNameInTable="columnIndicationName" msprop:Generator_ColumnPropNameInTable="IndicationNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IndicationResponseName" msdata:Caption="Response" msprop:Generator_UserColumnName="IndicationResponseName" msprop:Generator_ColumnPropNameInRow="IndicationResponseName" msprop:Generator_ColumnVarNameInTable="columnIndicationResponseName" msprop:Generator_ColumnPropNameInTable="IndicationResponseNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Hidden" msprop:Generator_UserColumnName="Hidden" msprop:Generator_ColumnPropNameInRow="Hidden" msprop:Generator_ColumnVarNameInTable="columnHidden" msprop:Generator_ColumnPropNameInTable="HiddenColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CriteriaSearch" msprop:Generator_UserTableName="CriteriaSearch" msprop:Generator_RowDeletedName="CriteriaSearchRowDeleted" msprop:Generator_TableClassName="CriteriaSearchDataTable" msprop:Generator_RowChangedName="CriteriaSearchRowChanged" msprop:Generator_RowClassName="CriteriaSearchRow" msprop:Generator_RowChangingName="CriteriaSearchRowChanging" msprop:Generator_RowEvArgName="CriteriaSearchRowChangeEvent" msprop:Generator_RowEvHandlerName="CriteriaSearchRowChangeEventHandler" msprop:Generator_TablePropName="CriteriaSearch" msprop:Generator_TableVarName="tableCriteriaSearch" msprop:Generator_RowDeletingName="CriteriaSearchRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CriteriaID" msprop:Generator_UserColumnName="CriteriaID" msprop:Generator_ColumnPropNameInRow="CriteriaID" msprop:Generator_ColumnVarNameInTable="columnCriteriaID" msprop:Generator_ColumnPropNameInTable="CriteriaIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CriteriaSubType" />
+      <xs:field xpath="mstns:CriteriaSubTypeID" />
+    </xs:unique>
+    <xs:unique name="CriteriaScheduleGroup_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CriteriaScheduleGroup" />
+      <xs:field xpath="mstns:CriteriaScheduleGroupID" />
+    </xs:unique>
+    <xs:unique name="CriteriaOrganization_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CriteriaOrganization" />
+      <xs:field xpath="mstns:CriteriaOrganizationID" />
+    </xs:unique>
+    <xs:unique name="CriteriaAgeUnit_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CriteriaAgeUnit" />
+      <xs:field xpath="mstns:CriteriaAgeUnitID" />
+    </xs:unique>
+    <xs:unique name="CriteriaWeightUnit_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CriteriaWeightUnit" />
+      <xs:field xpath="mstns:CriteriaWeightUnitID" />
+    </xs:unique>
+    <xs:unique name="Criteria_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Criteria" />
+      <xs:field xpath="mstns:CriteriaID" />
+    </xs:unique>
+    <xs:unique name="CriteriaProcessor_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CriteriaProcessor" />
+      <xs:field xpath="mstns:CriteriaProcessorID" />
+    </xs:unique>
+    <xs:unique name="CriteriaSourceCode_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CriteriaSourceCode" />
+      <xs:field xpath="mstns:CriteriaSourceCodeID" />
+    </xs:unique>
+    <xs:unique name="CriteriaIndication_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CriteriaIndication" />
+      <xs:field xpath="mstns:CriteriaIndicationID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

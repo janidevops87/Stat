@@ -1,0 +1,25 @@
+﻿@model EditRedirectUrisViewModel
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.RedirectUris[0].Value)</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var uri in Model.RedirectUris)
+        {
+            <tr>
+                <td>@uri.Value</td>
+                <td>
+                    <form asp-action="DeleteRedirectUri" asp-route-id="@Model.Id"
+                          asp-authorize="@AuthorizationPolicies.WholeApplicationAdministrationPolicy">
+                        <input type="hidden" asp-for="@uri.Value" name="@nameof(uri.Value)" />
+                        <button type="submit" class="btn btn-sm btn-danger">delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

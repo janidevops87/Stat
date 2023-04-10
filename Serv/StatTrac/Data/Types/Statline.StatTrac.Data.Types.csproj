@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{086C5AB4-C591-4EE4-B1EF-837B3254EC3B}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Statline.StatTrac.Data.Types</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Statline.StatTrac.Data.Types</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/Statline.StatTrac.Data.Types/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ApplicationData.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="MessageData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MessageData.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="NameValueData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NameValueData.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="NavigationData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NavigationData.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ReportFSConversionRateData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportFSConversionRateData.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ReportReferenceData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>ReportReferenceData.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="TransplantCenterData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TransplantCenterData.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="UserData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UserData.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Compile Include="ApplicationData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApplicationData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommonTypes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConstHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogEventData.Designer.cs">
+      <DependentUpon>LogEventData.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="MessageData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MessageData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NameValueData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NameValueData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NavigationData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="QAUpdateData.cs">
+      <DependentUpon>QAUpdateData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QAUpdateData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QAUpdateData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralData.cs">
+      <DependentUpon>ReferralData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReferralData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportFSConversionRateData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportFSConversionRateData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportReferenceData.cs">
+      <DependentUpon>ReportReferenceData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportReferenceData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportReferenceData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScheduleData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityData.cs">
+      <DependentUpon>SecurityData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SecurityData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StatFaxData.cs">
+      <DependentUpon>StatFaxData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StatFaxData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatFaxData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StatFileData.cs">
+      <DependentUpon>StatFileData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StatFileData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatFileData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TransplantCenterData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransplantCenterData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserData.cs">
+      <DependentUpon>UserData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserData.xsd</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="ApplicationData.xsc">
+      <DependentUpon>ApplicationData.xsd</DependentUpon>
+    </None>
+    <None Include="ApplicationData.xss">
+      <DependentUpon>ApplicationData.xsd</DependentUpon>
+    </None>
+    <None Include="ApplicationData.xsx">
+      <DependentUpon>ApplicationData.xsd</DependentUpon>
+    </None>
+    <None Include="LogEventData.xsc">
+      <DependentUpon>LogEventData.xsd</DependentUpon>
+    </None>
+    <None Include="LogEventData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LogEventData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="LogEventData.xss">
+      <DependentUpon>LogEventData.xsd</DependentUpon>
+    </None>
+    <None Include="MessageData.xsc">
+      <DependentUpon>MessageData.xsd</DependentUpon>
+    </None>
+    <None Include="MessageData.xss">
+      <DependentUpon>MessageData.xsd</DependentUpon>
+    </None>
+    <None Include="MessageData.xsx">
+      <DependentUpon>MessageData.xsd</DependentUpon>
+    </None>
+    <None Include="NameValueData.xsc">
+      <DependentUpon>NameValueData.xsd</DependentUpon>
+    </None>
+    <None Include="NameValueData.xsx">
+      <DependentUpon>NameValueData.xsd</DependentUpon>
+    </None>
+    <None Include="NavigationData.xsc">
+      <DependentUpon>NavigationData.xsd</DependentUpon>
+    </None>
+    <None Include="NavigationData.xsx">
+      <DependentUpon>NavigationData.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="QAUpdateData.xsc">
+      <DependentUpon>QAUpdateData.xsd</DependentUpon>
+    </None>
+    <None Include="QAUpdateData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QAUpdateData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="QAUpdateData.xss">
+      <DependentUpon>QAUpdateData.xsd</DependentUpon>
+    </None>
+    <None Include="ReferralData.xsc">
+      <DependentUpon>ReferralData.xsd</DependentUpon>
+    </None>
+    <None Include="ReferralData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReferralData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReferralData.xss">
+      <DependentUpon>ReferralData.xsd</DependentUpon>
+    </None>
+    <None Include="ReportFSConversionRateData.xsc">
+      <DependentUpon>ReportFSConversionRateData.xsd</DependentUpon>
+    </None>
+    <None Include="ReportFSConversionRateData.xss">
+      <DependentUpon>ReportFSConversionRateData.xsd</DependentUpon>
+    </None>
+    <None Include="ReportFSConversionRateData.xsx">
+      <DependentUpon>ReportFSConversionRateData.xsd</DependentUpon>
+    </None>
+    <None Include="ReportReferenceData.xsc">
+      <DependentUpon>ReportReferenceData.xsd</DependentUpon>
+    </None>
+    <None Include="ReportReferenceData.xss">
+      <DependentUpon>ReportReferenceData.xsd</DependentUpon>
+    </None>
+    <None Include="ReportReferenceData.xsx">
+      <DependentUpon>ReportReferenceData.xsd</DependentUpon>
+    </None>
+    <None Include="ScheduleData.xsc">
+      <DependentUpon>ScheduleData.xsd</DependentUpon>
+    </None>
+    <None Include="ScheduleData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScheduleData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ScheduleData.xss">
+      <DependentUpon>ScheduleData.xsd</DependentUpon>
+    </None>
+    <None Include="SecurityData.xsc">
+      <DependentUpon>SecurityData.xsd</DependentUpon>
+    </None>
+    <None Include="SecurityData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SecurityData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SecurityData.xss">
+      <DependentUpon>SecurityData.xsd</DependentUpon>
+    </None>
+    <None Include="StatFaxData.xsc">
+      <DependentUpon>StatFaxData.xsd</DependentUpon>
+    </None>
+    <None Include="StatFaxData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StatFaxData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="StatFaxData.xss">
+      <DependentUpon>StatFaxData.xsd</DependentUpon>
+    </None>
+    <None Include="StatFileData.xsc">
+      <DependentUpon>StatFileData.xsd</DependentUpon>
+    </None>
+    <None Include="StatFileData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StatFileData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="StatFileData.xss">
+      <DependentUpon>StatFileData.xsd</DependentUpon>
+    </None>
+    <None Include="TransplantCenterData.xsc">
+      <DependentUpon>TransplantCenterData.xsd</DependentUpon>
+    </None>
+    <None Include="TransplantCenterData.xsx">
+      <DependentUpon>TransplantCenterData.xsd</DependentUpon>
+    </None>
+    <None Include="UserData.xsc">
+      <DependentUpon>UserData.xsd</DependentUpon>
+    </None>
+    <None Include="UserData.xss">
+      <DependentUpon>UserData.xsd</DependentUpon>
+    </None>
+    <None Include="UserData.xsx">
+      <DependentUpon>UserData.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

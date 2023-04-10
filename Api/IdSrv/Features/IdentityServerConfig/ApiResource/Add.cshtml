@@ -1,0 +1,29 @@
+﻿@model NewApiResourceViewModel
+@{
+    ViewData["Title"] = "Create new API Resource";
+    Layout = "_Layout";
+}
+
+<h2>Create new API Resource</h2>
+
+<form asp-action="Add" method="post">
+    <div class="form-group row">
+        <div class="col-xs-4">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control">
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-xs-4">
+            <label asp-for="DisplayName"></label>
+            <input asp-for="DisplayName" class="form-control">
+            <span asp-validation-for="DisplayName"></span>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-default">Add</button>
+</form>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

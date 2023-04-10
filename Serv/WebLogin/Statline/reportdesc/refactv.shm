@@ -1,0 +1,53 @@
+<html>
+
+<head>
+<title>Report Description</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<meta HTTP-EQUIV="EXPIRES" content="0">
+</head>
+
+<body bgcolor="#F5EBDD">
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="575">
+  <tr>
+    <td><font face="Arial" size="4"><b>REFERRAL ACTIVITY</b></font><font
+    face="Times New Roman" size="3"><p>The Referral Activity report tracks all referral calls
+    for a particular time period or for a specific hospital or region. The top of the report
+    summarizes the number of referral calls by referral type. The four different types of
+    referral calls tracked are the following:</p>
+    <div align="center"><center><table border="0" cellpadding="0" cellspacing="0" width="75%">
+      <tr>
+        <td width="5%">1.</td>
+        <td width="85%">Organ/Tissue/Eye</td>
+      </tr>
+      <tr>
+        <td width="5%">2.</td>
+        <td width="85%">Tissue/Eye</td>
+      </tr>
+      <tr>
+        <td width="5%">3.</td>
+        <td width="85%">Eyes only</td>
+      </tr>
+      <tr>
+        <td width="5%">4.</td>
+        <td width="85%">Rule-out referrals</td>
+      </tr>
+    </table>
+    </center></div><p>All potential organ donors are tracked as potential tissue and eye
+    donors at Statline since we immediately contact the organ procurement coordinator and do
+    not perform in depth screening for tissue and eye eligibility. The second category, <i>tissue/eye</i>,
+    is labeled as such because essentially every potential tissue donor is also a potential
+    eye donor. The <i>eyes only</i> category is when both organ and tissue donation is not an
+    option. Generally, the only option left is eyes. The <i>Rule-out referrals</i> are
+    referrals that we pre-screen for recovery agencies that are medically ruled out for
+    donation according to the criteria given to Statline by the agencies. </p>
+    <p>A section for each call type follows the report. The calls are listed by referral
+    number, date and time. Each referral call listed indicates what hospital the call came
+    from, the patient name and the status of the referral. To receive more information
+    regarding a particular referral, you must refer to the Referral Detail report.</font></td>
+  </tr>
+</table>
+</center></div>
+</body>
+</html>

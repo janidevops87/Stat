@@ -1,0 +1,1 @@
+<%@ Control Language="c#" AutoEventWireup="True" Codebehind="RoleAccessControl.ascx.cs" Inherits="Statline.StatTrac.Web.UI.Controls.Admin.RoleAccessControl" TargetSchema="http://schemas.microsoft.com/intellisense/ie5"%>

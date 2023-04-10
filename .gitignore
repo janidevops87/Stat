@@ -1,0 +1,11 @@
+.vs
+.nuget
+packages
+bin/
+obj/
+*.user
+*.dbmdl
+*.vspscc
+*.vssscc
+*.tfignore
+*.jfm

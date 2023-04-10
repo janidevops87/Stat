@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{71627A9C-06CA-4157-8F0D-4C68D2668424}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Statline.Stattrac.Constant</RootNamespace>
+    <AssemblyName>Statline.Stattrac.Constant</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\Solution Items\Reference\StatLine.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>Migrated rules for Statline.Stattrac.Constant.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>Migrated rules for Statline.Stattrac.Constant.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Solution Items\Reference\SharedAssemblyInfo.cs">
+      <Link>SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="AppScreenType.cs" />
+    <Compile Include="BusinessRulesConstant.cs" />
+    <Compile Include="DatabaseInstance.cs" />
+    <Compile Include="Enum\ListFsbStatus.cs" />
+    <Compile Include="Enum\LogEventTypeConstant.cs" />
+    <Compile Include="FrameworkConstant.cs" />
+    <Compile Include="GeneralConstant.cs" />
+    <Compile Include="GridColumns\BulletinBoard.cs" />
+    <Compile Include="GridColumns\ContactPermission.cs" />
+    <Compile Include="GridColumns\ContactRole.cs" />
+    <Compile Include="GridColumns\FamilyServiceView.cs" />
+    <Compile Include="GridColumns\Message.cs" />
+    <Compile Include="GridColumns\OrganizationAssociatedSourceCodes.cs" />
+    <Compile Include="GridColumns\OrganizationBillingAddress.cs" />
+    <Compile Include="GridColumns\CriteriaIndication.cs" />
+    <Compile Include="GridColumns\CriteriaOrganization.cs" />
+    <Compile Include="GridColumns\CriteriaProcessor.cs" />
+    <Compile Include="GridColumns\CriteriaSourceCode.cs" />
+    <Compile Include="GridColumns\AssociatedCall.cs" />
+    <Compile Include="GridColumns\OrganizationInstances.cs" />
+    <Compile Include="GridColumns\OrganizationPhone.cs" />
+    <Compile Include="GridColumns\OrganizationSearch.cs" />
+    <Compile Include="GridColumns\QuestionConfigQuestion.cs" />
+    <Compile Include="GridColumns\QuestionConfigEventTypeUpdate.cs" />
+    <Compile Include="GridColumns\QuestionConfigEventType.cs" />
+    <Compile Include="GridColumns\QuestionConfigRefType.cs" />
+    <Compile Include="GridColumns\QuestionGroupConfig1.cs" />
+    <Compile Include="GridColumns\QuestionAddEdit.cs" />
+    <Compile Include="GridColumns\ContactCallInstruction.cs" />
+    <Compile Include="GridColumns\Contacts.cs" />
+    <Compile Include="GridColumns\OrganizationAlias.cs" />
+    <Compile Include="GridColumns\OrganizationCaseReview.cs" />
+    <Compile Include="GridColumns\OrganizationDashBoardTimer.cs" />
+    <Compile Include="GridColumns\OrganizationDisplaySetting.cs" />
+    <Compile Include="GridColumns\OrganizationDuplicateSearchRule.cs" />
+    <Compile Include="GridColumns\OrganizationFsSourceCode.cs" />
+    <Compile Include="GridColumns\Person.cs" />
+    <Compile Include="GridColumns\PersonPhone.cs" />
+    <Compile Include="GridColumns\QuestionDetail.cs" />
+    <Compile Include="GridColumns\QuestionGroupConfig.cs" />
+    <Compile Include="GridColumns\QuestionMulti.cs" />
+    <Compile Include="GridColumns\Recycle.cs" />
+    <Compile Include="GridColumns\Referral.cs" />
+    <Compile Include="GridColumns\RuleOutIndications.cs" />
+    <Compile Include="GridColumns\ScreenConfig.cs" />
+    <Compile Include="GridColumns\SourceCodeAssociatedImportOfferTransplantCenters.cs" />
+    <Compile Include="GridColumns\SourceCodeAssociatedSourceCodes.cs" />
+    <Compile Include="GridColumns\SourceCodeDonorTracClientIdentifier.cs" />
+    <Compile Include="GridColumns\SourceCodeOrganization.cs" />
+    <Compile Include="GridColumns\TCSS.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screens.cs" />
+    <Compile Include="SecurityRule.cs" />
+    <Compile Include="WindowsConstant.cs" />
+    <Compile Include="WindowsUiConstant.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="..\Solution Items\Reference\CustomDictionary.xml">
+      <Link>CustomDictionary.xml</Link>
+    </CodeAnalysisDictionary>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Statline\StatTrac\App\Dev\Solution Items\Reference">
+      <Link>StatLine.pfx</Link>
+    </None>
+    <None Include="Migrated rules for Statline.Stattrac.Constant.ruleset" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

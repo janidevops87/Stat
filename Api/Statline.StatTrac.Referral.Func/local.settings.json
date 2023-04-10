@@ -1,0 +1,10 @@
+{
+  // This file contains some configuration for local
+  // runs only, it doesn't get deployed to Azure.
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "NETCORE_ENVIRONMENT": "Development"
+  }
+}

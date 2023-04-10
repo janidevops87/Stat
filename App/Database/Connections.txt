@@ -1,0 +1,4 @@
+DBRefFolders found in your dbp file
+Connect String: Data Source=ST-DEVSQL-1;Initial Catalog=ReferralTest;Integrated Security=True
+Provider: Microsoft SQL Server
+

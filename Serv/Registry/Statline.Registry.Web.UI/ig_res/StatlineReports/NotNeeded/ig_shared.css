@@ -1,0 +1,104 @@
+.ig_StatlineReportsControl
+{
+	font-size:xx-small;
+	font-family: verdana;
+	cursor:default;
+	color:Black;
+}
+
+
+.ig_StatlineReportsItem
+{
+	background-color:White;
+	font-size:10px;
+	font-family: verdana;
+	padding-left:1px;
+	cursor:default;
+}
+
+
+.ig_StatlineReportsButton
+{
+}
+
+
+.ig_StatlineReportsButtonHover
+{
+}
+
+
+.ig_StatlineReportsButtonPressed
+{
+}
+
+
+.ig_StatlineReportsButtonDisabled
+{
+}
+
+
+.ig_StatlineReportsHover
+{
+}
+
+
+.ig_StatlineReportsSelected
+{
+}
+
+
+.ig_StatlineReportsDisabled
+{
+}
+
+
+.ig_StatlineReportsHeader
+{
+}
+
+
+.ig_StatlineReportsFooter
+{
+}
+
+
+.ig_StatlineReportsEditWithButtons
+{
+}
+
+
+.ig_StatlineReportsEdit
+{
+}
+
+
+.ig_StatlineReportsEditInContainer
+{
+}
+
+
+.ig_StatlineReportsAlt
+{
+	border-top:solid 1px #E3EFFF;
+	border-right:solid 0px #FFFFFF;
+	border-bottom:solid 1px #E3EFFF;
+	border-left:solid 0px #FFFFFF;
+}
+
+
+.ig_StatlineReportsDropDown
+{
+}
+
+
+.ig_StatlineReportsEditSelected
+{
+}
+
+
+Body
+{
+	cursor:default;
+}
+
+

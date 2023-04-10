@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ApiResourceSummaryViewModel>
+@{
+    ViewData["Title"] = "API Resources";
+    Layout = "_Layout";
+}
+
+<h2>API Resources</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.DisplayName)</th>
+            <th>@Html.DisplayNameFor(m => m.Name)</th>
+            <th>@Html.DisplayNameFor(m => m.Id)</th>
+            <th class="text-center">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var apiResource in Model)
+        {
+            <tr>
+                <td>@apiResource.DisplayName</td>
+                <td>@apiResource.Name</td>
+                <td>@apiResource.Id</td>
+                <td class="text-center">
+                    <form asp-action="Delete" asp-route-id="@apiResource.Id">
+                        
+                        <a 
+                           asp-action="Edit" 
+                           asp-route-id="@apiResource.Id" 
+                           class="btn btn-sm btn-warning">edit</a>
+
+                        <button type="submit" class="btn btn-sm btn-danger">delete</button>
+                    </form>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Add" class="btn btn-primary">New API Resource</a>

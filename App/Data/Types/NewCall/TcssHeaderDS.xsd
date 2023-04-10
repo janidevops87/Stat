@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TcssHeaderDS" targetNamespace="http://tempuri.org/TcssHeaderDS.xsd" xmlns:mstns="http://tempuri.org/TcssHeaderDS.xsd" xmlns="http://tempuri.org/TcssHeaderDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="_ReferralDev2ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="_ReferralDev2ConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.Stattrac.Data.Types.Properties.Settings.GlobalReference.Default._ReferralDev2ConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TcssHeaderDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TcssHeaderDS" msprop:Generator_DataSetName="TcssHeaderDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TcssHeader" msprop:Generator_UserTableName="TcssHeader" msprop:Generator_RowDeletedName="TcssHeaderRowDeleted" msprop:Generator_RowChangedName="TcssHeaderRowChanged" msprop:Generator_RowClassName="TcssHeaderRow" msprop:Generator_RowChangingName="TcssHeaderRowChanging" msprop:Generator_RowEvArgName="TcssHeaderRowChangeEvent" msprop:Generator_RowEvHandlerName="TcssHeaderRowChangeEventHandler" msprop:Generator_TableClassName="TcssHeaderDataTable" msprop:Generator_TableVarName="tableTcssHeader" msprop:Generator_RowDeletingName="TcssHeaderRowDeleting" msprop:Generator_TablePropName="TcssHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RecipientName" msdata:ReadOnly="true" msprop:Generator_UserColumnName="RecipientName" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnRecipientName" msprop:Generator_ColumnPropNameInTable="RecipientNameColumn" msprop:Generator_ColumnPropNameInRow="RecipientName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SequenceNumber" msprop:Generator_UserColumnName="SequenceNumber" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SequenceNumber" msprop:Generator_ColumnPropNameInTable="SequenceNumberColumn" msprop:Generator_ColumnVarNameInTable="columnSequenceNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="OrganType" msprop:Generator_UserColumnName="OrganType" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="OrganType" msprop:Generator_ColumnPropNameInTable="OrganTypeColumn" msprop:Generator_ColumnVarNameInTable="columnOrganType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourceCode" msprop:Generator_UserColumnName="SourceCode" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SourceCode" msprop:Generator_ColumnPropNameInTable="SourceCodeColumn" msprop:Generator_ColumnVarNameInTable="columnSourceCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Client" msprop:Generator_UserColumnName="Client" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Client" msprop:Generator_ColumnPropNameInTable="ClientColumn" msprop:Generator_ColumnVarNameInTable="columnClient" type="xs:string" minOccurs="0" />
+              <xs:element name="OptnNumber" msprop:Generator_UserColumnName="OptnNumber" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="OptnNumber" msprop:Generator_ColumnPropNameInTable="OptnNumberColumn" msprop:Generator_ColumnVarNameInTable="columnOptnNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MatchId" msprop:Generator_UserColumnName="MatchId" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="MatchId" msprop:Generator_ColumnPropNameInTable="MatchIdColumn" msprop:Generator_ColumnVarNameInTable="columnMatchId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TcssRecipientId" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TcssRecipientId" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TcssRecipientId" msprop:Generator_ColumnPropNameInTable="TcssRecipientIdColumn" msprop:Generator_ColumnVarNameInTable="columnTcssRecipientId" type="xs:string" minOccurs="0" />
+              <xs:element name="UpdatedDateTime" msprop:Generator_UserColumnName="UpdatedDateTime" msprop:Generator_ColumnVarNameInTable="columnUpdatedDateTime" msprop:Generator_ColumnPropNameInRow="UpdatedDateTime" msprop:Generator_ColumnPropNameInTable="UpdatedDateTimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ImportNumber" msprop:Generator_UserColumnName="ImportNumber" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ImportNumber" msprop:Generator_ColumnPropNameInTable="ImportNumberColumn" msprop:Generator_ColumnVarNameInTable="columnImportNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReferralNumber" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ReferralNumber" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ReferralNumber" msprop:Generator_ColumnPropNameInTable="ReferralNumberColumn" msprop:Generator_ColumnVarNameInTable="columnReferralNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="MostRecentStatus" msprop:Generator_UserColumnName="MostRecentStatus" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="MostRecentStatus" msprop:Generator_ColumnPropNameInTable="MostRecentStatusColumn" msprop:Generator_ColumnVarNameInTable="columnMostRecentStatus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

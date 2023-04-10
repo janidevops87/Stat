@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk;Microsoft.NET.Sdk.Publish">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="appsettings.Production.json" />
+    <None Remove="appsettings Test.json" />
+    <None Remove="appsettings.Development.json" />
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appsettings.Test.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>appsettings.json</DependentUpon>
+    </Content>
+    <Content Include="appsettings.Development.json">
+      <DependentUpon>appsettings.json</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="appsettings.Production.json">
+      <DependentUpon>appsettings.json</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="7.0.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.WorkerService" Version="2.21.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.AzureAppServices" Version="7.0.4" />
+    <PackageReference Include="Microsoft.Web.WebJobs.Publish" Version="17.1.361" />
+    <PackageReference Include="Statline.Common.Services.Email.DonorTracApi" Version="1.0.2" />
+    <PackageReference Include="Statline.Extensions.Configuration.KeyVault" Version="4.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Emailer.LegacyBridge.App\Emailer.LegacyBridge.App.csproj" />
+    <ProjectReference Include="..\Emailer.LegacyBridge.Infrastructure\Emailer.LegacyBridge.Infrastructure.csproj" />
+    <ProjectReference Include="..\Emailer.MessageProcessor.App\Emailer.MessageProcessor.App.csproj" />
+    <ProjectReference Include="..\Emailer.MessageProcessor.Infrastructure.MessageSender.EmailService\Emailer.MessageProcessor.Infrastructure.MessageSender.EmailService.csproj" />
+    <ProjectReference Include="..\Emailer.MessageProcessor.Infrastructure\Emailer.MessageProcessor.Infrastructure.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Settings.job">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

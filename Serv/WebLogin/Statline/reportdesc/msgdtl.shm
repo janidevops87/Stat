@@ -1,0 +1,46 @@
+<html>
+
+<head>
+<title>Report Description</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<meta HTTP-EQUIV="EXPIRES" content="0">
+</head>
+
+<body bgcolor="#F5EBDD">
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="575">
+  <tr>
+    <td><font face="Arial" size="4"><b>MESSAGE DETAIL</b></font><font face="Times New Roman"
+    size="3"><p>The Message Detail report is an explanation of the message received word for
+    word. Each message is labeled as a General Message, Recipient Listing or Status Change, or
+    Request For Information (see descriptions above).</p>
+    <p>The top left corner of each message indicates who the message is for, the caller name
+    and organization, and the phone number of the caller. The top right corner of the message
+    indicates the Statline referral number, call date/time, and the Statline Triage
+    Coordinator who took the message. The Message Detail report continues and actually
+    documents the message given to the Statline Triage Coordinator. The message continues and
+    is followed by an event log. The event log tells the process of the message documentation.
+    The event log lists the events that occurred in taking a particular message. The first
+    event of any call will be an <i>incoming call. </i>The name of the organization and the
+    caller will be documented with a description of the event.</p>
+    <p>Other events that may occur during a message are the following:</p>
+    <blockquote>
+      <p><em><strong>Outgoing Call</strong></em> &#150; The Statline Triage Coordinator will
+      place an outgoing call to <font face="Times New Roman" size="3">the appropriate person.</font></p>
+      <p><em><strong>Page Pending</strong></em> &#150; The Statline Triage Coordinator pages the
+      appropriate person <font face="Times New Roman" size="3">to relay the message.</font></p>
+      <p><strong><em>Page Response</em></strong> &#150; The Statline Triage Coordinator receives
+      a response from <font face="Times New Roman" size="3">the page pending event.</font></p>
+      <p><em><strong>No Page Response</strong></em> &#150; The Statline Triage Coordinator
+      documents that a <font face="Times New Roman" size="3">response from the page pending
+      event has not occurred. </font></p>
+      </font>
+    </blockquote>
+    </td>
+  </tr>
+</table>
+</center></div>
+</body>
+</html>
+

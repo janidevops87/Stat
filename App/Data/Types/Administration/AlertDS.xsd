@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AlertDS" targetNamespace="http://Statline.org/AlertDS.xsd" xmlns:mstns="http://Statline.org/AlertDS.xsd" xmlns="http://Statline.org/AlertDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ReferralTestConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ReferralTestConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.Stattrac.Data.Types.Properties.Settings.GlobalReference.Default.ReferralTestConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AlertDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="AlertDS" msprop:Generator_DataSetName="AlertDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Alert" msprop:Generator_UserTableName="Alert" msprop:Generator_RowDeletedName="AlertRowDeleted" msprop:Generator_RowChangedName="AlertRowChanged" msprop:Generator_RowClassName="AlertRow" msprop:Generator_RowChangingName="AlertRowChanging" msprop:Generator_RowEvArgName="AlertRowChangeEvent" msprop:Generator_RowEvHandlerName="AlertRowChangeEventHandler" msprop:Generator_TableClassName="AlertDataTable" msprop:Generator_TableVarName="tableAlert" msprop:Generator_RowDeletingName="AlertRowDeleting" msprop:Generator_TablePropName="Alert">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AlertID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="AlertID" msprop:Generator_ColumnVarNameInTable="columnAlertID" msprop:Generator_ColumnPropNameInRow="AlertID" msprop:Generator_ColumnPropNameInTable="AlertIDColumn" type="xs:int" />
+              <xs:element name="AlertGroupName" msprop:Generator_UserColumnName="AlertGroupName" msprop:Generator_ColumnVarNameInTable="columnAlertGroupName" msprop:Generator_ColumnPropNameInRow="AlertGroupName" msprop:Generator_ColumnPropNameInTable="AlertGroupNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AlertMessage1" msprop:Generator_UserColumnName="AlertMessage1" msprop:Generator_ColumnVarNameInTable="columnAlertMessage1" msprop:Generator_ColumnPropNameInRow="AlertMessage1" msprop:Generator_ColumnPropNameInTable="AlertMessage1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AlertMessage2" msprop:Generator_UserColumnName="AlertMessage2" msprop:Generator_ColumnVarNameInTable="columnAlertMessage2" msprop:Generator_ColumnPropNameInRow="AlertMessage2" msprop:Generator_ColumnPropNameInTable="AlertMessage2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AlertTypeID" msprop:Generator_UserColumnName="AlertTypeID" msprop:Generator_ColumnVarNameInTable="columnAlertTypeID" msprop:Generator_ColumnPropNameInRow="AlertTypeID" msprop:Generator_ColumnPropNameInTable="AlertTypeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AlertLookupCode" msprop:Generator_UserColumnName="AlertLookupCode" msprop:Generator_ColumnVarNameInTable="columnAlertLookupCode" msprop:Generator_ColumnPropNameInRow="AlertLookupCode" msprop:Generator_ColumnPropNameInTable="AlertLookupCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AlertScheduleMessage" msprop:Generator_UserColumnName="AlertScheduleMessage" msprop:Generator_ColumnVarNameInTable="columnAlertScheduleMessage" msprop:Generator_ColumnPropNameInRow="AlertScheduleMessage" msprop:Generator_ColumnPropNameInTable="AlertScheduleMessageColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UpdatedFlag" msprop:Generator_UserColumnName="UpdatedFlag" msprop:Generator_ColumnVarNameInTable="columnUpdatedFlag" msprop:Generator_ColumnPropNameInRow="UpdatedFlag" msprop:Generator_ColumnPropNameInTable="UpdatedFlagColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="AlertQAMessage1" msprop:Generator_UserColumnName="AlertQAMessage1" msprop:Generator_ColumnVarNameInTable="columnAlertQAMessage1" msprop:Generator_ColumnPropNameInRow="AlertQAMessage1" msprop:Generator_ColumnPropNameInTable="AlertQAMessage1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AlertQAMessage2" msprop:Generator_UserColumnName="AlertQAMessage2" msprop:Generator_ColumnVarNameInTable="columnAlertQAMessage2" msprop:Generator_ColumnPropNameInRow="AlertQAMessage2" msprop:Generator_ColumnPropNameInTable="AlertQAMessage2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AlertSourceCode" msprop:Generator_UserTableName="AlertSourceCode" msprop:Generator_RowDeletedName="AlertSourceCodeRowDeleted" msprop:Generator_RowChangedName="AlertSourceCodeRowChanged" msprop:Generator_RowClassName="AlertSourceCodeRow" msprop:Generator_RowChangingName="AlertSourceCodeRowChanging" msprop:Generator_RowEvArgName="AlertSourceCodeRowChangeEvent" msprop:Generator_RowEvHandlerName="AlertSourceCodeRowChangeEventHandler" msprop:Generator_TableClassName="AlertSourceCodeDataTable" msprop:Generator_TableVarName="tableAlertSourceCode" msprop:Generator_RowDeletingName="AlertSourceCodeRowDeleting" msprop:Generator_TablePropName="AlertSourceCode">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AlertSourceCodeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="AlertSourceCodeID" msprop:Generator_ColumnVarNameInTable="columnAlertSourceCodeID" msprop:Generator_ColumnPropNameInRow="AlertSourceCodeID" msprop:Generator_ColumnPropNameInTable="AlertSourceCodeIDColumn" type="xs:int" />
+              <xs:element name="AlertID" msprop:Generator_UserColumnName="AlertID" msprop:Generator_ColumnVarNameInTable="columnAlertID" msprop:Generator_ColumnPropNameInRow="AlertID" msprop:Generator_ColumnPropNameInTable="AlertIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="SourceCodeID" msprop:Generator_UserColumnName="SourceCodeID" msprop:Generator_ColumnVarNameInTable="columnSourceCodeID" msprop:Generator_ColumnPropNameInRow="SourceCodeID" msprop:Generator_ColumnPropNameInTable="SourceCodeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UpdatedFlag" msprop:Generator_UserColumnName="UpdatedFlag" msprop:Generator_ColumnVarNameInTable="columnUpdatedFlag" msprop:Generator_ColumnPropNameInRow="UpdatedFlag" msprop:Generator_ColumnPropNameInTable="UpdatedFlagColumn" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AlertOrganization" msprop:Generator_UserTableName="AlertOrganization" msprop:Generator_RowDeletedName="AlertOrganizationRowDeleted" msprop:Generator_RowChangedName="AlertOrganizationRowChanged" msprop:Generator_RowClassName="AlertOrganizationRow" msprop:Generator_RowChangingName="AlertOrganizationRowChanging" msprop:Generator_RowEvArgName="AlertOrganizationRowChangeEvent" msprop:Generator_RowEvHandlerName="AlertOrganizationRowChangeEventHandler" msprop:Generator_TableClassName="AlertOrganizationDataTable" msprop:Generator_TableVarName="tableAlertOrganization" msprop:Generator_RowDeletingName="AlertOrganizationRowDeleting" msprop:Generator_TablePropName="AlertOrganization">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AlertOrganizationID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="AlertOrganizationID" msprop:Generator_ColumnVarNameInTable="columnAlertOrganizationID" msprop:Generator_ColumnPropNameInRow="AlertOrganizationID" msprop:Generator_ColumnPropNameInTable="AlertOrganizationIDColumn" type="xs:int" />
+              <xs:element name="AlertID" msprop:Generator_UserColumnName="AlertID" msprop:Generator_ColumnVarNameInTable="columnAlertID" msprop:Generator_ColumnPropNameInRow="AlertID" msprop:Generator_ColumnPropNameInTable="AlertIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="OrganizationID" msprop:Generator_UserColumnName="OrganizationID" msprop:Generator_ColumnVarNameInTable="columnOrganizationID" msprop:Generator_ColumnPropNameInRow="OrganizationID" msprop:Generator_ColumnPropNameInTable="OrganizationIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UpdatedFlag" msprop:Generator_UserColumnName="UpdatedFlag" msprop:Generator_ColumnVarNameInTable="columnUpdatedFlag" msprop:Generator_ColumnPropNameInRow="UpdatedFlag" msprop:Generator_ColumnPropNameInTable="UpdatedFlagColumn" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Alert" />
+      <xs:field xpath="mstns:AlertID" />
+    </xs:unique>
+    <xs:unique name="AlertSourceCode_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AlertSourceCode" />
+      <xs:field xpath="mstns:AlertSourceCodeID" />
+    </xs:unique>
+    <xs:unique name="AlertOrganization_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AlertOrganization" />
+      <xs:field xpath="mstns:AlertOrganizationID" />
+    </xs:unique>
+    <xs:keyref name="FK_Alert_AlertOrganization" refer="Constraint1" msprop:rel_Generator_UserRelationName="FK_Alert_AlertOrganization" msprop:rel_Generator_RelationVarName="relationFK_Alert_AlertOrganization" msprop:rel_Generator_UserChildTable="AlertOrganization" msprop:rel_Generator_UserParentTable="Alert" msprop:rel_Generator_ParentPropName="AlertRow" msprop:rel_Generator_ChildPropName="GetAlertOrganizationRows" msdata:DeleteRule="None">
+      <xs:selector xpath=".//mstns:AlertOrganization" />
+      <xs:field xpath="mstns:AlertID" />
+    </xs:keyref>
+    <xs:keyref name="FK_Alert_AlertSourceCode" refer="Constraint1" msprop:rel_Generator_UserRelationName="FK_Alert_AlertSourceCode" msprop:rel_Generator_RelationVarName="relationFK_Alert_AlertSourceCode" msprop:rel_Generator_UserChildTable="AlertSourceCode" msprop:rel_Generator_UserParentTable="Alert" msprop:rel_Generator_ParentPropName="AlertRow" msprop:rel_Generator_ChildPropName="GetAlertSourceCodeRows" msdata:DeleteRule="None">
+      <xs:selector xpath=".//mstns:AlertSourceCode" />
+      <xs:field xpath="mstns:AlertID" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

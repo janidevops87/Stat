@@ -1,0 +1,178 @@
+.igtbl_StatlineReportsControl
+{
+	border:solid 1px #B4B4B4;
+}
+
+
+.igtbl_StatlineReportsPagerArea
+{
+	border-width:0px;
+	padding:15px;
+}
+
+
+.igtbl_StatlineReportsPageCurrent
+{
+	margin-right:10px;
+	color:Gray;
+}
+
+
+.igtbl_StatlineReportsPageLink
+{
+	margin-right:10px;
+	color:Black;
+}
+
+
+.igtbl_StatlineReportsGroupByBox
+{
+}
+
+
+.igtbl_StatlineReportsAddNewBox
+{
+}
+
+
+.igtbl_StatlineReportsItem
+{
+	border-width:0px;
+	border-color:Transparent;
+	border-top:solid 1px WhiteSmoke;
+	border-right:solid 1px WhiteSmoke;
+}
+
+
+.igtbl_StatlineReportsFilterOperandButton
+{
+	background-color:Transparent;
+	background-repeat:no-repeat;
+	background-image: url(images/submit_up.gif);
+	border-width:0px;
+	width: 18px;
+}
+
+
+.igtbl_StatlineReportsAlt
+{
+	background-color:#FCFCFC;
+	border-color:WhiteSmoke;
+	border-top-width:1px;
+}
+
+
+.igtbl_StatlineReportsEdit
+{
+	font-size:xx-small;
+	font-family: Verdana;
+	padding-top:5px;
+}
+
+
+.igtbl_StatlineReportsButton
+{
+}
+
+
+.igtbl_StatlineReportsFxdCell
+{
+}
+
+
+.igtbl_StatlineReportsHeader
+{
+	background-color:Gainsboro;
+	border-width:0px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+
+.igtbl_StatlineReportsFooter
+{
+}
+
+
+.igtbl_StatlineReportsLabel
+{
+	background-color:#F0F0F0;
+	border-top-width:1px;
+	border-top-color:White;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+
+.igtbl_StatlineReportsExpArea
+{
+}
+
+
+.igtbl_StatlineReportsGrpItem
+{
+}
+
+
+.igtbl_StatlineReportsFxdHeader
+{
+}
+
+
+.igtbl_StatlineReportsGroupBandLabel
+{
+}
+
+
+.igtbl_StatlineReportsFxdFooter
+{
+}
+
+
+.igtbl_StatlineReportsDropDown
+{
+	background-color:WhiteSmoke;
+	font-size:xx-small;
+	font-family: Verdana;
+	border:solid 1px LightGrey;
+}
+
+
+.igtbl_StatlineReportsDropDownSel
+{
+}
+
+
+.igtbl_StatlineReportsSelected
+{
+	background-color:#E1E1E1;
+	border-width:1px 0px 0px 0px;
+	border-left-color:#E1E1E1;
+}
+
+
+.igtbl_StatlineReportsActiveBorderTopBottom
+{
+}
+
+
+.igtbl_StatlineReportsActiveBorderLeft
+{
+}
+
+
+.igtbl_StatlineReportsActiveBorderRight
+{
+}
+
+
+.igtbl_StatlineReportsFilterDropDown
+{
+}
+
+
+.igtbl_StatlineReportsFilterOperandDropDown
+{
+}
+
+

@@ -1,0 +1,23 @@
+<div>
+  <div class="row">
+    <div class="col-sm">
+      <label>Last Name:</label>
+      <input class="form-control " type="text" id="LastName"
+             [(ngModel)]="model.LastName" (change)="addtoParameterList()" />
+    </div>
+    <div class="col-sm">
+      <label>File Name:</label>
+      <input class="form-control " type="text" id="FileName"
+             [(ngModel)]="model.FileName" (change)="addtoParameterList()" />
+    </div>
+    <div class="col-sm">
+      <label>Status:</label>
+      <ng-select [(ngModel)]="model.StatusId" id="StatuseId" name="StatusId"
+                 [ngModelOptions]="{standalone: true}"
+                 [items]="statusList" bindLabel="label"
+                 bindValue="value" [selectOnTab]="true" (change)="addtoParameterList()"></ng-select>
+    </div>
+  </div>
+  <!-- hidden field is need to feed back to parent -->
+  <input type="hidden" id="customParameterList" />
+</div>

@@ -1,0 +1,8 @@
+ 	INSERT	ReportParamConfiguration (ReportID, ReportControlID)
+		VALUES(195, 1)
+	INSERT	ReportParamConfiguration (ReportID, ReportControlID)
+		VALUES(195, 2)
+	INSERT	ReportParamConfiguration (ReportID, ReportControlID)
+		VALUES(195, 3)
+	INSERT	ReportParamConfiguration (ReportID, ReportControlID)
+		VALUES(195, 6)

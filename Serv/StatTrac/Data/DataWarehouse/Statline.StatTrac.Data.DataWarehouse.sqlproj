@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+    <PostConversionRemoveFromScc>
+    </PostConversionRemoveFromScc>
+    <PostConversionAddToScc>
+    </PostConversionAddToScc>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <PostUpgradeAddToSCC>;D:\Projects\Statline\StatTrac\Data\DataWarehouse\Statline.StatTrac.Data.DataWarehouse.dbproj;D:\Projects\Statline\StatTrac\Data\DataWarehouse\Connections.txt;D:\Projects\Statline\StatTrac\Data\DataWarehouse\Scripts\Post-Deployment\Script.PostDeployment.sql;D:\Projects\Statline\StatTrac\Data\DataWarehouse\Scripts\Pre-Deployment\Script.PreDeployment.sql</PostUpgradeAddToSCC>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProjectName>SAK</SccProjectName>
+    <PreviousProjectVersion>4.1</PreviousProjectVersion>
+    <UpgradedFromDBP>True</UpgradedFromDBP>
+    <Name>Statline.StatTrac.Data.DataWarehouse</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql100DatabaseSchemaProvider</DSP>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <ShowWizard>False</ShowWizard>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <IncludeSchemaNameInFileName>False</IncludeSchemaNameInFileName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <LoadSqlClrTypes>True</LoadSqlClrTypes>
+    <ValidateCasingOnIdentifiers>False</ValidateCasingOnIdentifiers>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{e8fbb5e4-32c4-430b-907b-2105423b2594}</ProjectGuid>
+    <GenerateDatabaseFile>False</GenerateDatabaseFile>
+    <GenerateCreateScript>False</GenerateCreateScript>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <DefaultSchema>dbo</DefaultSchema>
+    <TargetLanguage>CS</TargetLanguage>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <AnsiNullDefault>True</AnsiNullDefault>
+    <AnsiNulls>True</AnsiNulls>
+    <AnsiPadding>True</AnsiPadding>
+    <AnsiWarnings>True</AnsiWarnings>
+    <ArithAbort>True</ArithAbort>
+    <ConcatNullYieldsNull>True</ConcatNullYieldsNull>
+    <QuotedIdentifier>True</QuotedIdentifier>
+    <NumericRoundAbort>False</NumericRoundAbort>
+    <RecursiveTriggersEnabled>False</RecursiveTriggersEnabled>
+    <DatabaseState>ONLINE</DatabaseState>
+    <UpdateOptions>READ_WRITE</UpdateOptions>
+    <CloseCursorOnCommitEnabled>False</CloseCursorOnCommitEnabled>
+    <DefaultCursor>LOCAL</DefaultCursor>
+    <AutoClose>False</AutoClose>
+    <AutoCreateStatistics>True</AutoCreateStatistics>
+    <AutoShrink>False</AutoShrink>
+    <AutoUpdateStatistics>True</AutoUpdateStatistics>
+    <TornPageDetection>False</TornPageDetection>
+    <DatabaseAccess>MULTI_USER</DatabaseAccess>
+    <Recovery>FULL</Recovery>
+    <EnableFullTextSearch>True</EnableFullTextSearch>
+    <DatabaseChaining>False</DatabaseChaining>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <Trustworthy>False</Trustworthy>
+    <AutoUpdateStatisticsAsynchronously>False</AutoUpdateStatisticsAsynchronously>
+    <PageVerify>NONE</PageVerify>
+    <ServiceBrokerOption>DisableBroker</ServiceBrokerOption>
+    <DateCorrelationOptimizationOn>False</DateCorrelationOptimizationOn>
+    <Parameterization>SIMPLE</Parameterization>
+    <AllowSnapshotIsolation>False</AllowSnapshotIsolation>
+    <ReadCommittedSnapshot>False</ReadCommittedSnapshot>
+    <VardecimalStorageFormatOn>True</VardecimalStorageFormatOn>
+    <SupplementalLoggingOn>False</SupplementalLoggingOn>
+    <DefaultFileStreamFilegroup />
+    <IsChangeTrackingOn>False</IsChangeTrackingOn>
+    <IsChangeTrackingAutoCleanupOn>True</IsChangeTrackingAutoCleanupOn>
+    <ChangeTrackingRetentionPeriod>2</ChangeTrackingRetentionPeriod>
+    <ChangeTrackingRetentionUnit>Days</ChangeTrackingRetentionUnit>
+    <IsEncryptionOn>False</IsEncryptionOn>
+    <IsBrokerPriorityHonored>False</IsBrokerPriorityHonored>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>.\sql\release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetDatabase>
+    </TargetDatabase>
+    <TreatTSqlWarningsAsErrors>False</TreatTSqlWarningsAsErrors>
+    <SuppressTSqlWarnings />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>.\sql\debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetDatabase>
+    </TargetDatabase>
+    <TreatTSqlWarningsAsErrors>False</TreatTSqlWarningsAsErrors>
+    <SuppressTSqlWarnings />
+  </PropertyGroup>
+  <!--Import the settings-->
+  <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" Condition="'$(SQLDBExtensionsRefPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" Condition="'$(SQLDBExtensionsRefPath)' == ''" />
+  <ItemGroup>
+    <Folder Include="Scripts" />
+    <Folder Include="Scripts\Pre-Deployment" />
+    <Folder Include="Scripts\Post-Deployment" />
+    <Folder Include="Data Generation Plans" />
+    <Folder Include="Schema Comparisons" />
+    <Folder Include="Change Scripts\CCRST335" />
+    <Folder Include="Change Scripts\CCRST342" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Schema Objects" />
+    <Folder Include="Schema Objects\Schemas" />
+    <Folder Include="Schema Objects\Schemas\dbo" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Defaults" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Functions" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Rules" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Types CLR" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Table Types" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\XML Schema Collections" />
+    <Folder Include="Schema Objects\Schemas\dbo\Service Broker" />
+    <Folder Include="Schema Objects\Schemas\dbo\Service Broker\Queues" />
+    <Folder Include="Schema Objects\Schemas\dbo\Synonyms" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Constraints" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Indexes" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Keys" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Triggers" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Statistics" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Indexes" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Triggers" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Statistics" />
+    <Folder Include="Schema Objects\Database Level Objects" />
+    <Folder Include="Schema Objects\Database Level Objects\Assemblies" />
+    <Folder Include="Schema Objects\Database Level Objects\Database Triggers" />
+    <Folder Include="Schema Objects\Database Level Objects\Security" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Schemas" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Users" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Certificates" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Asymmetric Keys" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Master Keys" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Signatures" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Symmetric Keys" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Database Encryption Keys" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Database Audit Specification" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\Application Roles" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\Database Roles" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Broker Priorities" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Contracts" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Event Notifications" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Message Types" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Remote Service Binding" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Routes" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Services" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Full Text Stoplists" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Filegroups" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Files" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Full Text Catalogs" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Partition Functions" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Partition Schemes" />
+    <Folder Include="Change Scripts" />
+    <Folder Include="Change Scripts\BillableCountTableChange1-2009" />
+    <Folder Include="Change Scripts\reports" />
+    <Folder Include="Change Scripts\reports\FSConversionRate" />
+    <Folder Include="Change Scripts\reports\NewFolder" />
+    <Folder Include="Create Scripts" />
+    <Folder Include="Create Scripts\reports" />
+    <Folder Include="Create Scripts\reports\FSConversionRate" />
+    <Folder Include="Create Scripts\reports\FSConversionRate\sprocs" />
+    <Folder Include="Create Scripts\reports\FSConversionRate\tables" />
+    <Folder Include="Create Scripts\reports\FSHourly" />
+    <Folder Include="Create Scripts\reports\FSHourly\sprocs" />
+    <Folder Include="Create Scripts\reports\FSHourly\tables" />
+    <Folder Include="Create Scripts\sprocs" />
+    <Folder Include="Create Scripts\tables" />
+    <Folder Include="Create Scripts\udf" />
+    <Folder Include="Create Scripts\views" />
+    <Folder Include="Queries" />
+    <Folder Include="Properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connections.txt" />
+    <None Include="Change Scripts\BillableCountTableChange1-2009\Referral_CallCountSummary.sql" />
+    <None Include="Change Scripts\BillableCountTableChange1-2009\Referral_FSCallCountSummary.sql" />
+    <None Include="Change Scripts\BillableCountTableChange1-2009\Referral_MessageCountSummary.sql" />
+    <None Include="Change Scripts\reports\FSConversionRate\Run spi_FSConversionRate.sql" />
+    <None Include="Create Scripts\reports\FSConversionRate\sprocs\spi_FSConversionRate.sql" />
+    <None Include="Create Scripts\reports\FSConversionRate\sprocs\sps_FSConversionRate.sql" />
+    <None Include="Create Scripts\reports\FSConversionRate\sprocs\SPS_FSConversionRateMatrix.sql" />
+    <None Include="Create Scripts\reports\FSConversionRate\sprocs\sps_FSConversionRateMatrix2.sql" />
+    <None Include="Create Scripts\reports\FSConversionRate\sprocs\SPS_FSConversionRORateMatrix.sql" />
+    <None Include="Create Scripts\reports\FSConversionRate\tables\Referral_FSConversionRateCount table.sql" />
+    <None Include="Create Scripts\reports\FSHourly\sprocs\spi_Referral_FSTypeCount.sql" />
+    <None Include="Create Scripts\reports\FSHourly\sprocs\spi_Referral_FSTypeCount_Archive.sql" />
+    <None Include="Create Scripts\reports\FSHourly\tables\Referral_FSHourlyCount table.sql" />
+    <None Include="Create Scripts\sprocs\SP_CheckInsert.sql" />
+    <None Include="Create Scripts\sprocs\SP_CheckSPI_Run.sql" />
+    <None Include="Create Scripts\sprocs\sp_DataWarehouse_Check.sql" />
+    <None Include="Create Scripts\sprocs\sp_RebuildIndex.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_AgeDemoCount.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_AgeDemoCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_ApproachConsentReasonCount.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_ApproachConsentReasonCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_ApproachCount.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_ApproachCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_ApproachPersonConsentCount.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_ApproachPersonConsentCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_ApproachPersonCount.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_ApproachPersonCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_ApproachReasonCount.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_ApproachReasonCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_AppropriateReasonCount.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_AppropriateReasonCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_AverageAgeCount.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_AverageAgeCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_CallCountSummary.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_CallerPersonCount.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_CallerPersonCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_CMSReport.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_CMSReport_Archive.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_ConsentReasonCount.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_ConsentReasonCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_ConversionReasonCount.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_ConversionReasonCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_FSHourlyCount.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_FSTypeCount.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_FSTypeCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_HospitalReportTimeCount.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_HospitalReportTimeCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_RaceDemoCount.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_RaceDemoCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_TypeCount.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_TypeCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_UnitSummaryCount.sql" />
+    <None Include="Create Scripts\sprocs\sp_Update_Referral_UnitSummaryCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\sp_UpdateStatsLog.sql" />
+    <None Include="Create Scripts\sprocs\spf_GetDayLightDates.sql" />
+    <None Include="Create Scripts\sprocs\spf_tzCase.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_AgeDemoCount.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_AgeDemoCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_ApproachConsentReasonCount.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_ApproachConsentReasonCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_ApproachCount.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_ApproachCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_ApproachPersonConsentCount.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_ApproachPersonConsentCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_ApproachPersonCount.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_ApproachPersonCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_ApproachReasonCount.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_ApproachReasonCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_AppropriateReasonCount.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_AppropriateReasonCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_AverageAgeCount.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_AverageAgeCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_CallCountSummary.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_CallCountSummary_Archive.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_CallerPersonCount.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_CallerPersonCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_CMSReport.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_CMSReport_Archive.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_ConsentReasonCount.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_ConsentReasonCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_ConversionReasonCount.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_ConversionReasonCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_FSCallCountSummary.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_FSCallCountSummary1.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_FSCallCountSummary2.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_FSCallCountSummary2_Archive.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_FSHourlyCount.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_HospitalReportTimeCount.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_HospitalReportTimeCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_MessageCountSummary.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_MessageCountSummary_Archive.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_MultiTypeCount.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_RaceDemoCount.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_RaceDemoCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_TypeCount.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_TypeCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_UnitSummaryCount.sql" />
+    <None Include="Create Scripts\sprocs\spi_Referral_UnitSummaryCount_Archive.sql" />
+    <None Include="Create Scripts\sprocs\sps_AgeDemoSummary_A.sql" />
+    <None Include="Create Scripts\sprocs\sps_ApproachPersonConsentSummary_A.sql" />
+    <None Include="Create Scripts\sprocs\sps_ApproachPersonConsentSummary_B.sql" />
+    <None Include="Create Scripts\sprocs\sps_ApproachPersonConsentSummary_C.sql" />
+    <None Include="Create Scripts\sprocs\sps_ApproachPersonSummary.sql" />
+    <None Include="Create Scripts\sprocs\sps_ApproachPersonSummary_A.sql" />
+    <None Include="Create Scripts\sprocs\sps_ApproachPersonSummary_A_Prod.sql" />
+    <None Include="Create Scripts\sprocs\sps_ApproachPersonSummary_test.sql" />
+    <None Include="Create Scripts\sprocs\sps_ApproachReasonSummary_A.sql" />
+    <None Include="Create Scripts\sprocs\sps_ApproachSummary_A.sql" />
+    <None Include="Create Scripts\sprocs\sps_AppropriateReasonSummary_A.sql" />
+    <None Include="Create Scripts\sprocs\sps_AppropriateRegisteredTotal_A.sql" />
+    <None Include="Create Scripts\sprocs\sps_AppropriateSummary_A.sql" />
+    <None Include="Create Scripts\sprocs\sps_AppropriateTotal_A.sql" />
+    <None Include="Create Scripts\sprocs\sps_AverageAgeSummary_A.sql" />
+    <None Include="Create Scripts\sprocs\sps_CallCountMessageSummary.sql" />
+    <None Include="Create Scripts\sprocs\sps_CallCountMessageSummary1.sql" />
+    <None Include="Create Scripts\sprocs\sps_CallCountSummary_A.sql" />
+    <None Include="Create Scripts\sprocs\sps_CallerPersonSummary_A.sql" />
+    <None Include="Create Scripts\sprocs\sps_ConsentReasonSummary_A.sql" />
+    <None Include="Create Scripts\sprocs\sps_ConsentSummary_A.sql" />
+    <None Include="Create Scripts\sprocs\sps_ConversionReasonSummary_A.sql" />
+    <None Include="Create Scripts\sprocs\sps_CriteriaIndication.sql" />
+    <None Include="Create Scripts\sprocs\sps_FSApproachConsentSummary.sql" />
+    <None Include="Create Scripts\sprocs\sps_FSCallCountSummary_A.sql" />
+    <None Include="Create Scripts\sprocs\sps_FSCallCountSummary_A1.sql" />
+    <None Include="Create Scripts\sprocs\sps_FSCallCountSummary_A2.sql" />
+    <None Include="Create Scripts\sprocs\sps_FSCallCountSummary_A3.sql" />
+    <None Include="Create Scripts\sprocs\sps_FSLogEventCount.sql" />
+    <None Include="Create Scripts\sprocs\sps_GetReportGroupSourceCodeList.sql" />
+    <None Include="Create Scripts\sprocs\sps_GetServerDB.sql" />
+    <None Include="Create Scripts\sprocs\sps_GOLM_ClinicalTriggers.sql" />
+    <None Include="Create Scripts\sprocs\sps_GOLM_UNOS_Monthly.sql" />
+    <None Include="Create Scripts\sprocs\sps_HospitalReportTimeSummary_A.sql" />
+    <None Include="Create Scripts\sprocs\sps_ListDbIndexes.sql" />
+    <None Include="Create Scripts\sprocs\sps_MessageCountSummary_A.sql" />
+    <None Include="Create Scripts\sprocs\sps_MessageCountSummary_B.sql" />
+    <None Include="Create Scripts\sprocs\sps_MessageCountSummary1.sql" />
+    <None Include="Create Scripts\sprocs\sps_MultiTypeCount.sql" />
+    <None Include="Create Scripts\sprocs\sps_NWLEB_1_AllReferrals.sql" />
+    <None Include="Create Scripts\sprocs\sps_NWLEB_1_AllReferrals2.sql" />
+    <None Include="Create Scripts\sprocs\sps_NWLEB_2_PotentialDonors.sql" />
+    <None Include="Create Scripts\sprocs\sps_NWLEB_2_PotentialDonors2.sql" />
+    <None Include="Create Scripts\sprocs\sps_NWLEB_3_TotalConsented.sql" />
+    <None Include="Create Scripts\sprocs\sps_NWLEB_3_TotalConsented2.sql" />
+    <None Include="Create Scripts\sprocs\sps_NWLEB_4_ActualRecovered.sql" />
+    <None Include="Create Scripts\sprocs\sps_NWLEB_4_ActualRecovered2.sql" />
+    <None Include="Create Scripts\sprocs\sps_NWLEB_5_PreReferralApproach.sql" />
+    <None Include="Create Scripts\sprocs\sps_NWLEB_5_PreReferralApproach2.sql" />
+    <None Include="Create Scripts\sprocs\sps_RaceDemoSummary_A.sql" />
+    <None Include="Create Scripts\sprocs\sps_ReasonSummary_A.sql" />
+    <None Include="Create Scripts\sprocs\sps_ReasonSummaryExtended_A.sql" />
+    <None Include="Create Scripts\sprocs\sps_RecoverySummary_A.sql" />
+    <None Include="Create Scripts\sprocs\sps_Referral_CMSReport.sql" />
+    <None Include="Create Scripts\sprocs\sps_ReferralAnalysis.sql" />
+    <None Include="Create Scripts\sprocs\sps_ReferralCallCountSummary.sql" />
+    <None Include="Create Scripts\sprocs\sps_ReferralCompliance.sql" />
+    <None Include="Create Scripts\sprocs\sps_ReferralCompliance2.sql" />
+    <None Include="Create Scripts\sprocs\sps_ReferralCompliance3.sql" />
+    <None Include="Create Scripts\sprocs\sps_ReferralCompliance4.sql" />
+    <None Include="Create Scripts\sprocs\sps_ReferralFSSummary_A.sql" />
+    <None Include="Create Scripts\sprocs\sps_RegistryDonorLookup.sql" />
+    <None Include="Create Scripts\sprocs\sps_RegistryLookup.sql" />
+    <None Include="Create Scripts\sprocs\sps_RegistryLookupCount.sql" />
+    <None Include="Create Scripts\sprocs\sps_ROTotal_A.sql" />
+    <None Include="Create Scripts\sprocs\spu_SpaceUsed.sql" />
+    <None Include="Create Scripts\sprocs\UpdateOrganizationDeaths.sql" />
+    <None Include="Create Scripts\tables\_Table_LastUpdate.sql" />
+    <None Include="Create Scripts\tables\_UpdateStatsLog.sql" />
+    <None Include="Create Scripts\tables\AgeRange.sql" />
+    <None Include="Create Scripts\tables\dbSpace.sql" />
+    <None Include="Create Scripts\tables\HospitalReportTimeRange.sql" />
+    <None Include="Create Scripts\tables\Month.sql" />
+    <None Include="Create Scripts\tables\OrganizationDeaths.sql" />
+    <None Include="Create Scripts\tables\OrganizationSuppliedData.sql" />
+    <None Include="Create Scripts\tables\Referral_AgeDemoCount.sql" />
+    <None Include="Create Scripts\tables\Referral_ApproachCount.sql" />
+    <None Include="Create Scripts\tables\Referral_ApproachPersonConsentCount.sql" />
+    <None Include="Create Scripts\tables\Referral_ApproachPersonCount.sql" />
+    <None Include="Create Scripts\tables\Referral_ApproachPersonReasonCount.sql" />
+    <None Include="Create Scripts\tables\Referral_ApproachReasonCount.sql" />
+    <None Include="Create Scripts\tables\Referral_AppropriateReasonCount.sql" />
+    <None Include="Create Scripts\tables\Referral_AverageAgeCount.sql" />
+    <None Include="Create Scripts\tables\Referral_CallCountSummary.sql" />
+    <None Include="Create Scripts\tables\Referral_CallCountSummarytEMP.sql" />
+    <None Include="Create Scripts\tables\Referral_CallerPersonCount.sql" />
+    <None Include="Create Scripts\tables\Referral_CMSReport.sql" />
+    <None Include="Create Scripts\tables\Referral_ConsentReasonCount.sql" />
+    <None Include="Create Scripts\tables\Referral_ConversionReasonCount.sql" />
+    <None Include="Create Scripts\tables\Referral_FSCallCountSummary.sql" />
+    <None Include="Create Scripts\tables\Referral_FSTypeCount.sql" />
+    <None Include="Create Scripts\tables\Referral_HospitalReportTimeCount.sql" />
+    <None Include="Create Scripts\tables\Referral_MessageCountSummary.sql" />
+    <None Include="Create Scripts\tables\Referral_MultiTypeCount.sql" />
+    <None Include="Create Scripts\tables\Referral_RaceDemoCount.sql" />
+    <None Include="Create Scripts\tables\Referral_TypeCount.sql" />
+    <None Include="Create Scripts\tables\Referral_UnitSummaryCount.sql" />
+    <None Include="Create Scripts\udf\fn_NWLEB_AllReferralsByOrgId.sql" />
+    <None Include="Create Scripts\udf\fn_SumTotalDeaths.sql" />
+    <None Include="Create Scripts\udf\fn_TimeZoneDifference.sql" />
+    <None Include="Create Scripts\udf\fnDataWarehousefn_SourceCodeList.sql" />
+    <None Include="Create Scripts\views\vwDataWarehouseCreationScript.sql" />
+    <None Include="Queries\BillableCountRun_SP_Archive.sql" />
+    <None Include="Create Scripts\views\vwDataWarehouseWebReportGroupSourceCode.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <BuildContributorArgument Include="OutDir=$(OutDir)" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Debug_1.publish.xml" />
+    <None Include="Release_1.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PreDeploy Include="Scripts\Pre-Deployment\Script.PreDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\Post-Deployment\Script.PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Permissions_1.sql" />
+    <None Include="Create Scripts\sprocs\sp_runDataWarehouseSerialUpdate.sql" />
+    <None Include="Change Scripts\CCRST335\Drop_dbo.sps_FSHourlySummary.sql" />
+    <None Include="Create Scripts\reports\sps_AppropriateReferrals.sql" />
+    <None Include="Create Scripts\sprocs\sps_Referral_AgeDemographics.sql" />
+    <None Include="Change Scripts\CCRST342\Recalc Referral_HospitalReportTimeCount.sql" />
+  </ItemGroup>
+</Project>

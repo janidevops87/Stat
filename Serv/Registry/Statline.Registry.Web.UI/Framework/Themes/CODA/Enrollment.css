@@ -1,0 +1,149 @@
+/* Enrollment Styles 
+    Used on the following Forms:
+    1. EnrollmentControl
+    2. ElectronicSignatureControl
+    3. EnrollmentConfirmationControl
+*/
+
+body 
+{
+    background-color: #ffffff;
+}
+
+div.DefaultRectangle 
+{
+    width: 640px; 
+    height: 200px;    
+}
+
+div.RegistryMain
+{
+    clear: left; 
+	float: left; 
+	width: 700px;
+	padding: 5px 0px 2px 0px;
+	background: url(images/bg-paper-interior.jpg) no-repeat 0 0px;
+    font: 12px/1.4 Arial, Helvetica, sans-serif; 
+}
+div.RegistrySection
+{
+    clear: left; 
+	float: left; 
+	width: 700px;
+	padding: 5px 1px 3px 1px;
+}
+div.RegistryNotes
+{
+    clear: left; 
+	float: left; 
+	width: 500px;
+	padding: 2px 0px 2px 0px;
+}
+div.RegistryControlIndent
+{
+    clear: left; 
+	float: left; 
+	width: 700px;
+	margin-left:200px;
+	padding: 2px 0px 2px 0px;
+}
+div.RegistryControlIndentText
+{
+    clear: left; 
+	float: left;
+	/*display: block;*/
+	width: 350px; 
+	margin-left:200px;
+	padding: 2px 0px 2px 0px;
+}
+div.RegistryLabel
+{	
+    clear: left; 
+	float: left; 
+	width: 190px;
+	padding: 2px 0px 2px 0px;
+	text-align: right;
+	margin-right:10px;	
+}
+div.RegistryTextBox
+{
+	float: left; 
+	width: 500px;
+	padding: 2px 0px 2px 0px;
+
+}
+div.RegistryLimitations
+{
+    clear: left; 
+	float: left; 
+	width: 500px;
+	margin-left:25px;	
+}
+div.RegistrySubmit
+{
+    clear: left; 
+	float: left; 
+	width: 500px;
+	text-align: center;	
+	padding: 7px 0px 7px 0px;
+}
+div.RegistrySignatureLabel
+{	
+    clear: left; 
+	float: left; 
+	width: 20%;
+	padding: 2px 30px 2px 30px;
+	text-align: left;
+	margin-right:5px;	
+}
+div.RegistrySignatureValue
+{
+	float: left; 
+	width: 70%;
+	padding: 2px 0px 2px 0px;
+
+}
+
+div.RegistrySignatureEnroll
+{
+    clear: left; 
+	float: left; 
+	text-align: left;
+	width: 100%;	
+	margin-left:25px;	
+	padding: 7px 0px 7px 0px;
+}
+div.RegistryFooter
+{
+    clear: left; 
+	float: left; 
+	width: 100%;
+	padding: 7px 1px 5px 1px;
+	margin-left: 50;
+}
+div.RegistryConfirmation
+{
+   
+    top: 5px; 
+    width: 100%;
+    font-family: Arial; font-size: 10pt;
+    background-color:White;
+    position: relative;
+}
+div.VerificationForm
+{
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+div.SubVerificationForm
+{
+    FONT-SIZE: 9px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+div.RegistryFailureText
+{
+	padding: 7px 5px 5px 1px;
+	margin-left: 5;
+    font-weight: bold;    
+}

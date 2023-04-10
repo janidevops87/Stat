@@ -1,0 +1,34 @@
+<div>
+  <div class="row">
+    <div class="col-sm">
+      <label >From:</label>
+      <ng-select [(ngModel)]="model.StartMonth" id="StartMonth" name="StartMonth"
+                 [ngModelOptions]="{standalone: true}"
+                 [items]="monthList" bindLabel="label" 
+                 bindValue="value" [selectOnTab]="true" (change)="addtoParameterList()"></ng-select>
+    </div>
+    <div class="col-sm">
+      <label>&nbsp;</label>
+      <ng-select [(ngModel)]="model.StartYear" id="StartYear" name="StartYear"
+                 [ngModelOptions]="{standalone: true}"
+                 [items]="yearList" bindLabel="label" 
+                 bindValue="value" [selectOnTab]="true" (change)="addtoParameterList()"></ng-select>
+    </div>
+    <div class="col-sm">
+      <label>To:</label>
+      <ng-select [(ngModel)]="model.EndMonth" id="EndMonth" name="EndMonth"
+                 [ngModelOptions]="{standalone: true}"
+                 [items]="monthList" bindLabel="label" 
+                 bindValue="value" [selectOnTab]="true"  (change)="addtoParameterList()"></ng-select>
+    </div>
+    <div class="col-sm">
+      <label>&nbsp;</label>
+      <ng-select [(ngModel)]="model.EndYear" id="EndYear" name="EndYear"
+                 [ngModelOptions]="{standalone: true}"
+                 [items]="yearList" bindLabel="label"
+                 bindValue="value" [selectOnTab]="true"  (change)="addtoParameterList()"></ng-select>
+    </div>
+  </div>
+  <!-- hidden field is need to feed back to parent -->
+  <input type="hidden" id="customParameterList" />
+</div>

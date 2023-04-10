@@ -1,0 +1,180 @@
+/* Enrollment Styles 
+    Used on the following Forms:
+    1. EnrollmentControl
+    2. ElectronicSignatureControl
+    3. EnrollmentConfirmationControl
+
+#ft { position: relative; background: #9bb6a9 url(images/footer-bg.png) repeat-x 0 0; clear: both; width: 100%; height: 200px; font: 11px/1.4 Arial, Helvetica, sans-serif; }
+#ft .wrapper { background: url(images/footer-border.png) no-repeat top center; }
+#ft .inner { width: 550px; min-height: 75px; margin-left: 25px; }
+#ft a { color: #087648; text-decoration: none; }
+#ft .copyright { float: left; margin: 28px 0 0 0; padding: 0 0 0 35px; color: #ffffff; background: url(images/logo-donate-life.png) no-repeat 0 0; }
+*/
+
+body 
+{
+    background-color: #ffffff;
+}
+
+h1 {}
+h2 { font: normal 18px/1.3 Arial, Helvetica, sans-serif; clear: left; color: #087648; }
+
+
+div.MiopFooter {
+    text-align: center;
+}
+
+div.MiopRectangle {
+    width: 640px;
+    height: 300px;
+    padding: 25px;
+    border-color: black;
+    border-style: double;
+    border-width: 2px;
+    margin: 25px;  
+}
+
+div.MiopLimitations {
+   top: 180; 
+   left:200;
+}
+
+div.DefaultRectangle 
+{
+    width: 640px; 
+    height: 200px;    
+}
+
+div.DefaultLimitations 
+{
+    top: 150; 
+    left:16;  
+}
+
+div.RegistryMain
+{
+    clear: left; 
+	float: left; 
+	width: 700px;
+	padding: 5px 0px 2px 0px;
+	background: url(images/bg-paper-interior.jpg) no-repeat 0 0px;
+    font: 12px/1.4 Arial, Helvetica, sans-serif; 
+}
+div.RegistrySection
+{
+    clear: left; 
+	float: left; 
+	width: 700px;
+	padding: 7px 1px 0px 1px;
+	margin-left: 50;
+}
+div.RegistryNotes
+{
+    clear: left; 
+	float: left; 
+	width: 500px;
+	padding: 0px 0px 0px 0px;
+	margin-left: 50;
+}
+div.RegistryControlIndent
+{
+    clear: left; 
+	float: left; 
+	width: 700px;
+	margin-left:200px;
+	padding: 0px 0px 3px 0px;
+}
+div.RegistryLabel
+{	
+    clear: left; 
+	float: left; 
+	width: 190px;
+	padding: 0px 0px 5px 0px;
+	text-align: right;
+	margin-right:10px;	
+}
+div.RegistryTextBox
+{
+	float: left; 
+	width: 500px;
+	padding: 0px 0px 5px 0px;
+
+}
+div.RegistryLimitations
+{
+    clear: left; 
+	float: left; 
+	width: 500px;
+	margin-left:25px;	
+}
+div.RegistrySubmit
+{
+    clear: left; 
+	float: left; 
+	width: 550px;
+	text-align: left;	
+	padding: 7px 0px 7px 0px;
+	margin-left: 50;
+
+}
+div.RegistrySignatureMain
+{
+    clear: left; 
+	float: left; 
+	width: 100%;
+	padding: 50px 0px 0px 0px;
+}
+div.RegistrySignatureLabel
+{	
+    clear: left; 
+	float: left; 
+	width: 25%;
+	padding: 2px 0px 2px 0px;
+	text-align: right;
+	margin-right:10px;	
+}
+div.RegistrySignatureValue
+{
+	float: left; 
+	width: 70%;
+	padding: 2px 0px 2px 0px;
+
+}
+div.RegistrySignatureEnroll
+{
+    clear: left; 
+	float: left; 
+	text-align: left;
+	width: 100%;		
+	margin-left:25px;
+	padding: 7px 0px 50px 0px;
+}
+div.RegistryConfirmationMain
+{  
+    width: 100%;
+    margin-top: 70px;
+   	margin-left: 40px;
+}
+div.RegistryConfirmationtText
+{
+    clear: left; 
+	float: left; 
+	padding: 7px 5px 5px 1px;
+	margin-left: 150;
+}
+
+div.RegistryFooter
+{
+    clear: left; 
+	float: left; 
+	width: 100%;
+	padding: 7px 1px 5px 1px;
+	margin-left: 50;
+}
+div.RegistryFailureText
+{
+	padding: 7px 5px 5px 1px;
+	margin-left: 5;
+    font-weight: bold;     
+}
+

@@ -1,0 +1,15 @@
+<div>
+  <div class="row" style="margin: 15px 0 0 0;">
+    <div class="col-sm">
+      <label>Search Back:</label>
+      <div class="input-group" style="width:300px;">
+        <input class="form-control " type="text" id="hoursBack"
+               [(ngModel)]="model.hoursBack" style="width:300px;"
+               (change)="addtoParameterList()" />
+        <label style="margin: 5px 10px 0px 0px;padding-left:3px;display:inline;">hours</label>
+      </div>
+    </div>
+  </div>
+  <!-- hidden field is need to feed back to parent -->
+  <input type="hidden" id="customParameterList" />
+</div>

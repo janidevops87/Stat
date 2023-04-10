@@ -1,0 +1,72 @@
+name: StApi-$(Build.SourceBranchName)-Build.$(Build.BuildId)-$(date:yyyy.MM.dd.HH.mm.ss)
+
+pool: SH SQLAccess
+
+variables:
+  solution: 'Api/Statline.StatTrac.Api.sln'
+  buildPlatform: 'Any CPU'
+
+steps:
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '6.x'
+
+# - task: NuGetToolInstaller@1
+#   inputs:
+#     versionSpec: '5.8.x'
+
+# - task: NuGetCommand@2
+#   inputs:
+#     command: 'restore'
+#     restoreSolution: '$(solution)'
+#     feedsToUse: 'select'
+#     vstsFeed: 'bd87882d-d5e1-413b-8406-980648182e7a/9c9ec374-3a32-4446-b5c7-17b4b2551f35'
+  
+- task: DotNetCoreCLI@2
+  displayName: dotnet restore
+  inputs:
+    command: restore
+    # projects: 'Api/**/*.csproj'
+    projects: |
+      Api/**/*.csproj
+      !Api/**/Statline.StatTrac.Api.UI.csproj
+    feedsToUse: 'select'
+    vstsFeed: 'bd87882d-d5e1-413b-8406-980648182e7a/9c9ec374-3a32-4446-b5c7-17b4b2551f35'
+
+- task: VSBuild@1
+  inputs:
+    solution: '$(solution)'
+    msbuildArgs: '/target:Statline_StatTrac_Api /p:DeployOnBuild=true /p:WebPublishMethod=Package /p:OutputPath="$(Build.SourcesDirectory)\DeepDir"'
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+
+- task: ExtractFiles@1
+  inputs:
+    archiveFilePatterns: '$(Build.SourcesDirectory)\DeepDir\Statline.StatTrac.Api.zip'
+    destinationFolder: '$(Build.SourcesDirectory)\DeepDir\StApi'
+    cleanDestinationFolder: true
+    overwriteExistingFiles: false
+
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      $folderToMove = "StApi"
+      
+      $fullFolder = Get-ChildItem -Directory -Path "$(Build.SourcesDirectory)\DeepDir\$folderToMove\" -Include 'Out' -Recurse
+          
+      Move-Item -Path $fullFolder.FullName -Destination "$(Build.SourcesDirectory)\ToPublish\"
+
+- task: ArchiveFiles@2
+  displayName: Archive $(Build.SourcesDirectory)\ToPublish
+  inputs:
+    rootFolderOrFile: $(Build.SourcesDirectory)\ToPublish
+    includeRootFolder: false
+    archiveFile: $(Build.ArtifactStagingDirectory)/StApi-$(Build.BuildId).zip
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'

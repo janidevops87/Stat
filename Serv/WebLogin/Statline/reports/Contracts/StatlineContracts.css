@@ -1,0 +1,82 @@
+BODY
+{
+}
+.SideBarData
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Arial, 'MS Sans Serif';
+    TEXT-ALIGN: left
+}
+.SideBarHeading
+{
+    BORDER-RIGHT: black;
+    PADDING-RIGHT: 0pt;
+    BORDER-TOP: black;
+    PADDING-LEFT: 0pt;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    PADDING-BOTTOM: 0pt;
+    MARGIN: 0pt;
+    BORDER-LEFT: black;
+    PADDING-TOP: 0pt;
+    BORDER-BOTTOM: black;
+    FONT-FAMILY: Arial, 'MS Sans Serif';
+    BACKGROUND-COLOR: lightgrey;
+    TEXT-ALIGN: left
+}
+.DataHeading
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Arial, 'MS Sans Serif';
+    BACKGROUND-COLOR: lightgrey;
+    TEXT-ALIGN: left
+}
+.DataHeadingNumber
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Arial, 'MS Sans Serif';
+    BACKGROUND-COLOR: lightgrey;
+    TEXT-ALIGN: right
+}
+.DataCell
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Arial, 'MS Sans Serif';
+    BACKGROUND-COLOR: #efe5d7;
+    TEXT-ALIGN: left
+}
+.PageTitle
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 14pt;
+    FONT-FAMILY: Arial, 'MS Sans Serif';
+    TEXT-ALIGN: left
+}
+.DataTable
+{
+    BORDER-RIGHT: black 2px solid;
+    PADDING-RIGHT: 0px;
+    BORDER-TOP: black 2px solid;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    BORDER-LEFT: black 2px solid;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: black 2px solid;
+    BACKGROUND-COLOR: #f0f0f0;
+    TEXT-ALIGN: left
+}
+.PageTitle2
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: Arial, 'MS Sans Serif'
+}
+.DataCellNumber
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Arial, 'MS Sans Serif';
+    BACKGROUND-COLOR: #efe5d7;
+    TEXT-ALIGN: right
+}

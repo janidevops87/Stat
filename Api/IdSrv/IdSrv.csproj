@@ -1,0 +1,101 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>Statline.IdentityServer</AssemblyName>
+    <RootNamespace>Statline.IdentityServer</RootNamespace>
+    <UserSecretsId>01596ba5-06bd-4a68-958a-ea06b299cfe3</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="3.1.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="3.1.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.15">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" PrivateAssets="All" />
+    <PackageReference Include="AutoMapper.Collection" Version="6.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="IdentityServer4" Version="3.1.4" />
+    <PackageReference Include="IdentityServer4.AspNetIdentity" Version="3.1.4" />
+    <PackageReference Include="IdentityServer4.EntityFramework" Version="3.1.4" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="4.1.0" />
+    <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.1.113" />
+    <PackageReference Include="Statline.Common" Version="1.0.10" />
+    <PackageReference Include="Statline.Extensions.Configuration" Version="3.1.0" />
+    <PackageReference Include="Statline.Extensions.Configuration.KeyVault" Version="3.1.1" />
+    <PackageReference Include="Statline.Extensions.Logging.Email" Version="3.2.0" />
+    <PackageReference Include="WebApiContrib.Core" Version="2.2.1" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Content Remove="package-lock.json" />
+    <Content Remove="package.json" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="package-lock.json" />
+    <None Include="package.json" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="package-lock.json">
+      <DependentUpon>package.json</DependentUpon>
+    </None>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\IdSrv.IdentityAndAccess.App\IdSrv.IdentityAndAccess.App.csproj" />
+    <ProjectReference Include="..\IdSrv.IdentityAndAccess.Domain\IdSrv.IdentityAndAccess.Domain.csproj" />
+    <ProjectReference Include="..\IdSrv.IdentityAndAccess.Infrastructure\IdSrv.IdentityAndAccess.Infrastructure.csproj" />
+    <ProjectReference Include="..\IdSrv.IdentityServerConfig.App\IdSrv.IdentityServerConfig.App.csproj" />
+    <ProjectReference Include="..\IdSrv.IdentityServerConfig.Domain\IdSrv.IdentityServerConfig.Domain.csproj" />
+    <ProjectReference Include="..\IdSrv.IdentityServerConfig.Infrastructure\IdSrv.IdentityServerConfig.Infrastructure.csproj" />
+    <ProjectReference Include="..\Statline.Statrac.IdSrvIntegration\Statline.Statrac.IdSrvIntegration.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Content Update="appsettings.Development.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="appsettings.Test.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Features\Home\Partial\UserProperties.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Features\Home\Partial\KeyValueList.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Features\Home\Partial\ClaimList.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Features\Home\_ViewImports.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="wwwroot\css\" />
+  </ItemGroup>
+  
+  <Target Name="FrontentPrecompileTagret" BeforeTargets="Build">
+    <Exec Command="gulp" />
+  </Target>
+  
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1Development_1json__JSONSchema="" _1bowerrc__JSONSchema="" /></VisualStudio></ProjectExtensions>
+  
+</Project>

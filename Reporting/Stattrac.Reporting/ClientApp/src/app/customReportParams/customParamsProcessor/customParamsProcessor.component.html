@@ -1,0 +1,13 @@
+<div>
+  <div class="row">
+    <div class="col-sm">
+      <label>Processor:</label>
+      <ng-select [(ngModel)]="model.ProcessorType" id="ProcessorType" name="ProcessorType"
+                 [ngModelOptions]="{standalone: true}"
+                 [items]="processorList" bindLabel="label"
+                 bindValue="value" [selectOnTab]="true" (change)="addtoParameterList()"></ng-select>
+    </div>
+  </div>
+  <!-- hidden field is need to feed back to parent -->
+  <input type="hidden" id="customParameterList" />
+</div>

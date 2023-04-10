@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "EOD Processor": {
+      "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "TestLocal"
+      }
+    }
+  }
+}

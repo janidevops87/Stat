@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TcssDuplicateReferalsDS" targetNamespace="http://tempuri.org/TcssDuplicateReferalsDS.xsd" xmlns:mstns="http://tempuri.org/TcssDuplicateReferalsDS.xsd" xmlns="http://tempuri.org/TcssDuplicateReferalsDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ReferralTestConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ReferralTestConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.Stattrac.Data.Types.Properties.Settings.GlobalReference.Default.ReferralTestConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TcssDuplicateReferalsDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TcssDuplicateReferalsDS" msprop:Generator_DataSetName="TcssDuplicateReferalsDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TcssDuplicateReferals" msprop:Generator_UserTableName="TcssDuplicateReferals" msprop:Generator_RowDeletedName="TcssDuplicateReferalsRowDeleted" msprop:Generator_TableClassName="TcssDuplicateReferalsDataTable" msprop:Generator_RowChangedName="TcssDuplicateReferalsRowChanged" msprop:Generator_RowClassName="TcssDuplicateReferalsRow" msprop:Generator_RowChangingName="TcssDuplicateReferalsRowChanging" msprop:Generator_RowEvArgName="TcssDuplicateReferalsRowChangeEvent" msprop:Generator_RowEvHandlerName="TcssDuplicateReferalsRowChangeEventHandler" msprop:Generator_TablePropName="TcssDuplicateReferals" msprop:Generator_TableVarName="tableTcssDuplicateReferals" msprop:Generator_RowDeletingName="TcssDuplicateReferalsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CallId" msprop:Generator_UserColumnName="CallId" msprop:Generator_ColumnPropNameInRow="CallId" msprop:Generator_ColumnVarNameInTable="columnCallId" msprop:Generator_ColumnPropNameInTable="CallIdColumn" type="xs:int" />
+              <xs:element name="TcssDonorId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="TcssDonorId" msprop:Generator_ColumnPropNameInRow="TcssDonorId" msprop:Generator_ColumnVarNameInTable="columnTcssDonorId" msprop:Generator_ColumnPropNameInTable="TcssDonorIdColumn" type="xs:int" />
+              <xs:element name="TcssRecipientId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="TcssRecipientId" msprop:Generator_ColumnPropNameInRow="TcssRecipientId" msprop:Generator_ColumnVarNameInTable="columnTcssRecipientId" msprop:Generator_ColumnPropNameInTable="TcssRecipientIdColumn" type="xs:int" />
+              <xs:element name="LastUpdateDate" msprop:Generator_UserColumnName="LastUpdateDate" msprop:Generator_ColumnPropNameInRow="LastUpdateDate" msprop:Generator_ColumnVarNameInTable="columnLastUpdateDate" msprop:Generator_ColumnPropNameInTable="LastUpdateDateColumn" type="xs:dateTime" />
+              <xs:element name="ImportOfferNumber" msprop:Generator_UserColumnName="ImportOfferNumber" msprop:Generator_ColumnPropNameInRow="ImportOfferNumber" msprop:Generator_ColumnVarNameInTable="columnImportOfferNumber" msprop:Generator_ColumnPropNameInTable="ImportOfferNumberColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReferralNumber" msprop:Generator_UserColumnName="ReferralNumber" msprop:Generator_ColumnPropNameInRow="ReferralNumber" msprop:Generator_ColumnVarNameInTable="columnReferralNumber" msprop:Generator_ColumnPropNameInTable="ReferralNumberColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="SourceCodeName" msprop:Generator_UserColumnName="SourceCodeName" msprop:Generator_ColumnPropNameInRow="SourceCodeName" msprop:Generator_ColumnVarNameInTable="columnSourceCodeName" msprop:Generator_ColumnPropNameInTable="SourceCodeNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Client" msprop:Generator_UserColumnName="Client" msprop:Generator_ColumnPropNameInRow="Client" msprop:Generator_ColumnVarNameInTable="columnClient" msprop:Generator_ColumnPropNameInTable="ClientColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MostRecentStatus" msprop:Generator_UserColumnName="MostRecentStatus" msprop:Generator_ColumnPropNameInRow="MostRecentStatus" msprop:Generator_ColumnVarNameInTable="columnMostRecentStatus" msprop:Generator_ColumnPropNameInTable="MostRecentStatusColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

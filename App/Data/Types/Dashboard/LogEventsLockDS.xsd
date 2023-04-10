@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LogEventsLockDS" targetNamespace="http://tempuri.org/LogEventsLockDS.xsd" xmlns:mstns="http://tempuri.org/LogEventsLockDS.xsd" xmlns="http://tempuri.org/LogEventsLockDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ReferralTestConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ReferralTestConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.Stattrac.Data.Types.Properties.Settings.GlobalReference.Default.ReferralTestConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LogEventsLockDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="LogEventsLockDS" msprop:Generator_DataSetName="LogEventsLockDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LogEventLock" msprop:Generator_UserTableName="LogEventLock" msprop:Generator_RowDeletedName="LogEventLockRowDeleted" msprop:Generator_RowChangedName="LogEventLockRowChanged" msprop:Generator_RowClassName="LogEventLockRow" msprop:Generator_RowChangingName="LogEventLockRowChanging" msprop:Generator_RowEvArgName="LogEventLockRowChangeEvent" msprop:Generator_RowEvHandlerName="LogEventLockRowChangeEventHandler" msprop:Generator_TableClassName="LogEventLockDataTable" msprop:Generator_TableVarName="tableLogEventLock" msprop:Generator_RowDeletingName="LogEventLockRowDeleting" msprop:Generator_TablePropName="LogEventLock">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CallID" msprop:Generator_UserColumnName="CallID" msprop:Generator_ColumnPropNameInRow="CallID" msprop:Generator_ColumnVarNameInTable="columnCallID" msprop:Generator_ColumnPropNameInTable="CallIDColumn" type="xs:int" />
+              <xs:element name="OrganizationID" msdata:ReadOnly="true" msprop:Generator_UserColumnName="OrganizationID" msprop:Generator_ColumnVarNameInTable="columnOrganizationID" msprop:Generator_ColumnPropNameInRow="OrganizationID" msprop:Generator_ColumnPropNameInTable="OrganizationIDColumn" type="xs:int" />
+              <xs:element name="LogEventOrg" msdata:ReadOnly="true" msprop:Generator_UserColumnName="LogEventOrg" msprop:Generator_ColumnVarNameInTable="columnLogEventOrg" msprop:Generator_ColumnPropNameInRow="LogEventOrg" msprop:Generator_ColumnPropNameInTable="LogEventOrgColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StatEmployeeID" msprop:Generator_UserColumnName="StatEmployeeID" msprop:Generator_ColumnPropNameInRow="StatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnStatEmployeeID" msprop:Generator_ColumnPropNameInTable="StatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LogEventID" msprop:Generator_UserColumnName="LogEventID" msprop:Generator_ColumnPropNameInRow="LogEventID" msprop:Generator_ColumnVarNameInTable="columnLogEventID" msprop:Generator_ColumnPropNameInTable="LogEventIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

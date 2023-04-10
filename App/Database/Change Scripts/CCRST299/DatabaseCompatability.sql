@@ -1,0 +1,6 @@
+﻿
+
+
+ALTER DATABASE _ReferralProd
+SET COMPATIBILITY_LEVEL = 140;
+GO

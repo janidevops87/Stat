@@ -1,0 +1,23 @@
+
+
+IF NOT EXISTS (SELECT * FROM syscolumns WHERE name = 'ReportDateTypeConfigurationIsDefault')
+	BEGIN
+		PRINT 'Altering Table, adding column ReportDateTypeConfigurationIsDefault'
+		BEGIN TRANSACTION
+		SET QUOTED_IDENTIFIER ON
+		SET TRANSACTION ISOLATION LEVEL SERIALIZABLE
+		SET ARITHABORT ON
+		SET NUMERIC_ROUNDABORT OFF
+		SET CONCAT_NULL_YIELDS_NULL ON
+		SET ANSI_NULLS ON
+		SET ANSI_PADDING ON
+		SET ANSI_WARNINGS ON
+		COMMIT
+		BEGIN TRANSACTION
+		ALTER TABLE dbo.ReportDateTypeConfiguration ADD
+			ReportDateTypeConfigurationIsDefault bit NULL
+		
+		COMMIT
+
+	END
+GO

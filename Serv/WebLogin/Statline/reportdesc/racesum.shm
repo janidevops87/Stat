@@ -1,0 +1,66 @@
+<html>
+
+<head>
+<title>Report Description</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<meta HTTP-EQUIV="EXPIRES" content="0">
+</head>
+
+<body bgcolor="#F5EBDD">
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="575">
+  <tr>
+    <td><font face="Times New Roman"><u><b></u></font><strong><font face="Arial" size="4">RACE
+    DEMOGRAPHICS</b></font></strong>
+    
+    <!--
+    <font face="Times New Roman" size="3"><i><p>What can this
+    report do for you?</i></p>
+    <div align="center"><center><table border="0" cellpadding="0" cellspacing="0" width="75%">
+      <tr>
+        <td width="5%" valign="top">1.</td>
+        <td width="50%">Identify the referral race demographics for a specific hospital or region.</td>
+      </tr>
+      <tr>
+        <td width="5%" valign="top">2.</td>
+        <td width="50%">Identify the number of appropriate, approached, consented, and recovered
+        referrals by race and gender for a specific hospital or region.</td>
+      </tr>
+      <tr>
+        <td width="5%" valign="top">3.</td>
+        <td width="50%"><font size="3"><font face="Times New Roman"></font></font>Identify the
+        consent rates by race and gender for appropriate donation options.<font size="3"><font
+        face="Times New Roman"></font></font></td>
+      </tr>
+    </table>
+    </center></div><p>The Race Demographics report is a summary of referrals by race and
+    gender for a particular referring facility or region. The report is divided into two
+    sections, Male and Female. The Male portion is on the top half of the report and the
+    Female portion is located on the bottom half of the report. The report can be printed to
+    give numbers or percentages (see examples).</p>
+    <p>Each section has four columns labeled Male or Female, # of Total Referrals (the number
+    of referral calls that Statline took), Appropriate (donation options that are appropriate
+    according to the criteria received from the recovery agency), Approach (specific options
+    that were approached for donation), Consent (specific options that the next of kin
+    consented to for donation), and Recovery (specific options that were recovered for
+    transplant or research). Once again the Appropriate, Approach, Consent and Recovery
+    columns are subdivided into specific option types (O for organs, B for bone, ST for soft
+    tissue, SK for skin, HV for heart valves, and E for eyes).</p>
+    <p>The race is listed under the Male or Female column (ex: Caucasian, Hispanic, Native
+    American). The second column is the total number of referrals for the specific race. The
+    report continues to guide you through the number of appropriate, approached, consented and
+    recovered referrals for each race category. At the bottom of each section, the columns are
+    totaled.</font>--></td>
+  </tr>
+</table>
+</center></div>
+This report enables the user to identify the number of organ, tissue and eye appropriate referrals 
+by race for a specific hospital or service area.<p>
+		
+The Race Demographics report is a summary of referrals by race and gender for a particular referring 
+facility or region. The report is divided into two sections, Male and Female. The Male portion is on 
+the top half of the report and the Female portion is located on the bottom half of the report.
+
+</body>
+</html>

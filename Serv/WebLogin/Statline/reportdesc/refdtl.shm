@@ -1,0 +1,260 @@
+<html>
+
+<head>
+<title>Report Description</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<meta HTTP-EQUIV="EXPIRES" content="0">
+</head>
+
+<body bgcolor="#F5EBDD">
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="575">
+  <tr>
+    <td><strong><font face="Arial" size="4"><b>REFERRAL DETAIL</b></font></strong><font
+    face="Times New Roman" size="3"><p>The Referral Detail Report is an explanation of the
+    donor referral call. The report is divided into five sections, <i>Caller Information,
+    Patient Information, Approach Information, Options <font face="Times New Roman" size="3"><font
+    face="Times New Roman" size="3">and Event Log Information. </i>Each Referral Detail Report
+    will indicate the Statline referral call number, call date/time, referral type, the
+    Statline Triage Coordinator and the status of the referral.</font></font></p>
+    <p>The Referral Detail Report documents the actual phone call. <b>The information obtained
+    during the referral call depends on the service level that was chosen to meet your
+    organization&#146;s needs.</b><u><i></p>
+    <p></i><strong>Caller Information</u></strong><br>
+    <font face="Times New Roman" size="3">The caller&#146;s first and last name, title and
+    sub-location (ex: ER, SICU, OR) will be documented. The organization and phone number
+    (with area code) is documented in this section as well.</font></p>
+    <u><i><p></i><strong>Patient Information</u></strong><br>
+    <font face="Times New Roman" size="3">This section documents the patient demographic
+    information. The information is straight forward and documents the patient name, admit
+    date to the hospital, gender, age, weight, race, medical record number, ventilator status,
+    declaration of death including date and cause of death, case history and past medical
+    history (if known at the time of the call). If specific questions were customized for the
+    region, positive answers will be documented in the medical information section. </font></p>
+    <u><i><p></i><strong>Approach Information</u></strong><br>
+    <font face="Times New Roman" size="3">If Statline tracks approach information, this is the
+    section that will document the information received from the caller. This section will
+    indicate if an approach was done. If an approach was done, the name of who approached the
+    family will be documented. Two different types of approaches will be documented. If the
+    family was approached about donation options <i>before</i> calling Statline for the
+    appropriate options, the approach will be labeled Pre-Referral. If the family was
+    approached about donation options <i>after</i> calling Statline for the appropriate
+    options, the approach will be labeled Post- Referral. The approach will also be described
+    as either a coupled or a decoupled approach. A coupled approach is defined as a discussion
+    of death and offering the option of donation at the same time and if the family has not
+    come to terms with the death. A decoupled approach is defined as a discussion of death
+    separate from a discussion of donation options and the family has come to terms with the
+    death. The coupled and decoupled approaches will be documented with the Pre and Post
+    Referral status.</font></p>
+    <p>The next of kin, relationship and phone number will be documented in this section if
+    this information is available from the caller.</p>
+    <u><i><p></i><strong>Options</u></strong><br>
+    <font face="Times New Roman" size="3">This section will track what donation options are
+    appropriate according to the criteria (age and medical) the customer defines. Approach
+    information will be tracked for each donation option. Consent and recovery information is
+    tracked in this section for each appropriate donation option. The reasons why options were
+    not appropriate, not approached, not consented, and not recovered are listed below:</font></p>
+    <div align="center"><center><table border="0" cellpadding="0" cellspacing="0" width="75%">
+      <font face="Times New Roman" size="3">
+      <tr>
+        <font face="Times New Roman" size="3"><td width="10%" colspan="2"><em>Not Appropriate:</font></em></td>
+        </font>
+      </tr>
+      <font face="Times New Roman" size="3">
+      <tr>
+        <font face="Times New Roman" size="3"><font face="Times New Roman" size="3"><td width="6%"><font
+        face="Times New Roman" size="3">1.</font></font></font></td>
+        <td width="54%"></font>Age<font face="Times New Roman" size="3"></font></td>
+        </font>
+      </tr>
+      <tr>
+        <td width="6%"><font face="Times New Roman" size="3">2.</font></td>
+        <td width="54%">High Risk<font face="Times New Roman" size="3"></font></td>
+      </tr>
+      <tr>
+        <td width="6%"><font face="Times New Roman" size="3">3.</font></td>
+        <td width="54%">Medical Rule-out (Med RO)<font face="Times New Roman" size="3"></font></td>
+      </tr>
+      <tr>
+        <td width="6%">4.</td>
+        <td width="54%">Not Appropriate </td>
+      </tr>
+      <tr>
+        <td width="6%">5.</td>
+        <td width="54%">Previous Vent </td>
+      </tr>
+      <tr>
+        <td width="6%"></td>
+        <td width="54%"></td>
+      </tr>
+    </table>
+    </center></div><div align="center"><center><table border="0" cellpadding="0"
+    cellspacing="0" width="75%">
+      <tr>
+        <font face="Times New Roman" size="3"><td width="10%" colspan="2"><em>Not Approached:</font></em></td>
+      </tr>
+      <tr>
+        <font face="Times New Roman" size="3"><td width="9%">1.</font></td>
+        <td width="84%">Unknown</td>
+      </tr>
+      <tr>
+        <font face="Times New Roman" size="3"><td width="9%">2.</font></td>
+        <td width="84%">Family unavailable<font face="Times New Roman" size="3"></font></td>
+      </tr>
+      <tr>
+        <font face="Times New Roman" size="3"><td width="9%">3.</font></td>
+        <td width="84%">Coroner Deny<font face="Times New Roman" size="3"></font></td>
+      </tr>
+      <tr>
+        <font face="Times New Roman" size="3"><td width="9%">4.</font></td>
+        <td width="84%">Medical Rule-out (Med RO)</td>
+      </tr>
+      <tr>
+        <font face="Times New Roman" size="3"><td width="9%">5.</font></td>
+        <td width="84%">Time/Logistics</td>
+      </tr>
+      <tr>
+        <td width="9%"></td>
+        <td width="84%"></td>
+      </tr>
+      <tr>
+        <font face="Times New Roman" size="3"><td width="10%" colspan="2"><em>Not Consented:</font></em></td>
+      </tr>
+      <tr>
+        <font face="Times New Roman" size="3"><td width="9%">1.</font></td>
+        <td width="84%">Ethnic</td>
+      </tr>
+      <tr>
+        <font face="Times New Roman" size="3"><td width="9%">2.</font></td>
+        <td width="84%">Religious<font face="Times New Roman" size="3"></font></td>
+      </tr>
+      <tr>
+        <font face="Times New Roman" size="3"><td width="9%">3.</font></td>
+        <td width="84%">Emotional<font face="Times New Roman" size="3"></font></td>
+      </tr>
+      <tr>
+        <font face="Times New Roman" size="3"><td width="9%">4.</font></td>
+        <td width="84%">Unknown</td>
+      </tr>
+      <tr>
+        <font face="Times New Roman" size="3"><td width="9%">5.</font></td>
+        <td width="84%">Previous Discussion</td>
+      </tr>
+      <tr>
+        <td width="9%"></td>
+        <td width="84%"></td>
+      </tr>
+      <tr>
+        <font face="Times New Roman" size="3"><td width="10%" colspan="2"><em>Not Recovered:</font></em></td>
+      </tr>
+      <tr>
+        <font face="Times New Roman" size="3"><td width="9%">1.</font></td>
+        <td width="84%">Coroner Deny</td>
+      </tr>
+      <tr>
+        <font face="Times New Roman" size="3"><td width="9%">2.</font></td>
+        <td width="84%">Medical Rule-out (Med RO)<font face="Times New Roman" size="3"></font></td>
+      </tr>
+      <tr>
+        <font face="Times New Roman" size="3"><td width="9%">3.</font></td>
+        <td width="84%">High Risk<font face="Times New Roman" size="3"></font></td>
+      </tr>
+      <tr>
+        <font face="Times New Roman" size="3"><td width="9%">4.</font></td>
+        <td width="84%">Time/Logistics</td>
+      </tr>
+      <tr>
+        <font face="Times New Roman" size="3"><td width="9%">5.</font></td>
+        <td width="84%">Arrest</td>
+      </tr>
+      <tr>
+        <td width="9%"><font face="Times New Roman" size="3">6.</font></td>
+        <td width="84%">Never Brain Dead</td>
+      </tr>
+      <tr>
+        <td width="9%"><font face="Times New Roman" size="3">7.</font></td>
+        <td width="84%">Heart Transplantable</td>
+      </tr>
+    </table>
+    </center></div><u><i><p><br>
+    </i><strong>Additional Information</u></strong><br>
+    The following information will be documented in this section if Statline is collecting
+    this information at the time of the referral call.</p>
+    <div align="center"><center><table border="0" cellpadding="0" cellspacing="0" width="75%">
+      <tr>
+        <td width="5%">1.</td>
+        <td width="50%">Next of Kin name, address</td>
+      </tr>
+      <tr>
+        <td width="5%">2.</td>
+        <td width="50%">Relation (ex: spouse, adult child, adult sibling, etc.)</td>
+      </tr>
+      <tr>
+        <td width="5%">3.</td>
+        <td width="50%">Phone number of the next of kin</td>
+      </tr>
+      <tr>
+        <td width="5%">4.</td>
+        <td width="50%">Coroner/ME name </td>
+      </tr>
+      <tr>
+        <td width="5%">5.</td>
+        <td width="50%">Note(ex: not contacted yet)</td>
+      </tr>
+      <tr>
+        <td width="5%">6.</td>
+        <td width="50%">Office name - (Coroner&#146;s office)</td>
+      </tr>
+      <tr>
+        <td width="5%">7.</td>
+        <td width="50%">Coroner/ME phone number</td>
+      </tr>
+      <tr>
+        <td width="5%">8.</td>
+        <td width="50%">Attending physician name</td>
+      </tr>
+      <tr>
+        <td width="5%">9.</td>
+        <td width="50%">Pronouncing physician name (can be collected on all patients or all vented
+        patients)</td>
+      </tr>
+    </table>
+    </center></div><u><i><p><br>
+    </i><strong>Event Log Information</u></strong><br>
+    Every Referral Detail report will contain an event log at the bottom of the page. This
+    section tells the story of the referral. For each event type, the date/time, event type,
+    organization, to/from, and a description will be documented if applicable. Events that may
+    occur during a referral call are the following:</p>
+    <blockquote>
+      <p><strong><em>Incoming Call</em></strong> - This event is automatically noted on every
+      incoming call into the communications center.</p>
+      <p><strong><em>Note</em></strong> - This is a brief note if any additional explanation is 
+      needed about the referral.  It is also used to describe a floor location if that floor/unit 
+      is not included in Statline’s standardized list..</p>
+      <p><em><strong>Outgoing Call</strong></em> - The Statline Triage Coordinator will place an
+      outgoing call to the appropriate person.</p>
+      <p><strong><em>Page Pending</em></strong> - The Statline Triage Coordinator pages the
+      appropriate person to relay the message.</p>
+      <p><strong><em>Page Response</em></strong> - The Statline Triage Coordinator receives a
+      response from the page pending event.</p>
+      <p><strong><em>No Page Response</em></strong> - The Statline Triage Coordinator documents
+      that a response from the page pending event has not occurred.</p>
+      <p><em><strong>Consent Pending</strong></em> - The Statline Triage Coordinator creates a
+      consent pending once options have been give on an appropriate donor. The creation of this
+      event allows the computer to notify the Triage Coordinator after 4 hours to follow up with
+      the hospital if the communications center has not received a call back from the hospital
+      (this will only happen if the hospital does the approach for donation).</p>
+      <p><strong><em>Consent Outcome</em></strong> - The outcome of the approach is documented. </p>
+      <p><em><strong>Recovery Pending</strong></em> - If a family has consented to donation, a
+      recovery pending is created until the communications center is notified of the recovery by
+      the recovery agency.</p>
+      <p><em><strong>Recovery Outcome</strong></em> - The recovery agency has notified the
+      communications center of the final outcome of the referral for tracking purposes.</p>
+    </blockquote>
+    </td>
+  </tr>
+</table>
+</center></div>
+</body>
+</html>

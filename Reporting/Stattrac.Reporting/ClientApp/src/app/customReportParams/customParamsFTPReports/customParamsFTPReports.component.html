@@ -1,0 +1,15 @@
+<div>
+  <div class="row" style="margin: 15px 0 0 0;">
+    <label style="margin: 5px 10px 0px 0px;">Type:</label>
+    <ng-select [(ngModel)]="model.ReferralTypeID" id="ReferralTypeID" name="ReferralTypeID"
+               [ngModelOptions]="{standalone: true}"
+               [items]="referralTypeList" bindLabel="label"
+               bindValue="value" [selectOnTab]="true" style="width:300px;" (change)="addtoParameterList()"></ng-select>
+  </div>
+  <div class="row" style="margin: 15px 0 0 0;">
+    <label style="margin: 5px 10px 0px 0px;">Referral #:</label>
+    <input class="form-control " type="text" id="CallID" [(ngModel)]="model.CallID" style="width:300px;" (change)="addtoParameterList()" />
+  </div>
+  <!-- hidden field is need to feed back to parent -->
+  <input type="hidden" id="customParameterList" />
+</div>

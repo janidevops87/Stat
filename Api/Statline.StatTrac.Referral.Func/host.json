@@ -1,0 +1,23 @@
+{
+  "queues": {
+    // We do our own retry actions,
+    // so disable function runtime's
+    // built-in retry capability.
+    // More on this here: https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-queue#trigger---hostjson-properties
+    "maxDequeueCount": 1
+
+    // From docs:"The number of queue messages that
+    // the Functions runtime retrieves simultaneously
+    // and processes in parallel. If you want to avoid
+    // parallel execution for messages received on one queue,
+    // you can set batchSize to 1. However, this setting
+    // eliminates concurrency only so long as your function app
+    // runs on a single virtual machine (VM)."
+    // https://docs.microsoft.com/en-us/azure/azure-functions/functions-host-json#queues
+    //
+    // This CAN be set to 1 to minimize concurrency in referrals processing.
+    // Concurrency may introduce race conditions in some cases,
+    // and not every such case can be handled correctly.
+    // "batchSize": 1
+  }
+}

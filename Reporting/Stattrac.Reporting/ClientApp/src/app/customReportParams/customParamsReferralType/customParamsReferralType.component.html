@@ -1,0 +1,13 @@
+<div>
+  <div class="row">
+    <div class="col-sm">
+      <label>Pending Referral Type:</label>
+      <ng-select [(ngModel)]="model.ReferralType" id="ReferralType" name="ReferralType"
+                 [ngModelOptions]="{standalone: true}"
+                 [items]="referralTypeList" bindLabel="label"
+                 bindValue="value" [selectOnTab]="true" (change)="addtoParameterList()"></ng-select>
+      <!-- hidden field is need to feed back to parent -->
+    </div>
+  </div>
+  <input type="hidden" id="customParameterList" />
+</div>

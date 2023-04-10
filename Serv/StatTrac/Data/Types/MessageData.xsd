@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="MessageData" targetNamespace="http://statline.com/StatTrac/MessageData.xsd"
+	elementFormDefault="unqualified" attributeFormDefault="qualified" xmlns="http://statline.com/StatTrac/MessageData.xsd"
+	xmlns:mstns="http://statline.com/StatTrac/MessageData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="MessageData" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="sps_TestAutoImport">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Import" type="xs:int" minOccurs="0" />
+							<xs:element name="Name" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="SourceCodeTxCenter">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="SourceCodeID" type="xs:int" minOccurs="0" />
+							<xs:element name="OrgID" type="xs:string" minOccurs="0" />
+							<xs:element name="TxCode" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Message">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MessageID" msdata:ReadOnly="false" msdata:AutoIncrement="true" type="xs:int"
+								msdata:AutoIncrementSeed="0" msdata:AutoIncrementStep="-1" />
+							<xs:element name="CallID" type="xs:int" minOccurs="0" />
+							<xs:element name="MessageCallerName" type="xs:string" minOccurs="0" />
+							<xs:element name="MessageCallerPhone" type="xs:string" minOccurs="0" />
+							<xs:element name="MessageCallerOrganization" type="xs:string" minOccurs="0" />
+							<xs:element name="OrganizationID" type="xs:int" minOccurs="0" />
+							<xs:element name="PersonID" type="xs:int" minOccurs="0" />
+							<xs:element name="MessageTypeID" type="xs:int" minOccurs="0" />
+							<xs:element name="MessageUrgent" type="xs:short" minOccurs="0" />
+							<xs:element name="MessageDescription" type="xs:string" minOccurs="0" />
+							<xs:element name="Inactive" type="xs:short" minOccurs="0" />
+							<xs:element name="LastModified" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="MessageExtension" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MessageImportPatient" type="xs:string" minOccurs="0" />
+							<xs:element name="MessageImportUNOSID" type="xs:string" minOccurs="0" />
+							<xs:element name="MessageImportCenter" type="xs:string" minOccurs="0" />
+							<xs:element name="UpdatedFlag" type="xs:short" minOccurs="0" />
+							<xs:element name="LastStatEmployeeID" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Call">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CallID" msdata:ReadOnly="false" msdata:AutoIncrement="true" type="xs:int"
+								msdata:AutoIncrementSeed="0" msdata:AutoIncrementStep="-1" />
+							<xs:element name="CallNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="CallTypeID" type="xs:int" minOccurs="0" />
+							<xs:element name="CallDateTime" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="StatEmployeeID" type="xs:int" minOccurs="0" />
+							<xs:element name="CallTotalTime" type="xs:string" minOccurs="0" />
+							<xs:element name="CallTempExclusive" type="xs:short" minOccurs="0" />
+							<xs:element name="Inactive" type="xs:short" minOccurs="0" />
+							<xs:element name="CallSeconds" type="xs:short" minOccurs="0" />
+							<xs:element name="LastModified" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CallTemp" type="xs:short" minOccurs="0" />
+							<xs:element name="SourceCodeID" type="xs:int" minOccurs="0" />
+							<xs:element name="CallOpenByID" type="xs:int" minOccurs="0" />
+							<xs:element name="CallTempSavedByID" type="xs:int" minOccurs="0" />
+							<xs:element name="CallExtension" type="xs:decimal" minOccurs="0" />
+							<xs:element name="UpdatedFlag" type="xs:short" minOccurs="0" />
+							<xs:element name="CallOpenByWebPersonId" type="xs:int" minOccurs="0" />
+							<xs:element name="RecycleNCFlag" type="xs:short" minOccurs="0" />
+							<xs:element name="CallActive" type="xs:short" minOccurs="0" />
+							<xs:element name="CallSaveLastByID" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="LogEvent">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="LogEventID" msdata:ReadOnly="false" msdata:AutoIncrement="true" type="xs:int"
+								msdata:AutoIncrementSeed="0" msdata:AutoIncrementStep="-1" />
+							<xs:element name="CallID" type="xs:int" minOccurs="0" />
+							<xs:element name="LogEventTypeID" type="xs:int" minOccurs="0" />
+							<xs:element name="LogEventDateTime" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="LogEventNumber" type="xs:int" minOccurs="0" />
+							<xs:element name="LogEventName" type="xs:string" minOccurs="0" />
+							<xs:element name="LogEventPhone" type="xs:string" minOccurs="0" />
+							<xs:element name="LogEventOrg" type="xs:string" minOccurs="0" />
+							<xs:element name="LogEventDesc" type="xs:string" minOccurs="0" />
+							<xs:element name="StatEmployeeID" type="xs:int" minOccurs="0" />
+							<xs:element name="LogEventCallbackPending" type="xs:short" minOccurs="0" />
+							<xs:element name="LastModified" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ScheduleGroupID" type="xs:int" minOccurs="0" />
+							<xs:element name="PersonID" type="xs:int" minOccurs="0" />
+							<xs:element name="OrganizationID" type="xs:int" minOccurs="0" />
+							<xs:element name="PhoneID" type="xs:int" minOccurs="0" />
+							<xs:element name="LogEventContactConfirmed" type="xs:short" minOccurs="0" />
+							<xs:element name="UpdatedFlag" type="xs:short" minOccurs="0" />
+							<xs:element name="LogEventCalloutDateTime" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="LastStatEmployeeID" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:key name="AutoImportMessageDataKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//Call" />
+			<xs:field xpath="CallID" />
+		</xs:key>
+		<xs:keyref name="CallLogEvent" refer="AutoImportMessageDataKey1" msdata:UpdateRule="Cascade">
+			<xs:selector xpath=".//LogEvent" />
+			<xs:field xpath="CallID" />
+		</xs:keyref>
+		<xs:keyref name="CallMessage" refer="AutoImportMessageDataKey1" msdata:UpdateRule="Cascade">
+			<xs:selector xpath=".//Message" />
+			<xs:field xpath="CallID" />
+		</xs:keyref>
+		<xs:key name="AutoImportMessageDataKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//Message" />
+			<xs:field xpath="MessageID" />
+		</xs:key>
+		<xs:key name="AutoImportMessageDataKey3" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//LogEvent" />
+			<xs:field xpath="LogEventID" />
+		</xs:key>
+	</xs:element>
+</xs:schema>

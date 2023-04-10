@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ReportFSConversionRateData" targetNamespace="http://tempuri.org/ReportFSConversionRateData.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ReportFSConversionRateData.xsd"
+	xmlns:mstns="http://tempuri.org/ReportFSConversionRateData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ReportFSConversionRateData" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ApproachPerson">
+					<xs:complexType>
+						<xs:sequence></xs:sequence>
+						<xs:attribute name="PersonID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+						<xs:attribute name="CoordinatorName" msdata:ReadOnly="true" type="xs:string" />
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

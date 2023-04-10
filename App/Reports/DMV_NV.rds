@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DMV_NV">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=registry-test-mi.097db93d9c7e.database.windows.net,1433;Initial Catalog=DMV_NV</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>ac679297-850a-4e18-babc-4aaab1fbad73</DataSourceID>
+</RptDataSource>

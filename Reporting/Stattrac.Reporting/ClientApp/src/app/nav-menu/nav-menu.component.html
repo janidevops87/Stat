@@ -1,0 +1,95 @@
+<header>
+  <nav [hidden]="(this.url || '') !='/reports' && (this.url || '') !='/scheduling' && (this.url || '') !='/help'"
+       style="position:fixed;top:0;width:100%;z-index:100;background-color:#5b7885  !important;"
+       class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
+    <div class="container">
+      <a class="navbar-brand logo" [routerLink]="['/']">Statline Access Portal</a>
+      <button class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              aria-label="Toggle navigation"
+              [attr.aria-expanded]="isExpanded"
+              (click)="toggle()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
+           [ngClass]="{ show: isExpanded }">
+        <ul class="navbar-nav flex-grow">
+          <li class="nav-item"
+              [routerLinkActive]="['link-active']"
+              [routerLinkActiveOptions]="{ exact: true }">
+            <a class="nav-link text-light" [routerLink]="['/reports']" [ngClass]="{'selectedMenu': (this.url || '') =='/reports'}">Reports</a>
+          </li>
+          <li class="nav-item" style="" [routerLinkActive]="['link-active']" [hidden]="staticGlobals().canSchedule==0">
+            <a class="nav-link text-light" [routerLink]="['/scheduling']" [ngClass]="{'selectedMenu': (this.url || '') =='/scheduling'}">Schedules</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <div class="btn-group" dropdown>
+              <a id="button-basic" dropdownToggle type="button" href (click)="false;"
+                 style="color:white;padding:8px 0 0 10px;-webkit-appearance:none;"
+                 class="nav-item dropdown-toggle" aria-controls="dropdown-basic">
+                {{staticGlobals().userFullName}}<span class="caret"></span>
+              </a>
+              <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+                  role="menu" aria-labelledby="button-basic">
+                <li role="menuitem">
+                  <a class="dropdown-item" style="color:#0056b3" [routerLink]="['/']" [queryParams]="{message:'Logging out...'}">Log out </a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-item" style="color:#0056b3" [routerLink]="['/newpassword']"
+                     [queryParams]="{changeRequested:'1'}">
+                    Change Password
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a style="padding-left: 0.4rem !important;" class="nav-link text-light helpIcon" [routerLink]="['/help']" target="_blank" title="Help">?</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <nav [hidden]="(this.url || '').indexOf('reportviewer')<0"
+       style="position:fixed;top:0;width:100%;z-index:100;background-color:#5b7885  !important;"
+       class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
+    <div class="container">
+      <label style="padding-top: 0px; margin: 0;" class="navbar-brand">{{reportName}}</label>
+      <button class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              aria-label="Toggle navigation"
+              [attr.aria-expanded]="isExpanded"
+              (click)="toggle()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
+           [ngClass]="{ show: isExpanded }">
+        <ul class="navbar-nav flex-grow" style="line-height:0">
+          <li class="nav-item">
+            <div class="pdf1" title="Export to Pdf" (click)="downloadFile('PDF');"><div [hidden]="!fileInProgress1" class="loadingFile"></div></div>
+          </li>
+          <li class="nav-item">
+            <div class="word1" title="Export to Word" (click)="downloadFile('WordOPENXML');"><div [hidden]="!fileInProgress2" class="loadingFile"></div></div>
+          </li>
+          <li class="nav-item">
+            <div class="excel1" title="Export to Excel" (click)="downloadFile('EXCELOPENXML');"><div [hidden]="!fileInProgress3" class="loadingFile"></div></div>
+          </li>
+          <li class="nav-item">
+            <div class="text1" title="Export to Tab Delimited Text" (click)="downloadFile('TAB');"><div [hidden]="!fileInProgress4" class="loadingFile"></div></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <nav [hidden]="!((this.url || '').split('?')[0]  =='/resetpassword' || (this.url || '').split('?')[0]  =='/newpassword' || (this.url || '').split('?')[0] =='/')"
+       style="position:fixed;top:0;width:100%;z-index:100;background-color:#5b7885  !important;"
+       class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
+    <div class="container">
+      <a class="navbar-brand logo" [routerLink]="['/']">Statline Access Portal</a>
+    </div>
+  </nav>
+</header>

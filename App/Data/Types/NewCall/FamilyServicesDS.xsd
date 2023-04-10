@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FamilyServicesDS" targetNamespace="http://tempuri.org/FamilyServicesDS.xsd" xmlns:mstns="http://tempuri.org/FamilyServicesDS.xsd" xmlns="http://tempuri.org/FamilyServicesDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="_ReferralDev2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="_ReferralDev2ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.Stattrac.Data.Types.Properties.Settings.GlobalReference.Default._ReferralDev2ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FamilyServicesDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="FamilyServicesDS" msprop:Generator_DataSetName="FamilyServicesDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FsbCase" msprop:Generator_UserTableName="FsbCase" msprop:Generator_RowDeletedName="FsbCaseRowDeleted" msprop:Generator_RowChangedName="FsbCaseRowChanged" msprop:Generator_RowClassName="FsbCaseRow" msprop:Generator_RowChangingName="FsbCaseRowChanging" msprop:Generator_RowEvArgName="FsbCaseRowChangeEvent" msprop:Generator_RowEvHandlerName="FsbCaseRowChangeEventHandler" msprop:Generator_TableClassName="FsbCaseDataTable" msprop:Generator_TableVarName="tableFsbCase" msprop:Generator_RowDeletingName="FsbCaseRowDeleting" msprop:Generator_TablePropName="FsbCase">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CallId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="CallId" msprop:Generator_ColumnPropNameInRow="CallId" msprop:Generator_ColumnVarNameInTable="columnCallId" msprop:Generator_ColumnPropNameInTable="CallIdColumn" type="xs:int" />
+              <xs:element name="SourceCodeName" msprop:Generator_UserColumnName="SourceCodeName" msprop:Generator_ColumnPropNameInRow="SourceCodeName" msprop:Generator_ColumnVarNameInTable="columnSourceCodeName" msprop:Generator_ColumnPropNameInTable="SourceCodeNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PatientFirst" msprop:Generator_UserColumnName="PatientFirst" msprop:Generator_ColumnPropNameInRow="PatientFirst" msprop:Generator_ColumnVarNameInTable="columnPatientFirst" msprop:Generator_ColumnPropNameInTable="PatientFirstColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PatientLast" msprop:Generator_UserColumnName="PatientLast" msprop:Generator_ColumnPropNameInRow="PatientLast" msprop:Generator_ColumnVarNameInTable="columnPatientLast" msprop:Generator_ColumnPropNameInTable="PatientLastColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CreatedUser" msdata:ReadOnly="true" msprop:Generator_UserColumnName="CreatedUser" msprop:Generator_ColumnPropNameInRow="CreatedUser" msprop:Generator_ColumnVarNameInTable="columnCreatedUser" msprop:Generator_ColumnPropNameInTable="CreatedUserColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FsbCaseStatus" msprop:Generator_UserTableName="FsbCaseStatus" msprop:Generator_RowDeletedName="FsbCaseStatusRowDeleted" msprop:Generator_RowChangedName="FsbCaseStatusRowChanged" msprop:Generator_RowClassName="FsbCaseStatusRow" msprop:Generator_RowChangingName="FsbCaseStatusRowChanging" msprop:Generator_RowEvArgName="FsbCaseStatusRowChangeEvent" msprop:Generator_RowEvHandlerName="FsbCaseStatusRowChangeEventHandler" msprop:Generator_TableClassName="FsbCaseStatusDataTable" msprop:Generator_TableVarName="tableFsbCaseStatus" msprop:Generator_RowDeletingName="FsbCaseStatusRowDeleting" msprop:Generator_TablePropName="FsbCaseStatus">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FsbCaseStatusId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="FsbCaseStatusId" msprop:Generator_ColumnPropNameInRow="FsbCaseStatusId" msprop:Generator_ColumnVarNameInTable="columnFsbCaseStatusId" msprop:Generator_ColumnPropNameInTable="FsbCaseStatusIdColumn" type="xs:int" />
+              <xs:element name="CallId" msprop:Generator_UserColumnName="CallId" msprop:Generator_ColumnPropNameInRow="CallId" msprop:Generator_ColumnVarNameInTable="columnCallId" msprop:Generator_ColumnPropNameInTable="CallIdColumn" type="xs:int" />
+              <xs:element name="LastStatEmployeeId" msdata:Caption="Updated By" msprop:Generator_UserColumnName="LastStatEmployeeId" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeId" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeId" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIdColumn" type="xs:int" />
+              <xs:element name="LastStatEmployeeName" msprop:Generator_UserColumnName="LastStatEmployeeName" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeName" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeName" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msdata:Caption="Date/Time" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" />
+              <xs:element name="FamilyServicesCoordinatorId" msdata:Caption="Family Services Coordinator" msprop:Generator_UserColumnName="FamilyServicesCoordinatorId" msprop:Generator_ColumnPropNameInRow="FamilyServicesCoordinatorId" msprop:Generator_ColumnVarNameInTable="columnFamilyServicesCoordinatorId" msprop:Generator_ColumnPropNameInTable="FamilyServicesCoordinatorIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FamilyServicesCoordinatorName" msprop:Generator_UserColumnName="FamilyServicesCoordinatorName" msprop:Generator_ColumnPropNameInRow="FamilyServicesCoordinatorName" msprop:Generator_ColumnVarNameInTable="columnFamilyServicesCoordinatorName" msprop:Generator_ColumnPropNameInTable="FamilyServicesCoordinatorNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ListFsbStatusId" msdata:Caption="Status" msprop:Generator_UserColumnName="ListFsbStatusId" msprop:Generator_ColumnPropNameInRow="ListFsbStatusId" msprop:Generator_ColumnVarNameInTable="columnListFsbStatusId" msprop:Generator_ColumnPropNameInTable="ListFsbStatusIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_UserColumnName="Comment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInTable="CommentColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FsbCase" />
+      <xs:field xpath="mstns:CallId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

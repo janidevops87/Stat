@@ -1,0 +1,42 @@
+<SCRIPT LANGUAGE="VBScript" RUNAT="Server">
+
+'You can add special event handlers in this file that will get run automatically when special Active Server Pages events
+'occur.  To create these handlers, just create a subroutine with a name from the list below that corresponds to the event
+'you want to use.  For example, to create an event handler for Session_OnStart, you would put the following code into this
+'file (without the comments):
+'Sub Session_OnStart
+'**Put your code here **
+'End Sub
+
+'EventName               Description
+'Session_OnStart      Runs the first time a user runs any page in your application
+'Session_OnEnd       Runs when a user's session times out or quits your application
+'Application_OnStart  Runs once when the first page of your application is run for the first time by any user
+'Application_OnEnd   Runs once when the web server shuts down
+
+</SCRIPT>
+
+<SCRIPT LANGUAGE=VBScript RUNAT=server>
+
+Sub Session_OnStart
+
+	'==Visual InterDev Generated - DataConnection startspan==
+	'--Project Data Connection
+		Session("ConnectionString") = "DSN=Production;UID=sa;PWD=kuvasz;APP=Microsoft(R) Windows NT(TM) Operating System;DATABASE=_ReferralProd"
+		Session("ConnectionTimeout") = 15
+		Session("CommandTimeout") = 45
+		Session("RuntimeUserName") = "sa"
+		Session("RuntimePassword") = "kuvasz"
+	'==Visual InterDev Generated - DataConnection endspan==
+
+	Set Session("Conn")=Server.CreateObject("ADODB.Connection")
+	Session("Conn").Open Session("ConnectionString")
+
+End Sub
+
+Sub Session_OnEnd 
+	'Close the connection object
+	Set Session("Conn")=Nothing
+End Sub
+
+</SCRIPT>

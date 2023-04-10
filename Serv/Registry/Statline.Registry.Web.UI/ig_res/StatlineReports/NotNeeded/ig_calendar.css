@@ -1,0 +1,88 @@
+.igcal_StatlineReportsControl
+{
+	border:solid 1px Silver;
+	text-align:center;
+}
+
+
+.igcal_StatlineReportsCalendar
+{
+	border-style:solid;
+	border-width:0px;
+	border-bottom-width:1px;
+	border-bottom-color:Silver;
+}
+
+
+.igcal_StatlineReportsDOW
+{
+	font-size:xx-small;
+	border-width:0px;
+	border-bottom:solid 1px Silver;
+	padding:5px 0px 0px 0px;
+}
+
+
+.igcal_StatlineReportsDay
+{
+	font-size:xx-small;
+	border-width:0px;
+}
+
+
+.igcal_StatlineReportsNextPrev
+{
+	background-color:Gainsboro;
+	padding-right:0px;
+	padding-left:0px;
+}
+
+
+.igcal_StatlineReportsFooter
+{
+	padding-top:5px;
+	text-align:center;
+}
+
+
+.igcal_StatlineReportsHeader
+{
+	background-color:Gainsboro;
+	font-size:10px;
+	height: 16px;
+}
+
+
+.igcal_StatlineReportsDropDown
+{
+}
+
+
+.igcal_StatlineReportsWeekendDay
+{
+}
+
+
+.igcal_StatlineReportsOtherMonthDay
+{
+	color:#B3B3B3;
+}
+
+
+.igcal_StatlineReportsWeekendDayMajor
+{
+}
+
+
+.igcal_StatlineReportsTodayDay
+{
+	border:solid 1px Black;
+}
+
+
+.igcal_StatlineReportsSelectedDay
+{
+	background-color:WhiteSmoke;
+}
+
+

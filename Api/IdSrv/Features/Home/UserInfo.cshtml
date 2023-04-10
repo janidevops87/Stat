@@ -1,0 +1,38 @@
+﻿@model UserInfoViewModel
+@{
+    ViewData["Title"] = "User Information";
+}
+<h1 class="text-primary">@Model.FirstName @Model.LastName</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <h3>User information</h3>
+            <partial name="Partial/UserProperties" />
+        </div>
+        <div class="col-xs-6">
+            <h3>@Html.DisplayNameFor(m => m.StatlineClaims)</h3>
+            <partial name="Partial/ClaimList" model="Model.StatlineClaims" />
+        </div>
+
+    </div>
+</div>
+
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <h3><a data-toggle="collapse" href="#allClaimsList">@Html.DisplayNameFor(m => m.Claims)</a></h3>
+            <div id="allClaimsList" class="collapse">
+                <partial name="Partial/ClaimList" model="Model.Claims" />
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <h3><a data-toggle="collapse" href="#cookieProperties">@Html.DisplayNameFor(m => m.CookieProperties)</a></h3>
+            <div id="cookieProperties" class="collapse">
+                <partial name="Partial/KeyValueList" model="Model.CookieProperties" />
+            </div>
+        </div>
+    </div>
+</div>

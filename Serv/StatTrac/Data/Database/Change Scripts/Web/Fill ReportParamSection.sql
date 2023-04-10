@@ -1,0 +1,12 @@
+ 	INSERT ReportParamSection	
+		VALUES(1, 'ReportSpecificParams')
+	INSERT ReportParamSection	
+		VALUES(2, 'DateAndTime')
+	INSERT ReportParamSection		
+		VALUES(3, 'CoordinatorOrganization')
+	INSERT ReportParamSection
+		VALUES(4, 'AgeGender')
+	INSERT ReportParamSection
+		VALUES(5, 'SortOptions')
+	INSERT ReportParamSection
+		VALUES(6, 'DisplayOptions')

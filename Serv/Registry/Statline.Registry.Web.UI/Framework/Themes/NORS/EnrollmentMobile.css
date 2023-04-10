@@ -1,0 +1,153 @@
+/* EnrollmentMobile Styles 
+    Used on the following Forms:
+    1. EnrollmentMobileControl
+    2. ElectronicSignatureMobileControl
+    3. EnrollmentConfirmationMobileControl
+    4. ValidateDynamicMobileControl
+*/
+
+body
+{
+	background: white;    
+}
+
+div.RegistryMainMobile
+{
+	width: 100%; 
+	text-align: left; 
+	padding: 0px 0px 0px 0px;
+
+	font-family: Verdana, Helvetica; 
+	margin: 0px;
+	font-size: 1.1em;
+	line-height: 1.3em;
+}
+input[type="text"] {
+	display:block;
+	width:85%;
+	height:50px;
+	margin:8px auto 20px auto;
+	padding-left:10px;
+	padding-right:10px;
+	font-size: 15px;
+	border: 1px solid #666666;
+}
+
+input[type="textarea"], textarea {
+	display:block;
+	width:85%;
+	height:420px;
+	margin:8px auto 20px auto;
+	padding:10px;
+	font-size: 15px;
+	font-family: Verdana, Helvetica;
+	border: 1px solid #666666;
+}
+
+input:focus, textarea:focus {
+	background-color:#e1f4f8;
+}
+
+div.RegistryImageMobile
+{
+	padding: 10px 20px 5px 20px;
+}
+
+div.RegistryInstructionMobile
+{
+	/* border-top: 10px solid #133CAC; */
+	border-top: 10px solid #3D9AD1;
+	padding: 20px 20px 10px 20px;
+	background-color:#a2c0e5;
+}
+
+div.RegistryTitleMobile
+{
+	padding: 5px 20px 1px 20px;
+	text-transform: uppercase;
+	color: #4682B4;
+}
+div.RegistryRequiredMobile
+{
+	padding: 5px 0px 5px 0px;
+	margin-left: 10px;
+	border-top: 1px, dotted; 
+}
+div.RegistryLabelMobile
+{	
+    padding: 10px 20px 10px 20px;
+	background-color: #D2F2AC;
+}
+div.RegistryLabelAdditionalMobile
+{	
+    padding: 10px 20px 10px 20px;
+	background-color: #C1E69C;
+}
+div.RegistryInformationContactsMobile
+{	
+    padding: 10px 20px 10px 20px;
+}
+div.RegistryInputMobile
+{	
+    padding: 10px 20px 10px 20px;
+}
+div.RegistryHiddenMobile
+{
+    visibility: hidden;
+}
+div.RegistryButtonMobile
+{	
+    padding: 10px 20px 10px 20px;
+
+}
+div.RegistrySignatureLabelMobile
+{	
+    clear: left; 
+	float: left; 
+	width: 25%;
+	padding: 2px 0px 2px 0px;
+	text-align: right;
+	margin-right:5px;	
+}
+div.RegistrySignatureValueMobile
+{
+	float: left; 
+	width: 70%;
+	padding: 2px 0px 2px 0px;
+
+}
+
+div.RegistrySignatureEnrollMobile
+{
+    clear: left; 
+	float: left; 
+	text-align: left;	
+	margin-left:5px;
+	width: 100%;		
+	padding: 7px 0px 7px 0px;
+}
+div.RegistryFooterMobile
+{
+	width: 100%;
+	padding: 7px 1px 5px 1px;
+	margin-left: 5;
+}
+div.RegistryConfirmationMobile
+{
+   
+	width: 100%; 
+	text-align: left; 
+	padding: 0px 0px 0px 0px;
+
+	font-family: Verdana, Helvetica; 
+	margin: 5px;
+	font-size: 1.1em;
+	line-height: 1.3em;
+}
+
+div.RegistryFailureTextMobile
+{
+	padding: 7px 5px 5px 1px;
+	margin-left: 5;
+    font-weight: bold;    
+}

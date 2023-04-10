@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<title>Report Description</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<meta HTTP-EQUIV="EXPIRES" content="0">
+</head>
+
+<body bgcolor="#F5EBDD">
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="575">
+  <tr>
+    <td><font face="Times New Roman"><u><b></u></font><strong><font face="Arial" size="4">FACILITY
+    SUMMARY REPORT</b></font></strong><font face="Times New Roman" size="3"><i><p>What can
+    this report do for you?</i></p>
+    <div align="center"><center><table border="0" cellpadding="0" cellspacing="0" width="75%">
+      <tr>
+        <td width="5%" valign="top">1.</td>
+        <td width="50%">Summarize the overall number of referrals for a specific hospital or
+        region.</td>
+      </tr>
+      <tr>
+        <td width="5%" valign="top">2.</td>
+        <td width="50%">Identify the number of patients meeting appropriate age and medical
+        criteria for donation and the consent and recovery outcomes.</td>
+      </tr>
+    </table>
+    </center></div><p>The Facility Summary report is a summary of the referrals for specific
+    referral facilities. The report will summarize the number of appropriate, approached,
+    consented and recovered referrals. The report can be printed to reflect numbers or
+    percentages (see examples).</p>
+    <p>The column headings from left to right are Referral Facility, # of Total Referrals (the
+    number of referral calls that Statline took), Appropriate (donation options that are
+    appropriate according to the criteria received from the recovery agency), Approach
+    (specific options that were approached for donation), Consent (specific options that the
+    next of kin consented to for donation), and Recovery (specific options that were recovered
+    for transplant or research). The Appropriate, Approach, Consent and Recovery categories
+    are broken down into sub categories by specific types (O for organ, B for bone, ST for
+    soft tissue, SK for skin, HV for heart valves and E for eyes). </p>
+    <p>The total number of referrals by facility is listed on the left side of the report. To
+    the right of each total referral number, the appropriate, approached, consented, and
+    recovered referrals.</font></td>
+  </tr>
+</table>
+</center></div>
+</body>
+</html>

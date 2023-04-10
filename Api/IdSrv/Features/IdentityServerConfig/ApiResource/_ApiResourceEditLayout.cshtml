@@ -1,0 +1,35 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = $"Edit API Resource '{Model.ApiResourceName}'";
+}
+
+@model ApiResourceViewModel
+
+<h2>Edit API Resource <b>@Model.ApiResourceName</b></h2>
+
+<ul class="nav nav-tabs">
+    <li class="@(Model is EditPropertiesViewModel ? "active" : "")">
+        <a asp-action="EditProperties" asp-route-id="@Model.ApiResourceId">Properties</a>
+    </li>
+    
+    <li class="@(Model is EditUserClaimsViewModel ? "active" : "")">
+        <a asp-action="EditUserClaims" asp-route-id="@Model.ApiResourceId">User claims</a>
+    </li>
+    
+    <li class="@(Model is EditScopesViewModel ? "active" : "")">
+        <a asp-action="EditScopes" asp-route-id="@Model.ApiResourceId">Scopes</a>
+    </li>
+</ul>
+<br />
+<div>
+    @RenderBody()
+</div>
+<br />
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

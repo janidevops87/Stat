@@ -1,0 +1,12 @@
+﻿@model EditUserClaimsViewModel
+
+<p>
+    List of associated user claim types that should be included in the <b>identity token</b>.
+    Its usually not desirable to add all claims user has to security token - either 
+    to avoid token inflation or to not expose too much information. 
+    So this is kind of user claims "white list".
+</p>
+
+<partial name="Partial/UserClaimList" />
+<partial name="Partial/AddUserClaim" model="@new UserClaimViewModel { IdentityResourceId = Model.IdentityResourceId }"/>
+

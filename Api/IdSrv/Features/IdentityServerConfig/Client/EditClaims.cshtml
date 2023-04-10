@@ -1,0 +1,10 @@
+﻿@model EditClaimsViewModel
+
+<partial name="Partial/ClaimList"/>
+
+@* TODO: Consider placing add claim UI inline *@
+<a asp-action="AddClaim" asp-route-id="@Model.Id" class="btn btn-primary"
+   asp-authorize="@AuthorizationPolicies.WholeApplicationAdministrationPolicy">
+    Add claim
+</a>
+

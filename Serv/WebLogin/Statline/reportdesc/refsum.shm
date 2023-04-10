@@ -1,0 +1,80 @@
+<html>
+
+<head>
+<title>Report Description</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<meta HTTP-EQUIV="EXPIRES" content="0">
+</head>
+
+<body bgcolor="#F5EBDD">
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="575">
+  <tr>
+    <td><font face="Times New Roman"><u><b></u></font><strong><font face="Arial" size="4">REFERRAL
+    SUMMARY REPORT</b></font></strong><i><font face="Times New Roman"><p>What can this report
+    do for you?</i></p>
+    <div align="center"><center><table border="0" cellpadding="0" cellspacing="0" width="75%">
+      <tr>
+        <td width="5%" valign="top">1.</td>
+        <td width="50%">Summarize the Referral Detail reports for a specific hospital or time
+        period.</td>
+      </tr>
+      <tr>
+        <td width="5%" valign="top">2.</td>
+        <td width="50%">Summarize the appropriate, approach, consent and recovered categories for <font
+        face="Times New Roman"><font face="Times New Roman">each referral.</font></font></td>
+      </tr>
+      <tr>
+        <td width="5%" valign="top">3.<font face="Times New Roman"></font></td>
+        <td width="50%">Provide a condensed version of the Referral detail reports.<font
+        face="Times New Roman"></font></td>
+      </tr>
+    </table>
+    </center></div><p>The Referral Summary Report is a condensed list of Referral Detail
+    reports. Referral Detail reports are summarized for a specific hospital and/or time
+    period. The report summarizes referral information and the appropriate, approach, consent
+    and recovery data. If one of these categories is not appropriate, not approached, not
+    consented or not recovered, the reason will be documented.</p>
+    <p>The report summarizes the referrals into four different referral type categories:</p>
+    <div align="center"><center><table border="0" cellpadding="0" cellspacing="0" width="75%">
+      <tr>
+        <td width="5%" valign="top">1.</td>
+        <td width="50%">Organ/Tissue/Eyes</td>
+      </tr>
+      <tr>
+        <td width="5%" valign="top">2.</td>
+        <td width="50%">Tissue/Eyes </td>
+      </tr>
+      <tr>
+        <td width="5%" valign="top">3.<font face="Times New Roman"></font></td>
+        <td width="50%">Eyes Only<font face="Times New Roman"></font></td>
+      </tr>
+      <tr>
+        <td width="5%" valign="top">4.<font face="Times New Roman"></font></td>
+        <td width="50%">Rule-Out Referrals<font face="Times New Roman"><font
+        face="Times New Roman"></font></font></td>
+      </tr>
+    </table>
+    </center></div><p>All potential organ donors are tracked as potential tissue and eye
+    donors at Statline since we immediately contact the organ procurement coordinator and do
+    not perform in depth screening for the tissue and eye eligibility. The second category, <i>tissue/eye</i>,
+    is labeled as such because essentially every potential tissue donor is also a potential
+    eye donor. The <i>eyes only</i> category is when both organ and tissue donation is not an
+    option. Generally, the only option left is eyes. The <i>Rule-out referrals </i>are
+    referrals that we pre-screen for recovery agencies that are medically ruled out for
+    donation according to the criteria given to Statline by the agencies.</p>
+    <p>Within these categories, the referrals are listed by hospital alphabetically followed
+    by date and time of the referral. Each referral is summarized with the following
+    information: referral date/time, Statline referral #, referring hospital, referring unit,
+    referring person, approach person, medical record #, patient name, gender, age, race,
+    cause of death, and date/time of death. To the right of this information, the appropriate,
+    approach, consented, and recovered categories are summarized by specific type (organ,
+    bone, tissue, skin, valves, eyes).</p>
+    <p>The legend at the bottom of the report provides a guideline to the information
+    contained in each referral summary.</font></td>
+  </tr>
+</table>
+</center></div>
+</body>
+</html>

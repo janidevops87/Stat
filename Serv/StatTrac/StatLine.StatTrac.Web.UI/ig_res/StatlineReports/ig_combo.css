@@ -1,0 +1,122 @@
+.igcmb_StatlineReportsControl
+{
+	background-color:#F0F0F0;
+	border:solid 1px Black;
+}
+
+
+.igcmb_StatlineReportsEditWithButtons
+{
+	font-weight:bold;
+	border-width:0px;
+	border-top:solid 2px #3C3C3C;
+	border-right:solid 1px #D2D2D2;
+	border-bottom:solid 1px #D2D2D2;
+	border-left:solid 2px #3C3C3C;
+}
+
+
+.igcmb_StatlineReportsPagerArea
+{
+	border-style:solid;
+	border-width:3px;
+	padding:1px;
+}
+
+
+.igcmb_StatlineReportsPageCurrent
+{
+	margin-right:4px;
+	color:Gray;
+}
+
+
+.igcmb_StatlineReportsPageLink
+{
+	margin-right:10px;
+	color:Black;
+}
+
+
+.igcmb_StatlineReportsItem
+{
+	font-weight:bold;
+	border-width:0px;
+	border-color:Transparent;
+	border-top-style:solid;
+	border-top-color:WhiteSmoke;
+}
+
+
+.igcmb_StatlineReportsAlt
+{
+}
+
+
+.igcmb_StatlineReportsHeader
+{
+	background-color:Gainsboro;
+	border-width:0px;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+
+.igcmb_StatlineReportsFooter
+{
+	background-color:#D2D2D2;
+}
+
+
+.igcmb_StatlineReportsLabel
+{
+	background-color:#F0F0F0;
+	border-top-width:1px;
+	border-top-color:White;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+
+.igcmb_StatlineReportsSelected
+{
+	background-color:#E1E1E1;
+	border-width:1px 0px 0px 0px;
+	border-left-color:#E1E1E1;
+}
+
+
+.igcmb_StatlineReportsEditSelected
+{
+}
+
+
+.igcmb_StatlineReportsActiveBorderTopBottom
+{
+}
+
+
+.igcmb_StatlineReportsActiveBorderLeft
+{
+	border-left-width:2px;
+	border-left-style:groove;
+}
+
+
+.igcmb_StatlineReportsActiveBorderRight
+{
+	border-right-width:1px;
+	border-right-style:groove;
+}
+
+
+.igcmb_StatlineReportsFilterDropDown
+{
+}
+
+
+.igcmb_StatlineReportsFilterOperandDropDown
+{
+}
+
+

@@ -1,0 +1,37 @@
+<!--Find info here: https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2019#directorybuildprops-and-directorybuildtargets-->
+<Project>
+	<PropertyGroup>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<LangVersion>latest</LangVersion>
+		<Nullable>enable</Nullable>
+  </PropertyGroup>
+	
+	<ItemGroup>
+		<None Include="..\.editorconfig" Link=".editorconfig"/>
+	</ItemGroup>
+	
+	<ItemGroup Condition=" '$(OutputType)' == 'exe' ">
+		<!--
+			This doesn't seem to work reliably for non-web projects.
+			There are lots of articles describing how to enable custom file nesting,
+			but all these workarounds don't seem to be working. VS should introduce
+			normal support for this, but for now it's disabled.
+			Here is some information to get familiar with:
+			https://docs.microsoft.com/en-us/visualstudio/ide/file-nesting-solution-explorer?view=vs-2022
+			https://github.com/dotnet/project-system/issues/7161
+			https://github.com/microsoft/VSProjectSystem/issues/169
+			https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/automatic_DependentUpon_wireup.md
+		-->
+		<Content Include="..\Shared\appsettingsCommon*.json">
+			<CopyToPublishDirectory>Always</CopyToPublishDirectory>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>..\Shared\appsettingsCommon.json</DependentUpon>
+		</Content>
+
+		<Content Include="appsettings*.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<DependentUpon>appsettings.json</DependentUpon>
+		</Content>
+	
+	</ItemGroup>
+</Project>

@@ -1,0 +1,24 @@
+Imports System.Reflection
+Imports System.Runtime.CompilerServices
+Imports System.Runtime.InteropServices
+
+' General Information about an assembly is controlled through the following
+' set of attributes. Change these attribute values to modify the information
+' associated with an assembly.
+
+
+' TODO: Review the values of the assembly attributes
+
+
+<Assembly: AssemblyTitle("Stattrac")> 
+<Assembly: Guid("A91EF011-75AC-46e4-B29A-E7C1C4FC201D")> 
+<Assembly: Resources.NeutralResourcesLanguage("en")> 
+' Version information for an assembly consists of the following four values:
+
+'	Major version
+'	Minor Version
+'	Build Number
+'	Revision
+
+' You can specify all the values or you can default the Build and Revision Numbers
+' by using the '*' as shown below:

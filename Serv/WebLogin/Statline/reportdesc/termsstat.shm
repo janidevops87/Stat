@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="EXPIRES" content="0">
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR"
+content="Microsoft FrontPage (Visual InterDev Edition) 2.0">
+<title>Report Description</title>
+</head>
+
+<body bgcolor="antiquewhite">
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="575">
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td><table border="1" cellpadding="7" cellspacing="1"
+        width="637">
+            <tr>
+                <td colspan="4" width="100%"><font size="3"
+                face="Arial"><strong><i>Statline-Common
+                Abbreviations</i></strong></font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>ATB</b></font></td>
+                <td width="36%"><font size="2">Antibiotics</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>O</b></font></td>
+                <td width="36%"><font size="2">Organs</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>Bl
+                cx</b></font></td>
+                <td width="36%"><font size="2">Blood culture</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>PMH</b></font></td>
+                <td width="36%"><font size="2">Past medical
+                history</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>B</b></font></td>
+                <td width="36%"><font size="2">Bone</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>PRBC</b></font></td>
+                <td width="36%"><font size="2">Packed red blood
+                cells</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>coord.</b></font></td>
+                <td width="36%"><font size="2">Coordinator</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>Post-Ref</b></font></td>
+                <td width="36%"><font size="2">Post-referral</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>cryo</b></font></td>
+                <td width="36%"><font size="2">cryoprecipitate</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>Pre-Ref</b></font></td>
+                <td width="36%"><font size="2">Pre-referral</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>DNR</b></font></td>
+                <td width="36%"><font size="2">Do not resuscitate</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>Pt</b></font></td>
+                <td width="36%"><font size="2">Patient</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>E</b></font></td>
+                <td width="36%"><font size="2">Eyes</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>RP</b></font></td>
+                <td width="36%"><font size="2">Referring party</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>FFP</b></font></td>
+                <td width="36%"><font size="2">Fresh frozen
+                plasma</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>SK</b></font></td>
+                <td width="36%"><font size="2">Skin</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>gm</b></font></td>
+                <td width="36%"><font size="2">gram</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>ST</b></font></td>
+                <td width="36%"><font size="2">Soft tissue</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>HV</b></font></td>
+                <td width="36%"><font size="2">Heart valve</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>Surg</b></font></td>
+                <td width="36%"><font size="2">Surgery</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>k</b></font></td>
+                <td width="36%"><font size="2">x&#146;s 1000</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>TOD</b></font></td>
+                <td width="36%"><font size="2">Time of death</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>Kg</b></font></td>
+                <td width="36%"><font size="2">Kilograms</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>TC</b></font></td>
+                <td width="36%"><font size="2">Triage coordinator</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>MRO</b></font></td>
+                <td width="36%"><font size="2">Medical rule out</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>vent</b></font></td>
+                <td width="36%"><font size="2">Ventilator</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>MVA</b></font></td>
+                <td width="36%"><font size="2">Motor vehicle
+                accident</font></td>
+                <td width="13%" bgcolor="#FFFFFF"><font size="2"><b>vs</b></font></td>
+                <td width="36%"><font size="2">versus</font></td>
+            </tr>
+            <tr>
+                <td width="15%" bgcolor="#FFFFFF"><font size="2"><b>NOK</b></font></td>
+                <td width="36%"><font size="2">Next of kin</font></td>
+                <td width="13%" bgcolor="#FFFFFF">&nbsp;</td>
+                <td width="36%">&nbsp;</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+</table>
+</center></div>
+</body>
+</html>

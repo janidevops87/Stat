@@ -1,0 +1,353 @@
+<%
+Option Explicit
+
+Dim pvStartDate
+Dim pvEndDate
+Dim RS1
+Dim RestrictReferralType
+Dim ReferralTypeList
+Dim i
+Dim vErrorMessage
+Dim BrowserUA
+Dim MasterReportGroupID
+Dim Temp
+Dim MSBrowser
+Dim CurrentMonth
+Dim CurrentYear
+Dim vErrorMsg
+Dim ErrorReturn
+
+'Get the current month and year
+CurrentMonth = Month(now())
+CurrentYear = Year(now())
+
+'Get the browser type
+MSBrowser = "False"
+BrowserUA = Request.ServerVariables("HTTP_USER_AGENT")
+Temp = InStr(1, BrowserUA, "MSIE")
+If Temp > 0 Then
+	MSBrowser = "True"
+End If
+%>
+
+<!--#include virtual="/loginstatline/includes/Authorize.sls"-->
+<!--#include virtual="/loginstatline/includes/ParamDates.sls"-->
+<%
+'Verify Access
+If AuthorizeMain Then
+	Call DisplayParameters
+End If
+
+
+Function DisplayParameters()
+
+	'Open Connection
+	Set Conn = server.CreateObject("ADODB.Connection")
+	Conn.Open DataSourceName, DBUSER, DBPWD
+
+	'Get the master group for the user's organization
+	vQuery = "sps_ReportGroupMaster " & UserOrgID
+	Set RS = Conn.Execute(vQuery)
+	If Not RS.EOF Then
+		MasterReportGroupID = RS("WebReportGroupID")
+	Else
+		MasterReportGroupID = 0
+	End If
+	Set RS = Nothing
+%>
+
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<meta http-equiv="EXPIRES" content="0">
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1">
+<title>Parameters</title>
+</head>
+
+<body bgcolor="#F5EBDD" text="BLACK" onload="">
+
+<form name="reportForm">
+  <input type="hidden" name="serverName" value="<%=Request.ServerVariables("SERVER_NAME")%>">
+  <input type="hidden" name="userID" value="<%=UserID%>">
+  <input type="hidden" name="userOrgID" value="<%=UserOrgID%>">
+  <input type="hidden" name="datasource" value="<%=DataSourceName%>">
+  <input type="hidden" name="MSBrowser" value="<%=MSBrowser%>">
+
+<!-- Information Notice--->
+  <table align="left" border="0" cellPadding="0" cellSpacing="0" style="WIDTH: 550px"
+	width="550" bgColor="#112084">
+	<tr>
+		<td width="540"><font color=#FFFFFF face="Arial" size="4"><b>&nbsp;Donate Life America Call Count By Day</b></font></td>
+	</tr>
+  </table>
+
+<p>&nbsp;</p>
+
+<%
+Dim ReportListIndex
+
+
+%>
+  <table cellPadding="0" cellSpacing="2">
+        <tr>
+        	<td valign="center" width="95"><font size="2" face="Arial"><b>From Date</b></font></td>
+            <td valign="center" align="left"><font face="Arial"><input onfocus="this.select()" value="<%=FormatDateTime(Now-1,vbShortDate)%>" size="7" name="startDate" maxlength="8"> </td>
+            <td valign="center" align="left"><font face="Arial" size="2"><b>Time</b></font></td>
+            <td valign="center" align="left"><font face="Arial"><input onfocus="this.select()" value="00:00" size="7" name="startTime" maxlength="5"> </td>
+        </tr>
+        <tr>
+            <td valign="center"><font size="2" face="Arial"><b>To Date</b></font></td>
+            <td valign="center" align="left"><font face="Arial"><input onfocus="this.select()" value="<%=FormatDateTime(Now,vbShortDate)%>" size="7" name="endDate" maxlength="8"> </td>
+            <td valign="center" align="left"><font face="Arial" size="2"><b>Time</b></font></td>
+            <td valign="center" align="left"><font face="Arial"><input onfocus="this.select()" value="23:59" size="7" name="endTime" maxlength="5"> </td>
+    	</tr>
+
+  </table>
+
+<!--Get the report Groups for the Box-->
+<%
+'Get the report groups list
+vQuery = "sps_ReportGroups " & UserOrgID
+Set RS = Conn.Execute(vQuery)
+%>
+
+<table cellPadding="0" cellSpacing="2">
+    <tr>
+      <td valign="center" width="95"><font size="2" face="Arial"><b>Report Group</b></font></td>
+      <td valign="center">
+		<select name="reportGroup"
+		<%If MSBrowser = "True" Then%>onChange="newSelect(this.options[this.selectedIndex].value);"<%End If%>>
+
+		<%If UserOrgID = 194 Then%><option value="0" selected></option><%End If%>
+
+		<%Do While Not RS.EOF%>
+			<option value="<%=RS("WebReportGroupID")%>"><%=RS("ReportGroupName")%></option>
+			<%RS.MoveNext%>
+		<%
+		Loop
+		Set RS = Nothing
+		%>
+		</select>
+	  </td>
+	  <td>
+	  	  <A href="javascript:clickGroup()">
+		  <IMG SRC="/loginstatline/images/ellipses2.gif" NAME="groupMembers" BORDER="0"></A></td>
+    </tr>
+</table>
+
+<table cellPadding="0" cellSpacing="2">
+<%
+If MSBrowser = "True" Then
+%>
+	<!-- Get the Children for this Box -->
+	<tr>
+	  <td width="95" valign="center"><font size="2" face="Arial"><b>Organization</b></font></td>
+	  <td colspan="3">
+		<iframe height=25 width=415 name="OrgFrame" Frameborder=0 MarginHeight=0 Marginwidth=0 Scrolling="no"
+			src="/loginstatline/parameters/organizationList.sls?ReportGroupID=<%=MasterReportGroupID%>">
+		</iframe>
+	  </td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><font size="1" face="Arial">Tip: To get a count across all coalitions, leave the Organization field blank</td>
+	</tr>
+<%
+Else
+	'Get the report groups list
+	vQuery = "sps_ReportGroupOrgs " & MasterReportGroupID
+	Set RS = Conn.Execute(vQuery)
+%>
+	<!-- Get the Children for this Box -->
+	<tr>
+	  <td width="95" valign="center"><font size="2" face="Arial"><b>Organization</b></font></td>
+      <td valign="center">
+		<select name="organization">
+		<option value="0" selected></option>
+		<%Do While Not RS.EOF%>
+			<option value="<%=RS("OrganizationID")%>"><%=RS("OrganizationName")%></option>
+			<%RS.MoveNext%>
+		<%
+		Loop
+		Set RS = Nothing
+		%>
+		</select>
+	  </td>
+	</tr>
+<%
+End If
+%>
+</table>
+
+
+ <HR SIZE=1 width=550 align="left">
+
+	<table>
+	  <tr>
+	    <td width="95"></td>
+	    <td>
+		  	<A href="javascript:clickShow()">
+			<IMG SRC="/loginstatline/images/show.gif" NAME="showReport" BORDER="0"></A>
+		</td>
+	  </tr>
+	</table>
+
+
+</form>
+</body>
+</html>
+
+<%End Function%>
+
+
+
+<script language="JavaScript">
+
+	function newSelect(vID)
+	{
+	   frames[0].location.replace("/loginstatline/parameters/organizationList.sls?ReportGroupID=" + vID);
+	}
+
+	function clickShow()
+	{
+
+	var url = ""
+	var reportvalue = ""
+	var reportfile = ""
+	var reportid = ""
+	var pipeIndex = 0
+	var pipeIndex2 = 0
+	var optionString = ""
+	var BreakOnOrgIDString = ""
+	var orderby = ""
+
+	reportfile = "/reports/Information/CoalitionCallCountByDay.sls?"
+	reportid = 174
+
+
+	if (validate())
+		{
+		url = strHttpHeader + document.reportForm.serverName.value + "/loginstatline"
+		url = url + reportfile
+		url = url + "StartDate=" + document.reportForm.startDate.value + "_" + document.reportForm.startTime.value
+		url = url + "&EndDate=" + document.reportForm.endDate.value + "_" + document.reportForm.endTime.value
+		url = url + "&ReportGroupID=" + document.reportForm.reportGroup.options[document.reportForm.reportGroup.selectedIndex].value
+
+		if (document.reportForm.MSBrowser.value == 'True')
+			{
+			url = url + "&OrgID=" + frames[0].organization.options[frames[0].organization.selectedIndex].value
+			}
+
+		if (document.reportForm.MSBrowser.value == 'False')
+			{
+			url = url + "&OrgID=" + document.reportForm.organization.options[document.reportForm.organization.selectedIndex].value
+			}
+
+		url = url + "&userID=" + document.reportForm.userID.value
+		url = url + "&userOrgID=" + document.reportForm.userOrgID.value
+		url = url + "&DSN=" + document.reportForm.datasource.value
+		url = url + "&Options=" + optionString
+
+
+		url = url + "&ReportID=" + reportid
+
+		window.open(url,"_blank",'toolbar=1,location=0,directories=0,status=1,menubar=1,scrollbars=1,resizable=1')
+
+		return
+		}
+
+	return
+
+	}
+
+
+	function clickGroup()
+	{
+
+	if (document.reportForm.reportGroup.options[document.reportForm.reportGroup.selectedIndex].value == 0)
+		{
+			alert ("Please select a report group.")
+			document.reportForm.reportGroup.focus()
+			return
+		}
+
+	var url = ""
+
+	url = strHttpHeader + document.reportForm.serverName.value + "/loginstatline/reports/admin/GetOrgList.sls"
+	url = url + "?ReportGroupID=" + document.reportForm.reportGroup.options[document.reportForm.reportGroup.selectedIndex].value
+	window.open(url,"_blank",'toolbar=1,location=0,directories=0,status=1,menubar=1,scrollbars=1,resizable=1')
+
+	return
+
+	}
+
+
+	function validate()
+	{
+
+	if (document.reportForm.MSBrowser.value == 'True')
+		{
+		if (document.reportForm.reportGroup.options[document.reportForm.reportGroup.selectedIndex].value == 0
+			&& frames[0].organization.options[frames[0].organization.selectedIndex].value == 0)
+			{
+			alert ("Please select either a report group or an organization.")
+			return false
+			}
+
+		if (!isDate(document.reportForm.startDate.value))
+			{
+			alert ("Date error. Please enter a date in the format of mm/dd/yy.")
+			document.reportForm.startDate.focus()
+			document.reportForm.startDate.select()
+			return false
+			}
+		if (!isTime(document.reportForm.startTime.value))
+			{
+			alert ("Time error. Please enter a time in the format of hh:mm.")
+			document.reportForm.startTime.focus()
+			document.reportForm.startTime.select()
+			return false
+			}
+		if (!isDate(document.reportForm.endDate.value))
+			{
+			alert ("Date error. Please enter a date in the format of mm/dd/yy.")
+			document.reportForm.endDate.focus()
+			document.reportForm.endDate.select()
+			return false
+			}
+		if (!isTime(document.reportForm.endTime.value))
+			{
+			alert ("Time error. Please enter a time in the format of hh:mm.")
+			document.reportForm.endTime.focus()
+			document.reportForm.endTime.select()
+			return false
+			}
+		}
+
+	else
+		{
+		if (document.reportForm.reportGroup.options[document.reportForm.reportGroup.selectedIndex].value == 0
+			&& document.reportForm.organization.options[document.reportForm.organization.selectedIndex].value == 0)
+			{
+			alert ("Please select either a report group or an organization.")
+			return false
+			}
+		}
+
+	return true
+
+	}
+
+
+function makeArray(n)
+{
+   for (var i = 1; i <= n; i++) {
+      this[i] = 0
+   }
+   return this
+}
+</script>
+
+<!--#include virtual="/loginstatline/includes/datevalidation.js"-->
+

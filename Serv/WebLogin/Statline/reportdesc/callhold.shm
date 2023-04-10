@@ -1,0 +1,29 @@
+<html>
+
+<head>
+<title>Report Description</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<meta HTTP-EQUIV="EXPIRES" content="0">
+</head>
+
+<body bgcolor="#F5EBDD">
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="575">
+  <tr>
+    <td><font face="Arial" size="4"><b>CALL HOLD TIMES</b></font><font face="Times New Roman"
+    size="3"><p>This report shows the daily distribution of call hold times across 4 time splits (0-60, 61-90, 
+    91-120 and > 120 seconds). The first section, All Incoming Calls, shows the distribution for all calls coming 
+    into Statline excluding calls in response to a page. This section is intended to show how long a non-coordinator 
+    caller (e.g. referral, message) would expect to hold before an agent is available. The second section, Regional 
+    Incoming Calls, details the distribution for all calls coming into Statline (excluding calls in response to a 
+    page) specifically on your referral and/or message phone lines.  The last section, Page Response, shows the 
+    distribution for all calls related to page responses. This section is intended to show how long a coordinator 
+    responding to a page would expect to hold before an agent is available.<p><b> 
+	Statline began collection of data for this report on Saturday 2/14/98.  Hold time data before this date is not 
+	available.</b></font></td>
+  </tr>
+</table>
+</center></div>
+</body>
+</html>

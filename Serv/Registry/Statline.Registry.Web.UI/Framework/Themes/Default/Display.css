@@ -1,0 +1,743 @@
+/* Standard Styles */
+/*
+A
+{
+	color: #003399;
+	text-decoration: none;
+}
+A:link
+{
+	color: #003399;
+}
+A:visited
+{
+	color: #003399;
+}
+A:active
+{
+	color: #003399;
+}
+A:hover
+{
+	color: #003399;
+	text-decoration: underline;
+}
+
+A.href:link
+{
+	color: #ff9500;
+}
+A.href:visited
+{
+	color: #ff9500;
+}
+A.href:active
+{
+	color: #ff9500;
+}
+
+A.href:hover
+{
+	color: #ff9500;
+}
+*/
+
+body 
+{
+    background-color: #ffffff;
+}
+
+A.White
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+TD
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 11px;
+	font-style: normal;
+	color: #000000;
+}
+
+A.Blue
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #54779C;
+	text-align: center;
+	vertical-align: top;
+	text-decoration: none;
+}
+
+A.BreadCrumb
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #54779C;
+	text-align: center;
+	vertical-align: top;
+	text-decoration: none;
+}
+
+TD.BreadCrumb
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #2F4C6B;
+	text-align: center;
+	vertical-align: top;
+	text-decoration: none;
+}
+
+/* Menu Styles */
+.mainTabsActive
+{
+	font-weight: bold;
+	font-size: 12px;
+	vertical-align: middle;
+	color: #000000;
+	font-style: normal;
+	font-family: Arial, Helvetica, Sans-Serif;
+	text-align: center;
+	text-decoration: none;
+}
+.mainTabsInactive
+{
+	font-weight: bold;
+	font-size: 12px;
+	vertical-align: middle;
+	color: #804D4D;
+	font-style: normal;
+	font-family: Arial, Helvetica, Sans-Serif;
+	text-align: center;
+	text-decoration: none;
+}
+.mainTabsLinks
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #804D4D;
+	text-align: right;
+	vertical-align: middle;
+	text-decoration: none;
+}
+.subTabsActive
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+	vertical-align: bottom;
+	text-decoration: none;
+}
+.subTabsInactive
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	color: #804D4D;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+}
+.Date
+{
+	font-weight: bold;
+	font-size: 10px;
+	vertical-align: middle;
+	color: #ffffff;
+	font-style: normal;
+	font-family: Arial, Helvetica, Sans-Serif;
+	text-align: right;
+}
+
+/* Form Styles */
+Input
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 11px;
+	font-style: normal;
+	color: #000000;
+	vertical-align: middle;
+}
+Table.D
+{
+	border: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+Input.rt
+{
+	width: 100px;
+	font-size: 11px;
+	vertical-align: middle;
+	color: #000000;
+	font-style: normal;
+	font-family: Arial, Helvetica, Sans-Serif;
+	text-align: right;
+}
+Select
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+	background: #FFFFFF;
+	vertical-align: middle;
+}
+TextArea
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 11px;
+	font-style: normal;
+	color: #000000;
+	background: #FFFFFF;
+	vertical-align: middle;
+}
+.Error
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #FF0000;
+	background: #FFFFFF;
+	text-align: left;
+	vertical-align: middle;
+	text-decoration: none;
+}
+.Button
+{
+	font-size: 12px;
+	height: 20px;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	cursor: hand;
+
+}
+/* End Form Styles */
+
+/* Table Styles */
+
+/*border: solid 1px #98A7D5;*/
+TABLE.cLT
+{
+	font-family: Arial, Verdana;
+	color: #000000;
+	text-align: left;
+	border: solid 1px #52759A;
+}
+
+TABLE.cLT TR.cLTH TD
+{
+	font-weight: normal;
+	font-size: 11px;
+	background-image: url(images/contentColumnsTitle-Tile.gif);
+	vertical-align: text-bottom;
+	color: #2f4c6b;
+	font-family: Arial, Helvetica, Sans-Serif;
+}
+
+TABLE.cLT TR.cLTH A
+{
+	color: #2f4c6b;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+TABLE.cLT TR.cLTH A:hover
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ff0000;
+	text-decoration: underline;
+}
+
+TABLE.cLT TR.cLTI
+{
+	background-color: White;
+}
+
+TABLE.cLT TR.cLTIA
+{
+	background-image: url(Images/contentRow-YellowTile.gif);
+}
+
+TABLE.cLT TR.cLTIA TD
+{
+	font-weight: normal;
+	vertical-align: text-top;
+	background-image: url(Images/contentRow-Tile.gif);
+}
+
+TABLE.cLT TR.cLTIARED TD
+{
+	font-weight: normal;
+	vertical-align: text-top;
+	background-image: url(Images/contentRow-Tile.gif);
+	color: Red;
+}
+
+
+TABLE.cLT TR.cLTIA TD.SubHeader
+{
+	color: #2f4c6b;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 9px;
+	font-weight: normal;
+	background-image: url(images/contentColumnsTitle-Tile.gif);
+	vertical-align: text-bottom;
+}
+
+TABLE.cLT TR.cLTI TD
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-weight: normal;
+	color: #000000;
+	vertical-align: text-top;
+}
+
+TABLE.cLT TR.cLTIRED TD
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-weight: normal;
+	color: Red;
+	vertical-align: text-top;
+}
+
+TABLE.cLT TR.cLTI TD.SubHeader
+{
+	color: #2f4c6b;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 9px;
+	font-weight: normal;
+	background-image: url(images/contentColumnsTitle-Tile.gif);
+	vertical-align: text-bottom;
+}
+
+TABLE.cLT TR.ListFooter TD
+{
+	border: solid 1px #000000;
+	border-bottom: solid 1px #000000;
+	background-color: #98A7D5;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	text-align: center;
+}
+
+TABLE.cLT TR.ListPager TD
+{
+	border-top: solid 1px #000000;
+	background-color: #E0EFFD;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	text-align: center;
+	border: solid 1px #000000;
+}
+/* End Table Styles */
+
+/* Misc Styles */
+.ContentTitle
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+/*	font-size: 14px;*/
+	font-weight: bold;
+	color: black;
+	Font-Size: medium; 
+	width: 100%;
+	text-align:center;
+	
+}
+.SectionHeader
+{
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 14px;
+	border-left-color: #804d4d;
+	background-image: url(images/contentTitle-Tile.gif);
+	border-bottom-color: #804d4d;
+	color: #ffffff;
+	border-top-color: #804d4d;
+	height: 20px;
+	text-align: left;
+	border-right-color: #804d4d;
+}
+
+.SectionHeader A
+{
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-color: #ffffff;
+	height: 20px;
+	text-align: left;
+	padding-top: 2px;
+	text-decoration: none;
+}
+.Scroll
+{
+	overflow: auto;
+	border: window-inset 2px #98A7D5;
+	height: 400px;
+	width: 100%;
+	background: #FFFFFF;
+}
+
+/* End Misc Styles */
+
+/* Other Styles */
+
+
+.YellowBorder
+{
+	border: solid 1px #FFD538;
+}
+.YellowTile
+{
+	background-image: url(Images/contentRow-Tile.gif);
+}
+.RedBorder
+{
+	border: solid 1px #FF0000;
+}
+.RedTile
+{
+	background-image: url(Images/contentRow-RedTile.gif);
+}
+
+/* End Other Styles */
+
+/* Button Styles */
+.ButtonText {
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	cursor:hand;
+	background-color: Blue;
+}
+
+.ButtonText A:Link {
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	cursor:hand;
+}
+
+.ButtonText A:Visited {
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	cursor:hand;
+}
+
+.ButtonText A:Hover {
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: underline;
+	cursor:hand;
+}
+/* End Button Styles */
+.PageBorder
+{
+	border-right: #000000 1px solid;
+	border-top: #000000 1px solid;
+	border-left: #000000 1px solid;
+	border-bottom: #000000 1px solid;
+}
+
+.StatlineTextBox
+{
+	font-size: 8pt;	
+	width: 160px;	
+	font-family: Sans-Serif;
+}
+
+.DataGridFixedHeader 
+{ 
+	POSITION: relative;
+	BACKGROUND-COLOR: white 
+}
+.TableLabel
+{
+	font-size: 8pt; 
+	vertical-align: text-bottom; 
+	text-align: center;
+	color: white; 
+	font-family: Verdana; 
+	background-color: #6e1515; 
+	text-decoration: none;
+	height: 20px;
+}	
+DropDown.RowStyle
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+/* 
+	This class is used by the ReportParams.ascx user control 
+	The Report Param Divs were designed in hierarchy fashion
+	<Section>
+		<SectionTitle>
+		<SectionControl>
+			<SubSectionControl>
+				<ParamControlLabel>
+				<ParamControl>
+		NOTE: ParamControlLabel and ParamControl can go either under SubsectionControl or SectionControl
+			<ParamControlLabel>
+			<ParamControl>
+
+	<SectionSeperator> Note: This can be used between any div. It servers to cause a div to use the far left instead of on the end of a line
+*/
+div.ParamLabeldAndControlWrapper
+{
+	/* use this to force label and control to newline*/
+	clear:left;
+	
+}
+div.ParamControlLabel
+{
+	/* clear: left; */
+	padding: 2px 3px 2px 0px; 
+	/* replace margin with padding margin:2px 3px 2px 0px; */
+	/* display: block; */
+	float: left; 
+	visibility: visible; 
+	width: 150px; 
+	position: static; 
+	text-align: right;
+	/* border: solid 1px red;*/
+	height: 18px;
+	vertical-align: middle;
+}
+/* 
+	This class is used by the ReportParams.ascx user control 
+*/
+div.ParamControl
+{
+	text-align: left;
+	width: auto; 
+/*	clear: left; */
+/*	display: inline; */
+	float: left; 
+	padding: 1px 0px 1px 0px;
+/* margin:1px 0px 1px 0px;*/
+	height: 18px;
+	vertical-align: middle;	
+	/* border: solid 1px green; */
+}
+/* 
+	This class is used by the ReportParams.ascx user control 
+*/
+div.SectionTitle
+{
+	width: 140px; 
+	float: left; 
+	height: 100%;
+	
+}
+/* 
+	This class is used by the ReportParams.ascx user control 
+*/
+div.SectionControl
+{
+	float: left; 
+	width: 700px;	
+	border-left: 1px solid black;
+	
+}
+/* 
+	This class is used by the ReportParams.ascx user control 
+*/
+div.SubSectionControl
+{
+	float: left;
+	width: 0 auto;	 	
+	margin: 0 auto;
+}
+/* 
+	This class is used by the ReportParams.ascx user control 
+*/
+div.Section
+{	
+	float: left;
+	width: 0 auto;
+	/*border: 1px solid black;	*/
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	/*border-top: 1px solid black;*/
+	/*margin: 1px 1px 1px 1px;*/
+	margin: 0 auto;
+}
+/* 
+	This class is used by the ReportParams.ascx user control 
+*/
+div.SectionSeperator
+{
+	 clear:both;
+}
+/* 
+	This class is used by the ReportParams.ascx user control 
+*/
+div.ParamCheckBoxLeftAlign
+{
+	clear: left; 
+	display: block; 
+	float: left; 
+	visibility: visible;
+	width: 170px; 
+	position: static; 
+	text-align: left;
+	height: 20px;
+	vertical-align: middle;
+}
+
+div.ParamCheckBox
+{
+	clear: left; 
+	display: block; 
+	float: left; 
+	visibility: visible;
+	width: 170px; 
+	position: static; 
+	text-align: right;
+	height: 20px;
+	vertical-align: middle;
+}
+/* Now Located in Enrollment.css
+div.RegistryMain
+{
+    clear: left; 
+	float: left; 
+	width: 700px;
+	padding: 5px 0px 2px 0px;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 12px;
+}
+div.RegistrySection
+{
+    clear: left; 
+	float: left; 
+	width: 700px;
+	padding: 5px 1px 3px 1px;
+}
+div.RegistryNotes
+{
+    clear: left; 
+	float: left; 
+	width: 500px;
+	padding: 2px 0px 2px 0px;
+}
+div.RegistryControlIndent
+{
+    clear: left; 
+	float: left; 
+	width: 700px;
+	margin-left:200px;
+	padding: 2px 0px 2px 0px;
+}
+div.RegistryLabel
+{	
+    clear: left; 
+	float: left; 
+	width: 190px;
+	padding: 2px 0px 2px 0px;
+	text-align: right;
+	margin-right:10px;	
+}
+div.RegistryTextBox
+{
+	float: left; 
+	width: 500px;
+	padding: 2px 0px 2px 0px;
+
+}
+div.RegistryLimitations
+{
+    clear: left; 
+	float: left; 
+	width: 500px;
+	margin-left:25px;	
+}
+div.RegistrySubmit
+{
+    clear: left; 
+	float: left; 
+	width: 500px;
+	text-align: center;	
+	padding: 7px 0px 7px 0px;
+}
+div.RegistrySignatureLabel
+{	
+    clear: left; 
+	float: left; 
+	width: 150px;
+	padding: 2px 0px 2px 0px;
+	text-align: right;
+	margin-right:10px;	
+}
+div.RegistrySignatureValue
+{
+	float: left; 
+	width: 540px;
+	padding: 2px 0px 2px 0px;
+
+}
+div.RegistrySignatureEnroll
+{
+    clear: left; 
+	float: left; 
+	width: 500px;
+	text-align: left;	
+	margin-left:25px;	
+	padding: 7px 0px 7px 0px;
+}
+*/

@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>8235bf1b-6d4c-49e5-b746-115fb89e557f</UserSecretsId>
+    <AssemblyName>Statline.StatTrac.$(MSBuildProjectName)</AssemblyName>
+    <RootNamespace>Statline.StatTrac.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.6" />
+    <PackageReference Include="Statline.Extensions.Configuration.KeyVault" Version="4.0.0" />
+    <PackageReference Include="Statline.Extensions.Logging.Email" Version="3.3.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Integration.App\Integration.App.csproj" />
+    <ProjectReference Include="..\Integration.Infrastructure\Integration.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,19 @@
+<div>
+  <div class="row">
+    <div class="col-sm">
+      <label>Referral #:</label>
+      <input class="form-control " type="text" id="CallID" [(ngModel)]="model.CallID"
+             (change)="addtoParameterList()" required/>
+      <div class="generalErrors"  style="margin-top:5px; margin-left: 5px;" [hidden]="CallIDIsValid()">Referral # is required.</div>
+    </div>
+    <div class="col-sm">
+      <label>StatTrac User:</label>
+      <ng-select [(ngModel)]="model.User" id="User" name="User"
+                 [ngModelOptions]="{standalone: true}"
+                 [items]="userList" bindLabel="label"
+                 bindValue="value" [selectOnTab]="true" (change)="addtoParameterList()"></ng-select>
+    </div>
+  </div>
+  <!-- hidden field is need to feed back to parent -->
+  <input type="hidden" id="customParameterList" />
+</div>

@@ -1,0 +1,47 @@
+<html>
+
+<head>
+<title>Report Description</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<meta HTTP-EQUIV="EXPIRES" content="0">
+</head>
+
+<body bgcolor="#F5EBDD">
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="575">
+  <tr>
+    <td><font face="Arial" size="4"><b>IMPORT OFFER ACTIVITY</b></font><font
+    face="Times New Roman" size="3"><p>This report tracks all organ and tissue import offers
+    from other regions or agencies. The top of the report will total the number of import
+    offer calls (Import Offer Summary). Following the summary is a listing of the import offer
+    calls. Each call is listed and the following information is provided for each call:</p>
+    <div align="center"><center><table border="0" cellpadding="0" cellspacing="0" width="75%">
+      <tr>
+        <td width="5%">1.</td>
+        <td width="90%">Statline referral number</td>
+      </tr>
+      <tr>
+        <td width="5%">2.</td>
+        <td width="90%">Date and Time of call</td>
+      </tr>
+      <tr>
+        <td width="5%">3.</td>
+        <td width="90%">Who the call is for</td>
+      </tr>
+      <tr>
+        <td width="5%">4.</td>
+        <td width="90%">Who is calling</td>
+      </tr>
+      <tr>
+        <td width="5%">5.</td>
+        <td width="90%">What organization the caller is calling from</td>
+      </tr>
+    </table>
+    </center></div><p>To receive more information regarding a particular import offer, you
+    must refer to the Import Offer Detail report.</font></td>
+  </tr>
+</table>
+</center></div>
+</body>
+</html>

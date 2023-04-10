@@ -1,0 +1,479 @@
+<div class="card">
+  <div>
+    <form #referralForm="ngForm" style="margin-top: 20px">
+      <div class="container card-body" style="background: rgba(197, 205, 212, 0.17)">
+        <h3 style="margin-bottom:20px;">Contact Information</h3>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-sm">
+              <label for="heartbeatId">Does the patient have a heartbeat?</label><br>
+              <div [ngClass]="model.heartbeatId == -1 ? 'radioParent required' : 'radioParent satisfactory'">
+                <label class="radio-inline"><input type="radio" (keydown)="stopCalendarPopup($event)" style="margin:0 8px 0 5px;" name="heartbeatId" [(ngModel)]="model.heartbeatId" [value]="1" #heartbeatId="ngModel">Yes</label>
+                <label class="radio-inline"><input type="radio" (keydown)="stopCalendarPopup($event)" style="margin:0 8px 0 20px" name="heartbeatId" [(ngModel)]="model.heartbeatId" [value]="2" #heartbeatId="ngModel">No</label>
+              </div>
+              <div [hidden]="isValidControl(heartbeatId) && model.heartbeatId < 999" class="ng-invalid-feedback" style="margin:0 0 0 10px;display:inline"> (required)</div>
+              <div [hidden]="model.heartbeatId != 1" class="ng-invalid-feedback" style="padding:5px 0 8px 13px;border-radius:3px;background-color:#fb766d; color:white;font-size:20px;">You cannot enter this referral electronically. Please call the Donor Information Line.</div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-sm">
+              <label for="ventilatorId">Is the patient currently on a mechanical ventilator?</label>
+              <button class="info" tooltip="During this admission, was the patient supported by a mechanical ventilator or machine that assisted breathing?" triggers="focus" tabindex="-1"></button><br />
+              <div [ngClass]="model.ventilatorId == -1 ? 'radioParent required' : 'radioParent satisfactory'">
+                <label class="radio-inline"><input type="radio" (keydown)="stopCalendarPopup($event)" style="margin:0 8px 0 5px;" name="ventilatorId" [(ngModel)]="model.ventilatorId" [value]="0" #ventilatorId="ngModel">Yes, currently</label>
+                <label class="radio-inline"><input type="radio" (keydown)="stopCalendarPopup($event)" style="margin:0 8px 0 20px" name="ventilatorId" [(ngModel)]="model.ventilatorId" [value]="1" #ventilatorId="ngModel">No, previously</label>
+                <label class="radio-inline"><input type="radio" (keydown)="stopCalendarPopup($event)" style="margin:0 8px 0 20px" name="ventilatorId" [(ngModel)]="model.ventilatorId" [value]="2" #heartbeatId="ngModel">Never</label>
+              </div>
+              <div [hidden]="isValidControl(ventilatorId) && model.ventilatorId < 999" class="ng-invalid-feedback" style="margin:0 0 0 10px;display:inline">(required)</div>
+              <div [hidden]="model.ventilatorId != 0" class="ng-invalid-feedback" style="padding:5px 0 8px 13px;border-radius:3px;background-color:#fb766d; color:white;font-size:20px;">You cannot enter this referral electronically. Please call the Donor Information Line.</div>
+            </div>
+            <div class="col-sm" [hidden]="model.ventilatorId != 1">
+              <label for="extubationDateTime">Extubation Date/Time</label>
+              <button class="info" tooltip="If patient expired on the ventilator, please document cardiac death date and time in this field." triggers="focus" tabindex="-1"></button>
+              <div class="input-group">
+                <input type="text" class="form-control" (keydown)="stopCalendarPopup($event)"
+                       [ngClass]="isValid3(extubationDate, !extubationDateInFuture)" id="extubationDate" name="extubationDate"
+                       #extubationDate="ngModel" [(ngModel)]="model.extubationDate"
+                       bsDatepicker #dp1="bsDatepicker" [bsConfig]="{ showWeekNumbers:false, returnFocusToInput: true }"
+                       placeholder="mm/dd/yyyy" dropSpecialCharacters="false" maxlength="10"
+                       (ngModelChange)="isExtubationDateInFuture();">
+                <div class="input-group-btn">
+                  <button style="padding:.375rem 0.75rem 0.2rem .75rem"
+                          class="btn btn-light" (click)="dp1.show();">
+                    <img src="assets/calendar-4x.png"
+                         style="height: 25px" />
+                  </button>
+                </div>
+                <input type="text" class="form-control" (keydown)="stopCalendarPopup($event)"
+                       [ngClass]="isValid(extubationTime)" id="extubationTime" name="extubationTime"
+                       #extubationTime="ngModel" [(ngModel)]="model.extubationTime"
+                       mask='00:00' pattern="^([0-1][0-9]|2[0-3]):[0-5][0-9]$"
+                       placeholder="  :  (24H format)" [dropSpecialCharacters]="false" maxlength="5"
+                       (ngModelChange)="isExtubationDateInFuture();">
+                <label title="Time zone" style="padding-left:5px;line-height:2.2">{{timeZoneAbbr}}</label>
+                <div [hidden]="extubationDateInFuture == false" class="ng-invalid-feedback">Extubation date cannot be in the future.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-sm">
+              <label for="facilityEreferralCode" id="facilityEreferralCodeLabel">Referral Facility</label>
+
+              <ng-select [(ngModel)]="model.facilityEreferralCode" id="facilityEreferralCode" name="facilityEreferralCode"
+                         #facilityEreferralCode="ngModel" style="width:300px;" [items]="listFacilityCode" [ngClass]="isValidFacility(facilityEreferralCode)"
+                         (change)="clearServerErrors(facilityEreferralCode);facilityCodeOnChange();"
+                         bindValue="value" [selectOnTab]="true" required></ng-select>
+
+              <div [hidden]="isValidControl(facilityEreferralCode)" class="ng-invalid-feedback">Please select a Referral Facility.</div>
+            </div>
+            <div class="col-sm">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-sm">
+              <label for="contactFirstName">Contact First Name</label>
+              <input type="text" class="form-control" (keydown)="stopCalendarPopup($event)" [ngClass]="isValid(contactFirstName)"
+                     id="contactFirstName" name="contactFirstName" #contactFirstName="ngModel"
+                     [(ngModel)]="model.contactFirstName" required maxlength="50"
+                     (change)="contactOnChange();">
+              <div [hidden]="isValidControl(contactFirstName)" class="ng-invalid-feedback">Please enter a Contact First Name.</div>
+            </div>
+            <div class="col-sm">
+              <label for="contactLastName">Contact Last Name</label>
+              <input type="text" class="form-control" (keydown)="stopCalendarPopup($event)" [ngClass]="isValid(contactLastName)"
+                     id="contactLastName" name="contactLastName" #contactLastName="ngModel"
+                     [(ngModel)]="model.contactLastName" required maxlength="50"
+                     (change)="contactOnChange();">
+              <div [hidden]="isValidControl(contactLastName)" class="ng-invalid-feedback">Please enter a Contact Last Name.</div>
+            </div>
+            <div class="col-sm">
+              <label for="contactTitleId" id="titleLabel">Title</label>
+              <ng-select [(ngModel)]="model.contactTitleId" id="contactTitleId" name="contactTitleId"
+                         #contactTitleId="ngModel" style="width:300px;" [items]="listTitle"
+                         bindValue="value" [selectOnTab]="true" [disabled]="isTitleDisabled" required></ng-select>
+              <div [hidden]="isValidControl(contactTitleId) || (model.contactTitleId!=null && model.contactTitleId > -1)" class="ng-invalid-feedback">Please select a Title.</div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-sm">
+              <label for="callbackPhoneNumber" id="callbackPhoneNumberLabel">Callback Phone Number</label>
+              <button class="info" tooltip="Please provide a callback number where you can be reached or the number of the unit where the patient is currently." triggers="focus" tabindex="-1"></button>
+              <input type="tel" class="form-control" (keydown)="stopCalendarPopup($event)"
+                     [ngClass]="isValidPhone(callbackPhoneNumber)" id="callbackPhoneNumber"
+                     name="callbackPhoneNumber" #callbackPhoneNumber="ngModel"
+                     [(ngModel)]="model.callbackPhoneNumber" mask='000-000-0000'
+                     dropSpecialCharacters="false" placeholder="xxx-xxx-xxxx"
+                     required maxlength="12" (change)="phoneOnChange();">
+              <div [hidden]="isValidPhoneControl(callbackPhoneNumber)" class="ng-invalid-feedback">Please enter a Callback Phone Number in the following format: 555-555-5555.</div>
+            </div>
+            <div class="col-sm">
+              <label for="callbackPhoneNumberExtension">Extension</label>
+              <input type="text" class="form-control" (keydown)="stopCalendarPopup($event)"
+                     id="callbackPhoneNumberExtension" name="callbackPhoneNumberExtension"
+                     #callbackPhoneNumberExtension="ngModel" [(ngModel)]="model.callbackPhoneNumberExtension"
+                     placeholder="xxxxx" maxlength="5">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="divPatientInfo" class="container card-body" style="margin-top:30px;background: rgba(197, 205, 212, 0.17)"
+           [hidden]="!(model.ventilatorId > 0) || invalidFacilityCode == true || model.heartbeatId != 2">
+        <h3 style="margin-bottom: 20px;">
+          Patient Information
+        </h3>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-sm">
+              <label for="referralFacility">Referral Facility</label>
+              <input type="text" class="form-control" style="font-weight: 500;" [ngClass]="isValid(referralFacility)" id="referralFacility" name="referralFacility" #referralFacility="ngModel" [(ngModel)]="model.referralFacility" [disabled]="true">
+            </div>
+            <div class="col-sm">
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-8">
+                    <label for="hospitalUnit">Hospital Unit</label>
+                    <ng-select [(ngModel)]="model.hospitalUnitId" id="hospitalUnitId" name="hospitalUnitId"
+                               #hospitalUnitId="ngModel" [items]="listHospitalUnit" bindValue="value"
+                               [selectOnTab]="true" required></ng-select>
+                    <div [hidden]="isValidControl(hospitalUnitId)" class="ng-invalid-feedback">Please enter a Hospital Unit.</div>
+                  </div>
+                  <div class="col-4">
+                    <label for="floor">Floor</label>
+                    <input type="text" class="form-control" (keydown)="stopCalendarPopup($event)"
+                           [ngClass]="isValid(floor)" id="floor" name="floor" #floor="ngModel"
+                           [(ngModel)]="model.floor" maxlength="5" required>
+                    <div [hidden]="isValidControl(floor)" class="ng-invalid-feedback">Please enter a Floor.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="row">
+            <div class="col-sm">
+              <label for="medicalRecordNumber" id="medicalRecordNumberLabel">Medical Record Number</label>
+              <input type="text" class="form-control" (keydown)="stopCalendarPopup($event);medicalRecordKeyDown($event);"
+                     [ngClass]="isValid3(medicalRecordNumber, !isMedicalRecordDuplicate)" id="medicalRecordNumber"
+                     name="medicalRecordNumber" #medicalRecordNumber="ngModel"
+                     [(ngModel)]="model.medicalRecordNumber" (change)="medicalRecordOnChange();"
+                     mask="A*" [specialCharacters]="['-']" dropSpecialCharacters="false" maxlength="30" required>
+              <div [hidden]="isValidControl(medicalRecordNumber)" class="ng-invalid-feedback">Please enter a Medical Record Number.</div>
+              <div [hidden]="isMedicalRecordDuplicate == false || model.medicalRecordNumber == null || model.medicalRecordNumber == '' "
+                   class="ng-invalid-feedback">This referral has already been entered. Please call the Donor Information Line if you have an update.</div>
+            </div>
+            <div class="col-sm">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="row">
+            <div class="col-sm">
+              <label for="legalFirstName">Legal First Name</label>
+              <input type="text" class="form-control" (keydown)="stopCalendarPopup($event)"
+                     [ngClass]="isValid(legalFirstName)" id="legalFirstName" name="legalFirstName"
+                     #legalFirstName="ngModel" [(ngModel)]="model.legalFirstName" maxlength="40" required>
+              <div [hidden]="isValidControl(legalFirstName)" class="ng-invalid-feedback">Please enter Legal First Name.</div>
+            </div>
+            <div class="col-sm">
+              <label for="legalLastName">Legal Last Name</label>
+              <input type="text" class="form-control" (keydown)="stopCalendarPopup($event)"
+                     id="floor" name="legalLastName" #legalLastName="ngModel"
+                     [ngClass]="isValid(legalLastName)" [(ngModel)]="model.legalLastName" maxlength="40" required>
+              <div [hidden]="isValidControl(legalLastName)" class="ng-invalid-feedback">Please enter a Legal Last Name.</div>
+            </div>
+            <div class="col-sm">
+              <div class="form-check" style="position:absolute; bottom:0;margin-left:20px">
+                <input type="checkbox" class="form-check-input" id="identityUnknown" name="identityUnknown" #identityUnknown="ngModel" [(ngModel)]="model.identityUnknown">
+                <label for="identityUnknown">Identity Unknown</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-sm">
+              <label for="cardiacDeathTime">Cardiac Date and Time of Death</label>
+              <div class="input-group">
+                <input type="text" class="form-control" (keydown)="stopCalendarPopup($event)"
+                       [ngClass]="isValid3(cardiacDeathDate, !cardiacDeathInFuture)" id="cardiacDeathDate" name="cardiacDeathDate"
+                       #cardiacDeathDate="ngModel" [(ngModel)]="model.cardiacDeathDate" bsDatepicker
+                       #dp2="bsDatepicker" [bsConfig]="{ showWeekNumbers:false, returnFocusToInput: true }" placeholder="mm/dd/yyyy"
+                       dropSpecialCharacters="false" maxlength="10" (ngModelChange)="isCardiacDeathInFuture();">
+                <div class="input-group-btn"><button style="padding:.375rem 0.75rem 0.2rem .75rem" class="btn btn-light" (click)="dp2.show();"><img src="assets/calendar-4x.png" style="height: 25px" /></button></div>
+                <input type="text" class="form-control" (keydown)="stopCalendarPopup($event)"
+                       [ngClass]="isValid(cardiacDeathTime)" id="orTime" name="cardiacDeathTime"
+                       #cardiacDeathTime="ngModel" [(ngModel)]="model.cardiacDeathTime" mask='00:00'
+                       pattern="^([0-1][0-9]|2[0-3]):[0-5][0-9]$" placeholder="  :  (24H format)"
+                       [dropSpecialCharacters]="false" maxlength="5" (ngModelChange)="isCardiacDeathInFuture();">
+                <label title="Time zone" style="padding-left:5px;line-height:2.2">{{timeZoneAbbr}}</label>
+                <div [hidden]="cardiacDeathInFuture == false" class="ng-invalid-feedback">Cardiac date cannot be in the future.</div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <label for="admitDateTime">Admit Date/Time</label>
+              <div class="input-group">
+                <input type="text" class="form-control" (keydown)="stopCalendarPopup($event)"
+                       [ngClass]="isValid3(admitDate, !admitInFuture)" id="admitDate" name="admitDate"
+                       #admitDate="ngModel" [(ngModel)]="model.admitDate" bsDatepicker
+                       #dp3="bsDatepicker" [bsConfig]="{ showWeekNumbers:false, returnFocusToInput: true }" placeholder="mm/dd/yyyy"
+                       dropSpecialCharacters="false" maxlength="10" (ngModelChange)="isAdmitDateInFuture();">
+                <div class="input-group-btn"><button style="padding:.375rem 0.75rem 0.2rem .75rem" class="btn btn-light" (click)="dp3.show();"><img src="assets/calendar-4x.png" style="height: 25px" /></button></div>
+                <input type="text" class="form-control" (keydown)="stopCalendarPopup($event)"
+                       [ngClass]="isValid(admitTime)" id="admitTime" name="admitTime" #admitTime="ngModel"
+                       [(ngModel)]="model.admitTime" mask='00:00' pattern="^([0-1][0-9]|2[0-3]):[0-5][0-9]$"
+                       placeholder="  :  (24H format)" [dropSpecialCharacters]="false" maxlength="5"
+                       (ngModelChange)="isAdmitDateInFuture();">
+                <label title="Time zone" style="padding-left:5px;line-height:2.2">{{timeZoneAbbr}}</label>
+                <div [hidden]="isValidControl(admitDate) && isValidControl(admitTime)" class="ng-invalid-feedback">Please enter a valid admit date and time</div>
+                <div [hidden]="admitInFuture == false" class="ng-invalid-feedback">Admit date cannot be in the future.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-sm">
+              <label for="dob">Date of Birth</label>
+              <div class="input-group">
+                <input type="text" [disabled]="dobDisabled" (keydown)="stopCalendarPopup($event)" class="form-control" [ngClass]="isValid2(dob,model.age>0)" id="dob" name="dob"
+                       #dob="ngModel" [(ngModel)]="model.dob" bsDatepicker #dp4="bsDatepicker" [bsConfig]="{ showWeekNumbers:false, returnFocusToInput: true }"
+                       placeholder="mm/dd/yyyy" dropSpecialCharacters="false" maxlength="10" [minDate]="minDate" [maxDate]="maxDate"
+                       [required]="model.age==null || model.age<=0" (ngModelChange)="dobOnChange();">
+                <div class="input-group-btn">
+                  <button [disabled]="dobDisabled" style="padding:.375rem 0.75rem 0.2rem .75rem" class="btn btn-light"
+                          (click)="dp4.show();">
+                    <img src="assets/calendar-4x.png" style="height: 25px" />
+                  </button>
+                </div>
+                <h5>or</h5>
+                <div [hidden]="isValidControl2(dob, model.age>0)" class="ng-invalid-feedback">Please enter a Date of Birth.</div>
+                <div [hidden]="dobInFuture == false" class="ng-invalid-feedback">Date of birth cannot be in the future.</div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <label for="age">Age</label>
+              <div class="input-group">
+                <div class="w-25">
+                  <input type="text" [disabled]="model.dob!=null" (keydown)="stopCalendarPopup($event)"
+                         class="form-control" [ngClass]="isAgeValid(age, (model.dob != null))" id="age"
+                         name="age" #age="ngModel" [(ngModel)]="model.age" [required]="'model.dob == null'"
+                         (change)="ageChange();" maxlength="3" mask='999'>
+                </div>
+                <ng-select [(ngModel)]="model.ageUnitId" [disabled]="model.dob!=null"
+                           id="ageUnitId" name="ageUnitId" #ageUnitId="ngModel"
+                           style="width:110px;margin-left:10px" [items]="listAgeUnit"
+                           bindValue="value" [selectOnTab]="true"></ng-select>
+                <div class="form-check" style="margin-left:20px">
+                  <label for="ageEstimated" style="margin-left:20px;" class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="ageEstimated" name="ageEstimated"
+                           #ageEstimated="ngModel" [(ngModel)]="model.ageEstimated">Age is an estimate
+                  </label>
+                </div>
+                <div [hidden]="isValidControl2(age, model.dob != null)" class="ng-invalid-feedback">Please enter an Age.</div>
+                <div [hidden]="isMonthLessThan120()" class="ng-invalid-feedback">Month value cannot be bigger than 120.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-sm">
+              <div class="row">
+                <div class="col-sm">
+                  <label for="raceId">Race</label>
+                  <ng-select [(ngModel)]="model.raceId" id="raceId" name="raceId" #raceId="ngModel"
+                             style="width:200px;" [items]="listRace" bindValue="value"
+                             [selectOnTab]="true"></ng-select>
+                </div>
+                <div class="col-sm">
+                  <label for="sex">Sex</label><br>
+                  <div [ngClass]="model.sexId == null ? 'radioParent required' : 'radioParent satisfactory'">
+                    <label class="radio-inline"><input type="radio" (keydown)="stopCalendarPopup($event)" style="margin:0 8px 0 5px;" name="sex" [(ngModel)]="model.sexId" [value]="2" #sex="ngModel">Female</label>
+                    <label class="radio-inline"><input type="radio" (keydown)="stopCalendarPopup($event)" style="margin:0 8px 0 20px" name="sex" [(ngModel)]="model.sexId" [value]="1" #sex="ngModel">Male</label>
+                  </div>
+                  <div [hidden]="model.sex != 0" class="ng-invalid-feedback">Please select sex</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <label for="weight">Weight</label>
+              <div class="input-group">
+                <div class="w-25">
+                  <input type="text" class="form-control" (keydown)="stopCalendarPopup($event)"
+                         [ngClass]="isValid(weight)" id="weight" name="weight" #weight="ngModel"
+                         [(ngModel)]="model.weight">
+                  <div [hidden]="!model.isWeightValid" class="ng-invalid-feedback">Please enter weight in #####.## format</div>
+                </div>
+                <ng-select [(ngModel)]="model.weightUnitId" id="weightUnitId" name="weightUnitId" #weightUnitId="ngModel" style="width:110px;margin-left:10px" [items]="listWeightUnit" bindValue="value" [selectOnTab]="true"></ng-select>
+                <div class="form-check" style="margin-left:20px">
+                  <label for="weightEstimated" style="margin-left:20px;" class="form-check-label"><input type="checkbox" class="form-check-input" id="weightEstimated" name="weightEstimated" #weightEstimated="ngModel" [(ngModel)]="model.weightEstimated">Weight is an estimate</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="admittingDiagnosis">Admitting Diagnosis/Admission Course&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <label style="color:lightslategray;font-size:0.8em">(Please include any current active cancer or infectious process)</label>
+          <textarea class="form-control" id="admittingDiagnosis" name="admittingDiagnosis" #admittingDiagnosis="ngModel"
+                    [(ngModel)]="model.admittingDiagnosis" rows="3" maxlength="950" required></textarea>
+          <div [hidden]="isValidControl(admittingDiagnosis)" class="ng-invalid-feedback">Please enter Admitting Diagnosis/Admission Course.</div>
+        </div>
+        <div class="form-group">
+          <label for="medicalHistory">Past Medical History&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <label style="color:lightslategray;font-size:0.8em">(Please include any past cancer diagnosis/treatment, neurological disorders, autoimmune disorders)</label>
+          <textarea class="form-control" id="medicalHistory" name="medicalHistory" #medicalHistory="ngModel"
+                    [(ngModel)]="model.medicalHistory" rows="3" maxlength="950" required></textarea>
+          <div [hidden]="isValidControl(medicalHistory)" class="ng-invalid-feedback">Please enter Medical History.</div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-auto" style="margin-bottom:10px">
+              <label for="hiv">HIV</label><br />
+              <div [ngClass]="model.hiv == -1 ? 'radioParent required' : 'radioParent satisfactory'">
+                <label class="radio-inline"><input type="radio" (keydown)="stopCalendarPopup($event)" style="margin:0 8px 0 5px;" name="hiv" [(ngModel)]="model.hiv" [value]="1" #hiv="ngModel">Yes</label>
+                <label class="radio-inline"><input type="radio" (keydown)="stopCalendarPopup($event)" style="margin:0 8px 0 20px" name="hiv" [(ngModel)]="model.hiv" [value]="2" #hiv="ngModel">No</label>
+                <label class="radio-inline"><input type="radio" (keydown)="stopCalendarPopup($event)" style="margin:0 8px 0 20px" name="hiv" [(ngModel)]="model.hiv" [value]="3" #hiv="ngModel">Unknown</label>
+              </div>
+              <div [hidden]="isValidControl(hiv) && model.hiv < 999" class="ng-invalid-feedback" style="margin:0 0 0 10px;display:inline"> (required)</div>
+
+            </div>
+            <div class="col-md-auto" style="margin-bottom:10px">
+              <label for="aids">AIDS</label><br />
+              <div [ngClass]="model.aids == -1 ? 'radioParent required' : 'radioParent satisfactory'">
+                <label class="radio-inline"><input type="radio" (keydown)="stopCalendarPopup($event)" style="margin:0 8px 0 5px;" name="aids" [(ngModel)]="model.aids" [value]="1" #aids="ngModel">Yes</label>
+                <label class="radio-inline"><input type="radio" (keydown)="stopCalendarPopup($event)" style="margin:0 8px 0 20px" name="aids" [(ngModel)]="model.aids" [value]="2" #aids="ngModel">No</label>
+                <label class="radio-inline"><input type="radio" (keydown)="stopCalendarPopup($event)" style="margin:0 8px 0 20px" name="aids" [(ngModel)]="model.aids" [value]="3" #aids="ngModel">Unknown</label>
+              </div>
+            </div>
+            <div class="col-md-auto" style="margin-bottom:10px">
+              <label for="hepB">Hep B</label><br />
+              <div [ngClass]="model.hepB == -1 ? 'radioParent required' : 'radioParent satisfactory'">
+                <label class="radio-inline"><input type="radio" (keydown)="stopCalendarPopup($event)" style="margin:0 8px 0 5px;" name="hepB" [(ngModel)]="model.hepB" [value]="1" #hepB="ngModel">Yes</label>
+                <label class="radio-inline"><input type="radio" (keydown)="stopCalendarPopup($event)" style="margin:0 8px 0 20px" name="hepB" [(ngModel)]="model.hepB" [value]="2" #hepB="ngModel">No</label>
+                <label class="radio-inline"><input type="radio" (keydown)="stopCalendarPopup($event)" style="margin:0 8px 0 20px" name="hepB" [(ngModel)]="model.hepB" [value]="3" #hepB="ngModel">Unknown</label>
+              </div>
+            </div>
+            <div class="col-md-auto">
+              <label for="hepC">Hep C</label><br />
+              <div [ngClass]="model.hepC == -1 ? 'radioParent required' : 'radioParent satisfactory'">
+                <label class="radio-inline"><input type="radio" (keydown)="stopCalendarPopup($event)" style="margin:0 8px 0 5px;" name="hepC" [(ngModel)]="model.hepC" [value]="1" #hepC="ngModel">Yes</label>
+                <label class="radio-inline"><input type="radio" (keydown)="stopCalendarPopup($event)" style="margin:0 8px 0 20px" name="hepC" [(ngModel)]="model.hepC" [value]="2" #hepC="ngModel">No</label>
+                <label class="radio-inline"><input type="radio" (keydown)="stopCalendarPopup($event)" style="margin:0 8px 0 20px" name="hepC" [(ngModel)]="model.hepC" [value]="3" #hepC="ngModel">Unknown</label>
+              </div>
+            </div>
+            <div class="col-md-auto" style="margin-bottom:10px">
+              <label for="ivda">IVDA in last 5 years</label><br />
+              <div [ngClass]="model.ivda == -1 ? 'radioParent required' : 'radioParent satisfactory'">
+                <label class="radio-inline"><input type="radio" (keydown)="stopCalendarPopup($event)" style="margin:0 8px 0 5px;" name="ivda" [(ngModel)]="model.ivda" [value]="1" #ivda="ngModel">Yes</label>
+                <label class="radio-inline"><input type="radio" (keydown)="stopCalendarPopup($event)" style="margin:0 8px 0 20px" name="ivda" [(ngModel)]="model.ivda" [value]="2" #ivda="ngModel">No</label>
+                <label class="radio-inline"><input type="radio" (keydown)="stopCalendarPopup($event)" style="margin:0 8px 0 20px" name="ivda" [(ngModel)]="model.ivda" [value]="3" #ivda="ngModel">Unknown</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="form-group" style="margin-top:80px" [hidden]="!formIsValid(referralForm) || model.ventilatorId == 0 ">
+          <re-captcha id="recaptcha" name="recaptcha" (resolved)="captchaResolved($event)" siteKey="6Lc0MekUAAAAABdI9LfEquoBGwFz0qnZJah0pIaJ" required></re-captcha>
+          <div [hidden]="recaptchaFailed()" class="ng-invalid-feedback">Recaptcha Failed</div>
+        </div>
+        <div class="form-group clearfix">
+          <button id="btnSubmit" class="btn btn-primary float-left" style="font-size: 1.2em !important"
+                  [disabled]="!formIsValid(referralForm) || isProcessing || model.ventilatorId == 0 || model.recaptcha == null || model.recaptcha == undefined"
+                  (click)="submit();" value="Continue">
+            <span *ngIf="showSpinner"><i class="fa fa-spinner fa-spin"></i></span>
+            Submit
+          </button><label class="lblButtonInfo">(Please verify all the fields with red indicator are filled out if the Submit button is disabled.)</label>
+          <div style="padding-top:10px;clear:both;font-size:20px;">
+            <ul id="validationList">
+              <li [hidden]="isValidControl(facilityEreferralCode)">
+                <div class="ng-invalid-feedback">Please enter a valid Facility E-referral Code.</div>
+              </li>
+              <li [hidden]="(isValidControl(facilityEreferralCode) && invalidFacilityCode == false) || (model.facilityEreferralCode == null || model.facilityEreferralCode =='')">
+                <div class="ng-invalid-feedback">{{facilityCodeErrorMessage}}</div>
+              </li>
+              <li [hidden]="extubationDateInFuture == false">
+                <div class="ng-invalid-feedback">Extubation date cannot be in the future.</div>
+              </li>
+              <li [hidden]="isValidControl(contactFirstName)">
+                <div class="ng-invalid-feedback">Please enter a Contact First Name.</div>
+              </li>
+              <li [hidden]="isValidControl(contactLastName)">
+                <div class="ng-invalid-feedback">Please enter a Contact Last Name.</div>
+              </li>
+              <li [hidden]="isValidControl(contactTitleId) || (model.contactTitleId!=null && model.contactTitleId > -1)">
+                <div class="ng-invalid-feedback">Please select a Title.</div>
+              </li>
+              <li [hidden]="isValidPhoneControl(callbackPhoneNumber)">
+                <div class="ng-invalid-feedback">Please enter a Callback Phone Number in the following format: 555-555-5555.</div>
+              </li>
+              <li [hidden]="isValidControl(hospitalUnitId)">
+                <div class="ng-invalid-feedback">Please enter a Hospital Unit.</div>
+              <li [hidden]="isValidControl(floor)">
+                <div class="ng-invalid-feedback">Please enter a Floor.</div>
+              </li>
+              <li [hidden]="isValidControl(medicalRecordNumber)">
+                <div class="ng-invalid-feedback">Please enter a Medical Record Number.</div>
+              </li>
+              <li [hidden]="(isValidControl(medicalRecordNumber) && isMedicalRecordDuplicate == false) || model.medicalRecordNumber == null ||model.medicalRecordNumber == ''">
+                <div class="ng-invalid-feedback">This referral has already been entered. Please call the Donor Information Line if you have an update.</div>
+              </li>
+              <li [hidden]="isValidControl(legalFirstName)">
+                <div class="ng-invalid-feedback">Please enter Legal First Name.</div>
+              </li>
+              <li [hidden]="isValidControl(legalLastName)">
+                <div class="ng-invalid-feedback">Please enter a Legal Last Name.</div>
+              </li>
+              <li [hidden]="cardiacDeathInFuture == false">
+                <div class="ng-invalid-feedback">Cardiac date cannot be in the future.</div>
+              </li>
+              <li [hidden]="admitInFuture == false">
+                <div class="ng-invalid-feedback">Admit date cannot be in the future.</div>
+              </li>
+              <li [hidden]="isValidControl2(dob, model.age>0)">
+                <div class="ng-invalid-feedback">Please enter a Date of Birth.</div>
+              </li>
+              <li [hidden]="isValidControl2(age, model.dob != null)">
+                <div class="ng-invalid-feedback">Please enter an Age.</div>
+              </li>
+              <li [hidden]="model.sex != 0">
+                <div class="ng-invalid-feedback">Please select sex</div>
+              </li>
+              <li [hidden]="isValidControl(admittingDiagnosis)">
+                <div class="ng-invalid-feedback">Please enter Admitting Diagnosis/Admission Course.</div>
+              </li>
+              <li [hidden]="isValidControl(medicalHistory)">
+                <div class="ng-invalid-feedback">Please enter Medical History.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<ng-template #template>
+  <div class="modal-header" (click)="modalRef.hide()">
+    <h5 class="modal-title pull-left"> {{timerValue}}</h5>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body" (click)="modalRef.hide()">
+    Click anywhere to reset the timer.
+  </div>
+</ng-template>
+

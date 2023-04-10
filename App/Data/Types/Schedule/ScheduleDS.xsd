@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ScheduleDS" targetNamespace="http:/Statline.org/ScheduleDS.xsd" xmlns:mstns="http:/Statline.org/ScheduleDS.xsd" xmlns="http:/Statline.org/ScheduleDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ReferralTestConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ReferralTestConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.Stattrac.Data.Types.Properties.Settings.GlobalReference.Default.ReferralTestConnectionString1" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ReferralTestConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ReferralTestConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.Stattrac.Data.Types.Properties.Settings.GlobalReference.Default.ReferralTestConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ScheduleDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ScheduleDS" msprop:Generator_DataSetName="ScheduleDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Schedule" msprop:Generator_UserTableName="Schedule" msprop:Generator_RowDeletedName="ScheduleRowDeleted" msprop:Generator_RowChangedName="ScheduleRowChanged" msprop:Generator_RowClassName="ScheduleRow" msprop:Generator_RowChangingName="ScheduleRowChanging" msprop:Generator_RowEvArgName="ScheduleRowChangeEvent" msprop:Generator_RowEvHandlerName="ScheduleRowChangeEventHandler" msprop:Generator_TableClassName="ScheduleDataTable" msprop:Generator_TableVarName="tableSchedule" msprop:Generator_RowDeletingName="ScheduleRowDeleting" msprop:Generator_TablePropName="Schedule">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ScheduleItemID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="ScheduleItemID" msprop:Generator_ColumnVarNameInTable="columnScheduleItemID" msprop:Generator_ColumnPropNameInRow="ScheduleItemID" msprop:Generator_ColumnPropNameInTable="ScheduleItemIDColumn" type="xs:int" />
+              <xs:element name="ScheduleGroupID" msprop:Generator_UserColumnName="ScheduleGroupID" msprop:Generator_ColumnVarNameInTable="columnScheduleGroupID" msprop:Generator_ColumnPropNameInRow="ScheduleGroupID" msprop:Generator_ColumnPropNameInTable="ScheduleGroupIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ScheduleItemName" msdata:Caption="Name" msprop:Generator_UserColumnName="ScheduleItemName" msprop:Generator_ColumnVarNameInTable="columnScheduleItemName" msprop:Generator_ColumnPropNameInRow="ScheduleItemName" msprop:Generator_ColumnPropNameInTable="ScheduleItemNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ScheduleItemStartDate" msprop:Generator_UserColumnName="ScheduleItemStartDate" msprop:Generator_ColumnVarNameInTable="columnScheduleItemStartDate" msprop:Generator_ColumnPropNameInRow="ScheduleItemStartDate" msprop:Generator_ColumnPropNameInTable="ScheduleItemStartDateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StartTime" msprop:Generator_UserColumnName="StartTime" msprop:Generator_ColumnVarNameInTable="columnStartTime" msprop:Generator_ColumnPropNameInRow="StartTime" msprop:Generator_ColumnPropNameInTable="StartTimeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ScheduleStartDateTime" msdata:Caption="Start" msprop:Generator_UserColumnName="ScheduleStartDateTime" msprop:Generator_ColumnVarNameInTable="columnScheduleStartDateTime" msprop:Generator_ColumnPropNameInRow="ScheduleStartDateTime" msprop:Generator_ColumnPropNameInTable="ScheduleStartDateTimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ScheduleItemEndDate" msprop:Generator_UserColumnName="ScheduleItemEndDate" msprop:Generator_ColumnVarNameInTable="columnScheduleItemEndDate" msprop:Generator_ColumnPropNameInRow="ScheduleItemEndDate" msprop:Generator_ColumnPropNameInTable="ScheduleItemEndDateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EndTime" msprop:Generator_UserColumnName="EndTime" msprop:Generator_ColumnVarNameInTable="columnEndTime" msprop:Generator_ColumnPropNameInRow="EndTime" msprop:Generator_ColumnPropNameInTable="EndTimeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ScheduleEndDateTime" msdata:Caption="End" msprop:Generator_UserColumnName="ScheduleEndDateTime" msprop:Generator_ColumnVarNameInTable="columnScheduleEndDateTime" msprop:Generator_ColumnPropNameInRow="ScheduleEndDateTime" msprop:Generator_ColumnPropNameInTable="ScheduleEndDateTimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Person1" msdata:Caption="Person 1" msprop:Generator_UserColumnName="Person1" msprop:Generator_ColumnVarNameInTable="columnPerson1" msprop:Generator_ColumnPropNameInRow="Person1" msprop:Generator_ColumnPropNameInTable="Person1Column" type="xs:int" minOccurs="0" />
+              <xs:element name="Person2" msdata:Caption="Person 2" msprop:Generator_UserColumnName="Person2" msprop:Generator_ColumnVarNameInTable="columnPerson2" msprop:Generator_ColumnPropNameInRow="Person2" msprop:Generator_ColumnPropNameInTable="Person2Column" type="xs:int" minOccurs="0" />
+              <xs:element name="Person3" msdata:Caption="Person 3" msprop:Generator_UserColumnName="Person3" msprop:Generator_ColumnVarNameInTable="columnPerson3" msprop:Generator_ColumnPropNameInRow="Person3" msprop:Generator_ColumnPropNameInTable="Person3Column" type="xs:int" minOccurs="0" />
+              <xs:element name="Person4" msdata:Caption="Person 4" msprop:Generator_UserColumnName="Person4" msprop:Generator_ColumnVarNameInTable="columnPerson4" msprop:Generator_ColumnPropNameInRow="Person4" msprop:Generator_ColumnPropNameInTable="Person4Column" type="xs:int" minOccurs="0" />
+              <xs:element name="Person5" msdata:Caption="Person 5" msprop:Generator_UserColumnName="Person5" msprop:Generator_ColumnVarNameInTable="columnPerson5" msprop:Generator_ColumnPropNameInRow="Person5" msprop:Generator_ColumnPropNameInTable="Person5Column" type="xs:int" minOccurs="0" />
+              <xs:element name="Person6" msdata:Caption="Person 6" msprop:Generator_UserColumnName="Person6" msprop:Generator_ColumnVarNameInTable="columnPerson6" msprop:Generator_ColumnPropNameInRow="Person6" msprop:Generator_ColumnPropNameInTable="Person6Column" type="xs:int" minOccurs="0" />
+              <xs:element name="Person7" msdata:Caption="Person 7" msprop:Generator_UserColumnName="Person7" msprop:Generator_ColumnVarNameInTable="columnPerson7" msprop:Generator_ColumnPropNameInRow="Person7" msprop:Generator_ColumnPropNameInTable="Person7Column" type="xs:int" minOccurs="0" />
+              <xs:element name="Person8" msdata:Caption="Person 8" msprop:Generator_UserColumnName="Person8" msprop:Generator_ColumnVarNameInTable="columnPerson8" msprop:Generator_ColumnPropNameInRow="Person8" msprop:Generator_ColumnPropNameInTable="Person8Column" type="xs:int" minOccurs="0" />
+              <xs:element name="Person9" msdata:Caption="Person 9" msprop:Generator_UserColumnName="Person9" msprop:Generator_ColumnVarNameInTable="columnPerson9" msprop:Generator_ColumnPropNameInRow="Person9" msprop:Generator_ColumnPropNameInTable="Person9Column" type="xs:int" minOccurs="0" />
+              <xs:element name="Person10" msdata:Caption="Person 10" msprop:Generator_UserColumnName="Person10" msprop:Generator_ColumnVarNameInTable="columnPerson10" msprop:Generator_ColumnPropNameInRow="Person10" msprop:Generator_ColumnPropNameInTable="Person10Column" type="xs:int" minOccurs="0" />
+              <xs:element name="Person11" msdata:Caption="Person 11" msprop:Generator_UserColumnName="Person11" msprop:Generator_ColumnVarNameInTable="columnPerson11" msprop:Generator_ColumnPropNameInRow="Person11" msprop:Generator_ColumnPropNameInTable="Person11Column" type="xs:int" minOccurs="0" />
+              <xs:element name="Person12" msdata:Caption="Person 12" msprop:Generator_UserColumnName="Person12" msprop:Generator_ColumnVarNameInTable="columnPerson12" msprop:Generator_ColumnPropNameInRow="Person12" msprop:Generator_ColumnPropNameInTable="Person12Column" type="xs:int" minOccurs="0" />
+              <xs:element name="Person13" msdata:Caption="Person 13" msprop:Generator_UserColumnName="Person13" msprop:Generator_ColumnVarNameInTable="columnPerson13" msprop:Generator_ColumnPropNameInRow="Person13" msprop:Generator_ColumnPropNameInTable="Person13Column" type="xs:int" minOccurs="0" />
+              <xs:element name="Person14" msdata:Caption="Person 14" msprop:Generator_UserColumnName="Person14" msprop:Generator_ColumnVarNameInTable="columnPerson14" msprop:Generator_ColumnPropNameInRow="Person14" msprop:Generator_ColumnPropNameInTable="Person14Column" type="xs:int" minOccurs="0" />
+              <xs:element name="Person15" msdata:Caption="Person 15" msprop:Generator_UserColumnName="Person15" msprop:Generator_ColumnVarNameInTable="columnPerson15" msprop:Generator_ColumnPropNameInRow="Person15" msprop:Generator_ColumnPropNameInTable="Person15Column" type="xs:int" minOccurs="0" />
+              <xs:element name="Person16" msdata:Caption="Person 16" msprop:Generator_UserColumnName="Person16" msprop:Generator_ColumnVarNameInTable="columnPerson16" msprop:Generator_ColumnPropNameInRow="Person16" msprop:Generator_ColumnPropNameInTable="Person16Column" type="xs:int" minOccurs="0" />
+              <xs:element name="Person17" msdata:Caption="Person 17" msprop:Generator_UserColumnName="Person17" msprop:Generator_ColumnVarNameInTable="columnPerson17" msprop:Generator_ColumnPropNameInRow="Person17" msprop:Generator_ColumnPropNameInTable="Person17Column" type="xs:int" minOccurs="0" />
+              <xs:element name="Person18" msdata:Caption="Person 18" msprop:Generator_UserColumnName="Person18" msprop:Generator_ColumnVarNameInTable="columnPerson18" msprop:Generator_ColumnPropNameInRow="Person18" msprop:Generator_ColumnPropNameInTable="Person18Column" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ScheduleLog" msprop:Generator_UserTableName="ScheduleLog" msprop:Generator_RowDeletedName="ScheduleLogRowDeleted" msprop:Generator_RowChangedName="ScheduleLogRowChanged" msprop:Generator_RowClassName="ScheduleLogRow" msprop:Generator_RowChangingName="ScheduleLogRowChanging" msprop:Generator_RowEvArgName="ScheduleLogRowChangeEvent" msprop:Generator_RowEvHandlerName="ScheduleLogRowChangeEventHandler" msprop:Generator_TableClassName="ScheduleLogDataTable" msprop:Generator_TableVarName="tableScheduleLog" msprop:Generator_RowDeletingName="ScheduleLogRowDeleting" msprop:Generator_TablePropName="ScheduleLog">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ScheduleLogID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ScheduleLogID" msprop:Generator_ColumnVarNameInTable="columnScheduleLogID" msprop:Generator_ColumnPropNameInRow="ScheduleLogID" msprop:Generator_ColumnPropNameInTable="ScheduleLogIDColumn" type="xs:int" />
+              <xs:element name="ScheduleGroupID" msprop:Generator_UserColumnName="ScheduleGroupID" msprop:Generator_ColumnVarNameInTable="columnScheduleGroupID" msprop:Generator_ColumnPropNameInRow="ScheduleGroupID" msprop:Generator_ColumnPropNameInTable="ScheduleGroupIDColumn" type="xs:int" />
+              <xs:element name="ScheduleLogDateTime" msprop:Generator_UserColumnName="ScheduleLogDateTime" msprop:Generator_ColumnVarNameInTable="columnScheduleLogDateTime" msprop:Generator_ColumnPropNameInRow="ScheduleLogDateTime" msprop:Generator_ColumnPropNameInTable="ScheduleLogDateTimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="StatEmployeeID" msprop:Generator_UserColumnName="StatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnStatEmployeeID" msprop:Generator_ColumnPropNameInRow="StatEmployeeID" msprop:Generator_ColumnPropNameInTable="StatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ScheduleLogType" msprop:Generator_UserColumnName="ScheduleLogType" msprop:Generator_ColumnVarNameInTable="columnScheduleLogType" msprop:Generator_ColumnPropNameInRow="ScheduleLogType" msprop:Generator_ColumnPropNameInTable="ScheduleLogTypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ScheduleLogShift" msprop:Generator_UserColumnName="ScheduleLogShift" msprop:Generator_ColumnVarNameInTable="columnScheduleLogShift" msprop:Generator_ColumnPropNameInRow="ScheduleLogShift" msprop:Generator_ColumnPropNameInTable="ScheduleLogShiftColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ScheduleLogChange" msprop:Generator_UserColumnName="ScheduleLogChange" msprop:Generator_ColumnVarNameInTable="columnScheduleLogChange" msprop:Generator_ColumnPropNameInRow="ScheduleLogChange" msprop:Generator_ColumnPropNameInTable="ScheduleLogChangeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Schedule" />
+      <xs:field xpath="mstns:ScheduleItemID" />
+    </xs:unique>
+    <xs:unique name="ScheduleLog_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ScheduleLog" />
+      <xs:field xpath="mstns:ScheduleLogID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

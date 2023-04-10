@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Statline.StatTrac.Api", "..\Api\Statline.StatTrac.Api\Statline.StatTrac.Api.csproj", "{004C7049-FA8B-49EE-ABBC-226C826915D5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Statline.StatTrac.Infrastructure.Persistence", "..\Api\Statline.StatTrac.Infrastructure.Persistence\Statline.StatTrac.Infrastructure.Persistence.csproj", "{5E669404-EFBB-450C-9393-41EEB7601D3C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Statline.StatTrac.Domain", "..\Api\Statline.StatTrac.Domain\Statline.StatTrac.Domain.csproj", "{16A968DB-7BD2-4D48-9B4A-E7B5DFA7009F}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Statline.Ereferral.Transaction", "Statline.Ereferral.Transaction\Statline.Ereferral.Transaction.sqlproj", "{46618C07-53E9-44B6-82D3-3FF15704566E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Statline.Ereferral.Models", "Statline.Ereferral.Models\Statline.Ereferral.Models.csproj", "{6E567ED2-24DD-4652-A1B9-1D1DA73C09F1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Statline.Ereferral.Web", "Statline.Ereferral.Web\Statline.Ereferral.Web.csproj", "{075F42DE-3E90-4E2D-AE9E-350D84E03036}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{004C7049-FA8B-49EE-ABBC-226C826915D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{004C7049-FA8B-49EE-ABBC-226C826915D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{004C7049-FA8B-49EE-ABBC-226C826915D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{004C7049-FA8B-49EE-ABBC-226C826915D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E669404-EFBB-450C-9393-41EEB7601D3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E669404-EFBB-450C-9393-41EEB7601D3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E669404-EFBB-450C-9393-41EEB7601D3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E669404-EFBB-450C-9393-41EEB7601D3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16A968DB-7BD2-4D48-9B4A-E7B5DFA7009F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16A968DB-7BD2-4D48-9B4A-E7B5DFA7009F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16A968DB-7BD2-4D48-9B4A-E7B5DFA7009F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16A968DB-7BD2-4D48-9B4A-E7B5DFA7009F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46618C07-53E9-44B6-82D3-3FF15704566E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46618C07-53E9-44B6-82D3-3FF15704566E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46618C07-53E9-44B6-82D3-3FF15704566E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{46618C07-53E9-44B6-82D3-3FF15704566E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46618C07-53E9-44B6-82D3-3FF15704566E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46618C07-53E9-44B6-82D3-3FF15704566E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6E567ED2-24DD-4652-A1B9-1D1DA73C09F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E567ED2-24DD-4652-A1B9-1D1DA73C09F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E567ED2-24DD-4652-A1B9-1D1DA73C09F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E567ED2-24DD-4652-A1B9-1D1DA73C09F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{075F42DE-3E90-4E2D-AE9E-350D84E03036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{075F42DE-3E90-4E2D-AE9E-350D84E03036}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{075F42DE-3E90-4E2D-AE9E-350D84E03036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{075F42DE-3E90-4E2D-AE9E-350D84E03036}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {363800D7-5DB1-4CAD-A46D-3595FD0EF5AD}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/statline
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\Api\\Statline.StatTrac.Api\\Statline.StatTrac.Api.csproj
+		SccProjectName1 = ../Api/Statline.StatTrac.Api
+		SccLocalPath1 = ..\\Api\\Statline.StatTrac.Api
+		SccProjectUniqueName2 = ..\\Api\\Statline.StatTrac.Infrastructure.Persistence\\Statline.StatTrac.Infrastructure.Persistence.csproj
+		SccProjectName2 = ../Api/Statline.StatTrac.Infrastructure.Persistence
+		SccLocalPath2 = ..\\Api\\Statline.StatTrac.Infrastructure.Persistence
+		SccProjectUniqueName3 = ..\\Api\\Statline.StatTrac.Domain\\Statline.StatTrac.Domain.csproj
+		SccProjectName3 = ../Api/Statline.StatTrac.Domain
+		SccLocalPath3 = ..\\Api\\Statline.StatTrac.Domain
+		SccProjectUniqueName4 = Statline.Ereferral.Transaction\\Statline.Ereferral.Transaction.sqlproj
+		SccProjectName4 = Statline.Ereferral.Transaction
+		SccLocalPath4 = Statline.Ereferral.Transaction
+		SccProjectUniqueName5 = Statline.Ereferral.Models\\Statline.Ereferral.Models.csproj
+		SccProjectName5 = Statline.Ereferral.Models
+		SccLocalPath5 = Statline.Ereferral.Models
+		SccProjectUniqueName6 = Statline.Ereferral.Web\\Statline.Ereferral.Web.csproj
+		SccProjectName6 = Statline.Ereferral.Web
+		SccLocalPath6 = Statline.Ereferral.Web
+	EndGlobalSection
+EndGlobal

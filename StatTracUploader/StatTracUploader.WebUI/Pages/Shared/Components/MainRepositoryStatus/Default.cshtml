@@ -1,0 +1,27 @@
+﻿@using Statline.StatTracUploader.App.Processor
+@model RepositoryStatus
+
+
+<div class="border rounded-pill px-2 bg-light" 
+     data-toggle="tooltip" 
+     data-html="true"  
+     title="<div>Last check at: @Model.LastCheckAt.ToString("T")</div><div>Next check at: @Model.NextCheckAt.ToString("T")</div>">
+    
+    DB Status:
+        @switch (Model.Availability)
+        {
+            case RepositoryAvailability.Unknown:
+                @* Gray circle *@
+                @:&#x26AA;&nbsp;Unknown
+                break;
+            case RepositoryAvailability.Available:
+                @* Green circle *@
+                @:&#x1F7E2;&nbsp;Available
+                break;
+            case RepositoryAvailability.NotAvailable:
+                @* Red circle *@
+                @:&#x1F534;&nbsp;Not&nbsp;available
+                break;
+        }
+</div>
+  

@@ -1,0 +1,544 @@
+﻿/*
+	AddRegistryOwnerMobileEnrollmentText
+	Filename :AddRegistryOwnerMobileEnrollmentText.sql
+	Description: 
+	This update adds mobile content to dynamic registry clients.
+	Updates apply to the following tables:
+		 a. RegistryOwner
+		 b. RegistryOwnerEnrollmentText
+	-------------------------------------------------------
+	**	ccarroll	02/28/2012	Initial
+	**	ccarroll	03/20/2012	Changes to CODA
+	**  ccarroll	07/08/2013  Add StateID values CODA (new field) 
+	**  mschepart   09/05/2013  Updated Colorado Mobile header image
+	**  mschepart   09/06/2013  Added logic to ensure CO mobile header is updated
+	**		02/28/2014	Moonray Schepart	Merged into RegistryOwnerEnrollmentText.sql in CommonRegistry Create Scripts
+*/
+
+PRINT 'AddRegistryOwnerMobileEnrollmentText.sql Has Been Merged Into RegistryOwnerEnrollmentText.sql As Of: 2/28/2014';
+PRINT 'AddRegistryOwnerMobileEnrollmentText.sql Has Been Merged Into RegistryOwner.sql As Of: 2/28/2014';
+
+
+--/*** Update RegistryOwner for Mobile Web ***/
+--DECLARE @RegistryOwnerName varchar(100),
+--		@RegistryOwnerId int,
+--		@MobileContentCode nvarchar(2)
+
+--SET @RegistryOwnerName = 'NEOB'
+--SET @MobileContentCode = 'm' --Mobile Device
+
+--IF (SELECT Count(*) FROM RegistryOwner WHERE RegistryOwnerName = @RegistryOwnerName AND RegistryOwnerRouteName = 'ma') = 0
+--BEGIN
+--	PRINT 'Updating RegistryOwner: ' + @RegistryOwnerName
+
+--	UPDATE RegistryOwner
+--	SET 
+--		LastModified = GETDATE(),
+--		LastStatEmployeeID = 1100,
+--		AuditLogTypeID = 3, --Modified
+--		IDologyActive = 0, 
+--		IDologyLogin = '',
+--		IDologyPassword = '',
+--		EnrollmentFormHideComments = 1,
+--		--EnrollmentFormDefaultStateSelection = 'MA',
+--		RegistryOwnerRouteName = 'ma',
+--		CSSFileLocation = '~/Framework/Themes/NEOB/Enrollment.css'
+--	WHERE RegistryOwnerName =  @RegistryOwnerName
+
+--END
+
+--/*** NEOB ***/
+--/** Add RegistryOwnerEnrollmentText (m) mobile **/
+--SET @RegistryOwnerId = (SELECT RegistryOwnerID FROM RegistryOwner WHERE RegistryOwnerName = @RegistryOwnerName) 
+--IF (SELECT Count(*) FROM RegistryOwnerEnrollmentText WHERE RegistryOwnerID = @RegistryOwnerId AND LanguageCode = @MobileContentCode) = 0
+--BEGIN
+--	PRINT 'Adding Mobile Enrollment Text: ' + @RegistryOwnerName
+--	INSERT RegistryOwnerEnrollmentText
+--		(
+--		RegistryOwnerID,
+--		LanguageCode,
+--		HeaderImageURL,
+--		HeaderImageWidth,
+--		HeaderImageHeight,
+--		DivInstruction,
+--		DivRegistrationSelection,
+--		LblSelectOne,
+--		RdoAdd,
+--		RdoRemove,
+--		DivNameInstruction,
+--		LblFirstName,
+--		LblLastName,
+--		LblMiddleName,
+--		LblGender,
+--		RdoMale,
+--		RdoFemale,
+--		LblDateOfBirth,
+--		DivResidentialAddress,
+--		LblStreetAddress,
+--		LblAddress2,
+--		LblCityStateZip,			
+--		DivContactInformation,
+--		LblEmailAddress,
+--		DivEmailConfirmation,
+--		DivSSN,
+--		LblLastFourSSN,
+--		DivLimitations,
+--		DivLimitationsInstructions,
+--		LblEventCategoryMessage,
+--		LblComment,
+--		DivInformationContacts,
+--		DivSubmitInstruction,
+--		BtnRegisterNow,
+--		ConfirmationPanelAdd,
+--		ConfirmationPanelRemove,
+--		LastModified,
+--		LastStatEmployeeID,
+--		AuditLogTypeID
+--		)
+--	VALUES
+--		(
+--		@RegistryOwnerID,
+--		@MobileContentCode, -- LanguageCode
+--		'~/Register/Dynamic/images/neob_mobile_header.jpg', -- HeaderImageURL
+--		'280', -- HeaderImageWidth
+--		'125', -- HeaderImageHeight
+--		'<Strong>Complete the form below to join the millions of New Englanders registered as organ and tissue donors.</Strong>' +
+--		'<div>By registering you consent to donate organs and tissues at the time of your death. ' +
+--        'Organs and tissues will be recovered for the purpose of transplantation and, ' +
+--        'in the event a donated organ or tissue cannot be used for transplant, an effort ' +
+--        'will be made to use the donation for research.</div>' +
+--		'<p><Strong>Questions about donation?</Strong>' +
+--		'<div>View our <a href="http://www.donatelifenewengland.org/q_donation.html">Frequently Asked Questions</a>.' +
+--		'</div></p>', -- DivInstruction
+--		'<strong>Registration</strong>', -- DivRegistrationSelection
+--		'<span style=''color:red;''>* </span> = Required Fields', -- LblSelectOne
+--		'', -- RdoAdd
+--		'', -- RdoRemoveText
+--		'(Legal name as it might appear on your government issued ID)', -- DivNameInstruction
+--		'<span style=''color:red;''>* </span><B>First Name</B>', -- LblFirstName
+--		'<span style=''color:red;''>* </span><B>Last Name</B>', -- LblLastName
+--		'', -- LblMiddleName
+--		'<span style=''color:red;''>* </span><B>Gender</B>', -- LblGender
+--		'Male', -- RdoMale
+--		'Female', -- RdoFemale
+--		'<span style=''color:red;''>* </span><B>Date of Birth</B> (mm/dd/yyyy)', -- LblDateOfBirth
+--		'<span style=''color:red;''>* </span><B>City</B>', -- DivResidentialAddress (City)
+--		'<span style=''color:red;''>* </span><B>Address</B>', -- LblStreetAddress
+--		'<span style=''color:red;''>* </span><B>State</B>', -- LblAddress2 (State)
+--		'<span style=''color:red;''>* </span><B>Zip Code</B>', -- LblCityStateZip (Zip)			
+--		'', -- DivContactInformation
+--		'<span style=''color:red;''>* </span><B>Email</B>', -- LblEmailAddress
+--		'(for confirmation of your donor registration)', -- DivEmailConfirmation
+--		'(Last four digits of your Social Security Number for ID verification purposes only)', -- DivSSN
+--		'<span style=''color:red;''>* </span><B>Last four SS#:</B>', -- LblLastFourSSN
+--		'<B>Limitations:</B>', -- DivLimitations
+--		'(If there are specific organs and tissues you do NOT wish to donate, list them here. ' +
+--        'Also, indicate here if you do not wish your donation to be used for research)', -- DivLimitationsInstructions
+--		'<span style=''color:red;''>* </span><B>How did you hear about the New England Registry?</B?', -- LblEventCategoryMessage
+--		'', -- LblComment
+--		'', -- DivInformationContacts
+--		'', -- DivSubmitInstruction
+--		'Submit', -- BtnRegisterNow
+--		'Thank you for making the decision to register as an organ and/or tissue donor. You ' +
+--		'should receive a confirmation email shortly.' +
+--		'<p>' +
+--		'Should you wish to change your Donate Life New England Donor Registry status at ' +
+--        'any time in the future, please visit <a href="http://www.donatelifenewengland.org/">' +
+--        'www.donatelifenewengland.org</a>' +
+--		'</p><p>' +
+--		'Please remember that Donate Life New England is an independent registry. Adding ' +
+--        'or removing yourself from this registry does not change your donor designation status ' +
+--        'with your state department of motor vehicles in any way.' +
+--		'</p>' +
+--		'Return to <a href="http://www.donatelifenewengland.org/">www.donatelifenewengland.org</a> ' +
+--		'to learn more about donation and how you can help spread the word about donation!', -- ConformationPanelAdd
+--		'<p>' +
+--        'You have been removed from the Donate Life New England Donor Registry. You should receive a confirmation email shortly.' +
+--		'</p><p>' +
+--        'Please remember that Donate Life New England is an independent registry. Adding or removing ' +
+--		'yourself from this registry does not change your donor designation status with your state department of motor vehicles.' +
+--		'</p><p>' +
+--        ' Return to <a href="http://www.donatelifenewengland.org/">www.donatelifenewengland.org</a>' +
+--		'</p>', -- ConformationPanelRemove
+--		GetDate(), -- LastModified
+--		1100, -- LastStatEmployeeID
+--		1 -- AuditLogTypeID
+--		)
+--END
+
+----/*** NDN ***/
+----SET @RegistryOwnerName = 'NDN'
+----SET @MobileContentCode = 'm' --Mobile Device
+----/** Add RegistryOwnerEnrollmentText (m) mobile **/
+----SET @RegistryOwnerId = (SELECT RegistryOwnerID FROM RegistryOwner WHERE RegistryOwnerName = @RegistryOwnerName) 
+----IF (SELECT Count(*) FROM RegistryOwnerEnrollmentText WHERE RegistryOwnerID = @RegistryOwnerId AND LanguageCode = @MobileContentCode) = 0
+----BEGIN
+----	PRINT 'Adding Mobile Enrollment Text: ' + @RegistryOwnerName
+----	INSERT RegistryOwnerEnrollmentText
+----		(
+----		RegistryOwnerID,
+----		LanguageCode,
+----		HeaderImageURL,
+----		HeaderImageWidth,
+----		HeaderImageHeight,
+----		DivInstruction,
+----		DivRegistrationSelection,
+----		LblSelectOne,
+----		RdoAdd,
+----		RdoRemove,
+----		DivNameInstruction,
+----		LblFirstName,
+----		LblLastName,
+----		LblMiddleName,
+----		LblGender,
+----		RdoMale,
+----		RdoFemale,
+----		LblDateOfBirth,
+----		DivResidentialAddress,
+----		LblStreetAddress,
+----		LblAddress2,
+----		LblCityStateZip,			
+----		DivContactInformation,
+----		LblEmailAddress,
+----		DivEmailConfirmation,
+----		DivSSN,
+----		LblLastFourSSN,
+----		DivLimitations,
+----		DivLimitationsInstructions,
+----		LblEventCategoryMessage,
+----		LblComment,
+----		DivInformationContacts,
+----		DivSubmitInstruction,
+----		BtnRegisterNow,
+----		ConfirmationPanelAdd,
+----		ConfirmationPanelRemove,
+----		LastModified,
+----		LastStatEmployeeID,
+----		AuditLogTypeID
+----		)
+----	VALUES
+----		(
+----		@RegistryOwnerID,
+----		@MobileContentCode, -- LanguageCode
+----		'~/Register/Dynamic/images/ndn_mobile_header.jpg', -- HeaderImageURL
+----		'143', -- HeaderImageWidth
+----		'146', -- HeaderImageHeight
+----		'<Strong>Complete the form below to join millions of registered organ and tissue donors.</Strong>' +
+----		'<div>By registering you consent to donate organs and tissues at the time of your death. ' +
+----        'Organs and tissues will be recovered for the purpose of transplantation and, ' +
+----        'in the event a donated organ or tissue cannot be used for transplant, an effort ' +
+----        'will be made to use the donation for research.</div>' +
+----		'<p><Strong>Questions about donation?</Strong>' +
+----		'<div>View our <a href="http://www.nvdonor.org/index.php/understanding-donations/facts/">Frequently Asked Questions</a>.' +
+----		'</div></p>', -- DivInstruction
+----		'<strong>Registration</strong>', -- DivRegistrationSelection
+----		'<span style=''color:red;''>* </span> = Required Fields', -- LblSelectOne
+----		'', -- RdoAdd
+----		'', -- RdoRemoveText
+----		'(Legal name as it might appear on your government issued ID)', -- DivNameInstruction
+----		'<span style=''color:red;''>* </span><B>First Name</B>', -- LblFirstName
+----		'<span style=''color:red;''>* </span><B>Last Name</B>', -- LblLastName
+----		'', -- LblMiddleName
+----		'<span style=''color:red;''>* </span><B>Gender</B>', -- LblGender
+----		'Male', -- RdoMale
+----		'Female', -- RdoFemale
+----		'<span style=''color:red;''>* </span><B>Date of Birth</B> (mm/dd/yyyy)', -- LblDateOfBirth
+----		'<span style=''color:red;''>* </span><B>City</B>', -- DivResidentialAddress (City)
+----		'<span style=''color:red;''>* </span><B>Address</B>', -- LblStreetAddress
+----		'<span style=''color:red;''>* </span><B>State</B>', -- LblAddress2 (State)
+----		'<span style=''color:red;''>* </span><B>Zip Code</B>', -- LblCityStateZip (Zip)			
+----		'', -- DivContactInformation
+----		'<span style=''color:red;''>* </span><B>Email</B>', -- LblEmailAddress
+----		'(for confirmation of your donor registration)', -- DivEmailConfirmation
+----		'(Last four digits of your Social Security Number for ID verification purposes only)', -- DivSSN
+----		'<span style=''color:red;''>* </span><B>Last four SS#:</B>', -- LblLastFourSSN
+----		'<B>Limitations:</B>', -- DivLimitations
+----		'(If there are specific organs and tissues you do NOT wish to donate, list them here. ' +
+----        'Also, indicate here if you do not wish your donation to be used for research)', -- DivLimitationsInstructions
+----		'<span style=''color:red;''>* </span><B>How did you hear about the Nevada Donor Registry?</B>', -- LblEventCategoryMessage
+----		'', -- LblComment
+----		'', -- DivInformationContacts
+----		'', -- DivSubmitInstruction
+----		'Submit', -- BtnRegisterNow
+----		'Thank you for making the decision to register as an organ and/or tissue donor. You ' +
+----		'should receive a confirmation email shortly.' +
+----		'<p>' +
+----		'Should you wish to change your Nevada Donor Registry status at ' +
+----        'any time in the future, please visit <a href="http://www.nvdonor.org/">www.nvdonor.org</a>' +
+----		'</p><p>' +
+----		'Please remember that Nevada Donor Registry is an independent registry. Adding ' +
+----        'or removing yourself from this registry does not change your donor designation status ' +
+----        'with your state department of motor vehicles in any way.' +
+----		'</p>' +
+----		'Return to <a href="http://www.nvdonor.org/">www.nvdonor.org</a> ' +
+----		'to learn more about donation and how you can help spread the word about donation!', -- ConformationPanelAdd
+----		'<p>' +
+----        'You have been removed from the Nevada Donor Registry. You should receive a confirmation email shortly.' +
+----		'</p><p>' +
+----        'Please remember that Nevada Donor Registry is an independent registry. Adding or removing ' +
+----		'yourself from this registry does not change your donor designation status with your state department of motor vehicles.' +
+----		'</p><p>' +
+----        ' Return to <a href="http://www.nvdonor.org/">www.nvdonor.org</a>' +
+----		'</p>', -- ConformationPanelRemove
+----		GetDate(), -- LastModified
+----		1100, -- LastStatEmployeeID
+----		1 -- AuditLogTypeID
+----		)
+----END
+
+----/*** NORS ***/
+----SET @RegistryOwnerName = 'NORS'
+----SET @MobileContentCode = 'm' --Mobile Device
+----/** Add RegistryOwnerEnrollmentText (m) mobile **/
+----SET @RegistryOwnerId = (SELECT RegistryOwnerID FROM RegistryOwner WHERE RegistryOwnerName = @RegistryOwnerName) 
+----IF (SELECT Count(*) FROM RegistryOwnerEnrollmentText WHERE RegistryOwnerID = @RegistryOwnerId AND LanguageCode = @MobileContentCode) = 0
+----BEGIN
+----	PRINT 'Adding Mobile Enrollment Text: ' + @RegistryOwnerName
+----	INSERT RegistryOwnerEnrollmentText
+----		(
+----		RegistryOwnerID,
+----		LanguageCode,
+----		HeaderImageURL,
+----		HeaderImageWidth,
+----		HeaderImageHeight,
+----		DivInstruction,
+----		DivRegistrationSelection,
+----		LblSelectOne,
+----		RdoAdd,
+----		RdoRemove,
+----		DivNameInstruction,
+----		LblFirstName,
+----		LblLastName,
+----		LblMiddleName,
+----		LblGender,
+----		RdoMale,
+----		RdoFemale,
+----		LblDateOfBirth,
+----		DivResidentialAddress,
+----		LblStreetAddress,
+----		LblAddress2,
+----		LblCityStateZip,			
+----		DivContactInformation,
+----		LblEmailAddress,
+----		DivEmailConfirmation,
+----		DivSSN,
+----		LblLastFourSSN,
+----		DivLimitations,
+----		DivLimitationsInstructions,
+----		LblEventCategoryMessage,
+----		LblComment,
+----		DivInformationContacts,
+----		DivSubmitInstruction,
+----		BtnRegisterNow,
+----		ConfirmationPanelAdd,
+----		ConfirmationPanelRemove,
+----		LastModified,
+----		LastStatEmployeeID,
+----		AuditLogTypeID
+----		)
+----	VALUES
+----		(
+----		@RegistryOwnerID,
+----		@MobileContentCode, -- LanguageCode
+----		'~/Register/Dynamic/images/NOR-LOGO-TAGLINE-CMYK.jpg', -- HeaderImageURL
+----		'201', -- HeaderImageWidth
+----		'93', -- HeaderImageHeight
+----		'<Strong>Complete the form below to register as an organ and tissue donor.</Strong>' +
+----		'<div>By registering, you consent to donate organs and tissues at the time of your death. ' +
+----		'You consent to release your medical records to NORS and authorize necessary tests to determine ' +
+----		'medical suitability of your anatomical gift.  Organs and tissues will be recovered for the purpose ' +
+----		'of transplantation and, in the event any organs or tissues cannot be transplanted, your donation may ' +
+----		'be used for research.</div>', -- DivInstruction
+----		'<strong>Registration</strong>', -- DivRegistrationSelection
+----		'<span style=''color:red;''>* </span> = Required Fields', -- LblSelectOne
+----		'', -- RdoAdd
+----		'', -- RdoRemoveText
+----		'(Legal name as it might appear on your government issued ID)', -- DivNameInstruction
+----		'<span style=''color:red;''>* </span><B>First Name</B>', -- LblFirstName
+----		'<span style=''color:red;''>* </span><B>Last Name</B>', -- LblLastName
+----		'', -- LblMiddleName
+----		'<span style=''color:red;''>* </span><B>Gender</B>', -- LblGender
+----		'Male', -- RdoMale
+----		'Female', -- RdoFemale
+----		'<span style=''color:red;''>* </span><B>Date of Birth</B> (mm/dd/yyyy)', -- LblDateOfBirth
+----		'<span style=''color:red;''>* </span><B>City</B>', -- DivResidentialAddress (City)
+----		'<span style=''color:red;''>* </span><B>Address</B>', -- LblStreetAddress
+----		'<span style=''color:red;''>* </span><B>State</B>', -- LblAddress2 (State)
+----		'<span style=''color:red;''>* </span><B>Zip Code</B>', -- LblCityStateZip (Zip)			
+----		'', -- DivContactInformation
+----		'<span style=''color:red;''>* </span><B>Email</B>', -- LblEmailAddress
+----		'(for confirmation of your donor registration)', -- DivEmailConfirmation
+----		'(Last four digits of your Social Security Number for ID verification purposes only)', -- DivSSN
+----		'<span style=''color:red;''>* </span><B>Last four SS#:</B>', -- LblLastFourSSN
+----		'<B>Donor Restrictions:</B>', -- DivLimitations
+----		'The Registry will only accommodate restrictions related to individual organs or ' +
+----		'tissues that can be removed for purposes of transplantation. Organs are distributed ' +
+----		'according to national regulations.', -- DivLimitationsInstructions
+----		'<span style=''color:red;''>* </span><B>How did you hear about us?:</B>', -- LblEventCategoryMessage
+----		'', -- LblComment
+----		'NORS recommends that you communicate your decision to make an anatomical gift to your ' +
+----		'family and loved ones, as your presence in the Donor Registry of Nebraska will serve as ' +
+----		'legal consent for donation. NORS'' representatives will attempt to contact your family at the ' +
+----		'time of your death to notify them of your decision to make an anatomical gift and to request ' +
+----		'information about your social and medical history.' +
+----		'<p><a href="http://www.nedonation.org/">www.nedonation.org</a></p>', -- DivInformationContacts
+----		'', -- DivSubmitInstruction
+----		'Submit', -- BtnRegisterNow
+----		'Thank you for making the decision to register as an organ and/or tissue donor. You ' +
+----		'should receive a confirmation email shortly.' +
+----		'<p>' +
+----		'Should you wish to change your Donor Registry of Nebraska status at ' +
+----        'any time in the future, please visit <a href="http://www.nedonation.org/">www.nedonation.org</a>' +
+----		'</p><p>' +
+----		'Please remember that the Donor Registry of Nebraska is an independent registry. Adding ' +
+----        'or removing yourself from this registry does not change your donor designation status ' +
+----        'with your state department of motor vehicles in any way.' +
+----		'</p>' +
+----		'Return to <a href="http://www.nedonation.org/">www.nedonation.org</a> ' +
+----		'to learn more about donation and how you can help spread the word about donation!', -- ConformationPanelAdd
+----		'<p>' +
+----        'You have been removed from the Donor Registry of Nebraska. You should receive a confirmation email shortly.' +
+----		'</p><p>' +
+----        'Please remember that The Donor Registry of Nebraska is an independent registry. Adding or removing ' +
+----		'yourself from this registry does not change your donor designation status with your state department of motor vehicles.' +
+----		'</p><p>' +
+----        'Return to <a href="http://www.nedonation.org/">www.nedonation.org</a>' +
+----		'</p>', -- ConformationPanelRemove
+----		GetDate(), -- LastModified
+----		1100, -- LastStatEmployeeID
+----		1 -- AuditLogTypeID
+----		)
+----END
+
+
+
+--/*** CODA ***/
+--SET @RegistryOwnerName = 'CODA'
+--SET @MobileContentCode = 'm' --Mobile Device content for Colorado/Wyoming
+--IF (SELECT Count(*) FROM RegistryOwner WHERE RegistryOwnerName = @RegistryOwnerName AND AllowDisplayNoDonors = 1) = 0
+--BEGIN
+--	PRINT 'Updating RegistryOwner: ' + @RegistryOwnerName
+
+--	UPDATE RegistryOwner
+--	SET 
+--		LastModified = GETDATE(),
+--		LastStatEmployeeID = 1100,
+--		AuditLogTypeID = 3, --Modified
+--		IDologyActive = 0, 
+--		IDologyLogin = '',
+--		IDologyPassword = '',
+--		EnrollmentFormHideComments = 1,
+--		EnrollmentFormDefaultStateSelection = '',
+--		RegistryOwnerRouteName = 'da',
+--		CSSFileLocation = '~/Framework/Themes/Default/Enrollment.css',
+--		--CCRST152 fields --
+--		AllowDisplayNoDonors = 1,
+--		AllowDonorToPrintVerificationForm = 1,
+--		EnrollmentFormDisplayLicenseOrStateID = 1,
+--		EnrollmentFormLimitationsMaxLength = 100,
+--		EnrollmentFormCommentsMaxLength = 100
+
+
+--	WHERE RegistryOwnerName =  @RegistryOwnerName
+--END
+
+
+--/** Add RegistryOwnerEnrollmentText (mc) mobile for Colorado**/
+--SET @RegistryOwnerId = (SELECT RegistryOwnerID FROM RegistryOwner WHERE RegistryOwnerName = @RegistryOwnerName) 
+--IF (SELECT Count(*) FROM RegistryOwnerEnrollmentText WHERE RegistryOwnerID = @RegistryOwnerId AND LanguageCode = @MobileContentCode) = 1
+--BEGIN
+--	PRINT 'Removing Mobile Enrollment Text: ' + @RegistryOwnerName
+--	DELETE RegistryOwnerEnrollmentText WHERE RegistryOwnerID = @RegistryOwnerId AND LanguageCode = @MobileContentCode
+--END
+--	PRINT 'Adding Mobile Enrollment Text: ' + @RegistryOwnerName
+--	INSERT RegistryOwnerEnrollmentText
+--		(
+--		RegistryOwnerID,
+--		LanguageCode,
+--		HeaderImageURL,
+--		HeaderImageWidth,
+--		HeaderImageHeight,
+--		DivInstruction,
+--		DivRegistrationSelection,
+--		LblSelectOne,
+--		RdoAdd,
+--		RdoRemove,
+--		DivNameInstruction,
+--		LblFirstName,
+--		LblLastName,
+--		LblMiddleName,
+--		LblGender,
+--		RdoMale,
+--		RdoFemale,
+--		LblDateOfBirth,
+--		DivResidentialAddress,
+--		LblStreetAddress,
+--		LblAddress2,
+--		LblCityStateZip,			
+--		DivContactInformation,
+--		LblEmailAddress,
+--		DivEmailConfirmation,
+--		DivSSN,
+--		LblLastFourSSN,
+--		DivLimitations,
+--		DivLimitationsInstructions,
+--		LblEventCategoryMessage,
+--		LblComment,
+--		DivInformationContacts,
+--		DivSubmitInstruction,
+--		BtnRegisterNow,
+--		ConfirmationPanelAdd,
+--		ConfirmationPanelRemove,
+--		LastModified,
+--		LastStatEmployeeID,
+--		AuditLogTypeID,
+--		LblLicenseOrStateID
+--		)
+--	VALUES
+--		(
+--		@RegistryOwnerID,
+--		@MobileContentCode, -- LanguageCode
+--		'~/Register/Dynamic/images/CO_WY_mobile_header.jpg', -- HeaderImageURL
+--		'217', -- HeaderImageWidth
+--		'188', -- HeaderImageHeight
+--		'<Strong>Organ & Tissue Donor Registry Enrollment Form</Strong>' +
+--		'<div>By joining the organ & tissue donor registry you have made the decision to save lives by donating your organs & tissues at the time of your death. '+ 		
+--		'For more detailed information on what it means to join the registry, please visit our <a href="http://www.donatelifecolorado.org/facts-and-questions/">FAQ page</a>.' +
+--		'</div>', -- DivInstruction
+--		'<strong>Registration</strong>', -- DivRegistrationSelection
+--		'<span style=''color:red;''>* </span> = Required Fields', -- LblSelectOne
+--		'', -- RdoAdd
+--		'', -- RdoRemoveText
+--		'(Legal name as it might appear on your government issued ID)', -- DivNameInstruction
+--		'<span style=''color:red;''>* </span><B>First Name</B>', -- LblFirstName
+--		'<span style=''color:red;''>* </span><B>Last Name</B>', -- LblLastName
+--		'', -- LblMiddleName
+--		'<span style=''color:red;''>* </span><B>Gender</B>', -- LblGender
+--		'Male', -- RdoMale
+--		'Female', -- RdoFemale
+--		'<span style=''color:red;''>* </span><B>Date of Birth</B> (mm/dd/yyyy)', -- LblDateOfBirth
+--		'<span style=''color:red;''>* </span><B>City</B>', -- DivResidentialAddress (City)
+--		'<span style=''color:red;''>* </span><B>Address</B>', -- LblStreetAddress
+--		'<span style=''color:red;''>* </span><B>State</B>', -- LblAddress2 (State)
+--		'<span style=''color:red;''>* </span><B>Zip Code</B>', -- LblCityStateZip (Zip)			
+--		'', -- DivContactInformation
+--		'<span style=''color:red;''>* </span><B>Email</B>', -- LblEmailAddress
+--		'(for confirmation of your donor registration)', -- DivEmailConfirmation
+--		'(Last four digits of your Social Security Number for ID verification purposes only)', -- DivSSN
+--		'<span style=''color:red;''>* </span><B>Last four SS#:</B>', -- LblLastFourSSN
+--		'<B>Additional Information:</B>', -- DivLimitations
+--        'If there are specific organs and tissues you do not wish to donate, write them here (single restrictions; no narrative):', -- DivLimitationsInstructions
+--		'<span style=''color:red;''>* </span><B>How did you hear about us?</B>', -- LblEventCategoryMessage
+--		'', -- LblComment
+--		'State law prohibits registry information from being sold or shared with any company or government agency. Your registry status is only accessed at the time of death by those agencies directly involved in the organ, eye and tissue donation process as outlined by state law.', -- DivInformationContacts
+--		'', -- DivSubmitInstruction
+--		'Submit', -- BtnRegisterNow
+--		'<p>Thank you for making the decision to register as an organ, eye and tissue donor. You should receive a confirmation email shortly and only one subsequent email to share your wishes with family and friends. The Donate Life Colorado/Wyoming Donor Registry recommends you communicate your decision to become an organ and tissue donor with your loved ones.</p>' +
+--		'<p>This constitutes a valid document of gift. You have authorized Donor Alliance, the federally-designated organ procurement agency, and/or the Rocky Mountain Lions Eye Bank to remove all recoverable organs, eyes and tissues from your body upon your death, except as restricted by you. You have authorized: the release of your complete medical record and autopsy report, all tests and other examinations to determine the medical suitability of your anatomical gift including but not limited to infectious disease testing, disclosure of all information, as necessary, to individuals who receive or use your anatomical gift. Your estate, next of kin, or other survivors shall be responsible for all of your hospital and medical expenses until declaration of death, as well as funeral expenses.</p>' +
+--		'<p>Please <a href="../Dynamic/DonorVerification.aspx?showPrint=true" target="_blank">print</a> and save this document for your records. (Please note that this is the final opportunity to print your personalized verification form.)</p>', -- ConfirmationPanelAdd
+--		'<p>You have been removed from the Donate Life Colorado/Wyoming Organ & Tissue Donor Registry and should receive a confirmation email shortly. Should you wish to change your Donate Life Colorado/Wyoming Organ & Tissue Donor Registry status at any time in the future, please visit <a href="http://www.DonateLifeColorado.org"  target="_blank">www.DonateLifeColorado.org</a> or <a href="http://www.DonateLifeWyoming.org" target="_blank">www.DonateLifeWyoming.org</a>.</p>', -- ConfirmationPanelRemove
+--		GetDate(), -- LastModified
+--		1100, -- LastStatEmployeeID
+--		3, -- AuditLogTypeID
+--		'<strong>Driver''s License or State ID</strong>' -- LblLicenseOrStateID
+--		)

@@ -1,0 +1,42 @@
+namespace Statline.Stattrac.Data.Types.TcssList
+{
+	public enum TcssListRefusalReason
+	{
+		None = 0,
+		List800 = 1,
+		List801 = 2,
+		List802 = 3,
+		List803 = 4,
+		List810 = 5,
+		List811 = 6,
+		List812 = 7,
+		List813 = 8,
+		List814 = 9,
+		List820 = 10,
+		List822 = 11,
+		List823 = 12,
+		List824 = 13,
+		List825 = 14,
+		List830 = 15,
+		List831 = 16,
+		List832 = 17,
+		List833 = 18,
+		List834 = 19,
+		List835 = 20,
+		List836 = 21,
+		List837 = 22,
+		List850 = 23,
+		List851 = 24,
+		List852 = 25,
+		List853 = 26,
+		List860 = 27,
+		List861 = 28,
+		List862 = 29,
+		List863 = 30,
+		List880 = 31,
+		List881 = 32,
+		List882 = 33,
+		List883 = 34,
+		List898 = 35
+	}
+}

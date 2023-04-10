@@ -1,0 +1,87 @@
+<html>
+
+<head>
+<title>Report Description</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<meta HTTP-EQUIV="EXPIRES" content="0">
+</head>
+
+<body bgcolor="#F5EBDD">
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="575">
+  <tr>
+    <td><font face="Times New Roman"><u><b></u></font><strong><font face="Arial" size="4">REASON
+    SUMMARY REPORT</b></font></strong><i><font face="Times New Roman"><p>What can this report
+    do for you?</i></p>
+    <div align="center"><center><table border="0" cellpadding="0" cellspacing="0" width="75%">
+      <tr>
+        <td width="5%" valign="top">1.</td>
+        <td width="50%">Assist with Hospital Development efforts by providing a referral
+        statistical summary of the appropriate, approached, consented and recovered categories for
+        a specific hospital or region.</td>
+      </tr>
+      <tr>
+        <td width="5%" valign="top">2.</td>
+        <td width="50%">Identify the number and percentage of appropriate, approached, consented, <font
+        face="Times New Roman">and recovered referrals. </font></td>
+      </tr>
+      <tr>
+        <td width="5%" valign="top">3.<font face="Times New Roman"></font></td>
+        <td width="50%">Identify the specific reasons why a referral was not appropriate, not <font
+        face="Times New Roman"><font face="Times New Roman">approached, not consented and not
+        recovered.</font></font></td>
+      </tr>
+    </table>
+    </center></div><p><!--The Reason Summary report is a statistical summary of referral data. At
+    the top of the report the totals of the appropriate and rule-out referrals are listed to
+    obtain the total number of referrals. The remaining report is broken down into four main
+    sections, Appropriate, Approach, Consent, and Recovery. <b>Please keep in mind that to
+    receive complete information for this report, Statline needs to track consent and recovery
+    information if this triage service level has been purchased. The interactive medical
+    rule-out service is also required to produce this report.</b></p>
+    <p>The <i>Appropriate </i>section will list the number of appropriate referrals by type (<i>organs,
+    bone, tissue, skin, valves and eyes).</i> Appropriate referrals are defined as donor
+    referrals that are appropriate for potential donation according to the information
+    received by the hospital (age, past medical history etc.). The percentage is indicated to
+    the left of every number. This section will also provide the number of <i>Not Appropriate</i>
+    referrals by type <i>(organs, bone, tissue, skin, valves and eyes).</i> Once again, the
+    percentage is indicated to the left of every number. If a referral was not appropriate for
+    a specific type of donation <i>(organs, bone, tissue, skin, valves and eyes), </i>the
+    different reason categories are listed under the Not Appropriate category. The reasons for
+    a not appropriate referral are Age, High Risk, Medical Rule-out, Not Appropriate or
+    Previous Vent. The numbers as well as the percentages are tracked for organs, bone,
+    tissue, skin, valves and eyes.</p>
+    <p>If a referral was appropriate for a specific option, the report will lead you down to
+    the next section, <i>Approach.</i> This section will give you combined approach
+    information on appropriate referrals. The number of approached referrals will be listed by
+    type (<i>organs, bone, tissue, skin, valves and eyes)</i> and the percentages will be to
+    the left of the number. If a referral was not approached, the reasons are listed under Not
+    Approached. The reasons why a referral was not approached are as follows: Unknown, Family
+    Unavailable, Coroner Deny, Medical Rule-out, Time/Logistics, High Risk, Unapproachable,
+    Arrest and Never Brain Dead. The number of Not Approached referrals are listed as well as
+    the percentages.</p>
+    <p>If a referral was appropriate and approached, the report will lead you down to the next
+    section, <i>Consent.</i> This section will give you the number of consented referrals by
+    type <i>(organs, bone, tissue, skin, valves and eyes).</i> If consent was not obtained on
+    a donor referral, the reasons are listed under Not Consented. The different reasons for
+    not consented are Ethnic, Religious, Emotional, Unknown and Previous Discussion. The
+    number as well as the percentage is tracked by type.</p>
+    <p>If consent was obtained on a donor referral, the report will lead you down to the last
+    section, <i>Recovery.</i> This section will give you the number and percentage of
+    recovered options by type<i> (organs, bone, tissue, skin, valves and eyes).</i> If a
+    consented referral was not recovered, the report will indicate the reason under Not
+    Recovered. The different reasons for not recovered are as follows: Coroner Deny, Medical
+    Rule-out, High Risk, Time/Logistics, Arrest, Never Brain Dead, Heart Transplantable and
+    Unknown. The number as well as the percentage is tracked by type.-->
+    The Reason Summary is a condensed statistical report of referral data. At the top of the 
+    report the totals of the appropriate and rule-out referrals are listed to obtain the total 
+    number of referrals. The remaining report is broken down into four main sections, Appropriate, 
+    Approach, Consent, and Recovery. Again, for a client to receive complete information from this 
+    report, Statline needs to track consent and recovery information (additional service charges applied). 
+    </font></td>
+  </tr>
+</table>
+</center></div>
+</body>
+</html>

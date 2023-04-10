@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ScheduleGroupOrganizationDS" targetNamespace="http://statline.org/ScheduleGroupOrganizationDS.xsd" xmlns:mstns="http://statline.org/ScheduleGroupOrganizationDS.xsd" xmlns="http://statline.org/ScheduleGroupOrganizationDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ScheduleGroupOrganizationDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ScheduleGroupOrganizationDS" msprop:Generator_DataSetName="ScheduleGroupOrganizationDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ScheduleGroupOrganization" msprop:Generator_UserTableName="ScheduleGroupOrganization" msprop:Generator_RowDeletedName="ScheduleGroupOrganizationRowDeleted" msprop:Generator_RowChangedName="ScheduleGroupOrganizationRowChanged" msprop:Generator_RowClassName="ScheduleGroupOrganizationRow" msprop:Generator_RowChangingName="ScheduleGroupOrganizationRowChanging" msprop:Generator_RowEvArgName="ScheduleGroupOrganizationRowChangeEvent" msprop:Generator_RowEvHandlerName="ScheduleGroupOrganizationRowChangeEventHandler" msprop:Generator_TableClassName="ScheduleGroupOrganizationDataTable" msprop:Generator_TableVarName="tableScheduleGroupOrganization" msprop:Generator_RowDeletingName="ScheduleGroupOrganizationRowDeleting" msprop:Generator_TablePropName="ScheduleGroupOrganization">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ScheduleGroupOrganizationID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ScheduleGroupOrganizationID" msprop:Generator_ColumnVarNameInTable="columnScheduleGroupOrganizationID" msprop:Generator_ColumnPropNameInRow="ScheduleGroupOrganizationID" msprop:Generator_ColumnPropNameInTable="ScheduleGroupOrganizationIDColumn" type="xs:int" />
+              <xs:element name="ScheduleGroupID" msprop:Generator_UserColumnName="ScheduleGroupID" msprop:Generator_ColumnVarNameInTable="columnScheduleGroupID" msprop:Generator_ColumnPropNameInRow="ScheduleGroupID" msprop:Generator_ColumnPropNameInTable="ScheduleGroupIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="OrganizationID" msprop:Generator_UserColumnName="OrganizationID" msprop:Generator_ColumnVarNameInTable="columnOrganizationID" msprop:Generator_ColumnPropNameInRow="OrganizationID" msprop:Generator_ColumnPropNameInTable="OrganizationIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UpdatedFlag" msprop:Generator_UserColumnName="UpdatedFlag" msprop:Generator_ColumnVarNameInTable="columnUpdatedFlag" msprop:Generator_ColumnPropNameInRow="UpdatedFlag" msprop:Generator_ColumnPropNameInTable="UpdatedFlagColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ScheduleGroupOrganizationSearch" msprop:Generator_UserTableName="ScheduleGroupOrganizationSearch" msprop:Generator_RowDeletedName="ScheduleGroupOrganizationSearchRowDeleted" msprop:Generator_TableClassName="ScheduleGroupOrganizationSearchDataTable" msprop:Generator_RowChangedName="ScheduleGroupOrganizationSearchRowChanged" msprop:Generator_RowClassName="ScheduleGroupOrganizationSearchRow" msprop:Generator_RowChangingName="ScheduleGroupOrganizationSearchRowChanging" msprop:Generator_RowEvArgName="ScheduleGroupOrganizationSearchRowChangeEvent" msprop:Generator_RowEvHandlerName="ScheduleGroupOrganizationSearchRowChangeEventHandler" msprop:Generator_TablePropName="ScheduleGroupOrganizationSearch" msprop:Generator_TableVarName="tableScheduleGroupOrganizationSearch" msprop:Generator_RowDeletingName="ScheduleGroupOrganizationSearchRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ScheduleGroupID" msprop:Generator_UserColumnName="ScheduleGroupID" msprop:Generator_ColumnPropNameInRow="ScheduleGroupID" msprop:Generator_ColumnVarNameInTable="columnScheduleGroupID" msprop:Generator_ColumnPropNameInTable="ScheduleGroupIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="ScheuleGroupOrganizationKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ScheduleGroupOrganization" />
+      <xs:field xpath="mstns:ScheduleGroupOrganizationID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

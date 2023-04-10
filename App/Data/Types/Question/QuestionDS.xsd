@@ -1,0 +1,653 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QuestionDS" targetNamespace="http://tempuri.org/QuestionDS.xsd" xmlns:mstns="http://tempuri.org/QuestionDS.xsd" xmlns="http://tempuri.org/QuestionDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="_ReferralDev2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="_ReferralDev2ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.Stattrac.Data.Types.Properties.Settings.GlobalReference.Default._ReferralDev2ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QuestionDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="QuestionDS" msprop:Generator_DataSetName="QuestionDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="QuestionAskCaller" msprop:Generator_UserTableName="QuestionAskCaller" msprop:Generator_RowDeletedName="QuestionAskCallerRowDeleted" msprop:Generator_RowChangedName="QuestionAskCallerRowChanged" msprop:Generator_RowClassName="QuestionAskCallerRow" msprop:Generator_RowChangingName="QuestionAskCallerRowChanging" msprop:Generator_RowEvArgName="QuestionAskCallerRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionAskCallerRowChangeEventHandler" msprop:Generator_TableClassName="QuestionAskCallerDataTable" msprop:Generator_TableVarName="tableQuestionAskCaller" msprop:Generator_RowDeletingName="QuestionAskCallerRowDeleting" msprop:Generator_TablePropName="QuestionAskCaller">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionAskCallerID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="QuestionAskCallerID" msprop:Generator_ColumnPropNameInRow="QuestionAskCallerID" msprop:Generator_ColumnVarNameInTable="columnQuestionAskCallerID" msprop:Generator_ColumnPropNameInTable="QuestionAskCallerIDColumn" type="xs:int" />
+              <xs:element name="QuestionAskCaller" msprop:Generator_UserColumnName="QuestionAskCaller" msprop:Generator_ColumnPropNameInRow="QuestionAskCaller" msprop:Generator_ColumnVarNameInTable="columnQuestionAskCaller" msprop:Generator_ColumnPropNameInTable="QuestionAskCallerColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QuestionTrackEventLog" msprop:Generator_UserTableName="QuestionTrackEventLog" msprop:Generator_RowDeletedName="QuestionTrackEventLogRowDeleted" msprop:Generator_RowChangedName="QuestionTrackEventLogRowChanged" msprop:Generator_RowClassName="QuestionTrackEventLogRow" msprop:Generator_RowChangingName="QuestionTrackEventLogRowChanging" msprop:Generator_RowEvArgName="QuestionTrackEventLogRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionTrackEventLogRowChangeEventHandler" msprop:Generator_TableClassName="QuestionTrackEventLogDataTable" msprop:Generator_TableVarName="tableQuestionTrackEventLog" msprop:Generator_RowDeletingName="QuestionTrackEventLogRowDeleting" msprop:Generator_TablePropName="QuestionTrackEventLog">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionTrackEventLogID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="QuestionTrackEventLogID" msprop:Generator_ColumnPropNameInRow="QuestionTrackEventLogID" msprop:Generator_ColumnVarNameInTable="columnQuestionTrackEventLogID" msprop:Generator_ColumnPropNameInTable="QuestionTrackEventLogIDColumn" type="xs:int" />
+              <xs:element name="QuestionTrackEventLog" msprop:Generator_UserColumnName="QuestionTrackEventLog" msprop:Generator_ColumnPropNameInRow="QuestionTrackEventLog" msprop:Generator_ColumnVarNameInTable="columnQuestionTrackEventLog" msprop:Generator_ColumnPropNameInTable="QuestionTrackEventLogColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QuestionCategory" msprop:Generator_UserTableName="QuestionCategory" msprop:Generator_RowDeletedName="QuestionCategoryRowDeleted" msprop:Generator_RowChangedName="QuestionCategoryRowChanged" msprop:Generator_RowClassName="QuestionCategoryRow" msprop:Generator_RowChangingName="QuestionCategoryRowChanging" msprop:Generator_RowEvArgName="QuestionCategoryRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionCategoryRowChangeEventHandler" msprop:Generator_TableClassName="QuestionCategoryDataTable" msprop:Generator_TableVarName="tableQuestionCategory" msprop:Generator_RowDeletingName="QuestionCategoryRowDeleting" msprop:Generator_TablePropName="QuestionCategory">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionCategoryID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="QuestionCategoryID" msprop:Generator_ColumnPropNameInRow="QuestionCategoryID" msprop:Generator_ColumnVarNameInTable="columnQuestionCategoryID" msprop:Generator_ColumnPropNameInTable="QuestionCategoryIDColumn" type="xs:int" />
+              <xs:element name="QuestionCategory" msprop:Generator_UserColumnName="QuestionCategory" msprop:Generator_ColumnPropNameInRow="QuestionCategory" msprop:Generator_ColumnVarNameInTable="columnQuestionCategory" msprop:Generator_ColumnPropNameInTable="QuestionCategoryColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QuestionDisplayComment" msprop:Generator_UserTableName="QuestionDisplayComment" msprop:Generator_RowDeletedName="QuestionDisplayCommentRowDeleted" msprop:Generator_RowChangedName="QuestionDisplayCommentRowChanged" msprop:Generator_RowClassName="QuestionDisplayCommentRow" msprop:Generator_RowChangingName="QuestionDisplayCommentRowChanging" msprop:Generator_RowEvArgName="QuestionDisplayCommentRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionDisplayCommentRowChangeEventHandler" msprop:Generator_TableClassName="QuestionDisplayCommentDataTable" msprop:Generator_TableVarName="tableQuestionDisplayComment" msprop:Generator_RowDeletingName="QuestionDisplayCommentRowDeleting" msprop:Generator_TablePropName="QuestionDisplayComment">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionDisplayCommentID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="QuestionDisplayCommentID" msprop:Generator_ColumnPropNameInRow="QuestionDisplayCommentID" msprop:Generator_ColumnVarNameInTable="columnQuestionDisplayCommentID" msprop:Generator_ColumnPropNameInTable="QuestionDisplayCommentIDColumn" type="xs:int" />
+              <xs:element name="QuestionDisplayComment" msprop:Generator_UserColumnName="QuestionDisplayComment" msprop:Generator_ColumnPropNameInRow="QuestionDisplayComment" msprop:Generator_ColumnVarNameInTable="columnQuestionDisplayComment" msprop:Generator_ColumnPropNameInTable="QuestionDisplayCommentColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QuestionDisplayNA" msprop:Generator_UserTableName="QuestionDisplayNA" msprop:Generator_RowDeletedName="QuestionDisplayNARowDeleted" msprop:Generator_RowChangedName="QuestionDisplayNARowChanged" msprop:Generator_RowClassName="QuestionDisplayNARow" msprop:Generator_RowChangingName="QuestionDisplayNARowChanging" msprop:Generator_RowEvArgName="QuestionDisplayNARowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionDisplayNARowChangeEventHandler" msprop:Generator_TableClassName="QuestionDisplayNADataTable" msprop:Generator_TableVarName="tableQuestionDisplayNA" msprop:Generator_RowDeletingName="QuestionDisplayNARowDeleting" msprop:Generator_TablePropName="QuestionDisplayNA">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionDisplayNAID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="QuestionDisplayNAID" msprop:Generator_ColumnPropNameInRow="QuestionDisplayNAID" msprop:Generator_ColumnVarNameInTable="columnQuestionDisplayNAID" msprop:Generator_ColumnPropNameInTable="QuestionDisplayNAIDColumn" type="xs:int" />
+              <xs:element name="QuestionDisplayNA" msprop:Generator_UserColumnName="QuestionDisplayNA" msprop:Generator_ColumnPropNameInRow="QuestionDisplayNA" msprop:Generator_ColumnVarNameInTable="columnQuestionDisplayNA" msprop:Generator_ColumnPropNameInTable="QuestionDisplayNAColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QuestionGroup" msprop:Generator_UserTableName="QuestionGroup" msprop:Generator_RowDeletedName="QuestionGroupRowDeleted" msprop:Generator_RowChangedName="QuestionGroupRowChanged" msprop:Generator_RowClassName="QuestionGroupRow" msprop:Generator_RowChangingName="QuestionGroupRowChanging" msprop:Generator_RowEvArgName="QuestionGroupRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionGroupRowChangeEventHandler" msprop:Generator_TableClassName="QuestionGroupDataTable" msprop:Generator_TableVarName="tableQuestionGroup" msprop:Generator_RowDeletingName="QuestionGroupRowDeleting" msprop:Generator_TablePropName="QuestionGroup">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionGroupID" msprop:Generator_UserColumnName="QuestionGroupID" msprop:Generator_ColumnPropNameInRow="QuestionGroupID" msprop:Generator_ColumnVarNameInTable="columnQuestionGroupID" msprop:Generator_ColumnPropNameInTable="QuestionGroupIDColumn" type="xs:int" />
+              <xs:element name="QuestionGroup" msprop:Generator_UserColumnName="QuestionGroup" msprop:Generator_ColumnPropNameInRow="QuestionGroup" msprop:Generator_ColumnVarNameInTable="columnQuestionGroup" msprop:Generator_ColumnPropNameInTable="QuestionGroupColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CallTypeID" msprop:Generator_UserColumnName="CallTypeID" msprop:Generator_ColumnPropNameInRow="CallTypeID" msprop:Generator_ColumnVarNameInTable="columnCallTypeID" msprop:Generator_ColumnPropNameInTable="CallTypeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Inactive" msprop:Generator_UserColumnName="Inactive" msprop:Generator_ColumnPropNameInRow="Inactive" msprop:Generator_ColumnVarNameInTable="columnInactive" msprop:Generator_ColumnPropNameInTable="InactiveColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DefaultGroupSourceCode" msprop:Generator_UserColumnName="DefaultGroupSourceCode" msprop:Generator_ColumnPropNameInRow="DefaultGroupSourceCode" msprop:Generator_ColumnVarNameInTable="columnDefaultGroupSourceCode" msprop:Generator_ColumnPropNameInTable="DefaultGroupSourceCodeColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QuestionIfYes" msprop:Generator_UserTableName="QuestionIfYes" msprop:Generator_RowDeletedName="QuestionIfYesRowDeleted" msprop:Generator_RowChangedName="QuestionIfYesRowChanged" msprop:Generator_RowClassName="QuestionIfYesRow" msprop:Generator_RowChangingName="QuestionIfYesRowChanging" msprop:Generator_RowEvArgName="QuestionIfYesRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionIfYesRowChangeEventHandler" msprop:Generator_TableClassName="QuestionIfYesDataTable" msprop:Generator_TableVarName="tableQuestionIfYes" msprop:Generator_RowDeletingName="QuestionIfYesRowDeleting" msprop:Generator_TablePropName="QuestionIfYes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionIfYesID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="QuestionIfYesID" msprop:Generator_ColumnPropNameInRow="QuestionIfYesID" msprop:Generator_ColumnVarNameInTable="columnQuestionIfYesID" msprop:Generator_ColumnPropNameInTable="QuestionIfYesIDColumn" type="xs:int" />
+              <xs:element name="QuestionIfYes" msprop:Generator_UserColumnName="QuestionIfYes" msprop:Generator_ColumnPropNameInRow="QuestionIfYes" msprop:Generator_ColumnVarNameInTable="columnQuestionIfYes" msprop:Generator_ColumnPropNameInTable="QuestionIfYesColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QuestionAssociated" msprop:Generator_UserTableName="QuestionAssociated" msprop:Generator_RowDeletedName="QuestionAssociatedRowDeleted" msprop:Generator_RowChangedName="QuestionAssociatedRowChanged" msprop:Generator_RowClassName="QuestionAssociatedRow" msprop:Generator_RowChangingName="QuestionAssociatedRowChanging" msprop:Generator_RowEvArgName="QuestionAssociatedRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionAssociatedRowChangeEventHandler" msprop:Generator_TableClassName="QuestionAssociatedDataTable" msprop:Generator_TableVarName="tableQuestionAssociated" msprop:Generator_RowDeletingName="QuestionAssociatedRowDeleting" msprop:Generator_TablePropName="QuestionAssociated">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionAssociatedID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="QuestionAssociatedID" msprop:Generator_ColumnPropNameInRow="QuestionAssociatedID" msprop:Generator_ColumnVarNameInTable="columnQuestionAssociatedID" msprop:Generator_ColumnPropNameInTable="QuestionAssociatedIDColumn" type="xs:int" />
+              <xs:element name="QuestionID" msprop:Generator_UserColumnName="QuestionID" msprop:Generator_ColumnPropNameInRow="QuestionID" msprop:Generator_ColumnVarNameInTable="columnQuestionID" msprop:Generator_ColumnPropNameInTable="QuestionIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ChildQuestionID" msprop:Generator_UserColumnName="ChildQuestionID" msprop:Generator_ColumnPropNameInRow="ChildQuestionID" msprop:Generator_ColumnVarNameInTable="columnChildQuestionID" msprop:Generator_ColumnPropNameInTable="ChildQuestionIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DisplayOrder" msprop:Generator_UserColumnName="DisplayOrder" msprop:Generator_ColumnPropNameInRow="DisplayOrder" msprop:Generator_ColumnVarNameInTable="columnDisplayOrder" msprop:Generator_ColumnPropNameInTable="DisplayOrderColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Question" msprop:Generator_UserColumnName="Question" msprop:Generator_ColumnPropNameInRow="Question" msprop:Generator_ColumnVarNameInTable="columnQuestion" msprop:Generator_ColumnPropNameInTable="QuestionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="QuestionIfYes" msdata:Caption="Question If Yes" msprop:Generator_UserColumnName="QuestionIfYes" msprop:Generator_ColumnPropNameInRow="QuestionIfYes" msprop:Generator_ColumnVarNameInTable="columnQuestionIfYes" msprop:Generator_ColumnPropNameInTable="QuestionIfYesColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Question" msprop:Generator_UserTableName="Question" msprop:Generator_RowDeletedName="QuestionRowDeleted" msprop:Generator_RowChangedName="QuestionRowChanged" msprop:Generator_RowClassName="QuestionRow" msprop:Generator_RowChangingName="QuestionRowChanging" msprop:Generator_RowEvArgName="QuestionRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionRowChangeEventHandler" msprop:Generator_TableClassName="QuestionDataTable" msprop:Generator_TableVarName="tableQuestion" msprop:Generator_RowDeletingName="QuestionRowDeleting" msprop:Generator_TablePropName="Question">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="QuestionID" msprop:Generator_ColumnVarNameInTable="columnQuestionID" msprop:Generator_ColumnPropNameInRow="QuestionID" msprop:Generator_ColumnPropNameInTable="QuestionIDColumn" type="xs:int" />
+              <xs:element name="Inactive" msprop:Generator_UserColumnName="Inactive" msprop:Generator_ColumnVarNameInTable="columnInactive" msprop:Generator_ColumnPropNameInRow="Inactive" msprop:Generator_ColumnPropNameInTable="InactiveColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Question" msprop:Generator_UserColumnName="Question" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Question" msprop:Generator_ColumnPropNameInTable="QuestionColumn" msprop:Generator_ColumnVarNameInTable="columnQuestion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QuestionCategoryID" msprop:Generator_UserColumnName="QuestionCategoryID" msprop:Generator_ColumnVarNameInTable="columnQuestionCategoryID" msprop:Generator_ColumnPropNameInRow="QuestionCategoryID" msprop:Generator_ColumnPropNameInTable="QuestionCategoryIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QuestionCategory" msdata:Caption="Question Category" msprop:Generator_UserColumnName="QuestionCategory" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QuestionCategory" msprop:Generator_ColumnPropNameInTable="QuestionCategoryColumn" msprop:Generator_ColumnVarNameInTable="columnQuestionCategory" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QuestionDisplayNAID" msprop:Generator_UserColumnName="QuestionDisplayNAID" msprop:Generator_ColumnVarNameInTable="columnQuestionDisplayNAID" msprop:Generator_ColumnPropNameInRow="QuestionDisplayNAID" msprop:Generator_ColumnPropNameInTable="QuestionDisplayNAIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QuestionDisplayNA" msprop:Generator_UserColumnName="QuestionDisplayNA" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QuestionDisplayNA" msprop:Generator_ColumnPropNameInTable="QuestionDisplayNAColumn" msprop:Generator_ColumnVarNameInTable="columnQuestionDisplayNA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QuestionDisplayCommentID" msprop:Generator_UserColumnName="QuestionDisplayCommentID" msprop:Generator_ColumnVarNameInTable="columnQuestionDisplayCommentID" msprop:Generator_ColumnPropNameInRow="QuestionDisplayCommentID" msprop:Generator_ColumnPropNameInTable="QuestionDisplayCommentIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QuestionDisplayComment" msprop:Generator_UserColumnName="QuestionDisplayComment" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QuestionDisplayComment" msprop:Generator_ColumnPropNameInTable="QuestionDisplayCommentColumn" msprop:Generator_ColumnVarNameInTable="columnQuestionDisplayComment" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QuestionTrackEventLogID" msprop:Generator_UserColumnName="QuestionTrackEventLogID" msprop:Generator_ColumnVarNameInTable="columnQuestionTrackEventLogID" msprop:Generator_ColumnPropNameInRow="QuestionTrackEventLogID" msprop:Generator_ColumnPropNameInTable="QuestionTrackEventLogIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QuestionTrackEventLog" msprop:Generator_UserColumnName="QuestionTrackEventLog" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QuestionTrackEventLog" msprop:Generator_ColumnPropNameInTable="QuestionTrackEventLogColumn" msprop:Generator_ColumnVarNameInTable="columnQuestionTrackEventLog" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QuestionAskCallerID" msprop:Generator_UserColumnName="QuestionAskCallerID" msprop:Generator_ColumnVarNameInTable="columnQuestionAskCallerID" msprop:Generator_ColumnPropNameInRow="QuestionAskCallerID" msprop:Generator_ColumnPropNameInTable="QuestionAskCallerIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QuestionAskCaller" msprop:Generator_UserColumnName="QuestionAskCaller" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QuestionAskCaller" msprop:Generator_ColumnPropNameInTable="QuestionAskCallerColumn" msprop:Generator_ColumnVarNameInTable="columnQuestionAskCaller" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QuestionIfYesID" msprop:Generator_UserColumnName="QuestionIfYesID" msprop:Generator_ColumnVarNameInTable="columnQuestionIfYesID" msprop:Generator_ColumnPropNameInRow="QuestionIfYesID" msprop:Generator_ColumnPropNameInTable="QuestionIfYesIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QuestionIfYes" msdata:Caption="If Yes" msprop:Generator_UserColumnName="QuestionIfYes" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QuestionIfYes" msprop:Generator_ColumnPropNameInTable="QuestionIfYesColumn" msprop:Generator_ColumnVarNameInTable="columnQuestionIfYes" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QuestionConfigAskOnIncomplete" msprop:Generator_UserTableName="QuestionConfigAskOnIncomplete" msprop:Generator_RowDeletedName="QuestionConfigAskOnIncompleteRowDeleted" msprop:Generator_RowChangedName="QuestionConfigAskOnIncompleteRowChanged" msprop:Generator_RowClassName="QuestionConfigAskOnIncompleteRow" msprop:Generator_RowChangingName="QuestionConfigAskOnIncompleteRowChanging" msprop:Generator_RowEvArgName="QuestionConfigAskOnIncompleteRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionConfigAskOnIncompleteRowChangeEventHandler" msprop:Generator_TableClassName="QuestionConfigAskOnIncompleteDataTable" msprop:Generator_TableVarName="tableQuestionConfigAskOnIncomplete" msprop:Generator_RowDeletingName="QuestionConfigAskOnIncompleteRowDeleting" msprop:Generator_TablePropName="QuestionConfigAskOnIncomplete">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionConfigAskOnIncompleteID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="QuestionConfigAskOnIncompleteID" msprop:Generator_ColumnPropNameInRow="QuestionConfigAskOnIncompleteID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigAskOnIncompleteID" msprop:Generator_ColumnPropNameInTable="QuestionConfigAskOnIncompleteIDColumn" type="xs:int" />
+              <xs:element name="QuestionConfigAskOnIncomplete" msprop:Generator_UserColumnName="QuestionConfigAskOnIncomplete" msprop:Generator_ColumnPropNameInRow="QuestionConfigAskOnIncomplete" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigAskOnIncomplete" msprop:Generator_ColumnPropNameInTable="QuestionConfigAskOnIncompleteColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QuestionConfigAskUntilYes" msprop:Generator_UserTableName="QuestionConfigAskUntilYes" msprop:Generator_RowDeletedName="QuestionConfigAskUntilYesRowDeleted" msprop:Generator_RowChangedName="QuestionConfigAskUntilYesRowChanged" msprop:Generator_RowClassName="QuestionConfigAskUntilYesRow" msprop:Generator_RowChangingName="QuestionConfigAskUntilYesRowChanging" msprop:Generator_RowEvArgName="QuestionConfigAskUntilYesRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionConfigAskUntilYesRowChangeEventHandler" msprop:Generator_TableClassName="QuestionConfigAskUntilYesDataTable" msprop:Generator_TableVarName="tableQuestionConfigAskUntilYes" msprop:Generator_RowDeletingName="QuestionConfigAskUntilYesRowDeleting" msprop:Generator_TablePropName="QuestionConfigAskUntilYes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionConfigAskUntilYesID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="QuestionConfigAskUntilYesID" msprop:Generator_ColumnPropNameInRow="QuestionConfigAskUntilYesID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigAskUntilYesID" msprop:Generator_ColumnPropNameInTable="QuestionConfigAskUntilYesIDColumn" type="xs:int" />
+              <xs:element name="QuestionConfigAskUntilYes" msprop:Generator_UserColumnName="QuestionConfigAskUntilYes" msprop:Generator_ColumnPropNameInRow="QuestionConfigAskUntilYes" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigAskUntilYes" msprop:Generator_ColumnPropNameInTable="QuestionConfigAskUntilYesColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QuestionConfigFieldUpdate" msprop:Generator_UserTableName="QuestionConfigFieldUpdate" msprop:Generator_RowDeletedName="QuestionConfigFieldUpdateRowDeleted" msprop:Generator_RowChangedName="QuestionConfigFieldUpdateRowChanged" msprop:Generator_RowClassName="QuestionConfigFieldUpdateRow" msprop:Generator_RowChangingName="QuestionConfigFieldUpdateRowChanging" msprop:Generator_RowEvArgName="QuestionConfigFieldUpdateRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionConfigFieldUpdateRowChangeEventHandler" msprop:Generator_TableClassName="QuestionConfigFieldUpdateDataTable" msprop:Generator_TableVarName="tableQuestionConfigFieldUpdate" msprop:Generator_RowDeletingName="QuestionConfigFieldUpdateRowDeleting" msprop:Generator_TablePropName="QuestionConfigFieldUpdate">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionConfigFieldUpdateID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="QuestionConfigFieldUpdateID" msprop:Generator_ColumnPropNameInRow="QuestionConfigFieldUpdateID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigFieldUpdateID" msprop:Generator_ColumnPropNameInTable="QuestionConfigFieldUpdateIDColumn" type="xs:int" />
+              <xs:element name="QuestionGroupConfigID" msprop:Generator_UserColumnName="QuestionGroupConfigID" msprop:Generator_ColumnPropNameInRow="QuestionGroupConfigID" msprop:Generator_ColumnVarNameInTable="columnQuestionGroupConfigID" msprop:Generator_ColumnPropNameInTable="QuestionGroupConfigIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ScreenFieldID" msprop:Generator_UserColumnName="ScreenFieldID" msprop:Generator_ColumnPropNameInRow="ScreenFieldID" msprop:Generator_ColumnVarNameInTable="columnScreenFieldID" msprop:Generator_ColumnPropNameInTable="ScreenFieldIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Hidden" msprop:Generator_UserColumnName="Hidden" msprop:Generator_ColumnVarNameInTable="columnHidden" msprop:Generator_ColumnPropNameInRow="Hidden" msprop:Generator_ColumnPropNameInTable="HiddenColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QuestionConfigOnInitialCall" msprop:Generator_UserTableName="QuestionConfigOnInitialCall" msprop:Generator_RowDeletedName="QuestionConfigOnInitialCallRowDeleted" msprop:Generator_RowChangedName="QuestionConfigOnInitialCallRowChanged" msprop:Generator_RowClassName="QuestionConfigOnInitialCallRow" msprop:Generator_RowChangingName="QuestionConfigOnInitialCallRowChanging" msprop:Generator_RowEvArgName="QuestionConfigOnInitialCallRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionConfigOnInitialCallRowChangeEventHandler" msprop:Generator_TableClassName="QuestionConfigOnInitialCallDataTable" msprop:Generator_TableVarName="tableQuestionConfigOnInitialCall" msprop:Generator_RowDeletingName="QuestionConfigOnInitialCallRowDeleting" msprop:Generator_TablePropName="QuestionConfigOnInitialCall">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionConfigOnInitialCallID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="QuestionConfigOnInitialCallID" msprop:Generator_ColumnPropNameInRow="QuestionConfigOnInitialCallID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigOnInitialCallID" msprop:Generator_ColumnPropNameInTable="QuestionConfigOnInitialCallIDColumn" type="xs:int" />
+              <xs:element name="QuestionConfigOnInitialCall" msprop:Generator_UserColumnName="QuestionConfigOnInitialCall" msprop:Generator_ColumnPropNameInRow="QuestionConfigOnInitialCall" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigOnInitialCall" msprop:Generator_ColumnPropNameInTable="QuestionConfigOnInitialCallColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QuestionConfigOnlyAskOnce" msprop:Generator_UserTableName="QuestionConfigOnlyAskOnce" msprop:Generator_RowDeletedName="QuestionConfigOnlyAskOnceRowDeleted" msprop:Generator_RowChangedName="QuestionConfigOnlyAskOnceRowChanged" msprop:Generator_RowClassName="QuestionConfigOnlyAskOnceRow" msprop:Generator_RowChangingName="QuestionConfigOnlyAskOnceRowChanging" msprop:Generator_RowEvArgName="QuestionConfigOnlyAskOnceRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionConfigOnlyAskOnceRowChangeEventHandler" msprop:Generator_TableClassName="QuestionConfigOnlyAskOnceDataTable" msprop:Generator_TableVarName="tableQuestionConfigOnlyAskOnce" msprop:Generator_RowDeletingName="QuestionConfigOnlyAskOnceRowDeleting" msprop:Generator_TablePropName="QuestionConfigOnlyAskOnce">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionConfigOnlyAskOnceID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="QuestionConfigOnlyAskOnceID" msprop:Generator_ColumnPropNameInRow="QuestionConfigOnlyAskOnceID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigOnlyAskOnceID" msprop:Generator_ColumnPropNameInTable="QuestionConfigOnlyAskOnceIDColumn" type="xs:int" />
+              <xs:element name="QuestionConfigOnlyAskOnce" msprop:Generator_UserColumnName="QuestionConfigOnlyAskOnce" msprop:Generator_ColumnPropNameInRow="QuestionConfigOnlyAskOnce" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigOnlyAskOnce" msprop:Generator_ColumnPropNameInTable="QuestionConfigOnlyAskOnceColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QuestionConfigOnTime" msprop:Generator_UserTableName="QuestionConfigOnTime" msprop:Generator_RowDeletedName="QuestionConfigOnTimeRowDeleted" msprop:Generator_RowChangedName="QuestionConfigOnTimeRowChanged" msprop:Generator_RowClassName="QuestionConfigOnTimeRow" msprop:Generator_RowChangingName="QuestionConfigOnTimeRowChanging" msprop:Generator_RowEvArgName="QuestionConfigOnTimeRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionConfigOnTimeRowChangeEventHandler" msprop:Generator_TableClassName="QuestionConfigOnTimeDataTable" msprop:Generator_TableVarName="tableQuestionConfigOnTime" msprop:Generator_RowDeletingName="QuestionConfigOnTimeRowDeleting" msprop:Generator_TablePropName="QuestionConfigOnTime">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionConfigOnTimeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="QuestionConfigOnTimeID" msprop:Generator_ColumnPropNameInRow="QuestionConfigOnTimeID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigOnTimeID" msprop:Generator_ColumnPropNameInTable="QuestionConfigOnTimeIDColumn" type="xs:int" />
+              <xs:element name="QuestionConfigOnTime" msprop:Generator_UserColumnName="QuestionConfigOnTime" msprop:Generator_ColumnPropNameInRow="QuestionConfigOnTime" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigOnTime" msprop:Generator_ColumnPropNameInTable="QuestionConfigOnTimeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QuestionConfigOnUpdate" msprop:Generator_UserTableName="QuestionConfigOnUpdate" msprop:Generator_RowDeletedName="QuestionConfigOnUpdateRowDeleted" msprop:Generator_RowChangedName="QuestionConfigOnUpdateRowChanged" msprop:Generator_RowClassName="QuestionConfigOnUpdateRow" msprop:Generator_RowChangingName="QuestionConfigOnUpdateRowChanging" msprop:Generator_RowEvArgName="QuestionConfigOnUpdateRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionConfigOnUpdateRowChangeEventHandler" msprop:Generator_TableClassName="QuestionConfigOnUpdateDataTable" msprop:Generator_TableVarName="tableQuestionConfigOnUpdate" msprop:Generator_RowDeletingName="QuestionConfigOnUpdateRowDeleting" msprop:Generator_TablePropName="QuestionConfigOnUpdate">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionConfigOnUpdateID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="QuestionConfigOnUpdateID" msprop:Generator_ColumnPropNameInRow="QuestionConfigOnUpdateID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigOnUpdateID" msprop:Generator_ColumnPropNameInTable="QuestionConfigOnUpdateIDColumn" type="xs:int" />
+              <xs:element name="QuestionConfigOnUpdate" msprop:Generator_UserColumnName="QuestionConfigOnUpdate" msprop:Generator_ColumnPropNameInRow="QuestionConfigOnUpdate" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigOnUpdate" msprop:Generator_ColumnPropNameInTable="QuestionConfigOnUpdateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QuestionGroupAssociation" msprop:Generator_UserTableName="QuestionGroupAssociation" msprop:Generator_RowDeletedName="QuestionGroupAssociationRowDeleted" msprop:Generator_RowChangedName="QuestionGroupAssociationRowChanged" msprop:Generator_RowClassName="QuestionGroupAssociationRow" msprop:Generator_RowChangingName="QuestionGroupAssociationRowChanging" msprop:Generator_RowEvArgName="QuestionGroupAssociationRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionGroupAssociationRowChangeEventHandler" msprop:Generator_TableClassName="QuestionGroupAssociationDataTable" msprop:Generator_TableVarName="tableQuestionGroupAssociation" msprop:Generator_RowDeletingName="QuestionGroupAssociationRowDeleting" msprop:Generator_TablePropName="QuestionGroupAssociation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionGroupAssociationID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="QuestionGroupAssociationID" msprop:Generator_ColumnPropNameInRow="QuestionGroupAssociationID" msprop:Generator_ColumnVarNameInTable="columnQuestionGroupAssociationID" msprop:Generator_ColumnPropNameInTable="QuestionGroupAssociationIDColumn" type="xs:int" />
+              <xs:element name="QuestionGroupConfigID" msprop:Generator_UserColumnName="QuestionGroupConfigID" msprop:Generator_ColumnPropNameInRow="QuestionGroupConfigID" msprop:Generator_ColumnVarNameInTable="columnQuestionGroupConfigID" msprop:Generator_ColumnPropNameInTable="QuestionGroupConfigIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QuestionID" msprop:Generator_UserColumnName="QuestionID" msprop:Generator_ColumnPropNameInRow="QuestionID" msprop:Generator_ColumnVarNameInTable="columnQuestionID" msprop:Generator_ColumnPropNameInTable="QuestionIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Inactive" msprop:Generator_UserColumnName="Inactive" msprop:Generator_ColumnPropNameInRow="Inactive" msprop:Generator_ColumnVarNameInTable="columnInactive" msprop:Generator_ColumnPropNameInTable="InactiveColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DisplayOrder" msprop:Generator_UserColumnName="DisplayOrder" msprop:Generator_ColumnPropNameInRow="DisplayOrder" msprop:Generator_ColumnVarNameInTable="columnDisplayOrder" msprop:Generator_ColumnPropNameInTable="DisplayOrderColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Question" msprop:Generator_UserColumnName="Question" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Question" msprop:Generator_ColumnPropNameInTable="QuestionColumn" msprop:Generator_ColumnVarNameInTable="columnQuestion" type="xs:string" minOccurs="0" />
+              <xs:element name="CallTypeID" msprop:Generator_UserColumnName="CallTypeID" msprop:Generator_ColumnVarNameInTable="columnCallTypeID" msprop:Generator_ColumnPropNameInRow="CallTypeID" msprop:Generator_ColumnPropNameInTable="CallTypeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QuestionGroupID" msprop:Generator_UserColumnName="QuestionGroupID" msprop:Generator_ColumnVarNameInTable="columnQuestionGroupID" msprop:Generator_ColumnPropNameInRow="QuestionGroupID" msprop:Generator_ColumnPropNameInTable="QuestionGroupIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QuestionCategory" msdata:Caption="Category" msprop:Generator_UserColumnName="QuestionCategory" msprop:Generator_ColumnVarNameInTable="columnQuestionCategory" msprop:Generator_ColumnPropNameInRow="QuestionCategory" msprop:Generator_ColumnPropNameInTable="QuestionCategoryColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="QuestionIfYes" msdata:Caption="If Yes" msprop:Generator_UserColumnName="QuestionIfYes" msprop:Generator_ColumnVarNameInTable="columnQuestionIfYes" msprop:Generator_ColumnPropNameInRow="QuestionIfYes" msprop:Generator_ColumnPropNameInTable="QuestionIfYesColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Screen" msprop:Generator_UserTableName="Screen" msprop:Generator_RowDeletedName="ScreenRowDeleted" msprop:Generator_RowChangedName="ScreenRowChanged" msprop:Generator_RowClassName="ScreenRow" msprop:Generator_RowChangingName="ScreenRowChanging" msprop:Generator_RowEvArgName="ScreenRowChangeEvent" msprop:Generator_RowEvHandlerName="ScreenRowChangeEventHandler" msprop:Generator_TableClassName="ScreenDataTable" msprop:Generator_TableVarName="tableScreen" msprop:Generator_RowDeletingName="ScreenRowDeleting" msprop:Generator_TablePropName="Screen">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ScreenID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ScreenID" msprop:Generator_ColumnPropNameInRow="ScreenID" msprop:Generator_ColumnVarNameInTable="columnScreenID" msprop:Generator_ColumnPropNameInTable="ScreenIDColumn" type="xs:int" />
+              <xs:element name="Screen" msprop:Generator_UserColumnName="Screen" msprop:Generator_ColumnPropNameInRow="Screen" msprop:Generator_ColumnVarNameInTable="columnScreen" msprop:Generator_ColumnPropNameInTable="ScreenColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CallTypeID" msprop:Generator_UserColumnName="CallTypeID" msprop:Generator_ColumnPropNameInRow="CallTypeID" msprop:Generator_ColumnVarNameInTable="columnCallTypeID" msprop:Generator_ColumnPropNameInTable="CallTypeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ScreenField" msprop:Generator_UserTableName="ScreenField" msprop:Generator_RowDeletedName="ScreenFieldRowDeleted" msprop:Generator_RowChangedName="ScreenFieldRowChanged" msprop:Generator_RowClassName="ScreenFieldRow" msprop:Generator_RowChangingName="ScreenFieldRowChanging" msprop:Generator_RowEvArgName="ScreenFieldRowChangeEvent" msprop:Generator_RowEvHandlerName="ScreenFieldRowChangeEventHandler" msprop:Generator_TableClassName="ScreenFieldDataTable" msprop:Generator_TableVarName="tableScreenField" msprop:Generator_RowDeletingName="ScreenFieldRowDeleting" msprop:Generator_TablePropName="ScreenField">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ScreenFieldID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ScreenFieldID" msprop:Generator_ColumnPropNameInRow="ScreenFieldID" msprop:Generator_ColumnVarNameInTable="columnScreenFieldID" msprop:Generator_ColumnPropNameInTable="ScreenFieldIDColumn" type="xs:int" />
+              <xs:element name="ScreenField" msprop:Generator_UserColumnName="ScreenField" msprop:Generator_ColumnPropNameInRow="ScreenField" msprop:Generator_ColumnVarNameInTable="columnScreenField" msprop:Generator_ColumnPropNameInTable="ScreenFieldColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ScreenID" msprop:Generator_UserColumnName="ScreenID" msprop:Generator_ColumnPropNameInRow="ScreenID" msprop:Generator_ColumnVarNameInTable="columnScreenID" msprop:Generator_ColumnPropNameInTable="ScreenIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QuestionConfigTimeSetting" msprop:Generator_UserTableName="QuestionConfigTimeSetting" msprop:Generator_RowDeletedName="QuestionConfigTimeSettingRowDeleted" msprop:Generator_RowChangedName="QuestionConfigTimeSettingRowChanged" msprop:Generator_RowClassName="QuestionConfigTimeSettingRow" msprop:Generator_RowChangingName="QuestionConfigTimeSettingRowChanging" msprop:Generator_RowEvArgName="QuestionConfigTimeSettingRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionConfigTimeSettingRowChangeEventHandler" msprop:Generator_TableClassName="QuestionConfigTimeSettingDataTable" msprop:Generator_TableVarName="tableQuestionConfigTimeSetting" msprop:Generator_RowDeletingName="QuestionConfigTimeSettingRowDeleting" msprop:Generator_TablePropName="QuestionConfigTimeSetting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionConfigTimeSettingID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="QuestionConfigTimeSettingID" msprop:Generator_ColumnPropNameInRow="QuestionConfigTimeSettingID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigTimeSettingID" msprop:Generator_ColumnPropNameInTable="QuestionConfigTimeSettingIDColumn" type="xs:int" />
+              <xs:element name="QuestionConfigTimeSetting" msprop:Generator_UserColumnName="QuestionConfigTimeSetting" msprop:Generator_ColumnPropNameInRow="QuestionConfigTimeSetting" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigTimeSetting" msprop:Generator_ColumnPropNameInTable="QuestionConfigTimeSettingColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QuestionGroupConfig" msprop:Generator_UserTableName="QuestionGroupConfig" msprop:Generator_RowDeletedName="QuestionGroupConfigRowDeleted" msprop:Generator_RowChangedName="QuestionGroupConfigRowChanged" msprop:Generator_RowClassName="QuestionGroupConfigRow" msprop:Generator_RowChangingName="QuestionGroupConfigRowChanging" msprop:Generator_RowEvArgName="QuestionGroupConfigRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionGroupConfigRowChangeEventHandler" msprop:Generator_TableClassName="QuestionGroupConfigDataTable" msprop:Generator_TableVarName="tableQuestionGroupConfig" msprop:Generator_RowDeletingName="QuestionGroupConfigRowDeleting" msprop:Generator_TablePropName="QuestionGroupConfig">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionGroupConfigID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="QuestionGroupConfigID" msprop:Generator_ColumnPropNameInRow="QuestionGroupConfigID" msprop:Generator_ColumnVarNameInTable="columnQuestionGroupConfigID" msprop:Generator_ColumnPropNameInTable="QuestionGroupConfigIDColumn" type="xs:int" />
+              <xs:element name="QuestionGroupID" msprop:Generator_UserColumnName="QuestionGroupID" msprop:Generator_ColumnPropNameInRow="QuestionGroupID" msprop:Generator_ColumnVarNameInTable="columnQuestionGroupID" msprop:Generator_ColumnPropNameInTable="QuestionGroupIDColumn" type="xs:int" />
+              <xs:element name="ScreenID" msprop:Generator_UserColumnName="ScreenID" msprop:Generator_ColumnPropNameInRow="ScreenID" msprop:Generator_ColumnVarNameInTable="columnScreenID" msprop:Generator_ColumnPropNameInTable="ScreenIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QuestionConfigOnInitialCallID" msprop:Generator_UserColumnName="QuestionConfigOnInitialCallID" msprop:Generator_ColumnPropNameInRow="QuestionConfigOnInitialCallID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigOnInitialCallID" msprop:Generator_ColumnPropNameInTable="QuestionConfigOnInitialCallIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QuestionConfigOnUpdateID" msprop:Generator_UserColumnName="QuestionConfigOnUpdateID" msprop:Generator_ColumnPropNameInRow="QuestionConfigOnUpdateID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigOnUpdateID" msprop:Generator_ColumnPropNameInTable="QuestionConfigOnUpdateIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QuestionConfigOnlyAskOnceID" msprop:Generator_UserColumnName="QuestionConfigOnlyAskOnceID" msprop:Generator_ColumnPropNameInRow="QuestionConfigOnlyAskOnceID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigOnlyAskOnceID" msprop:Generator_ColumnPropNameInTable="QuestionConfigOnlyAskOnceIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QuestionConfigAskOnIncompleteID" msprop:Generator_UserColumnName="QuestionConfigAskOnIncompleteID" msprop:Generator_ColumnPropNameInRow="QuestionConfigAskOnIncompleteID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigAskOnIncompleteID" msprop:Generator_ColumnPropNameInTable="QuestionConfigAskOnIncompleteIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QuestionConfigAskUntilYesID" msprop:Generator_UserColumnName="QuestionConfigAskUntilYesID" msprop:Generator_ColumnPropNameInRow="QuestionConfigAskUntilYesID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigAskUntilYesID" msprop:Generator_ColumnPropNameInTable="QuestionConfigAskUntilYesIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QuestionConfigOnTimeID" msprop:Generator_UserColumnName="QuestionConfigOnTimeID" msprop:Generator_ColumnPropNameInRow="QuestionConfigOnTimeID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigOnTimeID" msprop:Generator_ColumnPropNameInTable="QuestionConfigOnTimeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QuestionConfigTimeSettingID" msprop:Generator_UserColumnName="QuestionConfigTimeSettingID" msprop:Generator_ColumnPropNameInRow="QuestionConfigTimeSettingID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigTimeSettingID" msprop:Generator_ColumnPropNameInTable="QuestionConfigTimeSettingIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TimeRangeStart" msprop:Generator_UserColumnName="TimeRangeStart" msprop:Generator_ColumnPropNameInRow="TimeRangeStart" msprop:Generator_ColumnVarNameInTable="columnTimeRangeStart" msprop:Generator_ColumnPropNameInTable="TimeRangeStartColumn" type="xs:duration" minOccurs="0" />
+              <xs:element name="TimeRangeEnd" msprop:Generator_UserColumnName="TimeRangeEnd" msprop:Generator_ColumnPropNameInRow="TimeRangeEnd" msprop:Generator_ColumnVarNameInTable="columnTimeRangeEnd" msprop:Generator_ColumnPropNameInTable="TimeRangeEndColumn" type="xs:duration" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DisplayOrder" msprop:Generator_UserColumnName="DisplayOrder" msprop:Generator_ColumnVarNameInTable="columnDisplayOrder" msprop:Generator_ColumnPropNameInRow="DisplayOrder" msprop:Generator_ColumnPropNameInTable="DisplayOrderColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Inactive" msprop:Generator_UserColumnName="Inactive" msprop:Generator_ColumnVarNameInTable="columnInactive" msprop:Generator_ColumnPropNameInRow="Inactive" msprop:Generator_ColumnPropNameInTable="InactiveColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="QuestionConfigOnInitialCall" msdata:Caption="Ask on Initial Call" msprop:Generator_UserColumnName="QuestionConfigOnInitialCall" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QuestionConfigOnInitialCall" msprop:Generator_ColumnPropNameInTable="QuestionConfigOnInitialCallColumn" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigOnInitialCall" type="xs:string" minOccurs="0" />
+              <xs:element name="QuestionConfigOnUpdate" msdata:Caption="Ask on Update" msprop:Generator_UserColumnName="QuestionConfigOnUpdate" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QuestionConfigOnUpdate" msprop:Generator_ColumnPropNameInTable="QuestionConfigOnUpdateColumn" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigOnUpdate" type="xs:string" minOccurs="0" />
+              <xs:element name="QuestionConfigAskOnIncomplete" msdata:Caption="Required if Imcomplete" msprop:Generator_UserColumnName="QuestionConfigAskOnIncomplete" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QuestionConfigAskOnIncomplete" msprop:Generator_ColumnPropNameInTable="QuestionConfigAskOnIncompleteColumn" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigAskOnIncomplete" type="xs:string" minOccurs="0" />
+              <xs:element name="QuestionConfigAskUntilYes" msdata:Caption="Ask Until Yes" msprop:Generator_UserColumnName="QuestionConfigAskUntilYes" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QuestionConfigAskUntilYes" msprop:Generator_ColumnPropNameInTable="QuestionConfigAskUntilYesColumn" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigAskUntilYes" type="xs:string" minOccurs="0" />
+              <xs:element name="QuestionConfigOnTime" msdata:Caption="Ask Based on Time" msprop:Generator_UserColumnName="QuestionConfigOnTime" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigOnTime" msprop:Generator_ColumnPropNameInTable="QuestionConfigOnTimeColumn" msprop:Generator_ColumnPropNameInRow="QuestionConfigOnTime" type="xs:string" minOccurs="0" />
+              <xs:element name="Question" msprop:Generator_UserColumnName="Question" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnQuestion" msprop:Generator_ColumnPropNameInTable="QuestionColumn" msprop:Generator_ColumnPropNameInRow="Question" type="xs:string" minOccurs="0" />
+              <xs:element name="CallTypeID" msprop:Generator_UserColumnName="CallTypeID" msprop:Generator_ColumnPropNameInRow="CallTypeID" msprop:Generator_ColumnVarNameInTable="columnCallTypeID" msprop:Generator_ColumnPropNameInTable="CallTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QuestionConfigDisplayNewEvent" msprop:Generator_UserTableName="QuestionConfigDisplayNewEvent" msprop:Generator_RowDeletedName="QuestionConfigDisplayNewEventRowDeleted" msprop:Generator_RowChangedName="QuestionConfigDisplayNewEventRowChanged" msprop:Generator_RowClassName="QuestionConfigDisplayNewEventRow" msprop:Generator_RowChangingName="QuestionConfigDisplayNewEventRowChanging" msprop:Generator_RowEvArgName="QuestionConfigDisplayNewEventRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionConfigDisplayNewEventRowChangeEventHandler" msprop:Generator_TableClassName="QuestionConfigDisplayNewEventDataTable" msprop:Generator_TableVarName="tableQuestionConfigDisplayNewEvent" msprop:Generator_RowDeletingName="QuestionConfigDisplayNewEventRowDeleting" msprop:Generator_TablePropName="QuestionConfigDisplayNewEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionConfigDisplayNewEventID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="QuestionConfigDisplayNewEventID" msprop:Generator_ColumnPropNameInRow="QuestionConfigDisplayNewEventID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigDisplayNewEventID" msprop:Generator_ColumnPropNameInTable="QuestionConfigDisplayNewEventIDColumn" type="xs:int" />
+              <xs:element name="QuestionConfigDisplayNewEvent" msprop:Generator_UserColumnName="QuestionConfigDisplayNewEvent" msprop:Generator_ColumnPropNameInRow="QuestionConfigDisplayNewEvent" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigDisplayNewEvent" msprop:Generator_ColumnPropNameInTable="QuestionConfigDisplayNewEventColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QuestionConfigDisplayOnCall" msprop:Generator_UserTableName="QuestionConfigDisplayOnCall" msprop:Generator_RowDeletedName="QuestionConfigDisplayOnCallRowDeleted" msprop:Generator_RowChangedName="QuestionConfigDisplayOnCallRowChanged" msprop:Generator_RowClassName="QuestionConfigDisplayOnCallRow" msprop:Generator_RowChangingName="QuestionConfigDisplayOnCallRowChanging" msprop:Generator_RowEvArgName="QuestionConfigDisplayOnCallRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionConfigDisplayOnCallRowChangeEventHandler" msprop:Generator_TableClassName="QuestionConfigDisplayOnCallDataTable" msprop:Generator_TableVarName="tableQuestionConfigDisplayOnCall" msprop:Generator_RowDeletingName="QuestionConfigDisplayOnCallRowDeleting" msprop:Generator_TablePropName="QuestionConfigDisplayOnCall">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionConfigDisplayOnCallID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="QuestionConfigDisplayOnCallID" msprop:Generator_ColumnPropNameInRow="QuestionConfigDisplayOnCallID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigDisplayOnCallID" msprop:Generator_ColumnPropNameInTable="QuestionConfigDisplayOnCallIDColumn" type="xs:int" />
+              <xs:element name="QuestionConfigDisplayOnCall" msprop:Generator_UserColumnName="QuestionConfigDisplayOnCall" msprop:Generator_ColumnPropNameInRow="QuestionConfigDisplayOnCall" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigDisplayOnCall" msprop:Generator_ColumnPropNameInTable="QuestionConfigDisplayOnCallColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QuestionConfigDonorCategoryValue" msprop:Generator_UserTableName="QuestionConfigDonorCategoryValue" msprop:Generator_RowDeletedName="QuestionConfigDonorCategoryValueRowDeleted" msprop:Generator_RowChangedName="QuestionConfigDonorCategoryValueRowChanged" msprop:Generator_RowClassName="QuestionConfigDonorCategoryValueRow" msprop:Generator_RowChangingName="QuestionConfigDonorCategoryValueRowChanging" msprop:Generator_RowEvArgName="QuestionConfigDonorCategoryValueRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionConfigDonorCategoryValueRowChangeEventHandler" msprop:Generator_TableClassName="QuestionConfigDonorCategoryValueDataTable" msprop:Generator_TableVarName="tableQuestionConfigDonorCategoryValue" msprop:Generator_RowDeletingName="QuestionConfigDonorCategoryValueRowDeleting" msprop:Generator_TablePropName="QuestionConfigDonorCategoryValue">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionConfigDonorCategoryValueID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="QuestionConfigDonorCategoryValueID" msprop:Generator_ColumnPropNameInRow="QuestionConfigDonorCategoryValueID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigDonorCategoryValueID" msprop:Generator_ColumnPropNameInTable="QuestionConfigDonorCategoryValueIDColumn" type="xs:int" />
+              <xs:element name="QuestionConfigDonorCategoryValue" msprop:Generator_UserColumnName="QuestionConfigDonorCategoryValue" msprop:Generator_ColumnPropNameInRow="QuestionConfigDonorCategoryValue" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigDonorCategoryValue" msprop:Generator_ColumnPropNameInTable="QuestionConfigDonorCategoryValueColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QuestionConfigEventType" msprop:Generator_UserTableName="QuestionConfigEventType" msprop:Generator_RowDeletedName="QuestionConfigEventTypeRowDeleted" msprop:Generator_RowChangedName="QuestionConfigEventTypeRowChanged" msprop:Generator_RowClassName="QuestionConfigEventTypeRow" msprop:Generator_RowChangingName="QuestionConfigEventTypeRowChanging" msprop:Generator_RowEvArgName="QuestionConfigEventTypeRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionConfigEventTypeRowChangeEventHandler" msprop:Generator_TableClassName="QuestionConfigEventTypeDataTable" msprop:Generator_TableVarName="tableQuestionConfigEventType" msprop:Generator_RowDeletingName="QuestionConfigEventTypeRowDeleting" msprop:Generator_TablePropName="QuestionConfigEventType">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionConfigEventTypeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="QuestionConfigEventTypeID" msprop:Generator_ColumnPropNameInRow="QuestionConfigEventTypeID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigEventTypeID" msprop:Generator_ColumnPropNameInTable="QuestionConfigEventTypeIDColumn" type="xs:int" />
+              <xs:element name="QuestionGroupConfigID" msprop:Generator_UserColumnName="QuestionGroupConfigID" msprop:Generator_ColumnPropNameInRow="QuestionGroupConfigID" msprop:Generator_ColumnVarNameInTable="columnQuestionGroupConfigID" msprop:Generator_ColumnPropNameInTable="QuestionGroupConfigIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LogEventTypeID" msprop:Generator_UserColumnName="LogEventTypeID" msprop:Generator_ColumnPropNameInRow="LogEventTypeID" msprop:Generator_ColumnVarNameInTable="columnLogEventTypeID" msprop:Generator_ColumnPropNameInTable="LogEventTypeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QuestionConfigDisplayNewEventID" msprop:Generator_UserColumnName="QuestionConfigDisplayNewEventID" msprop:Generator_ColumnPropNameInRow="QuestionConfigDisplayNewEventID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigDisplayNewEventID" msprop:Generator_ColumnPropNameInTable="QuestionConfigDisplayNewEventIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QuestionConfigDisplayOnCallID" msprop:Generator_UserColumnName="QuestionConfigDisplayOnCallID" msprop:Generator_ColumnPropNameInRow="QuestionConfigDisplayOnCallID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigDisplayOnCallID" msprop:Generator_ColumnPropNameInTable="QuestionConfigDisplayOnCallIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ScheduleGroupID" msprop:Generator_UserColumnName="ScheduleGroupID" msprop:Generator_ColumnPropNameInRow="ScheduleGroupID" msprop:Generator_ColumnVarNameInTable="columnScheduleGroupID" msprop:Generator_ColumnPropNameInTable="ScheduleGroupIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LogEventType" msdata:Caption="Event Type" msprop:Generator_UserColumnName="LogEventType" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="LogEventType" msprop:Generator_ColumnPropNameInTable="LogEventTypeColumn" msprop:Generator_ColumnVarNameInTable="columnLogEventType" type="xs:string" minOccurs="0" />
+              <xs:element name="QuestionConfigDisplayNewEvent" msdata:Caption="Display on New Event" msprop:Generator_UserColumnName="QuestionConfigDisplayNewEvent" msprop:Generator_ColumnPropNameInRow="QuestionConfigDisplayNewEvent" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigDisplayNewEvent" msprop:Generator_ColumnPropNameInTable="QuestionConfigDisplayNewEventColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="QuestionConfigDisplayOnCall" msdata:Caption="Display on Call" msprop:Generator_UserColumnName="QuestionConfigDisplayOnCall" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QuestionConfigDisplayOnCall" msprop:Generator_ColumnPropNameInTable="QuestionConfigDisplayOnCallColumn" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigDisplayOnCall" type="xs:string" minOccurs="0" />
+              <xs:element name="ScheduleGroup" msdata:Caption="Schedule" msprop:Generator_UserColumnName="ScheduleGroup" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="ScheduleGroup" msprop:Generator_ColumnPropNameInTable="ScheduleGroupColumn" msprop:Generator_ColumnVarNameInTable="columnScheduleGroup" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QuestionConfigEventTypeUpdate" msprop:Generator_UserTableName="QuestionConfigEventTypeUpdate" msprop:Generator_RowDeletedName="QuestionConfigEventTypeUpdateRowDeleted" msprop:Generator_RowChangedName="QuestionConfigEventTypeUpdateRowChanged" msprop:Generator_RowClassName="QuestionConfigEventTypeUpdateRow" msprop:Generator_RowChangingName="QuestionConfigEventTypeUpdateRowChanging" msprop:Generator_RowEvArgName="QuestionConfigEventTypeUpdateRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionConfigEventTypeUpdateRowChangeEventHandler" msprop:Generator_TableClassName="QuestionConfigEventTypeUpdateDataTable" msprop:Generator_TableVarName="tableQuestionConfigEventTypeUpdate" msprop:Generator_RowDeletingName="QuestionConfigEventTypeUpdateRowDeleting" msprop:Generator_TablePropName="QuestionConfigEventTypeUpdate">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionConfigEventTypeUpdateID" msprop:Generator_UserColumnName="QuestionConfigEventTypeUpdateID" msprop:Generator_ColumnPropNameInRow="QuestionConfigEventTypeUpdateID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigEventTypeUpdateID" msprop:Generator_ColumnPropNameInTable="QuestionConfigEventTypeUpdateIDColumn" type="xs:int" />
+              <xs:element name="QuestionGroupConfigID" msprop:Generator_UserColumnName="QuestionGroupConfigID" msprop:Generator_ColumnPropNameInRow="QuestionGroupConfigID" msprop:Generator_ColumnVarNameInTable="columnQuestionGroupConfigID" msprop:Generator_ColumnPropNameInTable="QuestionGroupConfigIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LogEventTypeID" msprop:Generator_UserColumnName="LogEventTypeID" msprop:Generator_ColumnPropNameInRow="LogEventTypeID" msprop:Generator_ColumnVarNameInTable="columnLogEventTypeID" msprop:Generator_ColumnPropNameInTable="LogEventTypeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ScheduleGroupID" msprop:Generator_UserColumnName="ScheduleGroupID" msprop:Generator_ColumnPropNameInRow="ScheduleGroupID" msprop:Generator_ColumnVarNameInTable="columnScheduleGroupID" msprop:Generator_ColumnPropNameInTable="ScheduleGroupIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LogEventType" msdata:Caption="Event Type" msprop:Generator_UserColumnName="LogEventType" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnLogEventType" msprop:Generator_ColumnPropNameInTable="LogEventTypeColumn" msprop:Generator_ColumnPropNameInRow="LogEventType" type="xs:string" minOccurs="0" />
+              <xs:element name="ScheduleGroup" msdata:Caption="Schedule" msprop:Generator_UserColumnName="ScheduleGroup" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnScheduleGroup" msprop:Generator_ColumnPropNameInTable="ScheduleGroupColumn" msprop:Generator_ColumnPropNameInRow="ScheduleGroup" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QuestionConfigReferralType" msprop:Generator_UserTableName="QuestionConfigReferralType" msprop:Generator_RowDeletedName="QuestionConfigReferralTypeRowDeleted" msprop:Generator_RowChangedName="QuestionConfigReferralTypeRowChanged" msprop:Generator_RowClassName="QuestionConfigReferralTypeRow" msprop:Generator_RowChangingName="QuestionConfigReferralTypeRowChanging" msprop:Generator_RowEvArgName="QuestionConfigReferralTypeRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionConfigReferralTypeRowChangeEventHandler" msprop:Generator_TableClassName="QuestionConfigReferralTypeDataTable" msprop:Generator_TableVarName="tableQuestionConfigReferralType" msprop:Generator_RowDeletingName="QuestionConfigReferralTypeRowDeleting" msprop:Generator_TablePropName="QuestionConfigReferralType">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionConfigReferralTypeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="QuestionConfigReferralTypeID" msprop:Generator_ColumnPropNameInRow="QuestionConfigReferralTypeID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigReferralTypeID" msprop:Generator_ColumnPropNameInTable="QuestionConfigReferralTypeIDColumn" type="xs:int" />
+              <xs:element name="QuestionGroupConfigID" msprop:Generator_UserColumnName="QuestionGroupConfigID" msprop:Generator_ColumnPropNameInRow="QuestionGroupConfigID" msprop:Generator_ColumnVarNameInTable="columnQuestionGroupConfigID" msprop:Generator_ColumnPropNameInTable="QuestionGroupConfigIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DonorCategoryID" msprop:Generator_UserColumnName="DonorCategoryID" msprop:Generator_ColumnPropNameInRow="DonorCategoryID" msprop:Generator_ColumnVarNameInTable="columnDonorCategoryID" msprop:Generator_ColumnPropNameInTable="DonorCategoryIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QuestionConfigDonorCategoryValueID" msprop:Generator_UserColumnName="QuestionConfigDonorCategoryValueID" msprop:Generator_ColumnPropNameInRow="QuestionConfigDonorCategoryValueID" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigDonorCategoryValueID" msprop:Generator_ColumnPropNameInTable="QuestionConfigDonorCategoryValueIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastStatEmployeeID" msprop:Generator_UserColumnName="LastStatEmployeeID" msprop:Generator_ColumnPropNameInRow="LastStatEmployeeID" msprop:Generator_ColumnVarNameInTable="columnLastStatEmployeeID" msprop:Generator_ColumnPropNameInTable="LastStatEmployeeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditLogTypeID" msprop:Generator_UserColumnName="AuditLogTypeID" msprop:Generator_ColumnPropNameInRow="AuditLogTypeID" msprop:Generator_ColumnVarNameInTable="columnAuditLogTypeID" msprop:Generator_ColumnPropNameInTable="AuditLogTypeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DonorCategory" msdata:Caption="Category" msprop:Generator_UserColumnName="DonorCategory" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="DonorCategory" msprop:Generator_ColumnPropNameInTable="DonorCategoryColumn" msprop:Generator_ColumnVarNameInTable="columnDonorCategory" type="xs:string" minOccurs="0" />
+              <xs:element name="QuestionConfigDonorCategoryValue" msdata:Caption="Value" msprop:Generator_UserColumnName="QuestionConfigDonorCategoryValue" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="QuestionConfigDonorCategoryValue" msprop:Generator_ColumnPropNameInTable="QuestionConfigDonorCategoryValueColumn" msprop:Generator_ColumnVarNameInTable="columnQuestionConfigDonorCategoryValue" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QuestionAskCaller" />
+      <xs:field xpath="mstns:QuestionAskCallerID" />
+    </xs:unique>
+    <xs:unique name="QuestionTrackEventLog_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QuestionTrackEventLog" />
+      <xs:field xpath="mstns:QuestionTrackEventLogID" />
+    </xs:unique>
+    <xs:unique name="QuestionCategory_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QuestionCategory" />
+      <xs:field xpath="mstns:QuestionCategoryID" />
+    </xs:unique>
+    <xs:unique name="QuestionDisplayComment_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QuestionDisplayComment" />
+      <xs:field xpath="mstns:QuestionDisplayCommentID" />
+    </xs:unique>
+    <xs:unique name="QuestionDisplayNA_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QuestionDisplayNA" />
+      <xs:field xpath="mstns:QuestionDisplayNAID" />
+    </xs:unique>
+    <xs:unique name="QuestionIfYes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QuestionIfYes" />
+      <xs:field xpath="mstns:QuestionIfYesID" />
+    </xs:unique>
+    <xs:unique name="QuestionAssociated_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QuestionAssociated" />
+      <xs:field xpath="mstns:QuestionAssociatedID" />
+    </xs:unique>
+    <xs:unique name="Question_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Question" />
+      <xs:field xpath="mstns:QuestionID" />
+    </xs:unique>
+    <xs:unique name="QuestionConfigAskOnIncomplete_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QuestionConfigAskOnIncomplete" />
+      <xs:field xpath="mstns:QuestionConfigAskOnIncompleteID" />
+    </xs:unique>
+    <xs:unique name="QuestionConfigAskUntilYes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QuestionConfigAskUntilYes" />
+      <xs:field xpath="mstns:QuestionConfigAskUntilYesID" />
+    </xs:unique>
+    <xs:unique name="QuestionConfigFieldUpdate_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QuestionConfigFieldUpdate" />
+      <xs:field xpath="mstns:QuestionConfigFieldUpdateID" />
+    </xs:unique>
+    <xs:unique name="QuestionConfigOnInitialCall_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QuestionConfigOnInitialCall" />
+      <xs:field xpath="mstns:QuestionConfigOnInitialCallID" />
+    </xs:unique>
+    <xs:unique name="QuestionConfigOnlyAskOnce_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QuestionConfigOnlyAskOnce" />
+      <xs:field xpath="mstns:QuestionConfigOnlyAskOnceID" />
+    </xs:unique>
+    <xs:unique name="QuestionConfigOnTime_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QuestionConfigOnTime" />
+      <xs:field xpath="mstns:QuestionConfigOnTimeID" />
+    </xs:unique>
+    <xs:unique name="QuestionConfigOnUpdate_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QuestionConfigOnUpdate" />
+      <xs:field xpath="mstns:QuestionConfigOnUpdateID" />
+    </xs:unique>
+    <xs:unique name="QuestionGroupAssociation_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QuestionGroupAssociation" />
+      <xs:field xpath="mstns:QuestionGroupAssociationID" />
+    </xs:unique>
+    <xs:unique name="Screen_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Screen" />
+      <xs:field xpath="mstns:ScreenID" />
+    </xs:unique>
+    <xs:unique name="ScreenField_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ScreenField" />
+      <xs:field xpath="mstns:ScreenFieldID" />
+    </xs:unique>
+    <xs:unique name="QuestionConfigTimeSetting_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QuestionConfigTimeSetting" />
+      <xs:field xpath="mstns:QuestionConfigTimeSettingID" />
+    </xs:unique>
+    <xs:unique name="QuestionGroupConfig_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QuestionGroupConfig" />
+      <xs:field xpath="mstns:QuestionGroupConfigID" />
+    </xs:unique>
+    <xs:unique name="QuestionConfigDisplayNewEvent_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QuestionConfigDisplayNewEvent" />
+      <xs:field xpath="mstns:QuestionConfigDisplayNewEventID" />
+    </xs:unique>
+    <xs:unique name="QuestionConfigDisplayOnCall_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QuestionConfigDisplayOnCall" />
+      <xs:field xpath="mstns:QuestionConfigDisplayOnCallID" />
+    </xs:unique>
+    <xs:unique name="QuestionConfigDonorCategoryValue_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QuestionConfigDonorCategoryValue" />
+      <xs:field xpath="mstns:QuestionConfigDonorCategoryValueID" />
+    </xs:unique>
+    <xs:unique name="QuestionConfigEventType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QuestionConfigEventType" />
+      <xs:field xpath="mstns:QuestionConfigEventTypeID" />
+    </xs:unique>
+    <xs:unique name="QuestionConfigEventTypeUpdate_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QuestionConfigEventTypeUpdate" />
+      <xs:field xpath="mstns:QuestionConfigEventTypeUpdateID" />
+    </xs:unique>
+    <xs:unique name="QuestionConfigReferralType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QuestionConfigReferralType" />
+      <xs:field xpath="mstns:QuestionConfigReferralTypeID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="QuestionAssociated_Question" msdata:parent="QuestionAssociated" msdata:child="Question" msdata:parentkey="QuestionAssociatedID" msdata:childkey="QuestionID" msprop:Generator_UserRelationName="QuestionAssociated_Question" msprop:Generator_RelationVarName="relationQuestionAssociated_Question" msprop:Generator_UserChildTable="Question" msprop:Generator_UserParentTable="QuestionAssociated" msprop:Generator_ParentPropName="QuestionAssociatedRow" msprop:Generator_ChildPropName="GetQuestionRows" />
+      <msdata:Relationship name="FK_ScreenField_ScreenID_Screen_ScreenID" msdata:parent="Screen" msdata:child="ScreenField" msdata:parentkey="ScreenID" msdata:childkey="ScreenID" msprop:Generator_UserRelationName="FK_ScreenField_ScreenID_Screen_ScreenID" msprop:Generator_RelationVarName="relationFK_ScreenField_ScreenID_Screen_ScreenID" msprop:Generator_UserChildTable="ScreenField" msprop:Generator_UserParentTable="Screen" msprop:Generator_ParentPropName="ScreenRow" msprop:Generator_ChildPropName="GetScreenFieldRows" />
+      <msdata:Relationship name="FK_QuestionGroupConfig_QuestionConfigTimeSettingID_QuestionConfigTimeSetting_QuestionConfigTimeSettingID" msdata:parent="QuestionConfigTimeSetting" msdata:child="QuestionGroupConfig" msdata:parentkey="QuestionConfigTimeSettingID" msdata:childkey="QuestionConfigTimeSettingID" msprop:Generator_UserRelationName="FK_QuestionGroupConfig_QuestionConfigTimeSettingID_QuestionConfigTimeSetting_QuestionConfigTimeSettingID" msprop:Generator_RelationVarName="relationFK_QuestionGroupConfig_QuestionConfigTimeSettingID_QuestionConfigTimeSetting_QuestionConfigTimeSettingID" msprop:Generator_UserChildTable="QuestionGroupConfig" msprop:Generator_UserParentTable="QuestionConfigTimeSetting" msprop:Generator_ParentPropName="QuestionConfigTimeSettingRow" msprop:Generator_ChildPropName="GetQuestionGroupConfigRows" />
+      <msdata:Relationship name="FK_QuestionGroupConfig_QuestionConfigOnTimeID_QuestionConfigOnTime_QuestionConfigOnTimeID" msdata:parent="QuestionConfigOnTime" msdata:child="QuestionGroupConfig" msdata:parentkey="QuestionConfigOnTimeID" msdata:childkey="QuestionConfigOnTimeID" msprop:Generator_UserRelationName="FK_QuestionGroupConfig_QuestionConfigOnTimeID_QuestionConfigOnTime_QuestionConfigOnTimeID" msprop:Generator_RelationVarName="relationFK_QuestionGroupConfig_QuestionConfigOnTimeID_QuestionConfigOnTime_QuestionConfigOnTimeID" msprop:Generator_UserChildTable="QuestionGroupConfig" msprop:Generator_UserParentTable="QuestionConfigOnTime" msprop:Generator_ParentPropName="QuestionConfigOnTimeRow" msprop:Generator_ChildPropName="GetQuestionGroupConfigRows" />
+      <msdata:Relationship name="FK_QuestionGroupConfig_QuestionConfigOnInitialCallID_QuestionConfigOnInitialCall_QuestionConfigOnInitialCallID" msdata:parent="QuestionConfigOnInitialCall" msdata:child="QuestionGroupConfig" msdata:parentkey="QuestionConfigOnInitialCallID" msdata:childkey="QuestionConfigOnInitialCallID" msprop:Generator_UserRelationName="FK_QuestionGroupConfig_QuestionConfigOnInitialCallID_QuestionConfigOnInitialCall_QuestionConfigOnInitialCallID" msprop:Generator_RelationVarName="relationFK_QuestionGroupConfig_QuestionConfigOnInitialCallID_QuestionConfigOnInitialCall_QuestionConfigOnInitialCallID" msprop:Generator_UserChildTable="QuestionGroupConfig" msprop:Generator_UserParentTable="QuestionConfigOnInitialCall" msprop:Generator_ParentPropName="QuestionConfigOnInitialCallRow" msprop:Generator_ChildPropName="GetQuestionGroupConfigRows" />
+      <msdata:Relationship name="FK_QuestionGroupConfig_QuestionConfigAskUntilYesID_QuestionConfigAskUntilYes_QuestionConfigAskUntilYesID" msdata:parent="QuestionConfigAskUntilYes" msdata:child="QuestionGroupConfig" msdata:parentkey="QuestionConfigAskUntilYesID" msdata:childkey="QuestionConfigAskUntilYesID" msprop:Generator_UserRelationName="FK_QuestionGroupConfig_QuestionConfigAskUntilYesID_QuestionConfigAskUntilYes_QuestionConfigAskUntilYesID" msprop:Generator_RelationVarName="relationFK_QuestionGroupConfig_QuestionConfigAskUntilYesID_QuestionConfigAskUntilYes_QuestionConfigAskUntilYesID" msprop:Generator_UserChildTable="QuestionGroupConfig" msprop:Generator_UserParentTable="QuestionConfigAskUntilYes" msprop:Generator_ParentPropName="QuestionConfigAskUntilYesRow" msprop:Generator_ChildPropName="GetQuestionGroupConfigRows" />
+      <msdata:Relationship name="FK_QuestionGroupConfig_QuestionConfigAskOnIncompleteID_QuestionConfigAskOnIncomplete_QuestionConfigAskOnIncompleteID" msdata:parent="QuestionConfigAskOnIncomplete" msdata:child="QuestionGroupConfig" msdata:parentkey="QuestionConfigAskOnIncompleteID" msdata:childkey="QuestionConfigAskOnIncompleteID" msprop:Generator_UserRelationName="FK_QuestionGroupConfig_QuestionConfigAskOnIncompleteID_QuestionConfigAskOnIncomplete_QuestionConfigAskOnIncompleteID" msprop:Generator_RelationVarName="relationFK_QuestionGroupConfig_QuestionConfigAskOnIncompleteID_QuestionConfigAskOnIncomplete_QuestionConfigAskOnIncompleteID" msprop:Generator_UserChildTable="QuestionGroupConfig" msprop:Generator_UserParentTable="QuestionConfigAskOnIncomplete" msprop:Generator_ParentPropName="QuestionConfigAskOnIncompleteRow" msprop:Generator_ChildPropName="GetQuestionGroupConfigRows" />
+      <msdata:Relationship name="FK_QuestionGroupConfig_ScreenID_Screen_ScreenID" msdata:parent="Screen" msdata:child="QuestionGroupConfig" msdata:parentkey="ScreenID" msdata:childkey="ScreenID" msprop:Generator_UserRelationName="FK_QuestionGroupConfig_ScreenID_Screen_ScreenID" msprop:Generator_RelationVarName="relationFK_QuestionGroupConfig_ScreenID_Screen_ScreenID" msprop:Generator_UserChildTable="QuestionGroupConfig" msprop:Generator_UserParentTable="Screen" msprop:Generator_ParentPropName="ScreenRow" msprop:Generator_ChildPropName="GetQuestionGroupConfigRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

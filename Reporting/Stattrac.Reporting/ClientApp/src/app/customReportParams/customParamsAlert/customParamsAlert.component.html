@@ -1,0 +1,22 @@
+<div>
+  <div class="row">
+    <div class="col-sm">
+      <label>Alert Type:</label>
+      <ng-select [(ngModel)]="model.AlertTypeID" id="AlertTypeID" name="AlertTypeID"
+                 [ngModelOptions]="{standalone: true}"
+                 [items]="alertTypeList" bindLabel="label"
+                 bindValue="value" [selectOnTab]="true" (change)="alertTypeChanged()"></ng-select>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-sm">
+        <label>Alert Group:</label>
+        <ng-select [(ngModel)]="model.AlertID" id="AlertID" name="AlertID"
+                   [ngModelOptions]="{standalone: true}"
+                   [items]="alertList" bindLabel="label"
+                   bindValue="value" [selectOnTab]="true" (change)="addtoParameterList()"></ng-select>
+      </div>
+    </div>
+    <!-- hidden field is need to feed back to parent -->
+    <input type="hidden" id="customParameterList" />
+  </div>

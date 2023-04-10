@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ListControlDS" targetNamespace="http://tempuri.org/ListControlDS.xsd" xmlns:mstns="http://tempuri.org/ListControlDS.xsd" xmlns="http://tempuri.org/ListControlDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="_ReferralDev2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="_ReferralDev2ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.Stattrac.Data.Types.Properties.Settings.GlobalReference.Default._ReferralDev2ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="_ReferralDev2ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="_ReferralDev2ConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.Stattrac.Data.Types.Properties.Settings.GlobalReference.Default._ReferralDev2ConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ListControlDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ListControlDS" msprop:Generator_DataSetName="ListControlDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ListControl" msprop:Generator_UserTableName="ListControl" msprop:Generator_RowDeletedName="ListControlRowDeleted" msprop:Generator_RowChangedName="ListControlRowChanged" msprop:Generator_RowClassName="ListControlRow" msprop:Generator_RowChangingName="ListControlRowChanging" msprop:Generator_RowEvArgName="ListControlRowChangeEvent" msprop:Generator_RowEvHandlerName="ListControlRowChangeEventHandler" msprop:Generator_TableClassName="ListControlDataTable" msprop:Generator_TableVarName="tableListControl" msprop:Generator_RowDeletingName="ListControlRowDeleting" msprop:Generator_TablePropName="ListControl">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ListId" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ListId" msprop:Generator_ColumnVarNameInTable="columnListId" msprop:Generator_ColumnPropNameInRow="ListId" msprop:Generator_ColumnPropNameInTable="ListIdColumn" type="xs:int" />
+              <xs:element name="FieldValue" msdata:ReadOnly="true" msprop:Generator_UserColumnName="FieldValue" msprop:Generator_ColumnVarNameInTable="columnFieldValue" msprop:Generator_ColumnPropNameInRow="FieldValue" msprop:Generator_ColumnPropNameInTable="FieldValueColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TcssListVitalSign" msprop:Generator_UserTableName="TcssListVitalSign" msprop:Generator_RowDeletedName="TcssListVitalSignRowDeleted" msprop:Generator_RowChangedName="TcssListVitalSignRowChanged" msprop:Generator_RowClassName="TcssListVitalSignRow" msprop:Generator_RowChangingName="TcssListVitalSignRowChanging" msprop:Generator_RowEvArgName="TcssListVitalSignRowChangeEvent" msprop:Generator_RowEvHandlerName="TcssListVitalSignRowChangeEventHandler" msprop:Generator_TableClassName="TcssListVitalSignDataTable" msprop:Generator_TableVarName="tableTcssListVitalSign" msprop:Generator_RowDeletingName="TcssListVitalSignRowDeleting" msprop:Generator_TablePropName="TcssListVitalSign">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ListId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="ListId" msprop:Generator_ColumnVarNameInTable="columnListId" msprop:Generator_ColumnPropNameInRow="ListId" msprop:Generator_ColumnPropNameInTable="ListIdColumn" type="xs:int" />
+              <xs:element name="FieldValue" msprop:Generator_UserColumnName="FieldValue" msprop:Generator_ColumnVarNameInTable="columnFieldValue" msprop:Generator_ColumnPropNameInRow="FieldValue" msprop:Generator_ColumnPropNameInTable="FieldValueColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsLiver" msprop:Generator_UserColumnName="IsLiver" msprop:Generator_ColumnVarNameInTable="columnIsLiver" msprop:Generator_ColumnPropNameInRow="IsLiver" msprop:Generator_ColumnPropNameInTable="IsLiverColumn" type="xs:boolean" />
+              <xs:element name="IsKidney" msprop:Generator_UserColumnName="IsKidney" msprop:Generator_ColumnVarNameInTable="columnIsKidney" msprop:Generator_ColumnPropNameInRow="IsKidney" msprop:Generator_ColumnPropNameInTable="IsKidneyColumn" type="xs:boolean" />
+					<xs:element name="IsLung" msprop:Generator_UserColumnName="IsLung" msprop:Generator_ColumnVarNameInTable="columnIsLung" msprop:Generator_ColumnPropNameInRow="IsLung" msprop:Generator_ColumnPropNameInTable="IsLungColumn" type="xs:boolean" />
+					<xs:element name="IsHeart" msprop:Generator_UserColumnName="IsHeart" msprop:Generator_ColumnVarNameInTable="columnIsHeart" msprop:Generator_ColumnPropNameInRow="IsHeart" msprop:Generator_ColumnPropNameInTable="IsHeartColumn" type="xs:boolean" />
+					<xs:element name="IsIntestine" msprop:Generator_UserColumnName="IsIntestine" msprop:Generator_ColumnVarNameInTable="columnIsIntestine" msprop:Generator_ColumnPropNameInRow="IsIntestine" msprop:Generator_ColumnPropNameInTable="IsIntestineColumn" type="xs:boolean" />
+					<xs:element name="IsPancreas" msprop:Generator_UserColumnName="IsPancreas" msprop:Generator_ColumnVarNameInTable="columnIsPancreas" msprop:Generator_ColumnPropNameInRow="IsPancreas" msprop:Generator_ColumnPropNameInTable="IsPancreasColumn" type="xs:boolean" />
+					<xs:element name="IsHeartLung" msprop:Generator_UserColumnName="IsHeartLung" msprop:Generator_ColumnVarNameInTable="columnIsHeartLung" msprop:Generator_ColumnPropNameInRow="IsHeartLung" msprop:Generator_ColumnPropNameInTable="IsHeartLungColumn" type="xs:boolean" />
+					<xs:element name="IsKidneyPancreas" msprop:Generator_UserColumnName="IsKidneyPancreas" msprop:Generator_ColumnVarNameInTable="columnIsKidneyPancreas" msprop:Generator_ColumnPropNameInRow="IsKidneyPancreas" msprop:Generator_ColumnPropNameInTable="IsKidneyPancreasColumn" type="xs:boolean" />
+					<xs:element name="IsMultiOrgan" msprop:Generator_UserColumnName="IsMultiOrgan" msprop:Generator_ColumnVarNameInTable="columnIsMultiOrgan" msprop:Generator_ColumnPropNameInRow="IsMultiOrgan" msprop:Generator_ColumnPropNameInTable="IsMultiOrganColumn" type="xs:boolean" />
+				</xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TcssListLab" msprop:Generator_UserTableName="TcssListLab" msprop:Generator_RowDeletedName="TcssListLabRowDeleted" msprop:Generator_TableClassName="TcssListLabDataTable" msprop:Generator_RowChangedName="TcssListLabRowChanged" msprop:Generator_RowClassName="TcssListLabRow" msprop:Generator_RowChangingName="TcssListLabRowChanging" msprop:Generator_RowEvArgName="TcssListLabRowChangeEvent" msprop:Generator_RowEvHandlerName="TcssListLabRowChangeEventHandler" msprop:Generator_TablePropName="TcssListLab" msprop:Generator_TableVarName="tableTcssListLab" msprop:Generator_RowDeletingName="TcssListLabRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ListId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="ListId" msprop:Generator_ColumnPropNameInRow="ListId" msprop:Generator_ColumnVarNameInTable="columnListId" msprop:Generator_ColumnPropNameInTable="ListIdColumn" type="xs:int" />
+              <xs:element name="FieldValue" msprop:Generator_UserColumnName="FieldValue" msprop:Generator_ColumnPropNameInRow="FieldValue" msprop:Generator_ColumnVarNameInTable="columnFieldValue" msprop:Generator_ColumnPropNameInTable="FieldValueColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsLiver" msprop:Generator_UserColumnName="IsLiver" msprop:Generator_ColumnPropNameInRow="IsLiver" msprop:Generator_ColumnVarNameInTable="columnIsLiver" msprop:Generator_ColumnPropNameInTable="IsLiverColumn" type="xs:boolean" />
+              <xs:element name="IsKidney" msprop:Generator_UserColumnName="IsKidney" msprop:Generator_ColumnPropNameInRow="IsKidney" msprop:Generator_ColumnVarNameInTable="columnIsKidney" msprop:Generator_ColumnPropNameInTable="IsKidneyColumn" type="xs:boolean" />
+					<xs:element name="IsLung" msprop:Generator_UserColumnName="IsLung" msprop:Generator_ColumnVarNameInTable="columnIsLung" msprop:Generator_ColumnPropNameInRow="IsLung" msprop:Generator_ColumnPropNameInTable="IsLungColumn" type="xs:boolean" />
+					<xs:element name="IsHeart" msprop:Generator_UserColumnName="IsHeart" msprop:Generator_ColumnVarNameInTable="columnIsHeart" msprop:Generator_ColumnPropNameInRow="IsHeart" msprop:Generator_ColumnPropNameInTable="IsHeartColumn" type="xs:boolean" />
+					<xs:element name="IsIntestine" msprop:Generator_UserColumnName="IsIntestine" msprop:Generator_ColumnVarNameInTable="columnIsIntestine" msprop:Generator_ColumnPropNameInRow="IsIntestine" msprop:Generator_ColumnPropNameInTable="IsIntestineColumn" type="xs:boolean" />
+					<xs:element name="IsPancreas" msprop:Generator_UserColumnName="IsPancreas" msprop:Generator_ColumnVarNameInTable="columnIsPancreas" msprop:Generator_ColumnPropNameInRow="IsPancreas" msprop:Generator_ColumnPropNameInTable="IsPancreasColumn" type="xs:boolean" />
+					<xs:element name="IsHeartLung" msprop:Generator_UserColumnName="IsHeartLung" msprop:Generator_ColumnVarNameInTable="columnIsHeartLung" msprop:Generator_ColumnPropNameInRow="IsHeartLung" msprop:Generator_ColumnPropNameInTable="IsHeartLungColumn" type="xs:boolean" />
+					<xs:element name="IsKidneyPancreas" msprop:Generator_UserColumnName="IsKidneyPancreas" msprop:Generator_ColumnVarNameInTable="columnIsKidneyPancreas" msprop:Generator_ColumnPropNameInRow="IsKidneyPancreas" msprop:Generator_ColumnPropNameInTable="IsKidneyPancreasColumn" type="xs:boolean" />
+					<xs:element name="IsMultiOrgan" msprop:Generator_UserColumnName="IsMultiOrgan" msprop:Generator_ColumnVarNameInTable="columnIsMultiOrgan" msprop:Generator_ColumnPropNameInRow="IsMultiOrgan" msprop:Generator_ColumnPropNameInTable="IsMultiOrganColumn" type="xs:boolean" />
+				</xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ListControl" />
+      <xs:field xpath="mstns:ListId" />
+    </xs:unique>
+    <xs:unique name="TcssListVitalSign_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TcssListVitalSign" />
+      <xs:field xpath="mstns:ListId" />
+    </xs:unique>
+    <xs:unique name="TcssListLab_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TcssListLab" />
+      <xs:field xpath="mstns:ListId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

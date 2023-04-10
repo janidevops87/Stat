@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RecycledCasesDS" targetNamespace="http://tempuri.org/RecycledCasesDS.xsd" xmlns:mstns="http://tempuri.org/RecycledCasesDS.xsd" xmlns="http://tempuri.org/RecycledCasesDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ReferralTest2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ReferralTest2ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Statline.Stattrac.Data.Types.Properties.Settings.GlobalReference.Default.ReferralTest2ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RecycledCasesDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="RecycledCasesDS" msprop:Generator_DataSetName="RecycledCasesDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RecycledCases" msprop:Generator_UserTableName="RecycledCases" msprop:Generator_RowDeletedName="RecycledCasesRowDeleted" msprop:Generator_RowChangedName="RecycledCasesRowChanged" msprop:Generator_RowClassName="RecycledCasesRow" msprop:Generator_RowChangingName="RecycledCasesRowChanging" msprop:Generator_RowEvArgName="RecycledCasesRowChangeEvent" msprop:Generator_RowEvHandlerName="RecycledCasesRowChangeEventHandler" msprop:Generator_TableClassName="RecycledCasesDataTable" msprop:Generator_TableVarName="tableRecycledCases" msprop:Generator_RowDeletingName="RecycledCasesRowDeleting" msprop:Generator_TablePropName="RecycledCases">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CallID" msprop:Generator_UserColumnName="CallID" msprop:Generator_ColumnVarNameInTable="columnCallID" msprop:Generator_ColumnPropNameInRow="CallID" msprop:Generator_ColumnPropNameInTable="CallIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CallNumber" msprop:Generator_UserColumnName="CallNumber" msprop:Generator_ColumnVarNameInTable="columnCallNumber" msprop:Generator_ColumnPropNameInRow="CallNumber" msprop:Generator_ColumnPropNameInTable="CallNumberColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CallDateTime" msprop:Generator_UserColumnName="CallDateTime" msprop:Generator_ColumnVarNameInTable="columnCallDateTime" msprop:Generator_ColumnPropNameInRow="CallDateTime" msprop:Generator_ColumnPropNameInTable="CallDateTimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ReferralDonorFirstName" msprop:Generator_UserColumnName="ReferralDonorFirstName" msprop:Generator_ColumnVarNameInTable="columnReferralDonorFirstName" msprop:Generator_ColumnPropNameInRow="ReferralDonorFirstName" msprop:Generator_ColumnPropNameInTable="ReferralDonorFirstNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReferralDonorLastName" msprop:Generator_UserColumnName="ReferralDonorLastName" msprop:Generator_ColumnVarNameInTable="columnReferralDonorLastName" msprop:Generator_ColumnPropNameInRow="ReferralDonorLastName" msprop:Generator_ColumnPropNameInTable="ReferralDonorLastNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrganizationName" msprop:Generator_UserColumnName="OrganizationName" msprop:Generator_ColumnVarNameInTable="columnOrganizationName" msprop:Generator_ColumnPropNameInRow="OrganizationName" msprop:Generator_ColumnPropNameInTable="OrganizationNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PrevReferralTypeName" msprop:Generator_UserColumnName="PrevReferralTypeName" msprop:Generator_ColumnVarNameInTable="columnPrevReferralTypeName" msprop:Generator_ColumnPropNameInRow="PrevReferralTypeName" msprop:Generator_ColumnPropNameInTable="PrevReferralTypeNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReferralTypeName" msprop:Generator_UserColumnName="ReferralTypeName" msprop:Generator_ColumnVarNameInTable="columnReferralTypeName" msprop:Generator_ColumnPropNameInRow="ReferralTypeName" msprop:Generator_ColumnPropNameInTable="ReferralTypeNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SourceCodeName" msprop:Generator_UserColumnName="SourceCodeName" msprop:Generator_ColumnVarNameInTable="columnSourceCodeName" msprop:Generator_ColumnPropNameInRow="SourceCodeName" msprop:Generator_ColumnPropNameInTable="SourceCodeNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StatEmployeeFirstName" msprop:Generator_UserColumnName="StatEmployeeFirstName" msprop:Generator_ColumnVarNameInTable="columnStatEmployeeFirstName" msprop:Generator_ColumnPropNameInRow="StatEmployeeFirstName" msprop:Generator_ColumnPropNameInTable="StatEmployeeFirstNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StatEmployeeLastName" msprop:Generator_UserColumnName="StatEmployeeLastName" msprop:Generator_ColumnVarNameInTable="columnStatEmployeeLastName" msprop:Generator_ColumnPropNameInRow="StatEmployeeLastName" msprop:Generator_ColumnPropNameInTable="StatEmployeeLastNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrganizationID" msprop:Generator_UserColumnName="OrganizationID" msprop:Generator_ColumnVarNameInTable="columnOrganizationID" msprop:Generator_ColumnPropNameInRow="OrganizationID" msprop:Generator_ColumnPropNameInTable="OrganizationIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LastModified" msprop:Generator_UserColumnName="LastModified" msprop:Generator_ColumnVarNameInTable="columnLastModified" msprop:Generator_ColumnPropNameInRow="LastModified" msprop:Generator_ColumnPropNameInTable="LastModifiedColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:RecycledCases" />
+      <xs:field xpath="mstns:CallID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

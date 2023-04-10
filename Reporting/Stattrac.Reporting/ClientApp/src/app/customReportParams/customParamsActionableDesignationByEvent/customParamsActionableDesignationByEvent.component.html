@@ -1,0 +1,82 @@
+<div>
+  <div class="row" style="margin-bottom:5px;">
+    <div class="col-sm">
+      State:
+    </div>
+  </div>
+  <div class="row" style="border:1px solid lightgray; border-radius:4px; padding-top:8px; margin:0 0 15px 0;background-color: white;">
+    <div *ngFor="let st of states">
+      <div class="col-sm">
+        <input type="radio" id="{{st.fullName}}" name="State" value="{{st.state}}" [(ngModel)]="model.State"
+               (change)="stateChanged()" style="height: 20px; width: 20px; vertical-align: text-bottom;">
+        <label for="{{st.fullName}}" style="padding-left:3px;">{{st.fullName}}</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm">
+      <label>Main Category:</label>
+      <ng-select [(ngModel)]="model.MainCategoryID" id="MainCategoryID" name="MainCategoryID"
+                 [ngModelOptions]="{standalone: true}"
+                 [items]="mainCategoryList" bindLabel="label"
+                 bindValue="value" [selectOnTab]="true" (change)="mainCategoryChanged()"></ng-select>
+    </div>
+    <div class="col-sm">
+      <label>Sub Category:</label>
+      <ng-select [(ngModel)]="model.SubCategoryID" id="SubCategoryID" name="SubCategoryID"
+                 [ngModelOptions]="{standalone: true}"
+                 [items]="subCategoryList" bindLabel="label"
+                 bindValue="value" [selectOnTab]="true" (change)="addtoParameterList()"></ng-select>
+    </div>
+  </div>
+  <div class="row" style="margin-top:10px;">
+    <div class="col-sm">
+      <label for="SourceCode">Source Code:</label>
+      <input class="form-control " type="text" id="SourceCode" [(ngModel)]="model.SourceCode"
+             (change)="addtoParameterList()" />
+    </div>
+    <div class="col-sm">
+      <label for="ReportFormat">Report Format:</label>
+      <ng-select [(ngModel)]="model.ReportFormat" id="ReportFormat" name="ReportFormat"
+                 [ngModelOptions]="{standalone: true}"
+                 [items]="reportFormatList" bindLabel="label"
+                 bindValue="value" [selectOnTab]="true" (change)="addtoParameterList()"></ng-select>
+    </div>
+  </div>
+
+  <div class="row" style="border:1px solid lightgray; border-radius:4px; padding:8px 0; margin:15px 0 0 0;background-color: white;">
+    <div class="col-sm">
+      <input type="checkbox" id="NewYes" name="NewYes" value="true"
+             [(ngModel)]="model.NewYes" (change)="addtoParameterList()"
+             style="height: 20px; width: 20px; vertical-align: text-bottom;">
+      <label for="NewYes" style="padding-left:3px;display:inline;">New Yes</label>
+    </div>
+    <div class="col-sm">
+      <input type="checkbox" id="YesToYes" name="YesToYes" value="true"
+             [(ngModel)]="model.YesToYes" (change)="addtoParameterList()"
+             style="height: 20px; width: 20px; vertical-align: text-bottom;">
+      <label for="YesToYes" style="padding-left:3px;display:inline;">Yes to Yes</label>
+    </div>
+    <div class="col-sm">
+      <input type="checkbox" id="NoToYes" name="NoToYes" value="true"
+             [(ngModel)]="model.NoToYes" (change)="addtoParameterList()"
+             style="height: 20px; width: 20px; vertical-align: text-bottom;">
+      <label for="NoToYes" style="padding-left:3px;display:inline;">No to Yes</label>
+    </div>
+    <div class="col-sm">
+      <input type="checkbox" id="TotalYes" name="TotalYes" value="true"
+             [(ngModel)]="model.TotalYes" (change)="addtoParameterList()"
+             style="height: 20px; width: 20px; vertical-align: text-bottom;">
+      <label for="TotalYes" style="padding-left:3px;display:inline;">Total Yes</label>
+    </div>
+    <div class="col-sm">
+      <input type="checkbox" id="YesToNo" name="YesToNo" value="true"
+             [(ngModel)]="model.YesToNo" (change)="addtoParameterList()"
+             style="height: 20px; width: 20px; vertical-align: text-bottom;">
+      <label for="YesToNo" style="padding-left:3px;display:inline;">Yes to No</label>
+    </div>
+  </div>
+  <!-- hidden field is need to feed back to parent -->
+  <input type="hidden" id="customParameterList" />
+</div>

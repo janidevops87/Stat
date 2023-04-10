@@ -1,0 +1,117 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emailer.Host.Console", "Emailer.Host.Console\Emailer.Host.Console.csproj", "{F5A28110-20E7-44F7-8BF1-F6833F2AF9CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emailer.MessageProcessor.Domain", "Emailer.MessageProcessor.Domain\Emailer.MessageProcessor.Domain.csproj", "{4A9AB943-51B4-4555-B3CC-BB813A3D76AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D34A5550-8674-431C-AD99-466215CC4C5E}"
+	ProjectSection(SolutionItems) = preProject
+		NuGet.Config = NuGet.Config
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emailer.Common", "Emailer.Common\Emailer.Common.csproj", "{F960C24E-B108-4589-9FE3-ABC91338A08F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emailer.MessageProcessor.App", "Emailer.MessageProcessor.App\Emailer.MessageProcessor.App.csproj", "{48816F58-E875-4C8C-8496-EED076A15D98}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emailer.LegacyBridge.App", "Emailer.LegacyBridge.App\Emailer.LegacyBridge.App.csproj", "{3CC7A120-64CC-4236-BBF4-4A17B70A9DE6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emailer.LegacyBridge.Infrastructure", "Emailer.LegacyBridge.Infrastructure\Emailer.LegacyBridge.Infrastructure.csproj", "{8FFC9D45-A4EA-4B61-9979-D6685D16B818}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emailer.MessageProcessor.Infrastructure", "Emailer.MessageProcessor.Infrastructure\Emailer.MessageProcessor.Infrastructure.csproj", "{C6856526-8790-430C-B597-3844ABE43C32}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emailer.MessageProcessor.Domain.Tests", "Emailer.MessageProcessor.Domain.Tests\Emailer.MessageProcessor.Domain.Tests.csproj", "{8DD29EF2-A2FD-4D40-97F9-B2BEF5516269}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emailer.MessageProcessor.Infrastructure.MessageSender.EmailService", "Emailer.MessageProcessor.Infrastructure.MessageSender.EmailService\Emailer.MessageProcessor.Infrastructure.MessageSender.EmailService.csproj", "{8A6018CB-C95A-4E4E-86E1-26AE065D1154}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emailer.MessageProcessor.Infrastructure.MessageSender.Smtp", "Emailer.MessageProcessor.Infrastructure.MessageSender.Smtp\Emailer.MessageProcessor.Infrastructure.MessageSender.Smtp.csproj", "{33A8C751-9626-45D8-98A6-27C360555E0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5A28110-20E7-44F7-8BF1-F6833F2AF9CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5A28110-20E7-44F7-8BF1-F6833F2AF9CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5A28110-20E7-44F7-8BF1-F6833F2AF9CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5A28110-20E7-44F7-8BF1-F6833F2AF9CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A9AB943-51B4-4555-B3CC-BB813A3D76AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A9AB943-51B4-4555-B3CC-BB813A3D76AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A9AB943-51B4-4555-B3CC-BB813A3D76AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A9AB943-51B4-4555-B3CC-BB813A3D76AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F960C24E-B108-4589-9FE3-ABC91338A08F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F960C24E-B108-4589-9FE3-ABC91338A08F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F960C24E-B108-4589-9FE3-ABC91338A08F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F960C24E-B108-4589-9FE3-ABC91338A08F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48816F58-E875-4C8C-8496-EED076A15D98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48816F58-E875-4C8C-8496-EED076A15D98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48816F58-E875-4C8C-8496-EED076A15D98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48816F58-E875-4C8C-8496-EED076A15D98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CC7A120-64CC-4236-BBF4-4A17B70A9DE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CC7A120-64CC-4236-BBF4-4A17B70A9DE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CC7A120-64CC-4236-BBF4-4A17B70A9DE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CC7A120-64CC-4236-BBF4-4A17B70A9DE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FFC9D45-A4EA-4B61-9979-D6685D16B818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FFC9D45-A4EA-4B61-9979-D6685D16B818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FFC9D45-A4EA-4B61-9979-D6685D16B818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FFC9D45-A4EA-4B61-9979-D6685D16B818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6856526-8790-430C-B597-3844ABE43C32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6856526-8790-430C-B597-3844ABE43C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6856526-8790-430C-B597-3844ABE43C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6856526-8790-430C-B597-3844ABE43C32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DD29EF2-A2FD-4D40-97F9-B2BEF5516269}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DD29EF2-A2FD-4D40-97F9-B2BEF5516269}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DD29EF2-A2FD-4D40-97F9-B2BEF5516269}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DD29EF2-A2FD-4D40-97F9-B2BEF5516269}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A6018CB-C95A-4E4E-86E1-26AE065D1154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A6018CB-C95A-4E4E-86E1-26AE065D1154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A6018CB-C95A-4E4E-86E1-26AE065D1154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A6018CB-C95A-4E4E-86E1-26AE065D1154}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33A8C751-9626-45D8-98A6-27C360555E0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33A8C751-9626-45D8-98A6-27C360555E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33A8C751-9626-45D8-98A6-27C360555E0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33A8C751-9626-45D8-98A6-27C360555E0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F61E273-EC55-4609-B9BC-BFB30B9F3F29}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/statline
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Emailer.Common\\Emailer.Common.csproj
+		SccProjectName1 = Emailer.Common
+		SccLocalPath1 = Emailer.Common
+		SccProjectUniqueName2 = Emailer.Host.Console\\Emailer.Host.Console.csproj
+		SccProjectName2 = Emailer.Host.Console
+		SccLocalPath2 = Emailer.Host.Console
+		SccProjectUniqueName3 = Emailer.LegacyBridge.App\\Emailer.LegacyBridge.App.csproj
+		SccProjectName3 = Emailer.LegacyBridge.App
+		SccLocalPath3 = Emailer.LegacyBridge.App
+		SccProjectUniqueName4 = Emailer.LegacyBridge.Infrastructure\\Emailer.LegacyBridge.Infrastructure.csproj
+		SccProjectName4 = Emailer.LegacyBridge.Infrastructure
+		SccLocalPath4 = Emailer.LegacyBridge.Infrastructure
+		SccProjectUniqueName5 = Emailer.MessageProcessor.App\\Emailer.MessageProcessor.App.csproj
+		SccProjectName5 = Emailer.MessageProcessor.App
+		SccLocalPath5 = Emailer.MessageProcessor.App
+		SccProjectUniqueName6 = Emailer.MessageProcessor.Domain\\Emailer.MessageProcessor.Domain.csproj
+		SccProjectName6 = Emailer.MessageProcessor.Domain
+		SccLocalPath6 = Emailer.MessageProcessor.Domain
+		SccProjectUniqueName7 = Emailer.MessageProcessor.Infrastructure.SmtpMessageSender\\Emailer.MessageProcessor.Infrastructure.SmtpMessageSender.csproj
+		SccProjectName7 = Emailer.MessageProcessor.Infrastructure.SmtpMessageSender
+		SccLocalPath7 = Emailer.MessageProcessor.Infrastructure.SmtpMessageSender
+		SccProjectUniqueName8 = Emailer.MessageProcessor.Infrastructure\\Emailer.MessageProcessor.Infrastructure.csproj
+		SccProjectName8 = Emailer.MessageProcessor.Infrastructure
+		SccLocalPath8 = Emailer.MessageProcessor.Infrastructure
+		SccProjectUniqueName9 = Emailer.MessageProcessor.Domain.Tests\\Emailer.MessageProcessor.Domain.Tests.csproj
+		SccProjectName9 = Emailer.MessageProcessor.Domain.Tests
+		SccLocalPath9 = Emailer.MessageProcessor.Domain.Tests
+	EndGlobalSection
+EndGlobal

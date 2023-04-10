@@ -1,0 +1,50 @@
+<div>
+  <div class="row">
+    <div class="col-sm">
+      <label>Referral #:</label>
+      <input class="form-control " type="text" id="CallID" [(ngModel)]="model.CallID"
+             (change)="addtoParameterList()" />
+    </div>
+    <div class="col-sm">
+      <label>Referral Type:</label>
+      <ng-select [(ngModel)]="model.ReferralType" id="ReferralType" name="ReferralType"
+                 [ngModelOptions]="{standalone: true}"
+                 [items]="referralTypeList" bindLabel="label"
+                 bindValue="value" [selectOnTab]="true" (change)="addtoParameterList()"></ng-select>
+    </div>
+  </div>
+  <div class="row" style="margin-top:15px;">
+    <div class="col-sm">
+      <label>Patient Last Name:</label>
+      <input class="form-control " type="text" id="PatientLastName"
+             [(ngModel)]="model.PatientLastName" (change)="addtoParameterList()" />
+    </div>
+    <div class="col-sm">
+      <label>Patient First Name:</label>
+      <input class="form-control " type="text" id="PatientFirstName"
+             [(ngModel)]="model.PatientFirstName" (change)="addtoParameterList()" />
+    </div>
+    <div class="col-sm">
+      <label >Medical Record Number:</label>
+      <input class="form-control " type="text" id="MedicalRecordNumber"
+             [(ngModel)]="model.MedicalRecordNumber" (change)="addtoParameterList()" />
+    </div>
+  </div>
+  <div class="row" style="margin-top:20px;">
+    <div class="col-sm">
+      <input type="checkbox" id="GroupByReferralFacility" name="GroupByReferralFacility"
+             value="true" [(ngModel)]="model.GroupByReferralFacility"
+             style="margin: 2px 0px 0 4px;height:20px;width:20px;vertical-align:text-bottom;"
+             (change)="addtoParameterList()">
+      <label for="GroupByReferralFacility" style="padding-left:3px;">Group by Referral Facility</label>
+    </div>
+    <div class="col-sm">
+      <input type="checkbox" id="DisplayDisposition" name="DisplayDisposition"
+             value="true" [(ngModel)]="model.DisplayDisposition"
+             style="margin: 2px 0px 0 4px;height:20px;width:20px;vertical-align:text-bottom;"
+             (change)="addtoParameterList()">
+      <label for="DisplayDisposition" style="padding-left:3px;">Display Disposition</label>
+    </div>
+  </div>
+  <input type="hidden" id="customParameterList" />
+</div>

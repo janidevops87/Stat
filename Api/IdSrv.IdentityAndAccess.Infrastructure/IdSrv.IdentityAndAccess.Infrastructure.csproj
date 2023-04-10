@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Statline.IdentityServer.IdentityAndAccess.Infrastructure</AssemblyName>
+    <RootNamespace>Statline.IdentityServer.IdentityAndAccess.Infrastructure</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.15" />
+    <PackageReference Include="Statline.Common" Version="1.0.9" />
+    <PackageReference Include="Statline.Common.Configuration.Email" Version="3.1.2" />
+    <PackageReference Include="Statline.Common.Infrastructure.Domain" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IdSrv.IdentityAndAccess.App\IdSrv.IdentityAndAccess.App.csproj" />
+    <ProjectReference Include="..\IdSrv.IdentityAndAccess.Domain\IdSrv.IdentityAndAccess.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Persistence\Ef\Migrations\" />
+  </ItemGroup>
+
+</Project>
